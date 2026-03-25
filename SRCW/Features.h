@@ -1,6 +1,8 @@
 #pragma once
 #include <random>
 #include <vector>
+#include <string>
+#include <unordered_map>
 
 #include "Helpers.h"
 #include "CppSDK/SDK/Engine_classes.hpp"
@@ -14,52 +16,58 @@
 #include "CppSDK/SDK/BP_MenuRacerLobby_classes.hpp"
 
 // =============================================================================
-// FEATURE TOGGLES — set to 1 to enable, 0 to disable before compiling
+// RUNTIME CONFIG — defaults below, overridden by SRCW.ini at load time
 // =============================================================================
+struct SRCWConfig
+{
+    // General
+    bool Console          = false;
+    bool ClearOnly        = false;
+    int  PhaseDelayMs     = 750;
+    bool AutoRun          = false;
+    bool HotkeyEnabled    = true;
+    int  UnlockKey        = 0xC0;   // VK_OEM_3 (tilde ~)
 
-// --- DLC Gate Removal ---
-#define ENABLE_CLEAR_CHARA_DLC         1   // Unlock DLC-gated characters
-#define ENABLE_CLEAR_MACHINE_DLC       1   // Unlock DLC-gated machines
-#define ENABLE_CLEAR_HONOR_TITLE_DLC   1   // Unlock DLC-gated honor titles
-#define ENABLE_CLEAR_ALBUM_DLC         1   // Unlock DLC-gated albums
-#define ENABLE_CLEAR_STICKER_DLC       1   // Unlock DLC-gated stickers
+    // DLC Gate Removal
+    bool ClearCharaDLC    = true;
+    bool ClearMachineDLC  = true;
+    bool ClearHonorDLC    = true;
+    bool ClearAlbumDLC    = true;
+    bool ClearStickerDLC  = true;
 
-// --- Save Data Unlocks ---
-#define ENABLE_HONOR_TITLES            1   // Unlock all honor titles in save data
-#define ENABLE_DRIVERS                 1   // Make all drivers selectable
-#define ENABLE_MACHINE_CUSTOMIZE       1   // Auras, horns, assembly, parts, stickers, gadgets
-#define ENABLE_COLOR_PRESETS           1   // Unlock machine color presets for all machines
-#define ENABLE_MIRROR_SPEED            1   // Unlock Mirror Mode & Super Sonic Speed
-#define ENABLE_MUSIC                   1   // Unlock all jukebox albums & tracks
+    // Save Data Unlocks
+    bool HonorTitles      = true;
+    bool Drivers          = true;
+    bool MachineCustomize = true;
+    bool ColorPresets     = true;
+    bool MirrorSpeed      = true;
+    bool Music            = true;
+    bool GadgetPlate      = true;
+    bool Challenges       = true;
 
-// --- Stage Unlocks ---
-#define ENABLE_STAGES_DLC              1   // Unlock DLC stages (SpongeBob, Minecraft, Pac-Man, etc.)
-#define ENABLE_STAGES_GP_OPEN          1   // Open all Grand Prix + mark events complete
-#define ENABLE_STAGES_SECRET           1   // Unlock Another/Secret stages + mark endings cleared
+    // Stage Unlocks
+    bool StagesDLC        = true;
+    bool StagesGPOpen     = true;
+    bool StagesSecret     = true;
 
-// --- New Flag Clearing (red exclamation marks) ---
-#define ENABLE_NF_COMPLETE_MACHINE     1   // Clear general machine new badges
-#define ENABLE_NF_STICKER              1   // Clear sticker new indicators
-#define ENABLE_NF_COLOR_PRESET         1   // Clear color preset new indicators
-#define ENABLE_NF_GADGET               1   // Clear gadget new indicators
-#define ENABLE_NF_PARTS_SPEED          1   // Clear Speed parts new flags
-#define ENABLE_NF_PARTS_ACCEL          1   // Clear Accel parts new flags
-#define ENABLE_NF_PARTS_HANDLE         1   // Clear Handle parts new flags
-#define ENABLE_NF_PARTS_POWER          1   // Clear Power parts new flags
-#define ENABLE_NF_PARTS_DASH           1   // Clear Dash parts new flags
-#define ENABLE_NF_HORN                 1   // Clear horn new indicators
-#define ENABLE_NF_HONOR_TITLES         1   // Clear honor title new indicators
-#define ENABLE_NF_JUKEBOX              1   // Clear jukebox/album new indicators
-#define ENABLE_NF_CHALLENGES           1   // Clear challenge new indicators
-#define ENABLE_NF_REWARDS              1   // Clear pending reward display notifications
+    // New Flag Clearing
+    bool NF_CompleteMachine = true;
+    bool NF_Sticker       = true;
+    bool NF_ColorPreset   = true;
+    bool NF_Gadget        = true;
+    bool NF_PartsSpeed    = true;
+    bool NF_PartsAccel    = true;
+    bool NF_PartsHandle   = true;
+    bool NF_PartsPower    = true;
+    bool NF_PartsDash     = true;
+    bool NF_Horn          = true;
+    bool NF_HonorTitles   = true;
+    bool NF_Jukebox       = true;
+    bool NF_Challenges    = true;
+    bool NF_Rewards       = true;
+};
 
-// --- Timing ---
-#define PHASE_DELAY_MS                 750  // Milliseconds between each unlock phase
-
-// --- Hotkey ---
-#define UNLOCK_KEY                     VK_OEM_3  // ~ (tilde) key to trigger unlock
-
-// =============================================================================
+inline SRCWConfig cfg;
 
 inline const char ConfigFileName[] = ".\\UNION\\Binaries\\Win64\\SRCW.ini";
 
@@ -68,8 +76,11 @@ inline int      unlockPhase = -1;
 inline bool     bUnlockStarted = false;
 inline bool     bUnlockDone = false;
 inline bool     bKeyWasDown = false;
+inline bool     bAutoRunReady = false;
 inline ULONGLONG lastPhaseTime = 0;
 
+void LoadConfig();
+void WriteDefaultConfig();
 void HookGame();
 void Clear();
 bool RunUnlockPhase(int phase);
