@@ -65,12 +65,6 @@ git clone https://github.com/Glitxhhh/SonicUnlocker.git
 
 ---
 
-## 📸 Preview
-
-> *(Add screenshots or GIFs here for better presentation)*
-
----
-
 ## 🧠 How It Works
 
 - Hooks into game memory at runtime  
@@ -114,6 +108,8 @@ MIT License (or your preferred license)
 
 ---
 
-## 👤 Author
+## 👤 Authors
 
 **Glitxhhh**
+**GathoChocolat**
+**HAWGT**
