@@ -1,24 +1,21 @@
 #pragma once
+
+#include <Windows.h>
 #include <vector>
 #include <string>
+#include <cstdint>
 
 #include "Helpers.h"
 #include "Reflect.h"
-
-// Only engine-level SDK includes needed — NO game-specific headers
 #include "CppSDK/SDK/Engine_classes.hpp"
 
-// =============================================================================
-// RUNTIME CONFIG — loaded from SRCW.ini, no recompile needed
-// =============================================================================
 struct SRCWConfig
 {
     bool Console          = false;
     bool ClearOnly        = false;
     int  PhaseDelayMs     = 500;
-    bool AutoRun          = false;
-    bool HotkeyEnabled    = true;
-    int  UnlockKey        = 0xC0;
+    bool HotkeyEnabled    = false;  // false = autorun, true = wait for hotkey
+    int  UnlockKey        = 0xC0;   // VK_OEM_3 (~)
 
     bool ClearCharaDLC    = true;
     bool ClearMachineDLC  = true;
@@ -34,6 +31,8 @@ struct SRCWConfig
     bool Music            = true;
     bool GadgetPlate      = true;
     bool Challenges       = true;
+    bool Achievements     = false;
+    bool SuperSonicAll    = false;
 
     bool StagesDLC        = true;
     bool StagesGPOpen     = true;
@@ -56,7 +55,6 @@ struct SRCWConfig
 };
 
 inline SRCWConfig cfg;
-
 inline const char ConfigFileName[] = ".\\UNION\\Binaries\\Win64\\SRCW.ini";
 
 inline bool     bCleared = false;
@@ -72,6 +70,7 @@ void WriteDefaultConfig();
 void HookGame();
 void Clear();
 bool RunUnlockPhase(int phase);
+bool UnlockSteamAchievements();
 
 void __fastcall hk_AActor_ProcessEvent(SDK::AActor* Class, SDK::UFunction* Function, void* Parms);
 typedef void(__fastcall* AActor_ProcessEvent_t)(SDK::AActor* Class, SDK::UFunction* Function, void* Parms);

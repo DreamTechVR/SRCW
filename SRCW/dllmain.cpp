@@ -10,20 +10,15 @@ void LoadConfig()
 {
     std::ifstream file(ConfigFileName);
     if (!file.is_open()) { WriteDefaultConfig(); file.open(ConfigFileName); if (!file.is_open()) return; }
-
     std::string line;
-    while (std::getline(file, line))
-    {
+    while (std::getline(file, line)) {
         if (line.empty() || line[0] == ';' || line[0] == '#') continue;
-        std::istringstream iss(line);
-        std::string key; int value;
+        std::istringstream iss(line); std::string key; int value;
         if (!(iss >> key >> value)) continue;
         bool b = (value != 0);
-
-        if (key == "Console") cfg.Console = b;
+        if      (key == "Console") cfg.Console = b;
         else if (key == "ClearOnly") cfg.ClearOnly = b;
         else if (key == "PhaseDelayMs") cfg.PhaseDelayMs = value;
-        else if (key == "AutoRun") cfg.AutoRun = b;
         else if (key == "HotkeyEnabled") cfg.HotkeyEnabled = b;
         else if (key == "UnlockKey") cfg.UnlockKey = value;
         else if (key == "ClearCharaDLC") cfg.ClearCharaDLC = b;
@@ -40,6 +35,7 @@ void LoadConfig()
         else if (key == "GadgetPlate") cfg.GadgetPlate = b;
         else if (key == "Challenges") cfg.Challenges = b;
         else if (key == "Achievements") cfg.Achievements = b;
+        else if (key == "SuperSonicAll") cfg.SuperSonicAll = b;
         else if (key == "StagesDLC") cfg.StagesDLC = b;
         else if (key == "StagesGPOpen") cfg.StagesGPOpen = b;
         else if (key == "StagesSecret") cfg.StagesSecret = b;
@@ -67,19 +63,21 @@ void WriteDefaultConfig()
     std::ofstream f(ConfigFileName, std::ofstream::out | std::ofstream::trunc);
     if (!f.is_open()) return;
     f << "; SRCW Unlocker Config (Reflection Build)\n";
-    f << "; 1=enable, 0=disable — changes take effect on next launch\n\n";
+    f << "; 1=enable, 0=disable — changes on next launch\n\n";
     f << "; --- General ---\n";
     f << "Console 0\nClearOnly 0\nPhaseDelayMs 500\n\n";
     f << "; --- Trigger ---\n";
-    f << "AutoRun 0\nHotkeyEnabled 1\n";
+    f << "; HotkeyEnabled 0 = autorun on menu load (default)\n";
+    f << "; HotkeyEnabled 1 = wait for hotkey press\n";
+    f << "HotkeyEnabled 0\n";
     f << "; 192=~, 120=F9, 45=Insert\nUnlockKey 192\n\n";
     f << "; --- DLC Gate Removal ---\n";
     f << "ClearCharaDLC 1\nClearMachineDLC 1\nClearHonorDLC 1\nClearAlbumDLC 1\nClearStickerDLC 1\n\n";
     f << "; --- Save Data Unlocks ---\n";
     f << "HonorTitles 1\nDrivers 1\nMachineCustomize 1\nColorPresets 1\nMirrorSpeed 1\nMusic 1\nGadgetPlate 1\nChallenges 1\n\n";
-    f << "; --- Steam Achievements (OFF by default) ---\n";
-    f << "; WARNING: This will permanently unlock all Steam achievements\n";
-    f << "Achievements 0\n\n";
+    f << "; --- Optional (OFF by default) ---\n";
+    f << "; WARNING: Achievements will permanently unlock on Steam\nAchievements 0\n";
+    f << "; Super Sonic selectable + Fever mode in Race Park/Time Trial\nSuperSonicAll 0\n\n";
     f << "; --- Stage Unlocks ---\n";
     f << "StagesDLC 1\nStagesGPOpen 1\nStagesSecret 1\n\n";
     f << "; --- New Flag Clearing ---\n";
@@ -92,28 +90,15 @@ void WriteDefaultConfig()
 void Init()
 {
     LoadConfig();
-    if (cfg.Console) {
-        FILE* io; AllocConsole();
-        freopen_s(&io, "CONIN$", "r", stdin);
-        freopen_s(&io, "CONOUT$", "w", stderr);
-        freopen_s(&io, "CONOUT$", "w", stdout);
-        SetConsoleTitleA("SRCW");
-    }
-    std::cout << "[*] SRCW Unlocker (Reflection Build)\n";
-    std::cout << "[+] Phase delay: " << cfg.PhaseDelayMs << "ms\n";
-    if (cfg.Achievements) std::cout << "[+] Steam achievements: ENABLED\n";
-    if (cfg.AutoRun) std::cout << "[+] Mode: AutoRun\n";
-    else if (cfg.HotkeyEnabled) std::cout << "[+] Mode: Hotkey 0x" << std::hex << cfg.UnlockKey << std::dec << "\n";
-    else std::cout << "[!] Warning: AutoRun and Hotkey both off!\n";
+    if (cfg.Console) { FILE* io; AllocConsole(); freopen_s(&io, "CONIN$", "r", stdin); freopen_s(&io, "CONOUT$", "w", stderr); freopen_s(&io, "CONOUT$", "w", stdout); SetConsoleTitleA("SRCW"); }
+    std::cout << "[*] SRCW Unlocker (Reflection Build)\n[+] Delay: " << cfg.PhaseDelayMs << "ms\n";
+    if (cfg.HotkeyEnabled) std::cout << "[+] Mode: Hotkey 0x" << std::hex << cfg.UnlockKey << std::dec << "\n";
+    else std::cout << "[+] Mode: AutoRun\n";
     CreateThread(nullptr, 0, (LPTHREAD_START_ROUTINE)HookGame, CurrentModule, 0, nullptr);
 }
 
 BOOL APIENTRY DllMain(HMODULE hModule, DWORD reason, LPVOID)
 {
-    if (reason == DLL_PROCESS_ATTACH) {
-        DisableThreadLibraryCalls(hModule);
-        CurrentModule = hModule;
-        CreateThread(nullptr, 0, (LPTHREAD_START_ROUTINE)Init, CurrentModule, 0, nullptr);
-    }
+    if (reason == DLL_PROCESS_ATTACH) { DisableThreadLibraryCalls(hModule); CurrentModule = hModule; CreateThread(nullptr, 0, (LPTHREAD_START_ROUTINE)Init, CurrentModule, 0, nullptr); }
     return TRUE;
 }
