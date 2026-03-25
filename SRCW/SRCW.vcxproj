@@ -85,6 +85,10 @@
     <ClInclude Include="Features.h" />
     <ClInclude Include="Helpers.h" />
     <ClInclude Include="Reflect.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SRCW.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
 </Project>

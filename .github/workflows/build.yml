@@ -27,14 +27,14 @@ jobs:
       if: matrix.configuration == 'Debug'
       uses: actions/upload-artifact@v4
       with:
-        name: SRCW-Debug
+        name: SRCW-Debug-x64
         path: x64/Debug/SRCW.dll
 
     - name: Upload Release artifact
       if: matrix.configuration == 'Release'
       uses: actions/upload-artifact@v4
       with:
-        name: SRCW-Release
+        name: SRCW-Release-x64
         path: x64/Release/umpdc.dll
 
   release:
@@ -46,23 +46,23 @@ jobs:
       contents: write
 
     steps:
-    - name: Download Release artifact
+    - uses: actions/checkout@v4
+
+    - name: Download Release DLL
       uses: actions/download-artifact@v4
       with:
-        name: SRCW-Release
+        name: SRCW-Release-x64
         path: release/
 
-    - name: Download config
-      uses: actions/checkout@v4
-      with:
-        sparse-checkout: SRCW.ini
-        path: config/
+    - name: Prepare release package
+      run: cp SRCW.ini release/
 
     - name: Create Release
       uses: softprops/action-gh-release@v2
       with:
+        name: SRCWUnlocker ${{ github.ref_name }}
         files: |
           release/umpdc.dll
-          config/SRCW.ini
+          release/SRCW.ini
         generate_release_notes: true
         draft: false

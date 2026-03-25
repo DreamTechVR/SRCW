@@ -1,14 +1,15 @@
-//{{NO_DEPENDENCIES}}
-// Microsoft Visual C++ generated include file.
-// Used by SRCW.rc
+#ifndef RESOURCE_H
+#define RESOURCE_H
 
-// Next default values for new objects
-// 
-#ifdef APSTUDIO_INVOKED
-#ifndef APSTUDIO_READONLY_SYMBOLS
-#define _APS_NEXT_RESOURCE_VALUE        101
-#define _APS_NEXT_COMMAND_VALUE         40001
-#define _APS_NEXT_CONTROL_VALUE         1001
-#define _APS_NEXT_SYMED_VALUE           101
-#endif
+#define VER_MAJOR 3
+#define VER_MINOR 0
+#define VER_PATCH 0
+#define VER_BUILD 0
+
+#define STRINGIFY2(x) #x
+#define STRINGIFY(x) STRINGIFY2(x)
+
+#define VER_FILE_VERSION        VER_MAJOR,VER_MINOR,VER_PATCH,VER_BUILD
+#define VER_FILE_VERSION_STR    STRINGIFY(VER_MAJOR) "." STRINGIFY(VER_MINOR) "." STRINGIFY(VER_PATCH) ".0"
+
 #endif
