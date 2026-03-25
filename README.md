@@ -24,7 +24,7 @@ A lightweight DLL-based unlocker for **Sonic Racing CrossWorlds** that removes p
 ## 📦 Installation
 
 1. Download the latest release from the **Releases** tab  
-2. Place `umpc.dll` into:
+2. Place `umpdc.dll` into:
 
 SonicRacingCrossWorlds\UNION\Binaries\Win64
 
@@ -37,7 +37,7 @@ SonicRacingCrossWorlds\UNION\Binaries\Win64
 
 No configuration required.
 
-The unlocker runs automatically when the game loads and:
+The unlocker runs automatically or on hot key when the game loads and:
 - Applies all unlocks
 - Clears UI flags
 - Maintains performance via timed execution
@@ -55,7 +55,7 @@ git clone https://github.com/Glitxhhh/SonicUnlocker.git
 3. Build in **Release x64**  
 4. Output DLL will be located in:
 
-/x64/Release/umpc.dll
+/x64/Release/umpdc.dll
 
 ---
 
