@@ -44,6 +44,13 @@ namespace Reflect
     int32_t CallStaticRetInt32(const char* className, const char* funcName);
     uint8_t CallStaticUInt8RetUInt8(const char* className, const char* funcName, uint8_t param);
 
+    // Returns the bool ReturnValue of a no-arg static function
+    bool CallStaticRetBool(const char* className, const char* funcName);
+
+    // Calls a static function with one uint8 param and returns its bool ReturnValue
+    // Used to call IsDriverSelectable(driverId) and read the result
+    bool CallStaticUInt8RetBool(const char* className, const char* funcName, uint8_t param);
+
     int32_t GetEnumNum(const char* enumName);
     void ClearCache();
 }

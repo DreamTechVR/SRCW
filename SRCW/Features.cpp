@@ -158,6 +158,7 @@ bool RunUnlockPhase(int phase)
         return true; }
     case 11: {
         if (cfg.SuperSonicAll) {
+            // Save data flags: mark driver 46 selectable, enable Fever and Super Speed
             Reflect::CallStaticUInt8("AppSaveGameHelper", "SetDriverSelectable", 46);
             Reflect::CallStaticBool("AppSaveGameHelper", "SetOpenSuperSonicSpeed", true);
             auto* gp = Reflect::FindCDO("CheatGrandPrix");
@@ -192,6 +193,79 @@ bool RunUnlockPhase(int phase)
     }
 }
 
+// ---------------------------------------------------------------------------
+// Super Sonic all-modes: IsDriverSelectable intercept
+//
+// CharaSelectUtilityLibrary::IsDriverSelectable(InDriverId) -> bool
+// is the single function the UI checks to decide whether to show a lock
+// cover and whether to allow the character to be clicked.
+//
+// Phase 11 sets the save-data flag, but IsDriverSelectable reads the
+// game-mode context too and returns false for driver 46 (Super Sonic)
+// in non-Grand-Prix modes regardless of save data.
+//
+// Fix: after every call to IsDriverSelectable, if the driver is 46 and
+// SuperSonicAll is enabled, we patch the return value to true directly
+// in the params buffer before the UE dispatcher reads it back.
+//
+// We detect the function once via Reflect::FindFunction (cached after
+// first lookup) and compare by pointer — O(1), no string matching per
+// frame.
+// ---------------------------------------------------------------------------
+static SDK::UFunction* s_IsDriverSelectableFunc = nullptr;
+
+static void PatchIsDriverSelectable(SDK::UFunction* Function, void* Parms)
+{
+    // Lazy-init: resolve once, cache forever
+    if (!s_IsDriverSelectableFunc)
+        s_IsDriverSelectableFunc = Reflect::FindFunction("CharaSelectUtilityLibrary", "IsDriverSelectable");
+
+    if (!s_IsDriverSelectableFunc || Function != s_IsDriverSelectableFunc)
+        return;
+
+    // Param layout: IsDriverSelectable(WorldContextObject, InDriverId) -> ReturnValue
+    // We only care about InDriverId (param index 1) and ReturnValue.
+    // Use Reflect internals via the cached UFunction to find offsets.
+    //
+    // Walk ChildProperties to find:
+    //   - first non-return param with uint8/int type  -> InDriverId
+    //   - the ReturnParm bool                         -> ReturnValue
+    int32_t driverIdOffset = -1;
+    int32_t returnValueOffset = -1;
+
+    for (SDK::FField* field = Function->ChildProperties; field; field = field->Next)
+    {
+        auto* prop = static_cast<SDK::FProperty*>(field);
+        bool isReturn = (prop->PropertyFlags & static_cast<uint64_t>(SDK::EPropertyFlags::ReturnParm)) != 0;
+
+        if (isReturn && returnValueOffset < 0)
+            returnValueOffset = prop->Offset;
+        else if (!isReturn && driverIdOffset < 0)
+        {
+            // Skip WorldContextObject (first param, a UObject* / pointer-sized)
+            // InDriverId is an integer/enum — ElementSize will be 1 or 4, not 8
+            if (prop->ElementSize <= 4)
+                driverIdOffset = prop->Offset;
+            // If the first non-return param is pointer-sized, it's WorldContextObject;
+            // keep looping to hit InDriverId on the next non-return param.
+        }
+        else if (!isReturn && driverIdOffset < 0)
+            driverIdOffset = prop->Offset;
+    }
+
+    if (driverIdOffset < 0 || returnValueOffset < 0)
+        return;
+
+    uint8_t* bytes = static_cast<uint8_t*>(Parms);
+
+    // InDriverId may be stored as uint8 or int32 depending on the enum backing
+    // Read as int32 (safe — little-endian, and uint8 will just have 0-padding)
+    int32_t driverId = *reinterpret_cast<int32_t*>(bytes + driverIdOffset);
+
+    if (driverId == 46)
+        *reinterpret_cast<bool*>(bytes + returnValueOffset) = true;
+}
+
 void __fastcall hk_AActor_ProcessEvent(SDK::AActor* Class, SDK::UFunction* Function, void* Parms)
 {
     if (!bCleared) Clear();
@@ -216,4 +290,8 @@ void __fastcall hk_AActor_ProcessEvent(SDK::AActor* Class, SDK::UFunction* Funct
     }
 
     Orig_AActor_ProcessEvent(Class, Function, Parms);
+
+    // Post-call: patch IsDriverSelectable return value for Super Sonic
+    if (cfg.SuperSonicAll)
+        PatchIsDriverSelectable(Function, Parms);
 }

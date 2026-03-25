@@ -264,6 +264,32 @@ namespace Reflect
         return *(uint8_t*)(params + ret->Offset);
     }
 
+    bool CallStaticRetBool(const char* className, const char* funcName)
+    {
+        SDK::UFunction* func = FindFunction(className, funcName);
+        SDK::UObject* cdo = FindCDO(className);
+        if (!func || !cdo) return false;
+        uint8_t params[512] = {};
+        cdo->ProcessEvent(func, params);
+        SDK::FProperty* ret = FindReturnParam(func);
+        if (!ret) return false;
+        return *(bool*)(params + ret->Offset);
+    }
+
+    bool CallStaticUInt8RetBool(const char* className, const char* funcName, uint8_t param)
+    {
+        SDK::UFunction* func = FindFunction(className, funcName);
+        SDK::UObject* cdo = FindCDO(className);
+        if (!func || !cdo) return false;
+        uint8_t params[512] = {};
+        SDK::FProperty* p = FindFirstParam(func);
+        if (p) *(uint8_t*)(params + p->Offset) = param;
+        cdo->ProcessEvent(func, params);
+        SDK::FProperty* ret = FindReturnParam(func);
+        if (!ret) return false;
+        return *(bool*)(params + ret->Offset);
+    }
+
     int32_t GetEnumNum(const char* enumName)
     {
         for (int i = 0; i < SDK::UObject::GObjects->Num(); i++)
