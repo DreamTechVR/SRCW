@@ -106,3 +106,4 @@ MIT License (or your preferred license)
 **GathoChocolat**
 ---
 **HAWGT**
+---
