@@ -74,15 +74,6 @@ git clone https://github.com/Glitxhhh/SonicUnlocker.git
 
 ---
 
-## 📌 Roadmap
-
-- [ ] Config system (enable/disable features)  
-- [ ] UI overlay / debug menu  
-- [ ] Pattern scanning for version independence  
-- [ ] Expanded modular unlock controls  
-
----
-
 ## 🤝 Contributing
 
 Pull requests are welcome.
