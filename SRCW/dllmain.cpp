@@ -41,7 +41,7 @@ void Init()
 
 			if (!param.compare("ClearOnly"))
 			{
-				bUnlocked = (value == 1);
+				bUnlockDone = (value == 1);
 				std::cout << param << " " << value << "\n";
 			}
 		}
