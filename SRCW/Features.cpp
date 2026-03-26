@@ -17,11 +17,11 @@ bool UnlockSteamAchievements()
     if (!fnGetStats) { std::cout << "[Achievements] SteamUserStats not found\n"; return false; }
     void* userStats = fnGetStats();
     if (!userStats) { std::cout << "[Achievements] SteamUserStats null\n"; return false; }
-    auto fnReq = (RequestCurrentStats_t)GetProcAddress(steamApi, "SteamAPI_ISteamUserStats_RequestCurrentStats");
-    auto fnNum = (GetNumAchievements_t)GetProcAddress(steamApi, "SteamAPI_ISteamUserStats_GetNumAchievements");
-    auto fnName = (GetAchievementName_t)GetProcAddress(steamApi, "SteamAPI_ISteamUserStats_GetAchievementName");
-    auto fnSet = (SetAchievement_t)GetProcAddress(steamApi, "SteamAPI_ISteamUserStats_SetAchievement");
-    auto fnStore = (StoreStats_t)GetProcAddress(steamApi, "SteamAPI_ISteamUserStats_StoreStats");
+    auto fnReq  = (RequestCurrentStats_t)GetProcAddress(steamApi, "SteamAPI_ISteamUserStats_RequestCurrentStats");
+    auto fnNum  = (GetNumAchievements_t) GetProcAddress(steamApi, "SteamAPI_ISteamUserStats_GetNumAchievements");
+    auto fnName = (GetAchievementName_t) GetProcAddress(steamApi, "SteamAPI_ISteamUserStats_GetAchievementName");
+    auto fnSet  = (SetAchievement_t)     GetProcAddress(steamApi, "SteamAPI_ISteamUserStats_SetAchievement");
+    auto fnStore= (StoreStats_t)         GetProcAddress(steamApi, "SteamAPI_ISteamUserStats_StoreStats");
     if (!fnReq || !fnNum || !fnName || !fnSet || !fnStore) { std::cout << "[Achievements] Missing API funcs\n"; return false; }
     fnReq(userStats); Sleep(500);
     uint32_t numAch = fnNum(userStats);
@@ -40,7 +40,7 @@ void HookGame()
 {
     bool bHooked = false;
     while (!bHooked) {
-        auto World = SDK::UWorld::GetWorld();
+        auto World  = SDK::UWorld::GetWorld();
         auto Engine = SDK::UEngine::GetEngine();
         if (!World || !Engine || !Engine->GameViewport) continue;
         Orig_AActor_ProcessEvent = reinterpret_cast<AActor_ProcessEvent_t>(
@@ -59,20 +59,20 @@ void HookGame()
 void Clear()
 {
     auto* contentData = Reflect::FindInstance("ContentDataAsset");
-    auto* contentMgr = Reflect::FindInstance("UnionContentManager");
+    auto* contentMgr  = Reflect::FindInstance("UnionContentManager");
     if (!contentData || !contentMgr) { bCleared = true; return; }
 
     SDK::FProperty* pkgListProp = Reflect::FindProperty(contentData->Class, "PackageDataList");
     if (!pkgListProp) { bCleared = true; return; }
 
-    auto* arrProp = static_cast<SDK::FArrayProperty*>(pkgListProp);
+    auto* arrProp    = static_cast<SDK::FArrayProperty*>(pkgListProp);
     auto* structProp = static_cast<SDK::FStructProperty*>(arrProp->InnerProperty);
     int32_t pidOffset = Reflect::FindPropertyOffset(structProp->Struct, "P_Id");
-    int32_t elemSize = arrProp->InnerProperty->ElementSize;
+    int32_t elemSize  = arrProp->InnerProperty->ElementSize;
     if (pidOffset < 0 || elemSize <= 0) { bCleared = true; return; }
 
-    void* pkgListAddr = reinterpret_cast<uint8_t*>(contentData) + pkgListProp->Offset;
-    int32_t pkgCount = ReflectRaw::TArrayNum(pkgListAddr);
+    void*    pkgListAddr = reinterpret_cast<uint8_t*>(contentData) + pkgListProp->Offset;
+    int32_t  pkgCount    = ReflectRaw::TArrayNum(pkgListAddr);
 
     std::vector<int32_t> allPkgIds;
     for (int i = 0; i < pkgCount; i++)
@@ -81,8 +81,8 @@ void Clear()
     SDK::FProperty* mPkgProp = Reflect::FindProperty(contentMgr->Class, "m_packageIds");
     if (!mPkgProp || allPkgIds.empty()) { bCleared = true; return; }
 
-    void* mPkgAddr = reinterpret_cast<uint8_t*>(contentMgr) + mPkgProp->Offset;
-    auto* mPkgArr = reinterpret_cast<ReflectRaw::RawTArray*>(mPkgAddr);
+    void*   mPkgAddr = reinterpret_cast<uint8_t*>(contentMgr) + mPkgProp->Offset;
+    auto*   mPkgArr  = reinterpret_cast<ReflectRaw::RawTArray*>(mPkgAddr);
 
     std::vector<int32_t> existing;
     for (int i = 0; i < mPkgArr->NumElements; i++)
@@ -114,28 +114,14 @@ void Clear()
 bool RunUnlockPhase(int phase)
 {
     switch (phase) {
-    case 0: {
-        if (cfg.HonorTitles) { for (int i = 0; i < 500; i++) Reflect::CallStaticInt32("AppSaveGameHelper", "UnlockHonorTitle", i); std::cout << "[Phase 0] Honor titles\n"; }
-        return true; }
-    case 1: {
-        if (cfg.Drivers) { int n = Reflect::GetEnumNum("EDriverId"); for (int i = 0; i < n; i++) { Reflect::CallStaticUInt8("AppSaveGameHelper", "SetDriverSelectable", (uint8_t)i); Reflect::CallStaticUInt8("AppSaveGameHelper", "ClearDriverNew", (uint8_t)i); } std::cout << "[Phase 1] Drivers (" << n << ")\n"; }
-        return true; }
-    case 2: {
-        if (cfg.MachineCustomize) { Reflect::CallStatic("MachineCustomizeUtilityLibrary", "StoreAllAura"); Reflect::CallStatic("MachineCustomizeUtilityLibrary", "StoreAllHorn"); Reflect::CallStatic("MachineCustomizeUtilityLibrary", "StoreAllMachineAssembly"); Reflect::CallStatic("MachineCustomizeUtilityLibrary", "StoreAllMachineParts"); Reflect::CallStatic("MachineCustomizeUtilityLibrary", "StoreAllSticker"); Reflect::CallStatic("MachineCustomizeUtilityLibrary", "UnlockGadgetAll"); std::cout << "[Phase 2] Machine customize\n"; }
-        return true; }
-    case 3: {
-        if (cfg.ColorPresets) { int n = Reflect::GetEnumNum("EMachineId"); for (int i = 0; i < n; i++) Reflect::CallStaticUInt8("MachineCustomizeUtilityLibrary", "UnlockMachinePresetColor", (uint8_t)i); std::cout << "[Phase 3] Color presets\n"; }
-        return true; }
-    case 4: {
-        if (cfg.MirrorSpeed) { Reflect::CallStaticBool("AppSaveGameHelper", "SetOpenMirror", true); Reflect::CallStaticBool("AppSaveGameHelper", "SetOpenSuperSonicSpeed", true); std::cout << "[Phase 4] Mirror & SSS\n"; }
-        return true; }
-    case 5: {
-        if (cfg.Music) { for (int i = 0; i < 200; i++) Reflect::CallStaticInt32("AppSaveGameHelper", "SetAlbumAvailable", i); for (int i = 0; i < 500; i++) Reflect::CallStaticInt32("AppSaveGameHelper", "SetTrackAvailable", i); std::cout << "[Phase 5] Music\n"; }
-        return true; }
-    case 6: {
-        if (cfg.StagesDLC) { Reflect::CallStaticBool("UnionContentUtils", "RequestCheckContent", true); std::cout << "[Phase 6] DLC stages\n"; }
-        return true; }
-    case 7: {
+    case 0:  { if (cfg.HonorTitles)      { for (int i = 0; i < 500; i++) Reflect::CallStaticInt32("AppSaveGameHelper", "UnlockHonorTitle", i); std::cout << "[Phase 0] Honor titles\n"; } return true; }
+    case 1:  { if (cfg.Drivers)          { int n = Reflect::GetEnumNum("EDriverId"); for (int i = 0; i < n; i++) { Reflect::CallStaticUInt8("AppSaveGameHelper", "SetDriverSelectable", (uint8_t)i); Reflect::CallStaticUInt8("AppSaveGameHelper", "ClearDriverNew", (uint8_t)i); } std::cout << "[Phase 1] Drivers (" << n << ")\n"; } return true; }
+    case 2:  { if (cfg.MachineCustomize) { Reflect::CallStatic("MachineCustomizeUtilityLibrary", "StoreAllAura"); Reflect::CallStatic("MachineCustomizeUtilityLibrary", "StoreAllHorn"); Reflect::CallStatic("MachineCustomizeUtilityLibrary", "StoreAllMachineAssembly"); Reflect::CallStatic("MachineCustomizeUtilityLibrary", "StoreAllMachineParts"); Reflect::CallStatic("MachineCustomizeUtilityLibrary", "StoreAllSticker"); Reflect::CallStatic("MachineCustomizeUtilityLibrary", "UnlockGadgetAll"); std::cout << "[Phase 2] Machine customize\n"; } return true; }
+    case 3:  { if (cfg.ColorPresets)     { int n = Reflect::GetEnumNum("EMachineId"); for (int i = 0; i < n; i++) Reflect::CallStaticUInt8("MachineCustomizeUtilityLibrary", "UnlockMachinePresetColor", (uint8_t)i); std::cout << "[Phase 3] Color presets\n"; } return true; }
+    case 4:  { if (cfg.MirrorSpeed)      { Reflect::CallStaticBool("AppSaveGameHelper", "SetOpenMirror", true); Reflect::CallStaticBool("AppSaveGameHelper", "SetOpenSuperSonicSpeed", true); std::cout << "[Phase 4] Mirror & SSS\n"; } return true; }
+    case 5:  { if (cfg.Music)            { for (int i = 0; i < 200; i++) Reflect::CallStaticInt32("AppSaveGameHelper", "SetAlbumAvailable", i); for (int i = 0; i < 500; i++) Reflect::CallStaticInt32("AppSaveGameHelper", "SetTrackAvailable", i); std::cout << "[Phase 5] Music\n"; } return true; }
+    case 6:  { if (cfg.StagesDLC)        { Reflect::CallStaticBool("UnionContentUtils", "RequestCheckContent", true); std::cout << "[Phase 6] DLC stages\n"; } return true; }
+    case 7:  {
         if (cfg.StagesGPOpen) {
             auto* gp = Reflect::FindCDO("CheatGrandPrix");
             if (gp) { Reflect::CallInstanceBool(gp, "CheatGrandPrix", "SetGrandPrixOpenedAll", true); Reflect::CallInstanceBool(gp, "CheatGrandPrix", "SetSetGrandPrixLeast1Play", true); }
@@ -144,128 +130,268 @@ bool RunUnlockPhase(int phase)
             Reflect::CallStaticBool("AppSaveGameHelper", "SetGrandPrixLeast1Play", true);
             std::cout << "[Phase 7] GP opened\n"; }
         return true; }
-    case 8: {
+    case 8:  {
         if (cfg.StagesSecret) {
             auto* gp = Reflect::FindCDO("CheatGrandPrix");
             if (gp) { Reflect::CallInstance(gp, "CheatGrandPrix", "SetPlayedAnotherStageAll"); Reflect::CallInstanceUInt8Bool(gp, "CheatGrandPrix", "SetClearedGrandPrixEnding", 0, true); Reflect::CallInstanceUInt8Bool(gp, "CheatGrandPrix", "SetClearedGrandPrixEnding", 1, true); }
             std::cout << "[Phase 8] Secret stages\n"; }
         return true; }
-    case 9: {
-        if (cfg.GadgetPlate) { Reflect::CallStaticUInt8("MachineCustomizeUtilityLibrary", "SetCurrentGadgetPlateIdUseId", 7); Reflect::CallStatic("MachineCustomizeUtilityLibrary", "UpdateGadgetSlotNumInUserData"); std::cout << "[Phase 9] Gadget plate\n"; }
-        return true; }
-    case 10: {
-        if (cfg.Challenges) { Reflect::CallStatic("CheatChallenge", "AllChallengeClear"); Reflect::CallStaticBool("AppSaveGameHelper", "SetCompleteMainChallenge", true); Reflect::CallStaticBool("AppSaveGameHelper", "SetCompleteSpecialChallenge", true); int32_t pc = Reflect::CallStaticRetInt32("ChallengeStatsUtility", "GetChallengeProgressCount"); Reflect::CallStaticInt32("AppSaveGameHelper", "SetChallengeShowProgress", pc); Reflect::CallStaticFloat("AppSaveGameHelper", "SetChallengeLastShowProgress", 1.0f); std::cout << "[Phase 10] Challenges\n"; }
-        return true; }
+    case 9:  { if (cfg.GadgetPlate)  { Reflect::CallStaticUInt8("MachineCustomizeUtilityLibrary", "SetCurrentGadgetPlateIdUseId", 7); Reflect::CallStatic("MachineCustomizeUtilityLibrary", "UpdateGadgetSlotNumInUserData"); std::cout << "[Phase 9] Gadget plate\n"; } return true; }
+    case 10: { if (cfg.Challenges)   { Reflect::CallStatic("CheatChallenge", "AllChallengeClear"); Reflect::CallStaticBool("AppSaveGameHelper", "SetCompleteMainChallenge", true); Reflect::CallStaticBool("AppSaveGameHelper", "SetCompleteSpecialChallenge", true); int32_t pc = Reflect::CallStaticRetInt32("ChallengeStatsUtility", "GetChallengeProgressCount"); Reflect::CallStaticInt32("AppSaveGameHelper", "SetChallengeShowProgress", pc); Reflect::CallStaticFloat("AppSaveGameHelper", "SetChallengeLastShowProgress", 1.0f); std::cout << "[Phase 10] Challenges\n"; } return true; }
     case 11: {
         if (cfg.SuperSonicAll) {
-            // Save data flags: mark driver 46 selectable, enable Fever and Super Speed
             Reflect::CallStaticUInt8("AppSaveGameHelper", "SetDriverSelectable", 46);
             Reflect::CallStaticBool("AppSaveGameHelper", "SetOpenSuperSonicSpeed", true);
             auto* gp = Reflect::FindCDO("CheatGrandPrix");
             if (gp) Reflect::CallInstanceBool(gp, "CheatGrandPrix", "SetOpenFever", true);
             std::cout << "[Phase 11] Super Sonic all modes\n"; }
         return true; }
-    case 12: {
-        if (cfg.NF_CompleteMachine) Reflect::CallStatic("MachineCustomizeUtilityLibrary", "DisableCompleteMachineNewFlags");
-        if (cfg.NF_Sticker) Reflect::CallStatic("MachineCustomizeUtilityLibrary", "DisableStickerNewFlags");
-        if (cfg.NF_ColorPreset) Reflect::CallStatic("MachineCustomizeUtilityLibrary", "DisableMachineColorPresetNewFlags");
-        if (cfg.NF_Gadget) Reflect::CallStatic("MachineCustomizeUtilityLibrary", "DisableDisplayedGadgetNewFlags");
-        std::cout << "[Phase 12] Machine flags\n"; return true; }
-    case 13: { if (cfg.NF_PartsSpeed) Reflect::CallStaticUInt8("MachineCustomizeUtilityLibrary", "DisablePartsListNewFlagByType", 0); return true; }
-    case 14: { if (cfg.NF_PartsAccel) Reflect::CallStaticUInt8("MachineCustomizeUtilityLibrary", "DisablePartsListNewFlagByType", 1); return true; }
+    case 12: { if (cfg.NF_CompleteMachine) Reflect::CallStatic("MachineCustomizeUtilityLibrary", "DisableCompleteMachineNewFlags"); if (cfg.NF_Sticker) Reflect::CallStatic("MachineCustomizeUtilityLibrary", "DisableStickerNewFlags"); if (cfg.NF_ColorPreset) Reflect::CallStatic("MachineCustomizeUtilityLibrary", "DisableMachineColorPresetNewFlags"); if (cfg.NF_Gadget) Reflect::CallStatic("MachineCustomizeUtilityLibrary", "DisableDisplayedGadgetNewFlags"); std::cout << "[Phase 12] Machine flags\n"; return true; }
+    case 13: { if (cfg.NF_PartsSpeed)  Reflect::CallStaticUInt8("MachineCustomizeUtilityLibrary", "DisablePartsListNewFlagByType", 0); return true; }
+    case 14: { if (cfg.NF_PartsAccel)  Reflect::CallStaticUInt8("MachineCustomizeUtilityLibrary", "DisablePartsListNewFlagByType", 1); return true; }
     case 15: { if (cfg.NF_PartsHandle) Reflect::CallStaticUInt8("MachineCustomizeUtilityLibrary", "DisablePartsListNewFlagByType", 2); return true; }
-    case 16: { if (cfg.NF_PartsPower) Reflect::CallStaticUInt8("MachineCustomizeUtilityLibrary", "DisablePartsListNewFlagByType", 3); return true; }
-    case 17: { if (cfg.NF_PartsDash) Reflect::CallStaticUInt8("MachineCustomizeUtilityLibrary", "DisablePartsListNewFlagByType", 4); return true; }
-    case 18: {
-        if (cfg.NF_Horn) { int n = Reflect::GetEnumNum("EMachineHornType"); for (int i = 0; i < n; i++) Reflect::CallStaticUInt8Bool("MachineCustomizeUtilityLibrary", "SetCustomMachineHornNew", (uint8_t)i, false); std::cout << "[Phase 18] Horns\n"; }
-        return true; }
-    case 19: {
-        if (cfg.NF_HonorTitles) { for (int i = 0; i < 500; i++) Reflect::CallStaticInt32("AppSaveGameHelper", "ResetNewHonorTitle", i); std::cout << "[Phase 19] Title flags\n"; }
-        return true; }
-    case 20: {
-        if (cfg.NF_Challenges) { int32_t pc = Reflect::CallStaticRetInt32("ChallengeStatsUtility", "GetChallengeProgressCount"); Reflect::CallStaticInt32("AppSaveGameHelper", "SetChallengeShowProgress", pc); Reflect::CallStaticFloat("AppSaveGameHelper", "SetChallengeLastShowProgress", 1.0f); }
-        if (cfg.NF_Rewards) Reflect::CallStatic("AppSaveGameHelper", "ClearRewardGetDisplayRequestDataAll");
-        std::cout << "[Phase 20] Challenge/reward flags\n"; return true; }
-    case 21: {
-        if (cfg.Achievements) { UnlockSteamAchievements(); std::cout << "[Phase 21] Achievements\n"; }
-        return true; }
+    case 16: { if (cfg.NF_PartsPower)  Reflect::CallStaticUInt8("MachineCustomizeUtilityLibrary", "DisablePartsListNewFlagByType", 3); return true; }
+    case 17: { if (cfg.NF_PartsDash)   Reflect::CallStaticUInt8("MachineCustomizeUtilityLibrary", "DisablePartsListNewFlagByType", 4); return true; }
+    case 18: { if (cfg.NF_Horn) { int n = Reflect::GetEnumNum("EMachineHornType"); for (int i = 0; i < n; i++) Reflect::CallStaticUInt8Bool("MachineCustomizeUtilityLibrary", "SetCustomMachineHornNew", (uint8_t)i, false); std::cout << "[Phase 18] Horns\n"; } return true; }
+    case 19: { if (cfg.NF_HonorTitles) { for (int i = 0; i < 500; i++) Reflect::CallStaticInt32("AppSaveGameHelper", "ResetNewHonorTitle", i); std::cout << "[Phase 19] Title flags\n"; } return true; }
+    case 20: { if (cfg.NF_Challenges) { int32_t pc = Reflect::CallStaticRetInt32("ChallengeStatsUtility", "GetChallengeProgressCount"); Reflect::CallStaticInt32("AppSaveGameHelper", "SetChallengeShowProgress", pc); Reflect::CallStaticFloat("AppSaveGameHelper", "SetChallengeLastShowProgress", 1.0f); } if (cfg.NF_Rewards) Reflect::CallStatic("AppSaveGameHelper", "ClearRewardGetDisplayRequestDataAll"); std::cout << "[Phase 20] Challenge/reward flags\n"; return true; }
+    case 21: { if (cfg.Achievements) { UnlockSteamAchievements(); std::cout << "[Phase 21] Achievements\n"; } return true; }
     default: return false;
     }
 }
 
 // ---------------------------------------------------------------------------
-// Super Sonic all-modes: IsDriverSelectable intercept
+// Super Sonic All-Modes: Character Select Screen Patch
 //
-// CharaSelectUtilityLibrary::IsDriverSelectable(InDriverId) -> bool
-// is the single function the UI checks to decide whether to show a lock
-// cover and whether to allow the character to be clicked.
+// The screenshots confirm that Super Sonic's slot is ABSENT from the CSS
+// grid in Time Trial / Race Park — the widget that builds the driver list
+// simply doesn't include driver 46 in non-Grand Prix modes.
 //
-// Phase 11 sets the save-data flag, but IsDriverSelectable reads the
-// game-mode context too and returns false for driver 46 (Super Sonic)
-// in non-Grand-Prix modes regardless of save data.
+// The fix has three layers, all inside hk_AActor_ProcessEvent:
 //
-// Fix: after every call to IsDriverSelectable, if the driver is 46 and
-// SuperSonicAll is enabled, we patch the return value to true directly
-// in the params buffer before the UE dispatcher reads it back.
+// LAYER 1 — IsDriverSelectable post-call patch
+//   Forces return value to true for driver 46 so clicks are accepted.
 //
-// We detect the function once via Reflect::FindFunction (cached after
-// first lookup) and compare by pointer — O(1), no string matching per
-// frame.
+// LAYER 2 — Driver list injection (post-call on SetDriverIdList / equivalent)
+//   WBP_CharaSelect_Sub_Window_C builds its icon list by calling a function
+//   that takes or sets a TArray<uint8> of driver IDs (e.g. SetDriverIdList,
+//   InitDriverList, or BuildCharaList). We intercept this post-call and,
+//   if driver 46 is not in the output array property, append it.
+//
+// LAYER 3 — CSS window init event intercept (post-call)
+//   On any Init/Construct event fired by a WBP_CharaSelect_Sub_Window_C
+//   object, we call AddDriverIcon(46) or equivalent to force the slot to
+//   be created. This is a fallback if layer 2 misses the exact function.
 // ---------------------------------------------------------------------------
-static SDK::UFunction* s_IsDriverSelectableFunc = nullptr;
 
-static void PatchIsDriverSelectable(SDK::UFunction* Function, void* Parms)
+static SDK::UFunction* s_IsDriverSelectableFunc  = nullptr;
+
+// Candidate function names the CSS window uses to build its driver list.
+// We search for each at runtime and cache the first one found.
+static SDK::UFunction* s_SetDriverIdListFunc     = nullptr;
+static SDK::UFunction* s_InitDriverListFunc      = nullptr;
+static SDK::UFunction* s_BuildCharaListFunc      = nullptr;
+static SDK::UFunction* s_AddDriverIconFunc       = nullptr;
+
+// Candidate CSS window event names that trigger a roster rebuild
+static const char* kCSSWindowInitEvents[] = {
+    "OnInitStateSelectPlayMode",
+    "InitCharaSelectWindow",
+    "BuildCharaSelectList",
+    "OnConstruct",
+    nullptr
+};
+
+// Lazy-resolve all driver-list related functions from the CSS window class.
+// Called once after the first CSS window event fires.
+static bool s_DriverListFuncsResolved = false;
+static void ResolveDriverListFuncs()
 {
-    // Lazy-init: resolve once, cache forever
-    if (!s_IsDriverSelectableFunc)
-        s_IsDriverSelectableFunc = Reflect::FindFunction("CharaSelectUtilityLibrary", "IsDriverSelectable");
+    if (s_DriverListFuncsResolved) return;
+    s_DriverListFuncsResolved = true;
 
-    if (!s_IsDriverSelectableFunc || Function != s_IsDriverSelectableFunc)
-        return;
+    // Try several plausible class/function name combinations.
+    // We try both the _C (Blueprint) and plain variants.
+    static const char* classes[] = {
+        "WBP_CharaSelect_Sub_Window_C",
+        "WBP_CharaSelect_Sub_Window",
+        "BPC_CharaSelectState_C",
+        "BPC_CharaSelectState",
+        "CharaSelectUtilityLibrary",
+        nullptr
+    };
+    static const char* listFuncs[] = {
+        "SetDriverIdList", "InitDriverList", "SetDisplayDriverIds",
+        "SetCharaIdList",  "BuildDriverList","SetSelectDriverList",
+        "SetShowDriverList","SetDispDriverList",
+        nullptr
+    };
+    static const char* addFuncs[] = {
+        "AddDriverIcon", "AddCharaIcon", "AddDriverSlot",
+        "CreateDriverIcon", "SpawnCharaIcon",
+        nullptr
+    };
 
-    // Param layout: IsDriverSelectable(WorldContextObject, InDriverId) -> ReturnValue
-    // We only care about InDriverId (param index 1) and ReturnValue.
-    // Use Reflect internals via the cached UFunction to find offsets.
-    //
-    // Walk ChildProperties to find:
-    //   - first non-return param with uint8/int type  -> InDriverId
-    //   - the ReturnParm bool                         -> ReturnValue
-    int32_t driverIdOffset = -1;
-    int32_t returnValueOffset = -1;
-
-    for (SDK::FField* field = Function->ChildProperties; field; field = field->Next)
-    {
-        auto* prop = static_cast<SDK::FProperty*>(field);
-        bool isReturn = (prop->PropertyFlags & static_cast<uint64_t>(SDK::EPropertyFlags::ReturnParm)) != 0;
-
-        if (isReturn && returnValueOffset < 0)
-            returnValueOffset = prop->Offset;
-        else if (!isReturn && driverIdOffset < 0)
-        {
-            // Skip WorldContextObject (first param, a UObject* / pointer-sized)
-            // InDriverId is an integer/enum — ElementSize will be 1 or 4, not 8
-            if (prop->ElementSize <= 4)
-                driverIdOffset = prop->Offset;
-            // If the first non-return param is pointer-sized, it's WorldContextObject;
-            // keep looping to hit InDriverId on the next non-return param.
+    for (int ci = 0; classes[ci]; ci++) {
+        for (int fi = 0; listFuncs[fi]; fi++) {
+            if (!s_SetDriverIdListFunc)
+                s_SetDriverIdListFunc = Reflect::FindFunction(classes[ci], listFuncs[fi]);
         }
-        else if (!isReturn && driverIdOffset < 0)
-            driverIdOffset = prop->Offset;
+        for (int fi = 0; addFuncs[fi]; fi++) {
+            if (!s_AddDriverIconFunc)
+                s_AddDriverIconFunc = Reflect::FindFunction(classes[ci], addFuncs[fi]);
+        }
     }
 
-    if (driverIdOffset < 0 || returnValueOffset < 0)
-        return;
-
-    uint8_t* bytes = static_cast<uint8_t*>(Parms);
-
-    // InDriverId may be stored as uint8 or int32 depending on the enum backing
-    // Read as int32 (safe — little-endian, and uint8 will just have 0-padding)
-    int32_t driverId = *reinterpret_cast<int32_t*>(bytes + driverIdOffset);
-
-    if (driverId == 46)
-        *reinterpret_cast<bool*>(bytes + returnValueOffset) = true;
+    if (s_SetDriverIdListFunc)
+        std::cout << "[SuperSonic] Resolved driver list func: " << s_SetDriverIdListFunc->GetName() << "\n";
+    if (s_AddDriverIconFunc)
+        std::cout << "[SuperSonic] Resolved add icon func:    " << s_AddDriverIconFunc->GetName() << "\n";
+    if (!s_SetDriverIdListFunc && !s_AddDriverIconFunc)
+        std::cout << "[SuperSonic] Warning: no driver list func found — using TArray scan fallback\n";
 }
 
+// Layer 1: patch IsDriverSelectable return value post-call
+static void PatchIsDriverSelectable(SDK::UFunction* Function, void* Parms)
+{
+    if (!s_IsDriverSelectableFunc)
+        s_IsDriverSelectableFunc = Reflect::FindFunction("CharaSelectUtilityLibrary", "IsDriverSelectable");
+    if (!s_IsDriverSelectableFunc || Function != s_IsDriverSelectableFunc) return;
+
+    int32_t driverIdOffset  = -1;
+    int32_t returnValOffset = -1;
+    for (SDK::FField* field = Function->ChildProperties; field; field = field->Next) {
+        auto* prop    = static_cast<SDK::FProperty*>(field);
+        bool isReturn = (prop->PropertyFlags & static_cast<uint64_t>(SDK::EPropertyFlags::ReturnParm)) != 0;
+        if (isReturn && returnValOffset < 0)                            returnValOffset = prop->Offset;
+        else if (!isReturn && driverIdOffset < 0 && prop->ElementSize <= 4) driverIdOffset  = prop->Offset;
+    }
+    if (driverIdOffset < 0 || returnValOffset < 0) return;
+
+    uint8_t* bytes    = static_cast<uint8_t*>(Parms);
+    int32_t  driverId = static_cast<int32_t>(*reinterpret_cast<uint8_t*>(bytes + driverIdOffset));
+    if (driverId == 46)
+        *reinterpret_cast<bool*>(bytes + returnValOffset) = true;
+}
+
+// Layer 2: after SetDriverIdList (or equivalent) returns, scan the output
+// TArray<uint8> property on the object and append driver 46 if absent.
+static void PatchDriverIdListOutput(SDK::AActor* Caller, SDK::UFunction* Function, void* Parms)
+{
+    if (!s_SetDriverIdListFunc || Function != s_SetDriverIdListFunc) return;
+
+    SDK::UObject* obj = reinterpret_cast<SDK::UObject*>(Caller);
+    if (!obj || !obj->Class) return;
+
+    // Find a TArray property that looks like a driver ID list on this object.
+    // It will be a TArray whose InnerProperty is uint8 or int32 sized.
+    for (SDK::FField* field = obj->Class->ChildProperties; field; field = field->Next) {
+        auto* prop = static_cast<SDK::FProperty*>(field);
+        // Look for array properties
+        if (prop->ElementSize < 16) continue; // TArray is 16 bytes
+        std::string pname = prop->Name.ToString();
+        // Heuristic: name contains "Driver", "Chara", "Id", "List", "Ids"
+        bool looksLikeList = (pname.find("Driver") != std::string::npos ||
+                              pname.find("Chara")  != std::string::npos ||
+                              pname.find("Id")     != std::string::npos ||
+                              pname.find("List")   != std::string::npos);
+        if (!looksLikeList) continue;
+
+        void* arrAddr = reinterpret_cast<uint8_t*>(obj) + prop->Offset;
+        auto* arr     = reinterpret_cast<ReflectRaw::RawTArray*>(arrAddr);
+        if (!arr->Data || arr->NumElements <= 0 || arr->NumElements > 512) continue;
+
+        // Check if all values fit in uint8 range (driver IDs are 0-255)
+        uint8_t* data = reinterpret_cast<uint8_t*>(arr->Data);
+        bool allByte  = true;
+        for (int i = 0; i < arr->NumElements; i++)
+            if (data[i] > 200) { allByte = false; break; }
+        if (!allByte) continue;
+
+        // Check driver 46 isn't already in the list
+        bool has46 = false;
+        for (int i = 0; i < arr->NumElements; i++)
+            if (data[i] == 46) { has46 = true; break; }
+        if (has46) continue;
+
+        // Append driver 46
+        int32_t nc = arr->NumElements + 1;
+        if (nc <= arr->MaxElements) {
+            data[arr->NumElements] = 46;
+            arr->NumElements = nc;
+        } else {
+            uint8_t* nd = (uint8_t*)VirtualAlloc(nullptr, nc, MEM_COMMIT | MEM_RESERVE, PAGE_READWRITE);
+            if (nd) {
+                memcpy(nd, data, arr->NumElements);
+                nd[arr->NumElements] = 46;
+                arr->Data        = nd;
+                arr->NumElements = nc;
+                arr->MaxElements = nc;
+            }
+        }
+        std::cout << "[SuperSonic] Injected driver 46 into " << pname << " list\n";
+    }
+}
+
+// Layer 3: when a CSS window init event fires, call AddDriverIcon(46) directly
+// and also trigger a rebuild of the icon list via known refresh functions.
+static bool s_SuperSonicIconAdded = false;
+static void InjectSuperSonicIcon(SDK::AActor* Caller, SDK::UFunction* Function)
+{
+    if (s_SuperSonicIconAdded) return;
+
+    // Check if this event is one of the known CSS window init events
+    std::string fname = Function->GetName();
+    bool isCSSEvent   = false;
+    for (int i = 0; kCSSWindowInitEvents[i]; i++)
+        if (fname == kCSSWindowInitEvents[i]) { isCSSEvent = true; break; }
+    if (!isCSSEvent) return;
+
+    SDK::UObject* obj = reinterpret_cast<SDK::UObject*>(Caller);
+    if (!obj || !obj->Class) return;
+
+    // Only act on objects that look like the CSS window widget
+    std::string cname = obj->Class->GetName();
+    bool isCSSWindow  = (cname.find("CharaSelect") != std::string::npos ||
+                         cname.find("CharaSel")    != std::string::npos ||
+                         cname.find("BPC_Chara")   != std::string::npos);
+    if (!isCSSWindow) return;
+
+    ResolveDriverListFuncs();
+
+    // Try AddDriverIcon(46) directly on the widget
+    if (s_AddDriverIconFunc) {
+        uint8_t params[512] = {};
+        SDK::FProperty* p = nullptr;
+        for (SDK::FField* f = s_AddDriverIconFunc->ChildProperties; f; f = f->Next) {
+            auto* prop = static_cast<SDK::FProperty*>(f);
+            if (!(prop->PropertyFlags & static_cast<uint64_t>(SDK::EPropertyFlags::ReturnParm))) {
+                p = prop; break;
+            }
+        }
+        if (p) {
+            *(uint8_t*)(params + p->Offset) = 46;
+            obj->ProcessEvent(s_AddDriverIconFunc, params);
+            std::cout << "[SuperSonic] Called AddDriverIcon(46) on " << cname << "\n";
+            s_SuperSonicIconAdded = true;
+        }
+    }
+
+    // Also try known refresh/rebuild function names as a belt-and-suspenders
+    static const char* rebuildFuncs[] = {
+        "RebuildCharaList", "RefreshCharaList", "UpdateCharaList",
+        "ResetCharaSelect", "RefreshDriverList",
+        nullptr
+    };
+    for (int i = 0; rebuildFuncs[i]; i++) {
+        SDK::UFunction* rf = Reflect::FindFunction(cname.c_str(), rebuildFuncs[i]);
+        if (rf) { uint8_t p[64] = {}; obj->ProcessEvent(rf, p); }
+    }
+}
+
+// ---------------------------------------------------------------------------
+// Main ProcessEvent hook
+// ---------------------------------------------------------------------------
 void __fastcall hk_AActor_ProcessEvent(SDK::AActor* Class, SDK::UFunction* Function, void* Parms)
 {
     if (!bCleared) Clear();
@@ -291,7 +417,9 @@ void __fastcall hk_AActor_ProcessEvent(SDK::AActor* Class, SDK::UFunction* Funct
 
     Orig_AActor_ProcessEvent(Class, Function, Parms);
 
-    // Post-call: patch IsDriverSelectable return value for Super Sonic
-    if (cfg.SuperSonicAll)
-        PatchIsDriverSelectable(Function, Parms);
+    if (cfg.SuperSonicAll) {
+        PatchIsDriverSelectable(Function, Parms);        // Layer 1
+        PatchDriverIdListOutput(Class, Function, Parms); // Layer 2
+        InjectSuperSonicIcon(Class, Function);           // Layer 3
+    }
 }
