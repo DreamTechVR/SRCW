@@ -13,8 +13,8 @@ struct SRCWConfig
 {
     bool Console          = false;
     bool ClearOnly        = false;
-    int  PhaseDelayMs     = 500;
-    bool HotkeyEnabled    = false;  // false = autorun, true = wait for hotkey
+    int  PhaseDelayMs     = 750;
+    bool HotkeyEnabled    = false;  // false = autorun on menu load
     int  UnlockKey        = 0xC0;   // VK_OEM_3 (~)
 
     bool ClearCharaDLC    = true;
@@ -32,7 +32,7 @@ struct SRCWConfig
     bool GadgetPlate      = true;
     bool Challenges       = true;
     bool Achievements     = false;
-    bool SuperSonicAll    = false;
+    bool SuperSonicAll    = true;
 
     bool StagesDLC        = true;
     bool StagesGPOpen     = true;
@@ -71,6 +71,7 @@ void HookGame();
 void Clear();
 bool RunUnlockPhase(int phase);
 bool UnlockSteamAchievements();
+void Cleanup();
 
 void __fastcall hk_AActor_ProcessEvent(SDK::AActor* Class, SDK::UFunction* Function, void* Parms);
 typedef void(__fastcall* AActor_ProcessEvent_t)(SDK::AActor* Class, SDK::UFunction* Function, void* Parms);

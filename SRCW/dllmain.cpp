@@ -77,7 +77,7 @@ void WriteDefaultConfig()
     f << "HonorTitles 1\nDrivers 1\nMachineCustomize 1\nColorPresets 1\nMirrorSpeed 1\nMusic 1\nGadgetPlate 1\nChallenges 1\n\n";
     f << "; --- Optional (OFF by default) ---\n";
     f << "; WARNING: Achievements will permanently unlock on Steam\nAchievements 0\n";
-    f << "; Super Sonic selectable + Fever mode in Race Park/Time Trial\nSuperSonicAll 0\n\n";
+    f << "; Super Sonic selectable + Fever mode in Race Park/Time Trial\nSuperSonicAll 1\n\n";
     f << "; --- Stage Unlocks ---\n";
     f << "StagesDLC 1\nStagesGPOpen 1\nStagesSecret 1\n\n";
     f << "; --- New Flag Clearing ---\n";
@@ -100,5 +100,6 @@ void Init()
 BOOL APIENTRY DllMain(HMODULE hModule, DWORD reason, LPVOID)
 {
     if (reason == DLL_PROCESS_ATTACH) { DisableThreadLibraryCalls(hModule); CurrentModule = hModule; CreateThread(nullptr, 0, (LPTHREAD_START_ROUTINE)Init, CurrentModule, 0, nullptr); }
+    else if (reason == DLL_PROCESS_DETACH) { if (cfg.Console) FreeConsole(); }
     return TRUE;
 }
