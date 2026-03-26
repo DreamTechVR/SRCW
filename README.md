@@ -46,6 +46,8 @@ The unlocker runs automatically or on hot key when the game loads and:
 > Requires Visual Studio (C++)
 
 1. Clone the repository:
+git clone https://github.com/HAWGT/SRCW.git
+or
 git clone https://github.com/Glitxhhh/SonicUnlocker.git
 
 2. Open the solution in Visual Studio  
