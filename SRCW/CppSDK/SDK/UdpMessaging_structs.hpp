@@ -33,9 +33,7 @@ struct FUdpMockMessage final
 public:
 	TArray<uint8>                                 Data;                                              // 0x0000(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FUdpMockMessage) == 0x000008, "Wrong alignment on FUdpMockMessage");
-static_assert(sizeof(FUdpMockMessage) == 0x000010, "Wrong size on FUdpMockMessage");
-static_assert(offsetof(FUdpMockMessage, Data) == 0x000000, "Member 'FUdpMockMessage::Data' has a wrong offset!");
+DUMPER7_ASSERTS_FUdpMockMessage;
 
 }
 

@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"HandKeypointConversion">();
+		STATIC_CLASS_IMPL("HandKeypointConversion")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HandKeypointConversion")
 	}
 	static class UHandKeypointConversion* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHandKeypointConversion>();
 	}
 };
-static_assert(alignof(UHandKeypointConversion) == 0x000008, "Wrong alignment on UHandKeypointConversion");
-static_assert(sizeof(UHandKeypointConversion) == 0x000028, "Wrong size on UHandKeypointConversion");
+DUMPER7_ASSERTS_UHandKeypointConversion;
 
 // Class HeadMountedDisplay.MotionControllerComponent
 // 0x0140 (0x0660 - 0x0520)
@@ -67,18 +70,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MotionControllerComponent">();
+		STATIC_CLASS_IMPL("MotionControllerComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MotionControllerComponent")
 	}
 	static class UMotionControllerComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMotionControllerComponent>();
 	}
 };
-static_assert(alignof(UMotionControllerComponent) == 0x000010, "Wrong alignment on UMotionControllerComponent");
-static_assert(sizeof(UMotionControllerComponent) == 0x000660, "Wrong size on UMotionControllerComponent");
-static_assert(offsetof(UMotionControllerComponent, PlayerIndex) == 0x000518, "Member 'UMotionControllerComponent::PlayerIndex' has a wrong offset!");
-static_assert(offsetof(UMotionControllerComponent, MotionSource) == 0x00051C, "Member 'UMotionControllerComponent::MotionSource' has a wrong offset!");
-static_assert(offsetof(UMotionControllerComponent, CurrentTrackingStatus) == 0x000528, "Member 'UMotionControllerComponent::CurrentTrackingStatus' has a wrong offset!");
+DUMPER7_ASSERTS_UMotionControllerComponent;
 
 }
 

@@ -29,17 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NamedInterfaces">();
+		STATIC_CLASS_IMPL("NamedInterfaces")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NamedInterfaces")
 	}
 	static class UNamedInterfaces* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNamedInterfaces>();
 	}
 };
-static_assert(alignof(UNamedInterfaces) == 0x000008, "Wrong alignment on UNamedInterfaces");
-static_assert(sizeof(UNamedInterfaces) == 0x000060, "Wrong size on UNamedInterfaces");
-static_assert(offsetof(UNamedInterfaces, NamedInterfaces) == 0x000028, "Member 'UNamedInterfaces::NamedInterfaces' has a wrong offset!");
-static_assert(offsetof(UNamedInterfaces, NamedInterfaceDefs) == 0x000038, "Member 'UNamedInterfaces::NamedInterfaceDefs' has a wrong offset!");
+DUMPER7_ASSERTS_UNamedInterfaces;
 
 // Class OnlineSubsystem.TurnBasedMatchInterface
 // 0x0000 (0x0000 - 0x0000)
@@ -52,7 +53,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TurnBasedMatchInterface">();
+		STATIC_CLASS_IMPL("TurnBasedMatchInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TurnBasedMatchInterface")
 	}
 	static class ITurnBasedMatchInterface* GetDefaultObj()
 	{
@@ -68,8 +73,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(ITurnBasedMatchInterface) == 0x000001, "Wrong alignment on ITurnBasedMatchInterface");
-static_assert(sizeof(ITurnBasedMatchInterface) == 0x000001, "Wrong size on ITurnBasedMatchInterface");
+DUMPER7_ASSERTS_ITurnBasedMatchInterface;
 
 }
 

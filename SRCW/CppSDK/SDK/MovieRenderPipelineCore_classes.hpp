@@ -10,13 +10,13 @@
 
 #include "Basic.hpp"
 
-#include "MovieRenderPipelineCore_structs.hpp"
 #include "StructUtils_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "CoreUObject_classes.hpp"
+#include "UMG_classes.hpp"
+#include "MovieRenderPipelineCore_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "UMG_classes.hpp"
 #include "DeveloperSettings_classes.hpp"
 #include "OpenColorIO_structs.hpp"
 
@@ -30,8 +30,8 @@ class UMovieGraphNode : public UObject
 {
 public:
 	uint8                                         Pad_28[0x18];                                      // 0x0028(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UMovieGraphPin*>                 InputPins;                                         // 0x0040(0x0010)(ZeroConstructor, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
-	TArray<class UMovieGraphPin*>                 OutputPins;                                        // 0x0050(0x0010)(ZeroConstructor, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
+	TArray<class UMovieGraphPin*>                 InputPins;                                         // 0x0040(0x0010)(ZeroConstructor, Protected, UObjectWrapper, NativeAccessSpecifierProtected, TObjectPtr)
+	TArray<class UMovieGraphPin*>                 OutputPins;                                        // 0x0050(0x0010)(ZeroConstructor, Protected, UObjectWrapper, NativeAccessSpecifierProtected, TObjectPtr)
 	struct FInstancedPropertyBag                  DynamicProperties;                                 // 0x0060(0x0010)(Edit, Protected, NativeAccessSpecifierProtected)
 	TArray<struct FMovieGraphPropertyInfo>        ExposedPropertyInfo;                               // 0x0070(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
 	uint8                                         bIsDisabled : 1;                                   // 0x0080(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
@@ -49,20 +49,38 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphNode">();
+		STATIC_CLASS_IMPL("MovieGraphNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphNode")
 	}
 	static class UMovieGraphNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphNode>();
 	}
 };
-static_assert(alignof(UMovieGraphNode) == 0x000008, "Wrong alignment on UMovieGraphNode");
-static_assert(sizeof(UMovieGraphNode) == 0x000098, "Wrong size on UMovieGraphNode");
-static_assert(offsetof(UMovieGraphNode, InputPins) == 0x000040, "Member 'UMovieGraphNode::InputPins' has a wrong offset!");
-static_assert(offsetof(UMovieGraphNode, OutputPins) == 0x000050, "Member 'UMovieGraphNode::OutputPins' has a wrong offset!");
-static_assert(offsetof(UMovieGraphNode, DynamicProperties) == 0x000060, "Member 'UMovieGraphNode::DynamicProperties' has a wrong offset!");
-static_assert(offsetof(UMovieGraphNode, ExposedPropertyInfo) == 0x000070, "Member 'UMovieGraphNode::ExposedPropertyInfo' has a wrong offset!");
-static_assert(offsetof(UMovieGraphNode, Guid) == 0x000084, "Member 'UMovieGraphNode::Guid' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieGraphNode;
+
+// Class MovieRenderPipelineCore.MoviePipelineGameMode
+// 0x0000 (0x0328 - 0x0328)
+class AMoviePipelineGameMode final : public AGameModeBase
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MoviePipelineGameMode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MoviePipelineGameMode")
+	}
+	static class AMoviePipelineGameMode* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<AMoviePipelineGameMode>();
+	}
+};
+DUMPER7_ASSERTS_AMoviePipelineGameMode;
 
 // Class MovieRenderPipelineCore.MovieGraphSettingNode
 // 0x0000 (0x0098 - 0x0098)
@@ -71,15 +89,18 @@ class UMovieGraphSettingNode : public UMovieGraphNode
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphSettingNode">();
+		STATIC_CLASS_IMPL("MovieGraphSettingNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphSettingNode")
 	}
 	static class UMovieGraphSettingNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphSettingNode>();
 	}
 };
-static_assert(alignof(UMovieGraphSettingNode) == 0x000008, "Wrong alignment on UMovieGraphSettingNode");
-static_assert(sizeof(UMovieGraphSettingNode) == 0x000098, "Wrong size on UMovieGraphSettingNode");
+DUMPER7_ASSERTS_UMovieGraphSettingNode;
 
 // Class MovieRenderPipelineCore.MovieGraphApplyCVarPresetNode
 // 0x0018 (0x00B0 - 0x0098)
@@ -93,16 +114,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphApplyCVarPresetNode">();
+		STATIC_CLASS_IMPL("MovieGraphApplyCVarPresetNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphApplyCVarPresetNode")
 	}
 	static class UMovieGraphApplyCVarPresetNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphApplyCVarPresetNode>();
 	}
 };
-static_assert(alignof(UMovieGraphApplyCVarPresetNode) == 0x000008, "Wrong alignment on UMovieGraphApplyCVarPresetNode");
-static_assert(sizeof(UMovieGraphApplyCVarPresetNode) == 0x0000B0, "Wrong size on UMovieGraphApplyCVarPresetNode");
-static_assert(offsetof(UMovieGraphApplyCVarPresetNode, ConsoleVariablePreset) == 0x0000A0, "Member 'UMovieGraphApplyCVarPresetNode::ConsoleVariablePreset' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieGraphApplyCVarPresetNode;
 
 // Class MovieRenderPipelineCore.MovieGraphFileOutputNode
 // 0x0018 (0x00B0 - 0x0098)
@@ -116,16 +139,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphFileOutputNode">();
+		STATIC_CLASS_IMPL("MovieGraphFileOutputNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphFileOutputNode")
 	}
 	static class UMovieGraphFileOutputNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphFileOutputNode>();
 	}
 };
-static_assert(alignof(UMovieGraphFileOutputNode) == 0x000008, "Wrong alignment on UMovieGraphFileOutputNode");
-static_assert(sizeof(UMovieGraphFileOutputNode) == 0x0000B0, "Wrong size on UMovieGraphFileOutputNode");
-static_assert(offsetof(UMovieGraphFileOutputNode, FileNameFormat) == 0x0000A0, "Member 'UMovieGraphFileOutputNode::FileNameFormat' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieGraphFileOutputNode;
 
 // Class MovieRenderPipelineCore.MovieGraphAudioOutputNode
 // 0x0010 (0x00C0 - 0x00B0)
@@ -137,15 +162,84 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphAudioOutputNode">();
+		STATIC_CLASS_IMPL("MovieGraphAudioOutputNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphAudioOutputNode")
 	}
 	static class UMovieGraphAudioOutputNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphAudioOutputNode>();
 	}
 };
-static_assert(alignof(UMovieGraphAudioOutputNode) == 0x000008, "Wrong alignment on UMovieGraphAudioOutputNode");
-static_assert(sizeof(UMovieGraphAudioOutputNode) == 0x0000C0, "Wrong size on UMovieGraphAudioOutputNode");
+DUMPER7_ASSERTS_UMovieGraphAudioOutputNode;
+
+// Class MovieRenderPipelineCore.MoviePipelineSetting
+// 0x0020 (0x0048 - 0x0028)
+class UMoviePipelineSetting : public UObject
+{
+public:
+	TWeakObjectPtr<class UMoviePipeline>          CachedPipeline;                                    // 0x0028(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          bEnabled;                                          // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_31[0x17];                                      // 0x0031(0x0017)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void SetIsEnabled(bool bInEnabled);
+
+	void BuildNewProcessCommandLine(class FString& InOutUnrealURLParams, class FString& InOutCommandLineArgs) const;
+	void BuildNewProcessCommandLineArgs(TArray<class FString>& InOutUnrealURLParams, TArray<class FString>& InOutCommandLineArgs, TArray<class FString>& InOutDeviceProfileCvars, TArray<class FString>& InOutExecCmds) const;
+	bool IsEnabled() const;
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MoviePipelineSetting")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MoviePipelineSetting")
+	}
+	static class UMoviePipelineSetting* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMoviePipelineSetting>();
+	}
+};
+DUMPER7_ASSERTS_UMoviePipelineSetting;
+
+// Class MovieRenderPipelineCore.MoviePipelineSetting_BlueprintBase
+// 0x0018 (0x0060 - 0x0048)
+class UMoviePipelineSetting_BlueprintBase final : public UMoviePipelineSetting
+{
+public:
+	class FText                                   CategoryText;                                      // 0x0048(0x0010)(Edit, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
+	bool                                          bIsValidOnPrimary;                                 // 0x0058(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bIsValidOnShots;                                   // 0x0059(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bCanBeDisabled;                                    // 0x005A(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_5B[0x5];                                       // 0x005B(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void OnEngineTickBeginFrame();
+	void ReceiveSetupForPipelineImpl(class UMoviePipeline* InPipeline);
+	void ReceiveTeardownForPipelineImpl(class UMoviePipeline* InPipeline);
+
+	struct FMoviePipelineFormatArgs ReceiveGetFormatArguments(struct FMoviePipelineFormatArgs& InOutFormatArgs) const;
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MoviePipelineSetting_BlueprintBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MoviePipelineSetting_BlueprintBase")
+	}
+	static class UMoviePipelineSetting_BlueprintBase* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMoviePipelineSetting_BlueprintBase>();
+	}
+};
+DUMPER7_ASSERTS_UMoviePipelineSetting_BlueprintBase;
 
 // Class MovieRenderPipelineCore.MovieGraphBlueprintLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -182,15 +276,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphBlueprintLibrary">();
+		STATIC_CLASS_IMPL("MovieGraphBlueprintLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphBlueprintLibrary")
 	}
 	static class UMovieGraphBlueprintLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphBlueprintLibrary>();
 	}
 };
-static_assert(alignof(UMovieGraphBlueprintLibrary) == 0x000008, "Wrong alignment on UMovieGraphBlueprintLibrary");
-static_assert(sizeof(UMovieGraphBlueprintLibrary) == 0x000028, "Wrong size on UMovieGraphBlueprintLibrary");
+DUMPER7_ASSERTS_UMovieGraphBlueprintLibrary;
 
 // Class MovieRenderPipelineCore.MovieGraphBranchNode
 // 0x0000 (0x0098 - 0x0098)
@@ -199,15 +296,18 @@ class UMovieGraphBranchNode final : public UMovieGraphNode
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphBranchNode">();
+		STATIC_CLASS_IMPL("MovieGraphBranchNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphBranchNode")
 	}
 	static class UMovieGraphBranchNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphBranchNode>();
 	}
 };
-static_assert(alignof(UMovieGraphBranchNode) == 0x000008, "Wrong alignment on UMovieGraphBranchNode");
-static_assert(sizeof(UMovieGraphBranchNode) == 0x000098, "Wrong size on UMovieGraphBranchNode");
+DUMPER7_ASSERTS_UMovieGraphBranchNode;
 
 // Class MovieRenderPipelineCore.MovieGraphRenderPassNode
 // 0x0000 (0x0098 - 0x0098)
@@ -216,15 +316,18 @@ class UMovieGraphRenderPassNode : public UMovieGraphSettingNode
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphRenderPassNode">();
+		STATIC_CLASS_IMPL("MovieGraphRenderPassNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphRenderPassNode")
 	}
 	static class UMovieGraphRenderPassNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphRenderPassNode>();
 	}
 };
-static_assert(alignof(UMovieGraphRenderPassNode) == 0x000008, "Wrong alignment on UMovieGraphRenderPassNode");
-static_assert(sizeof(UMovieGraphRenderPassNode) == 0x000098, "Wrong size on UMovieGraphRenderPassNode");
+DUMPER7_ASSERTS_UMovieGraphRenderPassNode;
 
 // Class MovieRenderPipelineCore.MovieGraphWidgetRendererBaseNode
 // 0x0078 (0x0110 - 0x0098)
@@ -238,16 +341,97 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphWidgetRendererBaseNode">();
+		STATIC_CLASS_IMPL("MovieGraphWidgetRendererBaseNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphWidgetRendererBaseNode")
 	}
 	static class UMovieGraphWidgetRendererBaseNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphWidgetRendererBaseNode>();
 	}
 };
-static_assert(alignof(UMovieGraphWidgetRendererBaseNode) == 0x000008, "Wrong alignment on UMovieGraphWidgetRendererBaseNode");
-static_assert(sizeof(UMovieGraphWidgetRendererBaseNode) == 0x000110, "Wrong size on UMovieGraphWidgetRendererBaseNode");
-static_assert(offsetof(UMovieGraphWidgetRendererBaseNode, bCompositeOntoFinalImage) == 0x000099, "Member 'UMovieGraphWidgetRendererBaseNode::bCompositeOntoFinalImage' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieGraphWidgetRendererBaseNode;
+
+// Class MovieRenderPipelineCore.MoviePipelineBase
+// 0x0050 (0x0078 - 0x0028)
+class UMoviePipelineBase : public UObject
+{
+public:
+	TMulticastInlineDelegate<void(const struct FMoviePipelineOutputData& Results)> OnMoviePipelineWorkFinishedDelegate; // 0x0028(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FMoviePipelineOutputData& Results)> OnMoviePipelineShotWorkFinishedDelegate; // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_48[0x30];                                      // 0x0048(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void RequestShutdown(bool bIsError);
+	void Shutdown(bool bIsError);
+
+	EMovieRenderPipelineState GetPipelineState() const;
+	bool IsShutdownRequested() const;
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MoviePipelineBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MoviePipelineBase")
+	}
+	static class UMoviePipelineBase* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMoviePipelineBase>();
+	}
+};
+DUMPER7_ASSERTS_UMoviePipelineBase;
+
+// Class MovieRenderPipelineCore.MoviePipeline
+// 0x03A8 (0x0420 - 0x0078)
+class UMoviePipeline final : public UMoviePipelineBase
+{
+public:
+	TMulticastInlineDelegate<void(class UMoviePipeline* MoviePipeline, bool bFatalError)> OnMoviePipelineFinishedDelegate; // 0x0078(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	class UMoviePipelineCustomTimeStep*           CustomTimeStep;                                    // 0x0088(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, PersistentInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
+	uint8                                         Pad_90[0x10];                                      // 0x0090(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	class UEngineCustomTimeStep*                  CachedPrevCustomTimeStep;                          // 0x00A0(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
+	class ULevelSequence*                         TargetSequence;                                    // 0x00A8(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
+	class ALevelSequenceActor*                    LevelSequenceActor;                                // 0x00B0(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
+	class UMovieRenderDebugWidget*                DebugWidget;                                       // 0x00B8(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
+	class UTexture*                               PreviewTexture;                                    // 0x00C0(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
+	uint8                                         Pad_C8[0x260];                                     // 0x00C8(0x0260)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UMovieRenderDebugWidget>    DebugWidgetClass;                                  // 0x0328(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_330[0x8];                                      // 0x0330(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMoviePipelineExecutorJob*              CurrentJob;                                        // 0x0338(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
+	uint8                                         Pad_340[0xE0];                                     // 0x0340(0x00E0)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void Initialize(class UMoviePipelineExecutorJob* InJob);
+	void OnMoviePipelineFinishedImpl();
+	void SetInitializationTime(const struct FDateTime& InDateTime);
+
+	class UMoviePipelineExecutorJob* GetCurrentJob() const;
+	struct FDateTime GetInitializationTime() const;
+	struct FTimespan GetInitializationTimeOffset() const;
+	class UMoviePipelinePrimaryConfig* GetPipelineMasterConfig() const;
+	class UMoviePipelinePrimaryConfig* GetPipelinePrimaryConfig() const;
+	class UTexture* GetPreviewTexture() const;
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MoviePipeline")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MoviePipeline")
+	}
+	static class UMoviePipeline* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMoviePipeline>();
+	}
+};
+DUMPER7_ASSERTS_UMoviePipeline;
 
 // Class MovieRenderPipelineCore.MovieGraphBurnInNode
 // 0x0078 (0x0188 - 0x0110)
@@ -257,42 +441,23 @@ public:
 	uint8                                         bOverride_BurnInClass : 1;                         // 0x0110(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         Pad_111[0x7];                                      // 0x0111(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSoftClassPath                         BurnInClass;                                       // 0x0118(0x0020)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMap<class UClass*, class UMovieGraphBurnInWidget*> BurnInWidgetInstances;                       // 0x0138(0x0050)(ExportObject, Transient, ContainsInstancedReference, UObjectWrapper, NativeAccessSpecifierPrivate)
+	TMap<class UClass*, class UMovieGraphBurnInWidget*> BurnInWidgetInstances;                       // 0x0138(0x0050)(ExportObject, Transient, ContainsInstancedReference, UObjectWrapper, NativeAccessSpecifierPrivate, TObjectPtr)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphBurnInNode">();
+		STATIC_CLASS_IMPL("MovieGraphBurnInNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphBurnInNode")
 	}
 	static class UMovieGraphBurnInNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphBurnInNode>();
 	}
 };
-static_assert(alignof(UMovieGraphBurnInNode) == 0x000008, "Wrong alignment on UMovieGraphBurnInNode");
-static_assert(sizeof(UMovieGraphBurnInNode) == 0x000188, "Wrong size on UMovieGraphBurnInNode");
-static_assert(offsetof(UMovieGraphBurnInNode, BurnInClass) == 0x000118, "Member 'UMovieGraphBurnInNode::BurnInClass' has a wrong offset!");
-static_assert(offsetof(UMovieGraphBurnInNode, BurnInWidgetInstances) == 0x000138, "Member 'UMovieGraphBurnInNode::BurnInWidgetInstances' has a wrong offset!");
-
-// Class MovieRenderPipelineCore.MoviePipelineCustomTimeStep
-// 0x0010 (0x0038 - 0x0028)
-class UMoviePipelineCustomTimeStep final : public UEngineCustomTimeStep
-{
-public:
-	uint8                                         Pad_28[0x10];                                      // 0x0028(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"MoviePipelineCustomTimeStep">();
-	}
-	static class UMoviePipelineCustomTimeStep* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMoviePipelineCustomTimeStep>();
-	}
-};
-static_assert(alignof(UMoviePipelineCustomTimeStep) == 0x000008, "Wrong alignment on UMoviePipelineCustomTimeStep");
-static_assert(sizeof(UMoviePipelineCustomTimeStep) == 0x000038, "Wrong size on UMoviePipelineCustomTimeStep");
+DUMPER7_ASSERTS_UMovieGraphBurnInNode;
 
 // Class MovieRenderPipelineCore.MovieGraphBurnInWidget
 // 0x0000 (0x02E0 - 0x02E0)
@@ -304,15 +469,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphBurnInWidget">();
+		STATIC_CLASS_IMPL("MovieGraphBurnInWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphBurnInWidget")
 	}
 	static class UMovieGraphBurnInWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphBurnInWidget>();
 	}
 };
-static_assert(alignof(UMovieGraphBurnInWidget) == 0x000008, "Wrong alignment on UMovieGraphBurnInWidget");
-static_assert(sizeof(UMovieGraphBurnInWidget) == 0x0002E0, "Wrong size on UMovieGraphBurnInWidget");
+DUMPER7_ASSERTS_UMovieGraphBurnInWidget;
 
 // Class MovieRenderPipelineCore.MovieGraphCameraSettingNode
 // 0x0008 (0x00A0 - 0x0098)
@@ -328,17 +496,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphCameraSettingNode">();
+		STATIC_CLASS_IMPL("MovieGraphCameraSettingNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphCameraSettingNode")
 	}
 	static class UMovieGraphCameraSettingNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphCameraSettingNode>();
 	}
 };
-static_assert(alignof(UMovieGraphCameraSettingNode) == 0x000008, "Wrong alignment on UMovieGraphCameraSettingNode");
-static_assert(sizeof(UMovieGraphCameraSettingNode) == 0x0000A0, "Wrong size on UMovieGraphCameraSettingNode");
-static_assert(offsetof(UMovieGraphCameraSettingNode, ShutterTiming) == 0x000099, "Member 'UMovieGraphCameraSettingNode::ShutterTiming' has a wrong offset!");
-static_assert(offsetof(UMovieGraphCameraSettingNode, OverscanPercentage) == 0x00009C, "Member 'UMovieGraphCameraSettingNode::OverscanPercentage' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieGraphCameraSettingNode;
 
 // Class MovieRenderPipelineCore.MovieGraphCollectionNode
 // 0x0010 (0x00A8 - 0x0098)
@@ -347,21 +516,48 @@ class UMovieGraphCollectionNode final : public UMovieGraphSettingNode
 public:
 	uint8                                         bOverride_Collection : 1;                          // 0x0098(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         Pad_99[0x7];                                       // 0x0099(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMovieGraphCollection*                  Collection;                                        // 0x00A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, EditConst, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMovieGraphCollection*                  Collection;                                        // 0x00A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, EditConst, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphCollectionNode">();
+		STATIC_CLASS_IMPL("MovieGraphCollectionNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphCollectionNode")
 	}
 	static class UMovieGraphCollectionNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphCollectionNode>();
 	}
 };
-static_assert(alignof(UMovieGraphCollectionNode) == 0x000008, "Wrong alignment on UMovieGraphCollectionNode");
-static_assert(sizeof(UMovieGraphCollectionNode) == 0x0000A8, "Wrong size on UMovieGraphCollectionNode");
-static_assert(offsetof(UMovieGraphCollectionNode, Collection) == 0x0000A0, "Member 'UMovieGraphCollectionNode::Collection' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieGraphCollectionNode;
+
+// Class MovieRenderPipelineCore.MoviePipelineColorSetting
+// 0x00A8 (0x00F0 - 0x0048)
+class UMoviePipelineColorSetting final : public UMoviePipelineSetting
+{
+public:
+	struct FOpenColorIODisplayConfiguration       OCIOConfiguration;                                 // 0x0048(0x00A0)(Edit, BlueprintVisible, AdvancedDisplay, NativeAccessSpecifierPublic)
+	bool                                          bDisableToneCurve;                                 // 0x00E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_E9[0x7];                                       // 0x00E9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MoviePipelineColorSetting")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MoviePipelineColorSetting")
+	}
+	static class UMoviePipelineColorSetting* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMoviePipelineColorSetting>();
+	}
+};
+DUMPER7_ASSERTS_UMoviePipelineColorSetting;
 
 // Class MovieRenderPipelineCore.MovieGraphCommandLineEncoderNode
 // 0x00A0 (0x0138 - 0x0098)
@@ -398,90 +594,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphCommandLineEncoderNode">();
+		STATIC_CLASS_IMPL("MovieGraphCommandLineEncoderNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphCommandLineEncoderNode")
 	}
 	static class UMovieGraphCommandLineEncoderNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphCommandLineEncoderNode>();
 	}
 };
-static_assert(alignof(UMovieGraphCommandLineEncoderNode) == 0x000008, "Wrong alignment on UMovieGraphCommandLineEncoderNode");
-static_assert(sizeof(UMovieGraphCommandLineEncoderNode) == 0x000138, "Wrong size on UMovieGraphCommandLineEncoderNode");
-static_assert(offsetof(UMovieGraphCommandLineEncoderNode, FileNameFormat) == 0x0000A8, "Member 'UMovieGraphCommandLineEncoderNode::FileNameFormat' has a wrong offset!");
-static_assert(offsetof(UMovieGraphCommandLineEncoderNode, bDeleteSourceFiles) == 0x0000B8, "Member 'UMovieGraphCommandLineEncoderNode::bDeleteSourceFiles' has a wrong offset!");
-static_assert(offsetof(UMovieGraphCommandLineEncoderNode, bSkipEncodeOnRenderCanceled) == 0x0000B9, "Member 'UMovieGraphCommandLineEncoderNode::bSkipEncodeOnRenderCanceled' has a wrong offset!");
-static_assert(offsetof(UMovieGraphCommandLineEncoderNode, VideoCodec) == 0x0000C0, "Member 'UMovieGraphCommandLineEncoderNode::VideoCodec' has a wrong offset!");
-static_assert(offsetof(UMovieGraphCommandLineEncoderNode, AudioCodec) == 0x0000D0, "Member 'UMovieGraphCommandLineEncoderNode::AudioCodec' has a wrong offset!");
-static_assert(offsetof(UMovieGraphCommandLineEncoderNode, OutputFileExtension) == 0x0000E0, "Member 'UMovieGraphCommandLineEncoderNode::OutputFileExtension' has a wrong offset!");
-static_assert(offsetof(UMovieGraphCommandLineEncoderNode, CommandLineFormat) == 0x0000F0, "Member 'UMovieGraphCommandLineEncoderNode::CommandLineFormat' has a wrong offset!");
-static_assert(offsetof(UMovieGraphCommandLineEncoderNode, VideoInputStringFormat) == 0x000100, "Member 'UMovieGraphCommandLineEncoderNode::VideoInputStringFormat' has a wrong offset!");
-static_assert(offsetof(UMovieGraphCommandLineEncoderNode, AudioInputStringFormat) == 0x000110, "Member 'UMovieGraphCommandLineEncoderNode::AudioInputStringFormat' has a wrong offset!");
-static_assert(offsetof(UMovieGraphCommandLineEncoderNode, EncodeSettings) == 0x000120, "Member 'UMovieGraphCommandLineEncoderNode::EncodeSettings' has a wrong offset!");
-static_assert(offsetof(UMovieGraphCommandLineEncoderNode, bRetainInputTextFiles) == 0x000130, "Member 'UMovieGraphCommandLineEncoderNode::bRetainInputTextFiles' has a wrong offset!");
-
-// Class MovieRenderPipelineCore.MoviePipelineSetting
-// 0x0020 (0x0048 - 0x0028)
-class UMoviePipelineSetting : public UObject
-{
-public:
-	TWeakObjectPtr<class UMoviePipeline>          CachedPipeline;                                    // 0x0028(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          bEnabled;                                          // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_31[0x17];                                      // 0x0031(0x0017)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	void SetIsEnabled(bool bInEnabled);
-
-	void BuildNewProcessCommandLine(class FString& InOutUnrealURLParams, class FString& InOutCommandLineArgs) const;
-	void BuildNewProcessCommandLineArgs(TArray<class FString>& InOutUnrealURLParams, TArray<class FString>& InOutCommandLineArgs, TArray<class FString>& InOutDeviceProfileCvars, TArray<class FString>& InOutExecCmds) const;
-	bool IsEnabled() const;
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"MoviePipelineSetting">();
-	}
-	static class UMoviePipelineSetting* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMoviePipelineSetting>();
-	}
-};
-static_assert(alignof(UMoviePipelineSetting) == 0x000008, "Wrong alignment on UMoviePipelineSetting");
-static_assert(sizeof(UMoviePipelineSetting) == 0x000048, "Wrong size on UMoviePipelineSetting");
-static_assert(offsetof(UMoviePipelineSetting, CachedPipeline) == 0x000028, "Member 'UMoviePipelineSetting::CachedPipeline' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineSetting, bEnabled) == 0x000030, "Member 'UMoviePipelineSetting::bEnabled' has a wrong offset!");
-
-// Class MovieRenderPipelineCore.MoviePipelineCommandLineEncoder
-// 0x0040 (0x0088 - 0x0048)
-class UMoviePipelineCommandLineEncoder final : public UMoviePipelineSetting
-{
-public:
-	class FString                                 FileNameFormatOverride;                            // 0x0048(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EMoviePipelineEncodeQuality                   Quality;                                           // 0x0058(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 AdditionalCommandLineArgs;                         // 0x0060(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bDeleteSourceFiles;                                // 0x0070(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bSkipEncodeOnRenderCanceled;                       // 0x0071(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bWriteEachFrameDuration;                           // 0x0072(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_73[0x15];                                      // 0x0073(0x0015)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"MoviePipelineCommandLineEncoder">();
-	}
-	static class UMoviePipelineCommandLineEncoder* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMoviePipelineCommandLineEncoder>();
-	}
-};
-static_assert(alignof(UMoviePipelineCommandLineEncoder) == 0x000008, "Wrong alignment on UMoviePipelineCommandLineEncoder");
-static_assert(sizeof(UMoviePipelineCommandLineEncoder) == 0x000088, "Wrong size on UMoviePipelineCommandLineEncoder");
-static_assert(offsetof(UMoviePipelineCommandLineEncoder, FileNameFormatOverride) == 0x000048, "Member 'UMoviePipelineCommandLineEncoder::FileNameFormatOverride' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineCommandLineEncoder, Quality) == 0x000058, "Member 'UMoviePipelineCommandLineEncoder::Quality' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineCommandLineEncoder, AdditionalCommandLineArgs) == 0x000060, "Member 'UMoviePipelineCommandLineEncoder::AdditionalCommandLineArgs' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineCommandLineEncoder, bDeleteSourceFiles) == 0x000070, "Member 'UMoviePipelineCommandLineEncoder::bDeleteSourceFiles' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineCommandLineEncoder, bSkipEncodeOnRenderCanceled) == 0x000071, "Member 'UMoviePipelineCommandLineEncoder::bSkipEncodeOnRenderCanceled' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineCommandLineEncoder, bWriteEachFrameDuration) == 0x000072, "Member 'UMoviePipelineCommandLineEncoder::bWriteEachFrameDuration' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieGraphCommandLineEncoderNode;
 
 // Class MovieRenderPipelineCore.MovieGraphValueContainer
 // 0x0018 (0x0040 - 0x0028)
@@ -529,17 +653,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphValueContainer">();
+		STATIC_CLASS_IMPL("MovieGraphValueContainer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphValueContainer")
 	}
 	static class UMovieGraphValueContainer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphValueContainer>();
 	}
 };
-static_assert(alignof(UMovieGraphValueContainer) == 0x000008, "Wrong alignment on UMovieGraphValueContainer");
-static_assert(sizeof(UMovieGraphValueContainer) == 0x000040, "Wrong size on UMovieGraphValueContainer");
-static_assert(offsetof(UMovieGraphValueContainer, PropertyName) == 0x000028, "Member 'UMovieGraphValueContainer::PropertyName' has a wrong offset!");
-static_assert(offsetof(UMovieGraphValueContainer, Value) == 0x000030, "Member 'UMovieGraphValueContainer::Value' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieGraphValueContainer;
 
 // Class MovieRenderPipelineCore.MovieGraphMember
 // 0x0038 (0x0078 - 0x0040)
@@ -561,19 +686,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphMember">();
+		STATIC_CLASS_IMPL("MovieGraphMember")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphMember")
 	}
 	static class UMovieGraphMember* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphMember>();
 	}
 };
-static_assert(alignof(UMovieGraphMember) == 0x000008, "Wrong alignment on UMovieGraphMember");
-static_assert(sizeof(UMovieGraphMember) == 0x000078, "Wrong size on UMovieGraphMember");
-static_assert(offsetof(UMovieGraphMember, Description) == 0x000040, "Member 'UMovieGraphMember::Description' has a wrong offset!");
-static_assert(offsetof(UMovieGraphMember, Name_0) == 0x000050, "Member 'UMovieGraphMember::Name_0' has a wrong offset!");
-static_assert(offsetof(UMovieGraphMember, Guid) == 0x000060, "Member 'UMovieGraphMember::Guid' has a wrong offset!");
-static_assert(offsetof(UMovieGraphMember, bIsEditable) == 0x000070, "Member 'UMovieGraphMember::bIsEditable' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieGraphMember;
 
 // Class MovieRenderPipelineCore.MovieGraphVariable
 // 0x0000 (0x0078 - 0x0078)
@@ -582,15 +706,18 @@ class UMovieGraphVariable : public UMovieGraphMember
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphVariable">();
+		STATIC_CLASS_IMPL("MovieGraphVariable")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphVariable")
 	}
 	static class UMovieGraphVariable* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphVariable>();
 	}
 };
-static_assert(alignof(UMovieGraphVariable) == 0x000008, "Wrong alignment on UMovieGraphVariable");
-static_assert(sizeof(UMovieGraphVariable) == 0x000078, "Wrong size on UMovieGraphVariable");
+DUMPER7_ASSERTS_UMovieGraphVariable;
 
 // Class MovieRenderPipelineCore.MovieGraphGlobalVariable
 // 0x0000 (0x0078 - 0x0078)
@@ -599,72 +726,18 @@ class UMovieGraphGlobalVariable : public UMovieGraphVariable
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphGlobalVariable">();
+		STATIC_CLASS_IMPL("MovieGraphGlobalVariable")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphGlobalVariable")
 	}
 	static class UMovieGraphGlobalVariable* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphGlobalVariable>();
 	}
 };
-static_assert(alignof(UMovieGraphGlobalVariable) == 0x000008, "Wrong alignment on UMovieGraphGlobalVariable");
-static_assert(sizeof(UMovieGraphGlobalVariable) == 0x000078, "Wrong size on UMovieGraphGlobalVariable");
-
-// Class MovieRenderPipelineCore.MoviePipelineExecutorBase
-// 0x00F0 (0x0118 - 0x0028)
-class UMoviePipelineExecutorBase : public UObject
-{
-public:
-	TMulticastInlineDelegate<void(class UMoviePipelineExecutorBase* PipelineExecutor, bool bSuccess)> OnExecutorFinishedDelegate; // 0x0028(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_38[0x18];                                      // 0x0038(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(class UMoviePipelineExecutorBase* PipelineExecutor, class UMoviePipeline* PipelineWithError, bool bIsFatal, class FText ErrorText)> OnExecutorErroredDelegate; // 0x0050(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_60[0x20];                                      // 0x0060(0x0020)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(const class FString& Message)> SocketMessageRecievedDelegate;      // 0x0080(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, Protected, NativeAccessSpecifierProtected)
-	TMulticastInlineDelegate<void(int32 RequestIndex, int32 ResponseCode, const class FString& Message)> HTTPResponseRecievedDelegate; // 0x0090(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, Protected, NativeAccessSpecifierProtected)
-	TSubclassOf<class UMovieRenderDebugWidget>    DebugWidgetClass;                                  // 0x00A0(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_A8[0x10];                                      // 0x00A8(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 UserData;                                          // 0x00B8(0x0010)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UMoviePipeline>             TargetPipelineClass;                               // 0x00C8(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_D0[0x48];                                      // 0x00D0(0x0048)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	void CancelAllJobs();
-	void CancelCurrentJob();
-	bool ConnectSocket(const class FString& InHostName, const int32 InPort);
-	void DisconnectSocket();
-	void Execute(class UMoviePipelineQueue* InPipelineQueue);
-	void OnBeginFrame();
-	void OnExecutorErroredImpl(class UMoviePipeline* ErroredPipeline, bool bFatal, const class FText& ErrorReason);
-	void OnExecutorFinishedImpl();
-	int32 SendHTTPRequest(const class FString& InURL, const class FString& InVerb, const class FString& InMessage, const TMap<class FString, class FString>& InHeaders);
-	bool SendSocketMessage(const class FString& InMessage);
-	void SetMoviePipelineClass(class UClass* InPipelineClass);
-	void SetStatusMessage(const class FString& InStatus);
-	void SetStatusProgress(const float InProgress);
-
-	class FString GetStatusMessage() const;
-	float GetStatusProgress() const;
-	bool IsRendering() const;
-	bool IsSocketConnected() const;
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"MoviePipelineExecutorBase">();
-	}
-	static class UMoviePipelineExecutorBase* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMoviePipelineExecutorBase>();
-	}
-};
-static_assert(alignof(UMoviePipelineExecutorBase) == 0x000008, "Wrong alignment on UMoviePipelineExecutorBase");
-static_assert(sizeof(UMoviePipelineExecutorBase) == 0x000118, "Wrong size on UMoviePipelineExecutorBase");
-static_assert(offsetof(UMoviePipelineExecutorBase, OnExecutorFinishedDelegate) == 0x000028, "Member 'UMoviePipelineExecutorBase::OnExecutorFinishedDelegate' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineExecutorBase, OnExecutorErroredDelegate) == 0x000050, "Member 'UMoviePipelineExecutorBase::OnExecutorErroredDelegate' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineExecutorBase, SocketMessageRecievedDelegate) == 0x000080, "Member 'UMoviePipelineExecutorBase::SocketMessageRecievedDelegate' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineExecutorBase, HTTPResponseRecievedDelegate) == 0x000090, "Member 'UMoviePipelineExecutorBase::HTTPResponseRecievedDelegate' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineExecutorBase, DebugWidgetClass) == 0x0000A0, "Member 'UMoviePipelineExecutorBase::DebugWidgetClass' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineExecutorBase, UserData) == 0x0000B8, "Member 'UMoviePipelineExecutorBase::UserData' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineExecutorBase, TargetPipelineClass) == 0x0000C8, "Member 'UMoviePipelineExecutorBase::TargetPipelineClass' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieGraphGlobalVariable;
 
 // Class MovieRenderPipelineCore.MovieGraphGlobalVariable_ShotName
 // 0x0000 (0x0078 - 0x0078)
@@ -673,15 +746,18 @@ class UMovieGraphGlobalVariable_ShotName final : public UMovieGraphGlobalVariabl
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphGlobalVariable_ShotName">();
+		STATIC_CLASS_IMPL("MovieGraphGlobalVariable_ShotName")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphGlobalVariable_ShotName")
 	}
 	static class UMovieGraphGlobalVariable_ShotName* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphGlobalVariable_ShotName>();
 	}
 };
-static_assert(alignof(UMovieGraphGlobalVariable_ShotName) == 0x000008, "Wrong alignment on UMovieGraphGlobalVariable_ShotName");
-static_assert(sizeof(UMovieGraphGlobalVariable_ShotName) == 0x000078, "Wrong size on UMovieGraphGlobalVariable_ShotName");
+DUMPER7_ASSERTS_UMovieGraphGlobalVariable_ShotName;
 
 // Class MovieRenderPipelineCore.MovieGraphGlobalVariable_SequenceName
 // 0x0000 (0x0078 - 0x0078)
@@ -690,15 +766,18 @@ class UMovieGraphGlobalVariable_SequenceName final : public UMovieGraphGlobalVar
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphGlobalVariable_SequenceName">();
+		STATIC_CLASS_IMPL("MovieGraphGlobalVariable_SequenceName")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphGlobalVariable_SequenceName")
 	}
 	static class UMovieGraphGlobalVariable_SequenceName* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphGlobalVariable_SequenceName>();
 	}
 };
-static_assert(alignof(UMovieGraphGlobalVariable_SequenceName) == 0x000008, "Wrong alignment on UMovieGraphGlobalVariable_SequenceName");
-static_assert(sizeof(UMovieGraphGlobalVariable_SequenceName) == 0x000078, "Wrong size on UMovieGraphGlobalVariable_SequenceName");
+DUMPER7_ASSERTS_UMovieGraphGlobalVariable_SequenceName;
 
 // Class MovieRenderPipelineCore.MovieGraphGlobalVariable_FrameNumber
 // 0x0000 (0x0078 - 0x0078)
@@ -707,15 +786,18 @@ class UMovieGraphGlobalVariable_FrameNumber final : public UMovieGraphGlobalVari
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphGlobalVariable_FrameNumber">();
+		STATIC_CLASS_IMPL("MovieGraphGlobalVariable_FrameNumber")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphGlobalVariable_FrameNumber")
 	}
 	static class UMovieGraphGlobalVariable_FrameNumber* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphGlobalVariable_FrameNumber>();
 	}
 };
-static_assert(alignof(UMovieGraphGlobalVariable_FrameNumber) == 0x000008, "Wrong alignment on UMovieGraphGlobalVariable_FrameNumber");
-static_assert(sizeof(UMovieGraphGlobalVariable_FrameNumber) == 0x000078, "Wrong size on UMovieGraphGlobalVariable_FrameNumber");
+DUMPER7_ASSERTS_UMovieGraphGlobalVariable_FrameNumber;
 
 // Class MovieRenderPipelineCore.MovieGraphGlobalVariable_CameraName
 // 0x0000 (0x0078 - 0x0078)
@@ -724,61 +806,18 @@ class UMovieGraphGlobalVariable_CameraName final : public UMovieGraphGlobalVaria
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphGlobalVariable_CameraName">();
+		STATIC_CLASS_IMPL("MovieGraphGlobalVariable_CameraName")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphGlobalVariable_CameraName")
 	}
 	static class UMovieGraphGlobalVariable_CameraName* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphGlobalVariable_CameraName>();
 	}
 };
-static_assert(alignof(UMovieGraphGlobalVariable_CameraName) == 0x000008, "Wrong alignment on UMovieGraphGlobalVariable_CameraName");
-static_assert(sizeof(UMovieGraphGlobalVariable_CameraName) == 0x000078, "Wrong size on UMovieGraphGlobalVariable_CameraName");
-
-// Class MovieRenderPipelineCore.MoviePipelineLinearExecutorBase
-// 0x0028 (0x0140 - 0x0118)
-class UMoviePipelineLinearExecutorBase : public UMoviePipelineExecutorBase
-{
-public:
-	class UMoviePipelineQueue*                    Queue;                                             // 0x0118(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UMoviePipelineBase*                     ActiveMoviePipeline;                               // 0x0120(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_128[0x18];                                     // 0x0128(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"MoviePipelineLinearExecutorBase">();
-	}
-	static class UMoviePipelineLinearExecutorBase* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMoviePipelineLinearExecutorBase>();
-	}
-};
-static_assert(alignof(UMoviePipelineLinearExecutorBase) == 0x000008, "Wrong alignment on UMoviePipelineLinearExecutorBase");
-static_assert(sizeof(UMoviePipelineLinearExecutorBase) == 0x000140, "Wrong size on UMoviePipelineLinearExecutorBase");
-static_assert(offsetof(UMoviePipelineLinearExecutorBase, Queue) == 0x000118, "Member 'UMoviePipelineLinearExecutorBase::Queue' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineLinearExecutorBase, ActiveMoviePipeline) == 0x000120, "Member 'UMoviePipelineLinearExecutorBase::ActiveMoviePipeline' has a wrong offset!");
-
-// Class MovieRenderPipelineCore.MoviePipelineInProcessExecutor
-// 0x0048 (0x0188 - 0x0140)
-class UMoviePipelineInProcessExecutor final : public UMoviePipelineLinearExecutorBase
-{
-public:
-	bool                                          bUseCurrentLevel;                                  // 0x0140(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_141[0x47];                                     // 0x0141(0x0047)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"MoviePipelineInProcessExecutor">();
-	}
-	static class UMoviePipelineInProcessExecutor* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMoviePipelineInProcessExecutor>();
-	}
-};
-static_assert(alignof(UMoviePipelineInProcessExecutor) == 0x000008, "Wrong alignment on UMoviePipelineInProcessExecutor");
-static_assert(sizeof(UMoviePipelineInProcessExecutor) == 0x000188, "Wrong size on UMoviePipelineInProcessExecutor");
-static_assert(offsetof(UMoviePipelineInProcessExecutor, bUseCurrentLevel) == 0x000140, "Member 'UMoviePipelineInProcessExecutor::bUseCurrentLevel' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieGraphGlobalVariable_CameraName;
 
 // Class MovieRenderPipelineCore.MovieGraphInterfaceBase
 // 0x0008 (0x0080 - 0x0078)
@@ -791,16 +830,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphInterfaceBase">();
+		STATIC_CLASS_IMPL("MovieGraphInterfaceBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphInterfaceBase")
 	}
 	static class UMovieGraphInterfaceBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphInterfaceBase>();
 	}
 };
-static_assert(alignof(UMovieGraphInterfaceBase) == 0x000008, "Wrong alignment on UMovieGraphInterfaceBase");
-static_assert(sizeof(UMovieGraphInterfaceBase) == 0x000080, "Wrong size on UMovieGraphInterfaceBase");
-static_assert(offsetof(UMovieGraphInterfaceBase, bIsBranch) == 0x000078, "Member 'UMovieGraphInterfaceBase::bIsBranch' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieGraphInterfaceBase;
 
 // Class MovieRenderPipelineCore.MovieGraphInput
 // 0x0000 (0x0080 - 0x0080)
@@ -809,15 +850,18 @@ class UMovieGraphInput final : public UMovieGraphInterfaceBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphInput">();
+		STATIC_CLASS_IMPL("MovieGraphInput")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphInput")
 	}
 	static class UMovieGraphInput* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphInput>();
 	}
 };
-static_assert(alignof(UMovieGraphInput) == 0x000008, "Wrong alignment on UMovieGraphInput");
-static_assert(sizeof(UMovieGraphInput) == 0x000080, "Wrong size on UMovieGraphInput");
+DUMPER7_ASSERTS_UMovieGraphInput;
 
 // Class MovieRenderPipelineCore.MovieGraphOutput
 // 0x0000 (0x0080 - 0x0080)
@@ -826,15 +870,18 @@ class UMovieGraphOutput final : public UMovieGraphInterfaceBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphOutput">();
+		STATIC_CLASS_IMPL("MovieGraphOutput")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphOutput")
 	}
 	static class UMovieGraphOutput* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphOutput>();
 	}
 };
-static_assert(alignof(UMovieGraphOutput) == 0x000008, "Wrong alignment on UMovieGraphOutput");
-static_assert(sizeof(UMovieGraphOutput) == 0x000080, "Wrong size on UMovieGraphOutput");
+DUMPER7_ASSERTS_UMovieGraphOutput;
 
 // Class MovieRenderPipelineCore.MovieGraphEvaluatedConfig
 // 0x0050 (0x0078 - 0x0028)
@@ -851,16 +898,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphEvaluatedConfig">();
+		STATIC_CLASS_IMPL("MovieGraphEvaluatedConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphEvaluatedConfig")
 	}
 	static class UMovieGraphEvaluatedConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphEvaluatedConfig>();
 	}
 };
-static_assert(alignof(UMovieGraphEvaluatedConfig) == 0x000008, "Wrong alignment on UMovieGraphEvaluatedConfig");
-static_assert(sizeof(UMovieGraphEvaluatedConfig) == 0x000078, "Wrong size on UMovieGraphEvaluatedConfig");
-static_assert(offsetof(UMovieGraphEvaluatedConfig, BranchConfigMapping) == 0x000028, "Member 'UMovieGraphEvaluatedConfig::BranchConfigMapping' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieGraphEvaluatedConfig;
 
 // Class MovieRenderPipelineCore.MovieGraphTraversableObject
 // 0x0000 (0x0000 - 0x0000)
@@ -869,7 +918,11 @@ class IMovieGraphTraversableObject final
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphTraversableObject">();
+		STATIC_CLASS_IMPL("MovieGraphTraversableObject")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphTraversableObject")
 	}
 	static class IMovieGraphTraversableObject* GetDefaultObj()
 	{
@@ -885,21 +938,20 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IMovieGraphTraversableObject) == 0x000001, "Wrong alignment on IMovieGraphTraversableObject");
-static_assert(sizeof(IMovieGraphTraversableObject) == 0x000001, "Wrong size on IMovieGraphTraversableObject");
+DUMPER7_ASSERTS_IMovieGraphTraversableObject;
 
 // Class MovieRenderPipelineCore.MovieGraphConfig
 // 0x0060 (0x0088 - 0x0028)
 class UMovieGraphConfig final : public UObject
 {
 public:
-	TArray<class UMovieGraphNode*>                AllNodes;                                          // 0x0028(0x0010)(ZeroConstructor, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
-	class UMovieGraphNode*                        InputNode;                                         // 0x0038(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UMovieGraphNode*                        OutputNode;                                        // 0x0040(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TArray<class UMovieGraphVariable*>            Variables;                                         // 0x0048(0x0010)(ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPrivate)
-	TArray<class UMovieGraphGlobalVariable*>      GlobalVariables;                                   // 0x0058(0x0010)(ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPrivate)
-	TArray<class UMovieGraphInput*>               Inputs;                                            // 0x0068(0x0010)(ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPrivate)
-	TArray<class UMovieGraphOutput*>              Outputs;                                           // 0x0078(0x0010)(ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPrivate)
+	TArray<class UMovieGraphNode*>                AllNodes;                                          // 0x0028(0x0010)(ZeroConstructor, Protected, UObjectWrapper, NativeAccessSpecifierProtected, TObjectPtr)
+	class UMovieGraphNode*                        InputNode;                                         // 0x0038(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
+	class UMovieGraphNode*                        OutputNode;                                        // 0x0040(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
+	TArray<class UMovieGraphVariable*>            Variables;                                         // 0x0048(0x0010)(ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPrivate, TObjectPtr)
+	TArray<class UMovieGraphGlobalVariable*>      GlobalVariables;                                   // 0x0058(0x0010)(ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPrivate, TObjectPtr)
+	TArray<class UMovieGraphInput*>               Inputs;                                            // 0x0068(0x0010)(ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPrivate, TObjectPtr)
+	TArray<class UMovieGraphOutput*>              Outputs;                                           // 0x0078(0x0010)(ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPrivate, TObjectPtr)
 
 public:
 	class UMovieGraphInput* AddInput();
@@ -927,22 +979,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphConfig">();
+		STATIC_CLASS_IMPL("MovieGraphConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphConfig")
 	}
 	static class UMovieGraphConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphConfig>();
 	}
 };
-static_assert(alignof(UMovieGraphConfig) == 0x000008, "Wrong alignment on UMovieGraphConfig");
-static_assert(sizeof(UMovieGraphConfig) == 0x000088, "Wrong size on UMovieGraphConfig");
-static_assert(offsetof(UMovieGraphConfig, AllNodes) == 0x000028, "Member 'UMovieGraphConfig::AllNodes' has a wrong offset!");
-static_assert(offsetof(UMovieGraphConfig, InputNode) == 0x000038, "Member 'UMovieGraphConfig::InputNode' has a wrong offset!");
-static_assert(offsetof(UMovieGraphConfig, OutputNode) == 0x000040, "Member 'UMovieGraphConfig::OutputNode' has a wrong offset!");
-static_assert(offsetof(UMovieGraphConfig, Variables) == 0x000048, "Member 'UMovieGraphConfig::Variables' has a wrong offset!");
-static_assert(offsetof(UMovieGraphConfig, GlobalVariables) == 0x000058, "Member 'UMovieGraphConfig::GlobalVariables' has a wrong offset!");
-static_assert(offsetof(UMovieGraphConfig, Inputs) == 0x000068, "Member 'UMovieGraphConfig::Inputs' has a wrong offset!");
-static_assert(offsetof(UMovieGraphConfig, Outputs) == 0x000078, "Member 'UMovieGraphConfig::Outputs' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieGraphConfig;
 
 // Class MovieRenderPipelineCore.MovieGraphTimeStepBase
 // 0x0000 (0x0028 - 0x0028)
@@ -954,15 +1002,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphTimeStepBase">();
+		STATIC_CLASS_IMPL("MovieGraphTimeStepBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphTimeStepBase")
 	}
 	static class UMovieGraphTimeStepBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphTimeStepBase>();
 	}
 };
-static_assert(alignof(UMovieGraphTimeStepBase) == 0x000008, "Wrong alignment on UMovieGraphTimeStepBase");
-static_assert(sizeof(UMovieGraphTimeStepBase) == 0x000028, "Wrong size on UMovieGraphTimeStepBase");
+DUMPER7_ASSERTS_UMovieGraphTimeStepBase;
 
 // Class MovieRenderPipelineCore.MovieGraphCoreTimeStep
 // 0x0148 (0x0170 - 0x0028)
@@ -975,16 +1026,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphCoreTimeStep">();
+		STATIC_CLASS_IMPL("MovieGraphCoreTimeStep")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphCoreTimeStep")
 	}
 	static class UMovieGraphCoreTimeStep* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphCoreTimeStep>();
 	}
 };
-static_assert(alignof(UMovieGraphCoreTimeStep) == 0x000008, "Wrong alignment on UMovieGraphCoreTimeStep");
-static_assert(sizeof(UMovieGraphCoreTimeStep) == 0x000170, "Wrong size on UMovieGraphCoreTimeStep");
-static_assert(offsetof(UMovieGraphCoreTimeStep, CurrentTimeStepData) == 0x000028, "Member 'UMovieGraphCoreTimeStep::CurrentTimeStepData' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieGraphCoreTimeStep;
 
 // Class MovieRenderPipelineCore.MovieGraphEngineTimeStep
 // 0x0018 (0x0040 - 0x0028)
@@ -996,15 +1049,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphEngineTimeStep">();
+		STATIC_CLASS_IMPL("MovieGraphEngineTimeStep")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphEngineTimeStep")
 	}
 	static class UMovieGraphEngineTimeStep* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphEngineTimeStep>();
 	}
 };
-static_assert(alignof(UMovieGraphEngineTimeStep) == 0x000008, "Wrong alignment on UMovieGraphEngineTimeStep");
-static_assert(sizeof(UMovieGraphEngineTimeStep) == 0x000040, "Wrong size on UMovieGraphEngineTimeStep");
+DUMPER7_ASSERTS_UMovieGraphEngineTimeStep;
 
 // Class MovieRenderPipelineCore.MovieGraphRendererBase
 // 0x0000 (0x0028 - 0x0028)
@@ -1016,15 +1072,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphRendererBase">();
+		STATIC_CLASS_IMPL("MovieGraphRendererBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphRendererBase")
 	}
 	static class UMovieGraphRendererBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphRendererBase>();
 	}
 };
-static_assert(alignof(UMovieGraphRendererBase) == 0x000008, "Wrong alignment on UMovieGraphRendererBase");
-static_assert(sizeof(UMovieGraphRendererBase) == 0x000028, "Wrong size on UMovieGraphRendererBase");
+DUMPER7_ASSERTS_UMovieGraphRendererBase;
 
 // Class MovieRenderPipelineCore.MovieGraphDataSourceBase
 // 0x0000 (0x0028 - 0x0028)
@@ -1033,15 +1092,18 @@ class UMovieGraphDataSourceBase : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphDataSourceBase">();
+		STATIC_CLASS_IMPL("MovieGraphDataSourceBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphDataSourceBase")
 	}
 	static class UMovieGraphDataSourceBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphDataSourceBase>();
 	}
 };
-static_assert(alignof(UMovieGraphDataSourceBase) == 0x000008, "Wrong alignment on UMovieGraphDataSourceBase");
-static_assert(sizeof(UMovieGraphDataSourceBase) == 0x000028, "Wrong size on UMovieGraphDataSourceBase");
+DUMPER7_ASSERTS_UMovieGraphDataSourceBase;
 
 // Class MovieRenderPipelineCore.MovieGraphAudioRendererBase
 // 0x0030 (0x0058 - 0x0028)
@@ -1053,15 +1115,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphAudioRendererBase">();
+		STATIC_CLASS_IMPL("MovieGraphAudioRendererBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphAudioRendererBase")
 	}
 	static class UMovieGraphAudioRendererBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphAudioRendererBase>();
 	}
 };
-static_assert(alignof(UMovieGraphAudioRendererBase) == 0x000008, "Wrong alignment on UMovieGraphAudioRendererBase");
-static_assert(sizeof(UMovieGraphAudioRendererBase) == 0x000058, "Wrong size on UMovieGraphAudioRendererBase");
+DUMPER7_ASSERTS_UMovieGraphAudioRendererBase;
 
 // Class MovieRenderPipelineCore.MovieGraphDebugSettingNode
 // 0x0018 (0x00B0 - 0x0098)
@@ -1079,18 +1144,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphDebugSettingNode">();
+		STATIC_CLASS_IMPL("MovieGraphDebugSettingNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphDebugSettingNode")
 	}
 	static class UMovieGraphDebugSettingNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphDebugSettingNode>();
 	}
 };
-static_assert(alignof(UMovieGraphDebugSettingNode) == 0x000008, "Wrong alignment on UMovieGraphDebugSettingNode");
-static_assert(sizeof(UMovieGraphDebugSettingNode) == 0x0000B0, "Wrong size on UMovieGraphDebugSettingNode");
-static_assert(offsetof(UMovieGraphDebugSettingNode, bCaptureFramesWithRenderDoc) == 0x000099, "Member 'UMovieGraphDebugSettingNode::bCaptureFramesWithRenderDoc' has a wrong offset!");
-static_assert(offsetof(UMovieGraphDebugSettingNode, bCaptureUnrealInsightsTrace) == 0x00009A, "Member 'UMovieGraphDebugSettingNode::bCaptureUnrealInsightsTrace' has a wrong offset!");
-static_assert(offsetof(UMovieGraphDebugSettingNode, UnrealInsightsTraceFileNameFormat) == 0x0000A0, "Member 'UMovieGraphDebugSettingNode::UnrealInsightsTraceFileNameFormat' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieGraphDebugSettingNode;
 
 // Class MovieRenderPipelineCore.MovieGraphDefaultAudioRenderer
 // 0x0000 (0x0058 - 0x0058)
@@ -1099,60 +1164,66 @@ class UMovieGraphDefaultAudioRenderer final : public UMovieGraphAudioRendererBas
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphDefaultAudioRenderer">();
+		STATIC_CLASS_IMPL("MovieGraphDefaultAudioRenderer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphDefaultAudioRenderer")
 	}
 	static class UMovieGraphDefaultAudioRenderer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphDefaultAudioRenderer>();
 	}
 };
-static_assert(alignof(UMovieGraphDefaultAudioRenderer) == 0x000008, "Wrong alignment on UMovieGraphDefaultAudioRenderer");
-static_assert(sizeof(UMovieGraphDefaultAudioRenderer) == 0x000058, "Wrong size on UMovieGraphDefaultAudioRenderer");
+DUMPER7_ASSERTS_UMovieGraphDefaultAudioRenderer;
 
 // Class MovieRenderPipelineCore.MovieGraphDefaultRenderer
 // 0x0190 (0x01B8 - 0x0028)
 class UMovieGraphDefaultRenderer final : public UMovieGraphRendererBase
 {
 public:
-	TArray<class UMovieGraphRenderPassNode*>      RenderPassesInUse;                                 // 0x0028(0x0010)(ZeroConstructor, Transient, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
+	TArray<class UMovieGraphRenderPassNode*>      RenderPassesInUse;                                 // 0x0028(0x0010)(ZeroConstructor, Transient, Protected, UObjectWrapper, NativeAccessSpecifierProtected, TObjectPtr)
 	uint8                                         Pad_38[0x180];                                     // 0x0038(0x0180)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphDefaultRenderer">();
+		STATIC_CLASS_IMPL("MovieGraphDefaultRenderer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphDefaultRenderer")
 	}
 	static class UMovieGraphDefaultRenderer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphDefaultRenderer>();
 	}
 };
-static_assert(alignof(UMovieGraphDefaultRenderer) == 0x000008, "Wrong alignment on UMovieGraphDefaultRenderer");
-static_assert(sizeof(UMovieGraphDefaultRenderer) == 0x0001B8, "Wrong size on UMovieGraphDefaultRenderer");
-static_assert(offsetof(UMovieGraphDefaultRenderer, RenderPassesInUse) == 0x000028, "Member 'UMovieGraphDefaultRenderer::RenderPassesInUse' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieGraphDefaultRenderer;
 
 // Class MovieRenderPipelineCore.MovieGraphEdge
 // 0x0010 (0x0038 - 0x0028)
 class UMovieGraphEdge final : public UObject
 {
 public:
-	class UMovieGraphPin*                         InputPin;                                          // 0x0028(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMovieGraphPin*                         OutputPin;                                         // 0x0030(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMovieGraphPin*                         InputPin;                                          // 0x0028(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UMovieGraphPin*                         OutputPin;                                         // 0x0030(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphEdge">();
+		STATIC_CLASS_IMPL("MovieGraphEdge")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphEdge")
 	}
 	static class UMovieGraphEdge* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphEdge>();
 	}
 };
-static_assert(alignof(UMovieGraphEdge) == 0x000008, "Wrong alignment on UMovieGraphEdge");
-static_assert(sizeof(UMovieGraphEdge) == 0x000038, "Wrong size on UMovieGraphEdge");
-static_assert(offsetof(UMovieGraphEdge, InputPin) == 0x000028, "Member 'UMovieGraphEdge::InputPin' has a wrong offset!");
-static_assert(offsetof(UMovieGraphEdge, OutputPin) == 0x000030, "Member 'UMovieGraphEdge::OutputPin' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieGraphEdge;
 
 // Class MovieRenderPipelineCore.MovieGraphScriptBase
 // 0x0000 (0x0028 - 0x0028)
@@ -1169,15 +1240,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphScriptBase">();
+		STATIC_CLASS_IMPL("MovieGraphScriptBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphScriptBase")
 	}
 	static class UMovieGraphScriptBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphScriptBase>();
 	}
 };
-static_assert(alignof(UMovieGraphScriptBase) == 0x000008, "Wrong alignment on UMovieGraphScriptBase");
-static_assert(sizeof(UMovieGraphScriptBase) == 0x000028, "Wrong size on UMovieGraphScriptBase");
+DUMPER7_ASSERTS_UMovieGraphScriptBase;
 
 // Class MovieRenderPipelineCore.MovieGraphExecuteScriptNode
 // 0x0028 (0x00C0 - 0x0098)
@@ -1191,16 +1265,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphExecuteScriptNode">();
+		STATIC_CLASS_IMPL("MovieGraphExecuteScriptNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphExecuteScriptNode")
 	}
 	static class UMovieGraphExecuteScriptNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphExecuteScriptNode>();
 	}
 };
-static_assert(alignof(UMovieGraphExecuteScriptNode) == 0x000008, "Wrong alignment on UMovieGraphExecuteScriptNode");
-static_assert(sizeof(UMovieGraphExecuteScriptNode) == 0x0000C0, "Wrong size on UMovieGraphExecuteScriptNode");
-static_assert(offsetof(UMovieGraphExecuteScriptNode, Script) == 0x0000A0, "Member 'UMovieGraphExecuteScriptNode::Script' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieGraphExecuteScriptNode;
 
 // Class MovieRenderPipelineCore.MovieGraphGlobalGameOverridesNode
 // 0x00B8 (0x0150 - 0x0098)
@@ -1236,26 +1312,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphGlobalGameOverridesNode">();
+		STATIC_CLASS_IMPL("MovieGraphGlobalGameOverridesNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphGlobalGameOverridesNode")
 	}
 	static class UMovieGraphGlobalGameOverridesNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphGlobalGameOverridesNode>();
 	}
 };
-static_assert(alignof(UMovieGraphGlobalGameOverridesNode) == 0x000008, "Wrong alignment on UMovieGraphGlobalGameOverridesNode");
-static_assert(sizeof(UMovieGraphGlobalGameOverridesNode) == 0x000150, "Wrong size on UMovieGraphGlobalGameOverridesNode");
-static_assert(offsetof(UMovieGraphGlobalGameOverridesNode, GameModeOverride) == 0x0000A0, "Member 'UMovieGraphGlobalGameOverridesNode::GameModeOverride' has a wrong offset!");
-static_assert(offsetof(UMovieGraphGlobalGameOverridesNode, ScalabilityQualityLevel) == 0x0000A8, "Member 'UMovieGraphGlobalGameOverridesNode::ScalabilityQualityLevel' has a wrong offset!");
-static_assert(offsetof(UMovieGraphGlobalGameOverridesNode, bDisableTextureStreaming) == 0x0000A9, "Member 'UMovieGraphGlobalGameOverridesNode::bDisableTextureStreaming' has a wrong offset!");
-static_assert(offsetof(UMovieGraphGlobalGameOverridesNode, bDisableLODs) == 0x0000AA, "Member 'UMovieGraphGlobalGameOverridesNode::bDisableLODs' has a wrong offset!");
-static_assert(offsetof(UMovieGraphGlobalGameOverridesNode, bDisableHLODs) == 0x0000AB, "Member 'UMovieGraphGlobalGameOverridesNode::bDisableHLODs' has a wrong offset!");
-static_assert(offsetof(UMovieGraphGlobalGameOverridesNode, bFlushLevelStreaming) == 0x0000AC, "Member 'UMovieGraphGlobalGameOverridesNode::bFlushLevelStreaming' has a wrong offset!");
-static_assert(offsetof(UMovieGraphGlobalGameOverridesNode, bFlushAssetCompiler) == 0x0000AD, "Member 'UMovieGraphGlobalGameOverridesNode::bFlushAssetCompiler' has a wrong offset!");
-static_assert(offsetof(UMovieGraphGlobalGameOverridesNode, bFlushShaderCompiler) == 0x0000AE, "Member 'UMovieGraphGlobalGameOverridesNode::bFlushShaderCompiler' has a wrong offset!");
-static_assert(offsetof(UMovieGraphGlobalGameOverridesNode, bFlushGrassStreaming) == 0x0000AF, "Member 'UMovieGraphGlobalGameOverridesNode::bFlushGrassStreaming' has a wrong offset!");
-static_assert(offsetof(UMovieGraphGlobalGameOverridesNode, bFlushStreamingManagers) == 0x0000B0, "Member 'UMovieGraphGlobalGameOverridesNode::bFlushStreamingManagers' has a wrong offset!");
-static_assert(offsetof(UMovieGraphGlobalGameOverridesNode, VirtualTextureFeedbackFactor) == 0x0000B4, "Member 'UMovieGraphGlobalGameOverridesNode::VirtualTextureFeedbackFactor' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieGraphGlobalGameOverridesNode;
 
 // Class MovieRenderPipelineCore.MovieGraphGlobalOutputSettingNode
 // 0x0068 (0x0100 - 0x0098)
@@ -1291,26 +1359,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphGlobalOutputSettingNode">();
+		STATIC_CLASS_IMPL("MovieGraphGlobalOutputSettingNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphGlobalOutputSettingNode")
 	}
 	static class UMovieGraphGlobalOutputSettingNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphGlobalOutputSettingNode>();
 	}
 };
-static_assert(alignof(UMovieGraphGlobalOutputSettingNode) == 0x000008, "Wrong alignment on UMovieGraphGlobalOutputSettingNode");
-static_assert(sizeof(UMovieGraphGlobalOutputSettingNode) == 0x000100, "Wrong size on UMovieGraphGlobalOutputSettingNode");
-static_assert(offsetof(UMovieGraphGlobalOutputSettingNode, OutputDirectory) == 0x0000A0, "Member 'UMovieGraphGlobalOutputSettingNode::OutputDirectory' has a wrong offset!");
-static_assert(offsetof(UMovieGraphGlobalOutputSettingNode, OutputResolution) == 0x0000B0, "Member 'UMovieGraphGlobalOutputSettingNode::OutputResolution' has a wrong offset!");
-static_assert(offsetof(UMovieGraphGlobalOutputSettingNode, OutputFrameRate) == 0x0000D0, "Member 'UMovieGraphGlobalOutputSettingNode::OutputFrameRate' has a wrong offset!");
-static_assert(offsetof(UMovieGraphGlobalOutputSettingNode, bOverwriteExistingOutput) == 0x0000D8, "Member 'UMovieGraphGlobalOutputSettingNode::bOverwriteExistingOutput' has a wrong offset!");
-static_assert(offsetof(UMovieGraphGlobalOutputSettingNode, ZeroPadFrameNumbers) == 0x0000DC, "Member 'UMovieGraphGlobalOutputSettingNode::ZeroPadFrameNumbers' has a wrong offset!");
-static_assert(offsetof(UMovieGraphGlobalOutputSettingNode, FrameNumberOffset) == 0x0000E0, "Member 'UMovieGraphGlobalOutputSettingNode::FrameNumberOffset' has a wrong offset!");
-static_assert(offsetof(UMovieGraphGlobalOutputSettingNode, HandleFrameCount) == 0x0000E4, "Member 'UMovieGraphGlobalOutputSettingNode::HandleFrameCount' has a wrong offset!");
-static_assert(offsetof(UMovieGraphGlobalOutputSettingNode, CustomPlaybackRangeStartFrame) == 0x0000E8, "Member 'UMovieGraphGlobalOutputSettingNode::CustomPlaybackRangeStartFrame' has a wrong offset!");
-static_assert(offsetof(UMovieGraphGlobalOutputSettingNode, CustomPlaybackRangeEndFrame) == 0x0000EC, "Member 'UMovieGraphGlobalOutputSettingNode::CustomPlaybackRangeEndFrame' has a wrong offset!");
-static_assert(offsetof(UMovieGraphGlobalOutputSettingNode, VersioningSettings) == 0x0000F0, "Member 'UMovieGraphGlobalOutputSettingNode::VersioningSettings' has a wrong offset!");
-static_assert(offsetof(UMovieGraphGlobalOutputSettingNode, bFlushDiskWritesPerShot) == 0x0000F8, "Member 'UMovieGraphGlobalOutputSettingNode::bFlushDiskWritesPerShot' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieGraphGlobalOutputSettingNode;
 
 // Class MovieRenderPipelineCore.MovieGraphInputNode
 // 0x0000 (0x0098 - 0x0098)
@@ -1319,15 +1379,18 @@ class UMovieGraphInputNode final : public UMovieGraphNode
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphInputNode">();
+		STATIC_CLASS_IMPL("MovieGraphInputNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphInputNode")
 	}
 	static class UMovieGraphInputNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphInputNode>();
 	}
 };
-static_assert(alignof(UMovieGraphInputNode) == 0x000008, "Wrong alignment on UMovieGraphInputNode");
-static_assert(sizeof(UMovieGraphInputNode) == 0x000098, "Wrong size on UMovieGraphInputNode");
+DUMPER7_ASSERTS_UMovieGraphInputNode;
 
 // Class MovieRenderPipelineCore.MovieGraphLinearTimeStep
 // 0x0000 (0x0170 - 0x0170)
@@ -1336,15 +1399,18 @@ class UMovieGraphLinearTimeStep final : public UMovieGraphCoreTimeStep
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphLinearTimeStep">();
+		STATIC_CLASS_IMPL("MovieGraphLinearTimeStep")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphLinearTimeStep")
 	}
 	static class UMovieGraphLinearTimeStep* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphLinearTimeStep>();
 	}
 };
-static_assert(alignof(UMovieGraphLinearTimeStep) == 0x000008, "Wrong alignment on UMovieGraphLinearTimeStep");
-static_assert(sizeof(UMovieGraphLinearTimeStep) == 0x000170, "Wrong size on UMovieGraphLinearTimeStep");
+DUMPER7_ASSERTS_UMovieGraphLinearTimeStep;
 
 // Class MovieRenderPipelineCore.MovieGraphMergeableModifierContainer
 // 0x0018 (0x0040 - 0x0028)
@@ -1352,21 +1418,23 @@ class UMovieGraphMergeableModifierContainer final : public UObject
 {
 public:
 	uint8                                         Pad_28[0x8];                                       // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UMovieGraphCollectionModifier*>  Modifiers;                                         // 0x0030(0x0010)(ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic)
+	TArray<class UMovieGraphCollectionModifier*>  Modifiers;                                         // 0x0030(0x0010)(ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic, TObjectPtr)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphMergeableModifierContainer">();
+		STATIC_CLASS_IMPL("MovieGraphMergeableModifierContainer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphMergeableModifierContainer")
 	}
 	static class UMovieGraphMergeableModifierContainer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphMergeableModifierContainer>();
 	}
 };
-static_assert(alignof(UMovieGraphMergeableModifierContainer) == 0x000008, "Wrong alignment on UMovieGraphMergeableModifierContainer");
-static_assert(sizeof(UMovieGraphMergeableModifierContainer) == 0x000040, "Wrong size on UMovieGraphMergeableModifierContainer");
-static_assert(offsetof(UMovieGraphMergeableModifierContainer, Modifiers) == 0x000030, "Member 'UMovieGraphMergeableModifierContainer::Modifiers' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieGraphMergeableModifierContainer;
 
 // Class MovieRenderPipelineCore.MovieGraphModifierNode
 // 0x0038 (0x00D0 - 0x0098)
@@ -1380,7 +1448,7 @@ public:
 	uint8                                         bOverride_ModifiersContainer : 1;                  // 0x00B0(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
 	uint8                                         Pad_B1[0x7];                                       // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class FName>                           Collections;                                       // 0x00B8(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
-	class UMovieGraphMergeableModifierContainer*  ModifiersContainer;                                // 0x00C8(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UMovieGraphMergeableModifierContainer*  ModifiersContainer;                                // 0x00C8(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
 
 public:
 	void AddCollection(const class FName& InCollectionName);
@@ -1395,18 +1463,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphModifierNode">();
+		STATIC_CLASS_IMPL("MovieGraphModifierNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphModifierNode")
 	}
 	static class UMovieGraphModifierNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphModifierNode>();
 	}
 };
-static_assert(alignof(UMovieGraphModifierNode) == 0x000008, "Wrong alignment on UMovieGraphModifierNode");
-static_assert(sizeof(UMovieGraphModifierNode) == 0x0000D0, "Wrong size on UMovieGraphModifierNode");
-static_assert(offsetof(UMovieGraphModifierNode, ModifierName) == 0x0000A0, "Member 'UMovieGraphModifierNode::ModifierName' has a wrong offset!");
-static_assert(offsetof(UMovieGraphModifierNode, Collections) == 0x0000B8, "Member 'UMovieGraphModifierNode::Collections' has a wrong offset!");
-static_assert(offsetof(UMovieGraphModifierNode, ModifiersContainer) == 0x0000C8, "Member 'UMovieGraphModifierNode::ModifiersContainer' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieGraphModifierNode;
 
 // Class MovieRenderPipelineCore.MovieGraphPostRenderNode
 // 0x0000 (0x0000 - 0x0000)
@@ -1415,7 +1483,11 @@ class IMovieGraphPostRenderNode final
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphPostRenderNode">();
+		STATIC_CLASS_IMPL("MovieGraphPostRenderNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphPostRenderNode")
 	}
 	static class IMovieGraphPostRenderNode* GetDefaultObj()
 	{
@@ -1431,8 +1503,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IMovieGraphPostRenderNode) == 0x000001, "Wrong alignment on IMovieGraphPostRenderNode");
-static_assert(sizeof(IMovieGraphPostRenderNode) == 0x000001, "Wrong size on IMovieGraphPostRenderNode");
+DUMPER7_ASSERTS_IMovieGraphPostRenderNode;
 
 // Class MovieRenderPipelineCore.MovieGraphOutputNode
 // 0x0000 (0x0098 - 0x0098)
@@ -1441,24 +1512,27 @@ class UMovieGraphOutputNode final : public UMovieGraphNode
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphOutputNode">();
+		STATIC_CLASS_IMPL("MovieGraphOutputNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphOutputNode")
 	}
 	static class UMovieGraphOutputNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphOutputNode>();
 	}
 };
-static_assert(alignof(UMovieGraphOutputNode) == 0x000008, "Wrong alignment on UMovieGraphOutputNode");
-static_assert(sizeof(UMovieGraphOutputNode) == 0x000098, "Wrong size on UMovieGraphOutputNode");
+DUMPER7_ASSERTS_UMovieGraphOutputNode;
 
 // Class MovieRenderPipelineCore.MovieGraphPin
 // 0x0038 (0x0060 - 0x0028)
 class UMovieGraphPin final : public UObject
 {
 public:
-	class UMovieGraphNode*                        Node;                                              // 0x0028(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMovieGraphNode*                        Node;                                              // 0x0028(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
 	struct FMovieGraphPinProperties               Properties;                                        // 0x0030(0x0020)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
-	TArray<class UMovieGraphEdge*>                Edges;                                             // 0x0050(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, TextExportTransient, UObjectWrapper, NativeAccessSpecifierPublic)
+	TArray<class UMovieGraphEdge*>                Edges;                                             // 0x0050(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, TextExportTransient, UObjectWrapper, NativeAccessSpecifierPublic, TObjectPtr)
 
 public:
 	TArray<class UMovieGraphNode*> GetConnectedNodes() const;
@@ -1466,72 +1540,41 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphPin">();
+		STATIC_CLASS_IMPL("MovieGraphPin")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphPin")
 	}
 	static class UMovieGraphPin* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphPin>();
 	}
 };
-static_assert(alignof(UMovieGraphPin) == 0x000008, "Wrong alignment on UMovieGraphPin");
-static_assert(sizeof(UMovieGraphPin) == 0x000060, "Wrong size on UMovieGraphPin");
-static_assert(offsetof(UMovieGraphPin, Node) == 0x000028, "Member 'UMovieGraphPin::Node' has a wrong offset!");
-static_assert(offsetof(UMovieGraphPin, Properties) == 0x000030, "Member 'UMovieGraphPin::Properties' has a wrong offset!");
-static_assert(offsetof(UMovieGraphPin, Edges) == 0x000050, "Member 'UMovieGraphPin::Edges' has a wrong offset!");
-
-// Class MovieRenderPipelineCore.MoviePipelineBase
-// 0x0050 (0x0078 - 0x0028)
-class UMoviePipelineBase : public UObject
-{
-public:
-	TMulticastInlineDelegate<void(const struct FMoviePipelineOutputData& Results)> OnMoviePipelineWorkFinishedDelegate; // 0x0028(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FMoviePipelineOutputData& Results)> OnMoviePipelineShotWorkFinishedDelegate; // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_48[0x30];                                      // 0x0048(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	void RequestShutdown(bool bIsError);
-	void Shutdown(bool bIsError);
-
-	EMovieRenderPipelineState GetPipelineState() const;
-	bool IsShutdownRequested() const;
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"MoviePipelineBase">();
-	}
-	static class UMoviePipelineBase* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMoviePipelineBase>();
-	}
-};
-static_assert(alignof(UMoviePipelineBase) == 0x000008, "Wrong alignment on UMoviePipelineBase");
-static_assert(sizeof(UMoviePipelineBase) == 0x000078, "Wrong size on UMoviePipelineBase");
-static_assert(offsetof(UMoviePipelineBase, OnMoviePipelineWorkFinishedDelegate) == 0x000028, "Member 'UMoviePipelineBase::OnMoviePipelineWorkFinishedDelegate' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineBase, OnMoviePipelineShotWorkFinishedDelegate) == 0x000038, "Member 'UMoviePipelineBase::OnMoviePipelineShotWorkFinishedDelegate' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieGraphPin;
 
 // Class MovieRenderPipelineCore.MovieGraphPipeline
 // 0x0150 (0x01C8 - 0x0078)
 class UMovieGraphPipeline final : public UMoviePipelineBase
 {
 public:
-	TArray<class UMovieGraphTimeStepBase*>        GraphTimeStepInstances;                            // 0x0078(0x0010)(ZeroConstructor, Transient, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
-	class UMovieGraphTimeStepBase*                PendingTimeStepInstance;                           // 0x0088(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UMovieGraphTimeStepBase*                GraphTimeStepInstance;                             // 0x0090(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UMovieGraphRendererBase*                GraphRendererInstance;                             // 0x0098(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UMovieGraphDataSourceBase*              GraphDataSourceInstance;                           // 0x00A0(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UMovieGraphAudioRendererBase*           GraphAudioRendererInstance;                        // 0x00A8(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UMovieGraphEvaluatedConfig*             PostRenderEvaluatedGraph;                          // 0x00B0(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UMoviePipelineExecutorJob*              CurrentJob;                                        // 0x00B8(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UMoviePipelineExecutorJob*              CurrentJobDuplicate;                               // 0x00C0(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TArray<class UMoviePipelineExecutorShot*>     ActiveShotList;                                    // 0x00C8(0x0010)(ZeroConstructor, Transient, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
+	TArray<class UMovieGraphTimeStepBase*>        GraphTimeStepInstances;                            // 0x0078(0x0010)(ZeroConstructor, Transient, Protected, UObjectWrapper, NativeAccessSpecifierProtected, TObjectPtr)
+	class UMovieGraphTimeStepBase*                PendingTimeStepInstance;                           // 0x0088(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
+	class UMovieGraphTimeStepBase*                GraphTimeStepInstance;                             // 0x0090(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
+	class UMovieGraphRendererBase*                GraphRendererInstance;                             // 0x0098(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
+	class UMovieGraphDataSourceBase*              GraphDataSourceInstance;                           // 0x00A0(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
+	class UMovieGraphAudioRendererBase*           GraphAudioRendererInstance;                        // 0x00A8(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
+	class UMovieGraphEvaluatedConfig*             PostRenderEvaluatedGraph;                          // 0x00B0(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
+	class UMoviePipelineExecutorJob*              CurrentJob;                                        // 0x00B8(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
+	class UMoviePipelineExecutorJob*              CurrentJobDuplicate;                               // 0x00C0(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
+	TArray<class UMoviePipelineExecutorShot*>     ActiveShotList;                                    // 0x00C8(0x0010)(ZeroConstructor, Transient, Protected, UObjectWrapper, NativeAccessSpecifierProtected, TObjectPtr)
 	TSubclassOf<class UMovieGraphRenderPreviewWidget> PreviewWidgetClassToUse;                       // 0x00D8(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UMovieGraphRenderPreviewWidget*         PreviewWidget;                                     // 0x00E0(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UMovieGraphRenderPreviewWidget*         PreviewWidget;                                     // 0x00E0(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
 	TArray<class UMovieGraphScriptBase*>          CurrentScriptInstances;                            // 0x00E8(0x0010)(ZeroConstructor, Transient, Protected, NativeAccessSpecifierProtected)
-	TSet<class UMovieGraphFileOutputNode*>        OutputNodesDataSentTo;                             // 0x00F8(0x0050)(Transient, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
+	TSet<class UMovieGraphFileOutputNode*>        OutputNodesDataSentTo;                             // 0x00F8(0x0050)(Transient, Protected, UObjectWrapper, NativeAccessSpecifierProtected, TObjectPtr)
 	uint8                                         Pad_148[0x70];                                     // 0x0148(0x0070)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMovieGraphEngineTimeStep*              CustomEngineTimeStep;                              // 0x01B8(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UEngineCustomTimeStep*                  PrevCustomEngineTimeStep;                          // 0x01C0(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UMovieGraphEngineTimeStep*              CustomEngineTimeStep;                              // 0x01B8(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
+	class UEngineCustomTimeStep*                  PrevCustomEngineTimeStep;                          // 0x01C0(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
 
 public:
 	void Initialize(class UMoviePipelineExecutorJob* InJob, const struct FMovieGraphInitConfig& InitConfig);
@@ -1548,31 +1591,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphPipeline">();
+		STATIC_CLASS_IMPL("MovieGraphPipeline")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphPipeline")
 	}
 	static class UMovieGraphPipeline* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphPipeline>();
 	}
 };
-static_assert(alignof(UMovieGraphPipeline) == 0x000008, "Wrong alignment on UMovieGraphPipeline");
-static_assert(sizeof(UMovieGraphPipeline) == 0x0001C8, "Wrong size on UMovieGraphPipeline");
-static_assert(offsetof(UMovieGraphPipeline, GraphTimeStepInstances) == 0x000078, "Member 'UMovieGraphPipeline::GraphTimeStepInstances' has a wrong offset!");
-static_assert(offsetof(UMovieGraphPipeline, PendingTimeStepInstance) == 0x000088, "Member 'UMovieGraphPipeline::PendingTimeStepInstance' has a wrong offset!");
-static_assert(offsetof(UMovieGraphPipeline, GraphTimeStepInstance) == 0x000090, "Member 'UMovieGraphPipeline::GraphTimeStepInstance' has a wrong offset!");
-static_assert(offsetof(UMovieGraphPipeline, GraphRendererInstance) == 0x000098, "Member 'UMovieGraphPipeline::GraphRendererInstance' has a wrong offset!");
-static_assert(offsetof(UMovieGraphPipeline, GraphDataSourceInstance) == 0x0000A0, "Member 'UMovieGraphPipeline::GraphDataSourceInstance' has a wrong offset!");
-static_assert(offsetof(UMovieGraphPipeline, GraphAudioRendererInstance) == 0x0000A8, "Member 'UMovieGraphPipeline::GraphAudioRendererInstance' has a wrong offset!");
-static_assert(offsetof(UMovieGraphPipeline, PostRenderEvaluatedGraph) == 0x0000B0, "Member 'UMovieGraphPipeline::PostRenderEvaluatedGraph' has a wrong offset!");
-static_assert(offsetof(UMovieGraphPipeline, CurrentJob) == 0x0000B8, "Member 'UMovieGraphPipeline::CurrentJob' has a wrong offset!");
-static_assert(offsetof(UMovieGraphPipeline, CurrentJobDuplicate) == 0x0000C0, "Member 'UMovieGraphPipeline::CurrentJobDuplicate' has a wrong offset!");
-static_assert(offsetof(UMovieGraphPipeline, ActiveShotList) == 0x0000C8, "Member 'UMovieGraphPipeline::ActiveShotList' has a wrong offset!");
-static_assert(offsetof(UMovieGraphPipeline, PreviewWidgetClassToUse) == 0x0000D8, "Member 'UMovieGraphPipeline::PreviewWidgetClassToUse' has a wrong offset!");
-static_assert(offsetof(UMovieGraphPipeline, PreviewWidget) == 0x0000E0, "Member 'UMovieGraphPipeline::PreviewWidget' has a wrong offset!");
-static_assert(offsetof(UMovieGraphPipeline, CurrentScriptInstances) == 0x0000E8, "Member 'UMovieGraphPipeline::CurrentScriptInstances' has a wrong offset!");
-static_assert(offsetof(UMovieGraphPipeline, OutputNodesDataSentTo) == 0x0000F8, "Member 'UMovieGraphPipeline::OutputNodesDataSentTo' has a wrong offset!");
-static_assert(offsetof(UMovieGraphPipeline, CustomEngineTimeStep) == 0x0001B8, "Member 'UMovieGraphPipeline::CustomEngineTimeStep' has a wrong offset!");
-static_assert(offsetof(UMovieGraphPipeline, PrevCustomEngineTimeStep) == 0x0001C0, "Member 'UMovieGraphPipeline::PrevCustomEngineTimeStep' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieGraphPipeline;
 
 // Class MovieRenderPipelineCore.MovieGraphProjectSettings
 // 0x0010 (0x0048 - 0x0038)
@@ -1584,16 +1614,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphProjectSettings">();
+		STATIC_CLASS_IMPL("MovieGraphProjectSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphProjectSettings")
 	}
 	static class UMovieGraphProjectSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphProjectSettings>();
 	}
 };
-static_assert(alignof(UMovieGraphProjectSettings) == 0x000008, "Wrong alignment on UMovieGraphProjectSettings");
-static_assert(sizeof(UMovieGraphProjectSettings) == 0x000048, "Wrong size on UMovieGraphProjectSettings");
-static_assert(offsetof(UMovieGraphProjectSettings, DefaultNamedResolutions) == 0x000038, "Member 'UMovieGraphProjectSettings::DefaultNamedResolutions' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieGraphProjectSettings;
 
 // Class MovieRenderPipelineCore.MovieGraphRemoveRenderSettingNode
 // 0x0008 (0x00A0 - 0x0098)
@@ -1605,16 +1637,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphRemoveRenderSettingNode">();
+		STATIC_CLASS_IMPL("MovieGraphRemoveRenderSettingNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphRemoveRenderSettingNode")
 	}
 	static class UMovieGraphRemoveRenderSettingNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphRemoveRenderSettingNode>();
 	}
 };
-static_assert(alignof(UMovieGraphRemoveRenderSettingNode) == 0x000008, "Wrong alignment on UMovieGraphRemoveRenderSettingNode");
-static_assert(sizeof(UMovieGraphRemoveRenderSettingNode) == 0x0000A0, "Wrong size on UMovieGraphRemoveRenderSettingNode");
-static_assert(offsetof(UMovieGraphRemoveRenderSettingNode, NodeType) == 0x000098, "Member 'UMovieGraphRemoveRenderSettingNode::NodeType' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieGraphRemoveRenderSettingNode;
 
 // Class MovieRenderPipelineCore.MovieGraphRenderLayerNode
 // 0x0018 (0x00B0 - 0x0098)
@@ -1628,16 +1662,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphRenderLayerNode">();
+		STATIC_CLASS_IMPL("MovieGraphRenderLayerNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphRenderLayerNode")
 	}
 	static class UMovieGraphRenderLayerNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphRenderLayerNode>();
 	}
 };
-static_assert(alignof(UMovieGraphRenderLayerNode) == 0x000008, "Wrong alignment on UMovieGraphRenderLayerNode");
-static_assert(sizeof(UMovieGraphRenderLayerNode) == 0x0000B0, "Wrong size on UMovieGraphRenderLayerNode");
-static_assert(offsetof(UMovieGraphRenderLayerNode, LayerName) == 0x0000A0, "Member 'UMovieGraphRenderLayerNode::LayerName' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieGraphRenderLayerNode;
 
 // Class MovieRenderPipelineCore.MovieGraphConditionGroupQueryBase
 // 0x0008 (0x0030 - 0x0028)
@@ -1662,17 +1698,79 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphConditionGroupQueryBase">();
+		STATIC_CLASS_IMPL("MovieGraphConditionGroupQueryBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphConditionGroupQueryBase")
 	}
 	static class UMovieGraphConditionGroupQueryBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphConditionGroupQueryBase>();
 	}
 };
-static_assert(alignof(UMovieGraphConditionGroupQueryBase) == 0x000008, "Wrong alignment on UMovieGraphConditionGroupQueryBase");
-static_assert(sizeof(UMovieGraphConditionGroupQueryBase) == 0x000030, "Wrong size on UMovieGraphConditionGroupQueryBase");
-static_assert(offsetof(UMovieGraphConditionGroupQueryBase, OpType) == 0x000028, "Member 'UMovieGraphConditionGroupQueryBase::OpType' has a wrong offset!");
-static_assert(offsetof(UMovieGraphConditionGroupQueryBase, bIsEnabled) == 0x000029, "Member 'UMovieGraphConditionGroupQueryBase::bIsEnabled' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieGraphConditionGroupQueryBase;
+
+// Class MovieRenderPipelineCore.MoviePipelineExecutorJob
+// 0x0130 (0x0158 - 0x0028)
+class UMoviePipelineExecutorJob final : public UObject
+{
+public:
+	class FString                                 JobName;                                           // 0x0028(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSoftObjectPath                        Sequence;                                          // 0x0038(0x0020)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSoftObjectPath                        Map;                                               // 0x0058(0x0020)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Author;                                            // 0x0078(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Comment;                                           // 0x0088(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class UMoviePipelineExecutorShot*>     ShotInfo;                                          // 0x0098(0x0010)(BlueprintVisible, ExportObject, ZeroConstructor, ContainsInstancedReference, UObjectWrapper, NativeAccessSpecifierPublic, TObjectPtr)
+	class FString                                 UserData;                                          // 0x00A8(0x0010)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_B8[0x18];                                      // 0x00B8(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 StatusMessage;                                     // 0x00D0(0x0010)(ZeroConstructor, Transient, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         StatusProgress;                                    // 0x00E0(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          bIsConsumed;                                       // 0x00E4(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_E5[0x3];                                       // 0x00E5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMoviePipelinePrimaryConfig*            Configuration;                                     // 0x00E8(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, PersistentInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
+	TSoftObjectPtr<class UMoviePipelinePrimaryConfig> PresetOrigin;                                  // 0x00F0(0x0028)(UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          bEnabled;                                          // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_119[0x7];                                      // 0x0119(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TSoftObjectPtr<class UMovieGraphConfig>       GraphPreset;                                       // 0x0120(0x0028)(UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	TArray<class UMovieJobVariableAssignmentContainer*> GraphVariableAssignments;                    // 0x0148(0x0010)(Edit, ExportObject, ZeroConstructor, ContainsInstancedReference, UObjectWrapper, NativeAccessSpecifierPrivate, TObjectPtr)
+
+public:
+	class UMovieJobVariableAssignmentContainer* GetOrCreateJobVariableAssignmentsForGraph(const class UMovieGraphConfig* InGraph);
+	void OnDuplicated();
+	void SetConfiguration(class UMoviePipelinePrimaryConfig* InPreset);
+	void SetConsumed(const bool bInConsumed);
+	void SetGraphPreset(const class UMovieGraphConfig* InGraphPreset, const bool bUpdateVariableAssignments);
+	void SetIsEnabled(const bool bInEnabled);
+	void SetPresetOrigin(class UMoviePipelinePrimaryConfig* InPreset);
+	void SetSequence(const struct FSoftObjectPath& InSequence);
+	void SetStatusMessage(const class FString& InStatus);
+	void SetStatusProgress(const float InProgress);
+
+	class UMoviePipelinePrimaryConfig* GetConfiguration() const;
+	class UMovieGraphConfig* GetGraphPreset() const;
+	class UMoviePipelinePrimaryConfig* GetPresetOrigin() const;
+	class FString GetStatusMessage() const;
+	float GetStatusProgress() const;
+	bool IsConsumed() const;
+	bool IsEnabled() const;
+	bool IsUsingGraphConfiguration() const;
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MoviePipelineExecutorJob")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MoviePipelineExecutorJob")
+	}
+	static class UMoviePipelineExecutorJob* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMoviePipelineExecutorJob>();
+	}
+};
+DUMPER7_ASSERTS_UMoviePipelineExecutorJob;
 
 // Class MovieRenderPipelineCore.MovieGraphConditionGroupQuery_Actor
 // 0x0010 (0x0040 - 0x0030)
@@ -1684,16 +1782,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphConditionGroupQuery_Actor">();
+		STATIC_CLASS_IMPL("MovieGraphConditionGroupQuery_Actor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphConditionGroupQuery_Actor")
 	}
 	static class UMovieGraphConditionGroupQuery_Actor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphConditionGroupQuery_Actor>();
 	}
 };
-static_assert(alignof(UMovieGraphConditionGroupQuery_Actor) == 0x000008, "Wrong alignment on UMovieGraphConditionGroupQuery_Actor");
-static_assert(sizeof(UMovieGraphConditionGroupQuery_Actor) == 0x000040, "Wrong size on UMovieGraphConditionGroupQuery_Actor");
-static_assert(offsetof(UMovieGraphConditionGroupQuery_Actor, ActorsToMatch) == 0x000030, "Member 'UMovieGraphConditionGroupQuery_Actor::ActorsToMatch' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieGraphConditionGroupQuery_Actor;
 
 // Class MovieRenderPipelineCore.MovieGraphConditionGroupQuery_ActorTagName
 // 0x0010 (0x0040 - 0x0030)
@@ -1705,16 +1805,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphConditionGroupQuery_ActorTagName">();
+		STATIC_CLASS_IMPL("MovieGraphConditionGroupQuery_ActorTagName")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphConditionGroupQuery_ActorTagName")
 	}
 	static class UMovieGraphConditionGroupQuery_ActorTagName* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphConditionGroupQuery_ActorTagName>();
 	}
 };
-static_assert(alignof(UMovieGraphConditionGroupQuery_ActorTagName) == 0x000008, "Wrong alignment on UMovieGraphConditionGroupQuery_ActorTagName");
-static_assert(sizeof(UMovieGraphConditionGroupQuery_ActorTagName) == 0x000040, "Wrong size on UMovieGraphConditionGroupQuery_ActorTagName");
-static_assert(offsetof(UMovieGraphConditionGroupQuery_ActorTagName, TagsToMatch) == 0x000030, "Member 'UMovieGraphConditionGroupQuery_ActorTagName::TagsToMatch' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieGraphConditionGroupQuery_ActorTagName;
 
 // Class MovieRenderPipelineCore.MovieGraphConditionGroupQuery_ActorName
 // 0x0010 (0x0040 - 0x0030)
@@ -1726,16 +1828,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphConditionGroupQuery_ActorName">();
+		STATIC_CLASS_IMPL("MovieGraphConditionGroupQuery_ActorName")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphConditionGroupQuery_ActorName")
 	}
 	static class UMovieGraphConditionGroupQuery_ActorName* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphConditionGroupQuery_ActorName>();
 	}
 };
-static_assert(alignof(UMovieGraphConditionGroupQuery_ActorName) == 0x000008, "Wrong alignment on UMovieGraphConditionGroupQuery_ActorName");
-static_assert(sizeof(UMovieGraphConditionGroupQuery_ActorName) == 0x000040, "Wrong size on UMovieGraphConditionGroupQuery_ActorName");
-static_assert(offsetof(UMovieGraphConditionGroupQuery_ActorName, WildcardSearch) == 0x000030, "Member 'UMovieGraphConditionGroupQuery_ActorName::WildcardSearch' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieGraphConditionGroupQuery_ActorName;
 
 // Class MovieRenderPipelineCore.MovieGraphConditionGroupQuery_ActorType
 // 0x0020 (0x0050 - 0x0030)
@@ -1748,16 +1852,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphConditionGroupQuery_ActorType">();
+		STATIC_CLASS_IMPL("MovieGraphConditionGroupQuery_ActorType")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphConditionGroupQuery_ActorType")
 	}
 	static class UMovieGraphConditionGroupQuery_ActorType* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphConditionGroupQuery_ActorType>();
 	}
 };
-static_assert(alignof(UMovieGraphConditionGroupQuery_ActorType) == 0x000008, "Wrong alignment on UMovieGraphConditionGroupQuery_ActorType");
-static_assert(sizeof(UMovieGraphConditionGroupQuery_ActorType) == 0x000050, "Wrong size on UMovieGraphConditionGroupQuery_ActorType");
-static_assert(offsetof(UMovieGraphConditionGroupQuery_ActorType, ActorTypes) == 0x000030, "Member 'UMovieGraphConditionGroupQuery_ActorType::ActorTypes' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieGraphConditionGroupQuery_ActorType;
 
 // Class MovieRenderPipelineCore.MovieGraphConditionGroupQuery_ComponentTagName
 // 0x0010 (0x0040 - 0x0030)
@@ -1769,16 +1875,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphConditionGroupQuery_ComponentTagName">();
+		STATIC_CLASS_IMPL("MovieGraphConditionGroupQuery_ComponentTagName")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphConditionGroupQuery_ComponentTagName")
 	}
 	static class UMovieGraphConditionGroupQuery_ComponentTagName* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphConditionGroupQuery_ComponentTagName>();
 	}
 };
-static_assert(alignof(UMovieGraphConditionGroupQuery_ComponentTagName) == 0x000008, "Wrong alignment on UMovieGraphConditionGroupQuery_ComponentTagName");
-static_assert(sizeof(UMovieGraphConditionGroupQuery_ComponentTagName) == 0x000040, "Wrong size on UMovieGraphConditionGroupQuery_ComponentTagName");
-static_assert(offsetof(UMovieGraphConditionGroupQuery_ComponentTagName, TagsToMatch) == 0x000030, "Member 'UMovieGraphConditionGroupQuery_ComponentTagName::TagsToMatch' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieGraphConditionGroupQuery_ComponentTagName;
 
 // Class MovieRenderPipelineCore.MovieGraphConditionGroupQuery_ComponentType
 // 0x0020 (0x0050 - 0x0030)
@@ -1791,16 +1899,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphConditionGroupQuery_ComponentType">();
+		STATIC_CLASS_IMPL("MovieGraphConditionGroupQuery_ComponentType")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphConditionGroupQuery_ComponentType")
 	}
 	static class UMovieGraphConditionGroupQuery_ComponentType* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphConditionGroupQuery_ComponentType>();
 	}
 };
-static_assert(alignof(UMovieGraphConditionGroupQuery_ComponentType) == 0x000008, "Wrong alignment on UMovieGraphConditionGroupQuery_ComponentType");
-static_assert(sizeof(UMovieGraphConditionGroupQuery_ComponentType) == 0x000050, "Wrong size on UMovieGraphConditionGroupQuery_ComponentType");
-static_assert(offsetof(UMovieGraphConditionGroupQuery_ComponentType, ComponentTypes) == 0x000040, "Member 'UMovieGraphConditionGroupQuery_ComponentType::ComponentTypes' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieGraphConditionGroupQuery_ComponentType;
 
 // Class MovieRenderPipelineCore.MovieGraphConditionGroupQuery_EditorFolder
 // 0x0010 (0x0040 - 0x0030)
@@ -1812,16 +1922,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphConditionGroupQuery_EditorFolder">();
+		STATIC_CLASS_IMPL("MovieGraphConditionGroupQuery_EditorFolder")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphConditionGroupQuery_EditorFolder")
 	}
 	static class UMovieGraphConditionGroupQuery_EditorFolder* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphConditionGroupQuery_EditorFolder>();
 	}
 };
-static_assert(alignof(UMovieGraphConditionGroupQuery_EditorFolder) == 0x000008, "Wrong alignment on UMovieGraphConditionGroupQuery_EditorFolder");
-static_assert(sizeof(UMovieGraphConditionGroupQuery_EditorFolder) == 0x000040, "Wrong size on UMovieGraphConditionGroupQuery_EditorFolder");
-static_assert(offsetof(UMovieGraphConditionGroupQuery_EditorFolder, FolderPaths) == 0x000030, "Member 'UMovieGraphConditionGroupQuery_EditorFolder::FolderPaths' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieGraphConditionGroupQuery_EditorFolder;
 
 // Class MovieRenderPipelineCore.MovieGraphConditionGroupQuery_Sublevel
 // 0x0010 (0x0040 - 0x0030)
@@ -1833,16 +1945,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphConditionGroupQuery_Sublevel">();
+		STATIC_CLASS_IMPL("MovieGraphConditionGroupQuery_Sublevel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphConditionGroupQuery_Sublevel")
 	}
 	static class UMovieGraphConditionGroupQuery_Sublevel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphConditionGroupQuery_Sublevel>();
 	}
 };
-static_assert(alignof(UMovieGraphConditionGroupQuery_Sublevel) == 0x000008, "Wrong alignment on UMovieGraphConditionGroupQuery_Sublevel");
-static_assert(sizeof(UMovieGraphConditionGroupQuery_Sublevel) == 0x000040, "Wrong size on UMovieGraphConditionGroupQuery_Sublevel");
-static_assert(offsetof(UMovieGraphConditionGroupQuery_Sublevel, Sublevels) == 0x000030, "Member 'UMovieGraphConditionGroupQuery_Sublevel::Sublevels' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieGraphConditionGroupQuery_Sublevel;
 
 // Class MovieRenderPipelineCore.MovieGraphConditionGroup
 // 0x00C8 (0x00F0 - 0x0028)
@@ -1852,7 +1966,7 @@ public:
 	struct FGuid                                  ID;                                                // 0x0028(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	EMovieGraphConditionGroupOpType               OpType;                                            // 0x0038(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UMovieGraphConditionGroupQueryBase*> Queries;                                       // 0x0040(0x0010)(Edit, ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPrivate)
+	TArray<class UMovieGraphConditionGroupQueryBase*> Queries;                                       // 0x0040(0x0010)(Edit, ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPrivate, TObjectPtr)
 	TSet<class AActor*>                           QueryResult;                                       // 0x0050(0x0050)(Transient, NativeAccessSpecifierPrivate)
 	TSet<class AActor*>                           EvaluationResult;                                  // 0x00A0(0x0050)(Transient, NativeAccessSpecifierPrivate)
 
@@ -1870,20 +1984,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphConditionGroup">();
+		STATIC_CLASS_IMPL("MovieGraphConditionGroup")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphConditionGroup")
 	}
 	static class UMovieGraphConditionGroup* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphConditionGroup>();
 	}
 };
-static_assert(alignof(UMovieGraphConditionGroup) == 0x000008, "Wrong alignment on UMovieGraphConditionGroup");
-static_assert(sizeof(UMovieGraphConditionGroup) == 0x0000F0, "Wrong size on UMovieGraphConditionGroup");
-static_assert(offsetof(UMovieGraphConditionGroup, ID) == 0x000028, "Member 'UMovieGraphConditionGroup::ID' has a wrong offset!");
-static_assert(offsetof(UMovieGraphConditionGroup, OpType) == 0x000038, "Member 'UMovieGraphConditionGroup::OpType' has a wrong offset!");
-static_assert(offsetof(UMovieGraphConditionGroup, Queries) == 0x000040, "Member 'UMovieGraphConditionGroup::Queries' has a wrong offset!");
-static_assert(offsetof(UMovieGraphConditionGroup, QueryResult) == 0x000050, "Member 'UMovieGraphConditionGroup::QueryResult' has a wrong offset!");
-static_assert(offsetof(UMovieGraphConditionGroup, EvaluationResult) == 0x0000A0, "Member 'UMovieGraphConditionGroup::EvaluationResult' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieGraphConditionGroup;
 
 // Class MovieRenderPipelineCore.MovieGraphCollection
 // 0x0020 (0x0048 - 0x0028)
@@ -1891,7 +2003,7 @@ class UMovieGraphCollection final : public UObject
 {
 public:
 	class FString                                 CollectionName;                                    // 0x0028(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	TArray<class UMovieGraphConditionGroup*>      ConditionGroups;                                   // 0x0038(0x0010)(Edit, ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPrivate)
+	TArray<class UMovieGraphConditionGroup*>      ConditionGroups;                                   // 0x0038(0x0010)(Edit, ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPrivate, TObjectPtr)
 
 public:
 	class UMovieGraphConditionGroup* AddConditionGroup();
@@ -1906,24 +2018,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphCollection">();
+		STATIC_CLASS_IMPL("MovieGraphCollection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphCollection")
 	}
 	static class UMovieGraphCollection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphCollection>();
 	}
 };
-static_assert(alignof(UMovieGraphCollection) == 0x000008, "Wrong alignment on UMovieGraphCollection");
-static_assert(sizeof(UMovieGraphCollection) == 0x000048, "Wrong size on UMovieGraphCollection");
-static_assert(offsetof(UMovieGraphCollection, CollectionName) == 0x000028, "Member 'UMovieGraphCollection::CollectionName' has a wrong offset!");
-static_assert(offsetof(UMovieGraphCollection, ConditionGroups) == 0x000038, "Member 'UMovieGraphCollection::ConditionGroups' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieGraphCollection;
 
 // Class MovieRenderPipelineCore.MovieGraphCollectionModifier
 // 0x0010 (0x0038 - 0x0028)
 class UMovieGraphCollectionModifier : public UObject
 {
 public:
-	TArray<class UMovieGraphCollection*>          Collections;                                       // 0x0028(0x0010)(ZeroConstructor, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
+	TArray<class UMovieGraphCollection*>          Collections;                                       // 0x0028(0x0010)(ZeroConstructor, Protected, UObjectWrapper, NativeAccessSpecifierProtected, TObjectPtr)
 
 public:
 	void AddCollection(class UMovieGraphCollection* Collection);
@@ -1934,16 +2047,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphCollectionModifier">();
+		STATIC_CLASS_IMPL("MovieGraphCollectionModifier")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphCollectionModifier")
 	}
 	static class UMovieGraphCollectionModifier* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphCollectionModifier>();
 	}
 };
-static_assert(alignof(UMovieGraphCollectionModifier) == 0x000008, "Wrong alignment on UMovieGraphCollectionModifier");
-static_assert(sizeof(UMovieGraphCollectionModifier) == 0x000038, "Wrong size on UMovieGraphCollectionModifier");
-static_assert(offsetof(UMovieGraphCollectionModifier, Collections) == 0x000028, "Member 'UMovieGraphCollectionModifier::Collections' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieGraphCollectionModifier;
 
 // Class MovieRenderPipelineCore.MovieGraphMaterialModifier
 // 0x0080 (0x00B8 - 0x0038)
@@ -1963,16 +2078,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphMaterialModifier">();
+		STATIC_CLASS_IMPL("MovieGraphMaterialModifier")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphMaterialModifier")
 	}
 	static class UMovieGraphMaterialModifier* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphMaterialModifier>();
 	}
 };
-static_assert(alignof(UMovieGraphMaterialModifier) == 0x000008, "Wrong alignment on UMovieGraphMaterialModifier");
-static_assert(sizeof(UMovieGraphMaterialModifier) == 0x0000B8, "Wrong size on UMovieGraphMaterialModifier");
-static_assert(offsetof(UMovieGraphMaterialModifier, Material) == 0x000090, "Member 'UMovieGraphMaterialModifier::Material' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieGraphMaterialModifier;
 
 // Class MovieRenderPipelineCore.MovieGraphRenderPropertyModifier
 // 0x0018 (0x0050 - 0x0038)
@@ -2002,15 +2119,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphRenderPropertyModifier">();
+		STATIC_CLASS_IMPL("MovieGraphRenderPropertyModifier")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphRenderPropertyModifier")
 	}
 	static class UMovieGraphRenderPropertyModifier* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphRenderPropertyModifier>();
 	}
 };
-static_assert(alignof(UMovieGraphRenderPropertyModifier) == 0x000008, "Wrong alignment on UMovieGraphRenderPropertyModifier");
-static_assert(sizeof(UMovieGraphRenderPropertyModifier) == 0x000050, "Wrong size on UMovieGraphRenderPropertyModifier");
+DUMPER7_ASSERTS_UMovieGraphRenderPropertyModifier;
 
 // Class MovieRenderPipelineCore.MovieGraphRenderLayer
 // 0x0018 (0x0040 - 0x0028)
@@ -2018,7 +2138,7 @@ class UMovieGraphRenderLayer final : public UObject
 {
 public:
 	class FName                                   RenderLayerName;                                   // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	TArray<class UMovieGraphCollectionModifier*>  Modifiers;                                         // 0x0030(0x0010)(ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPrivate)
+	TArray<class UMovieGraphCollectionModifier*>  Modifiers;                                         // 0x0030(0x0010)(ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPrivate, TObjectPtr)
 
 public:
 	void AddModifier(class UMovieGraphCollectionModifier* Modifier);
@@ -2034,25 +2154,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphRenderLayer">();
+		STATIC_CLASS_IMPL("MovieGraphRenderLayer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphRenderLayer")
 	}
 	static class UMovieGraphRenderLayer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphRenderLayer>();
 	}
 };
-static_assert(alignof(UMovieGraphRenderLayer) == 0x000008, "Wrong alignment on UMovieGraphRenderLayer");
-static_assert(sizeof(UMovieGraphRenderLayer) == 0x000040, "Wrong size on UMovieGraphRenderLayer");
-static_assert(offsetof(UMovieGraphRenderLayer, RenderLayerName) == 0x000028, "Member 'UMovieGraphRenderLayer::RenderLayerName' has a wrong offset!");
-static_assert(offsetof(UMovieGraphRenderLayer, Modifiers) == 0x000030, "Member 'UMovieGraphRenderLayer::Modifiers' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieGraphRenderLayer;
 
 // Class MovieRenderPipelineCore.MovieGraphRenderLayerSubsystem
 // 0x0018 (0x0048 - 0x0030)
 class UMovieGraphRenderLayerSubsystem final : public UWorldSubsystem
 {
 public:
-	TArray<class UMovieGraphRenderLayer*>         RenderLayers;                                      // 0x0030(0x0010)(ZeroConstructor, Transient, UObjectWrapper, NativeAccessSpecifierPrivate)
-	class UMovieGraphRenderLayer*                 ActiveRenderLayer;                                 // 0x0040(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	TArray<class UMovieGraphRenderLayer*>         RenderLayers;                                      // 0x0030(0x0010)(ZeroConstructor, Transient, UObjectWrapper, NativeAccessSpecifierPrivate, TObjectPtr)
+	class UMovieGraphRenderLayer*                 ActiveRenderLayer;                                 // 0x0040(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
 
 public:
 	static class UMovieGraphRenderLayerSubsystem* GetFromWorld(const class UWorld* World);
@@ -2070,17 +2191,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphRenderLayerSubsystem">();
+		STATIC_CLASS_IMPL("MovieGraphRenderLayerSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphRenderLayerSubsystem")
 	}
 	static class UMovieGraphRenderLayerSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphRenderLayerSubsystem>();
 	}
 };
-static_assert(alignof(UMovieGraphRenderLayerSubsystem) == 0x000008, "Wrong alignment on UMovieGraphRenderLayerSubsystem");
-static_assert(sizeof(UMovieGraphRenderLayerSubsystem) == 0x000048, "Wrong size on UMovieGraphRenderLayerSubsystem");
-static_assert(offsetof(UMovieGraphRenderLayerSubsystem, RenderLayers) == 0x000030, "Member 'UMovieGraphRenderLayerSubsystem::RenderLayers' has a wrong offset!");
-static_assert(offsetof(UMovieGraphRenderLayerSubsystem, ActiveRenderLayer) == 0x000040, "Member 'UMovieGraphRenderLayerSubsystem::ActiveRenderLayer' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieGraphRenderLayerSubsystem;
 
 // Class MovieRenderPipelineCore.MovieGraphSamplingMethodNode
 // 0x0030 (0x00C8 - 0x0098)
@@ -2097,62 +2219,66 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphSamplingMethodNode">();
+		STATIC_CLASS_IMPL("MovieGraphSamplingMethodNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphSamplingMethodNode")
 	}
 	static class UMovieGraphSamplingMethodNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphSamplingMethodNode>();
 	}
 };
-static_assert(alignof(UMovieGraphSamplingMethodNode) == 0x000008, "Wrong alignment on UMovieGraphSamplingMethodNode");
-static_assert(sizeof(UMovieGraphSamplingMethodNode) == 0x0000C8, "Wrong size on UMovieGraphSamplingMethodNode");
-static_assert(offsetof(UMovieGraphSamplingMethodNode, SamplingMethodClass) == 0x0000A0, "Member 'UMovieGraphSamplingMethodNode::SamplingMethodClass' has a wrong offset!");
-static_assert(offsetof(UMovieGraphSamplingMethodNode, TemporalSampleCount) == 0x0000C0, "Member 'UMovieGraphSamplingMethodNode::TemporalSampleCount' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieGraphSamplingMethodNode;
 
 // Class MovieRenderPipelineCore.MovieGraphSelectNode
 // 0x0010 (0x00A8 - 0x0098)
 class UMovieGraphSelectNode final : public UMovieGraphNode
 {
 public:
-	class UMovieGraphValueContainer*              SelectOptions;                                     // 0x0098(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, PersistentInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UMovieGraphValueContainer*              SelectedOption;                                    // 0x00A0(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, PersistentInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UMovieGraphValueContainer*              SelectOptions;                                     // 0x0098(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, PersistentInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
+	class UMovieGraphValueContainer*              SelectedOption;                                    // 0x00A0(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, PersistentInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphSelectNode">();
+		STATIC_CLASS_IMPL("MovieGraphSelectNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphSelectNode")
 	}
 	static class UMovieGraphSelectNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphSelectNode>();
 	}
 };
-static_assert(alignof(UMovieGraphSelectNode) == 0x000008, "Wrong alignment on UMovieGraphSelectNode");
-static_assert(sizeof(UMovieGraphSelectNode) == 0x0000A8, "Wrong size on UMovieGraphSelectNode");
-static_assert(offsetof(UMovieGraphSelectNode, SelectOptions) == 0x000098, "Member 'UMovieGraphSelectNode::SelectOptions' has a wrong offset!");
-static_assert(offsetof(UMovieGraphSelectNode, SelectedOption) == 0x0000A0, "Member 'UMovieGraphSelectNode::SelectedOption' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieGraphSelectNode;
 
 // Class MovieRenderPipelineCore.MovieGraphSequenceDataSource
 // 0x0028 (0x0050 - 0x0028)
 class UMovieGraphSequenceDataSource final : public UMovieGraphDataSourceBase
 {
 public:
-	class ALevelSequenceActor*                    LevelSequenceActor;                                // 0x0028(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class ALevelSequenceActor*                    LevelSequenceActor;                                // 0x0028(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
 	uint8                                         Pad_30[0x20];                                      // 0x0030(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphSequenceDataSource">();
+		STATIC_CLASS_IMPL("MovieGraphSequenceDataSource")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphSequenceDataSource")
 	}
 	static class UMovieGraphSequenceDataSource* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphSequenceDataSource>();
 	}
 };
-static_assert(alignof(UMovieGraphSequenceDataSource) == 0x000008, "Wrong alignment on UMovieGraphSequenceDataSource");
-static_assert(sizeof(UMovieGraphSequenceDataSource) == 0x000050, "Wrong size on UMovieGraphSequenceDataSource");
-static_assert(offsetof(UMovieGraphSequenceDataSource, LevelSequenceActor) == 0x000028, "Member 'UMovieGraphSequenceDataSource::LevelSequenceActor' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieGraphSequenceDataSource;
 
 // Class MovieRenderPipelineCore.MovieGraphSetCVarValueNode
 // 0x0020 (0x00B8 - 0x0098)
@@ -2169,17 +2295,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphSetCVarValueNode">();
+		STATIC_CLASS_IMPL("MovieGraphSetCVarValueNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphSetCVarValueNode")
 	}
 	static class UMovieGraphSetCVarValueNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphSetCVarValueNode>();
 	}
 };
-static_assert(alignof(UMovieGraphSetCVarValueNode) == 0x000008, "Wrong alignment on UMovieGraphSetCVarValueNode");
-static_assert(sizeof(UMovieGraphSetCVarValueNode) == 0x0000B8, "Wrong size on UMovieGraphSetCVarValueNode");
-static_assert(offsetof(UMovieGraphSetCVarValueNode, Name_0) == 0x0000A0, "Member 'UMovieGraphSetCVarValueNode::Name_0' has a wrong offset!");
-static_assert(offsetof(UMovieGraphSetCVarValueNode, Value) == 0x0000B0, "Member 'UMovieGraphSetCVarValueNode::Value' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieGraphSetCVarValueNode;
 
 // Class MovieRenderPipelineCore.MovieGraphShowFlags
 // 0x00D8 (0x0100 - 0x0028)
@@ -2194,17 +2321,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphShowFlags">();
+		STATIC_CLASS_IMPL("MovieGraphShowFlags")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphShowFlags")
 	}
 	static class UMovieGraphShowFlags* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphShowFlags>();
 	}
 };
-static_assert(alignof(UMovieGraphShowFlags) == 0x000008, "Wrong alignment on UMovieGraphShowFlags");
-static_assert(sizeof(UMovieGraphShowFlags) == 0x000100, "Wrong size on UMovieGraphShowFlags");
-static_assert(offsetof(UMovieGraphShowFlags, OverriddenShowFlags) == 0x000030, "Member 'UMovieGraphShowFlags::OverriddenShowFlags' has a wrong offset!");
-static_assert(offsetof(UMovieGraphShowFlags, ShowFlagEnableState) == 0x000080, "Member 'UMovieGraphShowFlags::ShowFlagEnableState' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieGraphShowFlags;
 
 // Class MovieRenderPipelineCore.MovieGraphSubgraphNode
 // 0x0028 (0x00C0 - 0x0098)
@@ -2221,16 +2349,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphSubgraphNode">();
+		STATIC_CLASS_IMPL("MovieGraphSubgraphNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphSubgraphNode")
 	}
 	static class UMovieGraphSubgraphNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphSubgraphNode>();
 	}
 };
-static_assert(alignof(UMovieGraphSubgraphNode) == 0x000008, "Wrong alignment on UMovieGraphSubgraphNode");
-static_assert(sizeof(UMovieGraphSubgraphNode) == 0x0000C0, "Wrong size on UMovieGraphSubgraphNode");
-static_assert(offsetof(UMovieGraphSubgraphNode, SubgraphAsset) == 0x000098, "Member 'UMovieGraphSubgraphNode::SubgraphAsset' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieGraphSubgraphNode;
 
 // Class MovieRenderPipelineCore.MovieGraphUIRendererNode
 // 0x0000 (0x0110 - 0x0110)
@@ -2239,22 +2369,25 @@ class UMovieGraphUIRendererNode final : public UMovieGraphWidgetRendererBaseNode
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphUIRendererNode">();
+		STATIC_CLASS_IMPL("MovieGraphUIRendererNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphUIRendererNode")
 	}
 	static class UMovieGraphUIRendererNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphUIRendererNode>();
 	}
 };
-static_assert(alignof(UMovieGraphUIRendererNode) == 0x000008, "Wrong alignment on UMovieGraphUIRendererNode");
-static_assert(sizeof(UMovieGraphUIRendererNode) == 0x000110, "Wrong size on UMovieGraphUIRendererNode");
+DUMPER7_ASSERTS_UMovieGraphUIRendererNode;
 
 // Class MovieRenderPipelineCore.MovieGraphVariableNode
 // 0x0028 (0x00C0 - 0x0098)
 class UMovieGraphVariableNode final : public UMovieGraphNode
 {
 public:
-	class UMovieGraphVariable*                    GraphVariable;                                     // 0x0098(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UMovieGraphVariable*                    GraphVariable;                                     // 0x0098(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
 	struct FMovieGraphPinProperties               OutputPin;                                         // 0x00A0(0x0020)(Transient, NoDestructor, NativeAccessSpecifierPrivate)
 
 public:
@@ -2265,17 +2398,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphVariableNode">();
+		STATIC_CLASS_IMPL("MovieGraphVariableNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphVariableNode")
 	}
 	static class UMovieGraphVariableNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphVariableNode>();
 	}
 };
-static_assert(alignof(UMovieGraphVariableNode) == 0x000008, "Wrong alignment on UMovieGraphVariableNode");
-static_assert(sizeof(UMovieGraphVariableNode) == 0x0000C0, "Wrong size on UMovieGraphVariableNode");
-static_assert(offsetof(UMovieGraphVariableNode, GraphVariable) == 0x000098, "Member 'UMovieGraphVariableNode::GraphVariable' has a wrong offset!");
-static_assert(offsetof(UMovieGraphVariableNode, OutputPin) == 0x0000A0, "Member 'UMovieGraphVariableNode::OutputPin' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieGraphVariableNode;
 
 // Class MovieRenderPipelineCore.MovieGraphWarmUpSettingNode
 // 0x0010 (0x00A8 - 0x0098)
@@ -2292,17 +2426,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphWarmUpSettingNode">();
+		STATIC_CLASS_IMPL("MovieGraphWarmUpSettingNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphWarmUpSettingNode")
 	}
 	static class UMovieGraphWarmUpSettingNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphWarmUpSettingNode>();
 	}
 };
-static_assert(alignof(UMovieGraphWarmUpSettingNode) == 0x000008, "Wrong alignment on UMovieGraphWarmUpSettingNode");
-static_assert(sizeof(UMovieGraphWarmUpSettingNode) == 0x0000A8, "Wrong size on UMovieGraphWarmUpSettingNode");
-static_assert(offsetof(UMovieGraphWarmUpSettingNode, NumWarmUpFrames) == 0x00009C, "Member 'UMovieGraphWarmUpSettingNode::NumWarmUpFrames' has a wrong offset!");
-static_assert(offsetof(UMovieGraphWarmUpSettingNode, bEmulateMotionBlur) == 0x0000A0, "Member 'UMovieGraphWarmUpSettingNode::bEmulateMotionBlur' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieGraphWarmUpSettingNode;
 
 // Class MovieRenderPipelineCore.MovieJobVariableAssignmentContainer
 // 0x0038 (0x0060 - 0x0028)
@@ -2350,17 +2485,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieJobVariableAssignmentContainer">();
+		STATIC_CLASS_IMPL("MovieJobVariableAssignmentContainer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieJobVariableAssignmentContainer")
 	}
 	static class UMovieJobVariableAssignmentContainer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieJobVariableAssignmentContainer>();
 	}
 };
-static_assert(alignof(UMovieJobVariableAssignmentContainer) == 0x000008, "Wrong alignment on UMovieJobVariableAssignmentContainer");
-static_assert(sizeof(UMovieJobVariableAssignmentContainer) == 0x000060, "Wrong size on UMovieJobVariableAssignmentContainer");
-static_assert(offsetof(UMovieJobVariableAssignmentContainer, Value) == 0x000028, "Member 'UMovieJobVariableAssignmentContainer::Value' has a wrong offset!");
-static_assert(offsetof(UMovieJobVariableAssignmentContainer, GraphPreset) == 0x000038, "Member 'UMovieJobVariableAssignmentContainer::GraphPreset' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieJobVariableAssignmentContainer;
 
 // Class MovieRenderPipelineCore.MoviePipelineCameraSetting
 // 0x0010 (0x0058 - 0x0048)
@@ -2376,35 +2512,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MoviePipelineCameraSetting">();
+		STATIC_CLASS_IMPL("MoviePipelineCameraSetting")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MoviePipelineCameraSetting")
 	}
 	static class UMoviePipelineCameraSetting* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMoviePipelineCameraSetting>();
 	}
 };
-static_assert(alignof(UMoviePipelineCameraSetting) == 0x000008, "Wrong alignment on UMoviePipelineCameraSetting");
-static_assert(sizeof(UMoviePipelineCameraSetting) == 0x000058, "Wrong size on UMoviePipelineCameraSetting");
-static_assert(offsetof(UMoviePipelineCameraSetting, ShutterTiming) == 0x000048, "Member 'UMoviePipelineCameraSetting::ShutterTiming' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineCameraSetting, OverscanPercentage) == 0x00004C, "Member 'UMoviePipelineCameraSetting::OverscanPercentage' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineCameraSetting, bRenderAllCameras) == 0x000050, "Member 'UMoviePipelineCameraSetting::bRenderAllCameras' has a wrong offset!");
-
-// Class MovieRenderPipelineCore.MoviePipelineGameMode
-// 0x0000 (0x0328 - 0x0328)
-class AMoviePipelineGameMode final : public AGameModeBase
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"MoviePipelineGameMode">();
-	}
-	static class AMoviePipelineGameMode* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<AMoviePipelineGameMode>();
-	}
-};
-static_assert(alignof(AMoviePipelineGameMode) == 0x000008, "Wrong alignment on AMoviePipelineGameMode");
-static_assert(sizeof(AMoviePipelineGameMode) == 0x000328, "Wrong size on AMoviePipelineGameMode");
+DUMPER7_ASSERTS_UMoviePipelineCameraSetting;
 
 // Class MovieRenderPipelineCore.MoviePipelineHighResSetting
 // 0x0020 (0x0068 - 0x0048)
@@ -2423,21 +2542,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MoviePipelineHighResSetting">();
+		STATIC_CLASS_IMPL("MoviePipelineHighResSetting")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MoviePipelineHighResSetting")
 	}
 	static class UMoviePipelineHighResSetting* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMoviePipelineHighResSetting>();
 	}
 };
-static_assert(alignof(UMoviePipelineHighResSetting) == 0x000008, "Wrong alignment on UMoviePipelineHighResSetting");
-static_assert(sizeof(UMoviePipelineHighResSetting) == 0x000068, "Wrong size on UMoviePipelineHighResSetting");
-static_assert(offsetof(UMoviePipelineHighResSetting, TileCount) == 0x000048, "Member 'UMoviePipelineHighResSetting::TileCount' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineHighResSetting, TextureSharpnessBias) == 0x00004C, "Member 'UMoviePipelineHighResSetting::TextureSharpnessBias' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineHighResSetting, OverlapRatio) == 0x000050, "Member 'UMoviePipelineHighResSetting::OverlapRatio' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineHighResSetting, bOverrideSubSurfaceScattering) == 0x000054, "Member 'UMoviePipelineHighResSetting::bOverrideSubSurfaceScattering' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineHighResSetting, BurleySampleCount) == 0x000058, "Member 'UMoviePipelineHighResSetting::BurleySampleCount' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineHighResSetting, bAllocateHistoryPerTile) == 0x00005C, "Member 'UMoviePipelineHighResSetting::bAllocateHistoryPerTile' has a wrong offset!");
+DUMPER7_ASSERTS_UMoviePipelineHighResSetting;
 
 // Class MovieRenderPipelineCore.MoviePipelineInProcessExecutorSettings
 // 0x0030 (0x0068 - 0x0038)
@@ -2454,19 +2570,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MoviePipelineInProcessExecutorSettings">();
+		STATIC_CLASS_IMPL("MoviePipelineInProcessExecutorSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MoviePipelineInProcessExecutorSettings")
 	}
 	static class UMoviePipelineInProcessExecutorSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMoviePipelineInProcessExecutorSettings>();
 	}
 };
-static_assert(alignof(UMoviePipelineInProcessExecutorSettings) == 0x000008, "Wrong alignment on UMoviePipelineInProcessExecutorSettings");
-static_assert(sizeof(UMoviePipelineInProcessExecutorSettings) == 0x000068, "Wrong size on UMoviePipelineInProcessExecutorSettings");
-static_assert(offsetof(UMoviePipelineInProcessExecutorSettings, bCloseEditor) == 0x000038, "Member 'UMoviePipelineInProcessExecutorSettings::bCloseEditor' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineInProcessExecutorSettings, AdditionalCommandLineArguments) == 0x000040, "Member 'UMoviePipelineInProcessExecutorSettings::AdditionalCommandLineArguments' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineInProcessExecutorSettings, InheritedCommandLineArguments) == 0x000050, "Member 'UMoviePipelineInProcessExecutorSettings::InheritedCommandLineArguments' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineInProcessExecutorSettings, InitialDelayFrameCount) == 0x000060, "Member 'UMoviePipelineInProcessExecutorSettings::InitialDelayFrameCount' has a wrong offset!");
+DUMPER7_ASSERTS_UMoviePipelineInProcessExecutorSettings;
 
 // Class MovieRenderPipelineCore.MoviePipelineOutputBase
 // 0x0000 (0x0048 - 0x0048)
@@ -2475,50 +2590,18 @@ class UMoviePipelineOutputBase : public UMoviePipelineSetting
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MoviePipelineOutputBase">();
+		STATIC_CLASS_IMPL("MoviePipelineOutputBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MoviePipelineOutputBase")
 	}
 	static class UMoviePipelineOutputBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMoviePipelineOutputBase>();
 	}
 };
-static_assert(alignof(UMoviePipelineOutputBase) == 0x000008, "Wrong alignment on UMoviePipelineOutputBase");
-static_assert(sizeof(UMoviePipelineOutputBase) == 0x000048, "Wrong size on UMoviePipelineOutputBase");
-
-// Class MovieRenderPipelineCore.MoviePipelineSetting_BlueprintBase
-// 0x0018 (0x0060 - 0x0048)
-class UMoviePipelineSetting_BlueprintBase final : public UMoviePipelineSetting
-{
-public:
-	class FText                                   CategoryText;                                      // 0x0048(0x0010)(Edit, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
-	bool                                          bIsValidOnPrimary;                                 // 0x0058(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bIsValidOnShots;                                   // 0x0059(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bCanBeDisabled;                                    // 0x005A(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_5B[0x5];                                       // 0x005B(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	void OnEngineTickBeginFrame();
-	void ReceiveSetupForPipelineImpl(class UMoviePipeline* InPipeline);
-	void ReceiveTeardownForPipelineImpl(class UMoviePipeline* InPipeline);
-
-	struct FMoviePipelineFormatArgs ReceiveGetFormatArguments(struct FMoviePipelineFormatArgs& InOutFormatArgs) const;
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"MoviePipelineSetting_BlueprintBase">();
-	}
-	static class UMoviePipelineSetting_BlueprintBase* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMoviePipelineSetting_BlueprintBase>();
-	}
-};
-static_assert(alignof(UMoviePipelineSetting_BlueprintBase) == 0x000008, "Wrong alignment on UMoviePipelineSetting_BlueprintBase");
-static_assert(sizeof(UMoviePipelineSetting_BlueprintBase) == 0x000060, "Wrong size on UMoviePipelineSetting_BlueprintBase");
-static_assert(offsetof(UMoviePipelineSetting_BlueprintBase, CategoryText) == 0x000048, "Member 'UMoviePipelineSetting_BlueprintBase::CategoryText' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineSetting_BlueprintBase, bIsValidOnPrimary) == 0x000058, "Member 'UMoviePipelineSetting_BlueprintBase::bIsValidOnPrimary' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineSetting_BlueprintBase, bIsValidOnShots) == 0x000059, "Member 'UMoviePipelineSetting_BlueprintBase::bIsValidOnShots' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineSetting_BlueprintBase, bCanBeDisabled) == 0x00005A, "Member 'UMoviePipelineSetting_BlueprintBase::bCanBeDisabled' has a wrong offset!");
+DUMPER7_ASSERTS_UMoviePipelineOutputBase;
 
 // Class MovieRenderPipelineCore.MoviePipelineViewFamilySetting
 // 0x0000 (0x0048 - 0x0048)
@@ -2527,15 +2610,18 @@ class UMoviePipelineViewFamilySetting final : public UMoviePipelineSetting
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MoviePipelineViewFamilySetting">();
+		STATIC_CLASS_IMPL("MoviePipelineViewFamilySetting")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MoviePipelineViewFamilySetting")
 	}
 	static class UMoviePipelineViewFamilySetting* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMoviePipelineViewFamilySetting>();
 	}
 };
-static_assert(alignof(UMoviePipelineViewFamilySetting) == 0x000008, "Wrong alignment on UMoviePipelineViewFamilySetting");
-static_assert(sizeof(UMoviePipelineViewFamilySetting) == 0x000048, "Wrong size on UMoviePipelineViewFamilySetting");
+DUMPER7_ASSERTS_UMoviePipelineViewFamilySetting;
 
 // Class MovieRenderPipelineCore.MovieRenderDebugWidget
 // 0x0000 (0x02E0 - 0x02E0)
@@ -2547,15 +2633,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieRenderDebugWidget">();
+		STATIC_CLASS_IMPL("MovieRenderDebugWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieRenderDebugWidget")
 	}
 	static class UMovieRenderDebugWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieRenderDebugWidget>();
 	}
 };
-static_assert(alignof(UMovieRenderDebugWidget) == 0x000008, "Wrong alignment on UMovieRenderDebugWidget");
-static_assert(sizeof(UMovieRenderDebugWidget) == 0x0002E0, "Wrong size on UMovieRenderDebugWidget");
+DUMPER7_ASSERTS_UMovieRenderDebugWidget;
 
 // Class MovieRenderPipelineCore.MovieGraphRenderPreviewWidget
 // 0x0000 (0x02E0 - 0x02E0)
@@ -2567,68 +2656,41 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphRenderPreviewWidget">();
+		STATIC_CLASS_IMPL("MovieGraphRenderPreviewWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieGraphRenderPreviewWidget")
 	}
 	static class UMovieGraphRenderPreviewWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieGraphRenderPreviewWidget>();
 	}
 };
-static_assert(alignof(UMovieGraphRenderPreviewWidget) == 0x000008, "Wrong alignment on UMovieGraphRenderPreviewWidget");
-static_assert(sizeof(UMovieGraphRenderPreviewWidget) == 0x0002E0, "Wrong size on UMovieGraphRenderPreviewWidget");
+DUMPER7_ASSERTS_UMovieGraphRenderPreviewWidget;
 
-// Class MovieRenderPipelineCore.MoviePipeline
-// 0x03A8 (0x0420 - 0x0078)
-class UMoviePipeline final : public UMoviePipelineBase
+// Class MovieRenderPipelineCore.MoviePipelineCustomTimeStep
+// 0x0010 (0x0038 - 0x0028)
+class UMoviePipelineCustomTimeStep final : public UEngineCustomTimeStep
 {
 public:
-	TMulticastInlineDelegate<void(class UMoviePipeline* MoviePipeline, bool bFatalError)> OnMoviePipelineFinishedDelegate; // 0x0078(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	class UMoviePipelineCustomTimeStep*           CustomTimeStep;                                    // 0x0088(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, PersistentInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_90[0x10];                                      // 0x0090(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
-	class UEngineCustomTimeStep*                  CachedPrevCustomTimeStep;                          // 0x00A0(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class ULevelSequence*                         TargetSequence;                                    // 0x00A8(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class ALevelSequenceActor*                    LevelSequenceActor;                                // 0x00B0(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UMovieRenderDebugWidget*                DebugWidget;                                       // 0x00B8(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UTexture*                               PreviewTexture;                                    // 0x00C0(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_C8[0x260];                                     // 0x00C8(0x0260)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UMovieRenderDebugWidget>    DebugWidgetClass;                                  // 0x0328(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_330[0x8];                                      // 0x0330(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMoviePipelineExecutorJob*              CurrentJob;                                        // 0x0338(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_340[0xE0];                                     // 0x0340(0x00E0)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	void Initialize(class UMoviePipelineExecutorJob* InJob);
-	void OnMoviePipelineFinishedImpl();
-	void SetInitializationTime(const struct FDateTime& InDateTime);
-
-	class UMoviePipelineExecutorJob* GetCurrentJob() const;
-	struct FDateTime GetInitializationTime() const;
-	struct FTimespan GetInitializationTimeOffset() const;
-	class UMoviePipelinePrimaryConfig* GetPipelineMasterConfig() const;
-	class UMoviePipelinePrimaryConfig* GetPipelinePrimaryConfig() const;
-	class UTexture* GetPreviewTexture() const;
+	uint8                                         Pad_28[0x10];                                      // 0x0028(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MoviePipeline">();
+		STATIC_CLASS_IMPL("MoviePipelineCustomTimeStep")
 	}
-	static class UMoviePipeline* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UMoviePipeline>();
+		STATIC_NAME_IMPL(L"MoviePipelineCustomTimeStep")
+	}
+	static class UMoviePipelineCustomTimeStep* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMoviePipelineCustomTimeStep>();
 	}
 };
-static_assert(alignof(UMoviePipeline) == 0x000008, "Wrong alignment on UMoviePipeline");
-static_assert(sizeof(UMoviePipeline) == 0x000420, "Wrong size on UMoviePipeline");
-static_assert(offsetof(UMoviePipeline, OnMoviePipelineFinishedDelegate) == 0x000078, "Member 'UMoviePipeline::OnMoviePipelineFinishedDelegate' has a wrong offset!");
-static_assert(offsetof(UMoviePipeline, CustomTimeStep) == 0x000088, "Member 'UMoviePipeline::CustomTimeStep' has a wrong offset!");
-static_assert(offsetof(UMoviePipeline, CachedPrevCustomTimeStep) == 0x0000A0, "Member 'UMoviePipeline::CachedPrevCustomTimeStep' has a wrong offset!");
-static_assert(offsetof(UMoviePipeline, TargetSequence) == 0x0000A8, "Member 'UMoviePipeline::TargetSequence' has a wrong offset!");
-static_assert(offsetof(UMoviePipeline, LevelSequenceActor) == 0x0000B0, "Member 'UMoviePipeline::LevelSequenceActor' has a wrong offset!");
-static_assert(offsetof(UMoviePipeline, DebugWidget) == 0x0000B8, "Member 'UMoviePipeline::DebugWidget' has a wrong offset!");
-static_assert(offsetof(UMoviePipeline, PreviewTexture) == 0x0000C0, "Member 'UMoviePipeline::PreviewTexture' has a wrong offset!");
-static_assert(offsetof(UMoviePipeline, DebugWidgetClass) == 0x000328, "Member 'UMoviePipeline::DebugWidgetClass' has a wrong offset!");
-static_assert(offsetof(UMoviePipeline, CurrentJob) == 0x000338, "Member 'UMoviePipeline::CurrentJob' has a wrong offset!");
+DUMPER7_ASSERTS_UMoviePipelineCustomTimeStep;
 
 // Class MovieRenderPipelineCore.MoviePipelineAntiAliasingSetting
 // 0x0020 (0x0068 - 0x0048)
@@ -2650,23 +2712,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MoviePipelineAntiAliasingSetting">();
+		STATIC_CLASS_IMPL("MoviePipelineAntiAliasingSetting")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MoviePipelineAntiAliasingSetting")
 	}
 	static class UMoviePipelineAntiAliasingSetting* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMoviePipelineAntiAliasingSetting>();
 	}
 };
-static_assert(alignof(UMoviePipelineAntiAliasingSetting) == 0x000008, "Wrong alignment on UMoviePipelineAntiAliasingSetting");
-static_assert(sizeof(UMoviePipelineAntiAliasingSetting) == 0x000068, "Wrong size on UMoviePipelineAntiAliasingSetting");
-static_assert(offsetof(UMoviePipelineAntiAliasingSetting, SpatialSampleCount) == 0x000048, "Member 'UMoviePipelineAntiAliasingSetting::SpatialSampleCount' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineAntiAliasingSetting, TemporalSampleCount) == 0x00004C, "Member 'UMoviePipelineAntiAliasingSetting::TemporalSampleCount' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineAntiAliasingSetting, bOverrideAntiAliasing) == 0x000050, "Member 'UMoviePipelineAntiAliasingSetting::bOverrideAntiAliasing' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineAntiAliasingSetting, AntiAliasingMethod) == 0x000051, "Member 'UMoviePipelineAntiAliasingSetting::AntiAliasingMethod' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineAntiAliasingSetting, RenderWarmUpCount) == 0x000054, "Member 'UMoviePipelineAntiAliasingSetting::RenderWarmUpCount' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineAntiAliasingSetting, bUseCameraCutForWarmUp) == 0x000058, "Member 'UMoviePipelineAntiAliasingSetting::bUseCameraCutForWarmUp' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineAntiAliasingSetting, EngineWarmUpCount) == 0x00005C, "Member 'UMoviePipelineAntiAliasingSetting::EngineWarmUpCount' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineAntiAliasingSetting, bRenderWarmUpFrames) == 0x000060, "Member 'UMoviePipelineAntiAliasingSetting::bRenderWarmUpFrames' has a wrong offset!");
+DUMPER7_ASSERTS_UMoviePipelineAntiAliasingSetting;
 
 // Class MovieRenderPipelineCore.MoviePipelineBlueprintLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -2708,39 +2765,48 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MoviePipelineBlueprintLibrary">();
+		STATIC_CLASS_IMPL("MoviePipelineBlueprintLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MoviePipelineBlueprintLibrary")
 	}
 	static class UMoviePipelineBlueprintLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMoviePipelineBlueprintLibrary>();
 	}
 };
-static_assert(alignof(UMoviePipelineBlueprintLibrary) == 0x000008, "Wrong alignment on UMoviePipelineBlueprintLibrary");
-static_assert(sizeof(UMoviePipelineBlueprintLibrary) == 0x000028, "Wrong size on UMoviePipelineBlueprintLibrary");
+DUMPER7_ASSERTS_UMoviePipelineBlueprintLibrary;
 
-// Class MovieRenderPipelineCore.MoviePipelineColorSetting
-// 0x00A8 (0x00F0 - 0x0048)
-class UMoviePipelineColorSetting final : public UMoviePipelineSetting
+// Class MovieRenderPipelineCore.MoviePipelineCommandLineEncoder
+// 0x0040 (0x0088 - 0x0048)
+class UMoviePipelineCommandLineEncoder final : public UMoviePipelineSetting
 {
 public:
-	struct FOpenColorIODisplayConfiguration       OCIOConfiguration;                                 // 0x0048(0x00A0)(Edit, BlueprintVisible, AdvancedDisplay, NativeAccessSpecifierPublic)
-	bool                                          bDisableToneCurve;                                 // 0x00E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E9[0x7];                                       // 0x00E9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class FString                                 FileNameFormatOverride;                            // 0x0048(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EMoviePipelineEncodeQuality                   Quality;                                           // 0x0058(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 AdditionalCommandLineArgs;                         // 0x0060(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bDeleteSourceFiles;                                // 0x0070(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bSkipEncodeOnRenderCanceled;                       // 0x0071(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bWriteEachFrameDuration;                           // 0x0072(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_73[0x15];                                      // 0x0073(0x0015)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MoviePipelineColorSetting">();
+		STATIC_CLASS_IMPL("MoviePipelineCommandLineEncoder")
 	}
-	static class UMoviePipelineColorSetting* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UMoviePipelineColorSetting>();
+		STATIC_NAME_IMPL(L"MoviePipelineCommandLineEncoder")
+	}
+	static class UMoviePipelineCommandLineEncoder* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMoviePipelineCommandLineEncoder>();
 	}
 };
-static_assert(alignof(UMoviePipelineColorSetting) == 0x000008, "Wrong alignment on UMoviePipelineColorSetting");
-static_assert(sizeof(UMoviePipelineColorSetting) == 0x0000F0, "Wrong size on UMoviePipelineColorSetting");
-static_assert(offsetof(UMoviePipelineColorSetting, OCIOConfiguration) == 0x000048, "Member 'UMoviePipelineColorSetting::OCIOConfiguration' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineColorSetting, bDisableToneCurve) == 0x0000E8, "Member 'UMoviePipelineColorSetting::bDisableToneCurve' has a wrong offset!");
+DUMPER7_ASSERTS_UMoviePipelineCommandLineEncoder;
 
 // Class MovieRenderPipelineCore.MoviePipelineCommandLineEncoderSettings
 // 0x00C0 (0x00F8 - 0x0038)
@@ -2763,27 +2829,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MoviePipelineCommandLineEncoderSettings">();
+		STATIC_CLASS_IMPL("MoviePipelineCommandLineEncoderSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MoviePipelineCommandLineEncoderSettings")
 	}
 	static class UMoviePipelineCommandLineEncoderSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMoviePipelineCommandLineEncoderSettings>();
 	}
 };
-static_assert(alignof(UMoviePipelineCommandLineEncoderSettings) == 0x000008, "Wrong alignment on UMoviePipelineCommandLineEncoderSettings");
-static_assert(sizeof(UMoviePipelineCommandLineEncoderSettings) == 0x0000F8, "Wrong size on UMoviePipelineCommandLineEncoderSettings");
-static_assert(offsetof(UMoviePipelineCommandLineEncoderSettings, ExecutablePath) == 0x000038, "Member 'UMoviePipelineCommandLineEncoderSettings::ExecutablePath' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineCommandLineEncoderSettings, CodecHelpText) == 0x000048, "Member 'UMoviePipelineCommandLineEncoderSettings::CodecHelpText' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineCommandLineEncoderSettings, VideoCodec) == 0x000058, "Member 'UMoviePipelineCommandLineEncoderSettings::VideoCodec' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineCommandLineEncoderSettings, AudioCodec) == 0x000068, "Member 'UMoviePipelineCommandLineEncoderSettings::AudioCodec' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineCommandLineEncoderSettings, OutputFileExtension) == 0x000078, "Member 'UMoviePipelineCommandLineEncoderSettings::OutputFileExtension' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineCommandLineEncoderSettings, CommandLineFormat) == 0x000088, "Member 'UMoviePipelineCommandLineEncoderSettings::CommandLineFormat' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineCommandLineEncoderSettings, VideoInputStringFormat) == 0x000098, "Member 'UMoviePipelineCommandLineEncoderSettings::VideoInputStringFormat' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineCommandLineEncoderSettings, AudioInputStringFormat) == 0x0000A8, "Member 'UMoviePipelineCommandLineEncoderSettings::AudioInputStringFormat' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineCommandLineEncoderSettings, EncodeSettings_Low) == 0x0000B8, "Member 'UMoviePipelineCommandLineEncoderSettings::EncodeSettings_Low' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineCommandLineEncoderSettings, EncodeSettings_Med) == 0x0000C8, "Member 'UMoviePipelineCommandLineEncoderSettings::EncodeSettings_Med' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineCommandLineEncoderSettings, EncodeSettings_High) == 0x0000D8, "Member 'UMoviePipelineCommandLineEncoderSettings::EncodeSettings_High' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineCommandLineEncoderSettings, EncodeSettings_Epic) == 0x0000E8, "Member 'UMoviePipelineCommandLineEncoderSettings::EncodeSettings_Epic' has a wrong offset!");
+DUMPER7_ASSERTS_UMoviePipelineCommandLineEncoderSettings;
 
 // Class MovieRenderPipelineCore.MoviePipelineConfigBase
 // 0x0050 (0x0078 - 0x0028)
@@ -2791,7 +2848,7 @@ class UMoviePipelineConfigBase : public UObject
 {
 public:
 	class FString                                 DisplayName;                                       // 0x0028(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class UMoviePipelineSetting*>          Settings;                                          // 0x0038(0x0010)(Edit, ExportObject, ZeroConstructor, EditConst, ContainsInstancedReference, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
+	TArray<class UMoviePipelineSetting*>          Settings;                                          // 0x0038(0x0010)(Edit, ExportObject, ZeroConstructor, EditConst, ContainsInstancedReference, Protected, UObjectWrapper, NativeAccessSpecifierProtected, TObjectPtr)
 	TSoftObjectPtr<class UMoviePipelineConfigBase> ConfigOrigin;                                     // 0x0048(0x0028)(UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_70[0x8];                                       // 0x0070(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
@@ -2809,18 +2866,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MoviePipelineConfigBase">();
+		STATIC_CLASS_IMPL("MoviePipelineConfigBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MoviePipelineConfigBase")
 	}
 	static class UMoviePipelineConfigBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMoviePipelineConfigBase>();
 	}
 };
-static_assert(alignof(UMoviePipelineConfigBase) == 0x000008, "Wrong alignment on UMoviePipelineConfigBase");
-static_assert(sizeof(UMoviePipelineConfigBase) == 0x000078, "Wrong size on UMoviePipelineConfigBase");
-static_assert(offsetof(UMoviePipelineConfigBase, DisplayName) == 0x000028, "Member 'UMoviePipelineConfigBase::DisplayName' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineConfigBase, Settings) == 0x000038, "Member 'UMoviePipelineConfigBase::Settings' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineConfigBase, ConfigOrigin) == 0x000048, "Member 'UMoviePipelineConfigBase::ConfigOrigin' has a wrong offset!");
+DUMPER7_ASSERTS_UMoviePipelineConfigBase;
 
 // Class MovieRenderPipelineCore.MoviePipelineDebugSettings
 // 0x0010 (0x0058 - 0x0048)
@@ -2837,19 +2894,71 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MoviePipelineDebugSettings">();
+		STATIC_CLASS_IMPL("MoviePipelineDebugSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MoviePipelineDebugSettings")
 	}
 	static class UMoviePipelineDebugSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMoviePipelineDebugSettings>();
 	}
 };
-static_assert(alignof(UMoviePipelineDebugSettings) == 0x000008, "Wrong alignment on UMoviePipelineDebugSettings");
-static_assert(sizeof(UMoviePipelineDebugSettings) == 0x000058, "Wrong size on UMoviePipelineDebugSettings");
-static_assert(offsetof(UMoviePipelineDebugSettings, bWriteAllSamples) == 0x000048, "Member 'UMoviePipelineDebugSettings::bWriteAllSamples' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineDebugSettings, bCaptureFramesWithRenderDoc) == 0x000049, "Member 'UMoviePipelineDebugSettings::bCaptureFramesWithRenderDoc' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineDebugSettings, CaptureFrame) == 0x00004C, "Member 'UMoviePipelineDebugSettings::CaptureFrame' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineDebugSettings, bCaptureUnrealInsightsTrace) == 0x000050, "Member 'UMoviePipelineDebugSettings::bCaptureUnrealInsightsTrace' has a wrong offset!");
+DUMPER7_ASSERTS_UMoviePipelineDebugSettings;
+
+// Class MovieRenderPipelineCore.MoviePipelineExecutorBase
+// 0x00F0 (0x0118 - 0x0028)
+class UMoviePipelineExecutorBase : public UObject
+{
+public:
+	TMulticastInlineDelegate<void(class UMoviePipelineExecutorBase* PipelineExecutor, bool bSuccess)> OnExecutorFinishedDelegate; // 0x0028(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_38[0x18];                                      // 0x0038(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(class UMoviePipelineExecutorBase* PipelineExecutor, class UMoviePipeline* PipelineWithError, bool bIsFatal, class FText ErrorText)> OnExecutorErroredDelegate; // 0x0050(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_60[0x20];                                      // 0x0060(0x0020)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(const class FString& Message)> SocketMessageRecievedDelegate;      // 0x0080(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, Protected, NativeAccessSpecifierProtected)
+	TMulticastInlineDelegate<void(int32 RequestIndex, int32 ResponseCode, const class FString& Message)> HTTPResponseRecievedDelegate; // 0x0090(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, Protected, NativeAccessSpecifierProtected)
+	TSubclassOf<class UMovieRenderDebugWidget>    DebugWidgetClass;                                  // 0x00A0(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_A8[0x10];                                      // 0x00A8(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 UserData;                                          // 0x00B8(0x0010)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UMoviePipeline>             TargetPipelineClass;                               // 0x00C8(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_D0[0x48];                                      // 0x00D0(0x0048)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void CancelAllJobs();
+	void CancelCurrentJob();
+	bool ConnectSocket(const class FString& InHostName, const int32 InPort);
+	void DisconnectSocket();
+	void Execute(class UMoviePipelineQueue* InPipelineQueue);
+	void OnBeginFrame();
+	void OnExecutorErroredImpl(class UMoviePipeline* ErroredPipeline, bool bFatal, const class FText& ErrorReason);
+	void OnExecutorFinishedImpl();
+	int32 SendHTTPRequest(const class FString& InURL, const class FString& InVerb, const class FString& InMessage, const TMap<class FString, class FString>& InHeaders);
+	bool SendSocketMessage(const class FString& InMessage);
+	void SetMoviePipelineClass(class UClass* InPipelineClass);
+	void SetStatusMessage(const class FString& InStatus);
+	void SetStatusProgress(const float InProgress);
+
+	class FString GetStatusMessage() const;
+	float GetStatusProgress() const;
+	bool IsRendering() const;
+	bool IsSocketConnected() const;
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MoviePipelineExecutorBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MoviePipelineExecutorBase")
+	}
+	static class UMoviePipelineExecutorBase* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMoviePipelineExecutorBase>();
+	}
+};
+DUMPER7_ASSERTS_UMoviePipelineExecutorBase;
 
 // Class MovieRenderPipelineCore.MoviePipelineFCPXMLExporter
 // 0x0038 (0x0080 - 0x0048)
@@ -2864,17 +2973,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MoviePipelineFCPXMLExporter">();
+		STATIC_CLASS_IMPL("MoviePipelineFCPXMLExporter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MoviePipelineFCPXMLExporter")
 	}
 	static class UMoviePipelineFCPXMLExporter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMoviePipelineFCPXMLExporter>();
 	}
 };
-static_assert(alignof(UMoviePipelineFCPXMLExporter) == 0x000008, "Wrong alignment on UMoviePipelineFCPXMLExporter");
-static_assert(sizeof(UMoviePipelineFCPXMLExporter) == 0x000080, "Wrong size on UMoviePipelineFCPXMLExporter");
-static_assert(offsetof(UMoviePipelineFCPXMLExporter, FileNameFormatOverride) == 0x000050, "Member 'UMoviePipelineFCPXMLExporter::FileNameFormatOverride' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineFCPXMLExporter, DataSource) == 0x000060, "Member 'UMoviePipelineFCPXMLExporter::DataSource' has a wrong offset!");
+DUMPER7_ASSERTS_UMoviePipelineFCPXMLExporter;
 
 // Class MovieRenderPipelineCore.MoviePipelineGameOverrideSetting
 // 0x00E8 (0x0130 - 0x0048)
@@ -2903,29 +3013,67 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MoviePipelineGameOverrideSetting">();
+		STATIC_CLASS_IMPL("MoviePipelineGameOverrideSetting")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MoviePipelineGameOverrideSetting")
 	}
 	static class UMoviePipelineGameOverrideSetting* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMoviePipelineGameOverrideSetting>();
 	}
 };
-static_assert(alignof(UMoviePipelineGameOverrideSetting) == 0x000008, "Wrong alignment on UMoviePipelineGameOverrideSetting");
-static_assert(sizeof(UMoviePipelineGameOverrideSetting) == 0x000130, "Wrong size on UMoviePipelineGameOverrideSetting");
-static_assert(offsetof(UMoviePipelineGameOverrideSetting, GameModeOverride) == 0x000048, "Member 'UMoviePipelineGameOverrideSetting::GameModeOverride' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineGameOverrideSetting, bCinematicQualitySettings) == 0x000050, "Member 'UMoviePipelineGameOverrideSetting::bCinematicQualitySettings' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineGameOverrideSetting, TextureStreaming) == 0x000051, "Member 'UMoviePipelineGameOverrideSetting::TextureStreaming' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineGameOverrideSetting, bUseLODZero) == 0x000052, "Member 'UMoviePipelineGameOverrideSetting::bUseLODZero' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineGameOverrideSetting, bDisableHLODs) == 0x000053, "Member 'UMoviePipelineGameOverrideSetting::bDisableHLODs' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineGameOverrideSetting, bUseHighQualityShadows) == 0x000054, "Member 'UMoviePipelineGameOverrideSetting::bUseHighQualityShadows' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineGameOverrideSetting, ShadowDistanceScale) == 0x000058, "Member 'UMoviePipelineGameOverrideSetting::ShadowDistanceScale' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineGameOverrideSetting, ShadowRadiusThreshold) == 0x00005C, "Member 'UMoviePipelineGameOverrideSetting::ShadowRadiusThreshold' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineGameOverrideSetting, bOverrideViewDistanceScale) == 0x000060, "Member 'UMoviePipelineGameOverrideSetting::bOverrideViewDistanceScale' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineGameOverrideSetting, ViewDistanceScale) == 0x000064, "Member 'UMoviePipelineGameOverrideSetting::ViewDistanceScale' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineGameOverrideSetting, bFlushGrassStreaming) == 0x000068, "Member 'UMoviePipelineGameOverrideSetting::bFlushGrassStreaming' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineGameOverrideSetting, bFlushStreamingManagers) == 0x000069, "Member 'UMoviePipelineGameOverrideSetting::bFlushStreamingManagers' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineGameOverrideSetting, bOverrideVirtualTextureFeedbackFactor) == 0x00006A, "Member 'UMoviePipelineGameOverrideSetting::bOverrideVirtualTextureFeedbackFactor' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineGameOverrideSetting, VirtualTextureFeedbackFactor) == 0x00006C, "Member 'UMoviePipelineGameOverrideSetting::VirtualTextureFeedbackFactor' has a wrong offset!");
+DUMPER7_ASSERTS_UMoviePipelineGameOverrideSetting;
+
+// Class MovieRenderPipelineCore.MoviePipelineLinearExecutorBase
+// 0x0028 (0x0140 - 0x0118)
+class UMoviePipelineLinearExecutorBase : public UMoviePipelineExecutorBase
+{
+public:
+	class UMoviePipelineQueue*                    Queue;                                             // 0x0118(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
+	class UMoviePipelineBase*                     ActiveMoviePipeline;                               // 0x0120(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
+	uint8                                         Pad_128[0x18];                                     // 0x0128(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MoviePipelineLinearExecutorBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MoviePipelineLinearExecutorBase")
+	}
+	static class UMoviePipelineLinearExecutorBase* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMoviePipelineLinearExecutorBase>();
+	}
+};
+DUMPER7_ASSERTS_UMoviePipelineLinearExecutorBase;
+
+// Class MovieRenderPipelineCore.MoviePipelineInProcessExecutor
+// 0x0048 (0x0188 - 0x0140)
+class UMoviePipelineInProcessExecutor final : public UMoviePipelineLinearExecutorBase
+{
+public:
+	bool                                          bUseCurrentLevel;                                  // 0x0140(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_141[0x47];                                     // 0x0141(0x0047)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MoviePipelineInProcessExecutor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MoviePipelineInProcessExecutor")
+	}
+	static class UMoviePipelineInProcessExecutor* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMoviePipelineInProcessExecutor>();
+	}
+};
+DUMPER7_ASSERTS_UMoviePipelineInProcessExecutor;
 
 // Class MovieRenderPipelineCore.MoviePipelineOutputSetting
 // 0x0068 (0x00B0 - 0x0048)
@@ -2958,40 +3106,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MoviePipelineOutputSetting">();
+		STATIC_CLASS_IMPL("MoviePipelineOutputSetting")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MoviePipelineOutputSetting")
 	}
 	static class UMoviePipelineOutputSetting* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMoviePipelineOutputSetting>();
 	}
 };
-static_assert(alignof(UMoviePipelineOutputSetting) == 0x000008, "Wrong alignment on UMoviePipelineOutputSetting");
-static_assert(sizeof(UMoviePipelineOutputSetting) == 0x0000B0, "Wrong size on UMoviePipelineOutputSetting");
-static_assert(offsetof(UMoviePipelineOutputSetting, OutputDirectory) == 0x000048, "Member 'UMoviePipelineOutputSetting::OutputDirectory' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineOutputSetting, FileNameFormat) == 0x000058, "Member 'UMoviePipelineOutputSetting::FileNameFormat' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineOutputSetting, OutputResolution) == 0x000068, "Member 'UMoviePipelineOutputSetting::OutputResolution' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineOutputSetting, bUseCustomFrameRate) == 0x000070, "Member 'UMoviePipelineOutputSetting::bUseCustomFrameRate' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineOutputSetting, OutputFrameRate) == 0x000074, "Member 'UMoviePipelineOutputSetting::OutputFrameRate' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineOutputSetting, bOverrideExistingOutput) == 0x000080, "Member 'UMoviePipelineOutputSetting::bOverrideExistingOutput' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineOutputSetting, HandleFrameCount) == 0x000084, "Member 'UMoviePipelineOutputSetting::HandleFrameCount' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineOutputSetting, OutputFrameStep) == 0x000088, "Member 'UMoviePipelineOutputSetting::OutputFrameStep' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineOutputSetting, bUseCustomPlaybackRange) == 0x00008C, "Member 'UMoviePipelineOutputSetting::bUseCustomPlaybackRange' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineOutputSetting, CustomStartFrame) == 0x000090, "Member 'UMoviePipelineOutputSetting::CustomStartFrame' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineOutputSetting, CustomEndFrame) == 0x000094, "Member 'UMoviePipelineOutputSetting::CustomEndFrame' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineOutputSetting, VersionNumber) == 0x000098, "Member 'UMoviePipelineOutputSetting::VersionNumber' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineOutputSetting, bAutoVersion) == 0x00009C, "Member 'UMoviePipelineOutputSetting::bAutoVersion' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineOutputSetting, ZeroPadFrameNumbers) == 0x0000A0, "Member 'UMoviePipelineOutputSetting::ZeroPadFrameNumbers' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineOutputSetting, FrameNumberOffset) == 0x0000A4, "Member 'UMoviePipelineOutputSetting::FrameNumberOffset' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineOutputSetting, bFlushDiskWritesPerShot) == 0x0000A8, "Member 'UMoviePipelineOutputSetting::bFlushDiskWritesPerShot' has a wrong offset!");
+DUMPER7_ASSERTS_UMoviePipelineOutputSetting;
 
 // Class MovieRenderPipelineCore.MoviePipelinePrimaryConfig
 // 0x0068 (0x00E0 - 0x0078)
 class UMoviePipelinePrimaryConfig final : public UMoviePipelineConfigBase
 {
 public:
-	TMap<class FString, class UMoviePipelineShotConfig*> PerShotConfigMapping;                       // 0x0078(0x0050)(ExportObject, ContainsInstancedReference, UObjectWrapper, NativeAccessSpecifierPublic)
-	class UMoviePipelineOutputSetting*            OutputSetting;                                     // 0x00C8(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, PersistentInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	TArray<class UMoviePipelineSetting*>          TransientSettings;                                 // 0x00D0(0x0010)(ZeroConstructor, Transient, UObjectWrapper, NativeAccessSpecifierPrivate)
+	TMap<class FString, class UMoviePipelineShotConfig*> PerShotConfigMapping;                       // 0x0078(0x0050)(ExportObject, ContainsInstancedReference, UObjectWrapper, NativeAccessSpecifierPublic, TObjectPtr)
+	class UMoviePipelineOutputSetting*            OutputSetting;                                     // 0x00C8(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, PersistentInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
+	TArray<class UMoviePipelineSetting*>          TransientSettings;                                 // 0x00D0(0x0010)(ZeroConstructor, Transient, UObjectWrapper, NativeAccessSpecifierPrivate, TObjectPtr)
 
 public:
 	void InitializeTransientSettings();
@@ -3003,18 +3138,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MoviePipelinePrimaryConfig">();
+		STATIC_CLASS_IMPL("MoviePipelinePrimaryConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MoviePipelinePrimaryConfig")
 	}
 	static class UMoviePipelinePrimaryConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMoviePipelinePrimaryConfig>();
 	}
 };
-static_assert(alignof(UMoviePipelinePrimaryConfig) == 0x000008, "Wrong alignment on UMoviePipelinePrimaryConfig");
-static_assert(sizeof(UMoviePipelinePrimaryConfig) == 0x0000E0, "Wrong size on UMoviePipelinePrimaryConfig");
-static_assert(offsetof(UMoviePipelinePrimaryConfig, PerShotConfigMapping) == 0x000078, "Member 'UMoviePipelinePrimaryConfig::PerShotConfigMapping' has a wrong offset!");
-static_assert(offsetof(UMoviePipelinePrimaryConfig, OutputSetting) == 0x0000C8, "Member 'UMoviePipelinePrimaryConfig::OutputSetting' has a wrong offset!");
-static_assert(offsetof(UMoviePipelinePrimaryConfig, TransientSettings) == 0x0000D0, "Member 'UMoviePipelinePrimaryConfig::TransientSettings' has a wrong offset!");
+DUMPER7_ASSERTS_UMoviePipelinePrimaryConfig;
 
 // Class MovieRenderPipelineCore.MoviePipelinePythonHostExecutor
 // 0x0018 (0x0130 - 0x0118)
@@ -3022,8 +3157,8 @@ class UMoviePipelinePythonHostExecutor final : public UMoviePipelineExecutorBase
 {
 public:
 	TSubclassOf<class UMoviePipelinePythonHostExecutor> ExecutorClass;                               // 0x0118(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMoviePipelineQueue*                    PipelineQueue;                                     // 0x0120(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWorld*                                 LastLoadedWorld;                                   // 0x0128(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UMoviePipelineQueue*                    PipelineQueue;                                     // 0x0120(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UWorld*                                 LastLoadedWorld;                                   // 0x0128(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
 
 public:
 	void ExecuteDelayed(class UMoviePipelineQueue* InPipelineQueue);
@@ -3034,18 +3169,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MoviePipelinePythonHostExecutor">();
+		STATIC_CLASS_IMPL("MoviePipelinePythonHostExecutor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MoviePipelinePythonHostExecutor")
 	}
 	static class UMoviePipelinePythonHostExecutor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMoviePipelinePythonHostExecutor>();
 	}
 };
-static_assert(alignof(UMoviePipelinePythonHostExecutor) == 0x000008, "Wrong alignment on UMoviePipelinePythonHostExecutor");
-static_assert(sizeof(UMoviePipelinePythonHostExecutor) == 0x000130, "Wrong size on UMoviePipelinePythonHostExecutor");
-static_assert(offsetof(UMoviePipelinePythonHostExecutor, ExecutorClass) == 0x000118, "Member 'UMoviePipelinePythonHostExecutor::ExecutorClass' has a wrong offset!");
-static_assert(offsetof(UMoviePipelinePythonHostExecutor, PipelineQueue) == 0x000120, "Member 'UMoviePipelinePythonHostExecutor::PipelineQueue' has a wrong offset!");
-static_assert(offsetof(UMoviePipelinePythonHostExecutor, LastLoadedWorld) == 0x000128, "Member 'UMoviePipelinePythonHostExecutor::LastLoadedWorld' has a wrong offset!");
+DUMPER7_ASSERTS_UMoviePipelinePythonHostExecutor;
 
 // Class MovieRenderPipelineCore.MoviePipelineExecutorShot
 // 0x01A8 (0x01D0 - 0x0028)
@@ -3061,11 +3196,11 @@ public:
 	float                                         Progress;                                          // 0x0140(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         Pad_144[0x4];                                      // 0x0144(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 StatusMessage;                                     // 0x0148(0x0010)(ZeroConstructor, Transient, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UMoviePipelineShotConfig*               ShotOverrideConfig;                                // 0x0158(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UMoviePipelineShotConfig*               ShotOverrideConfig;                                // 0x0158(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
 	TSoftObjectPtr<class UMoviePipelineShotConfig> ShotOverridePresetOrigin;                         // 0x0160(0x0028)(UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TSoftObjectPtr<class UMovieGraphConfig>       GraphPreset;                                       // 0x0188(0x0028)(UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	TArray<class UMovieJobVariableAssignmentContainer*> GraphVariableAssignments;                    // 0x01B0(0x0010)(Edit, ExportObject, ZeroConstructor, ContainsInstancedReference, UObjectWrapper, NativeAccessSpecifierPrivate)
-	TArray<class UMovieJobVariableAssignmentContainer*> PrimaryGraphVariableAssignments;             // 0x01C0(0x0010)(Edit, ExportObject, ZeroConstructor, ContainsInstancedReference, UObjectWrapper, NativeAccessSpecifierPrivate)
+	TArray<class UMovieJobVariableAssignmentContainer*> GraphVariableAssignments;                    // 0x01B0(0x0010)(Edit, ExportObject, ZeroConstructor, ContainsInstancedReference, UObjectWrapper, NativeAccessSpecifierPrivate, TObjectPtr)
+	TArray<class UMovieJobVariableAssignmentContainer*> PrimaryGraphVariableAssignments;             // 0x01C0(0x0010)(Edit, ExportObject, ZeroConstructor, ContainsInstancedReference, UObjectWrapper, NativeAccessSpecifierPrivate, TObjectPtr)
 
 public:
 	class UMoviePipelineShotConfig* AllocateNewShotOverrideConfig(TSubclassOf<class UMoviePipelineShotConfig> InConfigType);
@@ -3088,106 +3223,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MoviePipelineExecutorShot">();
+		STATIC_CLASS_IMPL("MoviePipelineExecutorShot")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MoviePipelineExecutorShot")
 	}
 	static class UMoviePipelineExecutorShot* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMoviePipelineExecutorShot>();
 	}
 };
-static_assert(alignof(UMoviePipelineExecutorShot) == 0x000008, "Wrong alignment on UMoviePipelineExecutorShot");
-static_assert(sizeof(UMoviePipelineExecutorShot) == 0x0001D0, "Wrong size on UMoviePipelineExecutorShot");
-static_assert(offsetof(UMoviePipelineExecutorShot, bEnabled) == 0x000028, "Member 'UMoviePipelineExecutorShot::bEnabled' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineExecutorShot, OuterName) == 0x000030, "Member 'UMoviePipelineExecutorShot::OuterName' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineExecutorShot, InnerName) == 0x000040, "Member 'UMoviePipelineExecutorShot::InnerName' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineExecutorShot, SidecarCameras) == 0x000050, "Member 'UMoviePipelineExecutorShot::SidecarCameras' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineExecutorShot, Progress) == 0x000140, "Member 'UMoviePipelineExecutorShot::Progress' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineExecutorShot, StatusMessage) == 0x000148, "Member 'UMoviePipelineExecutorShot::StatusMessage' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineExecutorShot, ShotOverrideConfig) == 0x000158, "Member 'UMoviePipelineExecutorShot::ShotOverrideConfig' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineExecutorShot, ShotOverridePresetOrigin) == 0x000160, "Member 'UMoviePipelineExecutorShot::ShotOverridePresetOrigin' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineExecutorShot, GraphPreset) == 0x000188, "Member 'UMoviePipelineExecutorShot::GraphPreset' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineExecutorShot, GraphVariableAssignments) == 0x0001B0, "Member 'UMoviePipelineExecutorShot::GraphVariableAssignments' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineExecutorShot, PrimaryGraphVariableAssignments) == 0x0001C0, "Member 'UMoviePipelineExecutorShot::PrimaryGraphVariableAssignments' has a wrong offset!");
-
-// Class MovieRenderPipelineCore.MoviePipelineExecutorJob
-// 0x0130 (0x0158 - 0x0028)
-class UMoviePipelineExecutorJob final : public UObject
-{
-public:
-	class FString                                 JobName;                                           // 0x0028(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSoftObjectPath                        Sequence;                                          // 0x0038(0x0020)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSoftObjectPath                        Map;                                               // 0x0058(0x0020)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 Author;                                            // 0x0078(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 Comment;                                           // 0x0088(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class UMoviePipelineExecutorShot*>     ShotInfo;                                          // 0x0098(0x0010)(BlueprintVisible, ExportObject, ZeroConstructor, ContainsInstancedReference, UObjectWrapper, NativeAccessSpecifierPublic)
-	class FString                                 UserData;                                          // 0x00A8(0x0010)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_B8[0x18];                                      // 0x00B8(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 StatusMessage;                                     // 0x00D0(0x0010)(ZeroConstructor, Transient, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         StatusProgress;                                    // 0x00E0(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          bIsConsumed;                                       // 0x00E4(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_E5[0x3];                                       // 0x00E5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMoviePipelinePrimaryConfig*            Configuration;                                     // 0x00E8(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, PersistentInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	TSoftObjectPtr<class UMoviePipelinePrimaryConfig> PresetOrigin;                                  // 0x00F0(0x0028)(UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          bEnabled;                                          // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_119[0x7];                                      // 0x0119(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TSoftObjectPtr<class UMovieGraphConfig>       GraphPreset;                                       // 0x0120(0x0028)(UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	TArray<class UMovieJobVariableAssignmentContainer*> GraphVariableAssignments;                    // 0x0148(0x0010)(Edit, ExportObject, ZeroConstructor, ContainsInstancedReference, UObjectWrapper, NativeAccessSpecifierPrivate)
-
-public:
-	class UMovieJobVariableAssignmentContainer* GetOrCreateJobVariableAssignmentsForGraph(const class UMovieGraphConfig* InGraph);
-	void OnDuplicated();
-	void SetConfiguration(class UMoviePipelinePrimaryConfig* InPreset);
-	void SetConsumed(const bool bInConsumed);
-	void SetGraphPreset(const class UMovieGraphConfig* InGraphPreset, const bool bUpdateVariableAssignments);
-	void SetIsEnabled(const bool bInEnabled);
-	void SetPresetOrigin(class UMoviePipelinePrimaryConfig* InPreset);
-	void SetSequence(const struct FSoftObjectPath& InSequence);
-	void SetStatusMessage(const class FString& InStatus);
-	void SetStatusProgress(const float InProgress);
-
-	class UMoviePipelinePrimaryConfig* GetConfiguration() const;
-	class UMovieGraphConfig* GetGraphPreset() const;
-	class UMoviePipelinePrimaryConfig* GetPresetOrigin() const;
-	class FString GetStatusMessage() const;
-	float GetStatusProgress() const;
-	bool IsConsumed() const;
-	bool IsEnabled() const;
-	bool IsUsingGraphConfiguration() const;
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"MoviePipelineExecutorJob">();
-	}
-	static class UMoviePipelineExecutorJob* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMoviePipelineExecutorJob>();
-	}
-};
-static_assert(alignof(UMoviePipelineExecutorJob) == 0x000008, "Wrong alignment on UMoviePipelineExecutorJob");
-static_assert(sizeof(UMoviePipelineExecutorJob) == 0x000158, "Wrong size on UMoviePipelineExecutorJob");
-static_assert(offsetof(UMoviePipelineExecutorJob, JobName) == 0x000028, "Member 'UMoviePipelineExecutorJob::JobName' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineExecutorJob, Sequence) == 0x000038, "Member 'UMoviePipelineExecutorJob::Sequence' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineExecutorJob, Map) == 0x000058, "Member 'UMoviePipelineExecutorJob::Map' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineExecutorJob, Author) == 0x000078, "Member 'UMoviePipelineExecutorJob::Author' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineExecutorJob, Comment) == 0x000088, "Member 'UMoviePipelineExecutorJob::Comment' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineExecutorJob, ShotInfo) == 0x000098, "Member 'UMoviePipelineExecutorJob::ShotInfo' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineExecutorJob, UserData) == 0x0000A8, "Member 'UMoviePipelineExecutorJob::UserData' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineExecutorJob, StatusMessage) == 0x0000D0, "Member 'UMoviePipelineExecutorJob::StatusMessage' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineExecutorJob, StatusProgress) == 0x0000E0, "Member 'UMoviePipelineExecutorJob::StatusProgress' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineExecutorJob, bIsConsumed) == 0x0000E4, "Member 'UMoviePipelineExecutorJob::bIsConsumed' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineExecutorJob, Configuration) == 0x0000E8, "Member 'UMoviePipelineExecutorJob::Configuration' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineExecutorJob, PresetOrigin) == 0x0000F0, "Member 'UMoviePipelineExecutorJob::PresetOrigin' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineExecutorJob, bEnabled) == 0x000118, "Member 'UMoviePipelineExecutorJob::bEnabled' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineExecutorJob, GraphPreset) == 0x000120, "Member 'UMoviePipelineExecutorJob::GraphPreset' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineExecutorJob, GraphVariableAssignments) == 0x000148, "Member 'UMoviePipelineExecutorJob::GraphVariableAssignments' has a wrong offset!");
+DUMPER7_ASSERTS_UMoviePipelineExecutorShot;
 
 // Class MovieRenderPipelineCore.MoviePipelineQueue
 // 0x0040 (0x0068 - 0x0028)
 class UMoviePipelineQueue final : public UObject
 {
 public:
-	TArray<class UMoviePipelineExecutorJob*>      Jobs;                                              // 0x0028(0x0010)(ExportObject, ZeroConstructor, ContainsInstancedReference, UObjectWrapper, NativeAccessSpecifierPrivate)
+	TArray<class UMoviePipelineExecutorJob*>      Jobs;                                              // 0x0028(0x0010)(ExportObject, ZeroConstructor, ContainsInstancedReference, UObjectWrapper, NativeAccessSpecifierPrivate, TObjectPtr)
 	TSoftObjectPtr<class UMoviePipelineQueue>     QueueOrigin;                                       // 0x0038(0x0028)(UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_60[0x8];                                       // 0x0060(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
@@ -3206,17 +3260,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MoviePipelineQueue">();
+		STATIC_CLASS_IMPL("MoviePipelineQueue")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MoviePipelineQueue")
 	}
 	static class UMoviePipelineQueue* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMoviePipelineQueue>();
 	}
 };
-static_assert(alignof(UMoviePipelineQueue) == 0x000008, "Wrong alignment on UMoviePipelineQueue");
-static_assert(sizeof(UMoviePipelineQueue) == 0x000068, "Wrong size on UMoviePipelineQueue");
-static_assert(offsetof(UMoviePipelineQueue, Jobs) == 0x000028, "Member 'UMoviePipelineQueue::Jobs' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineQueue, QueueOrigin) == 0x000038, "Member 'UMoviePipelineQueue::QueueOrigin' has a wrong offset!");
+DUMPER7_ASSERTS_UMoviePipelineQueue;
 
 // Class MovieRenderPipelineCore.MoviePipelineQueueEngineSubsystem
 // 0x0070 (0x00A0 - 0x0030)
@@ -3224,8 +3279,8 @@ class UMoviePipelineQueueEngineSubsystem final : public UEngineSubsystem
 {
 public:
 	TMulticastInlineDelegate<void(const struct FMoviePipelineOutputData& Results)> OnRenderFinished; // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	class UMoviePipelineExecutorBase*             ActiveExecutor;                                    // 0x0040(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UMoviePipelineQueue*                    CurrentQueue;                                      // 0x0048(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, PersistentInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UMoviePipelineExecutorBase*             ActiveExecutor;                                    // 0x0040(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
+	class UMoviePipelineQueue*                    CurrentQueue;                                      // 0x0048(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, PersistentInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
 	uint8                                         Pad_50[0x50];                                      // 0x0050(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -3242,18 +3297,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MoviePipelineQueueEngineSubsystem">();
+		STATIC_CLASS_IMPL("MoviePipelineQueueEngineSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MoviePipelineQueueEngineSubsystem")
 	}
 	static class UMoviePipelineQueueEngineSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMoviePipelineQueueEngineSubsystem>();
 	}
 };
-static_assert(alignof(UMoviePipelineQueueEngineSubsystem) == 0x000008, "Wrong alignment on UMoviePipelineQueueEngineSubsystem");
-static_assert(sizeof(UMoviePipelineQueueEngineSubsystem) == 0x0000A0, "Wrong size on UMoviePipelineQueueEngineSubsystem");
-static_assert(offsetof(UMoviePipelineQueueEngineSubsystem, OnRenderFinished) == 0x000030, "Member 'UMoviePipelineQueueEngineSubsystem::OnRenderFinished' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineQueueEngineSubsystem, ActiveExecutor) == 0x000040, "Member 'UMoviePipelineQueueEngineSubsystem::ActiveExecutor' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineQueueEngineSubsystem, CurrentQueue) == 0x000048, "Member 'UMoviePipelineQueueEngineSubsystem::CurrentQueue' has a wrong offset!");
+DUMPER7_ASSERTS_UMoviePipelineQueueEngineSubsystem;
 
 // Class MovieRenderPipelineCore.MoviePipelineRenderPass
 // 0x0000 (0x0048 - 0x0048)
@@ -3262,15 +3317,18 @@ class UMoviePipelineRenderPass : public UMoviePipelineSetting
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MoviePipelineRenderPass">();
+		STATIC_CLASS_IMPL("MoviePipelineRenderPass")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MoviePipelineRenderPass")
 	}
 	static class UMoviePipelineRenderPass* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMoviePipelineRenderPass>();
 	}
 };
-static_assert(alignof(UMoviePipelineRenderPass) == 0x000008, "Wrong alignment on UMoviePipelineRenderPass");
-static_assert(sizeof(UMoviePipelineRenderPass) == 0x000048, "Wrong size on UMoviePipelineRenderPass");
+DUMPER7_ASSERTS_UMoviePipelineRenderPass;
 
 // Class MovieRenderPipelineCore.MoviePipelineShotConfig
 // 0x0000 (0x0078 - 0x0078)
@@ -3279,15 +3337,18 @@ class UMoviePipelineShotConfig final : public UMoviePipelineConfigBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MoviePipelineShotConfig">();
+		STATIC_CLASS_IMPL("MoviePipelineShotConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MoviePipelineShotConfig")
 	}
 	static class UMoviePipelineShotConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMoviePipelineShotConfig>();
 	}
 };
-static_assert(alignof(UMoviePipelineShotConfig) == 0x000008, "Wrong alignment on UMoviePipelineShotConfig");
-static_assert(sizeof(UMoviePipelineShotConfig) == 0x000078, "Wrong size on UMoviePipelineShotConfig");
+DUMPER7_ASSERTS_UMoviePipelineShotConfig;
 
 // Class MovieRenderPipelineCore.MoviePipelineVideoOutputBase
 // 0x0048 (0x0090 - 0x0048)
@@ -3299,15 +3360,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MoviePipelineVideoOutputBase">();
+		STATIC_CLASS_IMPL("MoviePipelineVideoOutputBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MoviePipelineVideoOutputBase")
 	}
 	static class UMoviePipelineVideoOutputBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMoviePipelineVideoOutputBase>();
 	}
 };
-static_assert(alignof(UMoviePipelineVideoOutputBase) == 0x000008, "Wrong alignment on UMoviePipelineVideoOutputBase");
-static_assert(sizeof(UMoviePipelineVideoOutputBase) == 0x000090, "Wrong size on UMoviePipelineVideoOutputBase");
+DUMPER7_ASSERTS_UMoviePipelineVideoOutputBase;
 
 }
 

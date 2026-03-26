@@ -25,11 +25,7 @@ public:
 	class FString                                 VerificationUrl;                                   // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 PinCode;                                           // 0x0018(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(EOSUserInterface_EnterDevicePinCode_SetupUserInterface) == 0x000008, "Wrong alignment on EOSUserInterface_EnterDevicePinCode_SetupUserInterface");
-static_assert(sizeof(EOSUserInterface_EnterDevicePinCode_SetupUserInterface) == 0x000028, "Wrong size on EOSUserInterface_EnterDevicePinCode_SetupUserInterface");
-static_assert(offsetof(EOSUserInterface_EnterDevicePinCode_SetupUserInterface, Context) == 0x000000, "Member 'EOSUserInterface_EnterDevicePinCode_SetupUserInterface::Context' has a wrong offset!");
-static_assert(offsetof(EOSUserInterface_EnterDevicePinCode_SetupUserInterface, VerificationUrl) == 0x000008, "Member 'EOSUserInterface_EnterDevicePinCode_SetupUserInterface::VerificationUrl' has a wrong offset!");
-static_assert(offsetof(EOSUserInterface_EnterDevicePinCode_SetupUserInterface, PinCode) == 0x000018, "Member 'EOSUserInterface_EnterDevicePinCode_SetupUserInterface::PinCode' has a wrong offset!");
+DUMPER7_ASSERTS_EOSUserInterface_EnterDevicePinCode_SetupUserInterface;
 
 // Function RedpointEOSAuth.EOSUserInterface_SignInOrCreateAccount.SetupUserInterface
 // 0x0008 (0x0008 - 0x0000)
@@ -38,9 +34,7 @@ struct EOSUserInterface_SignInOrCreateAccount_SetupUserInterface final
 public:
 	class UEOSUserInterface_SignInOrCreateAccount_Context* Context;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(EOSUserInterface_SignInOrCreateAccount_SetupUserInterface) == 0x000008, "Wrong alignment on EOSUserInterface_SignInOrCreateAccount_SetupUserInterface");
-static_assert(sizeof(EOSUserInterface_SignInOrCreateAccount_SetupUserInterface) == 0x000008, "Wrong size on EOSUserInterface_SignInOrCreateAccount_SetupUserInterface");
-static_assert(offsetof(EOSUserInterface_SignInOrCreateAccount_SetupUserInterface, Context) == 0x000000, "Member 'EOSUserInterface_SignInOrCreateAccount_SetupUserInterface::Context' has a wrong offset!");
+DUMPER7_ASSERTS_EOSUserInterface_SignInOrCreateAccount_SetupUserInterface;
 
 // Function RedpointEOSAuth.EOSUserInterface_SignInOrCreateAccount_Context.SelectChoice
 // 0x0001 (0x0001 - 0x0000)
@@ -49,9 +43,7 @@ struct EOSUserInterface_SignInOrCreateAccount_Context_SelectChoice final
 public:
 	EEOSUserInterface_SignInOrCreateAccount_Choice SelectedChoice;                                   // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(EOSUserInterface_SignInOrCreateAccount_Context_SelectChoice) == 0x000001, "Wrong alignment on EOSUserInterface_SignInOrCreateAccount_Context_SelectChoice");
-static_assert(sizeof(EOSUserInterface_SignInOrCreateAccount_Context_SelectChoice) == 0x000001, "Wrong size on EOSUserInterface_SignInOrCreateAccount_Context_SelectChoice");
-static_assert(offsetof(EOSUserInterface_SignInOrCreateAccount_Context_SelectChoice, SelectedChoice) == 0x000000, "Member 'EOSUserInterface_SignInOrCreateAccount_Context_SelectChoice::SelectedChoice' has a wrong offset!");
+DUMPER7_ASSERTS_EOSUserInterface_SignInOrCreateAccount_Context_SelectChoice;
 
 }
 

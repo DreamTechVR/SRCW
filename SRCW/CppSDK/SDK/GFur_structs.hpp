@@ -26,13 +26,7 @@ public:
 	bool                                          DisableMorphTargets;                               // 0x000D(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_E[0x2];                                        // 0x000E(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FFurLod) == 0x000004, "Wrong alignment on FFurLod");
-static_assert(sizeof(FFurLod) == 0x000010, "Wrong size on FFurLod");
-static_assert(offsetof(FFurLod, ScreenSize) == 0x000000, "Member 'FFurLod::ScreenSize' has a wrong offset!");
-static_assert(offsetof(FFurLod, LayerCount) == 0x000004, "Member 'FFurLod::LayerCount' has a wrong offset!");
-static_assert(offsetof(FFurLod, Lod) == 0x000008, "Member 'FFurLod::Lod' has a wrong offset!");
-static_assert(offsetof(FFurLod, PhysicsEnabled) == 0x00000C, "Member 'FFurLod::PhysicsEnabled' has a wrong offset!");
-static_assert(offsetof(FFurLod, DisableMorphTargets) == 0x00000D, "Member 'FFurLod::DisableMorphTargets' has a wrong offset!");
+DUMPER7_ASSERTS_FFurLod;
 
 }
 

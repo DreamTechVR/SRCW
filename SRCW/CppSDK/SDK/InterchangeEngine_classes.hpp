@@ -10,13 +10,13 @@
 
 #include "Basic.hpp"
 
-#include "InterchangeCore_structs.hpp"
-#include "InterchangeCore_classes.hpp"
 #include "Engine_classes.hpp"
 #include "CoreUObject_structs.hpp"
 #include "CoreUObject_classes.hpp"
-#include "DeveloperSettings_classes.hpp"
+#include "InterchangeCore_structs.hpp"
+#include "InterchangeCore_classes.hpp"
 #include "InterchangeEngine_structs.hpp"
+#include "DeveloperSettings_classes.hpp"
 
 
 namespace SDK
@@ -29,15 +29,18 @@ class UInterchangeBlueprintPipelineBase final : public UBlueprint
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeBlueprintPipelineBase">();
+		STATIC_CLASS_IMPL("InterchangeBlueprintPipelineBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeBlueprintPipelineBase")
 	}
 	static class UInterchangeBlueprintPipelineBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeBlueprintPipelineBase>();
 	}
 };
-static_assert(alignof(UInterchangeBlueprintPipelineBase) == 0x000008, "Wrong alignment on UInterchangeBlueprintPipelineBase");
-static_assert(sizeof(UInterchangeBlueprintPipelineBase) == 0x0000A8, "Wrong size on UInterchangeBlueprintPipelineBase");
+DUMPER7_ASSERTS_UInterchangeBlueprintPipelineBase;
 
 // Class InterchangeEngine.InterchangeFilePickerBase
 // 0x0000 (0x0028 - 0x0028)
@@ -50,15 +53,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeFilePickerBase">();
+		STATIC_CLASS_IMPL("InterchangeFilePickerBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeFilePickerBase")
 	}
 	static class UInterchangeFilePickerBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeFilePickerBase>();
 	}
 };
-static_assert(alignof(UInterchangeFilePickerBase) == 0x000008, "Wrong alignment on UInterchangeFilePickerBase");
-static_assert(sizeof(UInterchangeFilePickerBase) == 0x000028, "Wrong size on UInterchangeFilePickerBase");
+DUMPER7_ASSERTS_UInterchangeFilePickerBase;
 
 // Class InterchangeEngine.InterchangePipelineConfigurationBase
 // 0x0000 (0x0028 - 0x0028)
@@ -72,15 +78,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangePipelineConfigurationBase">();
+		STATIC_CLASS_IMPL("InterchangePipelineConfigurationBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangePipelineConfigurationBase")
 	}
 	static class UInterchangePipelineConfigurationBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangePipelineConfigurationBase>();
 	}
 };
-static_assert(alignof(UInterchangePipelineConfigurationBase) == 0x000008, "Wrong alignment on UInterchangePipelineConfigurationBase");
-static_assert(sizeof(UInterchangePipelineConfigurationBase) == 0x000028, "Wrong size on UInterchangePipelineConfigurationBase");
+DUMPER7_ASSERTS_UInterchangePipelineConfigurationBase;
 
 // Class InterchangeEngine.InterchangeProjectSettings
 // 0x0208 (0x0240 - 0x0038)
@@ -97,20 +106,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeProjectSettings">();
+		STATIC_CLASS_IMPL("InterchangeProjectSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeProjectSettings")
 	}
 	static class UInterchangeProjectSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeProjectSettings>();
 	}
 };
-static_assert(alignof(UInterchangeProjectSettings) == 0x000008, "Wrong alignment on UInterchangeProjectSettings");
-static_assert(sizeof(UInterchangeProjectSettings) == 0x000240, "Wrong size on UInterchangeProjectSettings");
-static_assert(offsetof(UInterchangeProjectSettings, ContentImportSettings) == 0x000038, "Member 'UInterchangeProjectSettings::ContentImportSettings' has a wrong offset!");
-static_assert(offsetof(UInterchangeProjectSettings, SceneImportSettings) == 0x000160, "Member 'UInterchangeProjectSettings::SceneImportSettings' has a wrong offset!");
-static_assert(offsetof(UInterchangeProjectSettings, FilePickerClass) == 0x0001E8, "Member 'UInterchangeProjectSettings::FilePickerClass' has a wrong offset!");
-static_assert(offsetof(UInterchangeProjectSettings, bStaticMeshUseSmoothEdgesIfSmoothingInformationIsMissing) == 0x000210, "Member 'UInterchangeProjectSettings::bStaticMeshUseSmoothEdgesIfSmoothingInformationIsMissing' has a wrong offset!");
-static_assert(offsetof(UInterchangeProjectSettings, GenericPipelineClass) == 0x000218, "Member 'UInterchangeProjectSettings::GenericPipelineClass' has a wrong offset!");
+DUMPER7_ASSERTS_UInterchangeProjectSettings;
 
 // Class InterchangeEngine.InterchangePythonPipelineBase
 // 0x0000 (0x0108 - 0x0108)
@@ -119,15 +126,18 @@ class UInterchangePythonPipelineBase final : public UInterchangePipelineBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangePythonPipelineBase">();
+		STATIC_CLASS_IMPL("InterchangePythonPipelineBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangePythonPipelineBase")
 	}
 	static class UInterchangePythonPipelineBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangePythonPipelineBase>();
 	}
 };
-static_assert(alignof(UInterchangePythonPipelineBase) == 0x000008, "Wrong alignment on UInterchangePythonPipelineBase");
-static_assert(sizeof(UInterchangePythonPipelineBase) == 0x000108, "Wrong size on UInterchangePythonPipelineBase");
+DUMPER7_ASSERTS_UInterchangePythonPipelineBase;
 
 // Class InterchangeEngine.InterchangePythonPipelineAsset
 // 0x0040 (0x0068 - 0x0028)
@@ -135,24 +145,24 @@ class UInterchangePythonPipelineAsset final : public UObject
 {
 public:
 	TSoftClassPtr<class UClass>                   PythonClass;                                       // 0x0028(0x0028)(Edit, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInterchangePythonPipelineBase*         GeneratedPipeline;                                 // 0x0050(0x0008)(Edit, ZeroConstructor, Transient, EditConst, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInterchangePythonPipelineBase*         GeneratedPipeline;                                 // 0x0050(0x0008)(Edit, ZeroConstructor, Transient, EditConst, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
 	class FString                                 JsonDefaultProperties;                             // 0x0058(0x0010)(Edit, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangePythonPipelineAsset">();
+		STATIC_CLASS_IMPL("InterchangePythonPipelineAsset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangePythonPipelineAsset")
 	}
 	static class UInterchangePythonPipelineAsset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangePythonPipelineAsset>();
 	}
 };
-static_assert(alignof(UInterchangePythonPipelineAsset) == 0x000008, "Wrong alignment on UInterchangePythonPipelineAsset");
-static_assert(sizeof(UInterchangePythonPipelineAsset) == 0x000068, "Wrong size on UInterchangePythonPipelineAsset");
-static_assert(offsetof(UInterchangePythonPipelineAsset, PythonClass) == 0x000028, "Member 'UInterchangePythonPipelineAsset::PythonClass' has a wrong offset!");
-static_assert(offsetof(UInterchangePythonPipelineAsset, GeneratedPipeline) == 0x000050, "Member 'UInterchangePythonPipelineAsset::GeneratedPipeline' has a wrong offset!");
-static_assert(offsetof(UInterchangePythonPipelineAsset, JsonDefaultProperties) == 0x000058, "Member 'UInterchangePythonPipelineAsset::JsonDefaultProperties' has a wrong offset!");
+DUMPER7_ASSERTS_UInterchangePythonPipelineAsset;
 
 // Class InterchangeEngine.InterchangeSceneImportAsset
 // 0x0008 (0x0030 - 0x0028)
@@ -164,15 +174,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeSceneImportAsset">();
+		STATIC_CLASS_IMPL("InterchangeSceneImportAsset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeSceneImportAsset")
 	}
 	static class UInterchangeSceneImportAsset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeSceneImportAsset>();
 	}
 };
-static_assert(alignof(UInterchangeSceneImportAsset) == 0x000008, "Wrong alignment on UInterchangeSceneImportAsset");
-static_assert(sizeof(UInterchangeSceneImportAsset) == 0x000030, "Wrong size on UInterchangeSceneImportAsset");
+DUMPER7_ASSERTS_UInterchangeSceneImportAsset;
 
 // Class InterchangeEngine.InterchangeAssetImportData
 // 0x00B0 (0x00D8 - 0x0028)
@@ -181,11 +194,11 @@ class UInterchangeAssetImportData final : public UAssetImportData
 public:
 	struct FSoftObjectPath                        SceneImportAsset;                                  // 0x0028(0x0020)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 NodeUniqueID;                                      // 0x0048(0x0010)(Edit, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInterchangeBaseNodeContainer*          NodeContainer;                                     // 0x0058(0x0008)(ZeroConstructor, Deprecated, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	TArray<class UObject*>                        Pipelines;                                         // 0x0060(0x0010)(ZeroConstructor, Deprecated, UObjectWrapper, NativeAccessSpecifierPrivate)
-	class UInterchangeBaseNodeContainer*          TransientNodeContainer;                            // 0x0070(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	TArray<class UObject*>                        TransientPipelines;                                // 0x0078(0x0010)(ZeroConstructor, Transient, UObjectWrapper, NativeAccessSpecifierPrivate)
-	class UInterchangeTranslatorSettings*         TransientTranslatorSettings;                       // 0x0088(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UInterchangeBaseNodeContainer*          NodeContainer;                                     // 0x0058(0x0008)(ZeroConstructor, Deprecated, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
+	TArray<class UObject*>                        Pipelines;                                         // 0x0060(0x0010)(ZeroConstructor, Deprecated, UObjectWrapper, NativeAccessSpecifierPrivate, TObjectPtr)
+	class UInterchangeBaseNodeContainer*          TransientNodeContainer;                            // 0x0070(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
+	TArray<class UObject*>                        TransientPipelines;                                // 0x0078(0x0010)(ZeroConstructor, Transient, UObjectWrapper, NativeAccessSpecifierPrivate, TObjectPtr)
+	class UInterchangeTranslatorSettings*         TransientTranslatorSettings;                       // 0x0088(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
 	uint8                                         Pad_90[0x48];                                      // 0x0090(0x0048)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -205,22 +218,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeAssetImportData">();
+		STATIC_CLASS_IMPL("InterchangeAssetImportData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeAssetImportData")
 	}
 	static class UInterchangeAssetImportData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeAssetImportData>();
 	}
 };
-static_assert(alignof(UInterchangeAssetImportData) == 0x000008, "Wrong alignment on UInterchangeAssetImportData");
-static_assert(sizeof(UInterchangeAssetImportData) == 0x0000D8, "Wrong size on UInterchangeAssetImportData");
-static_assert(offsetof(UInterchangeAssetImportData, SceneImportAsset) == 0x000028, "Member 'UInterchangeAssetImportData::SceneImportAsset' has a wrong offset!");
-static_assert(offsetof(UInterchangeAssetImportData, NodeUniqueID) == 0x000048, "Member 'UInterchangeAssetImportData::NodeUniqueID' has a wrong offset!");
-static_assert(offsetof(UInterchangeAssetImportData, NodeContainer) == 0x000058, "Member 'UInterchangeAssetImportData::NodeContainer' has a wrong offset!");
-static_assert(offsetof(UInterchangeAssetImportData, Pipelines) == 0x000060, "Member 'UInterchangeAssetImportData::Pipelines' has a wrong offset!");
-static_assert(offsetof(UInterchangeAssetImportData, TransientNodeContainer) == 0x000070, "Member 'UInterchangeAssetImportData::TransientNodeContainer' has a wrong offset!");
-static_assert(offsetof(UInterchangeAssetImportData, TransientPipelines) == 0x000078, "Member 'UInterchangeAssetImportData::TransientPipelines' has a wrong offset!");
-static_assert(offsetof(UInterchangeAssetImportData, TransientTranslatorSettings) == 0x000088, "Member 'UInterchangeAssetImportData::TransientTranslatorSettings' has a wrong offset!");
+DUMPER7_ASSERTS_UInterchangeAssetImportData;
 
 // Class InterchangeEngine.InterchangeAssetImportDataConverterBase
 // 0x0000 (0x0028 - 0x0028)
@@ -229,15 +238,18 @@ class UInterchangeAssetImportDataConverterBase final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeAssetImportDataConverterBase">();
+		STATIC_CLASS_IMPL("InterchangeAssetImportDataConverterBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeAssetImportDataConverterBase")
 	}
 	static class UInterchangeAssetImportDataConverterBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeAssetImportDataConverterBase>();
 	}
 };
-static_assert(alignof(UInterchangeAssetImportDataConverterBase) == 0x000008, "Wrong alignment on UInterchangeAssetImportDataConverterBase");
-static_assert(sizeof(UInterchangeAssetImportDataConverterBase) == 0x000028, "Wrong size on UInterchangeAssetImportDataConverterBase");
+DUMPER7_ASSERTS_UInterchangeAssetImportDataConverterBase;
 
 // Class InterchangeEngine.InterchangePipelineStackOverride
 // 0x0010 (0x0038 - 0x0028)
@@ -254,16 +266,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangePipelineStackOverride">();
+		STATIC_CLASS_IMPL("InterchangePipelineStackOverride")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangePipelineStackOverride")
 	}
 	static class UInterchangePipelineStackOverride* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangePipelineStackOverride>();
 	}
 };
-static_assert(alignof(UInterchangePipelineStackOverride) == 0x000008, "Wrong alignment on UInterchangePipelineStackOverride");
-static_assert(sizeof(UInterchangePipelineStackOverride) == 0x000038, "Wrong size on UInterchangePipelineStackOverride");
-static_assert(offsetof(UInterchangePipelineStackOverride, OverridePipelines) == 0x000028, "Member 'UInterchangePipelineStackOverride::OverridePipelines' has a wrong offset!");
+DUMPER7_ASSERTS_UInterchangePipelineStackOverride;
 
 // Class InterchangeEngine.InterchangeManager
 // 0x0328 (0x0350 - 0x0028)
@@ -271,10 +285,10 @@ class alignas(0x10) UInterchangeManager final : public UObject
 {
 public:
 	uint8                                         Pad_28[0x178];                                     // 0x0028(0x0178)(Fixing Size After Last Property [ Dumper-7 ])
-	TSet<TSubclassOf<class UObject>>              RegisteredTranslatorsClass;                        // 0x01A0(0x0050)(UObjectWrapper, NativeAccessSpecifierPrivate)
-	TMap<TSubclassOf<class UObject>, TSubclassOf<class UObject>> RegisteredFactoryClasses;           // 0x01F0(0x0050)(UObjectWrapper, NativeAccessSpecifierPrivate)
-	TMap<TSubclassOf<class UObject>, class UInterchangeWriterBase*> RegisteredWriters;               // 0x0240(0x0050)(UObjectWrapper, NativeAccessSpecifierPrivate)
-	TMap<TSubclassOf<class UObject>, class UInterchangeAssetImportDataConverterBase*> RegisteredConverters; // 0x0290(0x0050)(UObjectWrapper, NativeAccessSpecifierPrivate)
+	TSet<TSubclassOf<class UObject>>              RegisteredTranslatorsClass;                        // 0x01A0(0x0050)(UObjectWrapper, NativeAccessSpecifierPrivate, TObjectPtr)
+	TMap<TSubclassOf<class UObject>, TSubclassOf<class UObject>> RegisteredFactoryClasses;           // 0x01F0(0x0050)(UObjectWrapper, NativeAccessSpecifierPrivate, TObjectPtr)
+	TMap<TSubclassOf<class UObject>, class UInterchangeWriterBase*> RegisteredWriters;               // 0x0240(0x0050)(UObjectWrapper, NativeAccessSpecifierPrivate, TObjectPtr)
+	TMap<TSubclassOf<class UObject>, class UInterchangeAssetImportDataConverterBase*> RegisteredConverters; // 0x0290(0x0050)(UObjectWrapper, NativeAccessSpecifierPrivate, TObjectPtr)
 	uint8                                         Pad_2E0[0x70];                                     // 0x02E0(0x0070)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -291,19 +305,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeManager">();
+		STATIC_CLASS_IMPL("InterchangeManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeManager")
 	}
 	static class UInterchangeManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeManager>();
 	}
 };
-static_assert(alignof(UInterchangeManager) == 0x000010, "Wrong alignment on UInterchangeManager");
-static_assert(sizeof(UInterchangeManager) == 0x000350, "Wrong size on UInterchangeManager");
-static_assert(offsetof(UInterchangeManager, RegisteredTranslatorsClass) == 0x0001A0, "Member 'UInterchangeManager::RegisteredTranslatorsClass' has a wrong offset!");
-static_assert(offsetof(UInterchangeManager, RegisteredFactoryClasses) == 0x0001F0, "Member 'UInterchangeManager::RegisteredFactoryClasses' has a wrong offset!");
-static_assert(offsetof(UInterchangeManager, RegisteredWriters) == 0x000240, "Member 'UInterchangeManager::RegisteredWriters' has a wrong offset!");
-static_assert(offsetof(UInterchangeManager, RegisteredConverters) == 0x000290, "Member 'UInterchangeManager::RegisteredConverters' has a wrong offset!");
+DUMPER7_ASSERTS_UInterchangeManager;
 
 // Class InterchangeEngine.InterchangeMeshUtilities
 // 0x0000 (0x0028 - 0x0028)
@@ -312,15 +325,18 @@ class UInterchangeMeshUtilities final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeMeshUtilities">();
+		STATIC_CLASS_IMPL("InterchangeMeshUtilities")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeMeshUtilities")
 	}
 	static class UInterchangeMeshUtilities* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeMeshUtilities>();
 	}
 };
-static_assert(alignof(UInterchangeMeshUtilities) == 0x000008, "Wrong alignment on UInterchangeMeshUtilities");
-static_assert(sizeof(UInterchangeMeshUtilities) == 0x000028, "Wrong size on UInterchangeMeshUtilities");
+DUMPER7_ASSERTS_UInterchangeMeshUtilities;
 
 }
 

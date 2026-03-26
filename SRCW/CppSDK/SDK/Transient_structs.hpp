@@ -10,18 +10,35 @@
 
 #include "Basic.hpp"
 
-#include "AnimationCore_structs.hpp"
 #include "ControlRig_structs.hpp"
 #include "RigVM_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "AnimationCore_structs.hpp"
 
 
 namespace SDK
 {
 
-// PropertyBag Transient.PropertyBag_fbc6d7722451e8e
+// PropertyBag Transient.PropertyBag_4f71df07d575d6b7
+// 0x0038 (0x0038 - 0x0000)
+struct FPropertyBag_4f71df07d575d6b7 final
+{
+public:
+	struct FRigElementKey                         RigVMModel___Set_Transform_Item__Const;            // 0x0000(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
+	ERigVMTransformSpace                          RigVMModel___Set_Transform_Space__Const;           // 0x000C(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          RigVMModel___Set_Transform_bInitial__Const;        // 0x000D(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_E[0x2];                                        // 0x000E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FRigElementKey                         RigVMModel___GetTransform_1_Item__Const;           // 0x0010(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
+	struct FRigElementKey                         RigVMModel___GetTransform_Item__Const;             // 0x001C(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
+	double                                        RigVMModel___Multiply_1_B__Const;                  // 0x0028(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         RigVMModel___Set_Transform_Weight__Const;          // 0x0030(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          RigVMModel___Set_Transform_bPropagateToChildren__Const; // 0x0034(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_FPropertyBag_4f71df07d575d6b7;
+
+// PropertyBag Transient.PropertyBag_cceeb5ffbd4d5f37
 // 0x01B8 (0x01B8 - 0x0000)
-struct FPropertyBag_fbc6d7722451e8e final
+struct FPropertyBag_cceeb5ffbd4d5f37 final
 {
 public:
 	struct FRotator                               RigVMModel___ArrayGetAtIndex_Array_Get_at_Index_Element; // 0x0000(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -50,174 +67,11 @@ public:
 	TArray<TArray<struct FCachedRigElement>>      RigVMModel___RotationConstraintLocalSpaceOffset_2_1_1_ParentCaches; // 0x01A0(0x0010)(Edit)
 	class FName                                   RigVMModel___Branch_RigVMUnitNode_BlockToRun;      // 0x01B0(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FPropertyBag_fbc6d7722451e8e) == 0x000008, "Wrong alignment on FPropertyBag_fbc6d7722451e8e");
-static_assert(sizeof(FPropertyBag_fbc6d7722451e8e) == 0x0001B8, "Wrong size on FPropertyBag_fbc6d7722451e8e");
-static_assert(offsetof(FPropertyBag_fbc6d7722451e8e, RigVMModel___ArrayGetAtIndex_Array_Get_at_Index_Element) == 0x000000, "Member 'FPropertyBag_fbc6d7722451e8e::RigVMModel___ArrayGetAtIndex_Array_Get_at_Index_Element' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_fbc6d7722451e8e, RigVMModel___SetControlRotator_CachedControlIndex) == 0x000018, "Member 'FPropertyBag_fbc6d7722451e8e::RigVMModel___SetControlRotator_CachedControlIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_fbc6d7722451e8e, RigVMModel___RotationConstraintLocalSpaceOffset_ChildCache) == 0x000028, "Member 'FPropertyBag_fbc6d7722451e8e::RigVMModel___RotationConstraintLocalSpaceOffset_ChildCache' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_fbc6d7722451e8e, RigVMModel___RotationConstraintLocalSpaceOffset_ParentCaches) == 0x000038, "Member 'FPropertyBag_fbc6d7722451e8e::RigVMModel___RotationConstraintLocalSpaceOffset_ParentCaches' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_fbc6d7722451e8e, RigVMModel___ArrayGetAtIndex_2_Array_Get_at_Index_Element) == 0x000048, "Member 'FPropertyBag_fbc6d7722451e8e::RigVMModel___ArrayGetAtIndex_2_Array_Get_at_Index_Element' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_fbc6d7722451e8e, RigVMModel___SetControlRotator_1_CachedControlIndex) == 0x000060, "Member 'FPropertyBag_fbc6d7722451e8e::RigVMModel___SetControlRotator_1_CachedControlIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_fbc6d7722451e8e, RigVMModel___RotationConstraintLocalSpaceOffset_1_ChildCache) == 0x000070, "Member 'FPropertyBag_fbc6d7722451e8e::RigVMModel___RotationConstraintLocalSpaceOffset_1_ChildCache' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_fbc6d7722451e8e, RigVMModel___RotationConstraintLocalSpaceOffset_1_ParentCaches) == 0x000080, "Member 'FPropertyBag_fbc6d7722451e8e::RigVMModel___RotationConstraintLocalSpaceOffset_1_ParentCaches' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_fbc6d7722451e8e, RigVMModel___ArrayGetAtIndex_3_Array_Get_at_Index_Element) == 0x000090, "Member 'FPropertyBag_fbc6d7722451e8e::RigVMModel___ArrayGetAtIndex_3_Array_Get_at_Index_Element' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_fbc6d7722451e8e, RigVMModel___SetControlRotator_2_CachedControlIndex) == 0x0000A8, "Member 'FPropertyBag_fbc6d7722451e8e::RigVMModel___SetControlRotator_2_CachedControlIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_fbc6d7722451e8e, RigVMModel___RotationConstraintLocalSpaceOffset_2_ChildCache) == 0x0000B8, "Member 'FPropertyBag_fbc6d7722451e8e::RigVMModel___RotationConstraintLocalSpaceOffset_2_ChildCache' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_fbc6d7722451e8e, RigVMModel___RotationConstraintLocalSpaceOffset_2_ParentCaches) == 0x0000C8, "Member 'FPropertyBag_fbc6d7722451e8e::RigVMModel___RotationConstraintLocalSpaceOffset_2_ParentCaches' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_fbc6d7722451e8e, RigVMModel___ArrayGetAtIndex_2_1_Array_Get_at_Index_Element) == 0x0000D8, "Member 'FPropertyBag_fbc6d7722451e8e::RigVMModel___ArrayGetAtIndex_2_1_Array_Get_at_Index_Element' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_fbc6d7722451e8e, RigVMModel___SetControlRotator_1_1_CachedControlIndex) == 0x0000F0, "Member 'FPropertyBag_fbc6d7722451e8e::RigVMModel___SetControlRotator_1_1_CachedControlIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_fbc6d7722451e8e, RigVMModel___RotationConstraintLocalSpaceOffset_1_1_ChildCache) == 0x000100, "Member 'FPropertyBag_fbc6d7722451e8e::RigVMModel___RotationConstraintLocalSpaceOffset_1_1_ChildCache' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_fbc6d7722451e8e, RigVMModel___RotationConstraintLocalSpaceOffset_1_1_ParentCaches) == 0x000110, "Member 'FPropertyBag_fbc6d7722451e8e::RigVMModel___RotationConstraintLocalSpaceOffset_1_1_ParentCaches' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_fbc6d7722451e8e, RigVMModel___ArrayGetAtIndex_3_1_Array_Get_at_Index_Element) == 0x000120, "Member 'FPropertyBag_fbc6d7722451e8e::RigVMModel___ArrayGetAtIndex_3_1_Array_Get_at_Index_Element' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_fbc6d7722451e8e, RigVMModel___SetControlRotator_2_1_CachedControlIndex) == 0x000138, "Member 'FPropertyBag_fbc6d7722451e8e::RigVMModel___SetControlRotator_2_1_CachedControlIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_fbc6d7722451e8e, RigVMModel___RotationConstraintLocalSpaceOffset_2_1_ChildCache) == 0x000148, "Member 'FPropertyBag_fbc6d7722451e8e::RigVMModel___RotationConstraintLocalSpaceOffset_2_1_ChildCache' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_fbc6d7722451e8e, RigVMModel___RotationConstraintLocalSpaceOffset_2_1_ParentCaches) == 0x000158, "Member 'FPropertyBag_fbc6d7722451e8e::RigVMModel___RotationConstraintLocalSpaceOffset_2_1_ParentCaches' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_fbc6d7722451e8e, RigVMModel___ArrayGetAtIndex_3_1_1_Array_Get_at_Index_Element) == 0x000168, "Member 'FPropertyBag_fbc6d7722451e8e::RigVMModel___ArrayGetAtIndex_3_1_1_Array_Get_at_Index_Element' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_fbc6d7722451e8e, RigVMModel___SetControlRotator_2_1_1_CachedControlIndex) == 0x000180, "Member 'FPropertyBag_fbc6d7722451e8e::RigVMModel___SetControlRotator_2_1_1_CachedControlIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_fbc6d7722451e8e, RigVMModel___RotationConstraintLocalSpaceOffset_2_1_1_ChildCache) == 0x000190, "Member 'FPropertyBag_fbc6d7722451e8e::RigVMModel___RotationConstraintLocalSpaceOffset_2_1_1_ChildCache' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_fbc6d7722451e8e, RigVMModel___RotationConstraintLocalSpaceOffset_2_1_1_ParentCaches) == 0x0001A0, "Member 'FPropertyBag_fbc6d7722451e8e::RigVMModel___RotationConstraintLocalSpaceOffset_2_1_1_ParentCaches' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_fbc6d7722451e8e, RigVMModel___Branch_RigVMUnitNode_BlockToRun) == 0x0001B0, "Member 'FPropertyBag_fbc6d7722451e8e::RigVMModel___Branch_RigVMUnitNode_BlockToRun' has a wrong offset!");
+DUMPER7_ASSERTS_FPropertyBag_cceeb5ffbd4d5f37;
 
-// PropertyBag Transient.PropertyBag_298f2d3eecdc6ef0
-// 0x00D0 (0x00D0 - 0x0000)
-struct FPropertyBag_298f2d3eecdc6ef0 final
-{
-public:
-	struct FRigElementKey                         RigVMModel___OffsetTransformForItem_Item__Const;   // 0x0000(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             RigVMModel___OffsetTransformForItem_OffsetTransform__Const; // 0x0010(0x0060)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRigElementKey                         RigVMModel___GetTransform_4_Item__Const;           // 0x0070(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
-	ERigVMTransformSpace                          RigVMModel___GetTransform_4_Space__Const;          // 0x007C(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          RigVMModel___GetTransform_4_bInitial__Const;       // 0x007D(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_7E[0x2];                                       // 0x007E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         RigVMModel___OffsetTransformForItem_Weight__Const; // 0x0080(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRigElementKey                         RigVMModel___OffsetTransformForItem_1_Item__Const; // 0x0084(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
-	struct FRigElementKey                         RigVMModel___GetTransform_4_1_Item__Const;         // 0x0090(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
-	struct FRigElementKey                         RigVMModel___OffsetTransformForItem_2_Item__Const; // 0x009C(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
-	struct FRigElementKey                         RigVMModel___GetTransform_4_1_1_Item__Const;       // 0x00A8(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
-	struct FRigElementKey                         RigVMModel___OffsetTransformForItem_3_Item__Const; // 0x00B4(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
-	struct FRigElementKey                         RigVMModel___GetTransform_4_1_1_1_Item__Const;     // 0x00C0(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(FPropertyBag_298f2d3eecdc6ef0) == 0x000010, "Wrong alignment on FPropertyBag_298f2d3eecdc6ef0");
-static_assert(sizeof(FPropertyBag_298f2d3eecdc6ef0) == 0x0000D0, "Wrong size on FPropertyBag_298f2d3eecdc6ef0");
-static_assert(offsetof(FPropertyBag_298f2d3eecdc6ef0, RigVMModel___OffsetTransformForItem_Item__Const) == 0x000000, "Member 'FPropertyBag_298f2d3eecdc6ef0::RigVMModel___OffsetTransformForItem_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_298f2d3eecdc6ef0, RigVMModel___OffsetTransformForItem_OffsetTransform__Const) == 0x000010, "Member 'FPropertyBag_298f2d3eecdc6ef0::RigVMModel___OffsetTransformForItem_OffsetTransform__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_298f2d3eecdc6ef0, RigVMModel___GetTransform_4_Item__Const) == 0x000070, "Member 'FPropertyBag_298f2d3eecdc6ef0::RigVMModel___GetTransform_4_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_298f2d3eecdc6ef0, RigVMModel___GetTransform_4_Space__Const) == 0x00007C, "Member 'FPropertyBag_298f2d3eecdc6ef0::RigVMModel___GetTransform_4_Space__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_298f2d3eecdc6ef0, RigVMModel___GetTransform_4_bInitial__Const) == 0x00007D, "Member 'FPropertyBag_298f2d3eecdc6ef0::RigVMModel___GetTransform_4_bInitial__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_298f2d3eecdc6ef0, RigVMModel___OffsetTransformForItem_Weight__Const) == 0x000080, "Member 'FPropertyBag_298f2d3eecdc6ef0::RigVMModel___OffsetTransformForItem_Weight__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_298f2d3eecdc6ef0, RigVMModel___OffsetTransformForItem_1_Item__Const) == 0x000084, "Member 'FPropertyBag_298f2d3eecdc6ef0::RigVMModel___OffsetTransformForItem_1_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_298f2d3eecdc6ef0, RigVMModel___GetTransform_4_1_Item__Const) == 0x000090, "Member 'FPropertyBag_298f2d3eecdc6ef0::RigVMModel___GetTransform_4_1_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_298f2d3eecdc6ef0, RigVMModel___OffsetTransformForItem_2_Item__Const) == 0x00009C, "Member 'FPropertyBag_298f2d3eecdc6ef0::RigVMModel___OffsetTransformForItem_2_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_298f2d3eecdc6ef0, RigVMModel___GetTransform_4_1_1_Item__Const) == 0x0000A8, "Member 'FPropertyBag_298f2d3eecdc6ef0::RigVMModel___GetTransform_4_1_1_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_298f2d3eecdc6ef0, RigVMModel___OffsetTransformForItem_3_Item__Const) == 0x0000B4, "Member 'FPropertyBag_298f2d3eecdc6ef0::RigVMModel___OffsetTransformForItem_3_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_298f2d3eecdc6ef0, RigVMModel___GetTransform_4_1_1_1_Item__Const) == 0x0000C0, "Member 'FPropertyBag_298f2d3eecdc6ef0::RigVMModel___GetTransform_4_1_1_1_Item__Const' has a wrong offset!");
-
-// PropertyBag Transient.PropertyBag_de8b66178c90f170
-// 0x0038 (0x0038 - 0x0000)
-struct FPropertyBag_de8b66178c90f170 final
-{
-public:
-	struct FRigElementKey                         RigVMModel___Set_Transform_Item__Const;            // 0x0000(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
-	ERigVMTransformSpace                          RigVMModel___Set_Transform_Space__Const;           // 0x000C(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          RigVMModel___Set_Transform_bInitial__Const;        // 0x000D(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_E[0x2];                                        // 0x000E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRigElementKey                         RigVMModel___GetTransform_1_Item__Const;           // 0x0010(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
-	struct FRigElementKey                         RigVMModel___GetTransform_Item__Const;             // 0x001C(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
-	double                                        RigVMModel___Multiply_1_B__Const;                  // 0x0028(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         RigVMModel___Set_Transform_Weight__Const;          // 0x0030(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          RigVMModel___Set_Transform_bPropagateToChildren__Const; // 0x0034(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(FPropertyBag_de8b66178c90f170) == 0x000008, "Wrong alignment on FPropertyBag_de8b66178c90f170");
-static_assert(sizeof(FPropertyBag_de8b66178c90f170) == 0x000038, "Wrong size on FPropertyBag_de8b66178c90f170");
-static_assert(offsetof(FPropertyBag_de8b66178c90f170, RigVMModel___Set_Transform_Item__Const) == 0x000000, "Member 'FPropertyBag_de8b66178c90f170::RigVMModel___Set_Transform_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_de8b66178c90f170, RigVMModel___Set_Transform_Space__Const) == 0x00000C, "Member 'FPropertyBag_de8b66178c90f170::RigVMModel___Set_Transform_Space__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_de8b66178c90f170, RigVMModel___Set_Transform_bInitial__Const) == 0x00000D, "Member 'FPropertyBag_de8b66178c90f170::RigVMModel___Set_Transform_bInitial__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_de8b66178c90f170, RigVMModel___GetTransform_1_Item__Const) == 0x000010, "Member 'FPropertyBag_de8b66178c90f170::RigVMModel___GetTransform_1_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_de8b66178c90f170, RigVMModel___GetTransform_Item__Const) == 0x00001C, "Member 'FPropertyBag_de8b66178c90f170::RigVMModel___GetTransform_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_de8b66178c90f170, RigVMModel___Multiply_1_B__Const) == 0x000028, "Member 'FPropertyBag_de8b66178c90f170::RigVMModel___Multiply_1_B__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_de8b66178c90f170, RigVMModel___Set_Transform_Weight__Const) == 0x000030, "Member 'FPropertyBag_de8b66178c90f170::RigVMModel___Set_Transform_Weight__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_de8b66178c90f170, RigVMModel___Set_Transform_bPropagateToChildren__Const) == 0x000034, "Member 'FPropertyBag_de8b66178c90f170::RigVMModel___Set_Transform_bPropagateToChildren__Const' has a wrong offset!");
-
-// PropertyBag Transient.PropertyBag_beddf3b4c697b338
-// 0x0110 (0x0110 - 0x0000)
-struct FPropertyBag_beddf3b4c697b338 final
-{
-public:
-	class FName                                   RigVMModel___SetControlRotator_Control__Const;     // 0x0000(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         RigVMModel___SetControlRotator_Weight__Const;      // 0x0008(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         RigVMModel___ArrayGetAtIndex_Array_Get_at_Index_Index__Const; // 0x000C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ERigVMTransformSpace                          RigVMModel___SetControlRotator_Space__Const;       // 0x0010(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRigElementKey                         RigVMModel___RotationConstraintLocalSpaceOffset_Child__Const; // 0x0014(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
-	bool                                          RigVMModel___RotationConstraintLocalSpaceOffset_bMaintainOffset__Const; // 0x0020(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFilterOptionPerAxis                   RigVMModel___RotationConstraintLocalSpaceOffset_Filter__Const; // 0x0021(0x0003)(Edit, NoDestructor)
-	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FConstraintParent>              RigVMModel___RotationConstraintLocalSpaceOffset_Parents__Const; // 0x0028(0x0010)(Edit)
-	struct FRigUnit_RotationConstraint_AdvancedSettings RigVMModel___RotationConstraintLocalSpaceOffset_AdvancedSettings__Const; // 0x0038(0x0002)(Edit, NoDestructor)
-	uint8                                         Pad_3A[0x2];                                       // 0x003A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         RigVMModel___RotationConstraintLocalSpaceOffset_Weight__Const; // 0x003C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   RigVMModel___SetControlRotator_1_Control__Const;   // 0x0040(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRigElementKey                         RigVMModel___RotationConstraintLocalSpaceOffset_1_Child__Const; // 0x0048(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
-	struct FFilterOptionPerAxis                   RigVMModel___RotationConstraintLocalSpaceOffset_1_Filter__Const; // 0x0054(0x0003)(Edit, NoDestructor)
-	uint8                                         Pad_57[0x1];                                       // 0x0057(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FConstraintParent>              RigVMModel___RotationConstraintLocalSpaceOffset_1_Parents__Const; // 0x0058(0x0010)(Edit)
-	struct FRigUnit_RotationConstraint_AdvancedSettings RigVMModel___RotationConstraintLocalSpaceOffset_1_AdvancedSettings__Const; // 0x0068(0x0002)(Edit, NoDestructor)
-	uint8                                         Pad_6A[0x2];                                       // 0x006A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   RigVMModel___SetControlRotator_2_Control__Const;   // 0x006C(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         RigVMModel___ArrayGetAtIndex_3_Array_Get_at_Index_Index__Const; // 0x0074(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRigElementKey                         RigVMModel___RotationConstraintLocalSpaceOffset_2_Child__Const; // 0x0078(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_84[0x4];                                       // 0x0084(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FConstraintParent>              RigVMModel___RotationConstraintLocalSpaceOffset_2_Parents__Const; // 0x0088(0x0010)(Edit)
-	class FName                                   RigVMModel___SetControlRotator_1_1_Control__Const; // 0x0098(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRigElementKey                         RigVMModel___RotationConstraintLocalSpaceOffset_1_1_Child__Const; // 0x00A0(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_AC[0x4];                                       // 0x00AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FConstraintParent>              RigVMModel___RotationConstraintLocalSpaceOffset_1_1_Parents__Const; // 0x00B0(0x0010)(Edit)
-	class FName                                   RigVMModel___SetControlRotator_2_1_Control__Const; // 0x00C0(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         RigVMModel___ArrayGetAtIndex_3_1_Array_Get_at_Index_Index__Const; // 0x00C8(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRigElementKey                         RigVMModel___RotationConstraintLocalSpaceOffset_2_1_Child__Const; // 0x00CC(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FConstraintParent>              RigVMModel___RotationConstraintLocalSpaceOffset_2_1_Parents__Const; // 0x00D8(0x0010)(Edit)
-	class FName                                   RigVMModel___SetControlRotator_2_1_1_Control__Const; // 0x00E8(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         RigVMModel___ArrayGetAtIndex_3_1_1_Array_Get_at_Index_Index__Const; // 0x00F0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRigElementKey                         RigVMModel___RotationConstraintLocalSpaceOffset_2_1_1_Child__Const; // 0x00F4(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FConstraintParent>              RigVMModel___RotationConstraintLocalSpaceOffset_2_1_1_Parents__Const; // 0x0100(0x0010)(Edit)
-};
-static_assert(alignof(FPropertyBag_beddf3b4c697b338) == 0x000008, "Wrong alignment on FPropertyBag_beddf3b4c697b338");
-static_assert(sizeof(FPropertyBag_beddf3b4c697b338) == 0x000110, "Wrong size on FPropertyBag_beddf3b4c697b338");
-static_assert(offsetof(FPropertyBag_beddf3b4c697b338, RigVMModel___SetControlRotator_Control__Const) == 0x000000, "Member 'FPropertyBag_beddf3b4c697b338::RigVMModel___SetControlRotator_Control__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_beddf3b4c697b338, RigVMModel___SetControlRotator_Weight__Const) == 0x000008, "Member 'FPropertyBag_beddf3b4c697b338::RigVMModel___SetControlRotator_Weight__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_beddf3b4c697b338, RigVMModel___ArrayGetAtIndex_Array_Get_at_Index_Index__Const) == 0x00000C, "Member 'FPropertyBag_beddf3b4c697b338::RigVMModel___ArrayGetAtIndex_Array_Get_at_Index_Index__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_beddf3b4c697b338, RigVMModel___SetControlRotator_Space__Const) == 0x000010, "Member 'FPropertyBag_beddf3b4c697b338::RigVMModel___SetControlRotator_Space__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_beddf3b4c697b338, RigVMModel___RotationConstraintLocalSpaceOffset_Child__Const) == 0x000014, "Member 'FPropertyBag_beddf3b4c697b338::RigVMModel___RotationConstraintLocalSpaceOffset_Child__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_beddf3b4c697b338, RigVMModel___RotationConstraintLocalSpaceOffset_bMaintainOffset__Const) == 0x000020, "Member 'FPropertyBag_beddf3b4c697b338::RigVMModel___RotationConstraintLocalSpaceOffset_bMaintainOffset__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_beddf3b4c697b338, RigVMModel___RotationConstraintLocalSpaceOffset_Filter__Const) == 0x000021, "Member 'FPropertyBag_beddf3b4c697b338::RigVMModel___RotationConstraintLocalSpaceOffset_Filter__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_beddf3b4c697b338, RigVMModel___RotationConstraintLocalSpaceOffset_Parents__Const) == 0x000028, "Member 'FPropertyBag_beddf3b4c697b338::RigVMModel___RotationConstraintLocalSpaceOffset_Parents__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_beddf3b4c697b338, RigVMModel___RotationConstraintLocalSpaceOffset_AdvancedSettings__Const) == 0x000038, "Member 'FPropertyBag_beddf3b4c697b338::RigVMModel___RotationConstraintLocalSpaceOffset_AdvancedSettings__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_beddf3b4c697b338, RigVMModel___RotationConstraintLocalSpaceOffset_Weight__Const) == 0x00003C, "Member 'FPropertyBag_beddf3b4c697b338::RigVMModel___RotationConstraintLocalSpaceOffset_Weight__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_beddf3b4c697b338, RigVMModel___SetControlRotator_1_Control__Const) == 0x000040, "Member 'FPropertyBag_beddf3b4c697b338::RigVMModel___SetControlRotator_1_Control__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_beddf3b4c697b338, RigVMModel___RotationConstraintLocalSpaceOffset_1_Child__Const) == 0x000048, "Member 'FPropertyBag_beddf3b4c697b338::RigVMModel___RotationConstraintLocalSpaceOffset_1_Child__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_beddf3b4c697b338, RigVMModel___RotationConstraintLocalSpaceOffset_1_Filter__Const) == 0x000054, "Member 'FPropertyBag_beddf3b4c697b338::RigVMModel___RotationConstraintLocalSpaceOffset_1_Filter__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_beddf3b4c697b338, RigVMModel___RotationConstraintLocalSpaceOffset_1_Parents__Const) == 0x000058, "Member 'FPropertyBag_beddf3b4c697b338::RigVMModel___RotationConstraintLocalSpaceOffset_1_Parents__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_beddf3b4c697b338, RigVMModel___RotationConstraintLocalSpaceOffset_1_AdvancedSettings__Const) == 0x000068, "Member 'FPropertyBag_beddf3b4c697b338::RigVMModel___RotationConstraintLocalSpaceOffset_1_AdvancedSettings__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_beddf3b4c697b338, RigVMModel___SetControlRotator_2_Control__Const) == 0x00006C, "Member 'FPropertyBag_beddf3b4c697b338::RigVMModel___SetControlRotator_2_Control__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_beddf3b4c697b338, RigVMModel___ArrayGetAtIndex_3_Array_Get_at_Index_Index__Const) == 0x000074, "Member 'FPropertyBag_beddf3b4c697b338::RigVMModel___ArrayGetAtIndex_3_Array_Get_at_Index_Index__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_beddf3b4c697b338, RigVMModel___RotationConstraintLocalSpaceOffset_2_Child__Const) == 0x000078, "Member 'FPropertyBag_beddf3b4c697b338::RigVMModel___RotationConstraintLocalSpaceOffset_2_Child__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_beddf3b4c697b338, RigVMModel___RotationConstraintLocalSpaceOffset_2_Parents__Const) == 0x000088, "Member 'FPropertyBag_beddf3b4c697b338::RigVMModel___RotationConstraintLocalSpaceOffset_2_Parents__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_beddf3b4c697b338, RigVMModel___SetControlRotator_1_1_Control__Const) == 0x000098, "Member 'FPropertyBag_beddf3b4c697b338::RigVMModel___SetControlRotator_1_1_Control__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_beddf3b4c697b338, RigVMModel___RotationConstraintLocalSpaceOffset_1_1_Child__Const) == 0x0000A0, "Member 'FPropertyBag_beddf3b4c697b338::RigVMModel___RotationConstraintLocalSpaceOffset_1_1_Child__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_beddf3b4c697b338, RigVMModel___RotationConstraintLocalSpaceOffset_1_1_Parents__Const) == 0x0000B0, "Member 'FPropertyBag_beddf3b4c697b338::RigVMModel___RotationConstraintLocalSpaceOffset_1_1_Parents__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_beddf3b4c697b338, RigVMModel___SetControlRotator_2_1_Control__Const) == 0x0000C0, "Member 'FPropertyBag_beddf3b4c697b338::RigVMModel___SetControlRotator_2_1_Control__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_beddf3b4c697b338, RigVMModel___ArrayGetAtIndex_3_1_Array_Get_at_Index_Index__Const) == 0x0000C8, "Member 'FPropertyBag_beddf3b4c697b338::RigVMModel___ArrayGetAtIndex_3_1_Array_Get_at_Index_Index__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_beddf3b4c697b338, RigVMModel___RotationConstraintLocalSpaceOffset_2_1_Child__Const) == 0x0000CC, "Member 'FPropertyBag_beddf3b4c697b338::RigVMModel___RotationConstraintLocalSpaceOffset_2_1_Child__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_beddf3b4c697b338, RigVMModel___RotationConstraintLocalSpaceOffset_2_1_Parents__Const) == 0x0000D8, "Member 'FPropertyBag_beddf3b4c697b338::RigVMModel___RotationConstraintLocalSpaceOffset_2_1_Parents__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_beddf3b4c697b338, RigVMModel___SetControlRotator_2_1_1_Control__Const) == 0x0000E8, "Member 'FPropertyBag_beddf3b4c697b338::RigVMModel___SetControlRotator_2_1_1_Control__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_beddf3b4c697b338, RigVMModel___ArrayGetAtIndex_3_1_1_Array_Get_at_Index_Index__Const) == 0x0000F0, "Member 'FPropertyBag_beddf3b4c697b338::RigVMModel___ArrayGetAtIndex_3_1_1_Array_Get_at_Index_Index__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_beddf3b4c697b338, RigVMModel___RotationConstraintLocalSpaceOffset_2_1_1_Child__Const) == 0x0000F4, "Member 'FPropertyBag_beddf3b4c697b338::RigVMModel___RotationConstraintLocalSpaceOffset_2_1_1_Child__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_beddf3b4c697b338, RigVMModel___RotationConstraintLocalSpaceOffset_2_1_1_Parents__Const) == 0x000100, "Member 'FPropertyBag_beddf3b4c697b338::RigVMModel___RotationConstraintLocalSpaceOffset_2_1_1_Parents__Const' has a wrong offset!");
-
-// PropertyBag Transient.PropertyBag_3f7f44a6933bb7e6
+// PropertyBag Transient.PropertyBag_18ff5604dee85f21
 // 0x01B0 (0x01B0 - 0x0000)
-struct FPropertyBag_3f7f44a6933bb7e6 final
+struct FPropertyBag_18ff5604dee85f21 final
 {
 public:
 	struct FVector                                RigVMModel___Add_Result;                           // 0x0000(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -239,101 +93,33 @@ public:
 	uint8                                         Pad_194[0x4];                                      // 0x0194(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FCachedRigElement>              RigVMModel___Set_Transform_CachedIndex;            // 0x0198(0x0010)(Edit)
 };
-static_assert(alignof(FPropertyBag_3f7f44a6933bb7e6) == 0x000010, "Wrong alignment on FPropertyBag_3f7f44a6933bb7e6");
-static_assert(sizeof(FPropertyBag_3f7f44a6933bb7e6) == 0x0001B0, "Wrong size on FPropertyBag_3f7f44a6933bb7e6");
-static_assert(offsetof(FPropertyBag_3f7f44a6933bb7e6, RigVMModel___Add_Result) == 0x000000, "Member 'FPropertyBag_3f7f44a6933bb7e6::RigVMModel___Add_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_3f7f44a6933bb7e6, RigVMModel___GetTransform_1_Transform) == 0x000020, "Member 'FPropertyBag_3f7f44a6933bb7e6::RigVMModel___GetTransform_1_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_3f7f44a6933bb7e6, RigVMModel___GetTransform_1_CachedIndex) == 0x000080, "Member 'FPropertyBag_3f7f44a6933bb7e6::RigVMModel___GetTransform_1_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_3f7f44a6933bb7e6, RigVMModel___Add_A) == 0x000090, "Member 'FPropertyBag_3f7f44a6933bb7e6::RigVMModel___Add_A' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_3f7f44a6933bb7e6, RigVMModel___Scale_Result) == 0x0000A8, "Member 'FPropertyBag_3f7f44a6933bb7e6::RigVMModel___Scale_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_3f7f44a6933bb7e6, RigVMModel___Unit_Result) == 0x0000C0, "Member 'FPropertyBag_3f7f44a6933bb7e6::RigVMModel___Unit_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_3f7f44a6933bb7e6, RigVMModel___Subtract_Result) == 0x0000D8, "Member 'FPropertyBag_3f7f44a6933bb7e6::RigVMModel___Subtract_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_3f7f44a6933bb7e6, RigVMModel___GetTransform_Transform) == 0x0000F0, "Member 'FPropertyBag_3f7f44a6933bb7e6::RigVMModel___GetTransform_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_3f7f44a6933bb7e6, RigVMModel___GetTransform_CachedIndex) == 0x000150, "Member 'FPropertyBag_3f7f44a6933bb7e6::RigVMModel___GetTransform_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_3f7f44a6933bb7e6, RigVMModel___Subtract_A) == 0x000160, "Member 'FPropertyBag_3f7f44a6933bb7e6::RigVMModel___Subtract_A' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_3f7f44a6933bb7e6, RigVMModel___Multiply_1_Result) == 0x000178, "Member 'FPropertyBag_3f7f44a6933bb7e6::RigVMModel___Multiply_1_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_3f7f44a6933bb7e6, RigVMModel___RigVMFunction_MathVectorDistance_Result) == 0x000180, "Member 'FPropertyBag_3f7f44a6933bb7e6::RigVMModel___RigVMFunction_MathVectorDistance_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_3f7f44a6933bb7e6, RigVMModel___Multiply_1_A) == 0x000188, "Member 'FPropertyBag_3f7f44a6933bb7e6::RigVMModel___Multiply_1_A' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_3f7f44a6933bb7e6, RigVMModel___Scale_Factor) == 0x000190, "Member 'FPropertyBag_3f7f44a6933bb7e6::RigVMModel___Scale_Factor' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_3f7f44a6933bb7e6, RigVMModel___Set_Transform_CachedIndex) == 0x000198, "Member 'FPropertyBag_3f7f44a6933bb7e6::RigVMModel___Set_Transform_CachedIndex' has a wrong offset!");
+DUMPER7_ASSERTS_FPropertyBag_18ff5604dee85f21;
 
-// PropertyBag Transient.PropertyBag_441dd8484ad97ea7
-// 0x0110 (0x0110 - 0x0000)
-struct FPropertyBag_441dd8484ad97ea7 final
+// PropertyBag Transient.PropertyBag_4aee60ab097cd1c6
+// 0x00D0 (0x00D0 - 0x0000)
+struct FPropertyBag_4aee60ab097cd1c6 final
 {
 public:
-	class FName                                   RigVMModel___SetControlRotator_Control__Const;     // 0x0000(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         RigVMModel___SetControlRotator_Weight__Const;      // 0x0008(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         RigVMModel___ArrayGetAtIndex_Array_Get_at_Index_Index__Const; // 0x000C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ERigVMTransformSpace                          RigVMModel___SetControlRotator_Space__Const;       // 0x0010(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRigElementKey                         RigVMModel___RotationConstraintLocalSpaceOffset_Child__Const; // 0x0014(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
-	bool                                          RigVMModel___RotationConstraintLocalSpaceOffset_bMaintainOffset__Const; // 0x0020(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFilterOptionPerAxis                   RigVMModel___RotationConstraintLocalSpaceOffset_Filter__Const; // 0x0021(0x0003)(Edit, NoDestructor)
-	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FConstraintParent>              RigVMModel___RotationConstraintLocalSpaceOffset_Parents__Const; // 0x0028(0x0010)(Edit)
-	struct FRigUnit_RotationConstraint_AdvancedSettings RigVMModel___RotationConstraintLocalSpaceOffset_AdvancedSettings__Const; // 0x0038(0x0002)(Edit, NoDestructor)
-	uint8                                         Pad_3A[0x2];                                       // 0x003A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   RigVMModel___SetControlRotator_2_Control__Const;   // 0x003C(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRigElementKey                         RigVMModel___RotationConstraintLocalSpaceOffset_2_Child__Const; // 0x0044(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
-	struct FFilterOptionPerAxis                   RigVMModel___RotationConstraintLocalSpaceOffset_2_Filter__Const; // 0x0050(0x0003)(Edit, NoDestructor)
-	uint8                                         Pad_53[0x5];                                       // 0x0053(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FConstraintParent>              RigVMModel___RotationConstraintLocalSpaceOffset_2_Parents__Const; // 0x0058(0x0010)(Edit)
-	struct FRigUnit_RotationConstraint_AdvancedSettings RigVMModel___RotationConstraintLocalSpaceOffset_2_AdvancedSettings__Const; // 0x0068(0x0002)(Edit, NoDestructor)
-	uint8                                         Pad_6A[0x2];                                       // 0x006A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   RigVMModel___SetControlRotator_1_Control__Const;   // 0x006C(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         RigVMModel___ArrayGetAtIndex_1_Array_Get_at_Index_Index__Const; // 0x0074(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRigElementKey                         RigVMModel___RotationConstraintLocalSpaceOffset_1_Child__Const; // 0x0078(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_84[0x4];                                       // 0x0084(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FConstraintParent>              RigVMModel___RotationConstraintLocalSpaceOffset_1_Parents__Const; // 0x0088(0x0010)(Edit)
-	class FName                                   RigVMModel___SetControlRotator_1_2_Control__Const; // 0x0098(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRigElementKey                         RigVMModel___RotationConstraintLocalSpaceOffset_2_1_Child__Const; // 0x00A0(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_AC[0x4];                                       // 0x00AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FConstraintParent>              RigVMModel___RotationConstraintLocalSpaceOffset_2_1_Parents__Const; // 0x00B0(0x0010)(Edit)
-	class FName                                   RigVMModel___SetControlRotator_1_1_Control__Const; // 0x00C0(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         RigVMModel___ArrayGetAtIndex_1_1_Array_Get_at_Index_Index__Const; // 0x00C8(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRigElementKey                         RigVMModel___RotationConstraintLocalSpaceOffset_1_1_Child__Const; // 0x00CC(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FConstraintParent>              RigVMModel___RotationConstraintLocalSpaceOffset_1_1_Parents__Const; // 0x00D8(0x0010)(Edit)
-	class FName                                   RigVMModel___SetControlRotator_1_1_1_Control__Const; // 0x00E8(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         RigVMModel___ArrayGetAtIndex_1_1_1_Array_Get_at_Index_Index__Const; // 0x00F0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRigElementKey                         RigVMModel___RotationConstraintLocalSpaceOffset_1_1_1_Child__Const; // 0x00F4(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FConstraintParent>              RigVMModel___RotationConstraintLocalSpaceOffset_1_1_1_Parents__Const; // 0x0100(0x0010)(Edit)
+	struct FRigElementKey                         RigVMModel___OffsetTransformForItem_Item__Const;   // 0x0000(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             RigVMModel___OffsetTransformForItem_OffsetTransform__Const; // 0x0010(0x0060)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRigElementKey                         RigVMModel___GetTransform_4_Item__Const;           // 0x0070(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
+	ERigVMTransformSpace                          RigVMModel___GetTransform_4_Space__Const;          // 0x007C(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          RigVMModel___GetTransform_4_bInitial__Const;       // 0x007D(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_7E[0x2];                                       // 0x007E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         RigVMModel___OffsetTransformForItem_Weight__Const; // 0x0080(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRigElementKey                         RigVMModel___OffsetTransformForItem_1_Item__Const; // 0x0084(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
+	struct FRigElementKey                         RigVMModel___GetTransform_4_1_Item__Const;         // 0x0090(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
+	struct FRigElementKey                         RigVMModel___OffsetTransformForItem_2_Item__Const; // 0x009C(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
+	struct FRigElementKey                         RigVMModel___GetTransform_4_1_1_Item__Const;       // 0x00A8(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
+	struct FRigElementKey                         RigVMModel___OffsetTransformForItem_3_Item__Const; // 0x00B4(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
+	struct FRigElementKey                         RigVMModel___GetTransform_4_1_1_1_Item__Const;     // 0x00C0(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FPropertyBag_441dd8484ad97ea7) == 0x000008, "Wrong alignment on FPropertyBag_441dd8484ad97ea7");
-static_assert(sizeof(FPropertyBag_441dd8484ad97ea7) == 0x000110, "Wrong size on FPropertyBag_441dd8484ad97ea7");
-static_assert(offsetof(FPropertyBag_441dd8484ad97ea7, RigVMModel___SetControlRotator_Control__Const) == 0x000000, "Member 'FPropertyBag_441dd8484ad97ea7::RigVMModel___SetControlRotator_Control__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_441dd8484ad97ea7, RigVMModel___SetControlRotator_Weight__Const) == 0x000008, "Member 'FPropertyBag_441dd8484ad97ea7::RigVMModel___SetControlRotator_Weight__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_441dd8484ad97ea7, RigVMModel___ArrayGetAtIndex_Array_Get_at_Index_Index__Const) == 0x00000C, "Member 'FPropertyBag_441dd8484ad97ea7::RigVMModel___ArrayGetAtIndex_Array_Get_at_Index_Index__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_441dd8484ad97ea7, RigVMModel___SetControlRotator_Space__Const) == 0x000010, "Member 'FPropertyBag_441dd8484ad97ea7::RigVMModel___SetControlRotator_Space__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_441dd8484ad97ea7, RigVMModel___RotationConstraintLocalSpaceOffset_Child__Const) == 0x000014, "Member 'FPropertyBag_441dd8484ad97ea7::RigVMModel___RotationConstraintLocalSpaceOffset_Child__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_441dd8484ad97ea7, RigVMModel___RotationConstraintLocalSpaceOffset_bMaintainOffset__Const) == 0x000020, "Member 'FPropertyBag_441dd8484ad97ea7::RigVMModel___RotationConstraintLocalSpaceOffset_bMaintainOffset__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_441dd8484ad97ea7, RigVMModel___RotationConstraintLocalSpaceOffset_Filter__Const) == 0x000021, "Member 'FPropertyBag_441dd8484ad97ea7::RigVMModel___RotationConstraintLocalSpaceOffset_Filter__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_441dd8484ad97ea7, RigVMModel___RotationConstraintLocalSpaceOffset_Parents__Const) == 0x000028, "Member 'FPropertyBag_441dd8484ad97ea7::RigVMModel___RotationConstraintLocalSpaceOffset_Parents__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_441dd8484ad97ea7, RigVMModel___RotationConstraintLocalSpaceOffset_AdvancedSettings__Const) == 0x000038, "Member 'FPropertyBag_441dd8484ad97ea7::RigVMModel___RotationConstraintLocalSpaceOffset_AdvancedSettings__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_441dd8484ad97ea7, RigVMModel___SetControlRotator_2_Control__Const) == 0x00003C, "Member 'FPropertyBag_441dd8484ad97ea7::RigVMModel___SetControlRotator_2_Control__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_441dd8484ad97ea7, RigVMModel___RotationConstraintLocalSpaceOffset_2_Child__Const) == 0x000044, "Member 'FPropertyBag_441dd8484ad97ea7::RigVMModel___RotationConstraintLocalSpaceOffset_2_Child__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_441dd8484ad97ea7, RigVMModel___RotationConstraintLocalSpaceOffset_2_Filter__Const) == 0x000050, "Member 'FPropertyBag_441dd8484ad97ea7::RigVMModel___RotationConstraintLocalSpaceOffset_2_Filter__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_441dd8484ad97ea7, RigVMModel___RotationConstraintLocalSpaceOffset_2_Parents__Const) == 0x000058, "Member 'FPropertyBag_441dd8484ad97ea7::RigVMModel___RotationConstraintLocalSpaceOffset_2_Parents__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_441dd8484ad97ea7, RigVMModel___RotationConstraintLocalSpaceOffset_2_AdvancedSettings__Const) == 0x000068, "Member 'FPropertyBag_441dd8484ad97ea7::RigVMModel___RotationConstraintLocalSpaceOffset_2_AdvancedSettings__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_441dd8484ad97ea7, RigVMModel___SetControlRotator_1_Control__Const) == 0x00006C, "Member 'FPropertyBag_441dd8484ad97ea7::RigVMModel___SetControlRotator_1_Control__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_441dd8484ad97ea7, RigVMModel___ArrayGetAtIndex_1_Array_Get_at_Index_Index__Const) == 0x000074, "Member 'FPropertyBag_441dd8484ad97ea7::RigVMModel___ArrayGetAtIndex_1_Array_Get_at_Index_Index__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_441dd8484ad97ea7, RigVMModel___RotationConstraintLocalSpaceOffset_1_Child__Const) == 0x000078, "Member 'FPropertyBag_441dd8484ad97ea7::RigVMModel___RotationConstraintLocalSpaceOffset_1_Child__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_441dd8484ad97ea7, RigVMModel___RotationConstraintLocalSpaceOffset_1_Parents__Const) == 0x000088, "Member 'FPropertyBag_441dd8484ad97ea7::RigVMModel___RotationConstraintLocalSpaceOffset_1_Parents__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_441dd8484ad97ea7, RigVMModel___SetControlRotator_1_2_Control__Const) == 0x000098, "Member 'FPropertyBag_441dd8484ad97ea7::RigVMModel___SetControlRotator_1_2_Control__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_441dd8484ad97ea7, RigVMModel___RotationConstraintLocalSpaceOffset_2_1_Child__Const) == 0x0000A0, "Member 'FPropertyBag_441dd8484ad97ea7::RigVMModel___RotationConstraintLocalSpaceOffset_2_1_Child__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_441dd8484ad97ea7, RigVMModel___RotationConstraintLocalSpaceOffset_2_1_Parents__Const) == 0x0000B0, "Member 'FPropertyBag_441dd8484ad97ea7::RigVMModel___RotationConstraintLocalSpaceOffset_2_1_Parents__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_441dd8484ad97ea7, RigVMModel___SetControlRotator_1_1_Control__Const) == 0x0000C0, "Member 'FPropertyBag_441dd8484ad97ea7::RigVMModel___SetControlRotator_1_1_Control__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_441dd8484ad97ea7, RigVMModel___ArrayGetAtIndex_1_1_Array_Get_at_Index_Index__Const) == 0x0000C8, "Member 'FPropertyBag_441dd8484ad97ea7::RigVMModel___ArrayGetAtIndex_1_1_Array_Get_at_Index_Index__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_441dd8484ad97ea7, RigVMModel___RotationConstraintLocalSpaceOffset_1_1_Child__Const) == 0x0000CC, "Member 'FPropertyBag_441dd8484ad97ea7::RigVMModel___RotationConstraintLocalSpaceOffset_1_1_Child__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_441dd8484ad97ea7, RigVMModel___RotationConstraintLocalSpaceOffset_1_1_Parents__Const) == 0x0000D8, "Member 'FPropertyBag_441dd8484ad97ea7::RigVMModel___RotationConstraintLocalSpaceOffset_1_1_Parents__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_441dd8484ad97ea7, RigVMModel___SetControlRotator_1_1_1_Control__Const) == 0x0000E8, "Member 'FPropertyBag_441dd8484ad97ea7::RigVMModel___SetControlRotator_1_1_1_Control__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_441dd8484ad97ea7, RigVMModel___ArrayGetAtIndex_1_1_1_Array_Get_at_Index_Index__Const) == 0x0000F0, "Member 'FPropertyBag_441dd8484ad97ea7::RigVMModel___ArrayGetAtIndex_1_1_1_Array_Get_at_Index_Index__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_441dd8484ad97ea7, RigVMModel___RotationConstraintLocalSpaceOffset_1_1_1_Child__Const) == 0x0000F4, "Member 'FPropertyBag_441dd8484ad97ea7::RigVMModel___RotationConstraintLocalSpaceOffset_1_1_1_Child__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_441dd8484ad97ea7, RigVMModel___RotationConstraintLocalSpaceOffset_1_1_1_Parents__Const) == 0x000100, "Member 'FPropertyBag_441dd8484ad97ea7::RigVMModel___RotationConstraintLocalSpaceOffset_1_1_1_Parents__Const' has a wrong offset!");
+DUMPER7_ASSERTS_FPropertyBag_4aee60ab097cd1c6;
 
-// PropertyBag Transient.PropertyBag_7621f8ca975f3332
+// PropertyBag Transient.PropertyBag_56c9e8b2deedead7
 // 0x0410 (0x0410 - 0x0000)
-struct FPropertyBag_7621f8ca975f3332 final
+struct FPropertyBag_56c9e8b2deedead7 final
 {
 public:
 	float                                         RigVMModel___MathFloatSub_Result;                  // 0x0000(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -374,41 +160,100 @@ public:
 	TArray<struct FCachedRigElement>              RigVMModel___OffsetTransformForItem_3_CachedIndex; // 0x03F0(0x0010)(Edit)
 	class FName                                   RigVMModel___Branch_RigVMUnitNode_BlockToRun;      // 0x0400(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FPropertyBag_7621f8ca975f3332) == 0x000010, "Wrong alignment on FPropertyBag_7621f8ca975f3332");
-static_assert(sizeof(FPropertyBag_7621f8ca975f3332) == 0x000410, "Wrong size on FPropertyBag_7621f8ca975f3332");
-static_assert(offsetof(FPropertyBag_7621f8ca975f3332, RigVMModel___MathFloatSub_Result) == 0x000000, "Member 'FPropertyBag_7621f8ca975f3332::RigVMModel___MathFloatSub_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_7621f8ca975f3332, RigVMModel___MathFloatSub_A) == 0x000004, "Member 'FPropertyBag_7621f8ca975f3332::RigVMModel___MathFloatSub_A' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_7621f8ca975f3332, RigVMModel___GetTransform_4_Transform) == 0x000010, "Member 'FPropertyBag_7621f8ca975f3332::RigVMModel___GetTransform_4_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_7621f8ca975f3332, RigVMModel___GetTransform_4_CachedIndex) == 0x000070, "Member 'FPropertyBag_7621f8ca975f3332::RigVMModel___GetTransform_4_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_7621f8ca975f3332, RigVMModel___MathFloatSub_B) == 0x000080, "Member 'FPropertyBag_7621f8ca975f3332::RigVMModel___MathFloatSub_B' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_7621f8ca975f3332, RigVMModel___OffsetTransformForItem_OffsetTransform__IO) == 0x000090, "Member 'FPropertyBag_7621f8ca975f3332::RigVMModel___OffsetTransformForItem_OffsetTransform__IO' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_7621f8ca975f3332, RigVMModel___OffsetTransformForItem_CachedIndex) == 0x0000F0, "Member 'FPropertyBag_7621f8ca975f3332::RigVMModel___OffsetTransformForItem_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_7621f8ca975f3332, RigVMModel___MathFloatSub_1_Result) == 0x000100, "Member 'FPropertyBag_7621f8ca975f3332::RigVMModel___MathFloatSub_1_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_7621f8ca975f3332, RigVMModel___MathFloatSub_1_A) == 0x000104, "Member 'FPropertyBag_7621f8ca975f3332::RigVMModel___MathFloatSub_1_A' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_7621f8ca975f3332, RigVMModel___GetTransform_4_1_Transform) == 0x000110, "Member 'FPropertyBag_7621f8ca975f3332::RigVMModel___GetTransform_4_1_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_7621f8ca975f3332, RigVMModel___GetTransform_4_1_CachedIndex) == 0x000170, "Member 'FPropertyBag_7621f8ca975f3332::RigVMModel___GetTransform_4_1_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_7621f8ca975f3332, RigVMModel___MathFloatSub_1_B) == 0x000180, "Member 'FPropertyBag_7621f8ca975f3332::RigVMModel___MathFloatSub_1_B' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_7621f8ca975f3332, RigVMModel___OffsetTransformForItem_1_OffsetTransform__IO) == 0x000190, "Member 'FPropertyBag_7621f8ca975f3332::RigVMModel___OffsetTransformForItem_1_OffsetTransform__IO' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_7621f8ca975f3332, RigVMModel___OffsetTransformForItem_1_CachedIndex) == 0x0001F0, "Member 'FPropertyBag_7621f8ca975f3332::RigVMModel___OffsetTransformForItem_1_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_7621f8ca975f3332, RigVMModel___MathFloatSub_2_Result) == 0x000200, "Member 'FPropertyBag_7621f8ca975f3332::RigVMModel___MathFloatSub_2_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_7621f8ca975f3332, RigVMModel___MathFloatSub_2_A) == 0x000204, "Member 'FPropertyBag_7621f8ca975f3332::RigVMModel___MathFloatSub_2_A' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_7621f8ca975f3332, RigVMModel___GetTransform_4_1_1_Transform) == 0x000210, "Member 'FPropertyBag_7621f8ca975f3332::RigVMModel___GetTransform_4_1_1_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_7621f8ca975f3332, RigVMModel___GetTransform_4_1_1_CachedIndex) == 0x000270, "Member 'FPropertyBag_7621f8ca975f3332::RigVMModel___GetTransform_4_1_1_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_7621f8ca975f3332, RigVMModel___MathFloatSub_2_B) == 0x000280, "Member 'FPropertyBag_7621f8ca975f3332::RigVMModel___MathFloatSub_2_B' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_7621f8ca975f3332, RigVMModel___OffsetTransformForItem_2_OffsetTransform__IO) == 0x000290, "Member 'FPropertyBag_7621f8ca975f3332::RigVMModel___OffsetTransformForItem_2_OffsetTransform__IO' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_7621f8ca975f3332, RigVMModel___OffsetTransformForItem_2_CachedIndex) == 0x0002F0, "Member 'FPropertyBag_7621f8ca975f3332::RigVMModel___OffsetTransformForItem_2_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_7621f8ca975f3332, RigVMModel___MathFloatSub_3_Result) == 0x000300, "Member 'FPropertyBag_7621f8ca975f3332::RigVMModel___MathFloatSub_3_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_7621f8ca975f3332, RigVMModel___MathFloatSub_3_A) == 0x000304, "Member 'FPropertyBag_7621f8ca975f3332::RigVMModel___MathFloatSub_3_A' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_7621f8ca975f3332, RigVMModel___GetTransform_4_1_1_1_Transform) == 0x000310, "Member 'FPropertyBag_7621f8ca975f3332::RigVMModel___GetTransform_4_1_1_1_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_7621f8ca975f3332, RigVMModel___GetTransform_4_1_1_1_CachedIndex) == 0x000370, "Member 'FPropertyBag_7621f8ca975f3332::RigVMModel___GetTransform_4_1_1_1_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_7621f8ca975f3332, RigVMModel___MathFloatSub_3_B) == 0x000380, "Member 'FPropertyBag_7621f8ca975f3332::RigVMModel___MathFloatSub_3_B' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_7621f8ca975f3332, RigVMModel___OffsetTransformForItem_3_OffsetTransform__IO) == 0x000390, "Member 'FPropertyBag_7621f8ca975f3332::RigVMModel___OffsetTransformForItem_3_OffsetTransform__IO' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_7621f8ca975f3332, RigVMModel___OffsetTransformForItem_3_CachedIndex) == 0x0003F0, "Member 'FPropertyBag_7621f8ca975f3332::RigVMModel___OffsetTransformForItem_3_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_7621f8ca975f3332, RigVMModel___Branch_RigVMUnitNode_BlockToRun) == 0x000400, "Member 'FPropertyBag_7621f8ca975f3332::RigVMModel___Branch_RigVMUnitNode_BlockToRun' has a wrong offset!");
+DUMPER7_ASSERTS_FPropertyBag_56c9e8b2deedead7;
 
-// PropertyBag Transient.PropertyBag_f0e8766970bf0797
+// PropertyBag Transient.PropertyBag_37b5c1c0b10fb385
+// 0x0110 (0x0110 - 0x0000)
+struct FPropertyBag_37b5c1c0b10fb385 final
+{
+public:
+	class FName                                   RigVMModel___SetControlRotator_Control__Const;     // 0x0000(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         RigVMModel___SetControlRotator_Weight__Const;      // 0x0008(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         RigVMModel___ArrayGetAtIndex_Array_Get_at_Index_Index__Const; // 0x000C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ERigVMTransformSpace                          RigVMModel___SetControlRotator_Space__Const;       // 0x0010(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FRigElementKey                         RigVMModel___RotationConstraintLocalSpaceOffset_Child__Const; // 0x0014(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
+	bool                                          RigVMModel___RotationConstraintLocalSpaceOffset_bMaintainOffset__Const; // 0x0020(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFilterOptionPerAxis                   RigVMModel___RotationConstraintLocalSpaceOffset_Filter__Const; // 0x0021(0x0003)(Edit, NoDestructor)
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FConstraintParent>              RigVMModel___RotationConstraintLocalSpaceOffset_Parents__Const; // 0x0028(0x0010)(Edit)
+	struct FRigUnit_RotationConstraint_AdvancedSettings RigVMModel___RotationConstraintLocalSpaceOffset_AdvancedSettings__Const; // 0x0038(0x0002)(Edit, NoDestructor)
+	uint8                                         Pad_3A[0x2];                                       // 0x003A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         RigVMModel___RotationConstraintLocalSpaceOffset_Weight__Const; // 0x003C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   RigVMModel___SetControlRotator_1_Control__Const;   // 0x0040(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRigElementKey                         RigVMModel___RotationConstraintLocalSpaceOffset_1_Child__Const; // 0x0048(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
+	struct FFilterOptionPerAxis                   RigVMModel___RotationConstraintLocalSpaceOffset_1_Filter__Const; // 0x0054(0x0003)(Edit, NoDestructor)
+	uint8                                         Pad_57[0x1];                                       // 0x0057(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FConstraintParent>              RigVMModel___RotationConstraintLocalSpaceOffset_1_Parents__Const; // 0x0058(0x0010)(Edit)
+	struct FRigUnit_RotationConstraint_AdvancedSettings RigVMModel___RotationConstraintLocalSpaceOffset_1_AdvancedSettings__Const; // 0x0068(0x0002)(Edit, NoDestructor)
+	uint8                                         Pad_6A[0x2];                                       // 0x006A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   RigVMModel___SetControlRotator_2_Control__Const;   // 0x006C(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         RigVMModel___ArrayGetAtIndex_3_Array_Get_at_Index_Index__Const; // 0x0074(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRigElementKey                         RigVMModel___RotationConstraintLocalSpaceOffset_2_Child__Const; // 0x0078(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_84[0x4];                                       // 0x0084(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FConstraintParent>              RigVMModel___RotationConstraintLocalSpaceOffset_2_Parents__Const; // 0x0088(0x0010)(Edit)
+	class FName                                   RigVMModel___SetControlRotator_1_1_Control__Const; // 0x0098(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRigElementKey                         RigVMModel___RotationConstraintLocalSpaceOffset_1_1_Child__Const; // 0x00A0(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_AC[0x4];                                       // 0x00AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FConstraintParent>              RigVMModel___RotationConstraintLocalSpaceOffset_1_1_Parents__Const; // 0x00B0(0x0010)(Edit)
+	class FName                                   RigVMModel___SetControlRotator_2_1_Control__Const; // 0x00C0(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         RigVMModel___ArrayGetAtIndex_3_1_Array_Get_at_Index_Index__Const; // 0x00C8(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRigElementKey                         RigVMModel___RotationConstraintLocalSpaceOffset_2_1_Child__Const; // 0x00CC(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FConstraintParent>              RigVMModel___RotationConstraintLocalSpaceOffset_2_1_Parents__Const; // 0x00D8(0x0010)(Edit)
+	class FName                                   RigVMModel___SetControlRotator_2_1_1_Control__Const; // 0x00E8(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         RigVMModel___ArrayGetAtIndex_3_1_1_Array_Get_at_Index_Index__Const; // 0x00F0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRigElementKey                         RigVMModel___RotationConstraintLocalSpaceOffset_2_1_1_Child__Const; // 0x00F4(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FConstraintParent>              RigVMModel___RotationConstraintLocalSpaceOffset_2_1_1_Parents__Const; // 0x0100(0x0010)(Edit)
+};
+DUMPER7_ASSERTS_FPropertyBag_37b5c1c0b10fb385;
+
+// PropertyBag Transient.PropertyBag_bcefc3070045c0b6
+// 0x0110 (0x0110 - 0x0000)
+struct FPropertyBag_bcefc3070045c0b6 final
+{
+public:
+	class FName                                   RigVMModel___SetControlRotator_Control__Const;     // 0x0000(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         RigVMModel___SetControlRotator_Weight__Const;      // 0x0008(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         RigVMModel___ArrayGetAtIndex_Array_Get_at_Index_Index__Const; // 0x000C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ERigVMTransformSpace                          RigVMModel___SetControlRotator_Space__Const;       // 0x0010(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FRigElementKey                         RigVMModel___RotationConstraintLocalSpaceOffset_Child__Const; // 0x0014(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
+	bool                                          RigVMModel___RotationConstraintLocalSpaceOffset_bMaintainOffset__Const; // 0x0020(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFilterOptionPerAxis                   RigVMModel___RotationConstraintLocalSpaceOffset_Filter__Const; // 0x0021(0x0003)(Edit, NoDestructor)
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FConstraintParent>              RigVMModel___RotationConstraintLocalSpaceOffset_Parents__Const; // 0x0028(0x0010)(Edit)
+	struct FRigUnit_RotationConstraint_AdvancedSettings RigVMModel___RotationConstraintLocalSpaceOffset_AdvancedSettings__Const; // 0x0038(0x0002)(Edit, NoDestructor)
+	uint8                                         Pad_3A[0x2];                                       // 0x003A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   RigVMModel___SetControlRotator_2_Control__Const;   // 0x003C(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRigElementKey                         RigVMModel___RotationConstraintLocalSpaceOffset_2_Child__Const; // 0x0044(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
+	struct FFilterOptionPerAxis                   RigVMModel___RotationConstraintLocalSpaceOffset_2_Filter__Const; // 0x0050(0x0003)(Edit, NoDestructor)
+	uint8                                         Pad_53[0x5];                                       // 0x0053(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FConstraintParent>              RigVMModel___RotationConstraintLocalSpaceOffset_2_Parents__Const; // 0x0058(0x0010)(Edit)
+	struct FRigUnit_RotationConstraint_AdvancedSettings RigVMModel___RotationConstraintLocalSpaceOffset_2_AdvancedSettings__Const; // 0x0068(0x0002)(Edit, NoDestructor)
+	uint8                                         Pad_6A[0x2];                                       // 0x006A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   RigVMModel___SetControlRotator_1_Control__Const;   // 0x006C(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         RigVMModel___ArrayGetAtIndex_1_Array_Get_at_Index_Index__Const; // 0x0074(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRigElementKey                         RigVMModel___RotationConstraintLocalSpaceOffset_1_Child__Const; // 0x0078(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_84[0x4];                                       // 0x0084(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FConstraintParent>              RigVMModel___RotationConstraintLocalSpaceOffset_1_Parents__Const; // 0x0088(0x0010)(Edit)
+	class FName                                   RigVMModel___SetControlRotator_1_2_Control__Const; // 0x0098(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRigElementKey                         RigVMModel___RotationConstraintLocalSpaceOffset_2_1_Child__Const; // 0x00A0(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_AC[0x4];                                       // 0x00AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FConstraintParent>              RigVMModel___RotationConstraintLocalSpaceOffset_2_1_Parents__Const; // 0x00B0(0x0010)(Edit)
+	class FName                                   RigVMModel___SetControlRotator_1_1_Control__Const; // 0x00C0(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         RigVMModel___ArrayGetAtIndex_1_1_Array_Get_at_Index_Index__Const; // 0x00C8(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRigElementKey                         RigVMModel___RotationConstraintLocalSpaceOffset_1_1_Child__Const; // 0x00CC(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FConstraintParent>              RigVMModel___RotationConstraintLocalSpaceOffset_1_1_Parents__Const; // 0x00D8(0x0010)(Edit)
+	class FName                                   RigVMModel___SetControlRotator_1_1_1_Control__Const; // 0x00E8(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         RigVMModel___ArrayGetAtIndex_1_1_1_Array_Get_at_Index_Index__Const; // 0x00F0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRigElementKey                         RigVMModel___RotationConstraintLocalSpaceOffset_1_1_1_Child__Const; // 0x00F4(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FConstraintParent>              RigVMModel___RotationConstraintLocalSpaceOffset_1_1_1_Parents__Const; // 0x0100(0x0010)(Edit)
+};
+DUMPER7_ASSERTS_FPropertyBag_bcefc3070045c0b6;
+
+// PropertyBag Transient.PropertyBag_9a0ae55a13fc5c92
 // 0x01B8 (0x01B8 - 0x0000)
-struct FPropertyBag_f0e8766970bf0797 final
+struct FPropertyBag_9a0ae55a13fc5c92 final
 {
 public:
 	struct FRotator                               RigVMModel___ArrayGetAtIndex_Array_Get_at_Index_Element; // 0x0000(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -437,37 +282,11 @@ public:
 	TArray<TArray<struct FCachedRigElement>>      RigVMModel___RotationConstraintLocalSpaceOffset_1_1_1_ParentCaches; // 0x01A0(0x0010)(Edit)
 	class FName                                   RigVMModel___Branch_RigVMUnitNode_BlockToRun;      // 0x01B0(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FPropertyBag_f0e8766970bf0797) == 0x000008, "Wrong alignment on FPropertyBag_f0e8766970bf0797");
-static_assert(sizeof(FPropertyBag_f0e8766970bf0797) == 0x0001B8, "Wrong size on FPropertyBag_f0e8766970bf0797");
-static_assert(offsetof(FPropertyBag_f0e8766970bf0797, RigVMModel___ArrayGetAtIndex_Array_Get_at_Index_Element) == 0x000000, "Member 'FPropertyBag_f0e8766970bf0797::RigVMModel___ArrayGetAtIndex_Array_Get_at_Index_Element' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f0e8766970bf0797, RigVMModel___SetControlRotator_CachedControlIndex) == 0x000018, "Member 'FPropertyBag_f0e8766970bf0797::RigVMModel___SetControlRotator_CachedControlIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f0e8766970bf0797, RigVMModel___RotationConstraintLocalSpaceOffset_ChildCache) == 0x000028, "Member 'FPropertyBag_f0e8766970bf0797::RigVMModel___RotationConstraintLocalSpaceOffset_ChildCache' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f0e8766970bf0797, RigVMModel___RotationConstraintLocalSpaceOffset_ParentCaches) == 0x000038, "Member 'FPropertyBag_f0e8766970bf0797::RigVMModel___RotationConstraintLocalSpaceOffset_ParentCaches' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f0e8766970bf0797, RigVMModel___ArrayGetAtIndex_2_Array_Get_at_Index_Element) == 0x000048, "Member 'FPropertyBag_f0e8766970bf0797::RigVMModel___ArrayGetAtIndex_2_Array_Get_at_Index_Element' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f0e8766970bf0797, RigVMModel___SetControlRotator_2_CachedControlIndex) == 0x000060, "Member 'FPropertyBag_f0e8766970bf0797::RigVMModel___SetControlRotator_2_CachedControlIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f0e8766970bf0797, RigVMModel___RotationConstraintLocalSpaceOffset_2_ChildCache) == 0x000070, "Member 'FPropertyBag_f0e8766970bf0797::RigVMModel___RotationConstraintLocalSpaceOffset_2_ChildCache' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f0e8766970bf0797, RigVMModel___RotationConstraintLocalSpaceOffset_2_ParentCaches) == 0x000080, "Member 'FPropertyBag_f0e8766970bf0797::RigVMModel___RotationConstraintLocalSpaceOffset_2_ParentCaches' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f0e8766970bf0797, RigVMModel___ArrayGetAtIndex_1_Array_Get_at_Index_Element) == 0x000090, "Member 'FPropertyBag_f0e8766970bf0797::RigVMModel___ArrayGetAtIndex_1_Array_Get_at_Index_Element' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f0e8766970bf0797, RigVMModel___SetControlRotator_1_CachedControlIndex) == 0x0000A8, "Member 'FPropertyBag_f0e8766970bf0797::RigVMModel___SetControlRotator_1_CachedControlIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f0e8766970bf0797, RigVMModel___RotationConstraintLocalSpaceOffset_1_ChildCache) == 0x0000B8, "Member 'FPropertyBag_f0e8766970bf0797::RigVMModel___RotationConstraintLocalSpaceOffset_1_ChildCache' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f0e8766970bf0797, RigVMModel___RotationConstraintLocalSpaceOffset_1_ParentCaches) == 0x0000C8, "Member 'FPropertyBag_f0e8766970bf0797::RigVMModel___RotationConstraintLocalSpaceOffset_1_ParentCaches' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f0e8766970bf0797, RigVMModel___ArrayGetAtIndex_1_2_Array_Get_at_Index_Element) == 0x0000D8, "Member 'FPropertyBag_f0e8766970bf0797::RigVMModel___ArrayGetAtIndex_1_2_Array_Get_at_Index_Element' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f0e8766970bf0797, RigVMModel___SetControlRotator_1_2_CachedControlIndex) == 0x0000F0, "Member 'FPropertyBag_f0e8766970bf0797::RigVMModel___SetControlRotator_1_2_CachedControlIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f0e8766970bf0797, RigVMModel___RotationConstraintLocalSpaceOffset_2_1_ChildCache) == 0x000100, "Member 'FPropertyBag_f0e8766970bf0797::RigVMModel___RotationConstraintLocalSpaceOffset_2_1_ChildCache' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f0e8766970bf0797, RigVMModel___RotationConstraintLocalSpaceOffset_2_1_ParentCaches) == 0x000110, "Member 'FPropertyBag_f0e8766970bf0797::RigVMModel___RotationConstraintLocalSpaceOffset_2_1_ParentCaches' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f0e8766970bf0797, RigVMModel___ArrayGetAtIndex_1_1_Array_Get_at_Index_Element) == 0x000120, "Member 'FPropertyBag_f0e8766970bf0797::RigVMModel___ArrayGetAtIndex_1_1_Array_Get_at_Index_Element' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f0e8766970bf0797, RigVMModel___SetControlRotator_1_1_CachedControlIndex) == 0x000138, "Member 'FPropertyBag_f0e8766970bf0797::RigVMModel___SetControlRotator_1_1_CachedControlIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f0e8766970bf0797, RigVMModel___RotationConstraintLocalSpaceOffset_1_1_ChildCache) == 0x000148, "Member 'FPropertyBag_f0e8766970bf0797::RigVMModel___RotationConstraintLocalSpaceOffset_1_1_ChildCache' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f0e8766970bf0797, RigVMModel___RotationConstraintLocalSpaceOffset_1_1_ParentCaches) == 0x000158, "Member 'FPropertyBag_f0e8766970bf0797::RigVMModel___RotationConstraintLocalSpaceOffset_1_1_ParentCaches' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f0e8766970bf0797, RigVMModel___ArrayGetAtIndex_1_1_1_Array_Get_at_Index_Element) == 0x000168, "Member 'FPropertyBag_f0e8766970bf0797::RigVMModel___ArrayGetAtIndex_1_1_1_Array_Get_at_Index_Element' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f0e8766970bf0797, RigVMModel___SetControlRotator_1_1_1_CachedControlIndex) == 0x000180, "Member 'FPropertyBag_f0e8766970bf0797::RigVMModel___SetControlRotator_1_1_1_CachedControlIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f0e8766970bf0797, RigVMModel___RotationConstraintLocalSpaceOffset_1_1_1_ChildCache) == 0x000190, "Member 'FPropertyBag_f0e8766970bf0797::RigVMModel___RotationConstraintLocalSpaceOffset_1_1_1_ChildCache' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f0e8766970bf0797, RigVMModel___RotationConstraintLocalSpaceOffset_1_1_1_ParentCaches) == 0x0001A0, "Member 'FPropertyBag_f0e8766970bf0797::RigVMModel___RotationConstraintLocalSpaceOffset_1_1_1_ParentCaches' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f0e8766970bf0797, RigVMModel___Branch_RigVMUnitNode_BlockToRun) == 0x0001B0, "Member 'FPropertyBag_f0e8766970bf0797::RigVMModel___Branch_RigVMUnitNode_BlockToRun' has a wrong offset!");
+DUMPER7_ASSERTS_FPropertyBag_9a0ae55a13fc5c92;
 
-// PropertyBag Transient.PropertyBag_15f1cd177470483e
+// PropertyBag Transient.PropertyBag_4f3d4e4cc1afbec8
 // 0x00E0 (0x00E0 - 0x0000)
-struct FPropertyBag_15f1cd177470483e final
+struct FPropertyBag_4f3d4e4cc1afbec8 final
 {
 public:
 	struct FRigElementKey                         RigVMModel___OffsetTransformForItem_Item__Const;   // 0x0000(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
@@ -489,28 +308,11 @@ public:
 	int32                                         RigVMModel___ArrayGetAtIndex_1_1_1_Array_Get_at_Index_Index__Const; // 0x00CC(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRigElementKey                         RigVMModel___GetTransform_4_1_1_1_Item__Const;     // 0x00D0(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FPropertyBag_15f1cd177470483e) == 0x000010, "Wrong alignment on FPropertyBag_15f1cd177470483e");
-static_assert(sizeof(FPropertyBag_15f1cd177470483e) == 0x0000E0, "Wrong size on FPropertyBag_15f1cd177470483e");
-static_assert(offsetof(FPropertyBag_15f1cd177470483e, RigVMModel___OffsetTransformForItem_Item__Const) == 0x000000, "Member 'FPropertyBag_15f1cd177470483e::RigVMModel___OffsetTransformForItem_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_15f1cd177470483e, RigVMModel___OffsetTransformForItem_OffsetTransform__Const) == 0x000010, "Member 'FPropertyBag_15f1cd177470483e::RigVMModel___OffsetTransformForItem_OffsetTransform__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_15f1cd177470483e, RigVMModel___ArrayGetAtIndex_Array_Get_at_Index_Index__Const) == 0x000070, "Member 'FPropertyBag_15f1cd177470483e::RigVMModel___ArrayGetAtIndex_Array_Get_at_Index_Index__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_15f1cd177470483e, RigVMModel___GetTransform_4_Item__Const) == 0x000074, "Member 'FPropertyBag_15f1cd177470483e::RigVMModel___GetTransform_4_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_15f1cd177470483e, RigVMModel___GetTransform_4_Space__Const) == 0x000080, "Member 'FPropertyBag_15f1cd177470483e::RigVMModel___GetTransform_4_Space__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_15f1cd177470483e, RigVMModel___GetTransform_4_bInitial__Const) == 0x000081, "Member 'FPropertyBag_15f1cd177470483e::RigVMModel___GetTransform_4_bInitial__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_15f1cd177470483e, RigVMModel___OffsetTransformForItem_Weight__Const) == 0x000084, "Member 'FPropertyBag_15f1cd177470483e::RigVMModel___OffsetTransformForItem_Weight__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_15f1cd177470483e, RigVMModel___OffsetTransformForItem_1_Item__Const) == 0x000088, "Member 'FPropertyBag_15f1cd177470483e::RigVMModel___OffsetTransformForItem_1_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_15f1cd177470483e, RigVMModel___ArrayGetAtIndex_1_Array_Get_at_Index_Index__Const) == 0x000094, "Member 'FPropertyBag_15f1cd177470483e::RigVMModel___ArrayGetAtIndex_1_Array_Get_at_Index_Index__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_15f1cd177470483e, RigVMModel___GetTransform_4_1_Item__Const) == 0x000098, "Member 'FPropertyBag_15f1cd177470483e::RigVMModel___GetTransform_4_1_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_15f1cd177470483e, RigVMModel___OffsetTransformForItem_2_Item__Const) == 0x0000A4, "Member 'FPropertyBag_15f1cd177470483e::RigVMModel___OffsetTransformForItem_2_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_15f1cd177470483e, RigVMModel___ArrayGetAtIndex_1_1_Array_Get_at_Index_Index__Const) == 0x0000B0, "Member 'FPropertyBag_15f1cd177470483e::RigVMModel___ArrayGetAtIndex_1_1_Array_Get_at_Index_Index__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_15f1cd177470483e, RigVMModel___GetTransform_4_1_1_Item__Const) == 0x0000B4, "Member 'FPropertyBag_15f1cd177470483e::RigVMModel___GetTransform_4_1_1_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_15f1cd177470483e, RigVMModel___OffsetTransformForItem_3_Item__Const) == 0x0000C0, "Member 'FPropertyBag_15f1cd177470483e::RigVMModel___OffsetTransformForItem_3_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_15f1cd177470483e, RigVMModel___ArrayGetAtIndex_1_1_1_Array_Get_at_Index_Index__Const) == 0x0000CC, "Member 'FPropertyBag_15f1cd177470483e::RigVMModel___ArrayGetAtIndex_1_1_1_Array_Get_at_Index_Index__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_15f1cd177470483e, RigVMModel___GetTransform_4_1_1_1_Item__Const) == 0x0000D0, "Member 'FPropertyBag_15f1cd177470483e::RigVMModel___GetTransform_4_1_1_1_Item__Const' has a wrong offset!");
+DUMPER7_ASSERTS_FPropertyBag_4f3d4e4cc1afbec8;
 
-// PropertyBag Transient.PropertyBag_9a83fbd0585fe8f7
+// PropertyBag Transient.PropertyBag_f1e7667a2e8d32ad
 // 0x0490 (0x0490 - 0x0000)
-struct FPropertyBag_9a83fbd0585fe8f7 final
+struct FPropertyBag_f1e7667a2e8d32ad final
 {
 public:
 	float                                         RigVMModel___MathFloatSub_Result;                  // 0x0000(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -559,41 +361,7 @@ public:
 	TArray<struct FCachedRigElement>              RigVMModel___OffsetTransformForItem_3_CachedIndex; // 0x0470(0x0010)(Edit)
 	class FName                                   RigVMModel___Branch_RigVMUnitNode_BlockToRun;      // 0x0480(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FPropertyBag_9a83fbd0585fe8f7) == 0x000010, "Wrong alignment on FPropertyBag_9a83fbd0585fe8f7");
-static_assert(sizeof(FPropertyBag_9a83fbd0585fe8f7) == 0x000490, "Wrong size on FPropertyBag_9a83fbd0585fe8f7");
-static_assert(offsetof(FPropertyBag_9a83fbd0585fe8f7, RigVMModel___MathFloatSub_Result) == 0x000000, "Member 'FPropertyBag_9a83fbd0585fe8f7::RigVMModel___MathFloatSub_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_9a83fbd0585fe8f7, RigVMModel___ArrayGetAtIndex_Array_Get_at_Index_Element) == 0x000008, "Member 'FPropertyBag_9a83fbd0585fe8f7::RigVMModel___ArrayGetAtIndex_Array_Get_at_Index_Element' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_9a83fbd0585fe8f7, RigVMModel___MathFloatSub_A) == 0x000020, "Member 'FPropertyBag_9a83fbd0585fe8f7::RigVMModel___MathFloatSub_A' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_9a83fbd0585fe8f7, RigVMModel___GetTransform_4_Transform) == 0x000030, "Member 'FPropertyBag_9a83fbd0585fe8f7::RigVMModel___GetTransform_4_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_9a83fbd0585fe8f7, RigVMModel___GetTransform_4_CachedIndex) == 0x000090, "Member 'FPropertyBag_9a83fbd0585fe8f7::RigVMModel___GetTransform_4_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_9a83fbd0585fe8f7, RigVMModel___MathFloatSub_B) == 0x0000A0, "Member 'FPropertyBag_9a83fbd0585fe8f7::RigVMModel___MathFloatSub_B' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_9a83fbd0585fe8f7, RigVMModel___OffsetTransformForItem_OffsetTransform__IO) == 0x0000B0, "Member 'FPropertyBag_9a83fbd0585fe8f7::RigVMModel___OffsetTransformForItem_OffsetTransform__IO' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_9a83fbd0585fe8f7, RigVMModel___OffsetTransformForItem_CachedIndex) == 0x000110, "Member 'FPropertyBag_9a83fbd0585fe8f7::RigVMModel___OffsetTransformForItem_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_9a83fbd0585fe8f7, RigVMModel___MathFloatSub_1_Result) == 0x000120, "Member 'FPropertyBag_9a83fbd0585fe8f7::RigVMModel___MathFloatSub_1_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_9a83fbd0585fe8f7, RigVMModel___ArrayGetAtIndex_1_Array_Get_at_Index_Element) == 0x000128, "Member 'FPropertyBag_9a83fbd0585fe8f7::RigVMModel___ArrayGetAtIndex_1_Array_Get_at_Index_Element' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_9a83fbd0585fe8f7, RigVMModel___MathFloatSub_1_A) == 0x000140, "Member 'FPropertyBag_9a83fbd0585fe8f7::RigVMModel___MathFloatSub_1_A' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_9a83fbd0585fe8f7, RigVMModel___GetTransform_4_1_Transform) == 0x000150, "Member 'FPropertyBag_9a83fbd0585fe8f7::RigVMModel___GetTransform_4_1_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_9a83fbd0585fe8f7, RigVMModel___GetTransform_4_1_CachedIndex) == 0x0001B0, "Member 'FPropertyBag_9a83fbd0585fe8f7::RigVMModel___GetTransform_4_1_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_9a83fbd0585fe8f7, RigVMModel___MathFloatSub_1_B) == 0x0001C0, "Member 'FPropertyBag_9a83fbd0585fe8f7::RigVMModel___MathFloatSub_1_B' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_9a83fbd0585fe8f7, RigVMModel___OffsetTransformForItem_1_OffsetTransform__IO) == 0x0001D0, "Member 'FPropertyBag_9a83fbd0585fe8f7::RigVMModel___OffsetTransformForItem_1_OffsetTransform__IO' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_9a83fbd0585fe8f7, RigVMModel___OffsetTransformForItem_1_CachedIndex) == 0x000230, "Member 'FPropertyBag_9a83fbd0585fe8f7::RigVMModel___OffsetTransformForItem_1_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_9a83fbd0585fe8f7, RigVMModel___MathFloatSub_2_Result) == 0x000240, "Member 'FPropertyBag_9a83fbd0585fe8f7::RigVMModel___MathFloatSub_2_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_9a83fbd0585fe8f7, RigVMModel___ArrayGetAtIndex_1_1_Array_Get_at_Index_Element) == 0x000248, "Member 'FPropertyBag_9a83fbd0585fe8f7::RigVMModel___ArrayGetAtIndex_1_1_Array_Get_at_Index_Element' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_9a83fbd0585fe8f7, RigVMModel___MathFloatSub_2_A) == 0x000260, "Member 'FPropertyBag_9a83fbd0585fe8f7::RigVMModel___MathFloatSub_2_A' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_9a83fbd0585fe8f7, RigVMModel___GetTransform_4_1_1_Transform) == 0x000270, "Member 'FPropertyBag_9a83fbd0585fe8f7::RigVMModel___GetTransform_4_1_1_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_9a83fbd0585fe8f7, RigVMModel___GetTransform_4_1_1_CachedIndex) == 0x0002D0, "Member 'FPropertyBag_9a83fbd0585fe8f7::RigVMModel___GetTransform_4_1_1_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_9a83fbd0585fe8f7, RigVMModel___MathFloatSub_2_B) == 0x0002E0, "Member 'FPropertyBag_9a83fbd0585fe8f7::RigVMModel___MathFloatSub_2_B' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_9a83fbd0585fe8f7, RigVMModel___OffsetTransformForItem_2_OffsetTransform__IO) == 0x0002F0, "Member 'FPropertyBag_9a83fbd0585fe8f7::RigVMModel___OffsetTransformForItem_2_OffsetTransform__IO' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_9a83fbd0585fe8f7, RigVMModel___OffsetTransformForItem_2_CachedIndex) == 0x000350, "Member 'FPropertyBag_9a83fbd0585fe8f7::RigVMModel___OffsetTransformForItem_2_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_9a83fbd0585fe8f7, RigVMModel___MathFloatSub_3_Result) == 0x000360, "Member 'FPropertyBag_9a83fbd0585fe8f7::RigVMModel___MathFloatSub_3_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_9a83fbd0585fe8f7, RigVMModel___ArrayGetAtIndex_1_1_1_Array_Get_at_Index_Element) == 0x000368, "Member 'FPropertyBag_9a83fbd0585fe8f7::RigVMModel___ArrayGetAtIndex_1_1_1_Array_Get_at_Index_Element' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_9a83fbd0585fe8f7, RigVMModel___MathFloatSub_3_A) == 0x000380, "Member 'FPropertyBag_9a83fbd0585fe8f7::RigVMModel___MathFloatSub_3_A' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_9a83fbd0585fe8f7, RigVMModel___GetTransform_4_1_1_1_Transform) == 0x000390, "Member 'FPropertyBag_9a83fbd0585fe8f7::RigVMModel___GetTransform_4_1_1_1_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_9a83fbd0585fe8f7, RigVMModel___GetTransform_4_1_1_1_CachedIndex) == 0x0003F0, "Member 'FPropertyBag_9a83fbd0585fe8f7::RigVMModel___GetTransform_4_1_1_1_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_9a83fbd0585fe8f7, RigVMModel___MathFloatSub_3_B) == 0x000400, "Member 'FPropertyBag_9a83fbd0585fe8f7::RigVMModel___MathFloatSub_3_B' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_9a83fbd0585fe8f7, RigVMModel___OffsetTransformForItem_3_OffsetTransform__IO) == 0x000410, "Member 'FPropertyBag_9a83fbd0585fe8f7::RigVMModel___OffsetTransformForItem_3_OffsetTransform__IO' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_9a83fbd0585fe8f7, RigVMModel___OffsetTransformForItem_3_CachedIndex) == 0x000470, "Member 'FPropertyBag_9a83fbd0585fe8f7::RigVMModel___OffsetTransformForItem_3_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_9a83fbd0585fe8f7, RigVMModel___Branch_RigVMUnitNode_BlockToRun) == 0x000480, "Member 'FPropertyBag_9a83fbd0585fe8f7::RigVMModel___Branch_RigVMUnitNode_BlockToRun' has a wrong offset!");
+DUMPER7_ASSERTS_FPropertyBag_f1e7667a2e8d32ad;
 
 }
 

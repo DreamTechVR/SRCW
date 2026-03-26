@@ -30,27 +30,24 @@ public:
 	float                                         DebugDrawMovePathTime;                             // 0x0220(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FLinearColor                           DebugDrawMovePathColor;                            // 0x0224(0x0010)(Edit, BlueprintVisible, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_234[0x14];                                     // 0x0234(0x0014)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UMoveController*>                m_controllerContainer;                             // 0x0248(0x0010)(ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPrivate)
+	TArray<class UMoveController*>                m_controllerContainer;                             // 0x0248(0x0010)(ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPrivate, TObjectPtr)
 	uint8                                         Pad_258[0x128];                                    // 0x0258(0x0128)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GOCMovement">();
+		STATIC_CLASS_IMPL("GOCMovement")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GOCMovement")
 	}
 	static class UGOCMovement* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGOCMovement>();
 	}
 };
-static_assert(alignof(UGOCMovement) == 0x000010, "Wrong alignment on UGOCMovement");
-static_assert(sizeof(UGOCMovement) == 0x000380, "Wrong size on UGOCMovement");
-static_assert(offsetof(UGOCMovement, DebugContextParam) == 0x0000A0, "Member 'UGOCMovement::DebugContextParam' has a wrong offset!");
-static_assert(offsetof(UGOCMovement, DebugControllerActivated) == 0x000180, "Member 'UGOCMovement::DebugControllerActivated' has a wrong offset!");
-static_assert(offsetof(UGOCMovement, DebugDrawControllerActivated) == 0x0001D0, "Member 'UGOCMovement::DebugDrawControllerActivated' has a wrong offset!");
-static_assert(offsetof(UGOCMovement, DebugDrawMovePathTime) == 0x000220, "Member 'UGOCMovement::DebugDrawMovePathTime' has a wrong offset!");
-static_assert(offsetof(UGOCMovement, DebugDrawMovePathColor) == 0x000224, "Member 'UGOCMovement::DebugDrawMovePathColor' has a wrong offset!");
-static_assert(offsetof(UGOCMovement, m_controllerContainer) == 0x000248, "Member 'UGOCMovement::m_controllerContainer' has a wrong offset!");
+DUMPER7_ASSERTS_UGOCMovement;
 
 // Class Hedgehog.HHEasing
 // 0x0000 (0x0028 - 0x0028)
@@ -93,15 +90,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"HHEasing">();
+		STATIC_CLASS_IMPL("HHEasing")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HHEasing")
 	}
 	static class UHHEasing* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHHEasing>();
 	}
 };
-static_assert(alignof(UHHEasing) == 0x000008, "Wrong alignment on UHHEasing");
-static_assert(sizeof(UHHEasing) == 0x000028, "Wrong size on UHHEasing");
+DUMPER7_ASSERTS_UHHEasing;
 
 // Class Hedgehog.HHMathUtility
 // 0x0000 (0x0028 - 0x0028)
@@ -115,15 +115,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"HHMathUtility">();
+		STATIC_CLASS_IMPL("HHMathUtility")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HHMathUtility")
 	}
 	static class UHHMathUtility* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHHMathUtility>();
 	}
 };
-static_assert(alignof(UHHMathUtility) == 0x000008, "Wrong alignment on UHHMathUtility");
-static_assert(sizeof(UHHMathUtility) == 0x000028, "Wrong size on UHHMathUtility");
+DUMPER7_ASSERTS_UHHMathUtility;
 
 // Class Hedgehog.HHPathConverter
 // 0x00A0 (0x00C8 - 0x0028)
@@ -131,22 +134,24 @@ class UHHPathConverter final : public UObject
 {
 public:
 	uint8                                         Pad_28[0x60];                                      // 0x0028(0x0060)(Fixing Size After Last Property [ Dumper-7 ])
-	class UHHSplineInfo*                          Spline;                                            // 0x0088(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UHHSplineInfo*                          Spline;                                            // 0x0088(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
 	uint8                                         Pad_90[0x38];                                      // 0x0090(0x0038)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"HHPathConverter">();
+		STATIC_CLASS_IMPL("HHPathConverter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HHPathConverter")
 	}
 	static class UHHPathConverter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHHPathConverter>();
 	}
 };
-static_assert(alignof(UHHPathConverter) == 0x000008, "Wrong alignment on UHHPathConverter");
-static_assert(sizeof(UHHPathConverter) == 0x0000C8, "Wrong size on UHHPathConverter");
-static_assert(offsetof(UHHPathConverter, Spline) == 0x000088, "Member 'UHHPathConverter::Spline' has a wrong offset!");
+DUMPER7_ASSERTS_UHHPathConverter;
 
 // Class Hedgehog.HHSplineInfo
 // 0x0030 (0x0058 - 0x0028)
@@ -158,15 +163,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"HHSplineInfo">();
+		STATIC_CLASS_IMPL("HHSplineInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HHSplineInfo")
 	}
 	static class UHHSplineInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHHSplineInfo>();
 	}
 };
-static_assert(alignof(UHHSplineInfo) == 0x000008, "Wrong alignment on UHHSplineInfo");
-static_assert(sizeof(UHHSplineInfo) == 0x000058, "Wrong size on UHHSplineInfo");
+DUMPER7_ASSERTS_UHHSplineInfo;
 
 // Class Hedgehog.MoveController
 // 0x0010 (0x0038 - 0x0028)
@@ -178,15 +186,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MoveController">();
+		STATIC_CLASS_IMPL("MoveController")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MoveController")
 	}
 	static class UMoveController* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMoveController>();
 	}
 };
-static_assert(alignof(UMoveController) == 0x000008, "Wrong alignment on UMoveController");
-static_assert(sizeof(UMoveController) == 0x000038, "Wrong size on UMoveController");
+DUMPER7_ASSERTS_UMoveController;
 
 // Class Hedgehog.MoveByVelocity
 // 0x0000 (0x0038 - 0x0038)
@@ -195,15 +206,18 @@ class UMoveByVelocity final : public UMoveController
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MoveByVelocity">();
+		STATIC_CLASS_IMPL("MoveByVelocity")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MoveByVelocity")
 	}
 	static class UMoveByVelocity* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMoveByVelocity>();
 	}
 };
-static_assert(alignof(UMoveByVelocity) == 0x000008, "Wrong alignment on UMoveByVelocity");
-static_assert(sizeof(UMoveByVelocity) == 0x000038, "Wrong size on UMoveByVelocity");
+DUMPER7_ASSERTS_UMoveByVelocity;
 
 // Class Hedgehog.MoveTowardsPlane
 // 0x0058 (0x0090 - 0x0038)
@@ -215,15 +229,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MoveTowardsPlane">();
+		STATIC_CLASS_IMPL("MoveTowardsPlane")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MoveTowardsPlane")
 	}
 	static class UMoveTowardsPlane* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMoveTowardsPlane>();
 	}
 };
-static_assert(alignof(UMoveTowardsPlane) == 0x000008, "Wrong alignment on UMoveTowardsPlane");
-static_assert(sizeof(UMoveTowardsPlane) == 0x000090, "Wrong size on UMoveTowardsPlane");
+DUMPER7_ASSERTS_UMoveTowardsPlane;
 
 // Class Hedgehog.MoveTowardsTarget
 // 0x0030 (0x0068 - 0x0038)
@@ -235,15 +252,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MoveTowardsTarget">();
+		STATIC_CLASS_IMPL("MoveTowardsTarget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MoveTowardsTarget")
 	}
 	static class UMoveTowardsTarget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMoveTowardsTarget>();
 	}
 };
-static_assert(alignof(UMoveTowardsTarget) == 0x000008, "Wrong alignment on UMoveTowardsTarget");
-static_assert(sizeof(UMoveTowardsTarget) == 0x000068, "Wrong size on UMoveTowardsTarget");
+DUMPER7_ASSERTS_UMoveTowardsTarget;
 
 // Class Hedgehog.MoveTowardsTargetOnCircle
 // 0x0098 (0x00D0 - 0x0038)
@@ -255,15 +275,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MoveTowardsTargetOnCircle">();
+		STATIC_CLASS_IMPL("MoveTowardsTargetOnCircle")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MoveTowardsTargetOnCircle")
 	}
 	static class UMoveTowardsTargetOnCircle* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMoveTowardsTargetOnCircle>();
 	}
 };
-static_assert(alignof(UMoveTowardsTargetOnCircle) == 0x000008, "Wrong alignment on UMoveTowardsTargetOnCircle");
-static_assert(sizeof(UMoveTowardsTargetOnCircle) == 0x0000D0, "Wrong size on UMoveTowardsTargetOnCircle");
+DUMPER7_ASSERTS_UMoveTowardsTargetOnCircle;
 
 // Class Hedgehog.RotateByVelocity
 // 0x0018 (0x0050 - 0x0038)
@@ -275,15 +298,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RotateByVelocity">();
+		STATIC_CLASS_IMPL("RotateByVelocity")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RotateByVelocity")
 	}
 	static class URotateByVelocity* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URotateByVelocity>();
 	}
 };
-static_assert(alignof(URotateByVelocity) == 0x000008, "Wrong alignment on URotateByVelocity");
-static_assert(sizeof(URotateByVelocity) == 0x000050, "Wrong size on URotateByVelocity");
+DUMPER7_ASSERTS_URotateByVelocity;
 
 // Class Hedgehog.RotateTowardsTarget
 // 0x0048 (0x0080 - 0x0038)
@@ -295,15 +321,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RotateTowardsTarget">();
+		STATIC_CLASS_IMPL("RotateTowardsTarget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RotateTowardsTarget")
 	}
 	static class URotateTowardsTarget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URotateTowardsTarget>();
 	}
 };
-static_assert(alignof(URotateTowardsTarget) == 0x000008, "Wrong alignment on URotateTowardsTarget");
-static_assert(sizeof(URotateTowardsTarget) == 0x000080, "Wrong size on URotateTowardsTarget");
+DUMPER7_ASSERTS_URotateTowardsTarget;
 
 }
 

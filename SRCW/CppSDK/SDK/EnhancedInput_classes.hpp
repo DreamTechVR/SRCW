@@ -53,19 +53,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EnhancedPlayerMappableKeyProfile">();
+		STATIC_CLASS_IMPL("EnhancedPlayerMappableKeyProfile")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EnhancedPlayerMappableKeyProfile")
 	}
 	static class UEnhancedPlayerMappableKeyProfile* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEnhancedPlayerMappableKeyProfile>();
 	}
 };
-static_assert(alignof(UEnhancedPlayerMappableKeyProfile) == 0x000008, "Wrong alignment on UEnhancedPlayerMappableKeyProfile");
-static_assert(sizeof(UEnhancedPlayerMappableKeyProfile) == 0x000098, "Wrong size on UEnhancedPlayerMappableKeyProfile");
-static_assert(offsetof(UEnhancedPlayerMappableKeyProfile, ProfileIdentifier) == 0x000028, "Member 'UEnhancedPlayerMappableKeyProfile::ProfileIdentifier' has a wrong offset!");
-static_assert(offsetof(UEnhancedPlayerMappableKeyProfile, OwningUserId) == 0x000030, "Member 'UEnhancedPlayerMappableKeyProfile::OwningUserId' has a wrong offset!");
-static_assert(offsetof(UEnhancedPlayerMappableKeyProfile, DisplayName) == 0x000038, "Member 'UEnhancedPlayerMappableKeyProfile::DisplayName' has a wrong offset!");
-static_assert(offsetof(UEnhancedPlayerMappableKeyProfile, PlayerMappedKeys) == 0x000048, "Member 'UEnhancedPlayerMappableKeyProfile::PlayerMappedKeys' has a wrong offset!");
+DUMPER7_ASSERTS_UEnhancedPlayerMappableKeyProfile;
 
 // Class EnhancedInput.EnhancedInputUserSettings
 // 0x00F8 (0x0120 - 0x0028)
@@ -77,9 +76,9 @@ public:
 	TMulticastInlineDelegate<void()>              OnSettingsApplied;                                 // 0x0040(0x0010)(ZeroConstructor, Transient, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	uint8                                         Pad_50[0x20];                                      // 0x0050(0x0020)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGameplayTag                           CurrentProfileIdentifier;                          // 0x0070(0x0008)(SaveGame, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TMap<struct FGameplayTag, class UEnhancedPlayerMappableKeyProfile*> SavedKeyProfiles;            // 0x0078(0x0050)(Transient, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
+	TMap<struct FGameplayTag, class UEnhancedPlayerMappableKeyProfile*> SavedKeyProfiles;            // 0x0078(0x0050)(Transient, Protected, UObjectWrapper, NativeAccessSpecifierProtected, TObjectPtr)
 	TWeakObjectPtr<class ULocalPlayer>            OwningLocalPlayer;                                 // 0x00C8(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TSet<class UInputMappingContext*>             RegisteredMappingContexts;                         // 0x00D0(0x0050)(Transient, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
+	TSet<class UInputMappingContext*>             RegisteredMappingContexts;                         // 0x00D0(0x0050)(Transient, Protected, UObjectWrapper, NativeAccessSpecifierProtected, TObjectPtr)
 
 public:
 	void ApplySettings();
@@ -105,21 +104,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EnhancedInputUserSettings">();
+		STATIC_CLASS_IMPL("EnhancedInputUserSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EnhancedInputUserSettings")
 	}
 	static class UEnhancedInputUserSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEnhancedInputUserSettings>();
 	}
 };
-static_assert(alignof(UEnhancedInputUserSettings) == 0x000008, "Wrong alignment on UEnhancedInputUserSettings");
-static_assert(sizeof(UEnhancedInputUserSettings) == 0x000120, "Wrong size on UEnhancedInputUserSettings");
-static_assert(offsetof(UEnhancedInputUserSettings, OnSettingsChanged) == 0x000030, "Member 'UEnhancedInputUserSettings::OnSettingsChanged' has a wrong offset!");
-static_assert(offsetof(UEnhancedInputUserSettings, OnSettingsApplied) == 0x000040, "Member 'UEnhancedInputUserSettings::OnSettingsApplied' has a wrong offset!");
-static_assert(offsetof(UEnhancedInputUserSettings, CurrentProfileIdentifier) == 0x000070, "Member 'UEnhancedInputUserSettings::CurrentProfileIdentifier' has a wrong offset!");
-static_assert(offsetof(UEnhancedInputUserSettings, SavedKeyProfiles) == 0x000078, "Member 'UEnhancedInputUserSettings::SavedKeyProfiles' has a wrong offset!");
-static_assert(offsetof(UEnhancedInputUserSettings, OwningLocalPlayer) == 0x0000C8, "Member 'UEnhancedInputUserSettings::OwningLocalPlayer' has a wrong offset!");
-static_assert(offsetof(UEnhancedInputUserSettings, RegisteredMappingContexts) == 0x0000D0, "Member 'UEnhancedInputUserSettings::RegisteredMappingContexts' has a wrong offset!");
+DUMPER7_ASSERTS_UEnhancedInputUserSettings;
 
 // Class EnhancedInput.EnhancedInputActionDelegateBinding
 // 0x0010 (0x0038 - 0x0028)
@@ -131,16 +127,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EnhancedInputActionDelegateBinding">();
+		STATIC_CLASS_IMPL("EnhancedInputActionDelegateBinding")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EnhancedInputActionDelegateBinding")
 	}
 	static class UEnhancedInputActionDelegateBinding* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEnhancedInputActionDelegateBinding>();
 	}
 };
-static_assert(alignof(UEnhancedInputActionDelegateBinding) == 0x000008, "Wrong alignment on UEnhancedInputActionDelegateBinding");
-static_assert(sizeof(UEnhancedInputActionDelegateBinding) == 0x000038, "Wrong size on UEnhancedInputActionDelegateBinding");
-static_assert(offsetof(UEnhancedInputActionDelegateBinding, InputActionDelegateBindings) == 0x000028, "Member 'UEnhancedInputActionDelegateBinding::InputActionDelegateBindings' has a wrong offset!");
+DUMPER7_ASSERTS_UEnhancedInputActionDelegateBinding;
 
 // Class EnhancedInput.EnhancedInputActionValueBinding
 // 0x0010 (0x0038 - 0x0028)
@@ -152,16 +150,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EnhancedInputActionValueBinding">();
+		STATIC_CLASS_IMPL("EnhancedInputActionValueBinding")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EnhancedInputActionValueBinding")
 	}
 	static class UEnhancedInputActionValueBinding* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEnhancedInputActionValueBinding>();
 	}
 };
-static_assert(alignof(UEnhancedInputActionValueBinding) == 0x000008, "Wrong alignment on UEnhancedInputActionValueBinding");
-static_assert(sizeof(UEnhancedInputActionValueBinding) == 0x000038, "Wrong size on UEnhancedInputActionValueBinding");
-static_assert(offsetof(UEnhancedInputActionValueBinding, InputActionValueBindings) == 0x000028, "Member 'UEnhancedInputActionValueBinding::InputActionValueBindings' has a wrong offset!");
+DUMPER7_ASSERTS_UEnhancedInputActionValueBinding;
 
 // Class EnhancedInput.EnhancedInputComponent
 // 0x0038 (0x0160 - 0x0128)
@@ -176,15 +176,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EnhancedInputComponent">();
+		STATIC_CLASS_IMPL("EnhancedInputComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EnhancedInputComponent")
 	}
 	static class UEnhancedInputComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEnhancedInputComponent>();
 	}
 };
-static_assert(alignof(UEnhancedInputComponent) == 0x000008, "Wrong alignment on UEnhancedInputComponent");
-static_assert(sizeof(UEnhancedInputComponent) == 0x000160, "Wrong size on UEnhancedInputComponent");
+DUMPER7_ASSERTS_UEnhancedInputComponent;
 
 // Class EnhancedInput.EnhancedInputDeveloperSettings
 // 0x00B0 (0x00E8 - 0x0038)
@@ -209,21 +212,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EnhancedInputDeveloperSettings">();
+		STATIC_CLASS_IMPL("EnhancedInputDeveloperSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EnhancedInputDeveloperSettings")
 	}
 	static class UEnhancedInputDeveloperSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEnhancedInputDeveloperSettings>();
 	}
 };
-static_assert(alignof(UEnhancedInputDeveloperSettings) == 0x000008, "Wrong alignment on UEnhancedInputDeveloperSettings");
-static_assert(sizeof(UEnhancedInputDeveloperSettings) == 0x0000E8, "Wrong size on UEnhancedInputDeveloperSettings");
-static_assert(offsetof(UEnhancedInputDeveloperSettings, DefaultMappingContexts) == 0x000038, "Member 'UEnhancedInputDeveloperSettings::DefaultMappingContexts' has a wrong offset!");
-static_assert(offsetof(UEnhancedInputDeveloperSettings, DefaultWorldSubsystemMappingContexts) == 0x000048, "Member 'UEnhancedInputDeveloperSettings::DefaultWorldSubsystemMappingContexts' has a wrong offset!");
-static_assert(offsetof(UEnhancedInputDeveloperSettings, PlatformSettings) == 0x000058, "Member 'UEnhancedInputDeveloperSettings::PlatformSettings' has a wrong offset!");
-static_assert(offsetof(UEnhancedInputDeveloperSettings, UserSettingsClass) == 0x000068, "Member 'UEnhancedInputDeveloperSettings::UserSettingsClass' has a wrong offset!");
-static_assert(offsetof(UEnhancedInputDeveloperSettings, DefaultPlayerMappableKeyProfileClass) == 0x000090, "Member 'UEnhancedInputDeveloperSettings::DefaultPlayerMappableKeyProfileClass' has a wrong offset!");
-static_assert(offsetof(UEnhancedInputDeveloperSettings, DefaultWorldInputClass) == 0x0000B8, "Member 'UEnhancedInputDeveloperSettings::DefaultWorldInputClass' has a wrong offset!");
+DUMPER7_ASSERTS_UEnhancedInputDeveloperSettings;
 
 // Class EnhancedInput.EnhancedInputLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -251,22 +251,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EnhancedInputLibrary">();
+		STATIC_CLASS_IMPL("EnhancedInputLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EnhancedInputLibrary")
 	}
 	static class UEnhancedInputLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEnhancedInputLibrary>();
 	}
 };
-static_assert(alignof(UEnhancedInputLibrary) == 0x000008, "Wrong alignment on UEnhancedInputLibrary");
-static_assert(sizeof(UEnhancedInputLibrary) == 0x000028, "Wrong size on UEnhancedInputLibrary");
+DUMPER7_ASSERTS_UEnhancedInputLibrary;
 
 // Class EnhancedInput.EnhancedInputPlatformData
 // 0x0050 (0x0078 - 0x0028)
 class UEnhancedInputPlatformData final : public UObject
 {
 public:
-	TMap<class UInputMappingContext*, class UInputMappingContext*> MappingContextRedirects;          // 0x0028(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
+	TMap<class UInputMappingContext*, class UInputMappingContext*> MappingContextRedirects;          // 0x0028(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, Protected, UObjectWrapper, NativeAccessSpecifierProtected, TObjectPtr)
 
 public:
 	const class UInputMappingContext* GetContextRedirect(class UInputMappingContext* InContext) const;
@@ -274,16 +277,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EnhancedInputPlatformData">();
+		STATIC_CLASS_IMPL("EnhancedInputPlatformData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EnhancedInputPlatformData")
 	}
 	static class UEnhancedInputPlatformData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEnhancedInputPlatformData>();
 	}
 };
-static_assert(alignof(UEnhancedInputPlatformData) == 0x000008, "Wrong alignment on UEnhancedInputPlatformData");
-static_assert(sizeof(UEnhancedInputPlatformData) == 0x000078, "Wrong size on UEnhancedInputPlatformData");
-static_assert(offsetof(UEnhancedInputPlatformData, MappingContextRedirects) == 0x000028, "Member 'UEnhancedInputPlatformData::MappingContextRedirects' has a wrong offset!");
+DUMPER7_ASSERTS_UEnhancedInputPlatformData;
 
 // Class EnhancedInput.EnhancedInputPlatformSettings
 // 0x0028 (0x0068 - 0x0040)
@@ -298,18 +303,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EnhancedInputPlatformSettings">();
+		STATIC_CLASS_IMPL("EnhancedInputPlatformSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EnhancedInputPlatformSettings")
 	}
 	static class UEnhancedInputPlatformSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEnhancedInputPlatformSettings>();
 	}
 };
-static_assert(alignof(UEnhancedInputPlatformSettings) == 0x000008, "Wrong alignment on UEnhancedInputPlatformSettings");
-static_assert(sizeof(UEnhancedInputPlatformSettings) == 0x000068, "Wrong size on UEnhancedInputPlatformSettings");
-static_assert(offsetof(UEnhancedInputPlatformSettings, InputData) == 0x000040, "Member 'UEnhancedInputPlatformSettings::InputData' has a wrong offset!");
-static_assert(offsetof(UEnhancedInputPlatformSettings, InputDataClasses) == 0x000050, "Member 'UEnhancedInputPlatformSettings::InputDataClasses' has a wrong offset!");
-static_assert(offsetof(UEnhancedInputPlatformSettings, bShouldLogMappingContextRedirects) == 0x000060, "Member 'UEnhancedInputPlatformSettings::bShouldLogMappingContextRedirects' has a wrong offset!");
+DUMPER7_ASSERTS_UEnhancedInputPlatformSettings;
 
 // Class EnhancedInput.EnhancedInputSubsystemInterface
 // 0x0000 (0x0000 - 0x0000)
@@ -351,7 +356,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EnhancedInputSubsystemInterface">();
+		STATIC_CLASS_IMPL("EnhancedInputSubsystemInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EnhancedInputSubsystemInterface")
 	}
 	static class IEnhancedInputSubsystemInterface* GetDefaultObj()
 	{
@@ -367,8 +376,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IEnhancedInputSubsystemInterface) == 0x000001, "Wrong alignment on IEnhancedInputSubsystemInterface");
-static_assert(sizeof(IEnhancedInputSubsystemInterface) == 0x000001, "Wrong size on IEnhancedInputSubsystemInterface");
+DUMPER7_ASSERTS_IEnhancedInputSubsystemInterface;
 
 // Class EnhancedInput.EnhancedInputLocalPlayerSubsystem
 // 0x01B8 (0x01E8 - 0x0030)
@@ -377,24 +385,24 @@ class UEnhancedInputLocalPlayerSubsystem final : public ULocalPlayerSubsystem
 public:
 	uint8                                         Pad_30[0x150];                                     // 0x0030(0x0150)(Fixing Size After Last Property [ Dumper-7 ])
 	TMulticastInlineDelegate<void()>              ControlMappingsRebuiltDelegate;                    // 0x0180(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	class UEnhancedInputUserSettings*             UserSettings;                                      // 0x0190(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UEnhancedInputUserSettings*             UserSettings;                                      // 0x0190(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
 	TMap<class UInputAction*, struct FInjectedInput> ContinuouslyInjectedInputs;                     // 0x0198(0x0050)(Transient, Protected, NativeAccessSpecifierProtected)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EnhancedInputLocalPlayerSubsystem">();
+		STATIC_CLASS_IMPL("EnhancedInputLocalPlayerSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EnhancedInputLocalPlayerSubsystem")
 	}
 	static class UEnhancedInputLocalPlayerSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEnhancedInputLocalPlayerSubsystem>();
 	}
 };
-static_assert(alignof(UEnhancedInputLocalPlayerSubsystem) == 0x000008, "Wrong alignment on UEnhancedInputLocalPlayerSubsystem");
-static_assert(sizeof(UEnhancedInputLocalPlayerSubsystem) == 0x0001E8, "Wrong size on UEnhancedInputLocalPlayerSubsystem");
-static_assert(offsetof(UEnhancedInputLocalPlayerSubsystem, ControlMappingsRebuiltDelegate) == 0x000180, "Member 'UEnhancedInputLocalPlayerSubsystem::ControlMappingsRebuiltDelegate' has a wrong offset!");
-static_assert(offsetof(UEnhancedInputLocalPlayerSubsystem, UserSettings) == 0x000190, "Member 'UEnhancedInputLocalPlayerSubsystem::UserSettings' has a wrong offset!");
-static_assert(offsetof(UEnhancedInputLocalPlayerSubsystem, ContinuouslyInjectedInputs) == 0x000198, "Member 'UEnhancedInputLocalPlayerSubsystem::ContinuouslyInjectedInputs' has a wrong offset!");
+DUMPER7_ASSERTS_UEnhancedInputLocalPlayerSubsystem;
 
 // Class EnhancedInput.EnhancedInputWorldSubsystem
 // 0x01C8 (0x01F8 - 0x0030)
@@ -402,7 +410,7 @@ class UEnhancedInputWorldSubsystem final : public UWorldSubsystem
 {
 public:
 	uint8                                         Pad_30[0x150];                                     // 0x0030(0x0150)(Fixing Size After Last Property [ Dumper-7 ])
-	class UEnhancedPlayerInput*                   PlayerInput;                                       // 0x0180(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UEnhancedPlayerInput*                   PlayerInput;                                       // 0x0180(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
 	uint8                                         Pad_188[0x10];                                     // 0x0188(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<TWeakObjectPtr<class UInputComponent>> CurrentInputStack;                                 // 0x0198(0x0010)(ExportObject, ZeroConstructor, Transient, ContainsInstancedReference, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
 	TMap<class UInputAction*, struct FInjectedInput> ContinuouslyInjectedInputs;                     // 0x01A8(0x0050)(Transient, Protected, NativeAccessSpecifierProtected)
@@ -414,18 +422,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EnhancedInputWorldSubsystem">();
+		STATIC_CLASS_IMPL("EnhancedInputWorldSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EnhancedInputWorldSubsystem")
 	}
 	static class UEnhancedInputWorldSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEnhancedInputWorldSubsystem>();
 	}
 };
-static_assert(alignof(UEnhancedInputWorldSubsystem) == 0x000008, "Wrong alignment on UEnhancedInputWorldSubsystem");
-static_assert(sizeof(UEnhancedInputWorldSubsystem) == 0x0001F8, "Wrong size on UEnhancedInputWorldSubsystem");
-static_assert(offsetof(UEnhancedInputWorldSubsystem, PlayerInput) == 0x000180, "Member 'UEnhancedInputWorldSubsystem::PlayerInput' has a wrong offset!");
-static_assert(offsetof(UEnhancedInputWorldSubsystem, CurrentInputStack) == 0x000198, "Member 'UEnhancedInputWorldSubsystem::CurrentInputStack' has a wrong offset!");
-static_assert(offsetof(UEnhancedInputWorldSubsystem, ContinuouslyInjectedInputs) == 0x0001A8, "Member 'UEnhancedInputWorldSubsystem::ContinuouslyInjectedInputs' has a wrong offset!");
+DUMPER7_ASSERTS_UEnhancedInputWorldSubsystem;
 
 // Class EnhancedInput.EnhancedPlayerInput
 // 0x0358 (0x07F0 - 0x0498)
@@ -440,28 +448,24 @@ public:
 	uint8                                         Pad_5E8[0xA0];                                     // 0x05E8(0x00A0)(Fixing Size After Last Property [ Dumper-7 ])
 	TMap<struct FKey, struct FVector>             KeysPressedThisTick;                               // 0x0688(0x0050)(Transient, NativeAccessSpecifierPrivate)
 	TMap<class UInputAction*, struct FInjectedInputArray> InputsInjectedThisTick;                    // 0x06D8(0x0050)(Transient, NativeAccessSpecifierPrivate)
-	TSet<class UInputAction*>                     LastInjectedActions;                               // 0x0728(0x0050)(Transient, UObjectWrapper, NativeAccessSpecifierPrivate)
+	TSet<class UInputAction*>                     LastInjectedActions;                               // 0x0728(0x0050)(Transient, UObjectWrapper, NativeAccessSpecifierPrivate, TObjectPtr)
 	uint8                                         Pad_778[0x78];                                     // 0x0778(0x0078)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EnhancedPlayerInput">();
+		STATIC_CLASS_IMPL("EnhancedPlayerInput")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EnhancedPlayerInput")
 	}
 	static class UEnhancedPlayerInput* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEnhancedPlayerInput>();
 	}
 };
-static_assert(alignof(UEnhancedPlayerInput) == 0x000008, "Wrong alignment on UEnhancedPlayerInput");
-static_assert(sizeof(UEnhancedPlayerInput) == 0x0007F0, "Wrong size on UEnhancedPlayerInput");
-static_assert(offsetof(UEnhancedPlayerInput, KeyConsumptionData) == 0x000498, "Member 'UEnhancedPlayerInput::KeyConsumptionData' has a wrong offset!");
-static_assert(offsetof(UEnhancedPlayerInput, AppliedInputContexts) == 0x0004E8, "Member 'UEnhancedPlayerInput::AppliedInputContexts' has a wrong offset!");
-static_assert(offsetof(UEnhancedPlayerInput, EnhancedActionMappings) == 0x000538, "Member 'UEnhancedPlayerInput::EnhancedActionMappings' has a wrong offset!");
-static_assert(offsetof(UEnhancedPlayerInput, ActionInstanceData) == 0x000598, "Member 'UEnhancedPlayerInput::ActionInstanceData' has a wrong offset!");
-static_assert(offsetof(UEnhancedPlayerInput, KeysPressedThisTick) == 0x000688, "Member 'UEnhancedPlayerInput::KeysPressedThisTick' has a wrong offset!");
-static_assert(offsetof(UEnhancedPlayerInput, InputsInjectedThisTick) == 0x0006D8, "Member 'UEnhancedPlayerInput::InputsInjectedThisTick' has a wrong offset!");
-static_assert(offsetof(UEnhancedPlayerInput, LastInjectedActions) == 0x000728, "Member 'UEnhancedPlayerInput::LastInjectedActions' has a wrong offset!");
+DUMPER7_ASSERTS_UEnhancedPlayerInput;
 
 // Class EnhancedInput.InputAction
 // 0x0048 (0x0078 - 0x0030)
@@ -477,33 +481,25 @@ public:
 	EInputActionValueType                         ValueType;                                         // 0x0048(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, AssetRegistrySearchable, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EInputActionAccumulationBehavior              AccumulationBehavior;                              // 0x0049(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_4A[0x6];                                       // 0x004A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UInputTrigger*>                  Triggers;                                          // 0x0050(0x0010)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, ContainsInstancedReference, UObjectWrapper, NativeAccessSpecifierPublic)
-	TArray<class UInputModifier*>                 Modifiers;                                         // 0x0060(0x0010)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, ContainsInstancedReference, UObjectWrapper, NativeAccessSpecifierPublic)
-	class UPlayerMappableKeySettings*             PlayerMappableKeySettings;                         // 0x0070(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, Protected, PersistentInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TArray<class UInputTrigger*>                  Triggers;                                          // 0x0050(0x0010)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, ContainsInstancedReference, UObjectWrapper, NativeAccessSpecifierPublic, TObjectPtr)
+	TArray<class UInputModifier*>                 Modifiers;                                         // 0x0060(0x0010)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, ContainsInstancedReference, UObjectWrapper, NativeAccessSpecifierPublic, TObjectPtr)
+	class UPlayerMappableKeySettings*             PlayerMappableKeySettings;                         // 0x0070(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, Protected, PersistentInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InputAction">();
+		STATIC_CLASS_IMPL("InputAction")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InputAction")
 	}
 	static class UInputAction* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInputAction>();
 	}
 };
-static_assert(alignof(UInputAction) == 0x000008, "Wrong alignment on UInputAction");
-static_assert(sizeof(UInputAction) == 0x000078, "Wrong size on UInputAction");
-static_assert(offsetof(UInputAction, ActionDescription) == 0x000030, "Member 'UInputAction::ActionDescription' has a wrong offset!");
-static_assert(offsetof(UInputAction, bTriggerWhenPaused) == 0x000040, "Member 'UInputAction::bTriggerWhenPaused' has a wrong offset!");
-static_assert(offsetof(UInputAction, bConsumeInput) == 0x000041, "Member 'UInputAction::bConsumeInput' has a wrong offset!");
-static_assert(offsetof(UInputAction, bConsumesActionAndAxisMappings) == 0x000042, "Member 'UInputAction::bConsumesActionAndAxisMappings' has a wrong offset!");
-static_assert(offsetof(UInputAction, bReserveAllMappings) == 0x000043, "Member 'UInputAction::bReserveAllMappings' has a wrong offset!");
-static_assert(offsetof(UInputAction, TriggerEventsThatConsumeLegacyKeys) == 0x000044, "Member 'UInputAction::TriggerEventsThatConsumeLegacyKeys' has a wrong offset!");
-static_assert(offsetof(UInputAction, ValueType) == 0x000048, "Member 'UInputAction::ValueType' has a wrong offset!");
-static_assert(offsetof(UInputAction, AccumulationBehavior) == 0x000049, "Member 'UInputAction::AccumulationBehavior' has a wrong offset!");
-static_assert(offsetof(UInputAction, Triggers) == 0x000050, "Member 'UInputAction::Triggers' has a wrong offset!");
-static_assert(offsetof(UInputAction, Modifiers) == 0x000060, "Member 'UInputAction::Modifiers' has a wrong offset!");
-static_assert(offsetof(UInputAction, PlayerMappableKeySettings) == 0x000070, "Member 'UInputAction::PlayerMappableKeySettings' has a wrong offset!");
+DUMPER7_ASSERTS_UInputAction;
 
 // Class EnhancedInput.InputDebugKeyDelegateBinding
 // 0x0010 (0x0038 - 0x0028)
@@ -515,16 +511,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InputDebugKeyDelegateBinding">();
+		STATIC_CLASS_IMPL("InputDebugKeyDelegateBinding")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InputDebugKeyDelegateBinding")
 	}
 	static class UInputDebugKeyDelegateBinding* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInputDebugKeyDelegateBinding>();
 	}
 };
-static_assert(alignof(UInputDebugKeyDelegateBinding) == 0x000008, "Wrong alignment on UInputDebugKeyDelegateBinding");
-static_assert(sizeof(UInputDebugKeyDelegateBinding) == 0x000038, "Wrong size on UInputDebugKeyDelegateBinding");
-static_assert(offsetof(UInputDebugKeyDelegateBinding, InputDebugKeyDelegateBindings) == 0x000028, "Member 'UInputDebugKeyDelegateBinding::InputDebugKeyDelegateBindings' has a wrong offset!");
+DUMPER7_ASSERTS_UInputDebugKeyDelegateBinding;
 
 // Class EnhancedInput.InputMappingContext
 // 0x0020 (0x0050 - 0x0030)
@@ -544,17 +542,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InputMappingContext">();
+		STATIC_CLASS_IMPL("InputMappingContext")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InputMappingContext")
 	}
 	static class UInputMappingContext* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInputMappingContext>();
 	}
 };
-static_assert(alignof(UInputMappingContext) == 0x000008, "Wrong alignment on UInputMappingContext");
-static_assert(sizeof(UInputMappingContext) == 0x000050, "Wrong size on UInputMappingContext");
-static_assert(offsetof(UInputMappingContext, Mappings) == 0x000030, "Member 'UInputMappingContext::Mappings' has a wrong offset!");
-static_assert(offsetof(UInputMappingContext, ContextDescription) == 0x000040, "Member 'UInputMappingContext::ContextDescription' has a wrong offset!");
+DUMPER7_ASSERTS_UInputMappingContext;
 
 // Class EnhancedInput.InputModifier
 // 0x0000 (0x0028 - 0x0028)
@@ -567,15 +566,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InputModifier">();
+		STATIC_CLASS_IMPL("InputModifier")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InputModifier")
 	}
 	static class UInputModifier* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInputModifier>();
 	}
 };
-static_assert(alignof(UInputModifier) == 0x000008, "Wrong alignment on UInputModifier");
-static_assert(sizeof(UInputModifier) == 0x000028, "Wrong size on UInputModifier");
+DUMPER7_ASSERTS_UInputModifier;
 
 // Class EnhancedInput.InputModifierSmoothDelta
 // 0x0040 (0x0068 - 0x0028)
@@ -591,18 +593,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InputModifierSmoothDelta">();
+		STATIC_CLASS_IMPL("InputModifierSmoothDelta")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InputModifierSmoothDelta")
 	}
 	static class UInputModifierSmoothDelta* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInputModifierSmoothDelta>();
 	}
 };
-static_assert(alignof(UInputModifierSmoothDelta) == 0x000008, "Wrong alignment on UInputModifierSmoothDelta");
-static_assert(sizeof(UInputModifierSmoothDelta) == 0x000068, "Wrong size on UInputModifierSmoothDelta");
-static_assert(offsetof(UInputModifierSmoothDelta, SmoothingMethod) == 0x000028, "Member 'UInputModifierSmoothDelta::SmoothingMethod' has a wrong offset!");
-static_assert(offsetof(UInputModifierSmoothDelta, Speed) == 0x00002C, "Member 'UInputModifierSmoothDelta::Speed' has a wrong offset!");
-static_assert(offsetof(UInputModifierSmoothDelta, EasingExponent) == 0x000030, "Member 'UInputModifierSmoothDelta::EasingExponent' has a wrong offset!");
+DUMPER7_ASSERTS_UInputModifierSmoothDelta;
 
 // Class EnhancedInput.InputModifierDeadZone
 // 0x0010 (0x0038 - 0x0028)
@@ -617,18 +619,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InputModifierDeadZone">();
+		STATIC_CLASS_IMPL("InputModifierDeadZone")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InputModifierDeadZone")
 	}
 	static class UInputModifierDeadZone* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInputModifierDeadZone>();
 	}
 };
-static_assert(alignof(UInputModifierDeadZone) == 0x000008, "Wrong alignment on UInputModifierDeadZone");
-static_assert(sizeof(UInputModifierDeadZone) == 0x000038, "Wrong size on UInputModifierDeadZone");
-static_assert(offsetof(UInputModifierDeadZone, LowerThreshold) == 0x000028, "Member 'UInputModifierDeadZone::LowerThreshold' has a wrong offset!");
-static_assert(offsetof(UInputModifierDeadZone, UpperThreshold) == 0x00002C, "Member 'UInputModifierDeadZone::UpperThreshold' has a wrong offset!");
-static_assert(offsetof(UInputModifierDeadZone, Type) == 0x000030, "Member 'UInputModifierDeadZone::Type' has a wrong offset!");
+DUMPER7_ASSERTS_UInputModifierDeadZone;
 
 // Class EnhancedInput.InputModifierScalar
 // 0x0018 (0x0040 - 0x0028)
@@ -640,16 +642,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InputModifierScalar">();
+		STATIC_CLASS_IMPL("InputModifierScalar")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InputModifierScalar")
 	}
 	static class UInputModifierScalar* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInputModifierScalar>();
 	}
 };
-static_assert(alignof(UInputModifierScalar) == 0x000008, "Wrong alignment on UInputModifierScalar");
-static_assert(sizeof(UInputModifierScalar) == 0x000040, "Wrong size on UInputModifierScalar");
-static_assert(offsetof(UInputModifierScalar, Scalar) == 0x000028, "Member 'UInputModifierScalar::Scalar' has a wrong offset!");
+DUMPER7_ASSERTS_UInputModifierScalar;
 
 // Class EnhancedInput.InputModifierScaleByDeltaTime
 // 0x0000 (0x0028 - 0x0028)
@@ -658,15 +662,18 @@ class UInputModifierScaleByDeltaTime final : public UInputModifier
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InputModifierScaleByDeltaTime">();
+		STATIC_CLASS_IMPL("InputModifierScaleByDeltaTime")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InputModifierScaleByDeltaTime")
 	}
 	static class UInputModifierScaleByDeltaTime* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInputModifierScaleByDeltaTime>();
 	}
 };
-static_assert(alignof(UInputModifierScaleByDeltaTime) == 0x000008, "Wrong alignment on UInputModifierScaleByDeltaTime");
-static_assert(sizeof(UInputModifierScaleByDeltaTime) == 0x000028, "Wrong size on UInputModifierScaleByDeltaTime");
+DUMPER7_ASSERTS_UInputModifierScaleByDeltaTime;
 
 // Class EnhancedInput.InputModifierNegate
 // 0x0008 (0x0030 - 0x0028)
@@ -681,18 +688,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InputModifierNegate">();
+		STATIC_CLASS_IMPL("InputModifierNegate")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InputModifierNegate")
 	}
 	static class UInputModifierNegate* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInputModifierNegate>();
 	}
 };
-static_assert(alignof(UInputModifierNegate) == 0x000008, "Wrong alignment on UInputModifierNegate");
-static_assert(sizeof(UInputModifierNegate) == 0x000030, "Wrong size on UInputModifierNegate");
-static_assert(offsetof(UInputModifierNegate, bX) == 0x000028, "Member 'UInputModifierNegate::bX' has a wrong offset!");
-static_assert(offsetof(UInputModifierNegate, bY) == 0x000029, "Member 'UInputModifierNegate::bY' has a wrong offset!");
-static_assert(offsetof(UInputModifierNegate, bZ) == 0x00002A, "Member 'UInputModifierNegate::bZ' has a wrong offset!");
+DUMPER7_ASSERTS_UInputModifierNegate;
 
 // Class EnhancedInput.InputModifierSmooth
 // 0x0030 (0x0058 - 0x0028)
@@ -704,15 +711,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InputModifierSmooth">();
+		STATIC_CLASS_IMPL("InputModifierSmooth")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InputModifierSmooth")
 	}
 	static class UInputModifierSmooth* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInputModifierSmooth>();
 	}
 };
-static_assert(alignof(UInputModifierSmooth) == 0x000008, "Wrong alignment on UInputModifierSmooth");
-static_assert(sizeof(UInputModifierSmooth) == 0x000058, "Wrong size on UInputModifierSmooth");
+DUMPER7_ASSERTS_UInputModifierSmooth;
 
 // Class EnhancedInput.InputModifierResponseCurveExponential
 // 0x0018 (0x0040 - 0x0028)
@@ -724,41 +734,43 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InputModifierResponseCurveExponential">();
+		STATIC_CLASS_IMPL("InputModifierResponseCurveExponential")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InputModifierResponseCurveExponential")
 	}
 	static class UInputModifierResponseCurveExponential* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInputModifierResponseCurveExponential>();
 	}
 };
-static_assert(alignof(UInputModifierResponseCurveExponential) == 0x000008, "Wrong alignment on UInputModifierResponseCurveExponential");
-static_assert(sizeof(UInputModifierResponseCurveExponential) == 0x000040, "Wrong size on UInputModifierResponseCurveExponential");
-static_assert(offsetof(UInputModifierResponseCurveExponential, CurveExponent) == 0x000028, "Member 'UInputModifierResponseCurveExponential::CurveExponent' has a wrong offset!");
+DUMPER7_ASSERTS_UInputModifierResponseCurveExponential;
 
 // Class EnhancedInput.InputModifierResponseCurveUser
 // 0x0018 (0x0040 - 0x0028)
 class UInputModifierResponseCurveUser final : public UInputModifier
 {
 public:
-	class UCurveFloat*                            ResponseX;                                         // 0x0028(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            ResponseY;                                         // 0x0030(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            ResponseZ;                                         // 0x0038(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            ResponseX;                                         // 0x0028(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UCurveFloat*                            ResponseY;                                         // 0x0030(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UCurveFloat*                            ResponseZ;                                         // 0x0038(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InputModifierResponseCurveUser">();
+		STATIC_CLASS_IMPL("InputModifierResponseCurveUser")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InputModifierResponseCurveUser")
 	}
 	static class UInputModifierResponseCurveUser* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInputModifierResponseCurveUser>();
 	}
 };
-static_assert(alignof(UInputModifierResponseCurveUser) == 0x000008, "Wrong alignment on UInputModifierResponseCurveUser");
-static_assert(sizeof(UInputModifierResponseCurveUser) == 0x000040, "Wrong size on UInputModifierResponseCurveUser");
-static_assert(offsetof(UInputModifierResponseCurveUser, ResponseX) == 0x000028, "Member 'UInputModifierResponseCurveUser::ResponseX' has a wrong offset!");
-static_assert(offsetof(UInputModifierResponseCurveUser, ResponseY) == 0x000030, "Member 'UInputModifierResponseCurveUser::ResponseY' has a wrong offset!");
-static_assert(offsetof(UInputModifierResponseCurveUser, ResponseZ) == 0x000038, "Member 'UInputModifierResponseCurveUser::ResponseZ' has a wrong offset!");
+DUMPER7_ASSERTS_UInputModifierResponseCurveUser;
 
 // Class EnhancedInput.InputModifierFOVScaling
 // 0x0008 (0x0030 - 0x0028)
@@ -772,17 +784,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InputModifierFOVScaling">();
+		STATIC_CLASS_IMPL("InputModifierFOVScaling")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InputModifierFOVScaling")
 	}
 	static class UInputModifierFOVScaling* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInputModifierFOVScaling>();
 	}
 };
-static_assert(alignof(UInputModifierFOVScaling) == 0x000008, "Wrong alignment on UInputModifierFOVScaling");
-static_assert(sizeof(UInputModifierFOVScaling) == 0x000030, "Wrong size on UInputModifierFOVScaling");
-static_assert(offsetof(UInputModifierFOVScaling, FOVScale) == 0x000028, "Member 'UInputModifierFOVScaling::FOVScale' has a wrong offset!");
-static_assert(offsetof(UInputModifierFOVScaling, FOVScalingType) == 0x00002C, "Member 'UInputModifierFOVScaling::FOVScalingType' has a wrong offset!");
+DUMPER7_ASSERTS_UInputModifierFOVScaling;
 
 // Class EnhancedInput.InputModifierToWorldSpace
 // 0x0000 (0x0028 - 0x0028)
@@ -791,15 +804,18 @@ class UInputModifierToWorldSpace final : public UInputModifier
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InputModifierToWorldSpace">();
+		STATIC_CLASS_IMPL("InputModifierToWorldSpace")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InputModifierToWorldSpace")
 	}
 	static class UInputModifierToWorldSpace* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInputModifierToWorldSpace>();
 	}
 };
-static_assert(alignof(UInputModifierToWorldSpace) == 0x000008, "Wrong alignment on UInputModifierToWorldSpace");
-static_assert(sizeof(UInputModifierToWorldSpace) == 0x000028, "Wrong size on UInputModifierToWorldSpace");
+DUMPER7_ASSERTS_UInputModifierToWorldSpace;
 
 // Class EnhancedInput.InputModifierSwizzleAxis
 // 0x0008 (0x0030 - 0x0028)
@@ -812,16 +828,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InputModifierSwizzleAxis">();
+		STATIC_CLASS_IMPL("InputModifierSwizzleAxis")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InputModifierSwizzleAxis")
 	}
 	static class UInputModifierSwizzleAxis* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInputModifierSwizzleAxis>();
 	}
 };
-static_assert(alignof(UInputModifierSwizzleAxis) == 0x000008, "Wrong alignment on UInputModifierSwizzleAxis");
-static_assert(sizeof(UInputModifierSwizzleAxis) == 0x000030, "Wrong size on UInputModifierSwizzleAxis");
-static_assert(offsetof(UInputModifierSwizzleAxis, order) == 0x000028, "Member 'UInputModifierSwizzleAxis::order' has a wrong offset!");
+DUMPER7_ASSERTS_UInputModifierSwizzleAxis;
 
 // Class EnhancedInput.InputTrigger
 // 0x0028 (0x0050 - 0x0028)
@@ -842,18 +860,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InputTrigger">();
+		STATIC_CLASS_IMPL("InputTrigger")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InputTrigger")
 	}
 	static class UInputTrigger* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInputTrigger>();
 	}
 };
-static_assert(alignof(UInputTrigger) == 0x000008, "Wrong alignment on UInputTrigger");
-static_assert(sizeof(UInputTrigger) == 0x000050, "Wrong size on UInputTrigger");
-static_assert(offsetof(UInputTrigger, ActuationThreshold) == 0x000028, "Member 'UInputTrigger::ActuationThreshold' has a wrong offset!");
-static_assert(offsetof(UInputTrigger, bShouldAlwaysTick) == 0x00002C, "Member 'UInputTrigger::bShouldAlwaysTick' has a wrong offset!");
-static_assert(offsetof(UInputTrigger, LastValue) == 0x000030, "Member 'UInputTrigger::LastValue' has a wrong offset!");
+DUMPER7_ASSERTS_UInputTrigger;
 
 // Class EnhancedInput.InputTriggerTimedBase
 // 0x0008 (0x0058 - 0x0050)
@@ -867,17 +885,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InputTriggerTimedBase">();
+		STATIC_CLASS_IMPL("InputTriggerTimedBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InputTriggerTimedBase")
 	}
 	static class UInputTriggerTimedBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInputTriggerTimedBase>();
 	}
 };
-static_assert(alignof(UInputTriggerTimedBase) == 0x000008, "Wrong alignment on UInputTriggerTimedBase");
-static_assert(sizeof(UInputTriggerTimedBase) == 0x000058, "Wrong size on UInputTriggerTimedBase");
-static_assert(offsetof(UInputTriggerTimedBase, HeldDuration) == 0x000050, "Member 'UInputTriggerTimedBase::HeldDuration' has a wrong offset!");
-static_assert(offsetof(UInputTriggerTimedBase, bAffectedByTimeDilation) == 0x000054, "Member 'UInputTriggerTimedBase::bAffectedByTimeDilation' has a wrong offset!");
+DUMPER7_ASSERTS_UInputTriggerTimedBase;
 
 // Class EnhancedInput.InputTriggerDown
 // 0x0000 (0x0050 - 0x0050)
@@ -886,15 +905,18 @@ class UInputTriggerDown final : public UInputTrigger
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InputTriggerDown">();
+		STATIC_CLASS_IMPL("InputTriggerDown")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InputTriggerDown")
 	}
 	static class UInputTriggerDown* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInputTriggerDown>();
 	}
 };
-static_assert(alignof(UInputTriggerDown) == 0x000008, "Wrong alignment on UInputTriggerDown");
-static_assert(sizeof(UInputTriggerDown) == 0x000050, "Wrong size on UInputTriggerDown");
+DUMPER7_ASSERTS_UInputTriggerDown;
 
 // Class EnhancedInput.InputTriggerPressed
 // 0x0000 (0x0050 - 0x0050)
@@ -903,15 +925,18 @@ class UInputTriggerPressed final : public UInputTrigger
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InputTriggerPressed">();
+		STATIC_CLASS_IMPL("InputTriggerPressed")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InputTriggerPressed")
 	}
 	static class UInputTriggerPressed* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInputTriggerPressed>();
 	}
 };
-static_assert(alignof(UInputTriggerPressed) == 0x000008, "Wrong alignment on UInputTriggerPressed");
-static_assert(sizeof(UInputTriggerPressed) == 0x000050, "Wrong size on UInputTriggerPressed");
+DUMPER7_ASSERTS_UInputTriggerPressed;
 
 // Class EnhancedInput.InputTriggerReleased
 // 0x0000 (0x0050 - 0x0050)
@@ -920,15 +945,18 @@ class UInputTriggerReleased final : public UInputTrigger
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InputTriggerReleased">();
+		STATIC_CLASS_IMPL("InputTriggerReleased")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InputTriggerReleased")
 	}
 	static class UInputTriggerReleased* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInputTriggerReleased>();
 	}
 };
-static_assert(alignof(UInputTriggerReleased) == 0x000008, "Wrong alignment on UInputTriggerReleased");
-static_assert(sizeof(UInputTriggerReleased) == 0x000050, "Wrong size on UInputTriggerReleased");
+DUMPER7_ASSERTS_UInputTriggerReleased;
 
 // Class EnhancedInput.InputTriggerHold
 // 0x0010 (0x0068 - 0x0058)
@@ -943,17 +971,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InputTriggerHold">();
+		STATIC_CLASS_IMPL("InputTriggerHold")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InputTriggerHold")
 	}
 	static class UInputTriggerHold* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInputTriggerHold>();
 	}
 };
-static_assert(alignof(UInputTriggerHold) == 0x000008, "Wrong alignment on UInputTriggerHold");
-static_assert(sizeof(UInputTriggerHold) == 0x000068, "Wrong size on UInputTriggerHold");
-static_assert(offsetof(UInputTriggerHold, HoldTimeThreshold) == 0x00005C, "Member 'UInputTriggerHold::HoldTimeThreshold' has a wrong offset!");
-static_assert(offsetof(UInputTriggerHold, bIsOneShot) == 0x000060, "Member 'UInputTriggerHold::bIsOneShot' has a wrong offset!");
+DUMPER7_ASSERTS_UInputTriggerHold;
 
 // Class EnhancedInput.InputTriggerHoldAndRelease
 // 0x0008 (0x0060 - 0x0058)
@@ -966,16 +995,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InputTriggerHoldAndRelease">();
+		STATIC_CLASS_IMPL("InputTriggerHoldAndRelease")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InputTriggerHoldAndRelease")
 	}
 	static class UInputTriggerHoldAndRelease* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInputTriggerHoldAndRelease>();
 	}
 };
-static_assert(alignof(UInputTriggerHoldAndRelease) == 0x000008, "Wrong alignment on UInputTriggerHoldAndRelease");
-static_assert(sizeof(UInputTriggerHoldAndRelease) == 0x000060, "Wrong size on UInputTriggerHoldAndRelease");
-static_assert(offsetof(UInputTriggerHoldAndRelease, HoldTimeThreshold) == 0x000058, "Member 'UInputTriggerHoldAndRelease::HoldTimeThreshold' has a wrong offset!");
+DUMPER7_ASSERTS_UInputTriggerHoldAndRelease;
 
 // Class EnhancedInput.InputTriggerTap
 // 0x0008 (0x0060 - 0x0058)
@@ -988,16 +1019,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InputTriggerTap">();
+		STATIC_CLASS_IMPL("InputTriggerTap")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InputTriggerTap")
 	}
 	static class UInputTriggerTap* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInputTriggerTap>();
 	}
 };
-static_assert(alignof(UInputTriggerTap) == 0x000008, "Wrong alignment on UInputTriggerTap");
-static_assert(sizeof(UInputTriggerTap) == 0x000060, "Wrong size on UInputTriggerTap");
-static_assert(offsetof(UInputTriggerTap, TapReleaseTimeThreshold) == 0x000058, "Member 'UInputTriggerTap::TapReleaseTimeThreshold' has a wrong offset!");
+DUMPER7_ASSERTS_UInputTriggerTap;
 
 // Class EnhancedInput.InputTriggerPulse
 // 0x0010 (0x0068 - 0x0058)
@@ -1013,39 +1046,41 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InputTriggerPulse">();
+		STATIC_CLASS_IMPL("InputTriggerPulse")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InputTriggerPulse")
 	}
 	static class UInputTriggerPulse* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInputTriggerPulse>();
 	}
 };
-static_assert(alignof(UInputTriggerPulse) == 0x000008, "Wrong alignment on UInputTriggerPulse");
-static_assert(sizeof(UInputTriggerPulse) == 0x000068, "Wrong size on UInputTriggerPulse");
-static_assert(offsetof(UInputTriggerPulse, bTriggerOnStart) == 0x00005C, "Member 'UInputTriggerPulse::bTriggerOnStart' has a wrong offset!");
-static_assert(offsetof(UInputTriggerPulse, Interval) == 0x000060, "Member 'UInputTriggerPulse::Interval' has a wrong offset!");
-static_assert(offsetof(UInputTriggerPulse, TriggerLimit) == 0x000064, "Member 'UInputTriggerPulse::TriggerLimit' has a wrong offset!");
+DUMPER7_ASSERTS_UInputTriggerPulse;
 
 // Class EnhancedInput.InputTriggerChordAction
 // 0x0008 (0x0058 - 0x0050)
 class UInputTriggerChordAction : public UInputTrigger
 {
 public:
-	class UInputAction*                           ChordAction;                                       // 0x0050(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           ChordAction;                                       // 0x0050(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InputTriggerChordAction">();
+		STATIC_CLASS_IMPL("InputTriggerChordAction")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InputTriggerChordAction")
 	}
 	static class UInputTriggerChordAction* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInputTriggerChordAction>();
 	}
 };
-static_assert(alignof(UInputTriggerChordAction) == 0x000008, "Wrong alignment on UInputTriggerChordAction");
-static_assert(sizeof(UInputTriggerChordAction) == 0x000058, "Wrong size on UInputTriggerChordAction");
-static_assert(offsetof(UInputTriggerChordAction, ChordAction) == 0x000050, "Member 'UInputTriggerChordAction::ChordAction' has a wrong offset!");
+DUMPER7_ASSERTS_UInputTriggerChordAction;
 
 // Class EnhancedInput.InputTriggerChordBlocker
 // 0x0000 (0x0058 - 0x0058)
@@ -1054,15 +1089,18 @@ class UInputTriggerChordBlocker final : public UInputTriggerChordAction
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InputTriggerChordBlocker">();
+		STATIC_CLASS_IMPL("InputTriggerChordBlocker")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InputTriggerChordBlocker")
 	}
 	static class UInputTriggerChordBlocker* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInputTriggerChordBlocker>();
 	}
 };
-static_assert(alignof(UInputTriggerChordBlocker) == 0x000008, "Wrong alignment on UInputTriggerChordBlocker");
-static_assert(sizeof(UInputTriggerChordBlocker) == 0x000058, "Wrong size on UInputTriggerChordBlocker");
+DUMPER7_ASSERTS_UInputTriggerChordBlocker;
 
 // Class EnhancedInput.InputTriggerCombo
 // 0x0028 (0x0078 - 0x0050)
@@ -1077,19 +1115,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InputTriggerCombo">();
+		STATIC_CLASS_IMPL("InputTriggerCombo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InputTriggerCombo")
 	}
 	static class UInputTriggerCombo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInputTriggerCombo>();
 	}
 };
-static_assert(alignof(UInputTriggerCombo) == 0x000008, "Wrong alignment on UInputTriggerCombo");
-static_assert(sizeof(UInputTriggerCombo) == 0x000078, "Wrong size on UInputTriggerCombo");
-static_assert(offsetof(UInputTriggerCombo, CurrentComboStepIndex) == 0x000050, "Member 'UInputTriggerCombo::CurrentComboStepIndex' has a wrong offset!");
-static_assert(offsetof(UInputTriggerCombo, CurrentTimeBetweenComboSteps) == 0x000054, "Member 'UInputTriggerCombo::CurrentTimeBetweenComboSteps' has a wrong offset!");
-static_assert(offsetof(UInputTriggerCombo, ComboActions) == 0x000058, "Member 'UInputTriggerCombo::ComboActions' has a wrong offset!");
-static_assert(offsetof(UInputTriggerCombo, InputCancelActions) == 0x000068, "Member 'UInputTriggerCombo::InputCancelActions' has a wrong offset!");
+DUMPER7_ASSERTS_UInputTriggerCombo;
 
 // Class EnhancedInput.PlayerMappableInputConfig
 // 0x0078 (0x00A8 - 0x0030)
@@ -1100,7 +1137,7 @@ public:
 	class FText                                   ConfigDisplayName;                                 // 0x0038(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, Protected, NativeAccessSpecifierProtected)
 	bool                                          bIsDeprecated;                                     // 0x0048(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                MetaData;                                          // 0x0050(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UObject*                                MetaData;                                          // 0x0050(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
 	TMap<class UInputMappingContext*, int32>      Contexts;                                          // 0x0058(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, Protected, NativeAccessSpecifierProtected)
 
 public:
@@ -1118,27 +1155,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PlayerMappableInputConfig">();
+		STATIC_CLASS_IMPL("PlayerMappableInputConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlayerMappableInputConfig")
 	}
 	static class UPlayerMappableInputConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPlayerMappableInputConfig>();
 	}
 };
-static_assert(alignof(UPlayerMappableInputConfig) == 0x000008, "Wrong alignment on UPlayerMappableInputConfig");
-static_assert(sizeof(UPlayerMappableInputConfig) == 0x0000A8, "Wrong size on UPlayerMappableInputConfig");
-static_assert(offsetof(UPlayerMappableInputConfig, ConfigName) == 0x000030, "Member 'UPlayerMappableInputConfig::ConfigName' has a wrong offset!");
-static_assert(offsetof(UPlayerMappableInputConfig, ConfigDisplayName) == 0x000038, "Member 'UPlayerMappableInputConfig::ConfigDisplayName' has a wrong offset!");
-static_assert(offsetof(UPlayerMappableInputConfig, bIsDeprecated) == 0x000048, "Member 'UPlayerMappableInputConfig::bIsDeprecated' has a wrong offset!");
-static_assert(offsetof(UPlayerMappableInputConfig, MetaData) == 0x000050, "Member 'UPlayerMappableInputConfig::MetaData' has a wrong offset!");
-static_assert(offsetof(UPlayerMappableInputConfig, Contexts) == 0x000058, "Member 'UPlayerMappableInputConfig::Contexts' has a wrong offset!");
+DUMPER7_ASSERTS_UPlayerMappableInputConfig;
 
 // Class EnhancedInput.PlayerMappableKeySettings
 // 0x0050 (0x0078 - 0x0028)
 class UPlayerMappableKeySettings final : public UObject
 {
 public:
-	class UObject*                                MetaData;                                          // 0x0028(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UObject*                                MetaData;                                          // 0x0028(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
 	class FName                                   Name_0;                                            // 0x0030(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FText                                   DisplayName;                                       // 0x0038(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 	class FText                                   DisplayCategory;                                   // 0x0048(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
@@ -1147,20 +1182,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PlayerMappableKeySettings">();
+		STATIC_CLASS_IMPL("PlayerMappableKeySettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlayerMappableKeySettings")
 	}
 	static class UPlayerMappableKeySettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPlayerMappableKeySettings>();
 	}
 };
-static_assert(alignof(UPlayerMappableKeySettings) == 0x000008, "Wrong alignment on UPlayerMappableKeySettings");
-static_assert(sizeof(UPlayerMappableKeySettings) == 0x000078, "Wrong size on UPlayerMappableKeySettings");
-static_assert(offsetof(UPlayerMappableKeySettings, MetaData) == 0x000028, "Member 'UPlayerMappableKeySettings::MetaData' has a wrong offset!");
-static_assert(offsetof(UPlayerMappableKeySettings, Name_0) == 0x000030, "Member 'UPlayerMappableKeySettings::Name_0' has a wrong offset!");
-static_assert(offsetof(UPlayerMappableKeySettings, DisplayName) == 0x000038, "Member 'UPlayerMappableKeySettings::DisplayName' has a wrong offset!");
-static_assert(offsetof(UPlayerMappableKeySettings, DisplayCategory) == 0x000048, "Member 'UPlayerMappableKeySettings::DisplayCategory' has a wrong offset!");
-static_assert(offsetof(UPlayerMappableKeySettings, SupportedKeyProfiles) == 0x000058, "Member 'UPlayerMappableKeySettings::SupportedKeyProfiles' has a wrong offset!");
+DUMPER7_ASSERTS_UPlayerMappableKeySettings;
 
 }
 

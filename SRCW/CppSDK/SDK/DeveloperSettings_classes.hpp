@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DeveloperSettings">();
+		STATIC_CLASS_IMPL("DeveloperSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DeveloperSettings")
 	}
 	static class UDeveloperSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDeveloperSettings>();
 	}
 };
-static_assert(alignof(UDeveloperSettings) == 0x000008, "Wrong alignment on UDeveloperSettings");
-static_assert(sizeof(UDeveloperSettings) == 0x000038, "Wrong size on UDeveloperSettings");
+DUMPER7_ASSERTS_UDeveloperSettings;
 
 // Class DeveloperSettings.DeveloperSettingsBackedByCVars
 // 0x0000 (0x0038 - 0x0038)
@@ -44,15 +47,18 @@ class UDeveloperSettingsBackedByCVars : public UDeveloperSettings
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DeveloperSettingsBackedByCVars">();
+		STATIC_CLASS_IMPL("DeveloperSettingsBackedByCVars")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DeveloperSettingsBackedByCVars")
 	}
 	static class UDeveloperSettingsBackedByCVars* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDeveloperSettingsBackedByCVars>();
 	}
 };
-static_assert(alignof(UDeveloperSettingsBackedByCVars) == 0x000008, "Wrong alignment on UDeveloperSettingsBackedByCVars");
-static_assert(sizeof(UDeveloperSettingsBackedByCVars) == 0x000038, "Wrong size on UDeveloperSettingsBackedByCVars");
+DUMPER7_ASSERTS_UDeveloperSettingsBackedByCVars;
 
 // Class DeveloperSettings.PlatformSettings
 // 0x0018 (0x0040 - 0x0028)
@@ -64,15 +70,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PlatformSettings">();
+		STATIC_CLASS_IMPL("PlatformSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlatformSettings")
 	}
 	static class UPlatformSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPlatformSettings>();
 	}
 };
-static_assert(alignof(UPlatformSettings) == 0x000008, "Wrong alignment on UPlatformSettings");
-static_assert(sizeof(UPlatformSettings) == 0x000040, "Wrong size on UPlatformSettings");
+DUMPER7_ASSERTS_UPlatformSettings;
 
 // Class DeveloperSettings.PlatformSettingsManager
 // 0x0058 (0x0080 - 0x0028)
@@ -85,16 +94,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PlatformSettingsManager">();
+		STATIC_CLASS_IMPL("PlatformSettingsManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlatformSettingsManager")
 	}
 	static class UPlatformSettingsManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPlatformSettingsManager>();
 	}
 };
-static_assert(alignof(UPlatformSettingsManager) == 0x000008, "Wrong alignment on UPlatformSettingsManager");
-static_assert(sizeof(UPlatformSettingsManager) == 0x000080, "Wrong size on UPlatformSettingsManager");
-static_assert(offsetof(UPlatformSettingsManager, SettingsMap) == 0x000028, "Member 'UPlatformSettingsManager::SettingsMap' has a wrong offset!");
+DUMPER7_ASSERTS_UPlatformSettingsManager;
 
 }
 

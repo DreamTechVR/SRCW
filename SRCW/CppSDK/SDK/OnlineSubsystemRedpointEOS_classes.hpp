@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EOSControlChannel">();
+		STATIC_CLASS_IMPL("EOSControlChannel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EOSControlChannel")
 	}
 	static class UEOSControlChannel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEOSControlChannel>();
 	}
 };
-static_assert(alignof(UEOSControlChannel) == 0x000008, "Wrong alignment on UEOSControlChannel");
-static_assert(sizeof(UEOSControlChannel) == 0x0002A0, "Wrong size on UEOSControlChannel");
+DUMPER7_ASSERTS_UEOSControlChannel;
 
 // Class OnlineSubsystemRedpointEOS.EOSIpNetConnection
 // 0x0000 (0x1E90 - 0x1E90)
@@ -44,15 +47,18 @@ class UEOSIpNetConnection final : public UIpConnection
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EOSIpNetConnection">();
+		STATIC_CLASS_IMPL("EOSIpNetConnection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EOSIpNetConnection")
 	}
 	static class UEOSIpNetConnection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEOSIpNetConnection>();
 	}
 };
-static_assert(alignof(UEOSIpNetConnection) == 0x000008, "Wrong alignment on UEOSIpNetConnection");
-static_assert(sizeof(UEOSIpNetConnection) == 0x001E90, "Wrong size on UEOSIpNetConnection");
+DUMPER7_ASSERTS_UEOSIpNetConnection;
 
 // Class OnlineSubsystemRedpointEOS.EOSNetConnection
 // 0x0010 (0x1E10 - 0x1E00)
@@ -64,15 +70,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EOSNetConnection">();
+		STATIC_CLASS_IMPL("EOSNetConnection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EOSNetConnection")
 	}
 	static class UEOSNetConnection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEOSNetConnection>();
 	}
 };
-static_assert(alignof(UEOSNetConnection) == 0x000008, "Wrong alignment on UEOSNetConnection");
-static_assert(sizeof(UEOSNetConnection) == 0x001E10, "Wrong size on UEOSNetConnection");
+DUMPER7_ASSERTS_UEOSNetConnection;
 
 // Class OnlineSubsystemRedpointEOS.EOSNetDriver
 // 0x0078 (0x09F0 - 0x0978)
@@ -85,16 +94,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EOSNetDriver">();
+		STATIC_CLASS_IMPL("EOSNetDriver")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EOSNetDriver")
 	}
 	static class UEOSNetDriver* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEOSNetDriver>();
 	}
 };
-static_assert(alignof(UEOSNetDriver) == 0x000008, "Wrong alignment on UEOSNetDriver");
-static_assert(sizeof(UEOSNetDriver) == 0x0009F0, "Wrong size on UEOSNetDriver");
-static_assert(offsetof(UEOSNetDriver, PendingConnectionClose) == 0x0009E0, "Member 'UEOSNetDriver::PendingConnectionClose' has a wrong offset!");
+DUMPER7_ASSERTS_UEOSNetDriver;
 
 // Class OnlineSubsystemRedpointEOS.EOSSubsystem
 // 0x0038 (0x0068 - 0x0030)
@@ -108,17 +119,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EOSSubsystem">();
+		STATIC_CLASS_IMPL("EOSSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EOSSubsystem")
 	}
 	static class UEOSSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEOSSubsystem>();
 	}
 };
-static_assert(alignof(UEOSSubsystem) == 0x000008, "Wrong alignment on UEOSSubsystem");
-static_assert(sizeof(UEOSSubsystem) == 0x000068, "Wrong size on UEOSSubsystem");
-static_assert(offsetof(UEOSSubsystem, OnAddWidgetToViewport) == 0x000030, "Member 'UEOSSubsystem::OnAddWidgetToViewport' has a wrong offset!");
-static_assert(offsetof(UEOSSubsystem, OnRemoveWidgetFromViewport) == 0x000040, "Member 'UEOSSubsystem::OnRemoveWidgetFromViewport' has a wrong offset!");
+DUMPER7_ASSERTS_UEOSSubsystem;
 
 // Class OnlineSubsystemRedpointEOS.RecentPlayersWorldSubsystem
 // 0x0060 (0x0090 - 0x0030)
@@ -130,15 +142,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RecentPlayersWorldSubsystem">();
+		STATIC_CLASS_IMPL("RecentPlayersWorldSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RecentPlayersWorldSubsystem")
 	}
 	static class URecentPlayersWorldSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URecentPlayersWorldSubsystem>();
 	}
 };
-static_assert(alignof(URecentPlayersWorldSubsystem) == 0x000008, "Wrong alignment on URecentPlayersWorldSubsystem");
-static_assert(sizeof(URecentPlayersWorldSubsystem) == 0x000090, "Wrong size on URecentPlayersWorldSubsystem");
+DUMPER7_ASSERTS_URecentPlayersWorldSubsystem;
 
 }
 

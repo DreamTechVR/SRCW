@@ -31,15 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TypedElementSelectionSetLibrary">();
+		STATIC_CLASS_IMPL("TypedElementSelectionSetLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TypedElementSelectionSetLibrary")
 	}
 	static class UTypedElementSelectionSetLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTypedElementSelectionSetLibrary>();
 	}
 };
-static_assert(alignof(UTypedElementSelectionSetLibrary) == 0x000008, "Wrong alignment on UTypedElementSelectionSetLibrary");
-static_assert(sizeof(UTypedElementSelectionSetLibrary) == 0x000028, "Wrong size on UTypedElementSelectionSetLibrary");
+DUMPER7_ASSERTS_UTypedElementSelectionSetLibrary;
 
 // Class TypedElementRuntime.TypedElementSelectionSet
 // 0x0878 (0x08A0 - 0x0028)
@@ -79,17 +82,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TypedElementSelectionSet">();
+		STATIC_CLASS_IMPL("TypedElementSelectionSet")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TypedElementSelectionSet")
 	}
 	static class UTypedElementSelectionSet* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTypedElementSelectionSet>();
 	}
 };
-static_assert(alignof(UTypedElementSelectionSet) == 0x000008, "Wrong alignment on UTypedElementSelectionSet");
-static_assert(sizeof(UTypedElementSelectionSet) == 0x0008A0, "Wrong size on UTypedElementSelectionSet");
-static_assert(offsetof(UTypedElementSelectionSet, OnPreSelectionChange) == 0x000828, "Member 'UTypedElementSelectionSet::OnPreSelectionChange' has a wrong offset!");
-static_assert(offsetof(UTypedElementSelectionSet, OnSelectionChange) == 0x000838, "Member 'UTypedElementSelectionSet::OnSelectionChange' has a wrong offset!");
+DUMPER7_ASSERTS_UTypedElementSelectionSet;
 
 // Class TypedElementRuntime.TypedElementAssetDataInterface
 // 0x0000 (0x0000 - 0x0000)
@@ -102,7 +106,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TypedElementAssetDataInterface">();
+		STATIC_CLASS_IMPL("TypedElementAssetDataInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TypedElementAssetDataInterface")
 	}
 	static class ITypedElementAssetDataInterface* GetDefaultObj()
 	{
@@ -118,8 +126,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(ITypedElementAssetDataInterface) == 0x000001, "Wrong alignment on ITypedElementAssetDataInterface");
-static_assert(sizeof(ITypedElementAssetDataInterface) == 0x000001, "Wrong size on ITypedElementAssetDataInterface");
+DUMPER7_ASSERTS_ITypedElementAssetDataInterface;
 
 // Class TypedElementRuntime.TypedElementHierarchyInterface
 // 0x0000 (0x0000 - 0x0000)
@@ -132,7 +139,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TypedElementHierarchyInterface">();
+		STATIC_CLASS_IMPL("TypedElementHierarchyInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TypedElementHierarchyInterface")
 	}
 	static class ITypedElementHierarchyInterface* GetDefaultObj()
 	{
@@ -148,8 +159,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(ITypedElementHierarchyInterface) == 0x000001, "Wrong alignment on ITypedElementHierarchyInterface");
-static_assert(sizeof(ITypedElementHierarchyInterface) == 0x000001, "Wrong size on ITypedElementHierarchyInterface");
+DUMPER7_ASSERTS_ITypedElementHierarchyInterface;
 
 // Class TypedElementRuntime.TypedElementObjectInterface
 // 0x0000 (0x0000 - 0x0000)
@@ -162,7 +172,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TypedElementObjectInterface">();
+		STATIC_CLASS_IMPL("TypedElementObjectInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TypedElementObjectInterface")
 	}
 	static class ITypedElementObjectInterface* GetDefaultObj()
 	{
@@ -178,8 +192,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(ITypedElementObjectInterface) == 0x000001, "Wrong alignment on ITypedElementObjectInterface");
-static_assert(sizeof(ITypedElementObjectInterface) == 0x000001, "Wrong size on ITypedElementObjectInterface");
+DUMPER7_ASSERTS_ITypedElementObjectInterface;
 
 // Class TypedElementRuntime.TypedElementPrimitiveCustomDataInterface
 // 0x0000 (0x0000 - 0x0000)
@@ -192,7 +205,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TypedElementPrimitiveCustomDataInterface">();
+		STATIC_CLASS_IMPL("TypedElementPrimitiveCustomDataInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TypedElementPrimitiveCustomDataInterface")
 	}
 	static class ITypedElementPrimitiveCustomDataInterface* GetDefaultObj()
 	{
@@ -208,8 +225,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(ITypedElementPrimitiveCustomDataInterface) == 0x000001, "Wrong alignment on ITypedElementPrimitiveCustomDataInterface");
-static_assert(sizeof(ITypedElementPrimitiveCustomDataInterface) == 0x000001, "Wrong size on ITypedElementPrimitiveCustomDataInterface");
+DUMPER7_ASSERTS_ITypedElementPrimitiveCustomDataInterface;
 
 // Class TypedElementRuntime.TypedElementSelectionInterface
 // 0x0000 (0x0000 - 0x0000)
@@ -227,7 +243,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TypedElementSelectionInterface">();
+		STATIC_CLASS_IMPL("TypedElementSelectionInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TypedElementSelectionInterface")
 	}
 	static class ITypedElementSelectionInterface* GetDefaultObj()
 	{
@@ -243,8 +263,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(ITypedElementSelectionInterface) == 0x000001, "Wrong alignment on ITypedElementSelectionInterface");
-static_assert(sizeof(ITypedElementSelectionInterface) == 0x000001, "Wrong size on ITypedElementSelectionInterface");
+DUMPER7_ASSERTS_ITypedElementSelectionInterface;
 
 }
 

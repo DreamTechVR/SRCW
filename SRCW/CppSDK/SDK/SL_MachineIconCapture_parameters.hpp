@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "UNION_structs.hpp"
+#include "UnionRun_structs.hpp"
 #include "Engine_structs.hpp"
 #include "UnionSystem_structs.hpp"
-#include "UnionRun_structs.hpp"
-#include "UNION_structs.hpp"
 
 
 namespace SDK::Params
@@ -31,12 +31,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	const class UDataTable*                       InCaptureDataTable;                                // 0x0010(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SL_MachineIconCapture_C_Capture) == 0x000008, "Wrong alignment on SL_MachineIconCapture_C_Capture");
-static_assert(sizeof(SL_MachineIconCapture_C_Capture) == 0x000018, "Wrong size on SL_MachineIconCapture_C_Capture");
-static_assert(offsetof(SL_MachineIconCapture_C_Capture, InMachineID) == 0x000000, "Member 'SL_MachineIconCapture_C_Capture::InMachineID' has a wrong offset!");
-static_assert(offsetof(SL_MachineIconCapture_C_Capture, InSizeX) == 0x000004, "Member 'SL_MachineIconCapture_C_Capture::InSizeX' has a wrong offset!");
-static_assert(offsetof(SL_MachineIconCapture_C_Capture, InSizeY) == 0x000008, "Member 'SL_MachineIconCapture_C_Capture::InSizeY' has a wrong offset!");
-static_assert(offsetof(SL_MachineIconCapture_C_Capture, InCaptureDataTable) == 0x000010, "Member 'SL_MachineIconCapture_C_Capture::InCaptureDataTable' has a wrong offset!");
+DUMPER7_ASSERTS_SL_MachineIconCapture_C_Capture;
 
 // Function SL_MachineIconCapture.SL_MachineIconCapture_C.CreateRenderTexture
 // 0x0038 (0x0038 - 0x0000)
@@ -55,18 +50,7 @@ public:
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_1;          // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0032(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SL_MachineIconCapture_C_CreateRenderTexture) == 0x000008, "Wrong alignment on SL_MachineIconCapture_C_CreateRenderTexture");
-static_assert(sizeof(SL_MachineIconCapture_C_CreateRenderTexture) == 0x000038, "Wrong size on SL_MachineIconCapture_C_CreateRenderTexture");
-static_assert(offsetof(SL_MachineIconCapture_C_CreateRenderTexture, InRenderTexture) == 0x000000, "Member 'SL_MachineIconCapture_C_CreateRenderTexture::InRenderTexture' has a wrong offset!");
-static_assert(offsetof(SL_MachineIconCapture_C_CreateRenderTexture, InSizeX) == 0x000008, "Member 'SL_MachineIconCapture_C_CreateRenderTexture::InSizeX' has a wrong offset!");
-static_assert(offsetof(SL_MachineIconCapture_C_CreateRenderTexture, InSizeY) == 0x00000C, "Member 'SL_MachineIconCapture_C_CreateRenderTexture::InSizeY' has a wrong offset!");
-static_assert(offsetof(SL_MachineIconCapture_C_CreateRenderTexture, OutRenderTexture) == 0x000010, "Member 'SL_MachineIconCapture_C_CreateRenderTexture::OutRenderTexture' has a wrong offset!");
-static_assert(offsetof(SL_MachineIconCapture_C_CreateRenderTexture, TempRenderTexture) == 0x000018, "Member 'SL_MachineIconCapture_C_CreateRenderTexture::TempRenderTexture' has a wrong offset!");
-static_assert(offsetof(SL_MachineIconCapture_C_CreateRenderTexture, CallFunc_IsValid_ReturnValue) == 0x000020, "Member 'SL_MachineIconCapture_C_CreateRenderTexture::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SL_MachineIconCapture_C_CreateRenderTexture, CallFunc_CreateRenderTarget2D_ReturnValue) == 0x000028, "Member 'SL_MachineIconCapture_C_CreateRenderTexture::CallFunc_CreateRenderTarget2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SL_MachineIconCapture_C_CreateRenderTexture, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000030, "Member 'SL_MachineIconCapture_C_CreateRenderTexture::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SL_MachineIconCapture_C_CreateRenderTexture, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x000031, "Member 'SL_MachineIconCapture_C_CreateRenderTexture::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SL_MachineIconCapture_C_CreateRenderTexture, CallFunc_BooleanAND_ReturnValue) == 0x000032, "Member 'SL_MachineIconCapture_C_CreateRenderTexture::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SL_MachineIconCapture_C_CreateRenderTexture;
 
 // Function SL_MachineIconCapture.SL_MachineIconCapture_C.ExecuteUbergraph_SL_MachineIconCapture
 // 0x0250 (0x0250 - 0x0000)
@@ -95,23 +79,7 @@ public:
 	struct FHitResult                             CallFunc_K2_SetActorTransform_SweepHitResult;      // 0x0148(0x00F8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          CallFunc_K2_SetActorTransform_ReturnValue;         // 0x0240(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SL_MachineIconCapture_C_ExecuteUbergraph_SL_MachineIconCapture) == 0x000010, "Wrong alignment on SL_MachineIconCapture_C_ExecuteUbergraph_SL_MachineIconCapture");
-static_assert(sizeof(SL_MachineIconCapture_C_ExecuteUbergraph_SL_MachineIconCapture) == 0x000250, "Wrong size on SL_MachineIconCapture_C_ExecuteUbergraph_SL_MachineIconCapture");
-static_assert(offsetof(SL_MachineIconCapture_C_ExecuteUbergraph_SL_MachineIconCapture, EntryPoint) == 0x000000, "Member 'SL_MachineIconCapture_C_ExecuteUbergraph_SL_MachineIconCapture::EntryPoint' has a wrong offset!");
-static_assert(offsetof(SL_MachineIconCapture_C_ExecuteUbergraph_SL_MachineIconCapture, CallFunc_GetChildActors_OutChildActors) == 0x000008, "Member 'SL_MachineIconCapture_C_ExecuteUbergraph_SL_MachineIconCapture::CallFunc_GetChildActors_OutChildActors' has a wrong offset!");
-static_assert(offsetof(SL_MachineIconCapture_C_ExecuteUbergraph_SL_MachineIconCapture, K2Node_Event_InMachineId) == 0x000018, "Member 'SL_MachineIconCapture_C_ExecuteUbergraph_SL_MachineIconCapture::K2Node_Event_InMachineId' has a wrong offset!");
-static_assert(offsetof(SL_MachineIconCapture_C_ExecuteUbergraph_SL_MachineIconCapture, K2Node_Event_InSizeX) == 0x00001C, "Member 'SL_MachineIconCapture_C_ExecuteUbergraph_SL_MachineIconCapture::K2Node_Event_InSizeX' has a wrong offset!");
-static_assert(offsetof(SL_MachineIconCapture_C_ExecuteUbergraph_SL_MachineIconCapture, K2Node_Event_InSizeY) == 0x000020, "Member 'SL_MachineIconCapture_C_ExecuteUbergraph_SL_MachineIconCapture::K2Node_Event_InSizeY' has a wrong offset!");
-static_assert(offsetof(SL_MachineIconCapture_C_ExecuteUbergraph_SL_MachineIconCapture, K2Node_Event_InCaptureDataTable) == 0x000028, "Member 'SL_MachineIconCapture_C_ExecuteUbergraph_SL_MachineIconCapture::K2Node_Event_InCaptureDataTable' has a wrong offset!");
-static_assert(offsetof(SL_MachineIconCapture_C_ExecuteUbergraph_SL_MachineIconCapture, CallFunc_CreateRenderTexture_OutRenderTexture) == 0x000030, "Member 'SL_MachineIconCapture_C_ExecuteUbergraph_SL_MachineIconCapture::CallFunc_CreateRenderTexture_OutRenderTexture' has a wrong offset!");
-static_assert(offsetof(SL_MachineIconCapture_C_ExecuteUbergraph_SL_MachineIconCapture, CallFunc_CreateRenderTexture_OutRenderTexture_1) == 0x000038, "Member 'SL_MachineIconCapture_C_ExecuteUbergraph_SL_MachineIconCapture::CallFunc_CreateRenderTexture_OutRenderTexture_1' has a wrong offset!");
-static_assert(offsetof(SL_MachineIconCapture_C_ExecuteUbergraph_SL_MachineIconCapture, CallFunc_GetMachineCustomizeDataById_OutUserMachineCustomizeData) == 0x000040, "Member 'SL_MachineIconCapture_C_ExecuteUbergraph_SL_MachineIconCapture::CallFunc_GetMachineCustomizeDataById_OutUserMachineCustomizeData' has a wrong offset!");
-static_assert(offsetof(SL_MachineIconCapture_C_ExecuteUbergraph_SL_MachineIconCapture, CallFunc_GetCarStatusType_ReturnValue) == 0x0000B8, "Member 'SL_MachineIconCapture_C_ExecuteUbergraph_SL_MachineIconCapture::CallFunc_GetCarStatusType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SL_MachineIconCapture_C_ExecuteUbergraph_SL_MachineIconCapture, CallFunc_GetEnumeratorName_ReturnValue) == 0x0000BC, "Member 'SL_MachineIconCapture_C_ExecuteUbergraph_SL_MachineIconCapture::CallFunc_GetEnumeratorName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SL_MachineIconCapture_C_ExecuteUbergraph_SL_MachineIconCapture, CallFunc_GetDataTableRowFromName_OutRow) == 0x0000D0, "Member 'SL_MachineIconCapture_C_ExecuteUbergraph_SL_MachineIconCapture::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(SL_MachineIconCapture_C_ExecuteUbergraph_SL_MachineIconCapture, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x000140, "Member 'SL_MachineIconCapture_C_ExecuteUbergraph_SL_MachineIconCapture::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SL_MachineIconCapture_C_ExecuteUbergraph_SL_MachineIconCapture, CallFunc_K2_SetActorTransform_SweepHitResult) == 0x000148, "Member 'SL_MachineIconCapture_C_ExecuteUbergraph_SL_MachineIconCapture::CallFunc_K2_SetActorTransform_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(SL_MachineIconCapture_C_ExecuteUbergraph_SL_MachineIconCapture, CallFunc_K2_SetActorTransform_ReturnValue) == 0x000240, "Member 'SL_MachineIconCapture_C_ExecuteUbergraph_SL_MachineIconCapture::CallFunc_K2_SetActorTransform_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SL_MachineIconCapture_C_ExecuteUbergraph_SL_MachineIconCapture;
 
 }
 

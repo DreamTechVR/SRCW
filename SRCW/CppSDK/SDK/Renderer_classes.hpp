@@ -22,7 +22,7 @@ namespace SDK
 class USparseVolumeTextureViewerComponent final : public UPrimitiveComponent
 {
 public:
-	class USparseVolumeTexture*                   SparseVolumeTexturePreview;                        // 0x0518(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USparseVolumeTexture*                   SparseVolumeTexturePreview;                        // 0x0518(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
 	float                                         Frame;                                             // 0x0520(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         FrameRate;                                         // 0x0524(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         bPlaying : 1;                                      // 0x0528(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
@@ -42,43 +42,41 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SparseVolumeTextureViewerComponent">();
+		STATIC_CLASS_IMPL("SparseVolumeTextureViewerComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SparseVolumeTextureViewerComponent")
 	}
 	static class USparseVolumeTextureViewerComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USparseVolumeTextureViewerComponent>();
 	}
 };
-static_assert(alignof(USparseVolumeTextureViewerComponent) == 0x000010, "Wrong alignment on USparseVolumeTextureViewerComponent");
-static_assert(sizeof(USparseVolumeTextureViewerComponent) == 0x000550, "Wrong size on USparseVolumeTextureViewerComponent");
-static_assert(offsetof(USparseVolumeTextureViewerComponent, SparseVolumeTexturePreview) == 0x000518, "Member 'USparseVolumeTextureViewerComponent::SparseVolumeTexturePreview' has a wrong offset!");
-static_assert(offsetof(USparseVolumeTextureViewerComponent, Frame) == 0x000520, "Member 'USparseVolumeTextureViewerComponent::Frame' has a wrong offset!");
-static_assert(offsetof(USparseVolumeTextureViewerComponent, FrameRate) == 0x000524, "Member 'USparseVolumeTextureViewerComponent::FrameRate' has a wrong offset!");
-static_assert(offsetof(USparseVolumeTextureViewerComponent, VoxelSize) == 0x00052C, "Member 'USparseVolumeTextureViewerComponent::VoxelSize' has a wrong offset!");
-static_assert(offsetof(USparseVolumeTextureViewerComponent, PreviewAttribute) == 0x000530, "Member 'USparseVolumeTextureViewerComponent::PreviewAttribute' has a wrong offset!");
-static_assert(offsetof(USparseVolumeTextureViewerComponent, MipLevel) == 0x000534, "Member 'USparseVolumeTextureViewerComponent::MipLevel' has a wrong offset!");
-static_assert(offsetof(USparseVolumeTextureViewerComponent, Extinction) == 0x000538, "Member 'USparseVolumeTextureViewerComponent::Extinction' has a wrong offset!");
+DUMPER7_ASSERTS_USparseVolumeTextureViewerComponent;
 
 // Class Renderer.SparseVolumeTextureViewer
 // 0x0008 (0x0298 - 0x0290)
 class ASparseVolumeTextureViewer final : public AInfo
 {
 public:
-	class USparseVolumeTextureViewerComponent*    SparseVolumeTextureViewerComponent;                // 0x0290(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class USparseVolumeTextureViewerComponent*    SparseVolumeTextureViewerComponent;                // 0x0290(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SparseVolumeTextureViewer">();
+		STATIC_CLASS_IMPL("SparseVolumeTextureViewer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SparseVolumeTextureViewer")
 	}
 	static class ASparseVolumeTextureViewer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASparseVolumeTextureViewer>();
 	}
 };
-static_assert(alignof(ASparseVolumeTextureViewer) == 0x000008, "Wrong alignment on ASparseVolumeTextureViewer");
-static_assert(sizeof(ASparseVolumeTextureViewer) == 0x000298, "Wrong size on ASparseVolumeTextureViewer");
-static_assert(offsetof(ASparseVolumeTextureViewer, SparseVolumeTextureViewerComponent) == 0x000290, "Member 'ASparseVolumeTextureViewer::SparseVolumeTextureViewerComponent' has a wrong offset!");
+DUMPER7_ASSERTS_ASparseVolumeTextureViewer;
 
 }
 

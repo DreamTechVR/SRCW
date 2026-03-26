@@ -29,23 +29,23 @@ public:
 	FMulticastSparseDelegateProperty_             OnConstraintAdded_BP;                              // 0x0028(0x0001)(InstancedReference, BlueprintAssignable, NoDestructor, NativeAccessSpecifierPublic)
 	FMulticastSparseDelegateProperty_             OnConstraintRemoved_BP;                            // 0x0029(0x0001)(InstancedReference, BlueprintAssignable, NoDestructor, NativeAccessSpecifierPublic)
 	uint8                                         Pad_2A[0xE];                                       // 0x002A(0x000E)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UTickableConstraint*>            Constraints;                                       // 0x0038(0x0010)(ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPrivate)
+	TArray<class UTickableConstraint*>            Constraints;                                       // 0x0038(0x0010)(ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPrivate, TObjectPtr)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ConstraintsManager">();
+		STATIC_CLASS_IMPL("ConstraintsManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ConstraintsManager")
 	}
 	static class UConstraintsManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UConstraintsManager>();
 	}
 };
-static_assert(alignof(UConstraintsManager) == 0x000008, "Wrong alignment on UConstraintsManager");
-static_assert(sizeof(UConstraintsManager) == 0x000048, "Wrong size on UConstraintsManager");
-static_assert(offsetof(UConstraintsManager, OnConstraintAdded_BP) == 0x000028, "Member 'UConstraintsManager::OnConstraintAdded_BP' has a wrong offset!");
-static_assert(offsetof(UConstraintsManager, OnConstraintRemoved_BP) == 0x000029, "Member 'UConstraintsManager::OnConstraintRemoved_BP' has a wrong offset!");
-static_assert(offsetof(UConstraintsManager, Constraints) == 0x000038, "Member 'UConstraintsManager::Constraints' has a wrong offset!");
+DUMPER7_ASSERTS_UConstraintsManager;
 
 // Class Constraints.ConstraintSubsystem
 // 0x0020 (0x0050 - 0x0030)
@@ -61,39 +61,41 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ConstraintSubsystem">();
+		STATIC_CLASS_IMPL("ConstraintSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ConstraintSubsystem")
 	}
 	static class UConstraintSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UConstraintSubsystem>();
 	}
 };
-static_assert(alignof(UConstraintSubsystem) == 0x000008, "Wrong alignment on UConstraintSubsystem");
-static_assert(sizeof(UConstraintSubsystem) == 0x000050, "Wrong size on UConstraintSubsystem");
-static_assert(offsetof(UConstraintSubsystem, OnConstraintAddedToSystem_BP) == 0x000030, "Member 'UConstraintSubsystem::OnConstraintAddedToSystem_BP' has a wrong offset!");
-static_assert(offsetof(UConstraintSubsystem, OnConstraintRemovedFromSystem_BP) == 0x000031, "Member 'UConstraintSubsystem::OnConstraintRemovedFromSystem_BP' has a wrong offset!");
-static_assert(offsetof(UConstraintSubsystem, ConstraintsInWorld) == 0x000038, "Member 'UConstraintSubsystem::ConstraintsInWorld' has a wrong offset!");
+DUMPER7_ASSERTS_UConstraintSubsystem;
 
 // Class Constraints.ConstraintsActor
 // 0x0008 (0x0298 - 0x0290)
 class AConstraintsActor final : public AActor
 {
 public:
-	class UConstraintsManager*                    ConstraintsManager;                                // 0x0290(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UConstraintsManager*                    ConstraintsManager;                                // 0x0290(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ConstraintsActor">();
+		STATIC_CLASS_IMPL("ConstraintsActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ConstraintsActor")
 	}
 	static class AConstraintsActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AConstraintsActor>();
 	}
 };
-static_assert(alignof(AConstraintsActor) == 0x000008, "Wrong alignment on AConstraintsActor");
-static_assert(sizeof(AConstraintsActor) == 0x000298, "Wrong size on AConstraintsActor");
-static_assert(offsetof(AConstraintsActor, ConstraintsManager) == 0x000290, "Member 'AConstraintsActor::ConstraintsManager' has a wrong offset!");
+DUMPER7_ASSERTS_AConstraintsActor;
 
 // Class Constraints.TickableConstraint
 // 0x0068 (0x0090 - 0x0028)
@@ -107,17 +109,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TickableConstraint">();
+		STATIC_CLASS_IMPL("TickableConstraint")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TickableConstraint")
 	}
 	static class UTickableConstraint* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTickableConstraint>();
 	}
 };
-static_assert(alignof(UTickableConstraint) == 0x000008, "Wrong alignment on UTickableConstraint");
-static_assert(sizeof(UTickableConstraint) == 0x000090, "Wrong size on UTickableConstraint");
-static_assert(offsetof(UTickableConstraint, Active) == 0x000028, "Member 'UTickableConstraint::Active' has a wrong offset!");
-static_assert(offsetof(UTickableConstraint, bValid) == 0x000029, "Member 'UTickableConstraint::bValid' has a wrong offset!");
+DUMPER7_ASSERTS_UTickableConstraint;
 
 // Class Constraints.ConstraintsScriptingLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -135,15 +138,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ConstraintsScriptingLibrary">();
+		STATIC_CLASS_IMPL("ConstraintsScriptingLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ConstraintsScriptingLibrary")
 	}
 	static class UConstraintsScriptingLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UConstraintsScriptingLibrary>();
 	}
 };
-static_assert(alignof(UConstraintsScriptingLibrary) == 0x000008, "Wrong alignment on UConstraintsScriptingLibrary");
-static_assert(sizeof(UConstraintsScriptingLibrary) == 0x000028, "Wrong size on UConstraintsScriptingLibrary");
+DUMPER7_ASSERTS_UConstraintsScriptingLibrary;
 
 // Class Constraints.TransformableHandle
 // 0x0038 (0x0060 - 0x0028)
@@ -157,16 +163,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TransformableHandle">();
+		STATIC_CLASS_IMPL("TransformableHandle")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TransformableHandle")
 	}
 	static class UTransformableHandle* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTransformableHandle>();
 	}
 };
-static_assert(alignof(UTransformableHandle) == 0x000008, "Wrong alignment on UTransformableHandle");
-static_assert(sizeof(UTransformableHandle) == 0x000060, "Wrong size on UTransformableHandle");
-static_assert(offsetof(UTransformableHandle, ConstraintBindingID) == 0x00002C, "Member 'UTransformableHandle::ConstraintBindingID' has a wrong offset!");
+DUMPER7_ASSERTS_UTransformableHandle;
 
 // Class Constraints.TransformableComponentHandle
 // 0x0010 (0x0070 - 0x0060)
@@ -179,25 +187,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TransformableComponentHandle">();
+		STATIC_CLASS_IMPL("TransformableComponentHandle")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TransformableComponentHandle")
 	}
 	static class UTransformableComponentHandle* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTransformableComponentHandle>();
 	}
 };
-static_assert(alignof(UTransformableComponentHandle) == 0x000008, "Wrong alignment on UTransformableComponentHandle");
-static_assert(sizeof(UTransformableComponentHandle) == 0x000070, "Wrong size on UTransformableComponentHandle");
-static_assert(offsetof(UTransformableComponentHandle, Component) == 0x000060, "Member 'UTransformableComponentHandle::Component' has a wrong offset!");
-static_assert(offsetof(UTransformableComponentHandle, SocketName) == 0x000068, "Member 'UTransformableComponentHandle::SocketName' has a wrong offset!");
+DUMPER7_ASSERTS_UTransformableComponentHandle;
 
 // Class Constraints.TickableTransformConstraint
 // 0x0020 (0x00B0 - 0x0090)
 class UTickableTransformConstraint : public UTickableConstraint
 {
 public:
-	class UTransformableHandle*                   ParentTRSHandle;                                   // 0x0090(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTransformableHandle*                   ChildTRSHandle;                                    // 0x0098(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTransformableHandle*                   ParentTRSHandle;                                   // 0x0090(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UTransformableHandle*                   ChildTRSHandle;                                    // 0x0098(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
 	bool                                          bMaintainOffset;                                   // 0x00A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_A1[0x3];                                       // 0x00A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Weight;                                            // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -208,21 +217,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TickableTransformConstraint">();
+		STATIC_CLASS_IMPL("TickableTransformConstraint")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TickableTransformConstraint")
 	}
 	static class UTickableTransformConstraint* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTickableTransformConstraint>();
 	}
 };
-static_assert(alignof(UTickableTransformConstraint) == 0x000008, "Wrong alignment on UTickableTransformConstraint");
-static_assert(sizeof(UTickableTransformConstraint) == 0x0000B0, "Wrong size on UTickableTransformConstraint");
-static_assert(offsetof(UTickableTransformConstraint, ParentTRSHandle) == 0x000090, "Member 'UTickableTransformConstraint::ParentTRSHandle' has a wrong offset!");
-static_assert(offsetof(UTickableTransformConstraint, ChildTRSHandle) == 0x000098, "Member 'UTickableTransformConstraint::ChildTRSHandle' has a wrong offset!");
-static_assert(offsetof(UTickableTransformConstraint, bMaintainOffset) == 0x0000A0, "Member 'UTickableTransformConstraint::bMaintainOffset' has a wrong offset!");
-static_assert(offsetof(UTickableTransformConstraint, Weight) == 0x0000A4, "Member 'UTickableTransformConstraint::Weight' has a wrong offset!");
-static_assert(offsetof(UTickableTransformConstraint, bDynamicOffset) == 0x0000A8, "Member 'UTickableTransformConstraint::bDynamicOffset' has a wrong offset!");
-static_assert(offsetof(UTickableTransformConstraint, Type) == 0x0000A9, "Member 'UTickableTransformConstraint::Type' has a wrong offset!");
+DUMPER7_ASSERTS_UTickableTransformConstraint;
 
 // Class Constraints.TickableTranslationConstraint
 // 0x0028 (0x00D8 - 0x00B0)
@@ -237,17 +243,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TickableTranslationConstraint">();
+		STATIC_CLASS_IMPL("TickableTranslationConstraint")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TickableTranslationConstraint")
 	}
 	static class UTickableTranslationConstraint* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTickableTranslationConstraint>();
 	}
 };
-static_assert(alignof(UTickableTranslationConstraint) == 0x000008, "Wrong alignment on UTickableTranslationConstraint");
-static_assert(sizeof(UTickableTranslationConstraint) == 0x0000D8, "Wrong size on UTickableTranslationConstraint");
-static_assert(offsetof(UTickableTranslationConstraint, OffsetTranslation) == 0x0000B8, "Member 'UTickableTranslationConstraint::OffsetTranslation' has a wrong offset!");
-static_assert(offsetof(UTickableTranslationConstraint, AxisFilter) == 0x0000D0, "Member 'UTickableTranslationConstraint::AxisFilter' has a wrong offset!");
+DUMPER7_ASSERTS_UTickableTranslationConstraint;
 
 // Class Constraints.TickableRotationConstraint
 // 0x0040 (0x00F0 - 0x00B0)
@@ -262,17 +269,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TickableRotationConstraint">();
+		STATIC_CLASS_IMPL("TickableRotationConstraint")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TickableRotationConstraint")
 	}
 	static class UTickableRotationConstraint* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTickableRotationConstraint>();
 	}
 };
-static_assert(alignof(UTickableRotationConstraint) == 0x000010, "Wrong alignment on UTickableRotationConstraint");
-static_assert(sizeof(UTickableRotationConstraint) == 0x0000F0, "Wrong size on UTickableRotationConstraint");
-static_assert(offsetof(UTickableRotationConstraint, OffsetRotation) == 0x0000C0, "Member 'UTickableRotationConstraint::OffsetRotation' has a wrong offset!");
-static_assert(offsetof(UTickableRotationConstraint, AxisFilter) == 0x0000E0, "Member 'UTickableRotationConstraint::AxisFilter' has a wrong offset!");
+DUMPER7_ASSERTS_UTickableRotationConstraint;
 
 // Class Constraints.TickableScaleConstraint
 // 0x0028 (0x00D8 - 0x00B0)
@@ -287,17 +295,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TickableScaleConstraint">();
+		STATIC_CLASS_IMPL("TickableScaleConstraint")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TickableScaleConstraint")
 	}
 	static class UTickableScaleConstraint* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTickableScaleConstraint>();
 	}
 };
-static_assert(alignof(UTickableScaleConstraint) == 0x000008, "Wrong alignment on UTickableScaleConstraint");
-static_assert(sizeof(UTickableScaleConstraint) == 0x0000D8, "Wrong size on UTickableScaleConstraint");
-static_assert(offsetof(UTickableScaleConstraint, OffsetScale) == 0x0000B8, "Member 'UTickableScaleConstraint::OffsetScale' has a wrong offset!");
-static_assert(offsetof(UTickableScaleConstraint, AxisFilter) == 0x0000D0, "Member 'UTickableScaleConstraint::AxisFilter' has a wrong offset!");
+DUMPER7_ASSERTS_UTickableScaleConstraint;
 
 // Class Constraints.TickableParentConstraint
 // 0x0080 (0x0130 - 0x00B0)
@@ -313,18 +322,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TickableParentConstraint">();
+		STATIC_CLASS_IMPL("TickableParentConstraint")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TickableParentConstraint")
 	}
 	static class UTickableParentConstraint* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTickableParentConstraint>();
 	}
 };
-static_assert(alignof(UTickableParentConstraint) == 0x000010, "Wrong alignment on UTickableParentConstraint");
-static_assert(sizeof(UTickableParentConstraint) == 0x000130, "Wrong size on UTickableParentConstraint");
-static_assert(offsetof(UTickableParentConstraint, OffsetTransform) == 0x0000C0, "Member 'UTickableParentConstraint::OffsetTransform' has a wrong offset!");
-static_assert(offsetof(UTickableParentConstraint, bScaling) == 0x000120, "Member 'UTickableParentConstraint::bScaling' has a wrong offset!");
-static_assert(offsetof(UTickableParentConstraint, TransformFilter) == 0x000121, "Member 'UTickableParentConstraint::TransformFilter' has a wrong offset!");
+DUMPER7_ASSERTS_UTickableParentConstraint;
 
 // Class Constraints.TickableLookAtConstraint
 // 0x0018 (0x00C8 - 0x00B0)
@@ -336,16 +345,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TickableLookAtConstraint">();
+		STATIC_CLASS_IMPL("TickableLookAtConstraint")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TickableLookAtConstraint")
 	}
 	static class UTickableLookAtConstraint* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTickableLookAtConstraint>();
 	}
 };
-static_assert(alignof(UTickableLookAtConstraint) == 0x000008, "Wrong alignment on UTickableLookAtConstraint");
-static_assert(sizeof(UTickableLookAtConstraint) == 0x0000C8, "Wrong size on UTickableLookAtConstraint");
-static_assert(offsetof(UTickableLookAtConstraint, Axis) == 0x0000B0, "Member 'UTickableLookAtConstraint::Axis' has a wrong offset!");
+DUMPER7_ASSERTS_UTickableLookAtConstraint;
 
 }
 

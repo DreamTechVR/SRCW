@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DataflowBlueprintLibrary">();
+		STATIC_CLASS_IMPL("DataflowBlueprintLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DataflowBlueprintLibrary")
 	}
 	static class UDataflowBlueprintLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDataflowBlueprintLibrary>();
 	}
 };
-static_assert(alignof(UDataflowBlueprintLibrary) == 0x000008, "Wrong alignment on UDataflowBlueprintLibrary");
-static_assert(sizeof(UDataflowBlueprintLibrary) == 0x000028, "Wrong size on UDataflowBlueprintLibrary");
+DUMPER7_ASSERTS_UDataflowBlueprintLibrary;
 
 // Class DataflowEngine.DataflowContextObject
 // 0x0020 (0x0048 - 0x0028)
@@ -47,65 +50,69 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DataflowContextObject">();
+		STATIC_CLASS_IMPL("DataflowContextObject")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DataflowContextObject")
 	}
 	static class UDataflowContextObject* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDataflowContextObject>();
 	}
 };
-static_assert(alignof(UDataflowContextObject) == 0x000008, "Wrong alignment on UDataflowContextObject");
-static_assert(sizeof(UDataflowContextObject) == 0x000048, "Wrong size on UDataflowContextObject");
+DUMPER7_ASSERTS_UDataflowContextObject;
 
 // Class DataflowEngine.DataflowBaseContent
 // 0x0038 (0x0080 - 0x0048)
 class UDataflowBaseContent : public UDataflowContextObject
 {
 public:
-	class UDataflow*                              DataflowAsset;                                     // 0x0048(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UDataflow*                              DataflowAsset;                                     // 0x0048(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
 	class FString                                 DataflowTerminal;                                  // 0x0050(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_60[0x20];                                      // 0x0060(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DataflowBaseContent">();
+		STATIC_CLASS_IMPL("DataflowBaseContent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DataflowBaseContent")
 	}
 	static class UDataflowBaseContent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDataflowBaseContent>();
 	}
 };
-static_assert(alignof(UDataflowBaseContent) == 0x000008, "Wrong alignment on UDataflowBaseContent");
-static_assert(sizeof(UDataflowBaseContent) == 0x000080, "Wrong size on UDataflowBaseContent");
-static_assert(offsetof(UDataflowBaseContent, DataflowAsset) == 0x000048, "Member 'UDataflowBaseContent::DataflowAsset' has a wrong offset!");
-static_assert(offsetof(UDataflowBaseContent, DataflowTerminal) == 0x000050, "Member 'UDataflowBaseContent::DataflowTerminal' has a wrong offset!");
+DUMPER7_ASSERTS_UDataflowBaseContent;
 
 // Class DataflowEngine.DataflowSkeletalContent
 // 0x0028 (0x00A8 - 0x0080)
 class UDataflowSkeletalContent final : public UDataflowBaseContent
 {
 public:
-	class USkeletalMesh*                          SkeletalMesh;                                      // 0x0080(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAnimationAsset*                        AnimationAsset;                                    // 0x0088(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class USkeleton*                              Skeleton;                                          // 0x0090(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USkeletalMesh*                          SkeletalMesh;                                      // 0x0080(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UAnimationAsset*                        AnimationAsset;                                    // 0x0088(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class USkeleton*                              Skeleton;                                          // 0x0090(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
 	uint8                                         Pad_98[0x10];                                      // 0x0098(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DataflowSkeletalContent">();
+		STATIC_CLASS_IMPL("DataflowSkeletalContent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DataflowSkeletalContent")
 	}
 	static class UDataflowSkeletalContent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDataflowSkeletalContent>();
 	}
 };
-static_assert(alignof(UDataflowSkeletalContent) == 0x000008, "Wrong alignment on UDataflowSkeletalContent");
-static_assert(sizeof(UDataflowSkeletalContent) == 0x0000A8, "Wrong size on UDataflowSkeletalContent");
-static_assert(offsetof(UDataflowSkeletalContent, SkeletalMesh) == 0x000080, "Member 'UDataflowSkeletalContent::SkeletalMesh' has a wrong offset!");
-static_assert(offsetof(UDataflowSkeletalContent, AnimationAsset) == 0x000088, "Member 'UDataflowSkeletalContent::AnimationAsset' has a wrong offset!");
-static_assert(offsetof(UDataflowSkeletalContent, Skeleton) == 0x000090, "Member 'UDataflowSkeletalContent::Skeleton' has a wrong offset!");
+DUMPER7_ASSERTS_UDataflowSkeletalContent;
 
 // Class DataflowEngine.DataflowEdNode
 // 0x0028 (0x00C0 - 0x0098)
@@ -119,16 +126,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DataflowEdNode">();
+		STATIC_CLASS_IMPL("DataflowEdNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DataflowEdNode")
 	}
 	static class UDataflowEdNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDataflowEdNode>();
 	}
 };
-static_assert(alignof(UDataflowEdNode) == 0x000008, "Wrong alignment on UDataflowEdNode");
-static_assert(sizeof(UDataflowEdNode) == 0x0000C0, "Wrong size on UDataflowEdNode");
-static_assert(offsetof(UDataflowEdNode, bRenderInAssetEditor) == 0x0000B8, "Member 'UDataflowEdNode::bRenderInAssetEditor' has a wrong offset!");
+DUMPER7_ASSERTS_UDataflowEdNode;
 
 // Class DataflowEngine.Dataflow
 // 0x0048 (0x00A8 - 0x0060)
@@ -138,24 +147,24 @@ public:
 	uint8                                         Pad_60[0x28];                                      // 0x0060(0x0028)(Fixing Size After Last Property [ Dumper-7 ])
 	bool                                          bActive;                                           // 0x0088(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UObject*>                        Targets;                                           // 0x0090(0x0010)(Edit, ZeroConstructor, AdvancedDisplay, UObjectWrapper, NativeAccessSpecifierPublic)
-	class UMaterial*                              Material;                                          // 0x00A0(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class UObject*>                        Targets;                                           // 0x0090(0x0010)(Edit, ZeroConstructor, AdvancedDisplay, UObjectWrapper, NativeAccessSpecifierPublic, TObjectPtr)
+	class UMaterial*                              Material;                                          // 0x00A0(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Dataflow">();
+		STATIC_CLASS_IMPL("Dataflow")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Dataflow")
 	}
 	static class UDataflow* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDataflow>();
 	}
 };
-static_assert(alignof(UDataflow) == 0x000008, "Wrong alignment on UDataflow");
-static_assert(sizeof(UDataflow) == 0x0000A8, "Wrong size on UDataflow");
-static_assert(offsetof(UDataflow, bActive) == 0x000088, "Member 'UDataflow::bActive' has a wrong offset!");
-static_assert(offsetof(UDataflow, Targets) == 0x000090, "Member 'UDataflow::Targets' has a wrong offset!");
-static_assert(offsetof(UDataflow, Material) == 0x0000A0, "Member 'UDataflow::Material' has a wrong offset!");
+DUMPER7_ASSERTS_UDataflow;
 
 }
 

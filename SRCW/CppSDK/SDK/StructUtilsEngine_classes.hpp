@@ -34,15 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"StructUtilsFunctionLibrary">();
+		STATIC_CLASS_IMPL("StructUtilsFunctionLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"StructUtilsFunctionLibrary")
 	}
 	static class UStructUtilsFunctionLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UStructUtilsFunctionLibrary>();
 	}
 };
-static_assert(alignof(UStructUtilsFunctionLibrary) == 0x000008, "Wrong alignment on UStructUtilsFunctionLibrary");
-static_assert(sizeof(UStructUtilsFunctionLibrary) == 0x000028, "Wrong size on UStructUtilsFunctionLibrary");
+DUMPER7_ASSERTS_UStructUtilsFunctionLibrary;
 
 }
 

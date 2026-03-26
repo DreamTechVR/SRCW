@@ -33,17 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OculusCreateSessionCallbackProxy">();
+		STATIC_CLASS_IMPL("OculusCreateSessionCallbackProxy")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OculusCreateSessionCallbackProxy")
 	}
 	static class UOculusCreateSessionCallbackProxy* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOculusCreateSessionCallbackProxy>();
 	}
 };
-static_assert(alignof(UOculusCreateSessionCallbackProxy) == 0x000008, "Wrong alignment on UOculusCreateSessionCallbackProxy");
-static_assert(sizeof(UOculusCreateSessionCallbackProxy) == 0x000098, "Wrong size on UOculusCreateSessionCallbackProxy");
-static_assert(offsetof(UOculusCreateSessionCallbackProxy, OnSuccess) == 0x000030, "Member 'UOculusCreateSessionCallbackProxy::OnSuccess' has a wrong offset!");
-static_assert(offsetof(UOculusCreateSessionCallbackProxy, OnFailure) == 0x000040, "Member 'UOculusCreateSessionCallbackProxy::OnFailure' has a wrong offset!");
+DUMPER7_ASSERTS_UOculusCreateSessionCallbackProxy;
 
 // Class OnlineSubsystemOculus.OculusEntitlementCallbackProxy
 // 0x0020 (0x0050 - 0x0030)
@@ -59,17 +60,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OculusEntitlementCallbackProxy">();
+		STATIC_CLASS_IMPL("OculusEntitlementCallbackProxy")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OculusEntitlementCallbackProxy")
 	}
 	static class UOculusEntitlementCallbackProxy* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOculusEntitlementCallbackProxy>();
 	}
 };
-static_assert(alignof(UOculusEntitlementCallbackProxy) == 0x000008, "Wrong alignment on UOculusEntitlementCallbackProxy");
-static_assert(sizeof(UOculusEntitlementCallbackProxy) == 0x000050, "Wrong size on UOculusEntitlementCallbackProxy");
-static_assert(offsetof(UOculusEntitlementCallbackProxy, OnSuccess) == 0x000030, "Member 'UOculusEntitlementCallbackProxy::OnSuccess' has a wrong offset!");
-static_assert(offsetof(UOculusEntitlementCallbackProxy, OnFailure) == 0x000040, "Member 'UOculusEntitlementCallbackProxy::OnFailure' has a wrong offset!");
+DUMPER7_ASSERTS_UOculusEntitlementCallbackProxy;
 
 // Class OnlineSubsystemOculus.OculusFindSessionsCallbackProxy
 // 0x0068 (0x0098 - 0x0030)
@@ -87,17 +89,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OculusFindSessionsCallbackProxy">();
+		STATIC_CLASS_IMPL("OculusFindSessionsCallbackProxy")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OculusFindSessionsCallbackProxy")
 	}
 	static class UOculusFindSessionsCallbackProxy* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOculusFindSessionsCallbackProxy>();
 	}
 };
-static_assert(alignof(UOculusFindSessionsCallbackProxy) == 0x000008, "Wrong alignment on UOculusFindSessionsCallbackProxy");
-static_assert(sizeof(UOculusFindSessionsCallbackProxy) == 0x000098, "Wrong size on UOculusFindSessionsCallbackProxy");
-static_assert(offsetof(UOculusFindSessionsCallbackProxy, OnSuccess) == 0x000030, "Member 'UOculusFindSessionsCallbackProxy::OnSuccess' has a wrong offset!");
-static_assert(offsetof(UOculusFindSessionsCallbackProxy, OnFailure) == 0x000040, "Member 'UOculusFindSessionsCallbackProxy::OnFailure' has a wrong offset!");
+DUMPER7_ASSERTS_UOculusFindSessionsCallbackProxy;
 
 // Class OnlineSubsystemOculus.OculusIdentityCallbackProxy
 // 0x0030 (0x0060 - 0x0030)
@@ -114,17 +117,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OculusIdentityCallbackProxy">();
+		STATIC_CLASS_IMPL("OculusIdentityCallbackProxy")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OculusIdentityCallbackProxy")
 	}
 	static class UOculusIdentityCallbackProxy* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOculusIdentityCallbackProxy>();
 	}
 };
-static_assert(alignof(UOculusIdentityCallbackProxy) == 0x000008, "Wrong alignment on UOculusIdentityCallbackProxy");
-static_assert(sizeof(UOculusIdentityCallbackProxy) == 0x000060, "Wrong size on UOculusIdentityCallbackProxy");
-static_assert(offsetof(UOculusIdentityCallbackProxy, OnSuccess) == 0x000030, "Member 'UOculusIdentityCallbackProxy::OnSuccess' has a wrong offset!");
-static_assert(offsetof(UOculusIdentityCallbackProxy, OnFailure) == 0x000040, "Member 'UOculusIdentityCallbackProxy::OnFailure' has a wrong offset!");
+DUMPER7_ASSERTS_UOculusIdentityCallbackProxy;
 
 // Class OnlineSubsystemOculus.OculusNetConnection
 // 0x0010 (0x1EA0 - 0x1E90)
@@ -136,15 +140,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OculusNetConnection">();
+		STATIC_CLASS_IMPL("OculusNetConnection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OculusNetConnection")
 	}
 	static class UOculusNetConnection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOculusNetConnection>();
 	}
 };
-static_assert(alignof(UOculusNetConnection) == 0x000008, "Wrong alignment on UOculusNetConnection");
-static_assert(sizeof(UOculusNetConnection) == 0x001EA0, "Wrong size on UOculusNetConnection");
+DUMPER7_ASSERTS_UOculusNetConnection;
 
 // Class OnlineSubsystemOculus.OculusNetDriver
 // 0x00B8 (0x0A30 - 0x0978)
@@ -156,15 +163,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OculusNetDriver">();
+		STATIC_CLASS_IMPL("OculusNetDriver")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OculusNetDriver")
 	}
 	static class UOculusNetDriver* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOculusNetDriver>();
 	}
 };
-static_assert(alignof(UOculusNetDriver) == 0x000008, "Wrong alignment on UOculusNetDriver");
-static_assert(sizeof(UOculusNetDriver) == 0x000A30, "Wrong size on UOculusNetDriver");
+DUMPER7_ASSERTS_UOculusNetDriver;
 
 // Class OnlineSubsystemOculus.OculusUpdateSessionCallbackProxy
 // 0x0040 (0x0070 - 0x0030)
@@ -181,17 +191,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OculusUpdateSessionCallbackProxy">();
+		STATIC_CLASS_IMPL("OculusUpdateSessionCallbackProxy")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OculusUpdateSessionCallbackProxy")
 	}
 	static class UOculusUpdateSessionCallbackProxy* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOculusUpdateSessionCallbackProxy>();
 	}
 };
-static_assert(alignof(UOculusUpdateSessionCallbackProxy) == 0x000008, "Wrong alignment on UOculusUpdateSessionCallbackProxy");
-static_assert(sizeof(UOculusUpdateSessionCallbackProxy) == 0x000070, "Wrong size on UOculusUpdateSessionCallbackProxy");
-static_assert(offsetof(UOculusUpdateSessionCallbackProxy, OnSuccess) == 0x000030, "Member 'UOculusUpdateSessionCallbackProxy::OnSuccess' has a wrong offset!");
-static_assert(offsetof(UOculusUpdateSessionCallbackProxy, OnFailure) == 0x000040, "Member 'UOculusUpdateSessionCallbackProxy::OnFailure' has a wrong offset!");
+DUMPER7_ASSERTS_UOculusUpdateSessionCallbackProxy;
 
 }
 

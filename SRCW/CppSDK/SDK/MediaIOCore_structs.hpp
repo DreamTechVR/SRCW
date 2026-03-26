@@ -208,6 +208,29 @@ enum class EMediaCaptureSourceType : uint8
 	EMediaCaptureSourceType_MAX              = 3,
 };
 
+// ScriptStruct MediaIOCore.MediaIODevice
+// 0x000C (0x000C - 0x0000)
+struct FMediaIODevice final
+{
+public:
+	class FName                                   DeviceName;                                        // 0x0000(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         DeviceIdentifier;                                  // 0x0008(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FMediaIODevice;
+
+// ScriptStruct MediaIOCore.MediaIOConnection
+// 0x0020 (0x0020 - 0x0000)
+struct FMediaIOConnection final
+{
+public:
+	struct FMediaIODevice                         Device;                                            // 0x0000(0x000C)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	class FName                                   protocol;                                          // 0x000C(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EMediaIOTransportType                         TransportType;                                     // 0x0014(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EMediaIOQuadLinkTransportType                 QuadTransportType;                                 // 0x0018(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         PortIdentifier;                                    // 0x001C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FMediaIOConnection;
+
 // ScriptStruct MediaIOCore.MediaCaptureOptions
 // 0x00B8 (0x00B8 - 0x0000)
 struct FMediaCaptureOptions final
@@ -230,21 +253,7 @@ public:
 	EMediaCapturePhase                            CapturePhase;                                      // 0x00B4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_B5[0x3];                                       // 0x00B5(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMediaCaptureOptions) == 0x000008, "Wrong alignment on FMediaCaptureOptions");
-static_assert(sizeof(FMediaCaptureOptions) == 0x0000B8, "Wrong size on FMediaCaptureOptions");
-static_assert(offsetof(FMediaCaptureOptions, bAutoRestartOnSourceSizeChange) == 0x000000, "Member 'FMediaCaptureOptions::bAutoRestartOnSourceSizeChange' has a wrong offset!");
-static_assert(offsetof(FMediaCaptureOptions, OverrunAction) == 0x000001, "Member 'FMediaCaptureOptions::OverrunAction' has a wrong offset!");
-static_assert(offsetof(FMediaCaptureOptions, Crop) == 0x000002, "Member 'FMediaCaptureOptions::Crop' has a wrong offset!");
-static_assert(offsetof(FMediaCaptureOptions, ColorConversionSettings) == 0x000008, "Member 'FMediaCaptureOptions::ColorConversionSettings' has a wrong offset!");
-static_assert(offsetof(FMediaCaptureOptions, CustomCapturePoint) == 0x0000A0, "Member 'FMediaCaptureOptions::CustomCapturePoint' has a wrong offset!");
-static_assert(offsetof(FMediaCaptureOptions, ResizeMethod) == 0x0000A8, "Member 'FMediaCaptureOptions::ResizeMethod' has a wrong offset!");
-static_assert(offsetof(FMediaCaptureOptions, bSkipFrameWhenRunningExpensiveTasks) == 0x0000A9, "Member 'FMediaCaptureOptions::bSkipFrameWhenRunningExpensiveTasks' has a wrong offset!");
-static_assert(offsetof(FMediaCaptureOptions, bConvertToDesiredPixelFormat) == 0x0000AA, "Member 'FMediaCaptureOptions::bConvertToDesiredPixelFormat' has a wrong offset!");
-static_assert(offsetof(FMediaCaptureOptions, bForceAlphaToOneOnConversion) == 0x0000AB, "Member 'FMediaCaptureOptions::bForceAlphaToOneOnConversion' has a wrong offset!");
-static_assert(offsetof(FMediaCaptureOptions, bApplyLinearToSRGBConversion) == 0x0000AC, "Member 'FMediaCaptureOptions::bApplyLinearToSRGBConversion' has a wrong offset!");
-static_assert(offsetof(FMediaCaptureOptions, bAutostopOnCapture) == 0x0000AD, "Member 'FMediaCaptureOptions::bAutostopOnCapture' has a wrong offset!");
-static_assert(offsetof(FMediaCaptureOptions, NumberOfFramesToCapture) == 0x0000B0, "Member 'FMediaCaptureOptions::NumberOfFramesToCapture' has a wrong offset!");
-static_assert(offsetof(FMediaCaptureOptions, CapturePhase) == 0x0000B4, "Member 'FMediaCaptureOptions::CapturePhase' has a wrong offset!");
+DUMPER7_ASSERTS_FMediaCaptureOptions;
 
 // ScriptStruct MediaIOCore.MediaIOAutoDetectableTimecodeFormat_Backup
 // 0x0008 (0x0008 - 0x0000)
@@ -255,42 +264,7 @@ public:
 	bool                                          bAutoDetect;                                       // 0x0004(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMediaIOAutoDetectableTimecodeFormat_Backup) == 0x000004, "Wrong alignment on FMediaIOAutoDetectableTimecodeFormat_Backup");
-static_assert(sizeof(FMediaIOAutoDetectableTimecodeFormat_Backup) == 0x000008, "Wrong size on FMediaIOAutoDetectableTimecodeFormat_Backup");
-static_assert(offsetof(FMediaIOAutoDetectableTimecodeFormat_Backup, TimecodeFormat) == 0x000000, "Member 'FMediaIOAutoDetectableTimecodeFormat_Backup::TimecodeFormat' has a wrong offset!");
-static_assert(offsetof(FMediaIOAutoDetectableTimecodeFormat_Backup, bAutoDetect) == 0x000004, "Member 'FMediaIOAutoDetectableTimecodeFormat_Backup::bAutoDetect' has a wrong offset!");
-
-// ScriptStruct MediaIOCore.MediaIODevice
-// 0x000C (0x000C - 0x0000)
-struct FMediaIODevice final
-{
-public:
-	class FName                                   DeviceName;                                        // 0x0000(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         DeviceIdentifier;                                  // 0x0008(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FMediaIODevice) == 0x000004, "Wrong alignment on FMediaIODevice");
-static_assert(sizeof(FMediaIODevice) == 0x00000C, "Wrong size on FMediaIODevice");
-static_assert(offsetof(FMediaIODevice, DeviceName) == 0x000000, "Member 'FMediaIODevice::DeviceName' has a wrong offset!");
-static_assert(offsetof(FMediaIODevice, DeviceIdentifier) == 0x000008, "Member 'FMediaIODevice::DeviceIdentifier' has a wrong offset!");
-
-// ScriptStruct MediaIOCore.MediaIOConnection
-// 0x0020 (0x0020 - 0x0000)
-struct FMediaIOConnection final
-{
-public:
-	struct FMediaIODevice                         Device;                                            // 0x0000(0x000C)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	class FName                                   protocol;                                          // 0x000C(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EMediaIOTransportType                         TransportType;                                     // 0x0014(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EMediaIOQuadLinkTransportType                 QuadTransportType;                                 // 0x0018(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         PortIdentifier;                                    // 0x001C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FMediaIOConnection) == 0x000004, "Wrong alignment on FMediaIOConnection");
-static_assert(sizeof(FMediaIOConnection) == 0x000020, "Wrong size on FMediaIOConnection");
-static_assert(offsetof(FMediaIOConnection, Device) == 0x000000, "Member 'FMediaIOConnection::Device' has a wrong offset!");
-static_assert(offsetof(FMediaIOConnection, protocol) == 0x00000C, "Member 'FMediaIOConnection::protocol' has a wrong offset!");
-static_assert(offsetof(FMediaIOConnection, TransportType) == 0x000014, "Member 'FMediaIOConnection::TransportType' has a wrong offset!");
-static_assert(offsetof(FMediaIOConnection, QuadTransportType) == 0x000018, "Member 'FMediaIOConnection::QuadTransportType' has a wrong offset!");
-static_assert(offsetof(FMediaIOConnection, PortIdentifier) == 0x00001C, "Member 'FMediaIOConnection::PortIdentifier' has a wrong offset!");
+DUMPER7_ASSERTS_FMediaIOAutoDetectableTimecodeFormat_Backup;
 
 // ScriptStruct MediaIOCore.MediaIOMode
 // 0x0018 (0x0018 - 0x0000)
@@ -302,12 +276,7 @@ public:
 	EMediaIOStandardType                          Standard;                                          // 0x0010(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         DeviceModeIdentifier;                              // 0x0014(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMediaIOMode) == 0x000004, "Wrong alignment on FMediaIOMode");
-static_assert(sizeof(FMediaIOMode) == 0x000018, "Wrong size on FMediaIOMode");
-static_assert(offsetof(FMediaIOMode, FrameRate) == 0x000000, "Member 'FMediaIOMode::FrameRate' has a wrong offset!");
-static_assert(offsetof(FMediaIOMode, Resolution) == 0x000008, "Member 'FMediaIOMode::Resolution' has a wrong offset!");
-static_assert(offsetof(FMediaIOMode, Standard) == 0x000010, "Member 'FMediaIOMode::Standard' has a wrong offset!");
-static_assert(offsetof(FMediaIOMode, DeviceModeIdentifier) == 0x000014, "Member 'FMediaIOMode::DeviceModeIdentifier' has a wrong offset!");
+DUMPER7_ASSERTS_FMediaIOMode;
 
 // ScriptStruct MediaIOCore.MediaIOConfiguration
 // 0x003C (0x003C - 0x0000)
@@ -319,11 +288,7 @@ public:
 	struct FMediaIOConnection                     MediaConnection;                                   // 0x0004(0x0020)(Edit, EditConst, NoDestructor, NativeAccessSpecifierPublic)
 	struct FMediaIOMode                           MediaMode;                                         // 0x0024(0x0018)(Edit, EditConst, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMediaIOConfiguration) == 0x000004, "Wrong alignment on FMediaIOConfiguration");
-static_assert(sizeof(FMediaIOConfiguration) == 0x00003C, "Wrong size on FMediaIOConfiguration");
-static_assert(offsetof(FMediaIOConfiguration, bIsInput) == 0x000000, "Member 'FMediaIOConfiguration::bIsInput' has a wrong offset!");
-static_assert(offsetof(FMediaIOConfiguration, MediaConnection) == 0x000004, "Member 'FMediaIOConfiguration::MediaConnection' has a wrong offset!");
-static_assert(offsetof(FMediaIOConfiguration, MediaMode) == 0x000024, "Member 'FMediaIOConfiguration::MediaMode' has a wrong offset!");
+DUMPER7_ASSERTS_FMediaIOConfiguration;
 
 // ScriptStruct MediaIOCore.MediaIOInputConfiguration
 // 0x0044 (0x0044 - 0x0000)
@@ -334,11 +299,7 @@ public:
 	EMediaIOInputType                             InputType;                                         // 0x003C(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         KeyPortIdentifier;                                 // 0x0040(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMediaIOInputConfiguration) == 0x000004, "Wrong alignment on FMediaIOInputConfiguration");
-static_assert(sizeof(FMediaIOInputConfiguration) == 0x000044, "Wrong size on FMediaIOInputConfiguration");
-static_assert(offsetof(FMediaIOInputConfiguration, MediaConfiguration) == 0x000000, "Member 'FMediaIOInputConfiguration::MediaConfiguration' has a wrong offset!");
-static_assert(offsetof(FMediaIOInputConfiguration, InputType) == 0x00003C, "Member 'FMediaIOInputConfiguration::InputType' has a wrong offset!");
-static_assert(offsetof(FMediaIOInputConfiguration, KeyPortIdentifier) == 0x000040, "Member 'FMediaIOInputConfiguration::KeyPortIdentifier' has a wrong offset!");
+DUMPER7_ASSERTS_FMediaIOInputConfiguration;
 
 // ScriptStruct MediaIOCore.MediaIOOutputConfiguration
 // 0x004C (0x004C - 0x0000)
@@ -351,13 +312,7 @@ public:
 	EMediaIOReferenceType                         OutputReference;                                   // 0x0044(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ReferencePortIdentifier;                           // 0x0048(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMediaIOOutputConfiguration) == 0x000004, "Wrong alignment on FMediaIOOutputConfiguration");
-static_assert(sizeof(FMediaIOOutputConfiguration) == 0x00004C, "Wrong size on FMediaIOOutputConfiguration");
-static_assert(offsetof(FMediaIOOutputConfiguration, MediaConfiguration) == 0x000000, "Member 'FMediaIOOutputConfiguration::MediaConfiguration' has a wrong offset!");
-static_assert(offsetof(FMediaIOOutputConfiguration, OutputType) == 0x00003C, "Member 'FMediaIOOutputConfiguration::OutputType' has a wrong offset!");
-static_assert(offsetof(FMediaIOOutputConfiguration, KeyPortIdentifier) == 0x000040, "Member 'FMediaIOOutputConfiguration::KeyPortIdentifier' has a wrong offset!");
-static_assert(offsetof(FMediaIOOutputConfiguration, OutputReference) == 0x000044, "Member 'FMediaIOOutputConfiguration::OutputReference' has a wrong offset!");
-static_assert(offsetof(FMediaIOOutputConfiguration, ReferencePortIdentifier) == 0x000048, "Member 'FMediaIOOutputConfiguration::ReferencePortIdentifier' has a wrong offset!");
+DUMPER7_ASSERTS_FMediaIOOutputConfiguration;
 
 // ScriptStruct MediaIOCore.MediaIOVideoTimecodeConfiguration
 // 0x0040 (0x0040 - 0x0000)
@@ -368,10 +323,7 @@ public:
 	EMediaIOAutoDetectableTimecodeFormat          TimecodeFormat;                                    // 0x003C(0x0001)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_3D[0x3];                                       // 0x003D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMediaIOVideoTimecodeConfiguration) == 0x000004, "Wrong alignment on FMediaIOVideoTimecodeConfiguration");
-static_assert(sizeof(FMediaIOVideoTimecodeConfiguration) == 0x000040, "Wrong size on FMediaIOVideoTimecodeConfiguration");
-static_assert(offsetof(FMediaIOVideoTimecodeConfiguration, MediaConfiguration) == 0x000000, "Member 'FMediaIOVideoTimecodeConfiguration::MediaConfiguration' has a wrong offset!");
-static_assert(offsetof(FMediaIOVideoTimecodeConfiguration, TimecodeFormat) == 0x00003C, "Member 'FMediaIOVideoTimecodeConfiguration::TimecodeFormat' has a wrong offset!");
+DUMPER7_ASSERTS_FMediaIOVideoTimecodeConfiguration;
 
 }
 

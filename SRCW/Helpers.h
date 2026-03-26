@@ -1,5 +1,4 @@
 #pragma once
-
 #include <Windows.h>
 #include <basetsd.h>
 #include <minwindef.h>
@@ -19,4 +18,4 @@ std::uintptr_t GetAddressFromInstruction(std::uintptr_t address, int instruction
 const void* VTHook(const void** vtable, const int index, const void* hook);
 void* ShadowVT(void* instance);
 
-inline std::unordered_map <uint64_t, uint64_t> ShadowVTMap;
+inline std::unordered_map<uint64_t, uint64_t> ShadowVTMap;

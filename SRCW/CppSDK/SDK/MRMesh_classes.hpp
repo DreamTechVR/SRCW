@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "MRMesh_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "CoreUObject_classes.hpp"
-#include "MRMesh_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
 
@@ -36,7 +36,7 @@ public:
 	struct FLinearColor                           VertexColorFromConfidenceOne;                      // 0x0268(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         UpdateInterval;                                    // 0x0278(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_27C[0x4];                                      // 0x027C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMRMeshComponent*                       MRMesh;                                            // 0x0280(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMRMeshComponent*                       MRMesh;                                            // 0x0280(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
 	uint8                                         Pad_288[0x18];                                     // 0x0288(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -46,25 +46,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MockDataMeshTrackerComponent">();
+		STATIC_CLASS_IMPL("MockDataMeshTrackerComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MockDataMeshTrackerComponent")
 	}
 	static class UMockDataMeshTrackerComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMockDataMeshTrackerComponent>();
 	}
 };
-static_assert(alignof(UMockDataMeshTrackerComponent) == 0x000010, "Wrong alignment on UMockDataMeshTrackerComponent");
-static_assert(sizeof(UMockDataMeshTrackerComponent) == 0x0002A0, "Wrong size on UMockDataMeshTrackerComponent");
-static_assert(offsetof(UMockDataMeshTrackerComponent, OnMeshTrackerUpdated) == 0x000230, "Member 'UMockDataMeshTrackerComponent::OnMeshTrackerUpdated' has a wrong offset!");
-static_assert(offsetof(UMockDataMeshTrackerComponent, ScanWorld) == 0x000240, "Member 'UMockDataMeshTrackerComponent::ScanWorld' has a wrong offset!");
-static_assert(offsetof(UMockDataMeshTrackerComponent, RequestNormals) == 0x000241, "Member 'UMockDataMeshTrackerComponent::RequestNormals' has a wrong offset!");
-static_assert(offsetof(UMockDataMeshTrackerComponent, RequestVertexConfidence) == 0x000242, "Member 'UMockDataMeshTrackerComponent::RequestVertexConfidence' has a wrong offset!");
-static_assert(offsetof(UMockDataMeshTrackerComponent, VertexColorMode) == 0x000243, "Member 'UMockDataMeshTrackerComponent::VertexColorMode' has a wrong offset!");
-static_assert(offsetof(UMockDataMeshTrackerComponent, BlockVertexColors) == 0x000248, "Member 'UMockDataMeshTrackerComponent::BlockVertexColors' has a wrong offset!");
-static_assert(offsetof(UMockDataMeshTrackerComponent, VertexColorFromConfidenceZero) == 0x000258, "Member 'UMockDataMeshTrackerComponent::VertexColorFromConfidenceZero' has a wrong offset!");
-static_assert(offsetof(UMockDataMeshTrackerComponent, VertexColorFromConfidenceOne) == 0x000268, "Member 'UMockDataMeshTrackerComponent::VertexColorFromConfidenceOne' has a wrong offset!");
-static_assert(offsetof(UMockDataMeshTrackerComponent, UpdateInterval) == 0x000278, "Member 'UMockDataMeshTrackerComponent::UpdateInterval' has a wrong offset!");
-static_assert(offsetof(UMockDataMeshTrackerComponent, MRMesh) == 0x000280, "Member 'UMockDataMeshTrackerComponent::MRMesh' has a wrong offset!");
+DUMPER7_ASSERTS_UMockDataMeshTrackerComponent;
 
 // Class MRMesh.MRMeshBodyHolder
 // 0x0210 (0x0238 - 0x0028)
@@ -72,24 +65,25 @@ class UMRMeshBodyHolder final : public UObject
 {
 public:
 	uint8                                         Pad_28[0x8];                                       // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class UBodySetup*                             BodySetup;                                         // 0x0030(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UBodySetup*                             BodySetup;                                         // 0x0030(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
 	struct FBodyInstance                          BodyInstance;                                      // 0x0038(0x0198)(Transient, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1D0[0x68];                                     // 0x01D0(0x0068)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MRMeshBodyHolder">();
+		STATIC_CLASS_IMPL("MRMeshBodyHolder")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MRMeshBodyHolder")
 	}
 	static class UMRMeshBodyHolder* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMRMeshBodyHolder>();
 	}
 };
-static_assert(alignof(UMRMeshBodyHolder) == 0x000008, "Wrong alignment on UMRMeshBodyHolder");
-static_assert(sizeof(UMRMeshBodyHolder) == 0x000238, "Wrong size on UMRMeshBodyHolder");
-static_assert(offsetof(UMRMeshBodyHolder, BodySetup) == 0x000030, "Member 'UMRMeshBodyHolder::BodySetup' has a wrong offset!");
-static_assert(offsetof(UMRMeshBodyHolder, BodyInstance) == 0x000038, "Member 'UMRMeshBodyHolder::BodyInstance' has a wrong offset!");
+DUMPER7_ASSERTS_UMRMeshBodyHolder;
 
 // Class MRMesh.MRMeshComponent
 // 0x0080 (0x05A0 - 0x0520)
@@ -97,14 +91,14 @@ class UMRMeshComponent final : public UPrimitiveComponent
 {
 public:
 	uint8                                         Pad_518[0x8];                                      // 0x0518(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInterface*                     Material;                                          // 0x0520(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UMaterialInterface*                     WireframeMaterial;                                 // 0x0528(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UMaterialInterface*                     Material;                                          // 0x0520(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
+	class UMaterialInterface*                     WireframeMaterial;                                 // 0x0528(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
 	bool                                          bCreateMeshProxySections;                          // 0x0530(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	bool                                          bUpdateNavMeshOnMeshUpdate;                        // 0x0531(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_532[0x1];                                      // 0x0532(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	bool                                          bNeverCreateCollisionMesh;                         // 0x0533(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_534[0x44];                                     // 0x0534(0x0044)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UMRMeshBodyHolder*>              BodyHolders;                                       // 0x0578(0x0010)(ZeroConstructor, Transient, UObjectWrapper, NativeAccessSpecifierPrivate)
+	TArray<class UMRMeshBodyHolder*>              BodyHolders;                                       // 0x0578(0x0010)(ZeroConstructor, Transient, UObjectWrapper, NativeAccessSpecifierPrivate, TObjectPtr)
 	uint8                                         Pad_588[0x18];                                     // 0x0588(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -124,21 +118,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MRMeshComponent">();
+		STATIC_CLASS_IMPL("MRMeshComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MRMeshComponent")
 	}
 	static class UMRMeshComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMRMeshComponent>();
 	}
 };
-static_assert(alignof(UMRMeshComponent) == 0x000010, "Wrong alignment on UMRMeshComponent");
-static_assert(sizeof(UMRMeshComponent) == 0x0005A0, "Wrong size on UMRMeshComponent");
-static_assert(offsetof(UMRMeshComponent, Material) == 0x000520, "Member 'UMRMeshComponent::Material' has a wrong offset!");
-static_assert(offsetof(UMRMeshComponent, WireframeMaterial) == 0x000528, "Member 'UMRMeshComponent::WireframeMaterial' has a wrong offset!");
-static_assert(offsetof(UMRMeshComponent, bCreateMeshProxySections) == 0x000530, "Member 'UMRMeshComponent::bCreateMeshProxySections' has a wrong offset!");
-static_assert(offsetof(UMRMeshComponent, bUpdateNavMeshOnMeshUpdate) == 0x000531, "Member 'UMRMeshComponent::bUpdateNavMeshOnMeshUpdate' has a wrong offset!");
-static_assert(offsetof(UMRMeshComponent, bNeverCreateCollisionMesh) == 0x000533, "Member 'UMRMeshComponent::bNeverCreateCollisionMesh' has a wrong offset!");
-static_assert(offsetof(UMRMeshComponent, BodyHolders) == 0x000578, "Member 'UMRMeshComponent::BodyHolders' has a wrong offset!");
+DUMPER7_ASSERTS_UMRMeshComponent;
 
 // Class MRMesh.MeshReconstructorBase
 // 0x0000 (0x0028 - 0x0028)
@@ -157,15 +148,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MeshReconstructorBase">();
+		STATIC_CLASS_IMPL("MeshReconstructorBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MeshReconstructorBase")
 	}
 	static class UMeshReconstructorBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMeshReconstructorBase>();
 	}
 };
-static_assert(alignof(UMeshReconstructorBase) == 0x000008, "Wrong alignment on UMeshReconstructorBase");
-static_assert(sizeof(UMeshReconstructorBase) == 0x000028, "Wrong size on UMeshReconstructorBase");
+DUMPER7_ASSERTS_UMeshReconstructorBase;
 
 }
 

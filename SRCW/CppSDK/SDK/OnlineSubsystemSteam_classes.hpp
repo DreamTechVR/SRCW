@@ -24,15 +24,18 @@ class USteamAuthComponentModuleInterface final : public UHandlerComponentFactory
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamAuthComponentModuleInterface">();
+		STATIC_CLASS_IMPL("SteamAuthComponentModuleInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamAuthComponentModuleInterface")
 	}
 	static class USteamAuthComponentModuleInterface* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamAuthComponentModuleInterface>();
 	}
 };
-static_assert(alignof(USteamAuthComponentModuleInterface) == 0x000008, "Wrong alignment on USteamAuthComponentModuleInterface");
-static_assert(sizeof(USteamAuthComponentModuleInterface) == 0x000028, "Wrong size on USteamAuthComponentModuleInterface");
+DUMPER7_ASSERTS_USteamAuthComponentModuleInterface;
 
 // Class OnlineSubsystemSteam.SteamNetConnection
 // 0x0008 (0x1E98 - 0x1E90)
@@ -45,16 +48,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamNetConnection">();
+		STATIC_CLASS_IMPL("SteamNetConnection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamNetConnection")
 	}
 	static class USteamNetConnection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamNetConnection>();
 	}
 };
-static_assert(alignof(USteamNetConnection) == 0x000008, "Wrong alignment on USteamNetConnection");
-static_assert(sizeof(USteamNetConnection) == 0x001E98, "Wrong size on USteamNetConnection");
-static_assert(offsetof(USteamNetConnection, bIsPassthrough) == 0x001E90, "Member 'USteamNetConnection::bIsPassthrough' has a wrong offset!");
+DUMPER7_ASSERTS_USteamNetConnection;
 
 // Class OnlineSubsystemSteam.SteamNetDriver
 // 0x0008 (0x0980 - 0x0978)
@@ -66,15 +71,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamNetDriver">();
+		STATIC_CLASS_IMPL("SteamNetDriver")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamNetDriver")
 	}
 	static class USteamNetDriver* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamNetDriver>();
 	}
 };
-static_assert(alignof(USteamNetDriver) == 0x000008, "Wrong alignment on USteamNetDriver");
-static_assert(sizeof(USteamNetDriver) == 0x000980, "Wrong size on USteamNetDriver");
+DUMPER7_ASSERTS_USteamNetDriver;
 
 }
 

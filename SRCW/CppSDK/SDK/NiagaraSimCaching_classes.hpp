@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "MovieSceneTracks_classes.hpp"
-#include "NiagaraSimCaching_structs.hpp"
 #include "MovieScene_classes.hpp"
+#include "NiagaraSimCaching_structs.hpp"
+#include "MovieSceneTracks_classes.hpp"
 
 
 namespace SDK
@@ -30,17 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneNiagaraCacheSection">();
+		STATIC_CLASS_IMPL("MovieSceneNiagaraCacheSection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneNiagaraCacheSection")
 	}
 	static class UMovieSceneNiagaraCacheSection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneNiagaraCacheSection>();
 	}
 };
-static_assert(alignof(UMovieSceneNiagaraCacheSection) == 0x000008, "Wrong alignment on UMovieSceneNiagaraCacheSection");
-static_assert(sizeof(UMovieSceneNiagaraCacheSection) == 0x000188, "Wrong size on UMovieSceneNiagaraCacheSection");
-static_assert(offsetof(UMovieSceneNiagaraCacheSection, Params_0) == 0x0000F8, "Member 'UMovieSceneNiagaraCacheSection::Params_0' has a wrong offset!");
-static_assert(offsetof(UMovieSceneNiagaraCacheSection, bCacheOutOfDate) == 0x000180, "Member 'UMovieSceneNiagaraCacheSection::bCacheOutOfDate' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieSceneNiagaraCacheSection;
 
 // Class NiagaraSimCaching.MovieSceneNiagaraCacheTrack
 // 0x0030 (0x00C8 - 0x0098)
@@ -50,25 +51,25 @@ public:
 	uint8                                         Pad_98[0x10];                                      // 0x0098(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
 	bool                                          bIsRecording;                                      // 0x00A8(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_A9[0x7];                                       // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UMovieSceneSection*>             AnimationSections;                                 // 0x00B0(0x0010)(ExportObject, ZeroConstructor, ContainsInstancedReference, UObjectWrapper, NativeAccessSpecifierPrivate)
+	TArray<class UMovieSceneSection*>             AnimationSections;                                 // 0x00B0(0x0010)(ExportObject, ZeroConstructor, ContainsInstancedReference, UObjectWrapper, NativeAccessSpecifierPrivate, TObjectPtr)
 	bool                                          bCacheRecordingEnabled;                            // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_C1[0x7];                                       // 0x00C1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneNiagaraCacheTrack">();
+		STATIC_CLASS_IMPL("MovieSceneNiagaraCacheTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneNiagaraCacheTrack")
 	}
 	static class UMovieSceneNiagaraCacheTrack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneNiagaraCacheTrack>();
 	}
 };
-static_assert(alignof(UMovieSceneNiagaraCacheTrack) == 0x000008, "Wrong alignment on UMovieSceneNiagaraCacheTrack");
-static_assert(sizeof(UMovieSceneNiagaraCacheTrack) == 0x0000C8, "Wrong size on UMovieSceneNiagaraCacheTrack");
-static_assert(offsetof(UMovieSceneNiagaraCacheTrack, bIsRecording) == 0x0000A8, "Member 'UMovieSceneNiagaraCacheTrack::bIsRecording' has a wrong offset!");
-static_assert(offsetof(UMovieSceneNiagaraCacheTrack, AnimationSections) == 0x0000B0, "Member 'UMovieSceneNiagaraCacheTrack::AnimationSections' has a wrong offset!");
-static_assert(offsetof(UMovieSceneNiagaraCacheTrack, bCacheRecordingEnabled) == 0x0000C0, "Member 'UMovieSceneNiagaraCacheTrack::bCacheRecordingEnabled' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieSceneNiagaraCacheTrack;
 
 }
 

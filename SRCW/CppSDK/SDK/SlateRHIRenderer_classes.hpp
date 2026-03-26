@@ -25,7 +25,7 @@ namespace SDK
 class USlateFXSubsystem final : public UEngineSubsystem
 {
 public:
-	TMap<ESlatePostRT, class USlateRHIPostBufferProcessor*> SlatePostBufferProcessors;               // 0x0030(0x0050)(Transient, UObjectWrapper, NativeAccessSpecifierPrivate)
+	TMap<ESlatePostRT, class USlateRHIPostBufferProcessor*> SlatePostBufferProcessors;               // 0x0030(0x0050)(Transient, UObjectWrapper, NativeAccessSpecifierPrivate, TObjectPtr)
 	uint8                                         Pad_80[0x50];                                      // 0x0080(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -34,16 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SlateFXSubsystem">();
+		STATIC_CLASS_IMPL("SlateFXSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SlateFXSubsystem")
 	}
 	static class USlateFXSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USlateFXSubsystem>();
 	}
 };
-static_assert(alignof(USlateFXSubsystem) == 0x000008, "Wrong alignment on USlateFXSubsystem");
-static_assert(sizeof(USlateFXSubsystem) == 0x0000D0, "Wrong size on USlateFXSubsystem");
-static_assert(offsetof(USlateFXSubsystem, SlatePostBufferProcessors) == 0x000030, "Member 'USlateFXSubsystem::SlatePostBufferProcessors' has a wrong offset!");
+DUMPER7_ASSERTS_USlateFXSubsystem;
 
 // Class SlateRHIRenderer.SlateRHIPostBufferProcessor
 // 0x0000 (0x0028 - 0x0028)
@@ -52,15 +54,18 @@ class USlateRHIPostBufferProcessor : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SlateRHIPostBufferProcessor">();
+		STATIC_CLASS_IMPL("SlateRHIPostBufferProcessor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SlateRHIPostBufferProcessor")
 	}
 	static class USlateRHIPostBufferProcessor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USlateRHIPostBufferProcessor>();
 	}
 };
-static_assert(alignof(USlateRHIPostBufferProcessor) == 0x000008, "Wrong alignment on USlateRHIPostBufferProcessor");
-static_assert(sizeof(USlateRHIPostBufferProcessor) == 0x000028, "Wrong size on USlateRHIPostBufferProcessor");
+DUMPER7_ASSERTS_USlateRHIPostBufferProcessor;
 
 // Class SlateRHIRenderer.SlatePostBufferBlur
 // 0x0018 (0x0040 - 0x0028)
@@ -73,16 +78,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SlatePostBufferBlur">();
+		STATIC_CLASS_IMPL("SlatePostBufferBlur")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SlatePostBufferBlur")
 	}
 	static class USlatePostBufferBlur* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USlatePostBufferBlur>();
 	}
 };
-static_assert(alignof(USlatePostBufferBlur) == 0x000008, "Wrong alignment on USlatePostBufferBlur");
-static_assert(sizeof(USlatePostBufferBlur) == 0x000040, "Wrong size on USlatePostBufferBlur");
-static_assert(offsetof(USlatePostBufferBlur, GaussianBlurStrength) == 0x000028, "Member 'USlatePostBufferBlur::GaussianBlurStrength' has a wrong offset!");
+DUMPER7_ASSERTS_USlatePostBufferBlur;
 
 // Class SlateRHIRenderer.SlateRHIRendererSettings
 // 0x0050 (0x0088 - 0x0038)
@@ -99,16 +106,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SlateRHIRendererSettings">();
+		STATIC_CLASS_IMPL("SlateRHIRendererSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SlateRHIRendererSettings")
 	}
 	static class USlateRHIRendererSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USlateRHIRendererSettings>();
 	}
 };
-static_assert(alignof(USlateRHIRendererSettings) == 0x000008, "Wrong alignment on USlateRHIRendererSettings");
-static_assert(sizeof(USlateRHIRendererSettings) == 0x000088, "Wrong size on USlateRHIRendererSettings");
-static_assert(offsetof(USlateRHIRendererSettings, SlatePostSettings) == 0x000038, "Member 'USlateRHIRendererSettings::SlatePostSettings' has a wrong offset!");
+DUMPER7_ASSERTS_USlateRHIRendererSettings;
 
 }
 

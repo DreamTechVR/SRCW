@@ -45,10 +45,7 @@ public:
 	class FName                                   ActionName;                                        // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FKey                                   Key;                                               // 0x0008(0x0018)(Edit, BlueprintVisible, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSteamController2KeyMapping) == 0x000008, "Wrong alignment on FSteamController2KeyMapping");
-static_assert(sizeof(FSteamController2KeyMapping) == 0x000020, "Wrong size on FSteamController2KeyMapping");
-static_assert(offsetof(FSteamController2KeyMapping, ActionName) == 0x000000, "Member 'FSteamController2KeyMapping::ActionName' has a wrong offset!");
-static_assert(offsetof(FSteamController2KeyMapping, Key) == 0x000008, "Member 'FSteamController2KeyMapping::Key' has a wrong offset!");
+DUMPER7_ASSERTS_FSteamController2KeyMapping;
 
 }
 

@@ -23,15 +23,18 @@ class UDodonpaEventRichTextBlockDecorator_C final : public URichTextBlockRubyDec
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"DodonpaEventRichTextBlockDecorator_C">();
+		BP_STATIC_CLASS_IMPL("DodonpaEventRichTextBlockDecorator_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DodonpaEventRichTextBlockDecorator_C")
 	}
 	static class UDodonpaEventRichTextBlockDecorator_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDodonpaEventRichTextBlockDecorator_C>();
 	}
 };
-static_assert(alignof(UDodonpaEventRichTextBlockDecorator_C) == 0x000010, "Wrong alignment on UDodonpaEventRichTextBlockDecorator_C");
-static_assert(sizeof(UDodonpaEventRichTextBlockDecorator_C) == 0x000440, "Wrong size on UDodonpaEventRichTextBlockDecorator_C");
+DUMPER7_ASSERTS_UDodonpaEventRichTextBlockDecorator_C;
 
 }
 

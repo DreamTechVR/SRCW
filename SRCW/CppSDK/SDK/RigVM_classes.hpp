@@ -12,8 +12,8 @@
 
 #include "CoreUObject_structs.hpp"
 #include "CoreUObject_classes.hpp"
-#include "Engine_classes.hpp"
 #include "RigVM_structs.hpp"
+#include "Engine_classes.hpp"
 #include "DeveloperSettings_classes.hpp"
 
 
@@ -27,7 +27,11 @@ class IRigVMGraphFunctionHost final
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RigVMGraphFunctionHost">();
+		STATIC_CLASS_IMPL("RigVMGraphFunctionHost")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RigVMGraphFunctionHost")
 	}
 	static class IRigVMGraphFunctionHost* GetDefaultObj()
 	{
@@ -43,8 +47,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IRigVMGraphFunctionHost) == 0x000001, "Wrong alignment on IRigVMGraphFunctionHost");
-static_assert(sizeof(IRigVMGraphFunctionHost) == 0x000001, "Wrong size on IRigVMGraphFunctionHost");
+DUMPER7_ASSERTS_IRigVMGraphFunctionHost;
 
 // Class RigVM.RigVMBlueprintGeneratedClass
 // 0x0028 (0x0388 - 0x0360)
@@ -57,16 +60,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RigVMBlueprintGeneratedClass">();
+		STATIC_CLASS_IMPL("RigVMBlueprintGeneratedClass")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RigVMBlueprintGeneratedClass")
 	}
 	static class URigVMBlueprintGeneratedClass* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URigVMBlueprintGeneratedClass>();
 	}
 };
-static_assert(alignof(URigVMBlueprintGeneratedClass) == 0x000008, "Wrong alignment on URigVMBlueprintGeneratedClass");
-static_assert(sizeof(URigVMBlueprintGeneratedClass) == 0x000388, "Wrong size on URigVMBlueprintGeneratedClass");
-static_assert(offsetof(URigVMBlueprintGeneratedClass, GraphFunctionStore) == 0x000368, "Member 'URigVMBlueprintGeneratedClass::GraphFunctionStore' has a wrong offset!");
+DUMPER7_ASSERTS_URigVMBlueprintGeneratedClass;
 
 // Class RigVM.RigVM
 // 0x0368 (0x0390 - 0x0028)
@@ -118,23 +123,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RigVM">();
+		STATIC_CLASS_IMPL("RigVM")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RigVM")
 	}
 	static class URigVM* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URigVM>();
 	}
 };
-static_assert(alignof(URigVM) == 0x000008, "Wrong alignment on URigVM");
-static_assert(sizeof(URigVM) == 0x000390, "Wrong size on URigVM");
-static_assert(offsetof(URigVM, LiteralMemoryStorage) == 0x000028, "Member 'URigVM::LiteralMemoryStorage' has a wrong offset!");
-static_assert(offsetof(URigVM, DefaultWorkMemoryStorage) == 0x000078, "Member 'URigVM::DefaultWorkMemoryStorage' has a wrong offset!");
-static_assert(offsetof(URigVM, DefaultDebugMemoryStorage) == 0x0000C8, "Member 'URigVM::DefaultDebugMemoryStorage' has a wrong offset!");
-static_assert(offsetof(URigVM, ByteCodeStorage) == 0x000138, "Member 'URigVM::ByteCodeStorage' has a wrong offset!");
-static_assert(offsetof(URigVM, Instructions) == 0x0001F0, "Member 'URigVM::Instructions' has a wrong offset!");
-static_assert(offsetof(URigVM, FunctionNamesStorage) == 0x000208, "Member 'URigVM::FunctionNamesStorage' has a wrong offset!");
-static_assert(offsetof(URigVM, Parameters) == 0x000250, "Member 'URigVM::Parameters' has a wrong offset!");
-static_assert(offsetof(URigVM, CachedVMHash) == 0x000338, "Member 'URigVM::CachedVMHash' has a wrong offset!");
+DUMPER7_ASSERTS_URigVM;
 
 // Class RigVM.NameSpacedUserData
 // 0x00D8 (0x0100 - 0x0028)
@@ -147,16 +147,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NameSpacedUserData">();
+		STATIC_CLASS_IMPL("NameSpacedUserData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NameSpacedUserData")
 	}
 	static class UNameSpacedUserData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNameSpacedUserData>();
 	}
 };
-static_assert(alignof(UNameSpacedUserData) == 0x000008, "Wrong alignment on UNameSpacedUserData");
-static_assert(sizeof(UNameSpacedUserData) == 0x000100, "Wrong size on UNameSpacedUserData");
-static_assert(offsetof(UNameSpacedUserData, NameSpace) == 0x000028, "Member 'UNameSpacedUserData::NameSpace' has a wrong offset!");
+DUMPER7_ASSERTS_UNameSpacedUserData;
 
 // Class RigVM.DataAssetLink
 // 0x0030 (0x0130 - 0x0100)
@@ -164,7 +166,7 @@ class UDataAssetLink final : public UNameSpacedUserData
 {
 public:
 	TSoftObjectPtr<class UDataAsset>              DataAsset;                                         // 0x0100(0x0028)(Edit, BlueprintVisible, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataAsset*                             DataAssetCached;                                   // 0x0128(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UDataAsset*                             DataAssetCached;                                   // 0x0128(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
 
 public:
 	void SetDataAsset(TSoftObjectPtr<class UDataAsset> InDataAsset);
@@ -174,17 +176,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DataAssetLink">();
+		STATIC_CLASS_IMPL("DataAssetLink")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DataAssetLink")
 	}
 	static class UDataAssetLink* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDataAssetLink>();
 	}
 };
-static_assert(alignof(UDataAssetLink) == 0x000008, "Wrong alignment on UDataAssetLink");
-static_assert(sizeof(UDataAssetLink) == 0x000130, "Wrong size on UDataAssetLink");
-static_assert(offsetof(UDataAssetLink, DataAsset) == 0x000100, "Member 'UDataAssetLink::DataAsset' has a wrong offset!");
-static_assert(offsetof(UDataAssetLink, DataAssetCached) == 0x000128, "Member 'UDataAssetLink::DataAssetCached' has a wrong offset!");
+DUMPER7_ASSERTS_UDataAssetLink;
 
 // Class RigVM.RigVMMemoryStorageGeneratorClass
 // 0x0040 (0x0240 - 0x0200)
@@ -196,32 +199,38 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RigVMMemoryStorageGeneratorClass">();
+		STATIC_CLASS_IMPL("RigVMMemoryStorageGeneratorClass")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RigVMMemoryStorageGeneratorClass")
 	}
 	static class URigVMMemoryStorageGeneratorClass* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URigVMMemoryStorageGeneratorClass>();
 	}
 };
-static_assert(alignof(URigVMMemoryStorageGeneratorClass) == 0x000008, "Wrong alignment on URigVMMemoryStorageGeneratorClass");
-static_assert(sizeof(URigVMMemoryStorageGeneratorClass) == 0x000240, "Wrong size on URigVMMemoryStorageGeneratorClass");
+DUMPER7_ASSERTS_URigVMMemoryStorageGeneratorClass;
 
 // Class RigVM.RigVMMemoryStorage
 // 0x0000 (0x0028 - 0x0028)
-class URigVMMemoryStorage : public UObject
+class URigVMMemoryStorage final : public UObject
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RigVMMemoryStorage">();
+		STATIC_CLASS_IMPL("RigVMMemoryStorage")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RigVMMemoryStorage")
 	}
 	static class URigVMMemoryStorage* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URigVMMemoryStorage>();
 	}
 };
-static_assert(alignof(URigVMMemoryStorage) == 0x000008, "Wrong alignment on URigVMMemoryStorage");
-static_assert(sizeof(URigVMMemoryStorage) == 0x000028, "Wrong size on URigVMMemoryStorage");
+DUMPER7_ASSERTS_URigVMMemoryStorage;
 
 // Class RigVM.RigVMNativized
 // 0x0028 (0x03B8 - 0x0390)
@@ -233,22 +242,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RigVMNativized">();
+		STATIC_CLASS_IMPL("RigVMNativized")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RigVMNativized")
 	}
 	static class URigVMNativized* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URigVMNativized>();
 	}
 };
-static_assert(alignof(URigVMNativized) == 0x000008, "Wrong alignment on URigVMNativized");
-static_assert(sizeof(URigVMNativized) == 0x0003B8, "Wrong size on URigVMNativized");
+DUMPER7_ASSERTS_URigVMNativized;
 
 // Class RigVM.RigVMUserWorkflowOptions
 // 0x0070 (0x0098 - 0x0028)
 class URigVMUserWorkflowOptions : public UObject
 {
 public:
-	class UObject*                                Subject;                                           // 0x0028(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UObject*                                Subject;                                           // 0x0028(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
 	struct FRigVMUserWorkflow                     Workflow;                                          // 0x0030(0x0058)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
 	uint8                                         Pad_88[0x10];                                      // 0x0088(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
@@ -263,17 +275,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RigVMUserWorkflowOptions">();
+		STATIC_CLASS_IMPL("RigVMUserWorkflowOptions")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RigVMUserWorkflowOptions")
 	}
 	static class URigVMUserWorkflowOptions* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URigVMUserWorkflowOptions>();
 	}
 };
-static_assert(alignof(URigVMUserWorkflowOptions) == 0x000008, "Wrong alignment on URigVMUserWorkflowOptions");
-static_assert(sizeof(URigVMUserWorkflowOptions) == 0x000098, "Wrong size on URigVMUserWorkflowOptions");
-static_assert(offsetof(URigVMUserWorkflowOptions, Subject) == 0x000028, "Member 'URigVMUserWorkflowOptions::Subject' has a wrong offset!");
-static_assert(offsetof(URigVMUserWorkflowOptions, Workflow) == 0x000030, "Member 'URigVMUserWorkflowOptions::Workflow' has a wrong offset!");
+DUMPER7_ASSERTS_URigVMUserWorkflowOptions;
 
 // Class RigVM.RigVMHost
 // 0x0250 (0x0278 - 0x0028)
@@ -283,16 +296,16 @@ public:
 	uint8                                         Pad_28[0x8];                                       // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRigVMRuntimeSettings                  VMRuntimeSettings;                                 // 0x0030(0x0018)(NativeAccessSpecifierPublic)
 	uint8                                         Pad_48[0x10];                                      // 0x0048(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
-	class URigVM*                                 VM;                                                // 0x0058(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class URigVM*                                 VM;                                                // 0x0058(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
 	TMap<class FString, struct FSoftObjectPath>   UserDefinedStructGuidToPathName;                   // 0x0060(0x0050)(Protected, NativeAccessSpecifierProtected)
 	TMap<class FString, struct FSoftObjectPath>   UserDefinedEnumToPathName;                         // 0x00B0(0x0050)(Protected, NativeAccessSpecifierProtected)
-	TSet<class UObject*>                          UserDefinedTypesInUse;                             // 0x0100(0x0050)(Transient, UObjectWrapper, NativeAccessSpecifierPrivate)
+	TSet<class UObject*>                          UserDefinedTypesInUse;                             // 0x0100(0x0050)(Transient, UObjectWrapper, NativeAccessSpecifierPrivate, TObjectPtr)
 	uint8                                         Pad_150[0x8];                                      // 0x0150(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRigVMDrawContainer                    DrawContainer;                                     // 0x0158(0x0018)(NativeAccessSpecifierPublic)
 	uint8                                         Pad_170[0x18];                                     // 0x0170(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class FName>                           EventQueue;                                        // 0x0188(0x0010)(ZeroConstructor, Transient, NativeAccessSpecifierPublic)
 	uint8                                         Pad_198[0x90];                                     // 0x0198(0x0090)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UAssetUserData*>                 AssetUserData;                                     // 0x0228(0x0010)(Edit, ExportObject, ZeroConstructor, ContainsInstancedReference, AdvancedDisplay, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
+	TArray<class UAssetUserData*>                 AssetUserData;                                     // 0x0228(0x0010)(Edit, ExportObject, ZeroConstructor, ContainsInstancedReference, AdvancedDisplay, Protected, UObjectWrapper, NativeAccessSpecifierProtected, TObjectPtr)
 	uint8                                         Pad_238[0x40];                                     // 0x0238(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -325,23 +338,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RigVMHost">();
+		STATIC_CLASS_IMPL("RigVMHost")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RigVMHost")
 	}
 	static class URigVMHost* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URigVMHost>();
 	}
 };
-static_assert(alignof(URigVMHost) == 0x000008, "Wrong alignment on URigVMHost");
-static_assert(sizeof(URigVMHost) == 0x000278, "Wrong size on URigVMHost");
-static_assert(offsetof(URigVMHost, VMRuntimeSettings) == 0x000030, "Member 'URigVMHost::VMRuntimeSettings' has a wrong offset!");
-static_assert(offsetof(URigVMHost, VM) == 0x000058, "Member 'URigVMHost::VM' has a wrong offset!");
-static_assert(offsetof(URigVMHost, UserDefinedStructGuidToPathName) == 0x000060, "Member 'URigVMHost::UserDefinedStructGuidToPathName' has a wrong offset!");
-static_assert(offsetof(URigVMHost, UserDefinedEnumToPathName) == 0x0000B0, "Member 'URigVMHost::UserDefinedEnumToPathName' has a wrong offset!");
-static_assert(offsetof(URigVMHost, UserDefinedTypesInUse) == 0x000100, "Member 'URigVMHost::UserDefinedTypesInUse' has a wrong offset!");
-static_assert(offsetof(URigVMHost, DrawContainer) == 0x000158, "Member 'URigVMHost::DrawContainer' has a wrong offset!");
-static_assert(offsetof(URigVMHost, EventQueue) == 0x000188, "Member 'URigVMHost::EventQueue' has a wrong offset!");
-static_assert(offsetof(URigVMHost, AssetUserData) == 0x000228, "Member 'URigVMHost::AssetUserData' has a wrong offset!");
+DUMPER7_ASSERTS_URigVMHost;
 
 // Class RigVM.RigVMEditorSettings
 // 0x0000 (0x0038 - 0x0038)
@@ -350,15 +358,18 @@ class URigVMEditorSettings : public UDeveloperSettings
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RigVMEditorSettings">();
+		STATIC_CLASS_IMPL("RigVMEditorSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RigVMEditorSettings")
 	}
 	static class URigVMEditorSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URigVMEditorSettings>();
 	}
 };
-static_assert(alignof(URigVMEditorSettings) == 0x000008, "Wrong alignment on URigVMEditorSettings");
-static_assert(sizeof(URigVMEditorSettings) == 0x000038, "Wrong size on URigVMEditorSettings");
+DUMPER7_ASSERTS_URigVMEditorSettings;
 
 }
 

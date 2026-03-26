@@ -33,20 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DataflowSettings">();
+		STATIC_CLASS_IMPL("DataflowSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DataflowSettings")
 	}
 	static class UDataflowSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDataflowSettings>();
 	}
 };
-static_assert(alignof(UDataflowSettings) == 0x000008, "Wrong alignment on UDataflowSettings");
-static_assert(sizeof(UDataflowSettings) == 0x0000E0, "Wrong size on UDataflowSettings");
-static_assert(offsetof(UDataflowSettings, ArrayPinTypeColor) == 0x000038, "Member 'UDataflowSettings::ArrayPinTypeColor' has a wrong offset!");
-static_assert(offsetof(UDataflowSettings, ManagedArrayCollectionPinTypeColor) == 0x000048, "Member 'UDataflowSettings::ManagedArrayCollectionPinTypeColor' has a wrong offset!");
-static_assert(offsetof(UDataflowSettings, BoxPinTypeColor) == 0x000058, "Member 'UDataflowSettings::BoxPinTypeColor' has a wrong offset!");
-static_assert(offsetof(UDataflowSettings, SpherePinTypeColor) == 0x000068, "Member 'UDataflowSettings::SpherePinTypeColor' has a wrong offset!");
-static_assert(offsetof(UDataflowSettings, NodeColorsMap) == 0x000078, "Member 'UDataflowSettings::NodeColorsMap' has a wrong offset!");
+DUMPER7_ASSERTS_UDataflowSettings;
 
 }
 

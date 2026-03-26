@@ -111,9 +111,18 @@ bool UObject::IsA(EClassCastFlags TypeFlags) const
 
 
 // Predefined Function
+// Checks a UObjects' type by Class name
+
+bool UObject::IsA(const class FName& ClassName) const
+{
+	return Class->IsSubclassOf(ClassName);
+}
+
+
+// Predefined Function
 // Checks a UObjects' type by Class
 
-bool UObject::IsA(class UClass* TypeClass) const
+bool UObject::IsA(const class UClass* TypeClass) const
 {
 	return Class->IsSubclassOf(TypeClass);
 }
@@ -156,9 +165,22 @@ bool UStruct::IsSubclassOf(const UStruct* Base) const
 	if (!Base)
 		return false;
 
-	for (const UStruct* Struct = this; Struct; Struct = Struct->Super)
+	const int32 NumParentStructBasesInChainMinusOne = Base->BaseChain.NumStructBasesInChainMinusOne;
+	return NumParentStructBasesInChainMinusOne <= BaseChain.NumStructBasesInChainMinusOne && BaseChain.StructBaseChainArray[NumParentStructBasesInChainMinusOne] == &Base->BaseChain;
+}
+
+
+// Predefined Function
+// Checks if this class has a certain base
+
+bool UStruct::IsSubclassOf(const FName& BaseClassName) const
+{
+	if (BaseClassName.IsNone())
+		return false;
+
+	for (const UStruct* Struct = this; Struct; Struct = Struct->SuperStruct)
 	{
-		if (Struct == Base)
+		if (Struct->Name == BaseClassName)
 			return true;
 	}
 
@@ -169,9 +191,9 @@ bool UStruct::IsSubclassOf(const UStruct* Base) const
 // Predefined Function
 // Gets a UFunction from this UClasses' 'Children' list
 
-class UFunction* UClass::GetFunction(const std::string& ClassName, const std::string& FuncName) const
+class UFunction* UClass::GetFunction(const char* ClassName, const char* FuncName) const
 {
-	for(const UStruct* Clss = this; Clss; Clss = Clss->Super)
+	for(const UStruct* Clss = this; Clss; Clss = Clss->SuperStruct)
 	{
 		if (Clss->GetName() != ClassName)
 			continue;

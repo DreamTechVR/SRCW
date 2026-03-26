@@ -25,9 +25,7 @@ struct Atom3dRegion_GetHandle final
 public:
 	class UAtom3dRegionHandle*                    ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(Atom3dRegion_GetHandle) == 0x000008, "Wrong alignment on Atom3dRegion_GetHandle");
-static_assert(sizeof(Atom3dRegion_GetHandle) == 0x000008, "Wrong size on Atom3dRegion_GetHandle");
-static_assert(offsetof(Atom3dRegion_GetHandle, ReturnValue) == 0x000000, "Member 'Atom3dRegion_GetHandle::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_Atom3dRegion_GetHandle;
 
 // Function CriWareRuntime.Atom3dRegion.SetHandle
 // 0x0008 (0x0008 - 0x0000)
@@ -36,9 +34,7 @@ struct Atom3dRegion_SetHandle final
 public:
 	class UAtom3dRegionHandle*                    InHandle;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(Atom3dRegion_SetHandle) == 0x000008, "Wrong alignment on Atom3dRegion_SetHandle");
-static_assert(sizeof(Atom3dRegion_SetHandle) == 0x000008, "Wrong size on Atom3dRegion_SetHandle");
-static_assert(offsetof(Atom3dRegion_SetHandle, InHandle) == 0x000000, "Member 'Atom3dRegion_SetHandle::InHandle' has a wrong offset!");
+DUMPER7_ASSERTS_Atom3dRegion_SetHandle;
 
 // Function CriWareRuntime.Atom3dSourceBaseComponent.SetRegion
 // 0x0008 (0x0008 - 0x0000)
@@ -47,9 +43,7 @@ struct Atom3dSourceBaseComponent_SetRegion final
 public:
 	class UAtom3dRegion*                          InRegion;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(Atom3dSourceBaseComponent_SetRegion) == 0x000008, "Wrong alignment on Atom3dSourceBaseComponent_SetRegion");
-static_assert(sizeof(Atom3dSourceBaseComponent_SetRegion) == 0x000008, "Wrong size on Atom3dSourceBaseComponent_SetRegion");
-static_assert(offsetof(Atom3dSourceBaseComponent_SetRegion, InRegion) == 0x000000, "Member 'Atom3dSourceBaseComponent_SetRegion::InRegion' has a wrong offset!");
+DUMPER7_ASSERTS_Atom3dSourceBaseComponent_SetRegion;
 
 // Function CriWareRuntime.AtomAreaSoundVolume.CreateSounds
 // 0x0028 (0x0028 - 0x0000)
@@ -59,10 +53,7 @@ public:
 	struct FVector                                listener_location;                                 // 0x0000(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class UAtomComponent*>                 ReturnValue;                                       // 0x0018(0x0010)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomAreaSoundVolume_CreateSounds) == 0x000008, "Wrong alignment on AtomAreaSoundVolume_CreateSounds");
-static_assert(sizeof(AtomAreaSoundVolume_CreateSounds) == 0x000028, "Wrong size on AtomAreaSoundVolume_CreateSounds");
-static_assert(offsetof(AtomAreaSoundVolume_CreateSounds, listener_location) == 0x000000, "Member 'AtomAreaSoundVolume_CreateSounds::listener_location' has a wrong offset!");
-static_assert(offsetof(AtomAreaSoundVolume_CreateSounds, ReturnValue) == 0x000018, "Member 'AtomAreaSoundVolume_CreateSounds::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomAreaSoundVolume_CreateSounds;
 
 // Function CriWareRuntime.AtomAreaSoundVolume.SetEnabled
 // 0x0001 (0x0001 - 0x0000)
@@ -71,9 +62,7 @@ struct AtomAreaSoundVolume_SetEnabled final
 public:
 	bool                                          bNewEnabled;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomAreaSoundVolume_SetEnabled) == 0x000001, "Wrong alignment on AtomAreaSoundVolume_SetEnabled");
-static_assert(sizeof(AtomAreaSoundVolume_SetEnabled) == 0x000001, "Wrong size on AtomAreaSoundVolume_SetEnabled");
-static_assert(offsetof(AtomAreaSoundVolume_SetEnabled, bNewEnabled) == 0x000000, "Member 'AtomAreaSoundVolume_SetEnabled::bNewEnabled' has a wrong offset!");
+DUMPER7_ASSERTS_AtomAreaSoundVolume_SetEnabled;
 
 // Function CriWareRuntime.AtomAreaSoundVolume.SetPriority
 // 0x0004 (0x0004 - 0x0000)
@@ -82,9 +71,7 @@ struct AtomAreaSoundVolume_SetPriority final
 public:
 	float                                         NewPriority;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomAreaSoundVolume_SetPriority) == 0x000004, "Wrong alignment on AtomAreaSoundVolume_SetPriority");
-static_assert(sizeof(AtomAreaSoundVolume_SetPriority) == 0x000004, "Wrong size on AtomAreaSoundVolume_SetPriority");
-static_assert(offsetof(AtomAreaSoundVolume_SetPriority, NewPriority) == 0x000000, "Member 'AtomAreaSoundVolume_SetPriority::NewPriority' has a wrong offset!");
+DUMPER7_ASSERTS_AtomAreaSoundVolume_SetPriority;
 
 // Function CriWareRuntime.AtomAreaSoundVolume.GetEnabled
 // 0x0001 (0x0001 - 0x0000)
@@ -93,9 +80,7 @@ struct AtomAreaSoundVolume_GetEnabled final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomAreaSoundVolume_GetEnabled) == 0x000001, "Wrong alignment on AtomAreaSoundVolume_GetEnabled");
-static_assert(sizeof(AtomAreaSoundVolume_GetEnabled) == 0x000001, "Wrong size on AtomAreaSoundVolume_GetEnabled");
-static_assert(offsetof(AtomAreaSoundVolume_GetEnabled, ReturnValue) == 0x000000, "Member 'AtomAreaSoundVolume_GetEnabled::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomAreaSoundVolume_GetEnabled;
 
 // Function CriWareRuntime.AtomAreaSoundVolume.GetPriority
 // 0x0004 (0x0004 - 0x0000)
@@ -104,9 +89,7 @@ struct AtomAreaSoundVolume_GetPriority final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomAreaSoundVolume_GetPriority) == 0x000004, "Wrong alignment on AtomAreaSoundVolume_GetPriority");
-static_assert(sizeof(AtomAreaSoundVolume_GetPriority) == 0x000004, "Wrong size on AtomAreaSoundVolume_GetPriority");
-static_assert(offsetof(AtomAreaSoundVolume_GetPriority, ReturnValue) == 0x000000, "Member 'AtomAreaSoundVolume_GetPriority::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomAreaSoundVolume_GetPriority;
 
 // Function CriWareRuntime.AtomProfileData.CriWareAdx2ProfileDataSort
 // 0x0028 (0x0028 - 0x0000)
@@ -119,12 +102,7 @@ public:
 	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FAtomProfileItem>               sorted_item;                                       // 0x0018(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomProfileData_CriWareAdx2ProfileDataSort) == 0x000008, "Wrong alignment on AtomProfileData_CriWareAdx2ProfileDataSort");
-static_assert(sizeof(AtomProfileData_CriWareAdx2ProfileDataSort) == 0x000028, "Wrong size on AtomProfileData_CriWareAdx2ProfileDataSort");
-static_assert(offsetof(AtomProfileData_CriWareAdx2ProfileDataSort, original_item) == 0x000000, "Member 'AtomProfileData_CriWareAdx2ProfileDataSort::original_item' has a wrong offset!");
-static_assert(offsetof(AtomProfileData_CriWareAdx2ProfileDataSort, sort_type) == 0x000010, "Member 'AtomProfileData_CriWareAdx2ProfileDataSort::sort_type' has a wrong offset!");
-static_assert(offsetof(AtomProfileData_CriWareAdx2ProfileDataSort, order_type) == 0x000011, "Member 'AtomProfileData_CriWareAdx2ProfileDataSort::order_type' has a wrong offset!");
-static_assert(offsetof(AtomProfileData_CriWareAdx2ProfileDataSort, sorted_item) == 0x000018, "Member 'AtomProfileData_CriWareAdx2ProfileDataSort::sorted_item' has a wrong offset!");
+DUMPER7_ASSERTS_AtomProfileData_CriWareAdx2ProfileDataSort;
 
 // Function CriWareRuntime.AtomProfileData.CriWareAdx2ProfileDataUpdate
 // 0x0018 (0x0018 - 0x0000)
@@ -134,10 +112,7 @@ public:
 	const class UObject*                          WorldContextObject;                                // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FAtomProfileItem>               ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomProfileData_CriWareAdx2ProfileDataUpdate) == 0x000008, "Wrong alignment on AtomProfileData_CriWareAdx2ProfileDataUpdate");
-static_assert(sizeof(AtomProfileData_CriWareAdx2ProfileDataUpdate) == 0x000018, "Wrong size on AtomProfileData_CriWareAdx2ProfileDataUpdate");
-static_assert(offsetof(AtomProfileData_CriWareAdx2ProfileDataUpdate, WorldContextObject) == 0x000000, "Member 'AtomProfileData_CriWareAdx2ProfileDataUpdate::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(AtomProfileData_CriWareAdx2ProfileDataUpdate, ReturnValue) == 0x000008, "Member 'AtomProfileData_CriWareAdx2ProfileDataUpdate::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomProfileData_CriWareAdx2ProfileDataUpdate;
 
 // Function CriWareRuntime.AtomAsrRack.EnableBinauralizer
 // 0x0001 (0x0001 - 0x0000)
@@ -146,9 +121,7 @@ struct AtomAsrRack_EnableBinauralizer final
 public:
 	bool                                          bIsEnabled;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomAsrRack_EnableBinauralizer) == 0x000001, "Wrong alignment on AtomAsrRack_EnableBinauralizer");
-static_assert(sizeof(AtomAsrRack_EnableBinauralizer) == 0x000001, "Wrong size on AtomAsrRack_EnableBinauralizer");
-static_assert(offsetof(AtomAsrRack_EnableBinauralizer, bIsEnabled) == 0x000000, "Member 'AtomAsrRack_EnableBinauralizer::bIsEnabled' has a wrong offset!");
+DUMPER7_ASSERTS_AtomAsrRack_EnableBinauralizer;
 
 // Function CriWareRuntime.AtomAsrRack.GetAsrRack
 // 0x0010 (0x0010 - 0x0000)
@@ -159,10 +132,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAtomAsrRack*                           ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomAsrRack_GetAsrRack) == 0x000008, "Wrong alignment on AtomAsrRack_GetAsrRack");
-static_assert(sizeof(AtomAsrRack_GetAsrRack) == 0x000010, "Wrong size on AtomAsrRack_GetAsrRack");
-static_assert(offsetof(AtomAsrRack_GetAsrRack, AsrRackID) == 0x000000, "Member 'AtomAsrRack_GetAsrRack::AsrRackID' has a wrong offset!");
-static_assert(offsetof(AtomAsrRack_GetAsrRack, ReturnValue) == 0x000008, "Member 'AtomAsrRack_GetAsrRack::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomAsrRack_GetAsrRack;
 
 // Function CriWareRuntime.AtomAsrRack.GetDefaultAsrRack
 // 0x0008 (0x0008 - 0x0000)
@@ -171,9 +141,7 @@ struct AtomAsrRack_GetDefaultAsrRack final
 public:
 	class UAtomAsrRack*                           ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomAsrRack_GetDefaultAsrRack) == 0x000008, "Wrong alignment on AtomAsrRack_GetDefaultAsrRack");
-static_assert(sizeof(AtomAsrRack_GetDefaultAsrRack) == 0x000008, "Wrong size on AtomAsrRack_GetDefaultAsrRack");
-static_assert(offsetof(AtomAsrRack_GetDefaultAsrRack, ReturnValue) == 0x000000, "Member 'AtomAsrRack_GetDefaultAsrRack::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomAsrRack_GetDefaultAsrRack;
 
 // Function CriWareRuntime.AtomAsrRack.IsEnabledBinauralizer
 // 0x0001 (0x0001 - 0x0000)
@@ -182,9 +150,7 @@ struct AtomAsrRack_IsEnabledBinauralizer final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomAsrRack_IsEnabledBinauralizer) == 0x000001, "Wrong alignment on AtomAsrRack_IsEnabledBinauralizer");
-static_assert(sizeof(AtomAsrRack_IsEnabledBinauralizer) == 0x000001, "Wrong size on AtomAsrRack_IsEnabledBinauralizer");
-static_assert(offsetof(AtomAsrRack_IsEnabledBinauralizer, ReturnValue) == 0x000000, "Member 'AtomAsrRack_IsEnabledBinauralizer::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomAsrRack_IsEnabledBinauralizer;
 
 // Function CriWareRuntime.AtomAsrRack.ApplyDspBusSnapshot
 // 0x0018 (0x0018 - 0x0000)
@@ -195,10 +161,7 @@ public:
 	int32                                         Milliseconds;                                      // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(AtomAsrRack_ApplyDspBusSnapshot) == 0x000008, "Wrong alignment on AtomAsrRack_ApplyDspBusSnapshot");
-static_assert(sizeof(AtomAsrRack_ApplyDspBusSnapshot) == 0x000018, "Wrong size on AtomAsrRack_ApplyDspBusSnapshot");
-static_assert(offsetof(AtomAsrRack_ApplyDspBusSnapshot, SnapshotName) == 0x000000, "Member 'AtomAsrRack_ApplyDspBusSnapshot::SnapshotName' has a wrong offset!");
-static_assert(offsetof(AtomAsrRack_ApplyDspBusSnapshot, Milliseconds) == 0x000010, "Member 'AtomAsrRack_ApplyDspBusSnapshot::Milliseconds' has a wrong offset!");
+DUMPER7_ASSERTS_AtomAsrRack_ApplyDspBusSnapshot;
 
 // Function CriWareRuntime.AtomAsrRack.AssociateOutputPort
 // 0x0018 (0x0018 - 0x0000)
@@ -209,10 +172,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(AtomAsrRack_AssociateOutputPort) == 0x000008, "Wrong alignment on AtomAsrRack_AssociateOutputPort");
-static_assert(sizeof(AtomAsrRack_AssociateOutputPort) == 0x000018, "Wrong size on AtomAsrRack_AssociateOutputPort");
-static_assert(offsetof(AtomAsrRack_AssociateOutputPort, OutputPortName) == 0x000000, "Member 'AtomAsrRack_AssociateOutputPort::OutputPortName' has a wrong offset!");
-static_assert(offsetof(AtomAsrRack_AssociateOutputPort, ReturnValue) == 0x000010, "Member 'AtomAsrRack_AssociateOutputPort::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomAsrRack_AssociateOutputPort;
 
 // Function CriWareRuntime.AtomAsrRack.AttachDspBusSetting
 // 0x0010 (0x0010 - 0x0000)
@@ -221,9 +181,7 @@ struct AtomAsrRack_AttachDspBusSetting final
 public:
 	class FString                                 SettingName;                                       // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomAsrRack_AttachDspBusSetting) == 0x000008, "Wrong alignment on AtomAsrRack_AttachDspBusSetting");
-static_assert(sizeof(AtomAsrRack_AttachDspBusSetting) == 0x000010, "Wrong size on AtomAsrRack_AttachDspBusSetting");
-static_assert(offsetof(AtomAsrRack_AttachDspBusSetting, SettingName) == 0x000000, "Member 'AtomAsrRack_AttachDspBusSetting::SettingName' has a wrong offset!");
+DUMPER7_ASSERTS_AtomAsrRack_AttachDspBusSetting;
 
 // Function CriWareRuntime.AtomAsrRack.ConnectToPadSpeaker
 // 0x0004 (0x0004 - 0x0000)
@@ -232,9 +190,7 @@ struct AtomAsrRack_ConnectToPadSpeaker final
 public:
 	int32                                         UserIndex;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomAsrRack_ConnectToPadSpeaker) == 0x000004, "Wrong alignment on AtomAsrRack_ConnectToPadSpeaker");
-static_assert(sizeof(AtomAsrRack_ConnectToPadSpeaker) == 0x000004, "Wrong size on AtomAsrRack_ConnectToPadSpeaker");
-static_assert(offsetof(AtomAsrRack_ConnectToPadSpeaker, UserIndex) == 0x000000, "Member 'AtomAsrRack_ConnectToPadSpeaker::UserIndex' has a wrong offset!");
+DUMPER7_ASSERTS_AtomAsrRack_ConnectToPadSpeaker;
 
 // Function CriWareRuntime.AtomAsrRack.ConnectToPadVibrator
 // 0x0004 (0x0004 - 0x0000)
@@ -243,9 +199,7 @@ struct AtomAsrRack_ConnectToPadVibrator final
 public:
 	int32                                         UserIndex;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomAsrRack_ConnectToPadVibrator) == 0x000004, "Wrong alignment on AtomAsrRack_ConnectToPadVibrator");
-static_assert(sizeof(AtomAsrRack_ConnectToPadVibrator) == 0x000004, "Wrong size on AtomAsrRack_ConnectToPadVibrator");
-static_assert(offsetof(AtomAsrRack_ConnectToPadVibrator, UserIndex) == 0x000000, "Member 'AtomAsrRack_ConnectToPadVibrator::UserIndex' has a wrong offset!");
+DUMPER7_ASSERTS_AtomAsrRack_ConnectToPadVibrator;
 
 // Function CriWareRuntime.AtomAsrRack.GetBusAnalyzerInfo
 // 0x0050 (0x0050 - 0x0000)
@@ -261,14 +215,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0048(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(AtomAsrRack_GetBusAnalyzerInfo) == 0x000008, "Wrong alignment on AtomAsrRack_GetBusAnalyzerInfo");
-static_assert(sizeof(AtomAsrRack_GetBusAnalyzerInfo) == 0x000050, "Wrong size on AtomAsrRack_GetBusAnalyzerInfo");
-static_assert(offsetof(AtomAsrRack_GetBusAnalyzerInfo, DspBusName) == 0x000000, "Member 'AtomAsrRack_GetBusAnalyzerInfo::DspBusName' has a wrong offset!");
-static_assert(offsetof(AtomAsrRack_GetBusAnalyzerInfo, num_channels) == 0x000010, "Member 'AtomAsrRack_GetBusAnalyzerInfo::num_channels' has a wrong offset!");
-static_assert(offsetof(AtomAsrRack_GetBusAnalyzerInfo, rms_levels) == 0x000018, "Member 'AtomAsrRack_GetBusAnalyzerInfo::rms_levels' has a wrong offset!");
-static_assert(offsetof(AtomAsrRack_GetBusAnalyzerInfo, peak_levels) == 0x000028, "Member 'AtomAsrRack_GetBusAnalyzerInfo::peak_levels' has a wrong offset!");
-static_assert(offsetof(AtomAsrRack_GetBusAnalyzerInfo, peak_hold_levels) == 0x000038, "Member 'AtomAsrRack_GetBusAnalyzerInfo::peak_hold_levels' has a wrong offset!");
-static_assert(offsetof(AtomAsrRack_GetBusAnalyzerInfo, ReturnValue) == 0x000048, "Member 'AtomAsrRack_GetBusAnalyzerInfo::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomAsrRack_GetBusAnalyzerInfo;
 
 // Function CriWareRuntime.AtomAsrRack.GetCurrentAppliedSnapshot
 // 0x0018 (0x0018 - 0x0000)
@@ -279,10 +226,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomAsrRack_GetCurrentAppliedSnapshot) == 0x000008, "Wrong alignment on AtomAsrRack_GetCurrentAppliedSnapshot");
-static_assert(sizeof(AtomAsrRack_GetCurrentAppliedSnapshot) == 0x000018, "Wrong size on AtomAsrRack_GetCurrentAppliedSnapshot");
-static_assert(offsetof(AtomAsrRack_GetCurrentAppliedSnapshot, AsrRackID) == 0x000000, "Member 'AtomAsrRack_GetCurrentAppliedSnapshot::AsrRackID' has a wrong offset!");
-static_assert(offsetof(AtomAsrRack_GetCurrentAppliedSnapshot, ReturnValue) == 0x000008, "Member 'AtomAsrRack_GetCurrentAppliedSnapshot::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomAsrRack_GetCurrentAppliedSnapshot;
 
 // Function CriWareRuntime.AtomAsrRack.SetAisacControlByName
 // 0x0018 (0x0018 - 0x0000)
@@ -293,10 +237,7 @@ public:
 	float                                         control_value;                                     // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(AtomAsrRack_SetAisacControlByName) == 0x000008, "Wrong alignment on AtomAsrRack_SetAisacControlByName");
-static_assert(sizeof(AtomAsrRack_SetAisacControlByName) == 0x000018, "Wrong size on AtomAsrRack_SetAisacControlByName");
-static_assert(offsetof(AtomAsrRack_SetAisacControlByName, control_name) == 0x000000, "Member 'AtomAsrRack_SetAisacControlByName::control_name' has a wrong offset!");
-static_assert(offsetof(AtomAsrRack_SetAisacControlByName, control_value) == 0x000010, "Member 'AtomAsrRack_SetAisacControlByName::control_value' has a wrong offset!");
+DUMPER7_ASSERTS_AtomAsrRack_SetAisacControlByName;
 
 // Function CriWareRuntime.AtomAsrRack.SetBusSendLevelByName
 // 0x0028 (0x0028 - 0x0000)
@@ -308,11 +249,7 @@ public:
 	float                                         Level;                                             // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(AtomAsrRack_SetBusSendLevelByName) == 0x000008, "Wrong alignment on AtomAsrRack_SetBusSendLevelByName");
-static_assert(sizeof(AtomAsrRack_SetBusSendLevelByName) == 0x000028, "Wrong size on AtomAsrRack_SetBusSendLevelByName");
-static_assert(offsetof(AtomAsrRack_SetBusSendLevelByName, SourceBusName) == 0x000000, "Member 'AtomAsrRack_SetBusSendLevelByName::SourceBusName' has a wrong offset!");
-static_assert(offsetof(AtomAsrRack_SetBusSendLevelByName, DestBusName) == 0x000010, "Member 'AtomAsrRack_SetBusSendLevelByName::DestBusName' has a wrong offset!");
-static_assert(offsetof(AtomAsrRack_SetBusSendLevelByName, Level) == 0x000020, "Member 'AtomAsrRack_SetBusSendLevelByName::Level' has a wrong offset!");
+DUMPER7_ASSERTS_AtomAsrRack_SetBusSendLevelByName;
 
 // Function CriWareRuntime.AtomAsrRack.SetBusVolumeByName
 // 0x0018 (0x0018 - 0x0000)
@@ -323,10 +260,7 @@ public:
 	float                                         Volume;                                            // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(AtomAsrRack_SetBusVolumeByName) == 0x000008, "Wrong alignment on AtomAsrRack_SetBusVolumeByName");
-static_assert(sizeof(AtomAsrRack_SetBusVolumeByName) == 0x000018, "Wrong size on AtomAsrRack_SetBusVolumeByName");
-static_assert(offsetof(AtomAsrRack_SetBusVolumeByName, BusName) == 0x000000, "Member 'AtomAsrRack_SetBusVolumeByName::BusName' has a wrong offset!");
-static_assert(offsetof(AtomAsrRack_SetBusVolumeByName, Volume) == 0x000010, "Member 'AtomAsrRack_SetBusVolumeByName::Volume' has a wrong offset!");
+DUMPER7_ASSERTS_AtomAsrRack_SetBusVolumeByName;
 
 // Function CriWareRuntime.AtomAsrRack.SetEffectBypass
 // 0x0028 (0x0028 - 0x0000)
@@ -338,11 +272,7 @@ public:
 	bool                                          Bypasses;                                          // 0x0020(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(AtomAsrRack_SetEffectBypass) == 0x000008, "Wrong alignment on AtomAsrRack_SetEffectBypass");
-static_assert(sizeof(AtomAsrRack_SetEffectBypass) == 0x000028, "Wrong size on AtomAsrRack_SetEffectBypass");
-static_assert(offsetof(AtomAsrRack_SetEffectBypass, BusName) == 0x000000, "Member 'AtomAsrRack_SetEffectBypass::BusName' has a wrong offset!");
-static_assert(offsetof(AtomAsrRack_SetEffectBypass, EffectName) == 0x000010, "Member 'AtomAsrRack_SetEffectBypass::EffectName' has a wrong offset!");
-static_assert(offsetof(AtomAsrRack_SetEffectBypass, Bypasses) == 0x000020, "Member 'AtomAsrRack_SetEffectBypass::Bypasses' has a wrong offset!");
+DUMPER7_ASSERTS_AtomAsrRack_SetEffectBypass;
 
 // Function CriWareRuntime.AtomEntranceVolume.SetEnabled
 // 0x0001 (0x0001 - 0x0000)
@@ -351,9 +281,7 @@ struct AtomEntranceVolume_SetEnabled final
 public:
 	bool                                          bNewEnabled;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomEntranceVolume_SetEnabled) == 0x000001, "Wrong alignment on AtomEntranceVolume_SetEnabled");
-static_assert(sizeof(AtomEntranceVolume_SetEnabled) == 0x000001, "Wrong size on AtomEntranceVolume_SetEnabled");
-static_assert(offsetof(AtomEntranceVolume_SetEnabled, bNewEnabled) == 0x000000, "Member 'AtomEntranceVolume_SetEnabled::bNewEnabled' has a wrong offset!");
+DUMPER7_ASSERTS_AtomEntranceVolume_SetEnabled;
 
 // Function CriWareRuntime.AtomEntranceVolume.SetPriority
 // 0x0004 (0x0004 - 0x0000)
@@ -362,9 +290,7 @@ struct AtomEntranceVolume_SetPriority final
 public:
 	float                                         NewPriority;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomEntranceVolume_SetPriority) == 0x000004, "Wrong alignment on AtomEntranceVolume_SetPriority");
-static_assert(sizeof(AtomEntranceVolume_SetPriority) == 0x000004, "Wrong size on AtomEntranceVolume_SetPriority");
-static_assert(offsetof(AtomEntranceVolume_SetPriority, NewPriority) == 0x000000, "Member 'AtomEntranceVolume_SetPriority::NewPriority' has a wrong offset!");
+DUMPER7_ASSERTS_AtomEntranceVolume_SetPriority;
 
 // Function CriWareRuntime.AtomEntranceVolume.GetEnabled
 // 0x0001 (0x0001 - 0x0000)
@@ -373,9 +299,7 @@ struct AtomEntranceVolume_GetEnabled final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomEntranceVolume_GetEnabled) == 0x000001, "Wrong alignment on AtomEntranceVolume_GetEnabled");
-static_assert(sizeof(AtomEntranceVolume_GetEnabled) == 0x000001, "Wrong size on AtomEntranceVolume_GetEnabled");
-static_assert(offsetof(AtomEntranceVolume_GetEnabled, ReturnValue) == 0x000000, "Member 'AtomEntranceVolume_GetEnabled::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomEntranceVolume_GetEnabled;
 
 // Function CriWareRuntime.AtomEntranceVolume.GetPriority
 // 0x0004 (0x0004 - 0x0000)
@@ -384,9 +308,7 @@ struct AtomEntranceVolume_GetPriority final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomEntranceVolume_GetPriority) == 0x000004, "Wrong alignment on AtomEntranceVolume_GetPriority");
-static_assert(sizeof(AtomEntranceVolume_GetPriority) == 0x000004, "Wrong size on AtomEntranceVolume_GetPriority");
-static_assert(offsetof(AtomEntranceVolume_GetPriority, ReturnValue) == 0x000000, "Member 'AtomEntranceVolume_GetPriority::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomEntranceVolume_GetPriority;
 
 // Function CriWareRuntime.AtomAudioVolume.EnableAllAudioVolume
 // 0x0001 (0x0001 - 0x0000)
@@ -395,9 +317,7 @@ struct AtomAudioVolume_EnableAllAudioVolume final
 public:
 	bool                                          bEnable;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomAudioVolume_EnableAllAudioVolume) == 0x000001, "Wrong alignment on AtomAudioVolume_EnableAllAudioVolume");
-static_assert(sizeof(AtomAudioVolume_EnableAllAudioVolume) == 0x000001, "Wrong size on AtomAudioVolume_EnableAllAudioVolume");
-static_assert(offsetof(AtomAudioVolume_EnableAllAudioVolume, bEnable) == 0x000000, "Member 'AtomAudioVolume_EnableAllAudioVolume::bEnable' has a wrong offset!");
+DUMPER7_ASSERTS_AtomAudioVolume_EnableAllAudioVolume;
 
 // Function CriWareRuntime.AtomAudioVolume.SetEnabled
 // 0x0001 (0x0001 - 0x0000)
@@ -406,9 +326,7 @@ struct AtomAudioVolume_SetEnabled final
 public:
 	bool                                          bNewEnabled;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomAudioVolume_SetEnabled) == 0x000001, "Wrong alignment on AtomAudioVolume_SetEnabled");
-static_assert(sizeof(AtomAudioVolume_SetEnabled) == 0x000001, "Wrong size on AtomAudioVolume_SetEnabled");
-static_assert(offsetof(AtomAudioVolume_SetEnabled, bNewEnabled) == 0x000000, "Member 'AtomAudioVolume_SetEnabled::bNewEnabled' has a wrong offset!");
+DUMPER7_ASSERTS_AtomAudioVolume_SetEnabled;
 
 // Function CriWareRuntime.AtomAudioVolume.SetPriority
 // 0x0004 (0x0004 - 0x0000)
@@ -417,9 +335,7 @@ struct AtomAudioVolume_SetPriority final
 public:
 	float                                         NewPriority;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomAudioVolume_SetPriority) == 0x000004, "Wrong alignment on AtomAudioVolume_SetPriority");
-static_assert(sizeof(AtomAudioVolume_SetPriority) == 0x000004, "Wrong size on AtomAudioVolume_SetPriority");
-static_assert(offsetof(AtomAudioVolume_SetPriority, NewPriority) == 0x000000, "Member 'AtomAudioVolume_SetPriority::NewPriority' has a wrong offset!");
+DUMPER7_ASSERTS_AtomAudioVolume_SetPriority;
 
 // Function CriWareRuntime.AtomAudioVolume.SetReverbSettings
 // 0x0038 (0x0038 - 0x0000)
@@ -428,9 +344,7 @@ struct AtomAudioVolume_SetReverbSettings final
 public:
 	struct FSnapshotSwitchSettings                NewReverbSettings;                                 // 0x0000(0x0038)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomAudioVolume_SetReverbSettings) == 0x000008, "Wrong alignment on AtomAudioVolume_SetReverbSettings");
-static_assert(sizeof(AtomAudioVolume_SetReverbSettings) == 0x000038, "Wrong size on AtomAudioVolume_SetReverbSettings");
-static_assert(offsetof(AtomAudioVolume_SetReverbSettings, NewReverbSettings) == 0x000000, "Member 'AtomAudioVolume_SetReverbSettings::NewReverbSettings' has a wrong offset!");
+DUMPER7_ASSERTS_AtomAudioVolume_SetReverbSettings;
 
 // Function CriWareRuntime.AtomAudioVolume.GetEnabled
 // 0x0001 (0x0001 - 0x0000)
@@ -439,9 +353,7 @@ struct AtomAudioVolume_GetEnabled final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomAudioVolume_GetEnabled) == 0x000001, "Wrong alignment on AtomAudioVolume_GetEnabled");
-static_assert(sizeof(AtomAudioVolume_GetEnabled) == 0x000001, "Wrong size on AtomAudioVolume_GetEnabled");
-static_assert(offsetof(AtomAudioVolume_GetEnabled, ReturnValue) == 0x000000, "Member 'AtomAudioVolume_GetEnabled::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomAudioVolume_GetEnabled;
 
 // Function CriWareRuntime.AtomAudioVolume.GetPriority
 // 0x0004 (0x0004 - 0x0000)
@@ -450,9 +362,7 @@ struct AtomAudioVolume_GetPriority final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomAudioVolume_GetPriority) == 0x000004, "Wrong alignment on AtomAudioVolume_GetPriority");
-static_assert(sizeof(AtomAudioVolume_GetPriority) == 0x000004, "Wrong size on AtomAudioVolume_GetPriority");
-static_assert(offsetof(AtomAudioVolume_GetPriority, ReturnValue) == 0x000000, "Member 'AtomAudioVolume_GetPriority::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomAudioVolume_GetPriority;
 
 // Function CriWareRuntime.AtomBusSampler.PauseRecordedSound
 // 0x0001 (0x0001 - 0x0000)
@@ -461,9 +371,7 @@ struct AtomBusSampler_PauseRecordedSound final
 public:
 	bool                                          bPause;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomBusSampler_PauseRecordedSound) == 0x000001, "Wrong alignment on AtomBusSampler_PauseRecordedSound");
-static_assert(sizeof(AtomBusSampler_PauseRecordedSound) == 0x000001, "Wrong size on AtomBusSampler_PauseRecordedSound");
-static_assert(offsetof(AtomBusSampler_PauseRecordedSound, bPause) == 0x000000, "Member 'AtomBusSampler_PauseRecordedSound::bPause' has a wrong offset!");
+DUMPER7_ASSERTS_AtomBusSampler_PauseRecordedSound;
 
 // Function CriWareRuntime.AtomBusSampler.PlayRecordedSound
 // 0x0004 (0x0004 - 0x0000)
@@ -472,9 +380,7 @@ struct AtomBusSampler_PlayRecordedSound final
 public:
 	int32                                         Milliseconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomBusSampler_PlayRecordedSound) == 0x000004, "Wrong alignment on AtomBusSampler_PlayRecordedSound");
-static_assert(sizeof(AtomBusSampler_PlayRecordedSound) == 0x000004, "Wrong size on AtomBusSampler_PlayRecordedSound");
-static_assert(offsetof(AtomBusSampler_PlayRecordedSound, Milliseconds) == 0x000000, "Member 'AtomBusSampler_PlayRecordedSound::Milliseconds' has a wrong offset!");
+DUMPER7_ASSERTS_AtomBusSampler_PlayRecordedSound;
 
 // Function CriWareRuntime.AtomBusSampler.StartRecording
 // 0x0020 (0x0020 - 0x0000)
@@ -487,12 +393,7 @@ public:
 	bool                                          BusOutput;                                         // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(AtomBusSampler_StartRecording) == 0x000008, "Wrong alignment on AtomBusSampler_StartRecording");
-static_assert(sizeof(AtomBusSampler_StartRecording) == 0x000020, "Wrong size on AtomBusSampler_StartRecording");
-static_assert(offsetof(AtomBusSampler_StartRecording, InExpectedDuration) == 0x000000, "Member 'AtomBusSampler_StartRecording::InExpectedDuration' has a wrong offset!");
-static_assert(offsetof(AtomBusSampler_StartRecording, InAsrRack) == 0x000004, "Member 'AtomBusSampler_StartRecording::InAsrRack' has a wrong offset!");
-static_assert(offsetof(AtomBusSampler_StartRecording, InBusName) == 0x000008, "Member 'AtomBusSampler_StartRecording::InBusName' has a wrong offset!");
-static_assert(offsetof(AtomBusSampler_StartRecording, BusOutput) == 0x000018, "Member 'AtomBusSampler_StartRecording::BusOutput' has a wrong offset!");
+DUMPER7_ASSERTS_AtomBusSampler_StartRecording;
 
 // Function CriWareRuntime.AtomBusSampler.CanPlayRecordedSound
 // 0x0001 (0x0001 - 0x0000)
@@ -501,9 +402,7 @@ struct AtomBusSampler_CanPlayRecordedSound final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomBusSampler_CanPlayRecordedSound) == 0x000001, "Wrong alignment on AtomBusSampler_CanPlayRecordedSound");
-static_assert(sizeof(AtomBusSampler_CanPlayRecordedSound) == 0x000001, "Wrong size on AtomBusSampler_CanPlayRecordedSound");
-static_assert(offsetof(AtomBusSampler_CanPlayRecordedSound, ReturnValue) == 0x000000, "Member 'AtomBusSampler_CanPlayRecordedSound::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomBusSampler_CanPlayRecordedSound;
 
 // Function CriWareRuntime.AtomBusSampler.CanRecord
 // 0x0001 (0x0001 - 0x0000)
@@ -512,9 +411,7 @@ struct AtomBusSampler_CanRecord final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomBusSampler_CanRecord) == 0x000001, "Wrong alignment on AtomBusSampler_CanRecord");
-static_assert(sizeof(AtomBusSampler_CanRecord) == 0x000001, "Wrong size on AtomBusSampler_CanRecord");
-static_assert(offsetof(AtomBusSampler_CanRecord, ReturnValue) == 0x000000, "Member 'AtomBusSampler_CanRecord::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomBusSampler_CanRecord;
 
 // Function CriWareRuntime.AtomBusSampler.IsPausedRecordedSound
 // 0x0001 (0x0001 - 0x0000)
@@ -523,9 +420,7 @@ struct AtomBusSampler_IsPausedRecordedSound final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomBusSampler_IsPausedRecordedSound) == 0x000001, "Wrong alignment on AtomBusSampler_IsPausedRecordedSound");
-static_assert(sizeof(AtomBusSampler_IsPausedRecordedSound) == 0x000001, "Wrong size on AtomBusSampler_IsPausedRecordedSound");
-static_assert(offsetof(AtomBusSampler_IsPausedRecordedSound, ReturnValue) == 0x000000, "Member 'AtomBusSampler_IsPausedRecordedSound::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomBusSampler_IsPausedRecordedSound;
 
 // Function CriWareRuntime.AtomBusSampler.IsPlayingRecordedSound
 // 0x0001 (0x0001 - 0x0000)
@@ -534,9 +429,7 @@ struct AtomBusSampler_IsPlayingRecordedSound final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomBusSampler_IsPlayingRecordedSound) == 0x000001, "Wrong alignment on AtomBusSampler_IsPlayingRecordedSound");
-static_assert(sizeof(AtomBusSampler_IsPlayingRecordedSound) == 0x000001, "Wrong size on AtomBusSampler_IsPlayingRecordedSound");
-static_assert(offsetof(AtomBusSampler_IsPlayingRecordedSound, ReturnValue) == 0x000000, "Member 'AtomBusSampler_IsPlayingRecordedSound::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomBusSampler_IsPlayingRecordedSound;
 
 // Function CriWareRuntime.AtomBusSampler.IsRecording
 // 0x0001 (0x0001 - 0x0000)
@@ -545,9 +438,7 @@ struct AtomBusSampler_IsRecording final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomBusSampler_IsRecording) == 0x000001, "Wrong alignment on AtomBusSampler_IsRecording");
-static_assert(sizeof(AtomBusSampler_IsRecording) == 0x000001, "Wrong size on AtomBusSampler_IsRecording");
-static_assert(offsetof(AtomBusSampler_IsRecording, ReturnValue) == 0x000000, "Member 'AtomBusSampler_IsRecording::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomBusSampler_IsRecording;
 
 // Function CriWareRuntime.AtomCallbackManager.NativeBreakAtomBeatSyncInfo
 // 0x0040 (0x0040 - 0x0000)
@@ -562,15 +453,7 @@ public:
 	int32                                         Offset;                                            // 0x0038(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         NumBeats;                                          // 0x003C(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomCallbackManager_NativeBreakAtomBeatSyncInfo) == 0x000008, "Wrong alignment on AtomCallbackManager_NativeBreakAtomBeatSyncInfo");
-static_assert(sizeof(AtomCallbackManager_NativeBreakAtomBeatSyncInfo) == 0x000040, "Wrong size on AtomCallbackManager_NativeBreakAtomBeatSyncInfo");
-static_assert(offsetof(AtomCallbackManager_NativeBreakAtomBeatSyncInfo, BeatSyncInfo) == 0x000000, "Member 'AtomCallbackManager_NativeBreakAtomBeatSyncInfo::BeatSyncInfo' has a wrong offset!");
-static_assert(offsetof(AtomCallbackManager_NativeBreakAtomBeatSyncInfo, BarCnt) == 0x000028, "Member 'AtomCallbackManager_NativeBreakAtomBeatSyncInfo::BarCnt' has a wrong offset!");
-static_assert(offsetof(AtomCallbackManager_NativeBreakAtomBeatSyncInfo, BeatCnt) == 0x00002C, "Member 'AtomCallbackManager_NativeBreakAtomBeatSyncInfo::BeatCnt' has a wrong offset!");
-static_assert(offsetof(AtomCallbackManager_NativeBreakAtomBeatSyncInfo, BeatProgress) == 0x000030, "Member 'AtomCallbackManager_NativeBreakAtomBeatSyncInfo::BeatProgress' has a wrong offset!");
-static_assert(offsetof(AtomCallbackManager_NativeBreakAtomBeatSyncInfo, Bpm) == 0x000034, "Member 'AtomCallbackManager_NativeBreakAtomBeatSyncInfo::Bpm' has a wrong offset!");
-static_assert(offsetof(AtomCallbackManager_NativeBreakAtomBeatSyncInfo, Offset) == 0x000038, "Member 'AtomCallbackManager_NativeBreakAtomBeatSyncInfo::Offset' has a wrong offset!");
-static_assert(offsetof(AtomCallbackManager_NativeBreakAtomBeatSyncInfo, NumBeats) == 0x00003C, "Member 'AtomCallbackManager_NativeBreakAtomBeatSyncInfo::NumBeats' has a wrong offset!");
+DUMPER7_ASSERTS_AtomCallbackManager_NativeBreakAtomBeatSyncInfo;
 
 // Function CriWareRuntime.AtomCallbackManager.NativeBreakAtomSequenceInfo
 // 0x0048 (0x0048 - 0x0000)
@@ -585,13 +468,7 @@ public:
 	uint8                                         Pad_41[0x3];                                       // 0x0041(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallbackID;                                        // 0x0044(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomCallbackManager_NativeBreakAtomSequenceInfo) == 0x000008, "Wrong alignment on AtomCallbackManager_NativeBreakAtomSequenceInfo");
-static_assert(sizeof(AtomCallbackManager_NativeBreakAtomSequenceInfo) == 0x000048, "Wrong size on AtomCallbackManager_NativeBreakAtomSequenceInfo");
-static_assert(offsetof(AtomCallbackManager_NativeBreakAtomSequenceInfo, SequenceInfo) == 0x000000, "Member 'AtomCallbackManager_NativeBreakAtomSequenceInfo::SequenceInfo' has a wrong offset!");
-static_assert(offsetof(AtomCallbackManager_NativeBreakAtomSequenceInfo, Time) == 0x000028, "Member 'AtomCallbackManager_NativeBreakAtomSequenceInfo::Time' has a wrong offset!");
-static_assert(offsetof(AtomCallbackManager_NativeBreakAtomSequenceInfo, TagName) == 0x000030, "Member 'AtomCallbackManager_NativeBreakAtomSequenceInfo::TagName' has a wrong offset!");
-static_assert(offsetof(AtomCallbackManager_NativeBreakAtomSequenceInfo, EventType) == 0x000040, "Member 'AtomCallbackManager_NativeBreakAtomSequenceInfo::EventType' has a wrong offset!");
-static_assert(offsetof(AtomCallbackManager_NativeBreakAtomSequenceInfo, CallbackID) == 0x000044, "Member 'AtomCallbackManager_NativeBreakAtomSequenceInfo::CallbackID' has a wrong offset!");
+DUMPER7_ASSERTS_AtomCallbackManager_NativeBreakAtomSequenceInfo;
 
 // Function CriWareRuntime.AtomCategory.GetAttachedAisacInfoById
 // 0x0040 (0x0040 - 0x0000)
@@ -604,12 +481,7 @@ public:
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FAtomAisacInfo                         AisacInfo;                                         // 0x0010(0x0030)(Parm, OutParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomCategory_GetAttachedAisacInfoById) == 0x000008, "Wrong alignment on AtomCategory_GetAttachedAisacInfoById");
-static_assert(sizeof(AtomCategory_GetAttachedAisacInfoById) == 0x000040, "Wrong size on AtomCategory_GetAttachedAisacInfoById");
-static_assert(offsetof(AtomCategory_GetAttachedAisacInfoById, CategoryId) == 0x000000, "Member 'AtomCategory_GetAttachedAisacInfoById::CategoryId' has a wrong offset!");
-static_assert(offsetof(AtomCategory_GetAttachedAisacInfoById, AisacAttachedIndex) == 0x000004, "Member 'AtomCategory_GetAttachedAisacInfoById::AisacAttachedIndex' has a wrong offset!");
-static_assert(offsetof(AtomCategory_GetAttachedAisacInfoById, IsSuccess) == 0x000008, "Member 'AtomCategory_GetAttachedAisacInfoById::IsSuccess' has a wrong offset!");
-static_assert(offsetof(AtomCategory_GetAttachedAisacInfoById, AisacInfo) == 0x000010, "Member 'AtomCategory_GetAttachedAisacInfoById::AisacInfo' has a wrong offset!");
+DUMPER7_ASSERTS_AtomCategory_GetAttachedAisacInfoById;
 
 // Function CriWareRuntime.AtomCategory.GetAttachedAisacInfoByName
 // 0x0048 (0x0048 - 0x0000)
@@ -622,12 +494,7 @@ public:
 	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FAtomAisacInfo                         AisacInfo;                                         // 0x0018(0x0030)(Parm, OutParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomCategory_GetAttachedAisacInfoByName) == 0x000008, "Wrong alignment on AtomCategory_GetAttachedAisacInfoByName");
-static_assert(sizeof(AtomCategory_GetAttachedAisacInfoByName) == 0x000048, "Wrong size on AtomCategory_GetAttachedAisacInfoByName");
-static_assert(offsetof(AtomCategory_GetAttachedAisacInfoByName, CategoryName) == 0x000000, "Member 'AtomCategory_GetAttachedAisacInfoByName::CategoryName' has a wrong offset!");
-static_assert(offsetof(AtomCategory_GetAttachedAisacInfoByName, AisacAttachedIndex) == 0x000010, "Member 'AtomCategory_GetAttachedAisacInfoByName::AisacAttachedIndex' has a wrong offset!");
-static_assert(offsetof(AtomCategory_GetAttachedAisacInfoByName, IsSuccess) == 0x000014, "Member 'AtomCategory_GetAttachedAisacInfoByName::IsSuccess' has a wrong offset!");
-static_assert(offsetof(AtomCategory_GetAttachedAisacInfoByName, AisacInfo) == 0x000018, "Member 'AtomCategory_GetAttachedAisacInfoByName::AisacInfo' has a wrong offset!");
+DUMPER7_ASSERTS_AtomCategory_GetAttachedAisacInfoByName;
 
 // Function CriWareRuntime.AtomCategory.GetCurrentAisacControlValueById
 // 0x000C (0x000C - 0x0000)
@@ -638,11 +505,7 @@ public:
 	int32                                         AisacControlID;                                    // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomCategory_GetCurrentAisacControlValueById) == 0x000004, "Wrong alignment on AtomCategory_GetCurrentAisacControlValueById");
-static_assert(sizeof(AtomCategory_GetCurrentAisacControlValueById) == 0x00000C, "Wrong size on AtomCategory_GetCurrentAisacControlValueById");
-static_assert(offsetof(AtomCategory_GetCurrentAisacControlValueById, CategoryId) == 0x000000, "Member 'AtomCategory_GetCurrentAisacControlValueById::CategoryId' has a wrong offset!");
-static_assert(offsetof(AtomCategory_GetCurrentAisacControlValueById, AisacControlID) == 0x000004, "Member 'AtomCategory_GetCurrentAisacControlValueById::AisacControlID' has a wrong offset!");
-static_assert(offsetof(AtomCategory_GetCurrentAisacControlValueById, ReturnValue) == 0x000008, "Member 'AtomCategory_GetCurrentAisacControlValueById::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomCategory_GetCurrentAisacControlValueById;
 
 // Function CriWareRuntime.AtomCategory.GetCurrentAisacControlValueByName
 // 0x0028 (0x0028 - 0x0000)
@@ -654,11 +517,7 @@ public:
 	float                                         ReturnValue;                                       // 0x0020(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(AtomCategory_GetCurrentAisacControlValueByName) == 0x000008, "Wrong alignment on AtomCategory_GetCurrentAisacControlValueByName");
-static_assert(sizeof(AtomCategory_GetCurrentAisacControlValueByName) == 0x000028, "Wrong size on AtomCategory_GetCurrentAisacControlValueByName");
-static_assert(offsetof(AtomCategory_GetCurrentAisacControlValueByName, CategoryName) == 0x000000, "Member 'AtomCategory_GetCurrentAisacControlValueByName::CategoryName' has a wrong offset!");
-static_assert(offsetof(AtomCategory_GetCurrentAisacControlValueByName, AisacControlName) == 0x000010, "Member 'AtomCategory_GetCurrentAisacControlValueByName::AisacControlName' has a wrong offset!");
-static_assert(offsetof(AtomCategory_GetCurrentAisacControlValueByName, ReturnValue) == 0x000020, "Member 'AtomCategory_GetCurrentAisacControlValueByName::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomCategory_GetCurrentAisacControlValueByName;
 
 // Function CriWareRuntime.AtomCategory.GetNumAttachedAisacsById
 // 0x0008 (0x0008 - 0x0000)
@@ -668,10 +527,7 @@ public:
 	int32                                         CategoryId;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomCategory_GetNumAttachedAisacsById) == 0x000004, "Wrong alignment on AtomCategory_GetNumAttachedAisacsById");
-static_assert(sizeof(AtomCategory_GetNumAttachedAisacsById) == 0x000008, "Wrong size on AtomCategory_GetNumAttachedAisacsById");
-static_assert(offsetof(AtomCategory_GetNumAttachedAisacsById, CategoryId) == 0x000000, "Member 'AtomCategory_GetNumAttachedAisacsById::CategoryId' has a wrong offset!");
-static_assert(offsetof(AtomCategory_GetNumAttachedAisacsById, ReturnValue) == 0x000004, "Member 'AtomCategory_GetNumAttachedAisacsById::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomCategory_GetNumAttachedAisacsById;
 
 // Function CriWareRuntime.AtomCategory.GetNumAttachedAisacsByName
 // 0x0018 (0x0018 - 0x0000)
@@ -682,10 +538,7 @@ public:
 	int32                                         ReturnValue;                                       // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(AtomCategory_GetNumAttachedAisacsByName) == 0x000008, "Wrong alignment on AtomCategory_GetNumAttachedAisacsByName");
-static_assert(sizeof(AtomCategory_GetNumAttachedAisacsByName) == 0x000018, "Wrong size on AtomCategory_GetNumAttachedAisacsByName");
-static_assert(offsetof(AtomCategory_GetNumAttachedAisacsByName, CategoryName) == 0x000000, "Member 'AtomCategory_GetNumAttachedAisacsByName::CategoryName' has a wrong offset!");
-static_assert(offsetof(AtomCategory_GetNumAttachedAisacsByName, ReturnValue) == 0x000010, "Member 'AtomCategory_GetNumAttachedAisacsByName::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomCategory_GetNumAttachedAisacsByName;
 
 // Function CriWareRuntime.AtomCategory.GetVolumeByName
 // 0x0018 (0x0018 - 0x0000)
@@ -696,10 +549,7 @@ public:
 	float                                         ReturnValue;                                       // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(AtomCategory_GetVolumeByName) == 0x000008, "Wrong alignment on AtomCategory_GetVolumeByName");
-static_assert(sizeof(AtomCategory_GetVolumeByName) == 0x000018, "Wrong size on AtomCategory_GetVolumeByName");
-static_assert(offsetof(AtomCategory_GetVolumeByName, CategoryName) == 0x000000, "Member 'AtomCategory_GetVolumeByName::CategoryName' has a wrong offset!");
-static_assert(offsetof(AtomCategory_GetVolumeByName, ReturnValue) == 0x000010, "Member 'AtomCategory_GetVolumeByName::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomCategory_GetVolumeByName;
 
 // Function CriWareRuntime.AtomCategory.IsPausedByName
 // 0x0018 (0x0018 - 0x0000)
@@ -710,10 +560,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(AtomCategory_IsPausedByName) == 0x000008, "Wrong alignment on AtomCategory_IsPausedByName");
-static_assert(sizeof(AtomCategory_IsPausedByName) == 0x000018, "Wrong size on AtomCategory_IsPausedByName");
-static_assert(offsetof(AtomCategory_IsPausedByName, CategoryName) == 0x000000, "Member 'AtomCategory_IsPausedByName::CategoryName' has a wrong offset!");
-static_assert(offsetof(AtomCategory_IsPausedByName, ReturnValue) == 0x000010, "Member 'AtomCategory_IsPausedByName::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomCategory_IsPausedByName;
 
 // Function CriWareRuntime.AtomCategory.PauseByName
 // 0x0018 (0x0018 - 0x0000)
@@ -724,10 +571,7 @@ public:
 	bool                                          bPause;                                            // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(AtomCategory_PauseByName) == 0x000008, "Wrong alignment on AtomCategory_PauseByName");
-static_assert(sizeof(AtomCategory_PauseByName) == 0x000018, "Wrong size on AtomCategory_PauseByName");
-static_assert(offsetof(AtomCategory_PauseByName, CategoryName) == 0x000000, "Member 'AtomCategory_PauseByName::CategoryName' has a wrong offset!");
-static_assert(offsetof(AtomCategory_PauseByName, bPause) == 0x000010, "Member 'AtomCategory_PauseByName::bPause' has a wrong offset!");
+DUMPER7_ASSERTS_AtomCategory_PauseByName;
 
 // Function CriWareRuntime.AtomCategory.ResetAllAisacControlById
 // 0x0008 (0x0008 - 0x0000)
@@ -738,10 +582,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(AtomCategory_ResetAllAisacControlById) == 0x000004, "Wrong alignment on AtomCategory_ResetAllAisacControlById");
-static_assert(sizeof(AtomCategory_ResetAllAisacControlById) == 0x000008, "Wrong size on AtomCategory_ResetAllAisacControlById");
-static_assert(offsetof(AtomCategory_ResetAllAisacControlById, CategoryId) == 0x000000, "Member 'AtomCategory_ResetAllAisacControlById::CategoryId' has a wrong offset!");
-static_assert(offsetof(AtomCategory_ResetAllAisacControlById, ReturnValue) == 0x000004, "Member 'AtomCategory_ResetAllAisacControlById::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomCategory_ResetAllAisacControlById;
 
 // Function CriWareRuntime.AtomCategory.ResetAllAisacControlByName
 // 0x0018 (0x0018 - 0x0000)
@@ -752,10 +593,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(AtomCategory_ResetAllAisacControlByName) == 0x000008, "Wrong alignment on AtomCategory_ResetAllAisacControlByName");
-static_assert(sizeof(AtomCategory_ResetAllAisacControlByName) == 0x000018, "Wrong size on AtomCategory_ResetAllAisacControlByName");
-static_assert(offsetof(AtomCategory_ResetAllAisacControlByName, CategoryName) == 0x000000, "Member 'AtomCategory_ResetAllAisacControlByName::CategoryName' has a wrong offset!");
-static_assert(offsetof(AtomCategory_ResetAllAisacControlByName, ReturnValue) == 0x000010, "Member 'AtomCategory_ResetAllAisacControlByName::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomCategory_ResetAllAisacControlByName;
 
 // Function CriWareRuntime.AtomCategory.SetAisacControlByName
 // 0x0028 (0x0028 - 0x0000)
@@ -767,11 +605,7 @@ public:
 	float                                         Value;                                             // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(AtomCategory_SetAisacControlByName) == 0x000008, "Wrong alignment on AtomCategory_SetAisacControlByName");
-static_assert(sizeof(AtomCategory_SetAisacControlByName) == 0x000028, "Wrong size on AtomCategory_SetAisacControlByName");
-static_assert(offsetof(AtomCategory_SetAisacControlByName, CategoryName) == 0x000000, "Member 'AtomCategory_SetAisacControlByName::CategoryName' has a wrong offset!");
-static_assert(offsetof(AtomCategory_SetAisacControlByName, AisacName) == 0x000010, "Member 'AtomCategory_SetAisacControlByName::AisacName' has a wrong offset!");
-static_assert(offsetof(AtomCategory_SetAisacControlByName, Value) == 0x000020, "Member 'AtomCategory_SetAisacControlByName::Value' has a wrong offset!");
+DUMPER7_ASSERTS_AtomCategory_SetAisacControlByName;
 
 // Function CriWareRuntime.AtomCategory.SetMute
 // 0x0018 (0x0018 - 0x0000)
@@ -782,10 +616,7 @@ public:
 	bool                                          IsMute;                                            // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(AtomCategory_SetMute) == 0x000008, "Wrong alignment on AtomCategory_SetMute");
-static_assert(sizeof(AtomCategory_SetMute) == 0x000018, "Wrong size on AtomCategory_SetMute");
-static_assert(offsetof(AtomCategory_SetMute, CategoryName) == 0x000000, "Member 'AtomCategory_SetMute::CategoryName' has a wrong offset!");
-static_assert(offsetof(AtomCategory_SetMute, IsMute) == 0x000010, "Member 'AtomCategory_SetMute::IsMute' has a wrong offset!");
+DUMPER7_ASSERTS_AtomCategory_SetMute;
 
 // Function CriWareRuntime.AtomCategory.SetVolumeByName
 // 0x0018 (0x0018 - 0x0000)
@@ -796,10 +627,7 @@ public:
 	float                                         Volume;                                            // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(AtomCategory_SetVolumeByName) == 0x000008, "Wrong alignment on AtomCategory_SetVolumeByName");
-static_assert(sizeof(AtomCategory_SetVolumeByName) == 0x000018, "Wrong size on AtomCategory_SetVolumeByName");
-static_assert(offsetof(AtomCategory_SetVolumeByName, CategoryName) == 0x000000, "Member 'AtomCategory_SetVolumeByName::CategoryName' has a wrong offset!");
-static_assert(offsetof(AtomCategory_SetVolumeByName, Volume) == 0x000010, "Member 'AtomCategory_SetVolumeByName::Volume' has a wrong offset!");
+DUMPER7_ASSERTS_AtomCategory_SetVolumeByName;
 
 // Function CriWareRuntime.AtomCategory.StopByName
 // 0x0010 (0x0010 - 0x0000)
@@ -808,9 +636,7 @@ struct AtomCategory_StopByName final
 public:
 	class FString                                 CategoryName;                                      // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomCategory_StopByName) == 0x000008, "Wrong alignment on AtomCategory_StopByName");
-static_assert(sizeof(AtomCategory_StopByName) == 0x000010, "Wrong size on AtomCategory_StopByName");
-static_assert(offsetof(AtomCategory_StopByName, CategoryName) == 0x000000, "Member 'AtomCategory_StopByName::CategoryName' has a wrong offset!");
+DUMPER7_ASSERTS_AtomCategory_StopByName;
 
 // Function CriWareRuntime.AtomComponent.DestroyComponentByID
 // 0x0004 (0x0004 - 0x0000)
@@ -819,9 +645,7 @@ struct AtomComponent_DestroyComponentByID final
 public:
 	int32                                         TargetID;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomComponent_DestroyComponentByID) == 0x000004, "Wrong alignment on AtomComponent_DestroyComponentByID");
-static_assert(sizeof(AtomComponent_DestroyComponentByID) == 0x000004, "Wrong size on AtomComponent_DestroyComponentByID");
-static_assert(offsetof(AtomComponent_DestroyComponentByID, TargetID) == 0x000000, "Member 'AtomComponent_DestroyComponentByID::TargetID' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_DestroyComponentByID;
 
 // Function CriWareRuntime.AtomComponent.GetAtomComponentFromID
 // 0x0010 (0x0010 - 0x0000)
@@ -832,10 +656,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAtomComponent*                         ReturnValue;                                       // 0x0008(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomComponent_GetAtomComponentFromID) == 0x000008, "Wrong alignment on AtomComponent_GetAtomComponentFromID");
-static_assert(sizeof(AtomComponent_GetAtomComponentFromID) == 0x000010, "Wrong size on AtomComponent_GetAtomComponentFromID");
-static_assert(offsetof(AtomComponent_GetAtomComponentFromID, TargetID) == 0x000000, "Member 'AtomComponent_GetAtomComponentFromID::TargetID' has a wrong offset!");
-static_assert(offsetof(AtomComponent_GetAtomComponentFromID, ReturnValue) == 0x000008, "Member 'AtomComponent_GetAtomComponentFromID::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_GetAtomComponentFromID;
 
 // Function CriWareRuntime.AtomComponent.GetDefaultAttenuationEnable
 // 0x0001 (0x0001 - 0x0000)
@@ -844,9 +665,7 @@ struct AtomComponent_GetDefaultAttenuationEnable final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomComponent_GetDefaultAttenuationEnable) == 0x000001, "Wrong alignment on AtomComponent_GetDefaultAttenuationEnable");
-static_assert(sizeof(AtomComponent_GetDefaultAttenuationEnable) == 0x000001, "Wrong size on AtomComponent_GetDefaultAttenuationEnable");
-static_assert(offsetof(AtomComponent_GetDefaultAttenuationEnable, ReturnValue) == 0x000000, "Member 'AtomComponent_GetDefaultAttenuationEnable::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_GetDefaultAttenuationEnable;
 
 // Function CriWareRuntime.AtomComponent.SetDefaultAttenuationEnable
 // 0x0001 (0x0001 - 0x0000)
@@ -855,9 +674,7 @@ struct AtomComponent_SetDefaultAttenuationEnable final
 public:
 	bool                                          bEnable;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomComponent_SetDefaultAttenuationEnable) == 0x000001, "Wrong alignment on AtomComponent_SetDefaultAttenuationEnable");
-static_assert(sizeof(AtomComponent_SetDefaultAttenuationEnable) == 0x000001, "Wrong size on AtomComponent_SetDefaultAttenuationEnable");
-static_assert(offsetof(AtomComponent_SetDefaultAttenuationEnable, bEnable) == 0x000000, "Member 'AtomComponent_SetDefaultAttenuationEnable::bEnable' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_SetDefaultAttenuationEnable;
 
 // Function CriWareRuntime.AtomComponent.AdjustAttenuation
 // 0x03D0 (0x03D0 - 0x0000)
@@ -866,9 +683,7 @@ struct AtomComponent_AdjustAttenuation final
 public:
 	struct FSoundAttenuationSettings              InAttenuationSettings;                             // 0x0000(0x03D0)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomComponent_AdjustAttenuation) == 0x000008, "Wrong alignment on AtomComponent_AdjustAttenuation");
-static_assert(sizeof(AtomComponent_AdjustAttenuation) == 0x0003D0, "Wrong size on AtomComponent_AdjustAttenuation");
-static_assert(offsetof(AtomComponent_AdjustAttenuation, InAttenuationSettings) == 0x000000, "Member 'AtomComponent_AdjustAttenuation::InAttenuationSettings' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_AdjustAttenuation;
 
 // Function CriWareRuntime.AtomComponent.AttachAreaSoundVolume
 // 0x0008 (0x0008 - 0x0000)
@@ -877,9 +692,7 @@ struct AtomComponent_AttachAreaSoundVolume final
 public:
 	class AAtomAreaSoundVolume*                   sound_shape_volume;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomComponent_AttachAreaSoundVolume) == 0x000008, "Wrong alignment on AtomComponent_AttachAreaSoundVolume");
-static_assert(sizeof(AtomComponent_AttachAreaSoundVolume) == 0x000008, "Wrong size on AtomComponent_AttachAreaSoundVolume");
-static_assert(offsetof(AtomComponent_AttachAreaSoundVolume, sound_shape_volume) == 0x000000, "Member 'AtomComponent_AttachAreaSoundVolume::sound_shape_volume' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_AttachAreaSoundVolume;
 
 // Function CriWareRuntime.AtomComponent.BP_GetAttenuationSettingsToApply
 // 0x03D8 (0x03D8 - 0x0000)
@@ -890,10 +703,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x03D0(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_3D1[0x7];                                      // 0x03D1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(AtomComponent_BP_GetAttenuationSettingsToApply) == 0x000008, "Wrong alignment on AtomComponent_BP_GetAttenuationSettingsToApply");
-static_assert(sizeof(AtomComponent_BP_GetAttenuationSettingsToApply) == 0x0003D8, "Wrong size on AtomComponent_BP_GetAttenuationSettingsToApply");
-static_assert(offsetof(AtomComponent_BP_GetAttenuationSettingsToApply, OutAttenuationSettings) == 0x000000, "Member 'AtomComponent_BP_GetAttenuationSettingsToApply::OutAttenuationSettings' has a wrong offset!");
-static_assert(offsetof(AtomComponent_BP_GetAttenuationSettingsToApply, ReturnValue) == 0x0003D0, "Member 'AtomComponent_BP_GetAttenuationSettingsToApply::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_BP_GetAttenuationSettingsToApply;
 
 // Function CriWareRuntime.AtomComponent.EnqueueSound
 // 0x0008 (0x0008 - 0x0000)
@@ -902,9 +712,7 @@ struct AtomComponent_EnqueueSound final
 public:
 	class USoundAtomCue*                          NewSound;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomComponent_EnqueueSound) == 0x000008, "Wrong alignment on AtomComponent_EnqueueSound");
-static_assert(sizeof(AtomComponent_EnqueueSound) == 0x000008, "Wrong size on AtomComponent_EnqueueSound");
-static_assert(offsetof(AtomComponent_EnqueueSound, NewSound) == 0x000000, "Member 'AtomComponent_EnqueueSound::NewSound' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_EnqueueSound;
 
 // Function CriWareRuntime.AtomComponent.FadeIn
 // 0x000C (0x000C - 0x0000)
@@ -915,11 +723,7 @@ public:
 	float                                         FadeVolumeLevel;                                   // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         StartTime;                                         // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomComponent_FadeIn) == 0x000004, "Wrong alignment on AtomComponent_FadeIn");
-static_assert(sizeof(AtomComponent_FadeIn) == 0x00000C, "Wrong size on AtomComponent_FadeIn");
-static_assert(offsetof(AtomComponent_FadeIn, FadeInDuration) == 0x000000, "Member 'AtomComponent_FadeIn::FadeInDuration' has a wrong offset!");
-static_assert(offsetof(AtomComponent_FadeIn, FadeVolumeLevel) == 0x000004, "Member 'AtomComponent_FadeIn::FadeVolumeLevel' has a wrong offset!");
-static_assert(offsetof(AtomComponent_FadeIn, StartTime) == 0x000008, "Member 'AtomComponent_FadeIn::StartTime' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_FadeIn;
 
 // Function CriWareRuntime.AtomComponent.FadeOut
 // 0x0004 (0x0004 - 0x0000)
@@ -928,9 +732,7 @@ struct AtomComponent_FadeOut final
 public:
 	float                                         FadeOutDuration;                                   // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomComponent_FadeOut) == 0x000004, "Wrong alignment on AtomComponent_FadeOut");
-static_assert(sizeof(AtomComponent_FadeOut) == 0x000004, "Wrong size on AtomComponent_FadeOut");
-static_assert(offsetof(AtomComponent_FadeOut, FadeOutDuration) == 0x000000, "Member 'AtomComponent_FadeOut::FadeOutDuration' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_FadeOut;
 
 // Function CriWareRuntime.AtomComponent.GetAtomAppliedValueParam
 // 0x0080 (0x0080 - 0x0000)
@@ -939,9 +741,7 @@ struct AtomComponent_GetAtomAppliedValueParam final
 public:
 	struct FAtomAppliedValueParam                 ReturnValue;                                       // 0x0000(0x0080)(ConstParm, Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomComponent_GetAtomAppliedValueParam) == 0x000008, "Wrong alignment on AtomComponent_GetAtomAppliedValueParam");
-static_assert(sizeof(AtomComponent_GetAtomAppliedValueParam) == 0x000080, "Wrong size on AtomComponent_GetAtomAppliedValueParam");
-static_assert(offsetof(AtomComponent_GetAtomAppliedValueParam, ReturnValue) == 0x000000, "Member 'AtomComponent_GetAtomAppliedValueParam::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_GetAtomAppliedValueParam;
 
 // Function CriWareRuntime.AtomComponent.GetAudioVolumeValueMap
 // 0x0058 (0x0058 - 0x0000)
@@ -952,10 +752,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TMap<class FString, float>                    ReturnValue;                                       // 0x0008(0x0050)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomComponent_GetAudioVolumeValueMap) == 0x000008, "Wrong alignment on AtomComponent_GetAudioVolumeValueMap");
-static_assert(sizeof(AtomComponent_GetAudioVolumeValueMap) == 0x000058, "Wrong size on AtomComponent_GetAudioVolumeValueMap");
-static_assert(offsetof(AtomComponent_GetAudioVolumeValueMap, Type) == 0x000000, "Member 'AtomComponent_GetAudioVolumeValueMap::Type' has a wrong offset!");
-static_assert(offsetof(AtomComponent_GetAudioVolumeValueMap, ReturnValue) == 0x000008, "Member 'AtomComponent_GetAudioVolumeValueMap::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_GetAudioVolumeValueMap;
 
 // Function CriWareRuntime.AtomComponent.GetVolume
 // 0x0004 (0x0004 - 0x0000)
@@ -964,9 +761,7 @@ struct AtomComponent_GetVolume final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomComponent_GetVolume) == 0x000004, "Wrong alignment on AtomComponent_GetVolume");
-static_assert(sizeof(AtomComponent_GetVolume) == 0x000004, "Wrong size on AtomComponent_GetVolume");
-static_assert(offsetof(AtomComponent_GetVolume, ReturnValue) == 0x000000, "Member 'AtomComponent_GetVolume::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_GetVolume;
 
 // Function CriWareRuntime.AtomComponent.Pause
 // 0x0001 (0x0001 - 0x0000)
@@ -975,9 +770,7 @@ struct AtomComponent_Pause final
 public:
 	bool                                          bPause;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomComponent_Pause) == 0x000001, "Wrong alignment on AtomComponent_Pause");
-static_assert(sizeof(AtomComponent_Pause) == 0x000001, "Wrong size on AtomComponent_Pause");
-static_assert(offsetof(AtomComponent_Pause, bPause) == 0x000000, "Member 'AtomComponent_Pause::bPause' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_Pause;
 
 // Function CriWareRuntime.AtomComponent.Play
 // 0x0004 (0x0004 - 0x0000)
@@ -986,9 +779,7 @@ struct AtomComponent_Play final
 public:
 	float                                         StartTime;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomComponent_Play) == 0x000004, "Wrong alignment on AtomComponent_Play");
-static_assert(sizeof(AtomComponent_Play) == 0x000004, "Wrong size on AtomComponent_Play");
-static_assert(offsetof(AtomComponent_Play, StartTime) == 0x000000, "Member 'AtomComponent_Play::StartTime' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_Play;
 
 // Function CriWareRuntime.AtomComponent.RemoveOutputPort
 // 0x0010 (0x0010 - 0x0000)
@@ -997,9 +788,7 @@ struct AtomComponent_RemoveOutputPort final
 public:
 	class FString                                 port_name;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomComponent_RemoveOutputPort) == 0x000008, "Wrong alignment on AtomComponent_RemoveOutputPort");
-static_assert(sizeof(AtomComponent_RemoveOutputPort) == 0x000010, "Wrong size on AtomComponent_RemoveOutputPort");
-static_assert(offsetof(AtomComponent_RemoveOutputPort, port_name) == 0x000000, "Member 'AtomComponent_RemoveOutputPort::port_name' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_RemoveOutputPort;
 
 // Function CriWareRuntime.AtomComponent.RemovePreferredOutputPort
 // 0x0010 (0x0010 - 0x0000)
@@ -1008,9 +797,7 @@ struct AtomComponent_RemovePreferredOutputPort final
 public:
 	class FString                                 port_name;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomComponent_RemovePreferredOutputPort) == 0x000008, "Wrong alignment on AtomComponent_RemovePreferredOutputPort");
-static_assert(sizeof(AtomComponent_RemovePreferredOutputPort) == 0x000010, "Wrong size on AtomComponent_RemovePreferredOutputPort");
-static_assert(offsetof(AtomComponent_RemovePreferredOutputPort, port_name) == 0x000000, "Member 'AtomComponent_RemovePreferredOutputPort::port_name' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_RemovePreferredOutputPort;
 
 // Function CriWareRuntime.AtomComponent.SetAisacByName
 // 0x0018 (0x0018 - 0x0000)
@@ -1021,10 +808,7 @@ public:
 	float                                         ControlValue;                                      // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(AtomComponent_SetAisacByName) == 0x000008, "Wrong alignment on AtomComponent_SetAisacByName");
-static_assert(sizeof(AtomComponent_SetAisacByName) == 0x000018, "Wrong size on AtomComponent_SetAisacByName");
-static_assert(offsetof(AtomComponent_SetAisacByName, ControlName) == 0x000000, "Member 'AtomComponent_SetAisacByName::ControlName' has a wrong offset!");
-static_assert(offsetof(AtomComponent_SetAisacByName, ControlValue) == 0x000010, "Member 'AtomComponent_SetAisacByName::ControlValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_SetAisacByName;
 
 // Function CriWareRuntime.AtomComponent.SetAsrRackID
 // 0x0004 (0x0004 - 0x0000)
@@ -1033,9 +817,7 @@ struct AtomComponent_SetAsrRackID final
 public:
 	int32                                         asr_rack_id;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomComponent_SetAsrRackID) == 0x000004, "Wrong alignment on AtomComponent_SetAsrRackID");
-static_assert(sizeof(AtomComponent_SetAsrRackID) == 0x000004, "Wrong size on AtomComponent_SetAsrRackID");
-static_assert(offsetof(AtomComponent_SetAsrRackID, asr_rack_id) == 0x000000, "Member 'AtomComponent_SetAsrRackID::asr_rack_id' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_SetAsrRackID;
 
 // Function CriWareRuntime.AtomComponent.SetAsrRackIdArray
 // 0x0010 (0x0010 - 0x0000)
@@ -1044,9 +826,7 @@ struct AtomComponent_SetAsrRackIdArray final
 public:
 	TArray<int32>                                 AsrRackIDs;                                        // 0x0000(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomComponent_SetAsrRackIdArray) == 0x000008, "Wrong alignment on AtomComponent_SetAsrRackIdArray");
-static_assert(sizeof(AtomComponent_SetAsrRackIdArray) == 0x000010, "Wrong size on AtomComponent_SetAsrRackIdArray");
-static_assert(offsetof(AtomComponent_SetAsrRackIdArray, AsrRackIDs) == 0x000000, "Member 'AtomComponent_SetAsrRackIdArray::AsrRackIDs' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_SetAsrRackIdArray;
 
 // Function CriWareRuntime.AtomComponent.SetBusSendLevel
 // 0x0008 (0x0008 - 0x0000)
@@ -1056,10 +836,7 @@ public:
 	int32                                         BusId;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Level;                                             // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomComponent_SetBusSendLevel) == 0x000004, "Wrong alignment on AtomComponent_SetBusSendLevel");
-static_assert(sizeof(AtomComponent_SetBusSendLevel) == 0x000008, "Wrong size on AtomComponent_SetBusSendLevel");
-static_assert(offsetof(AtomComponent_SetBusSendLevel, BusId) == 0x000000, "Member 'AtomComponent_SetBusSendLevel::BusId' has a wrong offset!");
-static_assert(offsetof(AtomComponent_SetBusSendLevel, Level) == 0x000004, "Member 'AtomComponent_SetBusSendLevel::Level' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_SetBusSendLevel;
 
 // Function CriWareRuntime.AtomComponent.SetBusSendLevelByName
 // 0x0018 (0x0018 - 0x0000)
@@ -1070,10 +847,7 @@ public:
 	float                                         Level;                                             // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(AtomComponent_SetBusSendLevelByName) == 0x000008, "Wrong alignment on AtomComponent_SetBusSendLevelByName");
-static_assert(sizeof(AtomComponent_SetBusSendLevelByName) == 0x000018, "Wrong size on AtomComponent_SetBusSendLevelByName");
-static_assert(offsetof(AtomComponent_SetBusSendLevelByName, BusName) == 0x000000, "Member 'AtomComponent_SetBusSendLevelByName::BusName' has a wrong offset!");
-static_assert(offsetof(AtomComponent_SetBusSendLevelByName, Level) == 0x000010, "Member 'AtomComponent_SetBusSendLevelByName::Level' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_SetBusSendLevelByName;
 
 // Function CriWareRuntime.AtomComponent.SetBusSendLevelOffset
 // 0x0008 (0x0008 - 0x0000)
@@ -1083,10 +857,7 @@ public:
 	int32                                         BusId;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         LevelOffset;                                       // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomComponent_SetBusSendLevelOffset) == 0x000004, "Wrong alignment on AtomComponent_SetBusSendLevelOffset");
-static_assert(sizeof(AtomComponent_SetBusSendLevelOffset) == 0x000008, "Wrong size on AtomComponent_SetBusSendLevelOffset");
-static_assert(offsetof(AtomComponent_SetBusSendLevelOffset, BusId) == 0x000000, "Member 'AtomComponent_SetBusSendLevelOffset::BusId' has a wrong offset!");
-static_assert(offsetof(AtomComponent_SetBusSendLevelOffset, LevelOffset) == 0x000004, "Member 'AtomComponent_SetBusSendLevelOffset::LevelOffset' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_SetBusSendLevelOffset;
 
 // Function CriWareRuntime.AtomComponent.SetBusSendLevelOffsetByName
 // 0x0018 (0x0018 - 0x0000)
@@ -1097,10 +868,7 @@ public:
 	float                                         LevelOffset;                                       // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(AtomComponent_SetBusSendLevelOffsetByName) == 0x000008, "Wrong alignment on AtomComponent_SetBusSendLevelOffsetByName");
-static_assert(sizeof(AtomComponent_SetBusSendLevelOffsetByName) == 0x000018, "Wrong size on AtomComponent_SetBusSendLevelOffsetByName");
-static_assert(offsetof(AtomComponent_SetBusSendLevelOffsetByName, BusName) == 0x000000, "Member 'AtomComponent_SetBusSendLevelOffsetByName::BusName' has a wrong offset!");
-static_assert(offsetof(AtomComponent_SetBusSendLevelOffsetByName, LevelOffset) == 0x000010, "Member 'AtomComponent_SetBusSendLevelOffsetByName::LevelOffset' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_SetBusSendLevelOffsetByName;
 
 // Function CriWareRuntime.AtomComponent.SetNextBlockIndex
 // 0x0004 (0x0004 - 0x0000)
@@ -1109,9 +877,7 @@ struct AtomComponent_SetNextBlockIndex final
 public:
 	int32                                         BlockIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomComponent_SetNextBlockIndex) == 0x000004, "Wrong alignment on AtomComponent_SetNextBlockIndex");
-static_assert(sizeof(AtomComponent_SetNextBlockIndex) == 0x000004, "Wrong size on AtomComponent_SetNextBlockIndex");
-static_assert(offsetof(AtomComponent_SetNextBlockIndex, BlockIndex) == 0x000000, "Member 'AtomComponent_SetNextBlockIndex::BlockIndex' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_SetNextBlockIndex;
 
 // Function CriWareRuntime.AtomComponent.SetOutputPort
 // 0x0010 (0x0010 - 0x0000)
@@ -1120,9 +886,7 @@ struct AtomComponent_SetOutputPort final
 public:
 	class FString                                 port_name;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomComponent_SetOutputPort) == 0x000008, "Wrong alignment on AtomComponent_SetOutputPort");
-static_assert(sizeof(AtomComponent_SetOutputPort) == 0x000010, "Wrong size on AtomComponent_SetOutputPort");
-static_assert(offsetof(AtomComponent_SetOutputPort, port_name) == 0x000000, "Member 'AtomComponent_SetOutputPort::port_name' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_SetOutputPort;
 
 // Function CriWareRuntime.AtomComponent.SetPitch
 // 0x0004 (0x0004 - 0x0000)
@@ -1131,9 +895,7 @@ struct AtomComponent_SetPitch final
 public:
 	float                                         Pitch;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomComponent_SetPitch) == 0x000004, "Wrong alignment on AtomComponent_SetPitch");
-static_assert(sizeof(AtomComponent_SetPitch) == 0x000004, "Wrong size on AtomComponent_SetPitch");
-static_assert(offsetof(AtomComponent_SetPitch, Pitch) == 0x000000, "Member 'AtomComponent_SetPitch::Pitch' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_SetPitch;
 
 // Function CriWareRuntime.AtomComponent.SetPitchMultiplier
 // 0x0004 (0x0004 - 0x0000)
@@ -1142,9 +904,7 @@ struct AtomComponent_SetPitchMultiplier final
 public:
 	float                                         NewPitchMultiplier;                                // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomComponent_SetPitchMultiplier) == 0x000004, "Wrong alignment on AtomComponent_SetPitchMultiplier");
-static_assert(sizeof(AtomComponent_SetPitchMultiplier) == 0x000004, "Wrong size on AtomComponent_SetPitchMultiplier");
-static_assert(offsetof(AtomComponent_SetPitchMultiplier, NewPitchMultiplier) == 0x000000, "Member 'AtomComponent_SetPitchMultiplier::NewPitchMultiplier' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_SetPitchMultiplier;
 
 // Function CriWareRuntime.AtomComponent.SetPreferredOutputPort
 // 0x0010 (0x0010 - 0x0000)
@@ -1153,9 +913,7 @@ struct AtomComponent_SetPreferredOutputPort final
 public:
 	class FString                                 port_name;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomComponent_SetPreferredOutputPort) == 0x000008, "Wrong alignment on AtomComponent_SetPreferredOutputPort");
-static_assert(sizeof(AtomComponent_SetPreferredOutputPort) == 0x000010, "Wrong size on AtomComponent_SetPreferredOutputPort");
-static_assert(offsetof(AtomComponent_SetPreferredOutputPort, port_name) == 0x000000, "Member 'AtomComponent_SetPreferredOutputPort::port_name' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_SetPreferredOutputPort;
 
 // Function CriWareRuntime.AtomComponent.SetRegion
 // 0x0008 (0x0008 - 0x0000)
@@ -1164,9 +922,7 @@ struct AtomComponent_SetRegion final
 public:
 	class UAtom3dRegion*                          InRegion;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomComponent_SetRegion) == 0x000008, "Wrong alignment on AtomComponent_SetRegion");
-static_assert(sizeof(AtomComponent_SetRegion) == 0x000008, "Wrong size on AtomComponent_SetRegion");
-static_assert(offsetof(AtomComponent_SetRegion, InRegion) == 0x000000, "Member 'AtomComponent_SetRegion::InRegion' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_SetRegion;
 
 // Function CriWareRuntime.AtomComponent.SetSelectorLabel
 // 0x0020 (0x0020 - 0x0000)
@@ -1176,10 +932,7 @@ public:
 	class FString                                 Selector;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Label;                                             // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomComponent_SetSelectorLabel) == 0x000008, "Wrong alignment on AtomComponent_SetSelectorLabel");
-static_assert(sizeof(AtomComponent_SetSelectorLabel) == 0x000020, "Wrong size on AtomComponent_SetSelectorLabel");
-static_assert(offsetof(AtomComponent_SetSelectorLabel, Selector) == 0x000000, "Member 'AtomComponent_SetSelectorLabel::Selector' has a wrong offset!");
-static_assert(offsetof(AtomComponent_SetSelectorLabel, Label) == 0x000010, "Member 'AtomComponent_SetSelectorLabel::Label' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_SetSelectorLabel;
 
 // Function CriWareRuntime.AtomComponent.SetSound
 // 0x0008 (0x0008 - 0x0000)
@@ -1188,9 +941,7 @@ struct AtomComponent_SetSound final
 public:
 	class USoundAtomCue*                          NewSound;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomComponent_SetSound) == 0x000008, "Wrong alignment on AtomComponent_SetSound");
-static_assert(sizeof(AtomComponent_SetSound) == 0x000008, "Wrong size on AtomComponent_SetSound");
-static_assert(offsetof(AtomComponent_SetSound, NewSound) == 0x000000, "Member 'AtomComponent_SetSound::NewSound' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_SetSound;
 
 // Function CriWareRuntime.AtomComponent.SetSoundObject
 // 0x0008 (0x0008 - 0x0000)
@@ -1199,9 +950,7 @@ struct AtomComponent_SetSoundObject final
 public:
 	class UAtomSoundObject*                       InSoundObject;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomComponent_SetSoundObject) == 0x000008, "Wrong alignment on AtomComponent_SetSoundObject");
-static_assert(sizeof(AtomComponent_SetSoundObject) == 0x000008, "Wrong size on AtomComponent_SetSoundObject");
-static_assert(offsetof(AtomComponent_SetSoundObject, InSoundObject) == 0x000000, "Member 'AtomComponent_SetSoundObject::InSoundObject' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_SetSoundObject;
 
 // Function CriWareRuntime.AtomComponent.SetVolume
 // 0x0004 (0x0004 - 0x0000)
@@ -1210,9 +959,7 @@ struct AtomComponent_SetVolume final
 public:
 	float                                         Volume;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomComponent_SetVolume) == 0x000004, "Wrong alignment on AtomComponent_SetVolume");
-static_assert(sizeof(AtomComponent_SetVolume) == 0x000004, "Wrong size on AtomComponent_SetVolume");
-static_assert(offsetof(AtomComponent_SetVolume, Volume) == 0x000000, "Member 'AtomComponent_SetVolume::Volume' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_SetVolume;
 
 // Function CriWareRuntime.AtomComponent.GetAtomComponentID
 // 0x0004 (0x0004 - 0x0000)
@@ -1221,9 +968,7 @@ struct AtomComponent_GetAtomComponentID final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomComponent_GetAtomComponentID) == 0x000004, "Wrong alignment on AtomComponent_GetAtomComponentID");
-static_assert(sizeof(AtomComponent_GetAtomComponentID) == 0x000004, "Wrong size on AtomComponent_GetAtomComponentID");
-static_assert(offsetof(AtomComponent_GetAtomComponentID, ReturnValue) == 0x000000, "Member 'AtomComponent_GetAtomComponentID::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_GetAtomComponentID;
 
 // Function CriWareRuntime.AtomComponent.GetCueName
 // 0x0010 (0x0010 - 0x0000)
@@ -1232,9 +977,7 @@ struct AtomComponent_GetCueName final
 public:
 	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomComponent_GetCueName) == 0x000008, "Wrong alignment on AtomComponent_GetCueName");
-static_assert(sizeof(AtomComponent_GetCueName) == 0x000010, "Wrong size on AtomComponent_GetCueName");
-static_assert(offsetof(AtomComponent_GetCueName, ReturnValue) == 0x000000, "Member 'AtomComponent_GetCueName::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_GetCueName;
 
 // Function CriWareRuntime.AtomComponent.GetCullDistance
 // 0x0004 (0x0004 - 0x0000)
@@ -1243,9 +986,7 @@ struct AtomComponent_GetCullDistance final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomComponent_GetCullDistance) == 0x000004, "Wrong alignment on AtomComponent_GetCullDistance");
-static_assert(sizeof(AtomComponent_GetCullDistance) == 0x000004, "Wrong size on AtomComponent_GetCullDistance");
-static_assert(offsetof(AtomComponent_GetCullDistance, ReturnValue) == 0x000000, "Member 'AtomComponent_GetCullDistance::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_GetCullDistance;
 
 // Function CriWareRuntime.AtomComponent.GetCullDistanceMargin
 // 0x0004 (0x0004 - 0x0000)
@@ -1254,9 +995,7 @@ struct AtomComponent_GetCullDistanceMargin final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomComponent_GetCullDistanceMargin) == 0x000004, "Wrong alignment on AtomComponent_GetCullDistanceMargin");
-static_assert(sizeof(AtomComponent_GetCullDistanceMargin) == 0x000004, "Wrong size on AtomComponent_GetCullDistanceMargin");
-static_assert(offsetof(AtomComponent_GetCullDistanceMargin, ReturnValue) == 0x000000, "Member 'AtomComponent_GetCullDistanceMargin::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_GetCullDistanceMargin;
 
 // Function CriWareRuntime.AtomComponent.GetCurrentBelongingAudioVolume
 // 0x0010 (0x0010 - 0x0000)
@@ -1268,11 +1007,7 @@ public:
 	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class AAtomAudioVolume*                       ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomComponent_GetCurrentBelongingAudioVolume) == 0x000008, "Wrong alignment on AtomComponent_GetCurrentBelongingAudioVolume");
-static_assert(sizeof(AtomComponent_GetCurrentBelongingAudioVolume) == 0x000010, "Wrong size on AtomComponent_GetCurrentBelongingAudioVolume");
-static_assert(offsetof(AtomComponent_GetCurrentBelongingAudioVolume, Type) == 0x000000, "Member 'AtomComponent_GetCurrentBelongingAudioVolume::Type' has a wrong offset!");
-static_assert(offsetof(AtomComponent_GetCurrentBelongingAudioVolume, IsNeighbor) == 0x000001, "Member 'AtomComponent_GetCurrentBelongingAudioVolume::IsNeighbor' has a wrong offset!");
-static_assert(offsetof(AtomComponent_GetCurrentBelongingAudioVolume, ReturnValue) == 0x000008, "Member 'AtomComponent_GetCurrentBelongingAudioVolume::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_GetCurrentBelongingAudioVolume;
 
 // Function CriWareRuntime.AtomComponent.GetCurrentBlockIndex
 // 0x0004 (0x0004 - 0x0000)
@@ -1281,9 +1016,7 @@ struct AtomComponent_GetCurrentBlockIndex final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomComponent_GetCurrentBlockIndex) == 0x000004, "Wrong alignment on AtomComponent_GetCurrentBlockIndex");
-static_assert(sizeof(AtomComponent_GetCurrentBlockIndex) == 0x000004, "Wrong size on AtomComponent_GetCurrentBlockIndex");
-static_assert(offsetof(AtomComponent_GetCurrentBlockIndex, ReturnValue) == 0x000000, "Member 'AtomComponent_GetCurrentBlockIndex::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_GetCurrentBlockIndex;
 
 // Function CriWareRuntime.AtomComponent.GetCurrentCullingBoundaryDistance
 // 0x0004 (0x0004 - 0x0000)
@@ -1292,9 +1025,7 @@ struct AtomComponent_GetCurrentCullingBoundaryDistance final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomComponent_GetCurrentCullingBoundaryDistance) == 0x000004, "Wrong alignment on AtomComponent_GetCurrentCullingBoundaryDistance");
-static_assert(sizeof(AtomComponent_GetCurrentCullingBoundaryDistance) == 0x000004, "Wrong size on AtomComponent_GetCurrentCullingBoundaryDistance");
-static_assert(offsetof(AtomComponent_GetCurrentCullingBoundaryDistance, ReturnValue) == 0x000000, "Member 'AtomComponent_GetCurrentCullingBoundaryDistance::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_GetCurrentCullingBoundaryDistance;
 
 // Function CriWareRuntime.AtomComponent.GetCurrentCullingMarginDistance
 // 0x0004 (0x0004 - 0x0000)
@@ -1303,9 +1034,7 @@ struct AtomComponent_GetCurrentCullingMarginDistance final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomComponent_GetCurrentCullingMarginDistance) == 0x000004, "Wrong alignment on AtomComponent_GetCurrentCullingMarginDistance");
-static_assert(sizeof(AtomComponent_GetCurrentCullingMarginDistance) == 0x000004, "Wrong size on AtomComponent_GetCurrentCullingMarginDistance");
-static_assert(offsetof(AtomComponent_GetCurrentCullingMarginDistance, ReturnValue) == 0x000000, "Member 'AtomComponent_GetCurrentCullingMarginDistance::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_GetCurrentCullingMarginDistance;
 
 // Function CriWareRuntime.AtomComponent.GetCurrentEconomicTickBoundaryDistance
 // 0x0004 (0x0004 - 0x0000)
@@ -1314,9 +1043,7 @@ struct AtomComponent_GetCurrentEconomicTickBoundaryDistance final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomComponent_GetCurrentEconomicTickBoundaryDistance) == 0x000004, "Wrong alignment on AtomComponent_GetCurrentEconomicTickBoundaryDistance");
-static_assert(sizeof(AtomComponent_GetCurrentEconomicTickBoundaryDistance) == 0x000004, "Wrong size on AtomComponent_GetCurrentEconomicTickBoundaryDistance");
-static_assert(offsetof(AtomComponent_GetCurrentEconomicTickBoundaryDistance, ReturnValue) == 0x000000, "Member 'AtomComponent_GetCurrentEconomicTickBoundaryDistance::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_GetCurrentEconomicTickBoundaryDistance;
 
 // Function CriWareRuntime.AtomComponent.GetCurrentEconomicTickFrequency
 // 0x0004 (0x0004 - 0x0000)
@@ -1325,9 +1052,7 @@ struct AtomComponent_GetCurrentEconomicTickFrequency final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomComponent_GetCurrentEconomicTickFrequency) == 0x000004, "Wrong alignment on AtomComponent_GetCurrentEconomicTickFrequency");
-static_assert(sizeof(AtomComponent_GetCurrentEconomicTickFrequency) == 0x000004, "Wrong size on AtomComponent_GetCurrentEconomicTickFrequency");
-static_assert(offsetof(AtomComponent_GetCurrentEconomicTickFrequency, ReturnValue) == 0x000000, "Member 'AtomComponent_GetCurrentEconomicTickFrequency::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_GetCurrentEconomicTickFrequency;
 
 // Function CriWareRuntime.AtomComponent.GetCurrentEconomicTickMarginDistance
 // 0x0004 (0x0004 - 0x0000)
@@ -1336,9 +1061,7 @@ struct AtomComponent_GetCurrentEconomicTickMarginDistance final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomComponent_GetCurrentEconomicTickMarginDistance) == 0x000004, "Wrong alignment on AtomComponent_GetCurrentEconomicTickMarginDistance");
-static_assert(sizeof(AtomComponent_GetCurrentEconomicTickMarginDistance) == 0x000004, "Wrong size on AtomComponent_GetCurrentEconomicTickMarginDistance");
-static_assert(offsetof(AtomComponent_GetCurrentEconomicTickMarginDistance, ReturnValue) == 0x000000, "Member 'AtomComponent_GetCurrentEconomicTickMarginDistance::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_GetCurrentEconomicTickMarginDistance;
 
 // Function CriWareRuntime.AtomComponent.GetCurrentMaxAttenuationDistance
 // 0x0004 (0x0004 - 0x0000)
@@ -1347,9 +1070,7 @@ struct AtomComponent_GetCurrentMaxAttenuationDistance final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomComponent_GetCurrentMaxAttenuationDistance) == 0x000004, "Wrong alignment on AtomComponent_GetCurrentMaxAttenuationDistance");
-static_assert(sizeof(AtomComponent_GetCurrentMaxAttenuationDistance) == 0x000004, "Wrong size on AtomComponent_GetCurrentMaxAttenuationDistance");
-static_assert(offsetof(AtomComponent_GetCurrentMaxAttenuationDistance, ReturnValue) == 0x000000, "Member 'AtomComponent_GetCurrentMaxAttenuationDistance::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_GetCurrentMaxAttenuationDistance;
 
 // Function CriWareRuntime.AtomComponent.GetEconomicTickDistance
 // 0x0004 (0x0004 - 0x0000)
@@ -1358,9 +1079,7 @@ struct AtomComponent_GetEconomicTickDistance final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomComponent_GetEconomicTickDistance) == 0x000004, "Wrong alignment on AtomComponent_GetEconomicTickDistance");
-static_assert(sizeof(AtomComponent_GetEconomicTickDistance) == 0x000004, "Wrong size on AtomComponent_GetEconomicTickDistance");
-static_assert(offsetof(AtomComponent_GetEconomicTickDistance, ReturnValue) == 0x000000, "Member 'AtomComponent_GetEconomicTickDistance::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_GetEconomicTickDistance;
 
 // Function CriWareRuntime.AtomComponent.GetEconomicTickDistanceMargin
 // 0x0004 (0x0004 - 0x0000)
@@ -1369,9 +1088,7 @@ struct AtomComponent_GetEconomicTickDistanceMargin final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomComponent_GetEconomicTickDistanceMargin) == 0x000004, "Wrong alignment on AtomComponent_GetEconomicTickDistanceMargin");
-static_assert(sizeof(AtomComponent_GetEconomicTickDistanceMargin) == 0x000004, "Wrong size on AtomComponent_GetEconomicTickDistanceMargin");
-static_assert(offsetof(AtomComponent_GetEconomicTickDistanceMargin, ReturnValue) == 0x000000, "Member 'AtomComponent_GetEconomicTickDistanceMargin::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_GetEconomicTickDistanceMargin;
 
 // Function CriWareRuntime.AtomComponent.GetEconomicTickFrequency
 // 0x0004 (0x0004 - 0x0000)
@@ -1380,9 +1097,7 @@ struct AtomComponent_GetEconomicTickFrequency final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomComponent_GetEconomicTickFrequency) == 0x000004, "Wrong alignment on AtomComponent_GetEconomicTickFrequency");
-static_assert(sizeof(AtomComponent_GetEconomicTickFrequency) == 0x000004, "Wrong size on AtomComponent_GetEconomicTickFrequency");
-static_assert(offsetof(AtomComponent_GetEconomicTickFrequency, ReturnValue) == 0x000000, "Member 'AtomComponent_GetEconomicTickFrequency::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_GetEconomicTickFrequency;
 
 // Function CriWareRuntime.AtomComponent.GetMaxAttenuationDistance
 // 0x0004 (0x0004 - 0x0000)
@@ -1391,9 +1106,7 @@ struct AtomComponent_GetMaxAttenuationDistance final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomComponent_GetMaxAttenuationDistance) == 0x000004, "Wrong alignment on AtomComponent_GetMaxAttenuationDistance");
-static_assert(sizeof(AtomComponent_GetMaxAttenuationDistance) == 0x000004, "Wrong size on AtomComponent_GetMaxAttenuationDistance");
-static_assert(offsetof(AtomComponent_GetMaxAttenuationDistance, ReturnValue) == 0x000000, "Member 'AtomComponent_GetMaxAttenuationDistance::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_GetMaxAttenuationDistance;
 
 // Function CriWareRuntime.AtomComponent.GetNumPlayedSamples
 // 0x0010 (0x0010 - 0x0000)
@@ -1404,10 +1117,7 @@ public:
 	int32                                         SamplingRate;                                      // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(AtomComponent_GetNumPlayedSamples) == 0x000008, "Wrong alignment on AtomComponent_GetNumPlayedSamples");
-static_assert(sizeof(AtomComponent_GetNumPlayedSamples) == 0x000010, "Wrong size on AtomComponent_GetNumPlayedSamples");
-static_assert(offsetof(AtomComponent_GetNumPlayedSamples, NumSamples) == 0x000000, "Member 'AtomComponent_GetNumPlayedSamples::NumSamples' has a wrong offset!");
-static_assert(offsetof(AtomComponent_GetNumPlayedSamples, SamplingRate) == 0x000008, "Member 'AtomComponent_GetNumPlayedSamples::SamplingRate' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_GetNumPlayedSamples;
 
 // Function CriWareRuntime.AtomComponent.GetNumQueuedSounds
 // 0x0004 (0x0004 - 0x0000)
@@ -1416,9 +1126,7 @@ struct AtomComponent_GetNumQueuedSounds final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomComponent_GetNumQueuedSounds) == 0x000004, "Wrong alignment on AtomComponent_GetNumQueuedSounds");
-static_assert(sizeof(AtomComponent_GetNumQueuedSounds) == 0x000004, "Wrong size on AtomComponent_GetNumQueuedSounds");
-static_assert(offsetof(AtomComponent_GetNumQueuedSounds, ReturnValue) == 0x000000, "Member 'AtomComponent_GetNumQueuedSounds::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_GetNumQueuedSounds;
 
 // Function CriWareRuntime.AtomComponent.GetSequencePosition
 // 0x0004 (0x0004 - 0x0000)
@@ -1427,9 +1135,7 @@ struct AtomComponent_GetSequencePosition final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomComponent_GetSequencePosition) == 0x000004, "Wrong alignment on AtomComponent_GetSequencePosition");
-static_assert(sizeof(AtomComponent_GetSequencePosition) == 0x000004, "Wrong size on AtomComponent_GetSequencePosition");
-static_assert(offsetof(AtomComponent_GetSequencePosition, ReturnValue) == 0x000000, "Member 'AtomComponent_GetSequencePosition::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_GetSequencePosition;
 
 // Function CriWareRuntime.AtomComponent.GetStatus
 // 0x0001 (0x0001 - 0x0000)
@@ -1438,9 +1144,7 @@ struct AtomComponent_GetStatus final
 public:
 	EAtomComponentStatus                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomComponent_GetStatus) == 0x000001, "Wrong alignment on AtomComponent_GetStatus");
-static_assert(sizeof(AtomComponent_GetStatus) == 0x000001, "Wrong size on AtomComponent_GetStatus");
-static_assert(offsetof(AtomComponent_GetStatus, ReturnValue) == 0x000000, "Member 'AtomComponent_GetStatus::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_GetStatus;
 
 // Function CriWareRuntime.AtomComponent.GetTime
 // 0x0004 (0x0004 - 0x0000)
@@ -1449,9 +1153,7 @@ struct AtomComponent_GetTime final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomComponent_GetTime) == 0x000004, "Wrong alignment on AtomComponent_GetTime");
-static_assert(sizeof(AtomComponent_GetTime) == 0x000004, "Wrong size on AtomComponent_GetTime");
-static_assert(offsetof(AtomComponent_GetTime, ReturnValue) == 0x000000, "Member 'AtomComponent_GetTime::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_GetTime;
 
 // Function CriWareRuntime.AtomComponent.GetVelocity
 // 0x0018 (0x0018 - 0x0000)
@@ -1460,9 +1162,7 @@ struct AtomComponent_GetVelocity final
 public:
 	struct FVector                                ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomComponent_GetVelocity) == 0x000008, "Wrong alignment on AtomComponent_GetVelocity");
-static_assert(sizeof(AtomComponent_GetVelocity) == 0x000018, "Wrong size on AtomComponent_GetVelocity");
-static_assert(offsetof(AtomComponent_GetVelocity, ReturnValue) == 0x000000, "Member 'AtomComponent_GetVelocity::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_GetVelocity;
 
 // Function CriWareRuntime.AtomComponent.HasBeenEconomicTick
 // 0x0001 (0x0001 - 0x0000)
@@ -1471,9 +1171,7 @@ struct AtomComponent_HasBeenEconomicTick final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomComponent_HasBeenEconomicTick) == 0x000001, "Wrong alignment on AtomComponent_HasBeenEconomicTick");
-static_assert(sizeof(AtomComponent_HasBeenEconomicTick) == 0x000001, "Wrong size on AtomComponent_HasBeenEconomicTick");
-static_assert(offsetof(AtomComponent_HasBeenEconomicTick, ReturnValue) == 0x000000, "Member 'AtomComponent_HasBeenEconomicTick::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_HasBeenEconomicTick;
 
 // Function CriWareRuntime.AtomComponent.IsLoop
 // 0x0001 (0x0001 - 0x0000)
@@ -1482,9 +1180,7 @@ struct AtomComponent_IsLoop final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomComponent_IsLoop) == 0x000001, "Wrong alignment on AtomComponent_IsLoop");
-static_assert(sizeof(AtomComponent_IsLoop) == 0x000001, "Wrong size on AtomComponent_IsLoop");
-static_assert(offsetof(AtomComponent_IsLoop, ReturnValue) == 0x000000, "Member 'AtomComponent_IsLoop::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_IsLoop;
 
 // Function CriWareRuntime.AtomComponent.IsPaused
 // 0x0001 (0x0001 - 0x0000)
@@ -1493,9 +1189,7 @@ struct AtomComponent_IsPaused final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomComponent_IsPaused) == 0x000001, "Wrong alignment on AtomComponent_IsPaused");
-static_assert(sizeof(AtomComponent_IsPaused) == 0x000001, "Wrong size on AtomComponent_IsPaused");
-static_assert(offsetof(AtomComponent_IsPaused, ReturnValue) == 0x000000, "Member 'AtomComponent_IsPaused::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_IsPaused;
 
 // Function CriWareRuntime.AtomComponent.IsPlaying
 // 0x0001 (0x0001 - 0x0000)
@@ -1504,9 +1198,7 @@ struct AtomComponent_IsPlaying final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomComponent_IsPlaying) == 0x000001, "Wrong alignment on AtomComponent_IsPlaying");
-static_assert(sizeof(AtomComponent_IsPlaying) == 0x000001, "Wrong size on AtomComponent_IsPlaying");
-static_assert(offsetof(AtomComponent_IsPlaying, ReturnValue) == 0x000000, "Member 'AtomComponent_IsPlaying::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_IsPlaying;
 
 // Function CriWareRuntime.AtomComponent.IsReducingTickFrequency
 // 0x0001 (0x0001 - 0x0000)
@@ -1515,9 +1207,7 @@ struct AtomComponent_IsReducingTickFrequency final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomComponent_IsReducingTickFrequency) == 0x000001, "Wrong alignment on AtomComponent_IsReducingTickFrequency");
-static_assert(sizeof(AtomComponent_IsReducingTickFrequency) == 0x000001, "Wrong size on AtomComponent_IsReducingTickFrequency");
-static_assert(offsetof(AtomComponent_IsReducingTickFrequency, ReturnValue) == 0x000000, "Member 'AtomComponent_IsReducingTickFrequency::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomComponent_IsReducingTickFrequency;
 
 // Function CriWareRuntime.AtomCueSheetLoaderComponent.LoadAtomCueSheet
 // 0x0058 (0x0058 - 0x0000)
@@ -1529,12 +1219,7 @@ public:
 	TDelegate<void(class USoundAtomCueSheet* Loaded)> OnLoaded;                                      // 0x0030(0x0010)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FLatentActionInfo                      LatentInfo;                                        // 0x0040(0x0018)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomCueSheetLoaderComponent_LoadAtomCueSheet) == 0x000008, "Wrong alignment on AtomCueSheetLoaderComponent_LoadAtomCueSheet");
-static_assert(sizeof(AtomCueSheetLoaderComponent_LoadAtomCueSheet) == 0x000058, "Wrong size on AtomCueSheetLoaderComponent_LoadAtomCueSheet");
-static_assert(offsetof(AtomCueSheetLoaderComponent_LoadAtomCueSheet, WorldContextObject) == 0x000000, "Member 'AtomCueSheetLoaderComponent_LoadAtomCueSheet::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(AtomCueSheetLoaderComponent_LoadAtomCueSheet, Asset) == 0x000008, "Member 'AtomCueSheetLoaderComponent_LoadAtomCueSheet::Asset' has a wrong offset!");
-static_assert(offsetof(AtomCueSheetLoaderComponent_LoadAtomCueSheet, OnLoaded) == 0x000030, "Member 'AtomCueSheetLoaderComponent_LoadAtomCueSheet::OnLoaded' has a wrong offset!");
-static_assert(offsetof(AtomCueSheetLoaderComponent_LoadAtomCueSheet, LatentInfo) == 0x000040, "Member 'AtomCueSheetLoaderComponent_LoadAtomCueSheet::LatentInfo' has a wrong offset!");
+DUMPER7_ASSERTS_AtomCueSheetLoaderComponent_LoadAtomCueSheet;
 
 // Function CriWareRuntime.AtomCueSheetLoaderComponent.GetAtomCueSheet
 // 0x0008 (0x0008 - 0x0000)
@@ -1543,9 +1228,7 @@ struct AtomCueSheetLoaderComponent_GetAtomCueSheet final
 public:
 	class USoundAtomCueSheet*                     ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomCueSheetLoaderComponent_GetAtomCueSheet) == 0x000008, "Wrong alignment on AtomCueSheetLoaderComponent_GetAtomCueSheet");
-static_assert(sizeof(AtomCueSheetLoaderComponent_GetAtomCueSheet) == 0x000008, "Wrong size on AtomCueSheetLoaderComponent_GetAtomCueSheet");
-static_assert(offsetof(AtomCueSheetLoaderComponent_GetAtomCueSheet, ReturnValue) == 0x000000, "Member 'AtomCueSheetLoaderComponent_GetAtomCueSheet::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomCueSheetLoaderComponent_GetAtomCueSheet;
 
 // Function CriWareRuntime.AtomCueSheetLoaderComponent.GetStatus
 // 0x0001 (0x0001 - 0x0000)
@@ -1554,9 +1237,7 @@ struct AtomCueSheetLoaderComponent_GetStatus final
 public:
 	EAtomCueSheetLoaderComponentStatus            ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomCueSheetLoaderComponent_GetStatus) == 0x000001, "Wrong alignment on AtomCueSheetLoaderComponent_GetStatus");
-static_assert(sizeof(AtomCueSheetLoaderComponent_GetStatus) == 0x000001, "Wrong size on AtomCueSheetLoaderComponent_GetStatus");
-static_assert(offsetof(AtomCueSheetLoaderComponent_GetStatus, ReturnValue) == 0x000000, "Member 'AtomCueSheetLoaderComponent_GetStatus::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomCueSheetLoaderComponent_GetStatus;
 
 // Function CriWareRuntime.AtomDeviceWatcher.GetDeviceChannelCount
 // 0x0004 (0x0004 - 0x0000)
@@ -1565,9 +1246,7 @@ struct AtomDeviceWatcher_GetDeviceChannelCount final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomDeviceWatcher_GetDeviceChannelCount) == 0x000004, "Wrong alignment on AtomDeviceWatcher_GetDeviceChannelCount");
-static_assert(sizeof(AtomDeviceWatcher_GetDeviceChannelCount) == 0x000004, "Wrong size on AtomDeviceWatcher_GetDeviceChannelCount");
-static_assert(offsetof(AtomDeviceWatcher_GetDeviceChannelCount, ReturnValue) == 0x000000, "Member 'AtomDeviceWatcher_GetDeviceChannelCount::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomDeviceWatcher_GetDeviceChannelCount;
 
 // Function CriWareRuntime.AtomDeviceWatcher.GetDeviceName
 // 0x0010 (0x0010 - 0x0000)
@@ -1576,9 +1255,7 @@ struct AtomDeviceWatcher_GetDeviceName final
 public:
 	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomDeviceWatcher_GetDeviceName) == 0x000008, "Wrong alignment on AtomDeviceWatcher_GetDeviceName");
-static_assert(sizeof(AtomDeviceWatcher_GetDeviceName) == 0x000010, "Wrong size on AtomDeviceWatcher_GetDeviceName");
-static_assert(offsetof(AtomDeviceWatcher_GetDeviceName, ReturnValue) == 0x000000, "Member 'AtomDeviceWatcher_GetDeviceName::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomDeviceWatcher_GetDeviceName;
 
 // Function CriWareRuntime.AtomSpectrumAnalyzer.CreateDspSpectra
 // 0x0020 (0x0020 - 0x0000)
@@ -1590,11 +1267,7 @@ public:
 	int32                                         num_bands;                                         // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(AtomSpectrumAnalyzer_CreateDspSpectra) == 0x000008, "Wrong alignment on AtomSpectrumAnalyzer_CreateDspSpectra");
-static_assert(sizeof(AtomSpectrumAnalyzer_CreateDspSpectra) == 0x000020, "Wrong size on AtomSpectrumAnalyzer_CreateDspSpectra");
-static_assert(offsetof(AtomSpectrumAnalyzer_CreateDspSpectra, asr_rack) == 0x000000, "Member 'AtomSpectrumAnalyzer_CreateDspSpectra::asr_rack' has a wrong offset!");
-static_assert(offsetof(AtomSpectrumAnalyzer_CreateDspSpectra, bus_name) == 0x000008, "Member 'AtomSpectrumAnalyzer_CreateDspSpectra::bus_name' has a wrong offset!");
-static_assert(offsetof(AtomSpectrumAnalyzer_CreateDspSpectra, num_bands) == 0x000018, "Member 'AtomSpectrumAnalyzer_CreateDspSpectra::num_bands' has a wrong offset!");
+DUMPER7_ASSERTS_AtomSpectrumAnalyzer_CreateDspSpectra;
 
 // Function CriWareRuntime.AtomSpectrumAnalyzer.GetLevels
 // 0x0010 (0x0010 - 0x0000)
@@ -1603,9 +1276,7 @@ struct AtomSpectrumAnalyzer_GetLevels final
 public:
 	TArray<float>                                 spectra;                                           // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomSpectrumAnalyzer_GetLevels) == 0x000008, "Wrong alignment on AtomSpectrumAnalyzer_GetLevels");
-static_assert(sizeof(AtomSpectrumAnalyzer_GetLevels) == 0x000010, "Wrong size on AtomSpectrumAnalyzer_GetLevels");
-static_assert(offsetof(AtomSpectrumAnalyzer_GetLevels, spectra) == 0x000000, "Member 'AtomSpectrumAnalyzer_GetLevels::spectra' has a wrong offset!");
+DUMPER7_ASSERTS_AtomSpectrumAnalyzer_GetLevels;
 
 // Function CriWareRuntime.AtomSpectrumAnalyzer.GetLevelsDB
 // 0x0018 (0x0018 - 0x0000)
@@ -1616,10 +1287,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<float>                                 spectra;                                           // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomSpectrumAnalyzer_GetLevelsDB) == 0x000008, "Wrong alignment on AtomSpectrumAnalyzer_GetLevelsDB");
-static_assert(sizeof(AtomSpectrumAnalyzer_GetLevelsDB) == 0x000018, "Wrong size on AtomSpectrumAnalyzer_GetLevelsDB");
-static_assert(offsetof(AtomSpectrumAnalyzer_GetLevelsDB, display_range) == 0x000000, "Member 'AtomSpectrumAnalyzer_GetLevelsDB::display_range' has a wrong offset!");
-static_assert(offsetof(AtomSpectrumAnalyzer_GetLevelsDB, spectra) == 0x000008, "Member 'AtomSpectrumAnalyzer_GetLevelsDB::spectra' has a wrong offset!");
+DUMPER7_ASSERTS_AtomSpectrumAnalyzer_GetLevelsDB;
 
 // Function CriWareRuntime.AtomStatics.AddToAtomComponentIds
 // 0x0018 (0x0018 - 0x0000)
@@ -1631,11 +1299,7 @@ public:
 	int32                                         AtomComponentID;                                   // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(AtomStatics_AddToAtomComponentIds) == 0x000008, "Wrong alignment on AtomStatics_AddToAtomComponentIds");
-static_assert(sizeof(AtomStatics_AddToAtomComponentIds) == 0x000018, "Wrong size on AtomStatics_AddToAtomComponentIds");
-static_assert(offsetof(AtomStatics_AddToAtomComponentIds, AtomPlayGateRef) == 0x000000, "Member 'AtomStatics_AddToAtomComponentIds::AtomPlayGateRef' has a wrong offset!");
-static_assert(offsetof(AtomStatics_AddToAtomComponentIds, SkeltalMeshComponentRef) == 0x000008, "Member 'AtomStatics_AddToAtomComponentIds::SkeltalMeshComponentRef' has a wrong offset!");
-static_assert(offsetof(AtomStatics_AddToAtomComponentIds, AtomComponentID) == 0x000010, "Member 'AtomStatics_AddToAtomComponentIds::AtomComponentID' has a wrong offset!");
+DUMPER7_ASSERTS_AtomStatics_AddToAtomComponentIds;
 
 // Function CriWareRuntime.AtomStatics.CreateRootedAtomComponent
 // 0x0018 (0x0018 - 0x0000)
@@ -1647,11 +1311,7 @@ public:
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAtomComponent*                         ReturnValue;                                       // 0x0010(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomStatics_CreateRootedAtomComponent) == 0x000008, "Wrong alignment on AtomStatics_CreateRootedAtomComponent");
-static_assert(sizeof(AtomStatics_CreateRootedAtomComponent) == 0x000018, "Wrong size on AtomStatics_CreateRootedAtomComponent");
-static_assert(offsetof(AtomStatics_CreateRootedAtomComponent, WorldContextObject) == 0x000000, "Member 'AtomStatics_CreateRootedAtomComponent::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(AtomStatics_CreateRootedAtomComponent, bAutoDestroy) == 0x000008, "Member 'AtomStatics_CreateRootedAtomComponent::bAutoDestroy' has a wrong offset!");
-static_assert(offsetof(AtomStatics_CreateRootedAtomComponent, ReturnValue) == 0x000010, "Member 'AtomStatics_CreateRootedAtomComponent::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomStatics_CreateRootedAtomComponent;
 
 // Function CriWareRuntime.AtomStatics.GetAtomGameVariable
 // 0x0018 (0x0018 - 0x0000)
@@ -1662,10 +1322,7 @@ public:
 	float                                         ReturnValue;                                       // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(AtomStatics_GetAtomGameVariable) == 0x000008, "Wrong alignment on AtomStatics_GetAtomGameVariable");
-static_assert(sizeof(AtomStatics_GetAtomGameVariable) == 0x000018, "Wrong size on AtomStatics_GetAtomGameVariable");
-static_assert(offsetof(AtomStatics_GetAtomGameVariable, GameVariableName) == 0x000000, "Member 'AtomStatics_GetAtomGameVariable::GameVariableName' has a wrong offset!");
-static_assert(offsetof(AtomStatics_GetAtomGameVariable, ReturnValue) == 0x000010, "Member 'AtomStatics_GetAtomGameVariable::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomStatics_GetAtomGameVariable;
 
 // Function CriWareRuntime.AtomStatics.GetAudioVolumeAffectingListener
 // 0x0010 (0x0010 - 0x0000)
@@ -1677,11 +1334,7 @@ public:
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class AAtomAudioVolume*                       ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomStatics_GetAudioVolumeAffectingListener) == 0x000008, "Wrong alignment on AtomStatics_GetAudioVolumeAffectingListener");
-static_assert(sizeof(AtomStatics_GetAudioVolumeAffectingListener) == 0x000010, "Wrong size on AtomStatics_GetAudioVolumeAffectingListener");
-static_assert(offsetof(AtomStatics_GetAudioVolumeAffectingListener, PlayerIndex) == 0x000000, "Member 'AtomStatics_GetAudioVolumeAffectingListener::PlayerIndex' has a wrong offset!");
-static_assert(offsetof(AtomStatics_GetAudioVolumeAffectingListener, TypeNum) == 0x000004, "Member 'AtomStatics_GetAudioVolumeAffectingListener::TypeNum' has a wrong offset!");
-static_assert(offsetof(AtomStatics_GetAudioVolumeAffectingListener, ReturnValue) == 0x000008, "Member 'AtomStatics_GetAudioVolumeAffectingListener::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomStatics_GetAudioVolumeAffectingListener;
 
 // Function CriWareRuntime.AtomStatics.GetListenerFocusPointInfo
 // 0x001C (0x001C - 0x0000)
@@ -1691,10 +1344,7 @@ public:
 	int32                                         PlayerIndex;                                       // 0x0000(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FAtomListenerFocusPointInfo            ReturnValue;                                       // 0x0004(0x0018)(Parm, OutParm, ReturnParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomStatics_GetListenerFocusPointInfo) == 0x000004, "Wrong alignment on AtomStatics_GetListenerFocusPointInfo");
-static_assert(sizeof(AtomStatics_GetListenerFocusPointInfo) == 0x00001C, "Wrong size on AtomStatics_GetListenerFocusPointInfo");
-static_assert(offsetof(AtomStatics_GetListenerFocusPointInfo, PlayerIndex) == 0x000000, "Member 'AtomStatics_GetListenerFocusPointInfo::PlayerIndex' has a wrong offset!");
-static_assert(offsetof(AtomStatics_GetListenerFocusPointInfo, ReturnValue) == 0x000004, "Member 'AtomStatics_GetListenerFocusPointInfo::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomStatics_GetListenerFocusPointInfo;
 
 // Function CriWareRuntime.AtomStatics.GetListenerRegion
 // 0x0010 (0x0010 - 0x0000)
@@ -1705,10 +1355,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAtom3dRegion*                          ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomStatics_GetListenerRegion) == 0x000008, "Wrong alignment on AtomStatics_GetListenerRegion");
-static_assert(sizeof(AtomStatics_GetListenerRegion) == 0x000010, "Wrong size on AtomStatics_GetListenerRegion");
-static_assert(offsetof(AtomStatics_GetListenerRegion, PlayerIndex) == 0x000000, "Member 'AtomStatics_GetListenerRegion::PlayerIndex' has a wrong offset!");
-static_assert(offsetof(AtomStatics_GetListenerRegion, ReturnValue) == 0x000008, "Member 'AtomStatics_GetListenerRegion::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomStatics_GetListenerRegion;
 
 // Function CriWareRuntime.AtomStatics.GetListeningPoint
 // 0x0020 (0x0020 - 0x0000)
@@ -1719,10 +1366,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                ReturnValue;                                       // 0x0008(0x0018)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomStatics_GetListeningPoint) == 0x000008, "Wrong alignment on AtomStatics_GetListeningPoint");
-static_assert(sizeof(AtomStatics_GetListeningPoint) == 0x000020, "Wrong size on AtomStatics_GetListeningPoint");
-static_assert(offsetof(AtomStatics_GetListeningPoint, PlayerIndex) == 0x000000, "Member 'AtomStatics_GetListeningPoint::PlayerIndex' has a wrong offset!");
-static_assert(offsetof(AtomStatics_GetListeningPoint, ReturnValue) == 0x000008, "Member 'AtomStatics_GetListeningPoint::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomStatics_GetListeningPoint;
 
 // Function CriWareRuntime.AtomStatics.LoadAtomConfig
 // 0x0010 (0x0010 - 0x0000)
@@ -1733,10 +1377,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(AtomStatics_LoadAtomConfig) == 0x000008, "Wrong alignment on AtomStatics_LoadAtomConfig");
-static_assert(sizeof(AtomStatics_LoadAtomConfig) == 0x000010, "Wrong size on AtomStatics_LoadAtomConfig");
-static_assert(offsetof(AtomStatics_LoadAtomConfig, AcfObject) == 0x000000, "Member 'AtomStatics_LoadAtomConfig::AcfObject' has a wrong offset!");
-static_assert(offsetof(AtomStatics_LoadAtomConfig, ReturnValue) == 0x000008, "Member 'AtomStatics_LoadAtomConfig::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomStatics_LoadAtomConfig;
 
 // Function CriWareRuntime.AtomStatics.PauseAudioOutput
 // 0x0001 (0x0001 - 0x0000)
@@ -1745,9 +1386,7 @@ struct AtomStatics_PauseAudioOutput final
 public:
 	bool                                          bPause;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomStatics_PauseAudioOutput) == 0x000001, "Wrong alignment on AtomStatics_PauseAudioOutput");
-static_assert(sizeof(AtomStatics_PauseAudioOutput) == 0x000001, "Wrong size on AtomStatics_PauseAudioOutput");
-static_assert(offsetof(AtomStatics_PauseAudioOutput, bPause) == 0x000000, "Member 'AtomStatics_PauseAudioOutput::bPause' has a wrong offset!");
+DUMPER7_ASSERTS_AtomStatics_PauseAudioOutput;
 
 // Function CriWareRuntime.AtomStatics.PlayAtomSoundAtLocation
 // 0x0098 (0x0098 - 0x0000)
@@ -1759,12 +1398,7 @@ public:
 	struct FVector                                Location;                                          // 0x0010(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FAtomComponentParams                   Params_0;                                          // 0x0028(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomStatics_PlayAtomSoundAtLocation) == 0x000008, "Wrong alignment on AtomStatics_PlayAtomSoundAtLocation");
-static_assert(sizeof(AtomStatics_PlayAtomSoundAtLocation) == 0x000098, "Wrong size on AtomStatics_PlayAtomSoundAtLocation");
-static_assert(offsetof(AtomStatics_PlayAtomSoundAtLocation, WorldContextObject) == 0x000000, "Member 'AtomStatics_PlayAtomSoundAtLocation::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(AtomStatics_PlayAtomSoundAtLocation, Sound) == 0x000008, "Member 'AtomStatics_PlayAtomSoundAtLocation::Sound' has a wrong offset!");
-static_assert(offsetof(AtomStatics_PlayAtomSoundAtLocation, Location) == 0x000010, "Member 'AtomStatics_PlayAtomSoundAtLocation::Location' has a wrong offset!");
-static_assert(offsetof(AtomStatics_PlayAtomSoundAtLocation, Params_0) == 0x000028, "Member 'AtomStatics_PlayAtomSoundAtLocation::Params_0' has a wrong offset!");
+DUMPER7_ASSERTS_AtomStatics_PlayAtomSoundAtLocation;
 
 // Function CriWareRuntime.AtomStatics.PlayAtomSoundAtLocationByName
 // 0x00A8 (0x00A8 - 0x0000)
@@ -1777,13 +1411,7 @@ public:
 	struct FVector                                Location;                                          // 0x0020(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FAtomComponentParams                   Params_0;                                          // 0x0038(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomStatics_PlayAtomSoundAtLocationByName) == 0x000008, "Wrong alignment on AtomStatics_PlayAtomSoundAtLocationByName");
-static_assert(sizeof(AtomStatics_PlayAtomSoundAtLocationByName) == 0x0000A8, "Wrong size on AtomStatics_PlayAtomSoundAtLocationByName");
-static_assert(offsetof(AtomStatics_PlayAtomSoundAtLocationByName, WorldContextObject) == 0x000000, "Member 'AtomStatics_PlayAtomSoundAtLocationByName::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(AtomStatics_PlayAtomSoundAtLocationByName, CueSheet) == 0x000008, "Member 'AtomStatics_PlayAtomSoundAtLocationByName::CueSheet' has a wrong offset!");
-static_assert(offsetof(AtomStatics_PlayAtomSoundAtLocationByName, CueName) == 0x000010, "Member 'AtomStatics_PlayAtomSoundAtLocationByName::CueName' has a wrong offset!");
-static_assert(offsetof(AtomStatics_PlayAtomSoundAtLocationByName, Location) == 0x000020, "Member 'AtomStatics_PlayAtomSoundAtLocationByName::Location' has a wrong offset!");
-static_assert(offsetof(AtomStatics_PlayAtomSoundAtLocationByName, Params_0) == 0x000038, "Member 'AtomStatics_PlayAtomSoundAtLocationByName::Params_0' has a wrong offset!");
+DUMPER7_ASSERTS_AtomStatics_PlayAtomSoundAtLocationByName;
 
 // Function CriWareRuntime.AtomStatics.PlayAtomSoundForAnimNotify
 // 0x00C8 (0x00C8 - 0x0000)
@@ -1805,20 +1433,7 @@ public:
 	uint8                                         Pad_B9[0x7];                                       // 0x00B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAtomComponent*                         ReturnValue;                                       // 0x00C0(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomStatics_PlayAtomSoundForAnimNotify) == 0x000008, "Wrong alignment on AtomStatics_PlayAtomSoundForAnimNotify");
-static_assert(sizeof(AtomStatics_PlayAtomSoundForAnimNotify) == 0x0000C8, "Wrong size on AtomStatics_PlayAtomSoundForAnimNotify");
-static_assert(offsetof(AtomStatics_PlayAtomSoundForAnimNotify, Sound) == 0x000000, "Member 'AtomStatics_PlayAtomSoundForAnimNotify::Sound' has a wrong offset!");
-static_assert(offsetof(AtomStatics_PlayAtomSoundForAnimNotify, Params_0) == 0x000008, "Member 'AtomStatics_PlayAtomSoundForAnimNotify::Params_0' has a wrong offset!");
-static_assert(offsetof(AtomStatics_PlayAtomSoundForAnimNotify, AttachToComponent) == 0x000078, "Member 'AtomStatics_PlayAtomSoundForAnimNotify::AttachToComponent' has a wrong offset!");
-static_assert(offsetof(AtomStatics_PlayAtomSoundForAnimNotify, AttachPointName) == 0x000080, "Member 'AtomStatics_PlayAtomSoundForAnimNotify::AttachPointName' has a wrong offset!");
-static_assert(offsetof(AtomStatics_PlayAtomSoundForAnimNotify, Location) == 0x000088, "Member 'AtomStatics_PlayAtomSoundForAnimNotify::Location' has a wrong offset!");
-static_assert(offsetof(AtomStatics_PlayAtomSoundForAnimNotify, bStopWhenAttachedToDestroyed) == 0x0000A0, "Member 'AtomStatics_PlayAtomSoundForAnimNotify::bStopWhenAttachedToDestroyed' has a wrong offset!");
-static_assert(offsetof(AtomStatics_PlayAtomSoundForAnimNotify, VolumeMultiplier) == 0x0000A4, "Member 'AtomStatics_PlayAtomSoundForAnimNotify::VolumeMultiplier' has a wrong offset!");
-static_assert(offsetof(AtomStatics_PlayAtomSoundForAnimNotify, PitchMultiplier) == 0x0000A8, "Member 'AtomStatics_PlayAtomSoundForAnimNotify::PitchMultiplier' has a wrong offset!");
-static_assert(offsetof(AtomStatics_PlayAtomSoundForAnimNotify, StartTime) == 0x0000AC, "Member 'AtomStatics_PlayAtomSoundForAnimNotify::StartTime' has a wrong offset!");
-static_assert(offsetof(AtomStatics_PlayAtomSoundForAnimNotify, AttenuationSettings) == 0x0000B0, "Member 'AtomStatics_PlayAtomSoundForAnimNotify::AttenuationSettings' has a wrong offset!");
-static_assert(offsetof(AtomStatics_PlayAtomSoundForAnimNotify, bFollow) == 0x0000B8, "Member 'AtomStatics_PlayAtomSoundForAnimNotify::bFollow' has a wrong offset!");
-static_assert(offsetof(AtomStatics_PlayAtomSoundForAnimNotify, ReturnValue) == 0x0000C0, "Member 'AtomStatics_PlayAtomSoundForAnimNotify::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomStatics_PlayAtomSoundForAnimNotify;
 
 // Function CriWareRuntime.AtomStatics.PlaySoundAtLocation
 // 0x0060 (0x0060 - 0x0000)
@@ -1836,17 +1451,7 @@ public:
 	class USoundAttenuation*                      AttenuationSettings;                               // 0x0050(0x0008)(Parm, ZeroConstructor, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class USoundConcurrency*                      ConcurrencySettings;                               // 0x0058(0x0008)(Parm, ZeroConstructor, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomStatics_PlaySoundAtLocation) == 0x000008, "Wrong alignment on AtomStatics_PlaySoundAtLocation");
-static_assert(sizeof(AtomStatics_PlaySoundAtLocation) == 0x000060, "Wrong size on AtomStatics_PlaySoundAtLocation");
-static_assert(offsetof(AtomStatics_PlaySoundAtLocation, WorldContextObject) == 0x000000, "Member 'AtomStatics_PlaySoundAtLocation::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(AtomStatics_PlaySoundAtLocation, Sound) == 0x000008, "Member 'AtomStatics_PlaySoundAtLocation::Sound' has a wrong offset!");
-static_assert(offsetof(AtomStatics_PlaySoundAtLocation, Location) == 0x000010, "Member 'AtomStatics_PlaySoundAtLocation::Location' has a wrong offset!");
-static_assert(offsetof(AtomStatics_PlaySoundAtLocation, Rotation) == 0x000028, "Member 'AtomStatics_PlaySoundAtLocation::Rotation' has a wrong offset!");
-static_assert(offsetof(AtomStatics_PlaySoundAtLocation, VolumeMultiplier) == 0x000040, "Member 'AtomStatics_PlaySoundAtLocation::VolumeMultiplier' has a wrong offset!");
-static_assert(offsetof(AtomStatics_PlaySoundAtLocation, PitchMultiplier) == 0x000044, "Member 'AtomStatics_PlaySoundAtLocation::PitchMultiplier' has a wrong offset!");
-static_assert(offsetof(AtomStatics_PlaySoundAtLocation, StartTime) == 0x000048, "Member 'AtomStatics_PlaySoundAtLocation::StartTime' has a wrong offset!");
-static_assert(offsetof(AtomStatics_PlaySoundAtLocation, AttenuationSettings) == 0x000050, "Member 'AtomStatics_PlaySoundAtLocation::AttenuationSettings' has a wrong offset!");
-static_assert(offsetof(AtomStatics_PlaySoundAtLocation, ConcurrencySettings) == 0x000058, "Member 'AtomStatics_PlaySoundAtLocation::ConcurrencySettings' has a wrong offset!");
+DUMPER7_ASSERTS_AtomStatics_PlaySoundAtLocation;
 
 // Function CriWareRuntime.AtomStatics.PlaySoundAttached
 // 0x0050 (0x0050 - 0x0000)
@@ -1865,18 +1470,7 @@ public:
 	class USoundAttenuation*                      AttenuationSettings;                               // 0x0040(0x0008)(Parm, ZeroConstructor, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UAtomComponent*                         ReturnValue;                                       // 0x0048(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomStatics_PlaySoundAttached) == 0x000008, "Wrong alignment on AtomStatics_PlaySoundAttached");
-static_assert(sizeof(AtomStatics_PlaySoundAttached) == 0x000050, "Wrong size on AtomStatics_PlaySoundAttached");
-static_assert(offsetof(AtomStatics_PlaySoundAttached, Sound) == 0x000000, "Member 'AtomStatics_PlaySoundAttached::Sound' has a wrong offset!");
-static_assert(offsetof(AtomStatics_PlaySoundAttached, AttachToComponent) == 0x000008, "Member 'AtomStatics_PlaySoundAttached::AttachToComponent' has a wrong offset!");
-static_assert(offsetof(AtomStatics_PlaySoundAttached, AttachPointName) == 0x000010, "Member 'AtomStatics_PlaySoundAttached::AttachPointName' has a wrong offset!");
-static_assert(offsetof(AtomStatics_PlaySoundAttached, Location) == 0x000018, "Member 'AtomStatics_PlaySoundAttached::Location' has a wrong offset!");
-static_assert(offsetof(AtomStatics_PlaySoundAttached, bStopWhenAttachedToDestroyed) == 0x000030, "Member 'AtomStatics_PlaySoundAttached::bStopWhenAttachedToDestroyed' has a wrong offset!");
-static_assert(offsetof(AtomStatics_PlaySoundAttached, VolumeMultiplier) == 0x000034, "Member 'AtomStatics_PlaySoundAttached::VolumeMultiplier' has a wrong offset!");
-static_assert(offsetof(AtomStatics_PlaySoundAttached, PitchMultiplier) == 0x000038, "Member 'AtomStatics_PlaySoundAttached::PitchMultiplier' has a wrong offset!");
-static_assert(offsetof(AtomStatics_PlaySoundAttached, StartTime) == 0x00003C, "Member 'AtomStatics_PlaySoundAttached::StartTime' has a wrong offset!");
-static_assert(offsetof(AtomStatics_PlaySoundAttached, AttenuationSettings) == 0x000040, "Member 'AtomStatics_PlaySoundAttached::AttenuationSettings' has a wrong offset!");
-static_assert(offsetof(AtomStatics_PlaySoundAttached, ReturnValue) == 0x000048, "Member 'AtomStatics_PlaySoundAttached::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomStatics_PlaySoundAttached;
 
 // Function CriWareRuntime.AtomStatics.PlaySoundForAnimNotify
 // 0x0058 (0x0058 - 0x0000)
@@ -1897,19 +1491,7 @@ public:
 	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAtomComponent*                         ReturnValue;                                       // 0x0050(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomStatics_PlaySoundForAnimNotify) == 0x000008, "Wrong alignment on AtomStatics_PlaySoundForAnimNotify");
-static_assert(sizeof(AtomStatics_PlaySoundForAnimNotify) == 0x000058, "Wrong size on AtomStatics_PlaySoundForAnimNotify");
-static_assert(offsetof(AtomStatics_PlaySoundForAnimNotify, Sound) == 0x000000, "Member 'AtomStatics_PlaySoundForAnimNotify::Sound' has a wrong offset!");
-static_assert(offsetof(AtomStatics_PlaySoundForAnimNotify, AttachToComponent) == 0x000008, "Member 'AtomStatics_PlaySoundForAnimNotify::AttachToComponent' has a wrong offset!");
-static_assert(offsetof(AtomStatics_PlaySoundForAnimNotify, AttachPointName) == 0x000010, "Member 'AtomStatics_PlaySoundForAnimNotify::AttachPointName' has a wrong offset!");
-static_assert(offsetof(AtomStatics_PlaySoundForAnimNotify, Location) == 0x000018, "Member 'AtomStatics_PlaySoundForAnimNotify::Location' has a wrong offset!");
-static_assert(offsetof(AtomStatics_PlaySoundForAnimNotify, bStopWhenAttachedToDestroyed) == 0x000030, "Member 'AtomStatics_PlaySoundForAnimNotify::bStopWhenAttachedToDestroyed' has a wrong offset!");
-static_assert(offsetof(AtomStatics_PlaySoundForAnimNotify, VolumeMultiplier) == 0x000034, "Member 'AtomStatics_PlaySoundForAnimNotify::VolumeMultiplier' has a wrong offset!");
-static_assert(offsetof(AtomStatics_PlaySoundForAnimNotify, PitchMultiplier) == 0x000038, "Member 'AtomStatics_PlaySoundForAnimNotify::PitchMultiplier' has a wrong offset!");
-static_assert(offsetof(AtomStatics_PlaySoundForAnimNotify, StartTime) == 0x00003C, "Member 'AtomStatics_PlaySoundForAnimNotify::StartTime' has a wrong offset!");
-static_assert(offsetof(AtomStatics_PlaySoundForAnimNotify, AttenuationSettings) == 0x000040, "Member 'AtomStatics_PlaySoundForAnimNotify::AttenuationSettings' has a wrong offset!");
-static_assert(offsetof(AtomStatics_PlaySoundForAnimNotify, bFollow) == 0x000048, "Member 'AtomStatics_PlaySoundForAnimNotify::bFollow' has a wrong offset!");
-static_assert(offsetof(AtomStatics_PlaySoundForAnimNotify, ReturnValue) == 0x000050, "Member 'AtomStatics_PlaySoundForAnimNotify::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomStatics_PlaySoundForAnimNotify;
 
 // Function CriWareRuntime.AtomStatics.SetAtomGameVariable
 // 0x0018 (0x0018 - 0x0000)
@@ -1920,10 +1502,7 @@ public:
 	float                                         Value;                                             // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(AtomStatics_SetAtomGameVariable) == 0x000008, "Wrong alignment on AtomStatics_SetAtomGameVariable");
-static_assert(sizeof(AtomStatics_SetAtomGameVariable) == 0x000018, "Wrong size on AtomStatics_SetAtomGameVariable");
-static_assert(offsetof(AtomStatics_SetAtomGameVariable, GameVariableName) == 0x000000, "Member 'AtomStatics_SetAtomGameVariable::GameVariableName' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SetAtomGameVariable, Value) == 0x000010, "Member 'AtomStatics_SetAtomGameVariable::Value' has a wrong offset!");
+DUMPER7_ASSERTS_AtomStatics_SetAtomGameVariable;
 
 // Function CriWareRuntime.AtomStatics.SetListenerFocusPointDirectionLevel
 // 0x0008 (0x0008 - 0x0000)
@@ -1933,10 +1512,7 @@ public:
 	float                                         DirectionLevel;                                    // 0x0000(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         PlayerIndex;                                       // 0x0004(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomStatics_SetListenerFocusPointDirectionLevel) == 0x000004, "Wrong alignment on AtomStatics_SetListenerFocusPointDirectionLevel");
-static_assert(sizeof(AtomStatics_SetListenerFocusPointDirectionLevel) == 0x000008, "Wrong size on AtomStatics_SetListenerFocusPointDirectionLevel");
-static_assert(offsetof(AtomStatics_SetListenerFocusPointDirectionLevel, DirectionLevel) == 0x000000, "Member 'AtomStatics_SetListenerFocusPointDirectionLevel::DirectionLevel' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SetListenerFocusPointDirectionLevel, PlayerIndex) == 0x000004, "Member 'AtomStatics_SetListenerFocusPointDirectionLevel::PlayerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_AtomStatics_SetListenerFocusPointDirectionLevel;
 
 // Function CriWareRuntime.AtomStatics.SetListenerFocusPointDistanceLevel
 // 0x0008 (0x0008 - 0x0000)
@@ -1946,10 +1522,7 @@ public:
 	float                                         DistanceLevel;                                     // 0x0000(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         PlayerIndex;                                       // 0x0004(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomStatics_SetListenerFocusPointDistanceLevel) == 0x000004, "Wrong alignment on AtomStatics_SetListenerFocusPointDistanceLevel");
-static_assert(sizeof(AtomStatics_SetListenerFocusPointDistanceLevel) == 0x000008, "Wrong size on AtomStatics_SetListenerFocusPointDistanceLevel");
-static_assert(offsetof(AtomStatics_SetListenerFocusPointDistanceLevel, DistanceLevel) == 0x000000, "Member 'AtomStatics_SetListenerFocusPointDistanceLevel::DistanceLevel' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SetListenerFocusPointDistanceLevel, PlayerIndex) == 0x000004, "Member 'AtomStatics_SetListenerFocusPointDistanceLevel::PlayerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_AtomStatics_SetListenerFocusPointDistanceLevel;
 
 // Function CriWareRuntime.AtomStatics.SetListenerFocusPointInfo
 // 0x001C (0x001C - 0x0000)
@@ -1959,10 +1532,7 @@ public:
 	struct FAtomListenerFocusPointInfo            FocusPointInfo;                                    // 0x0000(0x0018)(ConstParm, Parm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	int32                                         PlayerIndex;                                       // 0x0018(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomStatics_SetListenerFocusPointInfo) == 0x000004, "Wrong alignment on AtomStatics_SetListenerFocusPointInfo");
-static_assert(sizeof(AtomStatics_SetListenerFocusPointInfo) == 0x00001C, "Wrong size on AtomStatics_SetListenerFocusPointInfo");
-static_assert(offsetof(AtomStatics_SetListenerFocusPointInfo, FocusPointInfo) == 0x000000, "Member 'AtomStatics_SetListenerFocusPointInfo::FocusPointInfo' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SetListenerFocusPointInfo, PlayerIndex) == 0x000018, "Member 'AtomStatics_SetListenerFocusPointInfo::PlayerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_AtomStatics_SetListenerFocusPointInfo;
 
 // Function CriWareRuntime.AtomStatics.SetListenerFocusPointTargetActor
 // 0x0010 (0x0010 - 0x0000)
@@ -1973,10 +1543,7 @@ public:
 	int32                                         PlayerIndex;                                       // 0x0008(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(AtomStatics_SetListenerFocusPointTargetActor) == 0x000008, "Wrong alignment on AtomStatics_SetListenerFocusPointTargetActor");
-static_assert(sizeof(AtomStatics_SetListenerFocusPointTargetActor) == 0x000010, "Wrong size on AtomStatics_SetListenerFocusPointTargetActor");
-static_assert(offsetof(AtomStatics_SetListenerFocusPointTargetActor, TargetActor) == 0x000000, "Member 'AtomStatics_SetListenerFocusPointTargetActor::TargetActor' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SetListenerFocusPointTargetActor, PlayerIndex) == 0x000008, "Member 'AtomStatics_SetListenerFocusPointTargetActor::PlayerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_AtomStatics_SetListenerFocusPointTargetActor;
 
 // Function CriWareRuntime.AtomStatics.SetListenerFocusPointTargetComponent
 // 0x0010 (0x0010 - 0x0000)
@@ -1987,10 +1554,7 @@ public:
 	int32                                         PlayerIndex;                                       // 0x0008(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(AtomStatics_SetListenerFocusPointTargetComponent) == 0x000008, "Wrong alignment on AtomStatics_SetListenerFocusPointTargetComponent");
-static_assert(sizeof(AtomStatics_SetListenerFocusPointTargetComponent) == 0x000010, "Wrong size on AtomStatics_SetListenerFocusPointTargetComponent");
-static_assert(offsetof(AtomStatics_SetListenerFocusPointTargetComponent, TargetComponent) == 0x000000, "Member 'AtomStatics_SetListenerFocusPointTargetComponent::TargetComponent' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SetListenerFocusPointTargetComponent, PlayerIndex) == 0x000008, "Member 'AtomStatics_SetListenerFocusPointTargetComponent::PlayerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_AtomStatics_SetListenerFocusPointTargetComponent;
 
 // Function CriWareRuntime.AtomStatics.SetListenerRegion
 // 0x0010 (0x0010 - 0x0000)
@@ -2001,10 +1565,7 @@ public:
 	int32                                         PlayerIndex;                                       // 0x0008(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(AtomStatics_SetListenerRegion) == 0x000008, "Wrong alignment on AtomStatics_SetListenerRegion");
-static_assert(sizeof(AtomStatics_SetListenerRegion) == 0x000010, "Wrong size on AtomStatics_SetListenerRegion");
-static_assert(offsetof(AtomStatics_SetListenerRegion, Region) == 0x000000, "Member 'AtomStatics_SetListenerRegion::Region' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SetListenerRegion, PlayerIndex) == 0x000008, "Member 'AtomStatics_SetListenerRegion::PlayerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_AtomStatics_SetListenerRegion;
 
 // Function CriWareRuntime.AtomStatics.SpawnAtomSound2D
 // 0x0090 (0x0090 - 0x0000)
@@ -2019,14 +1580,7 @@ public:
 	uint8                                         Pad_82[0x6];                                       // 0x0082(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAtomComponent*                         ReturnValue;                                       // 0x0088(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomStatics_SpawnAtomSound2D) == 0x000008, "Wrong alignment on AtomStatics_SpawnAtomSound2D");
-static_assert(sizeof(AtomStatics_SpawnAtomSound2D) == 0x000090, "Wrong size on AtomStatics_SpawnAtomSound2D");
-static_assert(offsetof(AtomStatics_SpawnAtomSound2D, WorldContextObject) == 0x000000, "Member 'AtomStatics_SpawnAtomSound2D::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnAtomSound2D, Sound) == 0x000008, "Member 'AtomStatics_SpawnAtomSound2D::Sound' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnAtomSound2D, Params_0) == 0x000010, "Member 'AtomStatics_SpawnAtomSound2D::Params_0' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnAtomSound2D, bPersistAcrossLevelTransition) == 0x000080, "Member 'AtomStatics_SpawnAtomSound2D::bPersistAcrossLevelTransition' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnAtomSound2D, bAutoDestroy) == 0x000081, "Member 'AtomStatics_SpawnAtomSound2D::bAutoDestroy' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnAtomSound2D, ReturnValue) == 0x000088, "Member 'AtomStatics_SpawnAtomSound2D::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomStatics_SpawnAtomSound2D;
 
 // Function CriWareRuntime.AtomStatics.SpawnAtomSound2DByName
 // 0x00A0 (0x00A0 - 0x0000)
@@ -2042,15 +1596,7 @@ public:
 	uint8                                         Pad_92[0x6];                                       // 0x0092(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAtomComponent*                         ReturnValue;                                       // 0x0098(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomStatics_SpawnAtomSound2DByName) == 0x000008, "Wrong alignment on AtomStatics_SpawnAtomSound2DByName");
-static_assert(sizeof(AtomStatics_SpawnAtomSound2DByName) == 0x0000A0, "Wrong size on AtomStatics_SpawnAtomSound2DByName");
-static_assert(offsetof(AtomStatics_SpawnAtomSound2DByName, WorldContextObject) == 0x000000, "Member 'AtomStatics_SpawnAtomSound2DByName::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnAtomSound2DByName, CueSheet) == 0x000008, "Member 'AtomStatics_SpawnAtomSound2DByName::CueSheet' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnAtomSound2DByName, CueName) == 0x000010, "Member 'AtomStatics_SpawnAtomSound2DByName::CueName' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnAtomSound2DByName, Params_0) == 0x000020, "Member 'AtomStatics_SpawnAtomSound2DByName::Params_0' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnAtomSound2DByName, bPersistAcrossLevelTransition) == 0x000090, "Member 'AtomStatics_SpawnAtomSound2DByName::bPersistAcrossLevelTransition' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnAtomSound2DByName, bAutoDestroy) == 0x000091, "Member 'AtomStatics_SpawnAtomSound2DByName::bAutoDestroy' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnAtomSound2DByName, ReturnValue) == 0x000098, "Member 'AtomStatics_SpawnAtomSound2DByName::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomStatics_SpawnAtomSound2DByName;
 
 // Function CriWareRuntime.AtomStatics.SpawnAtomSoundAtLocation
 // 0x00A8 (0x00A8 - 0x0000)
@@ -2065,14 +1611,7 @@ public:
 	uint8                                         Pad_99[0x7];                                       // 0x0099(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAtomComponent*                         ReturnValue;                                       // 0x00A0(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomStatics_SpawnAtomSoundAtLocation) == 0x000008, "Wrong alignment on AtomStatics_SpawnAtomSoundAtLocation");
-static_assert(sizeof(AtomStatics_SpawnAtomSoundAtLocation) == 0x0000A8, "Wrong size on AtomStatics_SpawnAtomSoundAtLocation");
-static_assert(offsetof(AtomStatics_SpawnAtomSoundAtLocation, WorldContextObject) == 0x000000, "Member 'AtomStatics_SpawnAtomSoundAtLocation::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnAtomSoundAtLocation, Sound) == 0x000008, "Member 'AtomStatics_SpawnAtomSoundAtLocation::Sound' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnAtomSoundAtLocation, Location) == 0x000010, "Member 'AtomStatics_SpawnAtomSoundAtLocation::Location' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnAtomSoundAtLocation, Params_0) == 0x000028, "Member 'AtomStatics_SpawnAtomSoundAtLocation::Params_0' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnAtomSoundAtLocation, bAutoDestroy) == 0x000098, "Member 'AtomStatics_SpawnAtomSoundAtLocation::bAutoDestroy' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnAtomSoundAtLocation, ReturnValue) == 0x0000A0, "Member 'AtomStatics_SpawnAtomSoundAtLocation::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomStatics_SpawnAtomSoundAtLocation;
 
 // Function CriWareRuntime.AtomStatics.SpawnAtomSoundAtLocationByName
 // 0x00B8 (0x00B8 - 0x0000)
@@ -2088,15 +1627,7 @@ public:
 	uint8                                         Pad_A9[0x7];                                       // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAtomComponent*                         ReturnValue;                                       // 0x00B0(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomStatics_SpawnAtomSoundAtLocationByName) == 0x000008, "Wrong alignment on AtomStatics_SpawnAtomSoundAtLocationByName");
-static_assert(sizeof(AtomStatics_SpawnAtomSoundAtLocationByName) == 0x0000B8, "Wrong size on AtomStatics_SpawnAtomSoundAtLocationByName");
-static_assert(offsetof(AtomStatics_SpawnAtomSoundAtLocationByName, WorldContextObject) == 0x000000, "Member 'AtomStatics_SpawnAtomSoundAtLocationByName::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnAtomSoundAtLocationByName, CueSheet) == 0x000008, "Member 'AtomStatics_SpawnAtomSoundAtLocationByName::CueSheet' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnAtomSoundAtLocationByName, CueName) == 0x000010, "Member 'AtomStatics_SpawnAtomSoundAtLocationByName::CueName' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnAtomSoundAtLocationByName, Location) == 0x000020, "Member 'AtomStatics_SpawnAtomSoundAtLocationByName::Location' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnAtomSoundAtLocationByName, Params_0) == 0x000038, "Member 'AtomStatics_SpawnAtomSoundAtLocationByName::Params_0' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnAtomSoundAtLocationByName, bAutoDestroy) == 0x0000A8, "Member 'AtomStatics_SpawnAtomSoundAtLocationByName::bAutoDestroy' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnAtomSoundAtLocationByName, ReturnValue) == 0x0000B0, "Member 'AtomStatics_SpawnAtomSoundAtLocationByName::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomStatics_SpawnAtomSoundAtLocationByName;
 
 // Function CriWareRuntime.AtomStatics.SpawnAtomSoundAttached
 // 0x00B0 (0x00B0 - 0x0000)
@@ -2114,17 +1645,7 @@ public:
 	uint8                                         Pad_A3[0x5];                                       // 0x00A3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAtomComponent*                         ReturnValue;                                       // 0x00A8(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomStatics_SpawnAtomSoundAttached) == 0x000008, "Wrong alignment on AtomStatics_SpawnAtomSoundAttached");
-static_assert(sizeof(AtomStatics_SpawnAtomSoundAttached) == 0x0000B0, "Wrong size on AtomStatics_SpawnAtomSoundAttached");
-static_assert(offsetof(AtomStatics_SpawnAtomSoundAttached, Sound) == 0x000000, "Member 'AtomStatics_SpawnAtomSoundAttached::Sound' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnAtomSoundAttached, AttachToComponent) == 0x000008, "Member 'AtomStatics_SpawnAtomSoundAttached::AttachToComponent' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnAtomSoundAttached, Params_0) == 0x000010, "Member 'AtomStatics_SpawnAtomSoundAttached::Params_0' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnAtomSoundAttached, AttachPointName) == 0x000080, "Member 'AtomStatics_SpawnAtomSoundAttached::AttachPointName' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnAtomSoundAttached, Location) == 0x000088, "Member 'AtomStatics_SpawnAtomSoundAttached::Location' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnAtomSoundAttached, LocationType) == 0x0000A0, "Member 'AtomStatics_SpawnAtomSoundAttached::LocationType' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnAtomSoundAttached, bStopWhenAttachedToDestroyed) == 0x0000A1, "Member 'AtomStatics_SpawnAtomSoundAttached::bStopWhenAttachedToDestroyed' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnAtomSoundAttached, bAutoDestroy) == 0x0000A2, "Member 'AtomStatics_SpawnAtomSoundAttached::bAutoDestroy' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnAtomSoundAttached, ReturnValue) == 0x0000A8, "Member 'AtomStatics_SpawnAtomSoundAttached::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomStatics_SpawnAtomSoundAttached;
 
 // Function CriWareRuntime.AtomStatics.SpawnAtomSoundAttachedByName
 // 0x00C0 (0x00C0 - 0x0000)
@@ -2143,18 +1664,7 @@ public:
 	uint8                                         Pad_B3[0x5];                                       // 0x00B3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAtomComponent*                         ReturnValue;                                       // 0x00B8(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomStatics_SpawnAtomSoundAttachedByName) == 0x000008, "Wrong alignment on AtomStatics_SpawnAtomSoundAttachedByName");
-static_assert(sizeof(AtomStatics_SpawnAtomSoundAttachedByName) == 0x0000C0, "Wrong size on AtomStatics_SpawnAtomSoundAttachedByName");
-static_assert(offsetof(AtomStatics_SpawnAtomSoundAttachedByName, CueSheet) == 0x000000, "Member 'AtomStatics_SpawnAtomSoundAttachedByName::CueSheet' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnAtomSoundAttachedByName, CueName) == 0x000008, "Member 'AtomStatics_SpawnAtomSoundAttachedByName::CueName' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnAtomSoundAttachedByName, AttachToComponent) == 0x000018, "Member 'AtomStatics_SpawnAtomSoundAttachedByName::AttachToComponent' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnAtomSoundAttachedByName, Params_0) == 0x000020, "Member 'AtomStatics_SpawnAtomSoundAttachedByName::Params_0' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnAtomSoundAttachedByName, AttachPointName) == 0x000090, "Member 'AtomStatics_SpawnAtomSoundAttachedByName::AttachPointName' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnAtomSoundAttachedByName, Location) == 0x000098, "Member 'AtomStatics_SpawnAtomSoundAttachedByName::Location' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnAtomSoundAttachedByName, LocationType) == 0x0000B0, "Member 'AtomStatics_SpawnAtomSoundAttachedByName::LocationType' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnAtomSoundAttachedByName, bStopWhenAttachedToDestroyed) == 0x0000B1, "Member 'AtomStatics_SpawnAtomSoundAttachedByName::bStopWhenAttachedToDestroyed' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnAtomSoundAttachedByName, bAutoDestroy) == 0x0000B2, "Member 'AtomStatics_SpawnAtomSoundAttachedByName::bAutoDestroy' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnAtomSoundAttachedByName, ReturnValue) == 0x0000B8, "Member 'AtomStatics_SpawnAtomSoundAttachedByName::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomStatics_SpawnAtomSoundAttachedByName;
 
 // Function CriWareRuntime.AtomStatics.SpawnSound2D
 // 0x0028 (0x0028 - 0x0000)
@@ -2170,15 +1680,7 @@ public:
 	uint8                                         Pad_1A[0x6];                                       // 0x001A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAtomComponent*                         ReturnValue;                                       // 0x0020(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomStatics_SpawnSound2D) == 0x000008, "Wrong alignment on AtomStatics_SpawnSound2D");
-static_assert(sizeof(AtomStatics_SpawnSound2D) == 0x000028, "Wrong size on AtomStatics_SpawnSound2D");
-static_assert(offsetof(AtomStatics_SpawnSound2D, WorldContextObject) == 0x000000, "Member 'AtomStatics_SpawnSound2D::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnSound2D, Sound) == 0x000008, "Member 'AtomStatics_SpawnSound2D::Sound' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnSound2D, PitchMultiplier) == 0x000010, "Member 'AtomStatics_SpawnSound2D::PitchMultiplier' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnSound2D, StartTime) == 0x000014, "Member 'AtomStatics_SpawnSound2D::StartTime' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnSound2D, bPersistAcrossLevelTransition) == 0x000018, "Member 'AtomStatics_SpawnSound2D::bPersistAcrossLevelTransition' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnSound2D, bAutoDestroy) == 0x000019, "Member 'AtomStatics_SpawnSound2D::bAutoDestroy' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnSound2D, ReturnValue) == 0x000020, "Member 'AtomStatics_SpawnSound2D::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomStatics_SpawnSound2D;
 
 // Function CriWareRuntime.AtomStatics.SpawnSoundAtLocation
 // 0x0070 (0x0070 - 0x0000)
@@ -2199,19 +1701,7 @@ public:
 	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAtomComponent*                         ReturnValue;                                       // 0x0068(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomStatics_SpawnSoundAtLocation) == 0x000008, "Wrong alignment on AtomStatics_SpawnSoundAtLocation");
-static_assert(sizeof(AtomStatics_SpawnSoundAtLocation) == 0x000070, "Wrong size on AtomStatics_SpawnSoundAtLocation");
-static_assert(offsetof(AtomStatics_SpawnSoundAtLocation, WorldContextObject) == 0x000000, "Member 'AtomStatics_SpawnSoundAtLocation::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnSoundAtLocation, Sound) == 0x000008, "Member 'AtomStatics_SpawnSoundAtLocation::Sound' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnSoundAtLocation, Location) == 0x000010, "Member 'AtomStatics_SpawnSoundAtLocation::Location' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnSoundAtLocation, Rotation) == 0x000028, "Member 'AtomStatics_SpawnSoundAtLocation::Rotation' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnSoundAtLocation, VolumeMultiplier) == 0x000040, "Member 'AtomStatics_SpawnSoundAtLocation::VolumeMultiplier' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnSoundAtLocation, PitchMultiplier) == 0x000044, "Member 'AtomStatics_SpawnSoundAtLocation::PitchMultiplier' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnSoundAtLocation, StartTime) == 0x000048, "Member 'AtomStatics_SpawnSoundAtLocation::StartTime' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnSoundAtLocation, AttenuationSettings) == 0x000050, "Member 'AtomStatics_SpawnSoundAtLocation::AttenuationSettings' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnSoundAtLocation, ConcurrencySettings) == 0x000058, "Member 'AtomStatics_SpawnSoundAtLocation::ConcurrencySettings' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnSoundAtLocation, bAutoDestroy) == 0x000060, "Member 'AtomStatics_SpawnSoundAtLocation::bAutoDestroy' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnSoundAtLocation, ReturnValue) == 0x000068, "Member 'AtomStatics_SpawnSoundAtLocation::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomStatics_SpawnSoundAtLocation;
 
 // Function CriWareRuntime.AtomStatics.SpawnSoundAttached
 // 0x0078 (0x0078 - 0x0000)
@@ -2235,22 +1725,7 @@ public:
 	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAtomComponent*                         ReturnValue;                                       // 0x0070(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomStatics_SpawnSoundAttached) == 0x000008, "Wrong alignment on AtomStatics_SpawnSoundAttached");
-static_assert(sizeof(AtomStatics_SpawnSoundAttached) == 0x000078, "Wrong size on AtomStatics_SpawnSoundAttached");
-static_assert(offsetof(AtomStatics_SpawnSoundAttached, Sound) == 0x000000, "Member 'AtomStatics_SpawnSoundAttached::Sound' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnSoundAttached, AttachToComponent) == 0x000008, "Member 'AtomStatics_SpawnSoundAttached::AttachToComponent' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnSoundAttached, AttachPointName) == 0x000010, "Member 'AtomStatics_SpawnSoundAttached::AttachPointName' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnSoundAttached, Location) == 0x000018, "Member 'AtomStatics_SpawnSoundAttached::Location' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnSoundAttached, Rotation) == 0x000030, "Member 'AtomStatics_SpawnSoundAttached::Rotation' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnSoundAttached, LocationType) == 0x000048, "Member 'AtomStatics_SpawnSoundAttached::LocationType' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnSoundAttached, bStopWhenAttachedToDestroyed) == 0x000049, "Member 'AtomStatics_SpawnSoundAttached::bStopWhenAttachedToDestroyed' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnSoundAttached, VolumeMultiplier) == 0x00004C, "Member 'AtomStatics_SpawnSoundAttached::VolumeMultiplier' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnSoundAttached, PitchMultiplier) == 0x000050, "Member 'AtomStatics_SpawnSoundAttached::PitchMultiplier' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnSoundAttached, StartTime) == 0x000054, "Member 'AtomStatics_SpawnSoundAttached::StartTime' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnSoundAttached, AttenuationSettings) == 0x000058, "Member 'AtomStatics_SpawnSoundAttached::AttenuationSettings' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnSoundAttached, ConcurrencySettings) == 0x000060, "Member 'AtomStatics_SpawnSoundAttached::ConcurrencySettings' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnSoundAttached, bAutoDestroy) == 0x000068, "Member 'AtomStatics_SpawnSoundAttached::bAutoDestroy' has a wrong offset!");
-static_assert(offsetof(AtomStatics_SpawnSoundAttached, ReturnValue) == 0x000070, "Member 'AtomStatics_SpawnSoundAttached::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomStatics_SpawnSoundAttached;
 
 // Function CriWareRuntime.AtomStatics.StopAllSoundsForKeyFromAtomComponentIds
 // 0x0010 (0x0010 - 0x0000)
@@ -2260,10 +1735,7 @@ public:
 	class UObject*                                AtomPlayGateRef;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UObject*                                SkeltalMeshComponentRef;                           // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomStatics_StopAllSoundsForKeyFromAtomComponentIds) == 0x000008, "Wrong alignment on AtomStatics_StopAllSoundsForKeyFromAtomComponentIds");
-static_assert(sizeof(AtomStatics_StopAllSoundsForKeyFromAtomComponentIds) == 0x000010, "Wrong size on AtomStatics_StopAllSoundsForKeyFromAtomComponentIds");
-static_assert(offsetof(AtomStatics_StopAllSoundsForKeyFromAtomComponentIds, AtomPlayGateRef) == 0x000000, "Member 'AtomStatics_StopAllSoundsForKeyFromAtomComponentIds::AtomPlayGateRef' has a wrong offset!");
-static_assert(offsetof(AtomStatics_StopAllSoundsForKeyFromAtomComponentIds, SkeltalMeshComponentRef) == 0x000008, "Member 'AtomStatics_StopAllSoundsForKeyFromAtomComponentIds::SkeltalMeshComponentRef' has a wrong offset!");
+DUMPER7_ASSERTS_AtomStatics_StopAllSoundsForKeyFromAtomComponentIds;
 
 // Function CriWareRuntime.AtomStatics.UpdateDistanceFactorForAllSounds
 // 0x0004 (0x0004 - 0x0000)
@@ -2272,9 +1744,7 @@ struct AtomStatics_UpdateDistanceFactorForAllSounds final
 public:
 	float                                         ArgDistanceFactor;                                 // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomStatics_UpdateDistanceFactorForAllSounds) == 0x000004, "Wrong alignment on AtomStatics_UpdateDistanceFactorForAllSounds");
-static_assert(sizeof(AtomStatics_UpdateDistanceFactorForAllSounds) == 0x000004, "Wrong size on AtomStatics_UpdateDistanceFactorForAllSounds");
-static_assert(offsetof(AtomStatics_UpdateDistanceFactorForAllSounds, ArgDistanceFactor) == 0x000000, "Member 'AtomStatics_UpdateDistanceFactorForAllSounds::ArgDistanceFactor' has a wrong offset!");
+DUMPER7_ASSERTS_AtomStatics_UpdateDistanceFactorForAllSounds;
 
 // Function CriWareRuntime.AtomTriggerTableFunctionLibrary.GetDataTableRowFromName
 // 0x0038 (0x0038 - 0x0000)
@@ -2287,12 +1757,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(AtomTriggerTableFunctionLibrary_GetDataTableRowFromName) == 0x000008, "Wrong alignment on AtomTriggerTableFunctionLibrary_GetDataTableRowFromName");
-static_assert(sizeof(AtomTriggerTableFunctionLibrary_GetDataTableRowFromName) == 0x000038, "Wrong size on AtomTriggerTableFunctionLibrary_GetDataTableRowFromName");
-static_assert(offsetof(AtomTriggerTableFunctionLibrary_GetDataTableRowFromName, Table) == 0x000000, "Member 'AtomTriggerTableFunctionLibrary_GetDataTableRowFromName::Table' has a wrong offset!");
-static_assert(offsetof(AtomTriggerTableFunctionLibrary_GetDataTableRowFromName, RowName) == 0x000008, "Member 'AtomTriggerTableFunctionLibrary_GetDataTableRowFromName::RowName' has a wrong offset!");
-static_assert(offsetof(AtomTriggerTableFunctionLibrary_GetDataTableRowFromName, OutRow) == 0x000010, "Member 'AtomTriggerTableFunctionLibrary_GetDataTableRowFromName::OutRow' has a wrong offset!");
-static_assert(offsetof(AtomTriggerTableFunctionLibrary_GetDataTableRowFromName, ReturnValue) == 0x000030, "Member 'AtomTriggerTableFunctionLibrary_GetDataTableRowFromName::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomTriggerTableFunctionLibrary_GetDataTableRowFromName;
 
 // Function CriWareRuntime.AtomWavePlayer.AdjustVolume
 // 0x0008 (0x0008 - 0x0000)
@@ -2302,10 +1767,7 @@ public:
 	float                                         AdjustVolumeDuration;                              // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         AdjustVolumeLevel;                                 // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomWavePlayer_AdjustVolume) == 0x000004, "Wrong alignment on AtomWavePlayer_AdjustVolume");
-static_assert(sizeof(AtomWavePlayer_AdjustVolume) == 0x000008, "Wrong size on AtomWavePlayer_AdjustVolume");
-static_assert(offsetof(AtomWavePlayer_AdjustVolume, AdjustVolumeDuration) == 0x000000, "Member 'AtomWavePlayer_AdjustVolume::AdjustVolumeDuration' has a wrong offset!");
-static_assert(offsetof(AtomWavePlayer_AdjustVolume, AdjustVolumeLevel) == 0x000004, "Member 'AtomWavePlayer_AdjustVolume::AdjustVolumeLevel' has a wrong offset!");
+DUMPER7_ASSERTS_AtomWavePlayer_AdjustVolume;
 
 // Function CriWareRuntime.AtomWavePlayer.Play
 // 0x0004 (0x0004 - 0x0000)
@@ -2314,9 +1776,7 @@ struct AtomWavePlayer_Play final
 public:
 	float                                         StartTime;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomWavePlayer_Play) == 0x000004, "Wrong alignment on AtomWavePlayer_Play");
-static_assert(sizeof(AtomWavePlayer_Play) == 0x000004, "Wrong size on AtomWavePlayer_Play");
-static_assert(offsetof(AtomWavePlayer_Play, StartTime) == 0x000000, "Member 'AtomWavePlayer_Play::StartTime' has a wrong offset!");
+DUMPER7_ASSERTS_AtomWavePlayer_Play;
 
 // Function CriWareRuntime.AtomWavePlayer.SetLooping
 // 0x0002 (0x0002 - 0x0000)
@@ -2326,10 +1786,7 @@ public:
 	bool                                          Looping;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomWavePlayer_SetLooping) == 0x000001, "Wrong alignment on AtomWavePlayer_SetLooping");
-static_assert(sizeof(AtomWavePlayer_SetLooping) == 0x000002, "Wrong size on AtomWavePlayer_SetLooping");
-static_assert(offsetof(AtomWavePlayer_SetLooping, Looping) == 0x000000, "Member 'AtomWavePlayer_SetLooping::Looping' has a wrong offset!");
-static_assert(offsetof(AtomWavePlayer_SetLooping, ReturnValue) == 0x000001, "Member 'AtomWavePlayer_SetLooping::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomWavePlayer_SetLooping;
 
 // Function CriWareRuntime.AtomWavePlayer.SetPaused
 // 0x0001 (0x0001 - 0x0000)
@@ -2338,9 +1795,7 @@ struct AtomWavePlayer_SetPaused final
 public:
 	bool                                          bPause;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomWavePlayer_SetPaused) == 0x000001, "Wrong alignment on AtomWavePlayer_SetPaused");
-static_assert(sizeof(AtomWavePlayer_SetPaused) == 0x000001, "Wrong size on AtomWavePlayer_SetPaused");
-static_assert(offsetof(AtomWavePlayer_SetPaused, bPause) == 0x000000, "Member 'AtomWavePlayer_SetPaused::bPause' has a wrong offset!");
+DUMPER7_ASSERTS_AtomWavePlayer_SetPaused;
 
 // Function CriWareRuntime.AtomWavePlayer.SetWave
 // 0x0008 (0x0008 - 0x0000)
@@ -2349,9 +1804,7 @@ struct AtomWavePlayer_SetWave final
 public:
 	class USoundAtomCue*                          InCue;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomWavePlayer_SetWave) == 0x000008, "Wrong alignment on AtomWavePlayer_SetWave");
-static_assert(sizeof(AtomWavePlayer_SetWave) == 0x000008, "Wrong size on AtomWavePlayer_SetWave");
-static_assert(offsetof(AtomWavePlayer_SetWave, InCue) == 0x000000, "Member 'AtomWavePlayer_SetWave::InCue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomWavePlayer_SetWave;
 
 // Function CriWareRuntime.AtomWavePlayer.StopDelayed
 // 0x0004 (0x0004 - 0x0000)
@@ -2360,9 +1813,7 @@ struct AtomWavePlayer_StopDelayed final
 public:
 	float                                         DelayTime;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomWavePlayer_StopDelayed) == 0x000004, "Wrong alignment on AtomWavePlayer_StopDelayed");
-static_assert(sizeof(AtomWavePlayer_StopDelayed) == 0x000004, "Wrong size on AtomWavePlayer_StopDelayed");
-static_assert(offsetof(AtomWavePlayer_StopDelayed, DelayTime) == 0x000000, "Member 'AtomWavePlayer_StopDelayed::DelayTime' has a wrong offset!");
+DUMPER7_ASSERTS_AtomWavePlayer_StopDelayed;
 
 // Function CriWareRuntime.AtomWavePlayer.GetCue
 // 0x0008 (0x0008 - 0x0000)
@@ -2371,9 +1822,7 @@ struct AtomWavePlayer_GetCue final
 public:
 	class USoundAtomCue*                          ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomWavePlayer_GetCue) == 0x000008, "Wrong alignment on AtomWavePlayer_GetCue");
-static_assert(sizeof(AtomWavePlayer_GetCue) == 0x000008, "Wrong size on AtomWavePlayer_GetCue");
-static_assert(offsetof(AtomWavePlayer_GetCue, ReturnValue) == 0x000000, "Member 'AtomWavePlayer_GetCue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomWavePlayer_GetCue;
 
 // Function CriWareRuntime.AtomWavePlayer.GetPlayState
 // 0x0001 (0x0001 - 0x0000)
@@ -2382,9 +1831,7 @@ struct AtomWavePlayer_GetPlayState final
 public:
 	EAtomWavePlayState                            ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomWavePlayer_GetPlayState) == 0x000001, "Wrong alignment on AtomWavePlayer_GetPlayState");
-static_assert(sizeof(AtomWavePlayer_GetPlayState) == 0x000001, "Wrong size on AtomWavePlayer_GetPlayState");
-static_assert(offsetof(AtomWavePlayer_GetPlayState, ReturnValue) == 0x000000, "Member 'AtomWavePlayer_GetPlayState::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomWavePlayer_GetPlayState;
 
 // Function CriWareRuntime.AtomWavePlayer.GetTime
 // 0x0008 (0x0008 - 0x0000)
@@ -2393,9 +1840,7 @@ struct AtomWavePlayer_GetTime final
 public:
 	struct FTimespan                              ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomWavePlayer_GetTime) == 0x000008, "Wrong alignment on AtomWavePlayer_GetTime");
-static_assert(sizeof(AtomWavePlayer_GetTime) == 0x000008, "Wrong size on AtomWavePlayer_GetTime");
-static_assert(offsetof(AtomWavePlayer_GetTime, ReturnValue) == 0x000000, "Member 'AtomWavePlayer_GetTime::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomWavePlayer_GetTime;
 
 // Function CriWareRuntime.AtomWavePlayer.GetWaveInfo
 // 0x0014 (0x0014 - 0x0000)
@@ -2404,9 +1849,7 @@ struct AtomWavePlayer_GetWaveInfo final
 public:
 	struct FAtomWaveInfo                          ReturnValue;                                       // 0x0000(0x0014)(Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomWavePlayer_GetWaveInfo) == 0x000004, "Wrong alignment on AtomWavePlayer_GetWaveInfo");
-static_assert(sizeof(AtomWavePlayer_GetWaveInfo) == 0x000014, "Wrong size on AtomWavePlayer_GetWaveInfo");
-static_assert(offsetof(AtomWavePlayer_GetWaveInfo, ReturnValue) == 0x000000, "Member 'AtomWavePlayer_GetWaveInfo::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomWavePlayer_GetWaveInfo;
 
 // Function CriWareRuntime.AtomWavePlayer.HasError
 // 0x0001 (0x0001 - 0x0000)
@@ -2415,9 +1858,7 @@ struct AtomWavePlayer_HasError final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomWavePlayer_HasError) == 0x000001, "Wrong alignment on AtomWavePlayer_HasError");
-static_assert(sizeof(AtomWavePlayer_HasError) == 0x000001, "Wrong size on AtomWavePlayer_HasError");
-static_assert(offsetof(AtomWavePlayer_HasError, ReturnValue) == 0x000000, "Member 'AtomWavePlayer_HasError::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomWavePlayer_HasError;
 
 // Function CriWareRuntime.AtomWavePlayer.IsLooping
 // 0x0001 (0x0001 - 0x0000)
@@ -2426,9 +1867,7 @@ struct AtomWavePlayer_IsLooping final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomWavePlayer_IsLooping) == 0x000001, "Wrong alignment on AtomWavePlayer_IsLooping");
-static_assert(sizeof(AtomWavePlayer_IsLooping) == 0x000001, "Wrong size on AtomWavePlayer_IsLooping");
-static_assert(offsetof(AtomWavePlayer_IsLooping, ReturnValue) == 0x000000, "Member 'AtomWavePlayer_IsLooping::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomWavePlayer_IsLooping;
 
 // Function CriWareRuntime.AtomWavePlayer.IsPaused
 // 0x0001 (0x0001 - 0x0000)
@@ -2437,9 +1876,7 @@ struct AtomWavePlayer_IsPaused final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomWavePlayer_IsPaused) == 0x000001, "Wrong alignment on AtomWavePlayer_IsPaused");
-static_assert(sizeof(AtomWavePlayer_IsPaused) == 0x000001, "Wrong size on AtomWavePlayer_IsPaused");
-static_assert(offsetof(AtomWavePlayer_IsPaused, ReturnValue) == 0x000000, "Member 'AtomWavePlayer_IsPaused::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomWavePlayer_IsPaused;
 
 // Function CriWareRuntime.AtomWavePlayer.IsPlaying
 // 0x0001 (0x0001 - 0x0000)
@@ -2448,9 +1885,7 @@ struct AtomWavePlayer_IsPlaying final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AtomWavePlayer_IsPlaying) == 0x000001, "Wrong alignment on AtomWavePlayer_IsPlaying");
-static_assert(sizeof(AtomWavePlayer_IsPlaying) == 0x000001, "Wrong size on AtomWavePlayer_IsPlaying");
-static_assert(offsetof(AtomWavePlayer_IsPlaying, ReturnValue) == 0x000000, "Member 'AtomWavePlayer_IsPlaying::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AtomWavePlayer_IsPlaying;
 
 // Function CriWareRuntime.CriFsBinderComponent.GetStatus
 // 0x0001 (0x0001 - 0x0000)
@@ -2459,9 +1894,7 @@ struct CriFsBinderComponent_GetStatus final
 public:
 	ECriFsBinderStatus                            ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CriFsBinderComponent_GetStatus) == 0x000001, "Wrong alignment on CriFsBinderComponent_GetStatus");
-static_assert(sizeof(CriFsBinderComponent_GetStatus) == 0x000001, "Wrong size on CriFsBinderComponent_GetStatus");
-static_assert(offsetof(CriFsBinderComponent_GetStatus, ReturnValue) == 0x000000, "Member 'CriFsBinderComponent_GetStatus::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CriFsBinderComponent_GetStatus;
 
 // Function CriWareRuntime.CriFsLoaderComponent.GetDataArray
 // 0x0010 (0x0010 - 0x0000)
@@ -2470,9 +1903,7 @@ struct CriFsLoaderComponent_GetDataArray final
 public:
 	TArray<uint8>                                 ReturnValue;                                       // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CriFsLoaderComponent_GetDataArray) == 0x000008, "Wrong alignment on CriFsLoaderComponent_GetDataArray");
-static_assert(sizeof(CriFsLoaderComponent_GetDataArray) == 0x000010, "Wrong size on CriFsLoaderComponent_GetDataArray");
-static_assert(offsetof(CriFsLoaderComponent_GetDataArray, ReturnValue) == 0x000000, "Member 'CriFsLoaderComponent_GetDataArray::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CriFsLoaderComponent_GetDataArray;
 
 // Function CriWareRuntime.CriFsLoaderComponent.GetStatus
 // 0x0001 (0x0001 - 0x0000)
@@ -2481,9 +1912,7 @@ struct CriFsLoaderComponent_GetStatus final
 public:
 	ECriFsLoaderStatus                            ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CriFsLoaderComponent_GetStatus) == 0x000001, "Wrong alignment on CriFsLoaderComponent_GetStatus");
-static_assert(sizeof(CriFsLoaderComponent_GetStatus) == 0x000001, "Wrong size on CriFsLoaderComponent_GetStatus");
-static_assert(offsetof(CriFsLoaderComponent_GetStatus, ReturnValue) == 0x000000, "Member 'CriFsLoaderComponent_GetStatus::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CriFsLoaderComponent_GetStatus;
 
 // Function CriWareRuntime.CriWareError.GetCriWareError
 // 0x0008 (0x0008 - 0x0000)
@@ -2492,9 +1921,7 @@ struct CriWareError_GetCriWareError final
 public:
 	class UCriWareError*                          ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CriWareError_GetCriWareError) == 0x000008, "Wrong alignment on CriWareError_GetCriWareError");
-static_assert(sizeof(CriWareError_GetCriWareError) == 0x000008, "Wrong size on CriWareError_GetCriWareError");
-static_assert(offsetof(CriWareError_GetCriWareError, ReturnValue) == 0x000000, "Member 'CriWareError_GetCriWareError::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CriWareError_GetCriWareError;
 
 // Function CriWareRuntime.CriWareFunctionLibrary.SearchAtomCuesInAssetRegistry
 // 0x0018 (0x0018 - 0x0000)
@@ -2504,10 +1931,7 @@ public:
 	const class USoundAtomCueSheet*               CueSheet;                                          // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class USoundAtomCue*>                  ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CriWareFunctionLibrary_SearchAtomCuesInAssetRegistry) == 0x000008, "Wrong alignment on CriWareFunctionLibrary_SearchAtomCuesInAssetRegistry");
-static_assert(sizeof(CriWareFunctionLibrary_SearchAtomCuesInAssetRegistry) == 0x000018, "Wrong size on CriWareFunctionLibrary_SearchAtomCuesInAssetRegistry");
-static_assert(offsetof(CriWareFunctionLibrary_SearchAtomCuesInAssetRegistry, CueSheet) == 0x000000, "Member 'CriWareFunctionLibrary_SearchAtomCuesInAssetRegistry::CueSheet' has a wrong offset!");
-static_assert(offsetof(CriWareFunctionLibrary_SearchAtomCuesInAssetRegistry, ReturnValue) == 0x000008, "Member 'CriWareFunctionLibrary_SearchAtomCuesInAssetRegistry::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CriWareFunctionLibrary_SearchAtomCuesInAssetRegistry;
 
 // Function CriWareRuntime.CriWareFunctionLibrary.SetGameVariableByName
 // 0x0018 (0x0018 - 0x0000)
@@ -2518,10 +1942,7 @@ public:
 	float                                         Value;                                             // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(CriWareFunctionLibrary_SetGameVariableByName) == 0x000008, "Wrong alignment on CriWareFunctionLibrary_SetGameVariableByName");
-static_assert(sizeof(CriWareFunctionLibrary_SetGameVariableByName) == 0x000018, "Wrong size on CriWareFunctionLibrary_SetGameVariableByName");
-static_assert(offsetof(CriWareFunctionLibrary_SetGameVariableByName, GameVariableName) == 0x000000, "Member 'CriWareFunctionLibrary_SetGameVariableByName::GameVariableName' has a wrong offset!");
-static_assert(offsetof(CriWareFunctionLibrary_SetGameVariableByName, Value) == 0x000010, "Member 'CriWareFunctionLibrary_SetGameVariableByName::Value' has a wrong offset!");
+DUMPER7_ASSERTS_CriWareFunctionLibrary_SetGameVariableByName;
 
 // Function CriWareRuntime.CriWareFunctionLibrary.SetGlobalLabelToSelectorByName
 // 0x0020 (0x0020 - 0x0000)
@@ -2531,10 +1952,7 @@ public:
 	class FString                                 SelectorName;                                      // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 LabelName;                                         // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CriWareFunctionLibrary_SetGlobalLabelToSelectorByName) == 0x000008, "Wrong alignment on CriWareFunctionLibrary_SetGlobalLabelToSelectorByName");
-static_assert(sizeof(CriWareFunctionLibrary_SetGlobalLabelToSelectorByName) == 0x000020, "Wrong size on CriWareFunctionLibrary_SetGlobalLabelToSelectorByName");
-static_assert(offsetof(CriWareFunctionLibrary_SetGlobalLabelToSelectorByName, SelectorName) == 0x000000, "Member 'CriWareFunctionLibrary_SetGlobalLabelToSelectorByName::SelectorName' has a wrong offset!");
-static_assert(offsetof(CriWareFunctionLibrary_SetGlobalLabelToSelectorByName, LabelName) == 0x000010, "Member 'CriWareFunctionLibrary_SetGlobalLabelToSelectorByName::LabelName' has a wrong offset!");
+DUMPER7_ASSERTS_CriWareFunctionLibrary_SetGlobalLabelToSelectorByName;
 
 // Function CriWareRuntime.CriWareFunctionLibrary.SetSpeakerAngleArray
 // 0x0018 (0x0018 - 0x0000)
@@ -2545,10 +1963,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<float>                                 Angles;                                            // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CriWareFunctionLibrary_SetSpeakerAngleArray) == 0x000008, "Wrong alignment on CriWareFunctionLibrary_SetSpeakerAngleArray");
-static_assert(sizeof(CriWareFunctionLibrary_SetSpeakerAngleArray) == 0x000018, "Wrong size on CriWareFunctionLibrary_SetSpeakerAngleArray");
-static_assert(offsetof(CriWareFunctionLibrary_SetSpeakerAngleArray, SpeakerSystem) == 0x000000, "Member 'CriWareFunctionLibrary_SetSpeakerAngleArray::SpeakerSystem' has a wrong offset!");
-static_assert(offsetof(CriWareFunctionLibrary_SetSpeakerAngleArray, Angles) == 0x000008, "Member 'CriWareFunctionLibrary_SetSpeakerAngleArray::Angles' has a wrong offset!");
+DUMPER7_ASSERTS_CriWareFunctionLibrary_SetSpeakerAngleArray;
 
 // Function CriWareRuntime.ManaComponent.AdvanceTime
 // 0x0008 (0x0008 - 0x0000)
@@ -2557,9 +1972,7 @@ struct ManaComponent_AdvanceTime final
 public:
 	struct FTimespan                              DeltaTime;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaComponent_AdvanceTime) == 0x000008, "Wrong alignment on ManaComponent_AdvanceTime");
-static_assert(sizeof(ManaComponent_AdvanceTime) == 0x000008, "Wrong size on ManaComponent_AdvanceTime");
-static_assert(offsetof(ManaComponent_AdvanceTime, DeltaTime) == 0x000000, "Member 'ManaComponent_AdvanceTime::DeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_ManaComponent_AdvanceTime;
 
 // Function CriWareRuntime.ManaComponent.ChangeSubtitlesChannel
 // 0x0004 (0x0004 - 0x0000)
@@ -2568,9 +1981,7 @@ struct ManaComponent_ChangeSubtitlesChannel final
 public:
 	int32                                         Channel;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaComponent_ChangeSubtitlesChannel) == 0x000004, "Wrong alignment on ManaComponent_ChangeSubtitlesChannel");
-static_assert(sizeof(ManaComponent_ChangeSubtitlesChannel) == 0x000004, "Wrong size on ManaComponent_ChangeSubtitlesChannel");
-static_assert(offsetof(ManaComponent_ChangeSubtitlesChannel, Channel) == 0x000000, "Member 'ManaComponent_ChangeSubtitlesChannel::Channel' has a wrong offset!");
+DUMPER7_ASSERTS_ManaComponent_ChangeSubtitlesChannel;
 
 // Function CriWareRuntime.ManaComponent.ChangeSubtitlesEncoding
 // 0x0001 (0x0001 - 0x0000)
@@ -2579,9 +1990,7 @@ struct ManaComponent_ChangeSubtitlesEncoding final
 public:
 	EManaSubtitlesEncoding                        Encoding;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaComponent_ChangeSubtitlesEncoding) == 0x000001, "Wrong alignment on ManaComponent_ChangeSubtitlesEncoding");
-static_assert(sizeof(ManaComponent_ChangeSubtitlesEncoding) == 0x000001, "Wrong size on ManaComponent_ChangeSubtitlesEncoding");
-static_assert(offsetof(ManaComponent_ChangeSubtitlesEncoding, Encoding) == 0x000000, "Member 'ManaComponent_ChangeSubtitlesEncoding::Encoding' has a wrong offset!");
+DUMPER7_ASSERTS_ManaComponent_ChangeSubtitlesEncoding;
 
 // Function CriWareRuntime.ManaComponent.EnableSeamless
 // 0x0001 (0x0001 - 0x0000)
@@ -2590,9 +1999,7 @@ struct ManaComponent_EnableSeamless final
 public:
 	bool                                          bEnable;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaComponent_EnableSeamless) == 0x000001, "Wrong alignment on ManaComponent_EnableSeamless");
-static_assert(sizeof(ManaComponent_EnableSeamless) == 0x000001, "Wrong size on ManaComponent_EnableSeamless");
-static_assert(offsetof(ManaComponent_EnableSeamless, bEnable) == 0x000000, "Member 'ManaComponent_EnableSeamless::bEnable' has a wrong offset!");
+DUMPER7_ASSERTS_ManaComponent_EnableSeamless;
 
 // Function CriWareRuntime.ManaComponent.EnableSubtitles
 // 0x0001 (0x0001 - 0x0000)
@@ -2601,9 +2008,7 @@ struct ManaComponent_EnableSubtitles final
 public:
 	bool                                          bEnable;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaComponent_EnableSubtitles) == 0x000001, "Wrong alignment on ManaComponent_EnableSubtitles");
-static_assert(sizeof(ManaComponent_EnableSubtitles) == 0x000001, "Wrong size on ManaComponent_EnableSubtitles");
-static_assert(offsetof(ManaComponent_EnableSubtitles, bEnable) == 0x000000, "Member 'ManaComponent_EnableSubtitles::bEnable' has a wrong offset!");
+DUMPER7_ASSERTS_ManaComponent_EnableSubtitles;
 
 // Function CriWareRuntime.ManaComponent.Loop
 // 0x0001 (0x0001 - 0x0000)
@@ -2612,9 +2017,7 @@ struct ManaComponent_Loop final
 public:
 	bool                                          bInLoop;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaComponent_Loop) == 0x000001, "Wrong alignment on ManaComponent_Loop");
-static_assert(sizeof(ManaComponent_Loop) == 0x000001, "Wrong size on ManaComponent_Loop");
-static_assert(offsetof(ManaComponent_Loop, bInLoop) == 0x000000, "Member 'ManaComponent_Loop::bInLoop' has a wrong offset!");
+DUMPER7_ASSERTS_ManaComponent_Loop;
 
 // Function CriWareRuntime.ManaComponent.Next
 // 0x0001 (0x0001 - 0x0000)
@@ -2623,9 +2026,7 @@ struct ManaComponent_Next final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaComponent_Next) == 0x000001, "Wrong alignment on ManaComponent_Next");
-static_assert(sizeof(ManaComponent_Next) == 0x000001, "Wrong size on ManaComponent_Next");
-static_assert(offsetof(ManaComponent_Next, ReturnValue) == 0x000000, "Member 'ManaComponent_Next::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaComponent_Next;
 
 // Function CriWareRuntime.ManaComponent.Pause
 // 0x0001 (0x0001 - 0x0000)
@@ -2634,9 +2035,7 @@ struct ManaComponent_Pause final
 public:
 	bool                                          bPause;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaComponent_Pause) == 0x000001, "Wrong alignment on ManaComponent_Pause");
-static_assert(sizeof(ManaComponent_Pause) == 0x000001, "Wrong size on ManaComponent_Pause");
-static_assert(offsetof(ManaComponent_Pause, bPause) == 0x000000, "Member 'ManaComponent_Pause::bPause' has a wrong offset!");
+DUMPER7_ASSERTS_ManaComponent_Pause;
 
 // Function CriWareRuntime.ManaComponent.PreparePlaylistIndex
 // 0x0004 (0x0004 - 0x0000)
@@ -2645,9 +2044,7 @@ struct ManaComponent_PreparePlaylistIndex final
 public:
 	int32                                         Index_0;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaComponent_PreparePlaylistIndex) == 0x000004, "Wrong alignment on ManaComponent_PreparePlaylistIndex");
-static_assert(sizeof(ManaComponent_PreparePlaylistIndex) == 0x000004, "Wrong size on ManaComponent_PreparePlaylistIndex");
-static_assert(offsetof(ManaComponent_PreparePlaylistIndex, Index_0) == 0x000000, "Member 'ManaComponent_PreparePlaylistIndex::Index_0' has a wrong offset!");
+DUMPER7_ASSERTS_ManaComponent_PreparePlaylistIndex;
 
 // Function CriWareRuntime.ManaComponent.Previous
 // 0x0001 (0x0001 - 0x0000)
@@ -2656,9 +2053,7 @@ struct ManaComponent_Previous final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaComponent_Previous) == 0x000001, "Wrong alignment on ManaComponent_Previous");
-static_assert(sizeof(ManaComponent_Previous) == 0x000001, "Wrong size on ManaComponent_Previous");
-static_assert(offsetof(ManaComponent_Previous, ReturnValue) == 0x000000, "Member 'ManaComponent_Previous::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaComponent_Previous;
 
 // Function CriWareRuntime.ManaComponent.Seek
 // 0x0008 (0x0008 - 0x0000)
@@ -2667,9 +2062,7 @@ struct ManaComponent_Seek final
 public:
 	struct FTimespan                              Time;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaComponent_Seek) == 0x000008, "Wrong alignment on ManaComponent_Seek");
-static_assert(sizeof(ManaComponent_Seek) == 0x000008, "Wrong size on ManaComponent_Seek");
-static_assert(offsetof(ManaComponent_Seek, Time) == 0x000000, "Member 'ManaComponent_Seek::Time' has a wrong offset!");
+DUMPER7_ASSERTS_ManaComponent_Seek;
 
 // Function CriWareRuntime.ManaComponent.SeekToPosition
 // 0x0004 (0x0004 - 0x0000)
@@ -2678,9 +2071,7 @@ struct ManaComponent_SeekToPosition final
 public:
 	int32                                         FrameNumber;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaComponent_SeekToPosition) == 0x000004, "Wrong alignment on ManaComponent_SeekToPosition");
-static_assert(sizeof(ManaComponent_SeekToPosition) == 0x000004, "Wrong size on ManaComponent_SeekToPosition");
-static_assert(offsetof(ManaComponent_SeekToPosition, FrameNumber) == 0x000000, "Member 'ManaComponent_SeekToPosition::FrameNumber' has a wrong offset!");
+DUMPER7_ASSERTS_ManaComponent_SeekToPosition;
 
 // Function CriWareRuntime.ManaComponent.SetAlphaTrack
 // 0x0004 (0x0004 - 0x0000)
@@ -2689,9 +2080,7 @@ struct ManaComponent_SetAlphaTrack final
 public:
 	int32                                         Track;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaComponent_SetAlphaTrack) == 0x000004, "Wrong alignment on ManaComponent_SetAlphaTrack");
-static_assert(sizeof(ManaComponent_SetAlphaTrack) == 0x000004, "Wrong size on ManaComponent_SetAlphaTrack");
-static_assert(offsetof(ManaComponent_SetAlphaTrack, Track) == 0x000000, "Member 'ManaComponent_SetAlphaTrack::Track' has a wrong offset!");
+DUMPER7_ASSERTS_ManaComponent_SetAlphaTrack;
 
 // Function CriWareRuntime.ManaComponent.SetAudioCategory
 // 0x0010 (0x0010 - 0x0000)
@@ -2700,9 +2089,7 @@ struct ManaComponent_SetAudioCategory final
 public:
 	class FString                                 CategoryName;                                      // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaComponent_SetAudioCategory) == 0x000008, "Wrong alignment on ManaComponent_SetAudioCategory");
-static_assert(sizeof(ManaComponent_SetAudioCategory) == 0x000010, "Wrong size on ManaComponent_SetAudioCategory");
-static_assert(offsetof(ManaComponent_SetAudioCategory, CategoryName) == 0x000000, "Member 'ManaComponent_SetAudioCategory::CategoryName' has a wrong offset!");
+DUMPER7_ASSERTS_ManaComponent_SetAudioCategory;
 
 // Function CriWareRuntime.ManaComponent.SetAudioTrack
 // 0x0004 (0x0004 - 0x0000)
@@ -2711,9 +2098,7 @@ struct ManaComponent_SetAudioTrack final
 public:
 	int32                                         Track;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaComponent_SetAudioTrack) == 0x000004, "Wrong alignment on ManaComponent_SetAudioTrack");
-static_assert(sizeof(ManaComponent_SetAudioTrack) == 0x000004, "Wrong size on ManaComponent_SetAudioTrack");
-static_assert(offsetof(ManaComponent_SetAudioTrack, Track) == 0x000000, "Member 'ManaComponent_SetAudioTrack::Track' has a wrong offset!");
+DUMPER7_ASSERTS_ManaComponent_SetAudioTrack;
 
 // Function CriWareRuntime.ManaComponent.SetEndFrameAction
 // 0x0001 (0x0001 - 0x0000)
@@ -2722,9 +2107,7 @@ struct ManaComponent_SetEndFrameAction final
 public:
 	EManaFrameAction                              InFrameAction;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaComponent_SetEndFrameAction) == 0x000001, "Wrong alignment on ManaComponent_SetEndFrameAction");
-static_assert(sizeof(ManaComponent_SetEndFrameAction) == 0x000001, "Wrong size on ManaComponent_SetEndFrameAction");
-static_assert(offsetof(ManaComponent_SetEndFrameAction, InFrameAction) == 0x000000, "Member 'ManaComponent_SetEndFrameAction::InFrameAction' has a wrong offset!");
+DUMPER7_ASSERTS_ManaComponent_SetEndFrameAction;
 
 // Function CriWareRuntime.ManaComponent.SetExtraAudioCategory
 // 0x0010 (0x0010 - 0x0000)
@@ -2733,9 +2116,7 @@ struct ManaComponent_SetExtraAudioCategory final
 public:
 	class FString                                 CategoryName;                                      // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaComponent_SetExtraAudioCategory) == 0x000008, "Wrong alignment on ManaComponent_SetExtraAudioCategory");
-static_assert(sizeof(ManaComponent_SetExtraAudioCategory) == 0x000010, "Wrong size on ManaComponent_SetExtraAudioCategory");
-static_assert(offsetof(ManaComponent_SetExtraAudioCategory, CategoryName) == 0x000000, "Member 'ManaComponent_SetExtraAudioCategory::CategoryName' has a wrong offset!");
+DUMPER7_ASSERTS_ManaComponent_SetExtraAudioCategory;
 
 // Function CriWareRuntime.ManaComponent.SetExtraAudioTrack
 // 0x0004 (0x0004 - 0x0000)
@@ -2744,9 +2125,7 @@ struct ManaComponent_SetExtraAudioTrack final
 public:
 	int32                                         Track;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaComponent_SetExtraAudioTrack) == 0x000004, "Wrong alignment on ManaComponent_SetExtraAudioTrack");
-static_assert(sizeof(ManaComponent_SetExtraAudioTrack) == 0x000004, "Wrong size on ManaComponent_SetExtraAudioTrack");
-static_assert(offsetof(ManaComponent_SetExtraAudioTrack, Track) == 0x000000, "Member 'ManaComponent_SetExtraAudioTrack::Track' has a wrong offset!");
+DUMPER7_ASSERTS_ManaComponent_SetExtraAudioTrack;
 
 // Function CriWareRuntime.ManaComponent.SetExtraVolume
 // 0x0004 (0x0004 - 0x0000)
@@ -2755,9 +2134,7 @@ struct ManaComponent_SetExtraVolume final
 public:
 	float                                         Volume;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaComponent_SetExtraVolume) == 0x000004, "Wrong alignment on ManaComponent_SetExtraVolume");
-static_assert(sizeof(ManaComponent_SetExtraVolume) == 0x000004, "Wrong size on ManaComponent_SetExtraVolume");
-static_assert(offsetof(ManaComponent_SetExtraVolume, Volume) == 0x000000, "Member 'ManaComponent_SetExtraVolume::Volume' has a wrong offset!");
+DUMPER7_ASSERTS_ManaComponent_SetExtraVolume;
 
 // Function CriWareRuntime.ManaComponent.SetFile
 // 0x0010 (0x0010 - 0x0000)
@@ -2766,9 +2143,7 @@ struct ManaComponent_SetFile final
 public:
 	class FString                                 MovieFilePath;                                     // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaComponent_SetFile) == 0x000008, "Wrong alignment on ManaComponent_SetFile");
-static_assert(sizeof(ManaComponent_SetFile) == 0x000010, "Wrong size on ManaComponent_SetFile");
-static_assert(offsetof(ManaComponent_SetFile, MovieFilePath) == 0x000000, "Member 'ManaComponent_SetFile::MovieFilePath' has a wrong offset!");
+DUMPER7_ASSERTS_ManaComponent_SetFile;
 
 // Function CriWareRuntime.ManaComponent.SetMaxDropFrames
 // 0x0001 (0x0001 - 0x0000)
@@ -2777,9 +2152,7 @@ struct ManaComponent_SetMaxDropFrames final
 public:
 	EManaMaxFrameDrop                             InMaxDropFrames;                                   // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaComponent_SetMaxDropFrames) == 0x000001, "Wrong alignment on ManaComponent_SetMaxDropFrames");
-static_assert(sizeof(ManaComponent_SetMaxDropFrames) == 0x000001, "Wrong size on ManaComponent_SetMaxDropFrames");
-static_assert(offsetof(ManaComponent_SetMaxDropFrames, InMaxDropFrames) == 0x000000, "Member 'ManaComponent_SetMaxDropFrames::InMaxDropFrames' has a wrong offset!");
+DUMPER7_ASSERTS_ManaComponent_SetMaxDropFrames;
 
 // Function CriWareRuntime.ManaComponent.SetMovie
 // 0x0008 (0x0008 - 0x0000)
@@ -2788,9 +2161,7 @@ struct ManaComponent_SetMovie final
 public:
 	class UManaMovie*                             InMovie;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaComponent_SetMovie) == 0x000008, "Wrong alignment on ManaComponent_SetMovie");
-static_assert(sizeof(ManaComponent_SetMovie) == 0x000008, "Wrong size on ManaComponent_SetMovie");
-static_assert(offsetof(ManaComponent_SetMovie, InMovie) == 0x000000, "Member 'ManaComponent_SetMovie::InMovie' has a wrong offset!");
+DUMPER7_ASSERTS_ManaComponent_SetMovie;
 
 // Function CriWareRuntime.ManaComponent.SetPlaybackTimer
 // 0x0001 (0x0001 - 0x0000)
@@ -2799,9 +2170,7 @@ struct ManaComponent_SetPlaybackTimer final
 public:
 	EManaPlaybackTimer                            InPlaybackTimer;                                   // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaComponent_SetPlaybackTimer) == 0x000001, "Wrong alignment on ManaComponent_SetPlaybackTimer");
-static_assert(sizeof(ManaComponent_SetPlaybackTimer) == 0x000001, "Wrong size on ManaComponent_SetPlaybackTimer");
-static_assert(offsetof(ManaComponent_SetPlaybackTimer, InPlaybackTimer) == 0x000000, "Member 'ManaComponent_SetPlaybackTimer::InPlaybackTimer' has a wrong offset!");
+DUMPER7_ASSERTS_ManaComponent_SetPlaybackTimer;
 
 // Function CriWareRuntime.ManaComponent.SetSubAudioCategory
 // 0x0010 (0x0010 - 0x0000)
@@ -2810,9 +2179,7 @@ struct ManaComponent_SetSubAudioCategory final
 public:
 	class FString                                 CategoryName;                                      // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaComponent_SetSubAudioCategory) == 0x000008, "Wrong alignment on ManaComponent_SetSubAudioCategory");
-static_assert(sizeof(ManaComponent_SetSubAudioCategory) == 0x000010, "Wrong size on ManaComponent_SetSubAudioCategory");
-static_assert(offsetof(ManaComponent_SetSubAudioCategory, CategoryName) == 0x000000, "Member 'ManaComponent_SetSubAudioCategory::CategoryName' has a wrong offset!");
+DUMPER7_ASSERTS_ManaComponent_SetSubAudioCategory;
 
 // Function CriWareRuntime.ManaComponent.SetSubAudioSendLevel
 // 0x000C (0x000C - 0x0000)
@@ -2824,11 +2191,7 @@ public:
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Volume;                                            // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaComponent_SetSubAudioSendLevel) == 0x000004, "Wrong alignment on ManaComponent_SetSubAudioSendLevel");
-static_assert(sizeof(ManaComponent_SetSubAudioSendLevel) == 0x00000C, "Wrong size on ManaComponent_SetSubAudioSendLevel");
-static_assert(offsetof(ManaComponent_SetSubAudioSendLevel, Channel) == 0x000000, "Member 'ManaComponent_SetSubAudioSendLevel::Channel' has a wrong offset!");
-static_assert(offsetof(ManaComponent_SetSubAudioSendLevel, SpeakerId) == 0x000004, "Member 'ManaComponent_SetSubAudioSendLevel::SpeakerId' has a wrong offset!");
-static_assert(offsetof(ManaComponent_SetSubAudioSendLevel, Volume) == 0x000008, "Member 'ManaComponent_SetSubAudioSendLevel::Volume' has a wrong offset!");
+DUMPER7_ASSERTS_ManaComponent_SetSubAudioSendLevel;
 
 // Function CriWareRuntime.ManaComponent.SetSubAudioTrack
 // 0x0004 (0x0004 - 0x0000)
@@ -2837,9 +2200,7 @@ struct ManaComponent_SetSubAudioTrack final
 public:
 	int32                                         Track;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaComponent_SetSubAudioTrack) == 0x000004, "Wrong alignment on ManaComponent_SetSubAudioTrack");
-static_assert(sizeof(ManaComponent_SetSubAudioTrack) == 0x000004, "Wrong size on ManaComponent_SetSubAudioTrack");
-static_assert(offsetof(ManaComponent_SetSubAudioTrack, Track) == 0x000000, "Member 'ManaComponent_SetSubAudioTrack::Track' has a wrong offset!");
+DUMPER7_ASSERTS_ManaComponent_SetSubAudioTrack;
 
 // Function CriWareRuntime.ManaComponent.SetSubVolume
 // 0x0004 (0x0004 - 0x0000)
@@ -2848,9 +2209,7 @@ struct ManaComponent_SetSubVolume final
 public:
 	float                                         Volume;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaComponent_SetSubVolume) == 0x000004, "Wrong alignment on ManaComponent_SetSubVolume");
-static_assert(sizeof(ManaComponent_SetSubVolume) == 0x000004, "Wrong size on ManaComponent_SetSubVolume");
-static_assert(offsetof(ManaComponent_SetSubVolume, Volume) == 0x000000, "Member 'ManaComponent_SetSubVolume::Volume' has a wrong offset!");
+DUMPER7_ASSERTS_ManaComponent_SetSubVolume;
 
 // Function CriWareRuntime.ManaComponent.SetTexture
 // 0x0008 (0x0008 - 0x0000)
@@ -2859,9 +2218,7 @@ struct ManaComponent_SetTexture final
 public:
 	class UManaTexture*                           Texture;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaComponent_SetTexture) == 0x000008, "Wrong alignment on ManaComponent_SetTexture");
-static_assert(sizeof(ManaComponent_SetTexture) == 0x000008, "Wrong size on ManaComponent_SetTexture");
-static_assert(offsetof(ManaComponent_SetTexture, Texture) == 0x000000, "Member 'ManaComponent_SetTexture::Texture' has a wrong offset!");
+DUMPER7_ASSERTS_ManaComponent_SetTexture;
 
 // Function CriWareRuntime.ManaComponent.SetVolume
 // 0x0004 (0x0004 - 0x0000)
@@ -2870,9 +2227,7 @@ struct ManaComponent_SetVolume final
 public:
 	float                                         Volume;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaComponent_SetVolume) == 0x000004, "Wrong alignment on ManaComponent_SetVolume");
-static_assert(sizeof(ManaComponent_SetVolume) == 0x000004, "Wrong size on ManaComponent_SetVolume");
-static_assert(offsetof(ManaComponent_SetVolume, Volume) == 0x000000, "Member 'ManaComponent_SetVolume::Volume' has a wrong offset!");
+DUMPER7_ASSERTS_ManaComponent_SetVolume;
 
 // Function CriWareRuntime.ManaComponent.ToIndex
 // 0x0008 (0x0008 - 0x0000)
@@ -2883,10 +2238,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(ManaComponent_ToIndex) == 0x000004, "Wrong alignment on ManaComponent_ToIndex");
-static_assert(sizeof(ManaComponent_ToIndex) == 0x000008, "Wrong size on ManaComponent_ToIndex");
-static_assert(offsetof(ManaComponent_ToIndex, Index_0) == 0x000000, "Member 'ManaComponent_ToIndex::Index_0' has a wrong offset!");
-static_assert(offsetof(ManaComponent_ToIndex, ReturnValue) == 0x000004, "Member 'ManaComponent_ToIndex::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaComponent_ToIndex;
 
 // Function CriWareRuntime.ManaComponent.GetExtraVolume
 // 0x0004 (0x0004 - 0x0000)
@@ -2895,9 +2247,7 @@ struct ManaComponent_GetExtraVolume final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaComponent_GetExtraVolume) == 0x000004, "Wrong alignment on ManaComponent_GetExtraVolume");
-static_assert(sizeof(ManaComponent_GetExtraVolume) == 0x000004, "Wrong size on ManaComponent_GetExtraVolume");
-static_assert(offsetof(ManaComponent_GetExtraVolume, ReturnValue) == 0x000000, "Member 'ManaComponent_GetExtraVolume::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaComponent_GetExtraVolume;
 
 // Function CriWareRuntime.ManaComponent.GetFrameNumber
 // 0x0004 (0x0004 - 0x0000)
@@ -2906,9 +2256,7 @@ struct ManaComponent_GetFrameNumber final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaComponent_GetFrameNumber) == 0x000004, "Wrong alignment on ManaComponent_GetFrameNumber");
-static_assert(sizeof(ManaComponent_GetFrameNumber) == 0x000004, "Wrong size on ManaComponent_GetFrameNumber");
-static_assert(offsetof(ManaComponent_GetFrameNumber, ReturnValue) == 0x000000, "Member 'ManaComponent_GetFrameNumber::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaComponent_GetFrameNumber;
 
 // Function CriWareRuntime.ManaComponent.GetMovieTime
 // 0x0008 (0x0008 - 0x0000)
@@ -2917,9 +2265,7 @@ struct ManaComponent_GetMovieTime final
 public:
 	struct FTimespan                              ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaComponent_GetMovieTime) == 0x000008, "Wrong alignment on ManaComponent_GetMovieTime");
-static_assert(sizeof(ManaComponent_GetMovieTime) == 0x000008, "Wrong size on ManaComponent_GetMovieTime");
-static_assert(offsetof(ManaComponent_GetMovieTime, ReturnValue) == 0x000000, "Member 'ManaComponent_GetMovieTime::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaComponent_GetMovieTime;
 
 // Function CriWareRuntime.ManaComponent.GetPosition
 // 0x0004 (0x0004 - 0x0000)
@@ -2928,9 +2274,7 @@ struct ManaComponent_GetPosition final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaComponent_GetPosition) == 0x000004, "Wrong alignment on ManaComponent_GetPosition");
-static_assert(sizeof(ManaComponent_GetPosition) == 0x000004, "Wrong size on ManaComponent_GetPosition");
-static_assert(offsetof(ManaComponent_GetPosition, ReturnValue) == 0x000000, "Member 'ManaComponent_GetPosition::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaComponent_GetPosition;
 
 // Function CriWareRuntime.ManaComponent.GetSource
 // 0x0008 (0x0008 - 0x0000)
@@ -2939,9 +2283,7 @@ struct ManaComponent_GetSource final
 public:
 	class UManaMovie*                             ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaComponent_GetSource) == 0x000008, "Wrong alignment on ManaComponent_GetSource");
-static_assert(sizeof(ManaComponent_GetSource) == 0x000008, "Wrong size on ManaComponent_GetSource");
-static_assert(offsetof(ManaComponent_GetSource, ReturnValue) == 0x000000, "Member 'ManaComponent_GetSource::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaComponent_GetSource;
 
 // Function CriWareRuntime.ManaComponent.GetStatus
 // 0x0001 (0x0001 - 0x0000)
@@ -2950,9 +2292,7 @@ struct ManaComponent_GetStatus final
 public:
 	EManaComponentStatus                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaComponent_GetStatus) == 0x000001, "Wrong alignment on ManaComponent_GetStatus");
-static_assert(sizeof(ManaComponent_GetStatus) == 0x000001, "Wrong size on ManaComponent_GetStatus");
-static_assert(offsetof(ManaComponent_GetStatus, ReturnValue) == 0x000000, "Member 'ManaComponent_GetStatus::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaComponent_GetStatus;
 
 // Function CriWareRuntime.ManaComponent.GetSubVolume
 // 0x0004 (0x0004 - 0x0000)
@@ -2961,9 +2301,7 @@ struct ManaComponent_GetSubVolume final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaComponent_GetSubVolume) == 0x000004, "Wrong alignment on ManaComponent_GetSubVolume");
-static_assert(sizeof(ManaComponent_GetSubVolume) == 0x000004, "Wrong size on ManaComponent_GetSubVolume");
-static_assert(offsetof(ManaComponent_GetSubVolume, ReturnValue) == 0x000000, "Member 'ManaComponent_GetSubVolume::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaComponent_GetSubVolume;
 
 // Function CriWareRuntime.ManaComponent.GetTexture
 // 0x0008 (0x0008 - 0x0000)
@@ -2972,9 +2310,7 @@ struct ManaComponent_GetTexture final
 public:
 	class UManaTexture*                           ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaComponent_GetTexture) == 0x000008, "Wrong alignment on ManaComponent_GetTexture");
-static_assert(sizeof(ManaComponent_GetTexture) == 0x000008, "Wrong size on ManaComponent_GetTexture");
-static_assert(offsetof(ManaComponent_GetTexture, ReturnValue) == 0x000000, "Member 'ManaComponent_GetTexture::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaComponent_GetTexture;
 
 // Function CriWareRuntime.ManaComponent.GetTime
 // 0x0008 (0x0008 - 0x0000)
@@ -2983,9 +2319,7 @@ struct ManaComponent_GetTime final
 public:
 	struct FTimespan                              ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaComponent_GetTime) == 0x000008, "Wrong alignment on ManaComponent_GetTime");
-static_assert(sizeof(ManaComponent_GetTime) == 0x000008, "Wrong size on ManaComponent_GetTime");
-static_assert(offsetof(ManaComponent_GetTime, ReturnValue) == 0x000000, "Member 'ManaComponent_GetTime::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaComponent_GetTime;
 
 // Function CriWareRuntime.ManaComponent.GetVolume
 // 0x0004 (0x0004 - 0x0000)
@@ -2994,9 +2328,7 @@ struct ManaComponent_GetVolume final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaComponent_GetVolume) == 0x000004, "Wrong alignment on ManaComponent_GetVolume");
-static_assert(sizeof(ManaComponent_GetVolume) == 0x000004, "Wrong size on ManaComponent_GetVolume");
-static_assert(offsetof(ManaComponent_GetVolume, ReturnValue) == 0x000000, "Member 'ManaComponent_GetVolume::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaComponent_GetVolume;
 
 // Function CriWareRuntime.ManaComponent.IsLooping
 // 0x0001 (0x0001 - 0x0000)
@@ -3005,9 +2337,7 @@ struct ManaComponent_IsLooping final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaComponent_IsLooping) == 0x000001, "Wrong alignment on ManaComponent_IsLooping");
-static_assert(sizeof(ManaComponent_IsLooping) == 0x000001, "Wrong size on ManaComponent_IsLooping");
-static_assert(offsetof(ManaComponent_IsLooping, ReturnValue) == 0x000000, "Member 'ManaComponent_IsLooping::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaComponent_IsLooping;
 
 // Function CriWareRuntime.ManaComponent.IsPaused
 // 0x0001 (0x0001 - 0x0000)
@@ -3016,9 +2346,7 @@ struct ManaComponent_IsPaused final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaComponent_IsPaused) == 0x000001, "Wrong alignment on ManaComponent_IsPaused");
-static_assert(sizeof(ManaComponent_IsPaused) == 0x000001, "Wrong size on ManaComponent_IsPaused");
-static_assert(offsetof(ManaComponent_IsPaused, ReturnValue) == 0x000000, "Member 'ManaComponent_IsPaused::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaComponent_IsPaused;
 
 // Function CriWareRuntime.ManaComponent.IsPlaying
 // 0x0001 (0x0001 - 0x0000)
@@ -3027,9 +2355,7 @@ struct ManaComponent_IsPlaying final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaComponent_IsPlaying) == 0x000001, "Wrong alignment on ManaComponent_IsPlaying");
-static_assert(sizeof(ManaComponent_IsPlaying) == 0x000001, "Wrong size on ManaComponent_IsPlaying");
-static_assert(offsetof(ManaComponent_IsPlaying, ReturnValue) == 0x000000, "Member 'ManaComponent_IsPlaying::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaComponent_IsPlaying;
 
 // Function CriWareRuntime.ManaComponent.IsPreparing
 // 0x0001 (0x0001 - 0x0000)
@@ -3038,9 +2364,7 @@ struct ManaComponent_IsPreparing final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaComponent_IsPreparing) == 0x000001, "Wrong alignment on ManaComponent_IsPreparing");
-static_assert(sizeof(ManaComponent_IsPreparing) == 0x000001, "Wrong size on ManaComponent_IsPreparing");
-static_assert(offsetof(ManaComponent_IsPreparing, ReturnValue) == 0x000000, "Member 'ManaComponent_IsPreparing::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaComponent_IsPreparing;
 
 // Function CriWareRuntime.ManaComponent.IsReady
 // 0x0001 (0x0001 - 0x0000)
@@ -3049,9 +2373,7 @@ struct ManaComponent_IsReady final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaComponent_IsReady) == 0x000001, "Wrong alignment on ManaComponent_IsReady");
-static_assert(sizeof(ManaComponent_IsReady) == 0x000001, "Wrong size on ManaComponent_IsReady");
-static_assert(offsetof(ManaComponent_IsReady, ReturnValue) == 0x000000, "Member 'ManaComponent_IsReady::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaComponent_IsReady;
 
 // Function CriWareRuntime.ManaMovie.GetUrl
 // 0x0010 (0x0010 - 0x0000)
@@ -3060,9 +2382,7 @@ struct ManaMovie_GetUrl final
 public:
 	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaMovie_GetUrl) == 0x000008, "Wrong alignment on ManaMovie_GetUrl");
-static_assert(sizeof(ManaMovie_GetUrl) == 0x000010, "Wrong size on ManaMovie_GetUrl");
-static_assert(offsetof(ManaMovie_GetUrl, ReturnValue) == 0x000000, "Member 'ManaMovie_GetUrl::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaMovie_GetUrl;
 
 // Function CriWareRuntime.ManaMovie.Validate
 // 0x0001 (0x0001 - 0x0000)
@@ -3071,9 +2391,7 @@ struct ManaMovie_Validate final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaMovie_Validate) == 0x000001, "Wrong alignment on ManaMovie_Validate");
-static_assert(sizeof(ManaMovie_Validate) == 0x000001, "Wrong size on ManaMovie_Validate");
-static_assert(offsetof(ManaMovie_Validate, ReturnValue) == 0x000000, "Member 'ManaMovie_Validate::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaMovie_Validate;
 
 // Function CriWareRuntime.FileManaMovie.SetFilePath
 // 0x0010 (0x0010 - 0x0000)
@@ -3082,9 +2400,7 @@ struct FileManaMovie_SetFilePath final
 public:
 	class FString                                 Path;                                              // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FileManaMovie_SetFilePath) == 0x000008, "Wrong alignment on FileManaMovie_SetFilePath");
-static_assert(sizeof(FileManaMovie_SetFilePath) == 0x000010, "Wrong size on FileManaMovie_SetFilePath");
-static_assert(offsetof(FileManaMovie_SetFilePath, Path) == 0x000000, "Member 'FileManaMovie_SetFilePath::Path' has a wrong offset!");
+DUMPER7_ASSERTS_FileManaMovie_SetFilePath;
 
 // Function CriWareRuntime.DataManaMovie.GetDataArray
 // 0x0010 (0x0010 - 0x0000)
@@ -3093,9 +2409,7 @@ struct DataManaMovie_GetDataArray final
 public:
 	TArray<uint8>                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(DataManaMovie_GetDataArray) == 0x000008, "Wrong alignment on DataManaMovie_GetDataArray");
-static_assert(sizeof(DataManaMovie_GetDataArray) == 0x000010, "Wrong size on DataManaMovie_GetDataArray");
-static_assert(offsetof(DataManaMovie_GetDataArray, ReturnValue) == 0x000000, "Member 'DataManaMovie_GetDataArray::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_DataManaMovie_GetDataArray;
 
 // Function CriWareRuntime.DataManaMovie.SetDataArray
 // 0x0010 (0x0010 - 0x0000)
@@ -3104,9 +2418,7 @@ struct DataManaMovie_SetDataArray final
 public:
 	TArray<uint8>                                 InDataArray;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(DataManaMovie_SetDataArray) == 0x000008, "Wrong alignment on DataManaMovie_SetDataArray");
-static_assert(sizeof(DataManaMovie_SetDataArray) == 0x000010, "Wrong size on DataManaMovie_SetDataArray");
-static_assert(offsetof(DataManaMovie_SetDataArray, InDataArray) == 0x000000, "Member 'DataManaMovie_SetDataArray::InDataArray' has a wrong offset!");
+DUMPER7_ASSERTS_DataManaMovie_SetDataArray;
 
 // Function CriWareRuntime.ManaPlayer.BindOnFrameUpdated
 // 0x0010 (0x0010 - 0x0000)
@@ -3115,9 +2427,7 @@ struct ManaPlayer_BindOnFrameUpdated final
 public:
 	TDelegate<void(int32 FrameNumber)>            Event;                                             // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaPlayer_BindOnFrameUpdated) == 0x000004, "Wrong alignment on ManaPlayer_BindOnFrameUpdated");
-static_assert(sizeof(ManaPlayer_BindOnFrameUpdated) == 0x000010, "Wrong size on ManaPlayer_BindOnFrameUpdated");
-static_assert(offsetof(ManaPlayer_BindOnFrameUpdated, Event) == 0x000000, "Member 'ManaPlayer_BindOnFrameUpdated::Event' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlayer_BindOnFrameUpdated;
 
 // Function CriWareRuntime.ManaPlayer.DisableTrack
 // 0x0002 (0x0002 - 0x0000)
@@ -3127,10 +2437,7 @@ public:
 	EManaPlayerTrack                              TrackType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaPlayer_DisableTrack) == 0x000001, "Wrong alignment on ManaPlayer_DisableTrack");
-static_assert(sizeof(ManaPlayer_DisableTrack) == 0x000002, "Wrong size on ManaPlayer_DisableTrack");
-static_assert(offsetof(ManaPlayer_DisableTrack, TrackType) == 0x000000, "Member 'ManaPlayer_DisableTrack::TrackType' has a wrong offset!");
-static_assert(offsetof(ManaPlayer_DisableTrack, ReturnValue) == 0x000001, "Member 'ManaPlayer_DisableTrack::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlayer_DisableTrack;
 
 // Function CriWareRuntime.ManaPlayer.GetSubtitleTrackEncoding
 // 0x0008 (0x0008 - 0x0000)
@@ -3141,10 +2448,7 @@ public:
 	EManaSubtitlesEncoding                        ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(ManaPlayer_GetSubtitleTrackEncoding) == 0x000004, "Wrong alignment on ManaPlayer_GetSubtitleTrackEncoding");
-static_assert(sizeof(ManaPlayer_GetSubtitleTrackEncoding) == 0x000008, "Wrong size on ManaPlayer_GetSubtitleTrackEncoding");
-static_assert(offsetof(ManaPlayer_GetSubtitleTrackEncoding, TrackIndex) == 0x000000, "Member 'ManaPlayer_GetSubtitleTrackEncoding::TrackIndex' has a wrong offset!");
-static_assert(offsetof(ManaPlayer_GetSubtitleTrackEncoding, ReturnValue) == 0x000004, "Member 'ManaPlayer_GetSubtitleTrackEncoding::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlayer_GetSubtitleTrackEncoding;
 
 // Function CriWareRuntime.ManaPlayer.GetTimeSyncedSource
 // 0x0008 (0x0008 - 0x0000)
@@ -3153,9 +2457,7 @@ struct ManaPlayer_GetTimeSyncedSource final
 public:
 	class UAtomComponent*                         ReturnValue;                                       // 0x0000(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaPlayer_GetTimeSyncedSource) == 0x000008, "Wrong alignment on ManaPlayer_GetTimeSyncedSource");
-static_assert(sizeof(ManaPlayer_GetTimeSyncedSource) == 0x000008, "Wrong size on ManaPlayer_GetTimeSyncedSource");
-static_assert(offsetof(ManaPlayer_GetTimeSyncedSource, ReturnValue) == 0x000000, "Member 'ManaPlayer_GetTimeSyncedSource::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlayer_GetTimeSyncedSource;
 
 // Function CriWareRuntime.ManaPlayer.GetVolume
 // 0x0008 (0x0008 - 0x0000)
@@ -3166,10 +2468,7 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaPlayer_GetVolume) == 0x000004, "Wrong alignment on ManaPlayer_GetVolume");
-static_assert(sizeof(ManaPlayer_GetVolume) == 0x000008, "Wrong size on ManaPlayer_GetVolume");
-static_assert(offsetof(ManaPlayer_GetVolume, TrackType) == 0x000000, "Member 'ManaPlayer_GetVolume::TrackType' has a wrong offset!");
-static_assert(offsetof(ManaPlayer_GetVolume, ReturnValue) == 0x000004, "Member 'ManaPlayer_GetVolume::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlayer_GetVolume;
 
 // Function CriWareRuntime.ManaPlayer.HandleManaComponentEventPoint
 // 0x0028 (0x0028 - 0x0000)
@@ -3178,9 +2477,7 @@ struct ManaPlayer_HandleManaComponentEventPoint final
 public:
 	struct FManaEventPointInfo                    EventPointInfo;                                    // 0x0000(0x0028)(Parm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaPlayer_HandleManaComponentEventPoint) == 0x000008, "Wrong alignment on ManaPlayer_HandleManaComponentEventPoint");
-static_assert(sizeof(ManaPlayer_HandleManaComponentEventPoint) == 0x000028, "Wrong size on ManaPlayer_HandleManaComponentEventPoint");
-static_assert(offsetof(ManaPlayer_HandleManaComponentEventPoint, EventPointInfo) == 0x000000, "Member 'ManaPlayer_HandleManaComponentEventPoint::EventPointInfo' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlayer_HandleManaComponentEventPoint;
 
 // Function CriWareRuntime.ManaPlayer.HandleManaComponentFrameOnTime
 // 0x0010 (0x0010 - 0x0000)
@@ -3191,10 +2488,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UManaComponent*                         InManaComponent;                                   // 0x0008(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaPlayer_HandleManaComponentFrameOnTime) == 0x000008, "Wrong alignment on ManaPlayer_HandleManaComponentFrameOnTime");
-static_assert(sizeof(ManaPlayer_HandleManaComponentFrameOnTime) == 0x000010, "Wrong size on ManaPlayer_HandleManaComponentFrameOnTime");
-static_assert(offsetof(ManaPlayer_HandleManaComponentFrameOnTime, InFrameNumber) == 0x000000, "Member 'ManaPlayer_HandleManaComponentFrameOnTime::InFrameNumber' has a wrong offset!");
-static_assert(offsetof(ManaPlayer_HandleManaComponentFrameOnTime, InManaComponent) == 0x000008, "Member 'ManaPlayer_HandleManaComponentFrameOnTime::InManaComponent' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlayer_HandleManaComponentFrameOnTime;
 
 // Function CriWareRuntime.ManaPlayer.HandleManaComponentMovieChanged
 // 0x0010 (0x0010 - 0x0000)
@@ -3204,10 +2498,7 @@ public:
 	class UManaMovie*                             InManaMovie;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UManaComponent*                         InManaComponent;                                   // 0x0008(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaPlayer_HandleManaComponentMovieChanged) == 0x000008, "Wrong alignment on ManaPlayer_HandleManaComponentMovieChanged");
-static_assert(sizeof(ManaPlayer_HandleManaComponentMovieChanged) == 0x000010, "Wrong size on ManaPlayer_HandleManaComponentMovieChanged");
-static_assert(offsetof(ManaPlayer_HandleManaComponentMovieChanged, InManaMovie) == 0x000000, "Member 'ManaPlayer_HandleManaComponentMovieChanged::InManaMovie' has a wrong offset!");
-static_assert(offsetof(ManaPlayer_HandleManaComponentMovieChanged, InManaComponent) == 0x000008, "Member 'ManaPlayer_HandleManaComponentMovieChanged::InManaComponent' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlayer_HandleManaComponentMovieChanged;
 
 // Function CriWareRuntime.ManaPlayer.HandleManaComponentPlayerDestroyed
 // 0x0008 (0x0008 - 0x0000)
@@ -3216,9 +2507,7 @@ struct ManaPlayer_HandleManaComponentPlayerDestroyed final
 public:
 	class UManaComponent*                         InManaComponent;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaPlayer_HandleManaComponentPlayerDestroyed) == 0x000008, "Wrong alignment on ManaPlayer_HandleManaComponentPlayerDestroyed");
-static_assert(sizeof(ManaPlayer_HandleManaComponentPlayerDestroyed) == 0x000008, "Wrong size on ManaPlayer_HandleManaComponentPlayerDestroyed");
-static_assert(offsetof(ManaPlayer_HandleManaComponentPlayerDestroyed, InManaComponent) == 0x000000, "Member 'ManaPlayer_HandleManaComponentPlayerDestroyed::InManaComponent' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlayer_HandleManaComponentPlayerDestroyed;
 
 // Function CriWareRuntime.ManaPlayer.HandleManaComponentSeekCompleted
 // 0x0010 (0x0010 - 0x0000)
@@ -3229,10 +2518,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UManaComponent*                         InManaComponent;                                   // 0x0008(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaPlayer_HandleManaComponentSeekCompleted) == 0x000008, "Wrong alignment on ManaPlayer_HandleManaComponentSeekCompleted");
-static_assert(sizeof(ManaPlayer_HandleManaComponentSeekCompleted) == 0x000010, "Wrong size on ManaPlayer_HandleManaComponentSeekCompleted");
-static_assert(offsetof(ManaPlayer_HandleManaComponentSeekCompleted, InFrameNumber) == 0x000000, "Member 'ManaPlayer_HandleManaComponentSeekCompleted::InFrameNumber' has a wrong offset!");
-static_assert(offsetof(ManaPlayer_HandleManaComponentSeekCompleted, InManaComponent) == 0x000008, "Member 'ManaPlayer_HandleManaComponentSeekCompleted::InManaComponent' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlayer_HandleManaComponentSeekCompleted;
 
 // Function CriWareRuntime.ManaPlayer.HandleManaComponentStatusChanged
 // 0x0010 (0x0010 - 0x0000)
@@ -3243,10 +2529,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UManaComponent*                         InManaComponent;                                   // 0x0008(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaPlayer_HandleManaComponentStatusChanged) == 0x000008, "Wrong alignment on ManaPlayer_HandleManaComponentStatusChanged");
-static_assert(sizeof(ManaPlayer_HandleManaComponentStatusChanged) == 0x000010, "Wrong size on ManaPlayer_HandleManaComponentStatusChanged");
-static_assert(offsetof(ManaPlayer_HandleManaComponentStatusChanged, Status) == 0x000000, "Member 'ManaPlayer_HandleManaComponentStatusChanged::Status' has a wrong offset!");
-static_assert(offsetof(ManaPlayer_HandleManaComponentStatusChanged, InManaComponent) == 0x000008, "Member 'ManaPlayer_HandleManaComponentStatusChanged::InManaComponent' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlayer_HandleManaComponentStatusChanged;
 
 // Function CriWareRuntime.ManaPlayer.HandleManaComponentSubtitleChanged
 // 0x0010 (0x0010 - 0x0000)
@@ -3255,9 +2538,7 @@ struct ManaPlayer_HandleManaComponentSubtitleChanged final
 public:
 	class FText                                   Subtitle;                                          // 0x0000(0x0010)(Parm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaPlayer_HandleManaComponentSubtitleChanged) == 0x000008, "Wrong alignment on ManaPlayer_HandleManaComponentSubtitleChanged");
-static_assert(sizeof(ManaPlayer_HandleManaComponentSubtitleChanged) == 0x000010, "Wrong size on ManaPlayer_HandleManaComponentSubtitleChanged");
-static_assert(offsetof(ManaPlayer_HandleManaComponentSubtitleChanged, Subtitle) == 0x000000, "Member 'ManaPlayer_HandleManaComponentSubtitleChanged::Subtitle' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlayer_HandleManaComponentSubtitleChanged;
 
 // Function CriWareRuntime.ManaPlayer.Next
 // 0x0001 (0x0001 - 0x0000)
@@ -3266,9 +2547,7 @@ struct ManaPlayer_Next final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaPlayer_Next) == 0x000001, "Wrong alignment on ManaPlayer_Next");
-static_assert(sizeof(ManaPlayer_Next) == 0x000001, "Wrong size on ManaPlayer_Next");
-static_assert(offsetof(ManaPlayer_Next, ReturnValue) == 0x000000, "Member 'ManaPlayer_Next::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlayer_Next;
 
 // Function CriWareRuntime.ManaPlayer.OpenMovieSource
 // 0x0008 (0x0008 - 0x0000)
@@ -3277,9 +2556,7 @@ struct ManaPlayer_OpenMovieSource final
 public:
 	class UManaMovie*                             InManaMovie;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaPlayer_OpenMovieSource) == 0x000008, "Wrong alignment on ManaPlayer_OpenMovieSource");
-static_assert(sizeof(ManaPlayer_OpenMovieSource) == 0x000008, "Wrong size on ManaPlayer_OpenMovieSource");
-static_assert(offsetof(ManaPlayer_OpenMovieSource, InManaMovie) == 0x000000, "Member 'ManaPlayer_OpenMovieSource::InManaMovie' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlayer_OpenMovieSource;
 
 // Function CriWareRuntime.ManaPlayer.OpenPlaylist
 // 0x0010 (0x0010 - 0x0000)
@@ -3290,10 +2567,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(ManaPlayer_OpenPlaylist) == 0x000008, "Wrong alignment on ManaPlayer_OpenPlaylist");
-static_assert(sizeof(ManaPlayer_OpenPlaylist) == 0x000010, "Wrong size on ManaPlayer_OpenPlaylist");
-static_assert(offsetof(ManaPlayer_OpenPlaylist, InPlaylist) == 0x000000, "Member 'ManaPlayer_OpenPlaylist::InPlaylist' has a wrong offset!");
-static_assert(offsetof(ManaPlayer_OpenPlaylist, ReturnValue) == 0x000008, "Member 'ManaPlayer_OpenPlaylist::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlayer_OpenPlaylist;
 
 // Function CriWareRuntime.ManaPlayer.OpenPlaylistIndex
 // 0x0010 (0x0010 - 0x0000)
@@ -3305,11 +2579,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(ManaPlayer_OpenPlaylistIndex) == 0x000008, "Wrong alignment on ManaPlayer_OpenPlaylistIndex");
-static_assert(sizeof(ManaPlayer_OpenPlaylistIndex) == 0x000010, "Wrong size on ManaPlayer_OpenPlaylistIndex");
-static_assert(offsetof(ManaPlayer_OpenPlaylistIndex, InPlaylist) == 0x000000, "Member 'ManaPlayer_OpenPlaylistIndex::InPlaylist' has a wrong offset!");
-static_assert(offsetof(ManaPlayer_OpenPlaylistIndex, Index_0) == 0x000008, "Member 'ManaPlayer_OpenPlaylistIndex::Index_0' has a wrong offset!");
-static_assert(offsetof(ManaPlayer_OpenPlaylistIndex, ReturnValue) == 0x00000C, "Member 'ManaPlayer_OpenPlaylistIndex::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlayer_OpenPlaylistIndex;
 
 // Function CriWareRuntime.ManaPlayer.OpenSourceWithOptions
 // 0x0040 (0x0040 - 0x0000)
@@ -3321,11 +2591,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0038(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(ManaPlayer_OpenSourceWithOptions) == 0x000008, "Wrong alignment on ManaPlayer_OpenSourceWithOptions");
-static_assert(sizeof(ManaPlayer_OpenSourceWithOptions) == 0x000040, "Wrong size on ManaPlayer_OpenSourceWithOptions");
-static_assert(offsetof(ManaPlayer_OpenSourceWithOptions, ManaSource) == 0x000000, "Member 'ManaPlayer_OpenSourceWithOptions::ManaSource' has a wrong offset!");
-static_assert(offsetof(ManaPlayer_OpenSourceWithOptions, PlayerOptions) == 0x000008, "Member 'ManaPlayer_OpenSourceWithOptions::PlayerOptions' has a wrong offset!");
-static_assert(offsetof(ManaPlayer_OpenSourceWithOptions, ReturnValue) == 0x000038, "Member 'ManaPlayer_OpenSourceWithOptions::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlayer_OpenSourceWithOptions;
 
 // Function CriWareRuntime.ManaPlayer.Pause
 // 0x0001 (0x0001 - 0x0000)
@@ -3334,9 +2600,7 @@ struct ManaPlayer_Pause final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaPlayer_Pause) == 0x000001, "Wrong alignment on ManaPlayer_Pause");
-static_assert(sizeof(ManaPlayer_Pause) == 0x000001, "Wrong size on ManaPlayer_Pause");
-static_assert(offsetof(ManaPlayer_Pause, ReturnValue) == 0x000000, "Member 'ManaPlayer_Pause::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlayer_Pause;
 
 // Function CriWareRuntime.ManaPlayer.Play
 // 0x0001 (0x0001 - 0x0000)
@@ -3345,9 +2609,7 @@ struct ManaPlayer_Play final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaPlayer_Play) == 0x000001, "Wrong alignment on ManaPlayer_Play");
-static_assert(sizeof(ManaPlayer_Play) == 0x000001, "Wrong size on ManaPlayer_Play");
-static_assert(offsetof(ManaPlayer_Play, ReturnValue) == 0x000000, "Member 'ManaPlayer_Play::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlayer_Play;
 
 // Function CriWareRuntime.ManaPlayer.Previous
 // 0x0001 (0x0001 - 0x0000)
@@ -3356,9 +2618,7 @@ struct ManaPlayer_Previous final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaPlayer_Previous) == 0x000001, "Wrong alignment on ManaPlayer_Previous");
-static_assert(sizeof(ManaPlayer_Previous) == 0x000001, "Wrong size on ManaPlayer_Previous");
-static_assert(offsetof(ManaPlayer_Previous, ReturnValue) == 0x000000, "Member 'ManaPlayer_Previous::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlayer_Previous;
 
 // Function CriWareRuntime.ManaPlayer.Reopen
 // 0x0001 (0x0001 - 0x0000)
@@ -3367,9 +2627,7 @@ struct ManaPlayer_Reopen final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaPlayer_Reopen) == 0x000001, "Wrong alignment on ManaPlayer_Reopen");
-static_assert(sizeof(ManaPlayer_Reopen) == 0x000001, "Wrong size on ManaPlayer_Reopen");
-static_assert(offsetof(ManaPlayer_Reopen, ReturnValue) == 0x000000, "Member 'ManaPlayer_Reopen::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlayer_Reopen;
 
 // Function CriWareRuntime.ManaPlayer.Rewind
 // 0x0001 (0x0001 - 0x0000)
@@ -3378,9 +2636,7 @@ struct ManaPlayer_Rewind final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaPlayer_Rewind) == 0x000001, "Wrong alignment on ManaPlayer_Rewind");
-static_assert(sizeof(ManaPlayer_Rewind) == 0x000001, "Wrong size on ManaPlayer_Rewind");
-static_assert(offsetof(ManaPlayer_Rewind, ReturnValue) == 0x000000, "Member 'ManaPlayer_Rewind::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlayer_Rewind;
 
 // Function CriWareRuntime.ManaPlayer.Seek
 // 0x0010 (0x0010 - 0x0000)
@@ -3391,10 +2647,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(ManaPlayer_Seek) == 0x000008, "Wrong alignment on ManaPlayer_Seek");
-static_assert(sizeof(ManaPlayer_Seek) == 0x000010, "Wrong size on ManaPlayer_Seek");
-static_assert(offsetof(ManaPlayer_Seek, Time) == 0x000000, "Member 'ManaPlayer_Seek::Time' has a wrong offset!");
-static_assert(offsetof(ManaPlayer_Seek, ReturnValue) == 0x000008, "Member 'ManaPlayer_Seek::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlayer_Seek;
 
 // Function CriWareRuntime.ManaPlayer.SelectTrack
 // 0x000C (0x000C - 0x0000)
@@ -3407,11 +2660,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(ManaPlayer_SelectTrack) == 0x000004, "Wrong alignment on ManaPlayer_SelectTrack");
-static_assert(sizeof(ManaPlayer_SelectTrack) == 0x00000C, "Wrong size on ManaPlayer_SelectTrack");
-static_assert(offsetof(ManaPlayer_SelectTrack, TrackType) == 0x000000, "Member 'ManaPlayer_SelectTrack::TrackType' has a wrong offset!");
-static_assert(offsetof(ManaPlayer_SelectTrack, TrackIndex) == 0x000004, "Member 'ManaPlayer_SelectTrack::TrackIndex' has a wrong offset!");
-static_assert(offsetof(ManaPlayer_SelectTrack, ReturnValue) == 0x000008, "Member 'ManaPlayer_SelectTrack::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlayer_SelectTrack;
 
 // Function CriWareRuntime.ManaPlayer.SetLooping
 // 0x0002 (0x0002 - 0x0000)
@@ -3421,10 +2670,7 @@ public:
 	bool                                          Looping;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaPlayer_SetLooping) == 0x000001, "Wrong alignment on ManaPlayer_SetLooping");
-static_assert(sizeof(ManaPlayer_SetLooping) == 0x000002, "Wrong size on ManaPlayer_SetLooping");
-static_assert(offsetof(ManaPlayer_SetLooping, Looping) == 0x000000, "Member 'ManaPlayer_SetLooping::Looping' has a wrong offset!");
-static_assert(offsetof(ManaPlayer_SetLooping, ReturnValue) == 0x000001, "Member 'ManaPlayer_SetLooping::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlayer_SetLooping;
 
 // Function CriWareRuntime.ManaPlayer.SetRate
 // 0x0008 (0x0008 - 0x0000)
@@ -3435,10 +2681,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(ManaPlayer_SetRate) == 0x000004, "Wrong alignment on ManaPlayer_SetRate");
-static_assert(sizeof(ManaPlayer_SetRate) == 0x000008, "Wrong size on ManaPlayer_SetRate");
-static_assert(offsetof(ManaPlayer_SetRate, Rate) == 0x000000, "Member 'ManaPlayer_SetRate::Rate' has a wrong offset!");
-static_assert(offsetof(ManaPlayer_SetRate, ReturnValue) == 0x000004, "Member 'ManaPlayer_SetRate::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlayer_SetRate;
 
 // Function CriWareRuntime.ManaPlayer.SetTexture
 // 0x0008 (0x0008 - 0x0000)
@@ -3447,9 +2690,7 @@ struct ManaPlayer_SetTexture final
 public:
 	class UManaTexture*                           InManaTexture;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaPlayer_SetTexture) == 0x000008, "Wrong alignment on ManaPlayer_SetTexture");
-static_assert(sizeof(ManaPlayer_SetTexture) == 0x000008, "Wrong size on ManaPlayer_SetTexture");
-static_assert(offsetof(ManaPlayer_SetTexture, InManaTexture) == 0x000000, "Member 'ManaPlayer_SetTexture::InManaTexture' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlayer_SetTexture;
 
 // Function CriWareRuntime.ManaPlayer.SetTimeSyncedSource
 // 0x0008 (0x0008 - 0x0000)
@@ -3458,9 +2699,7 @@ struct ManaPlayer_SetTimeSyncedSource final
 public:
 	class UAtomComponent*                         SyncedSource;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaPlayer_SetTimeSyncedSource) == 0x000008, "Wrong alignment on ManaPlayer_SetTimeSyncedSource");
-static_assert(sizeof(ManaPlayer_SetTimeSyncedSource) == 0x000008, "Wrong size on ManaPlayer_SetTimeSyncedSource");
-static_assert(offsetof(ManaPlayer_SetTimeSyncedSource, SyncedSource) == 0x000000, "Member 'ManaPlayer_SetTimeSyncedSource::SyncedSource' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlayer_SetTimeSyncedSource;
 
 // Function CriWareRuntime.ManaPlayer.SetTrackFormat
 // 0x0010 (0x0010 - 0x0000)
@@ -3474,12 +2713,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(ManaPlayer_SetTrackFormat) == 0x000004, "Wrong alignment on ManaPlayer_SetTrackFormat");
-static_assert(sizeof(ManaPlayer_SetTrackFormat) == 0x000010, "Wrong size on ManaPlayer_SetTrackFormat");
-static_assert(offsetof(ManaPlayer_SetTrackFormat, TrackType) == 0x000000, "Member 'ManaPlayer_SetTrackFormat::TrackType' has a wrong offset!");
-static_assert(offsetof(ManaPlayer_SetTrackFormat, TrackIndex) == 0x000004, "Member 'ManaPlayer_SetTrackFormat::TrackIndex' has a wrong offset!");
-static_assert(offsetof(ManaPlayer_SetTrackFormat, FormatIndex) == 0x000008, "Member 'ManaPlayer_SetTrackFormat::FormatIndex' has a wrong offset!");
-static_assert(offsetof(ManaPlayer_SetTrackFormat, ReturnValue) == 0x00000C, "Member 'ManaPlayer_SetTrackFormat::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlayer_SetTrackFormat;
 
 // Function CriWareRuntime.ManaPlayer.SetVolume
 // 0x0008 (0x0008 - 0x0000)
@@ -3491,11 +2725,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0005(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(ManaPlayer_SetVolume) == 0x000004, "Wrong alignment on ManaPlayer_SetVolume");
-static_assert(sizeof(ManaPlayer_SetVolume) == 0x000008, "Wrong size on ManaPlayer_SetVolume");
-static_assert(offsetof(ManaPlayer_SetVolume, Volume) == 0x000000, "Member 'ManaPlayer_SetVolume::Volume' has a wrong offset!");
-static_assert(offsetof(ManaPlayer_SetVolume, TrackType) == 0x000004, "Member 'ManaPlayer_SetVolume::TrackType' has a wrong offset!");
-static_assert(offsetof(ManaPlayer_SetVolume, ReturnValue) == 0x000005, "Member 'ManaPlayer_SetVolume::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlayer_SetVolume;
 
 // Function CriWareRuntime.ManaPlayer.GetDuration
 // 0x0008 (0x0008 - 0x0000)
@@ -3504,9 +2734,7 @@ struct ManaPlayer_GetDuration final
 public:
 	struct FTimespan                              ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaPlayer_GetDuration) == 0x000008, "Wrong alignment on ManaPlayer_GetDuration");
-static_assert(sizeof(ManaPlayer_GetDuration) == 0x000008, "Wrong size on ManaPlayer_GetDuration");
-static_assert(offsetof(ManaPlayer_GetDuration, ReturnValue) == 0x000000, "Member 'ManaPlayer_GetDuration::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlayer_GetDuration;
 
 // Function CriWareRuntime.ManaPlayer.GetFrames
 // 0x0004 (0x0004 - 0x0000)
@@ -3515,9 +2743,7 @@ struct ManaPlayer_GetFrames final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaPlayer_GetFrames) == 0x000004, "Wrong alignment on ManaPlayer_GetFrames");
-static_assert(sizeof(ManaPlayer_GetFrames) == 0x000004, "Wrong size on ManaPlayer_GetFrames");
-static_assert(offsetof(ManaPlayer_GetFrames, ReturnValue) == 0x000000, "Member 'ManaPlayer_GetFrames::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlayer_GetFrames;
 
 // Function CriWareRuntime.ManaPlayer.GetMovieFrames
 // 0x0004 (0x0004 - 0x0000)
@@ -3526,9 +2752,7 @@ struct ManaPlayer_GetMovieFrames final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaPlayer_GetMovieFrames) == 0x000004, "Wrong alignment on ManaPlayer_GetMovieFrames");
-static_assert(sizeof(ManaPlayer_GetMovieFrames) == 0x000004, "Wrong size on ManaPlayer_GetMovieFrames");
-static_assert(offsetof(ManaPlayer_GetMovieFrames, ReturnValue) == 0x000000, "Member 'ManaPlayer_GetMovieFrames::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlayer_GetMovieFrames;
 
 // Function CriWareRuntime.ManaPlayer.GetMovieSource
 // 0x0008 (0x0008 - 0x0000)
@@ -3537,9 +2761,7 @@ struct ManaPlayer_GetMovieSource final
 public:
 	class UManaMovie*                             ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaPlayer_GetMovieSource) == 0x000008, "Wrong alignment on ManaPlayer_GetMovieSource");
-static_assert(sizeof(ManaPlayer_GetMovieSource) == 0x000008, "Wrong size on ManaPlayer_GetMovieSource");
-static_assert(offsetof(ManaPlayer_GetMovieSource, ReturnValue) == 0x000000, "Member 'ManaPlayer_GetMovieSource::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlayer_GetMovieSource;
 
 // Function CriWareRuntime.ManaPlayer.GetMovieTime
 // 0x0008 (0x0008 - 0x0000)
@@ -3548,9 +2770,7 @@ struct ManaPlayer_GetMovieTime final
 public:
 	struct FTimespan                              ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaPlayer_GetMovieTime) == 0x000008, "Wrong alignment on ManaPlayer_GetMovieTime");
-static_assert(sizeof(ManaPlayer_GetMovieTime) == 0x000008, "Wrong size on ManaPlayer_GetMovieTime");
-static_assert(offsetof(ManaPlayer_GetMovieTime, ReturnValue) == 0x000000, "Member 'ManaPlayer_GetMovieTime::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlayer_GetMovieTime;
 
 // Function CriWareRuntime.ManaPlayer.GetNumTrackFormats
 // 0x000C (0x000C - 0x0000)
@@ -3562,11 +2782,7 @@ public:
 	int32                                         TrackIndex;                                        // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaPlayer_GetNumTrackFormats) == 0x000004, "Wrong alignment on ManaPlayer_GetNumTrackFormats");
-static_assert(sizeof(ManaPlayer_GetNumTrackFormats) == 0x00000C, "Wrong size on ManaPlayer_GetNumTrackFormats");
-static_assert(offsetof(ManaPlayer_GetNumTrackFormats, TrackType) == 0x000000, "Member 'ManaPlayer_GetNumTrackFormats::TrackType' has a wrong offset!");
-static_assert(offsetof(ManaPlayer_GetNumTrackFormats, TrackIndex) == 0x000004, "Member 'ManaPlayer_GetNumTrackFormats::TrackIndex' has a wrong offset!");
-static_assert(offsetof(ManaPlayer_GetNumTrackFormats, ReturnValue) == 0x000008, "Member 'ManaPlayer_GetNumTrackFormats::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlayer_GetNumTrackFormats;
 
 // Function CriWareRuntime.ManaPlayer.GetNumTracks
 // 0x0008 (0x0008 - 0x0000)
@@ -3577,10 +2793,7 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaPlayer_GetNumTracks) == 0x000004, "Wrong alignment on ManaPlayer_GetNumTracks");
-static_assert(sizeof(ManaPlayer_GetNumTracks) == 0x000008, "Wrong size on ManaPlayer_GetNumTracks");
-static_assert(offsetof(ManaPlayer_GetNumTracks, TrackType) == 0x000000, "Member 'ManaPlayer_GetNumTracks::TrackType' has a wrong offset!");
-static_assert(offsetof(ManaPlayer_GetNumTracks, ReturnValue) == 0x000004, "Member 'ManaPlayer_GetNumTracks::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlayer_GetNumTracks;
 
 // Function CriWareRuntime.ManaPlayer.GetPlaylistIndex
 // 0x0004 (0x0004 - 0x0000)
@@ -3589,9 +2802,7 @@ struct ManaPlayer_GetPlaylistIndex final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaPlayer_GetPlaylistIndex) == 0x000004, "Wrong alignment on ManaPlayer_GetPlaylistIndex");
-static_assert(sizeof(ManaPlayer_GetPlaylistIndex) == 0x000004, "Wrong size on ManaPlayer_GetPlaylistIndex");
-static_assert(offsetof(ManaPlayer_GetPlaylistIndex, ReturnValue) == 0x000000, "Member 'ManaPlayer_GetPlaylistIndex::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlayer_GetPlaylistIndex;
 
 // Function CriWareRuntime.ManaPlayer.GetRate
 // 0x0004 (0x0004 - 0x0000)
@@ -3600,9 +2811,7 @@ struct ManaPlayer_GetRate final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaPlayer_GetRate) == 0x000004, "Wrong alignment on ManaPlayer_GetRate");
-static_assert(sizeof(ManaPlayer_GetRate) == 0x000004, "Wrong size on ManaPlayer_GetRate");
-static_assert(offsetof(ManaPlayer_GetRate, ReturnValue) == 0x000000, "Member 'ManaPlayer_GetRate::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlayer_GetRate;
 
 // Function CriWareRuntime.ManaPlayer.GetSelectedTrack
 // 0x0008 (0x0008 - 0x0000)
@@ -3613,10 +2822,7 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaPlayer_GetSelectedTrack) == 0x000004, "Wrong alignment on ManaPlayer_GetSelectedTrack");
-static_assert(sizeof(ManaPlayer_GetSelectedTrack) == 0x000008, "Wrong size on ManaPlayer_GetSelectedTrack");
-static_assert(offsetof(ManaPlayer_GetSelectedTrack, TrackType) == 0x000000, "Member 'ManaPlayer_GetSelectedTrack::TrackType' has a wrong offset!");
-static_assert(offsetof(ManaPlayer_GetSelectedTrack, ReturnValue) == 0x000004, "Member 'ManaPlayer_GetSelectedTrack::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlayer_GetSelectedTrack;
 
 // Function CriWareRuntime.ManaPlayer.GetStatus
 // 0x0001 (0x0001 - 0x0000)
@@ -3625,9 +2831,7 @@ struct ManaPlayer_GetStatus final
 public:
 	EManaComponentStatus                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaPlayer_GetStatus) == 0x000001, "Wrong alignment on ManaPlayer_GetStatus");
-static_assert(sizeof(ManaPlayer_GetStatus) == 0x000001, "Wrong size on ManaPlayer_GetStatus");
-static_assert(offsetof(ManaPlayer_GetStatus, ReturnValue) == 0x000000, "Member 'ManaPlayer_GetStatus::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlayer_GetStatus;
 
 // Function CriWareRuntime.ManaPlayer.GetTexture
 // 0x0008 (0x0008 - 0x0000)
@@ -3636,9 +2840,7 @@ struct ManaPlayer_GetTexture final
 public:
 	class UManaTexture*                           ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaPlayer_GetTexture) == 0x000008, "Wrong alignment on ManaPlayer_GetTexture");
-static_assert(sizeof(ManaPlayer_GetTexture) == 0x000008, "Wrong size on ManaPlayer_GetTexture");
-static_assert(offsetof(ManaPlayer_GetTexture, ReturnValue) == 0x000000, "Member 'ManaPlayer_GetTexture::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlayer_GetTexture;
 
 // Function CriWareRuntime.ManaPlayer.GetTime
 // 0x0008 (0x0008 - 0x0000)
@@ -3647,9 +2849,7 @@ struct ManaPlayer_GetTime final
 public:
 	struct FTimespan                              ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaPlayer_GetTime) == 0x000008, "Wrong alignment on ManaPlayer_GetTime");
-static_assert(sizeof(ManaPlayer_GetTime) == 0x000008, "Wrong size on ManaPlayer_GetTime");
-static_assert(offsetof(ManaPlayer_GetTime, ReturnValue) == 0x000000, "Member 'ManaPlayer_GetTime::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlayer_GetTime;
 
 // Function CriWareRuntime.ManaPlayer.GetTrackDisplayName
 // 0x0018 (0x0018 - 0x0000)
@@ -3661,11 +2861,7 @@ public:
 	int32                                         TrackIndex;                                        // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FText                                   ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaPlayer_GetTrackDisplayName) == 0x000008, "Wrong alignment on ManaPlayer_GetTrackDisplayName");
-static_assert(sizeof(ManaPlayer_GetTrackDisplayName) == 0x000018, "Wrong size on ManaPlayer_GetTrackDisplayName");
-static_assert(offsetof(ManaPlayer_GetTrackDisplayName, TrackType) == 0x000000, "Member 'ManaPlayer_GetTrackDisplayName::TrackType' has a wrong offset!");
-static_assert(offsetof(ManaPlayer_GetTrackDisplayName, TrackIndex) == 0x000004, "Member 'ManaPlayer_GetTrackDisplayName::TrackIndex' has a wrong offset!");
-static_assert(offsetof(ManaPlayer_GetTrackDisplayName, ReturnValue) == 0x000008, "Member 'ManaPlayer_GetTrackDisplayName::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlayer_GetTrackDisplayName;
 
 // Function CriWareRuntime.ManaPlayer.GetTrackFormat
 // 0x000C (0x000C - 0x0000)
@@ -3677,11 +2873,7 @@ public:
 	int32                                         TrackIndex;                                        // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaPlayer_GetTrackFormat) == 0x000004, "Wrong alignment on ManaPlayer_GetTrackFormat");
-static_assert(sizeof(ManaPlayer_GetTrackFormat) == 0x00000C, "Wrong size on ManaPlayer_GetTrackFormat");
-static_assert(offsetof(ManaPlayer_GetTrackFormat, TrackType) == 0x000000, "Member 'ManaPlayer_GetTrackFormat::TrackType' has a wrong offset!");
-static_assert(offsetof(ManaPlayer_GetTrackFormat, TrackIndex) == 0x000004, "Member 'ManaPlayer_GetTrackFormat::TrackIndex' has a wrong offset!");
-static_assert(offsetof(ManaPlayer_GetTrackFormat, ReturnValue) == 0x000008, "Member 'ManaPlayer_GetTrackFormat::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlayer_GetTrackFormat;
 
 // Function CriWareRuntime.ManaPlayer.GetTrackLanguage
 // 0x0018 (0x0018 - 0x0000)
@@ -3693,11 +2885,7 @@ public:
 	int32                                         TrackIndex;                                        // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaPlayer_GetTrackLanguage) == 0x000008, "Wrong alignment on ManaPlayer_GetTrackLanguage");
-static_assert(sizeof(ManaPlayer_GetTrackLanguage) == 0x000018, "Wrong size on ManaPlayer_GetTrackLanguage");
-static_assert(offsetof(ManaPlayer_GetTrackLanguage, TrackType) == 0x000000, "Member 'ManaPlayer_GetTrackLanguage::TrackType' has a wrong offset!");
-static_assert(offsetof(ManaPlayer_GetTrackLanguage, TrackIndex) == 0x000004, "Member 'ManaPlayer_GetTrackLanguage::TrackIndex' has a wrong offset!");
-static_assert(offsetof(ManaPlayer_GetTrackLanguage, ReturnValue) == 0x000008, "Member 'ManaPlayer_GetTrackLanguage::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlayer_GetTrackLanguage;
 
 // Function CriWareRuntime.ManaPlayer.HasError
 // 0x0001 (0x0001 - 0x0000)
@@ -3706,9 +2894,7 @@ struct ManaPlayer_HasError final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaPlayer_HasError) == 0x000001, "Wrong alignment on ManaPlayer_HasError");
-static_assert(sizeof(ManaPlayer_HasError) == 0x000001, "Wrong size on ManaPlayer_HasError");
-static_assert(offsetof(ManaPlayer_HasError, ReturnValue) == 0x000000, "Member 'ManaPlayer_HasError::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlayer_HasError;
 
 // Function CriWareRuntime.ManaPlayer.IsClosed
 // 0x0001 (0x0001 - 0x0000)
@@ -3717,9 +2903,7 @@ struct ManaPlayer_IsClosed final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaPlayer_IsClosed) == 0x000001, "Wrong alignment on ManaPlayer_IsClosed");
-static_assert(sizeof(ManaPlayer_IsClosed) == 0x000001, "Wrong size on ManaPlayer_IsClosed");
-static_assert(offsetof(ManaPlayer_IsClosed, ReturnValue) == 0x000000, "Member 'ManaPlayer_IsClosed::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlayer_IsClosed;
 
 // Function CriWareRuntime.ManaPlayer.IsLooping
 // 0x0001 (0x0001 - 0x0000)
@@ -3728,9 +2912,7 @@ struct ManaPlayer_IsLooping final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaPlayer_IsLooping) == 0x000001, "Wrong alignment on ManaPlayer_IsLooping");
-static_assert(sizeof(ManaPlayer_IsLooping) == 0x000001, "Wrong size on ManaPlayer_IsLooping");
-static_assert(offsetof(ManaPlayer_IsLooping, ReturnValue) == 0x000000, "Member 'ManaPlayer_IsLooping::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlayer_IsLooping;
 
 // Function CriWareRuntime.ManaPlayer.IsPaused
 // 0x0001 (0x0001 - 0x0000)
@@ -3739,9 +2921,7 @@ struct ManaPlayer_IsPaused final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaPlayer_IsPaused) == 0x000001, "Wrong alignment on ManaPlayer_IsPaused");
-static_assert(sizeof(ManaPlayer_IsPaused) == 0x000001, "Wrong size on ManaPlayer_IsPaused");
-static_assert(offsetof(ManaPlayer_IsPaused, ReturnValue) == 0x000000, "Member 'ManaPlayer_IsPaused::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlayer_IsPaused;
 
 // Function CriWareRuntime.ManaPlayer.IsPlaying
 // 0x0001 (0x0001 - 0x0000)
@@ -3750,9 +2930,7 @@ struct ManaPlayer_IsPlaying final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaPlayer_IsPlaying) == 0x000001, "Wrong alignment on ManaPlayer_IsPlaying");
-static_assert(sizeof(ManaPlayer_IsPlaying) == 0x000001, "Wrong size on ManaPlayer_IsPlaying");
-static_assert(offsetof(ManaPlayer_IsPlaying, ReturnValue) == 0x000000, "Member 'ManaPlayer_IsPlaying::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlayer_IsPlaying;
 
 // Function CriWareRuntime.ManaPlayer.IsPreparing
 // 0x0001 (0x0001 - 0x0000)
@@ -3761,9 +2939,7 @@ struct ManaPlayer_IsPreparing final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaPlayer_IsPreparing) == 0x000001, "Wrong alignment on ManaPlayer_IsPreparing");
-static_assert(sizeof(ManaPlayer_IsPreparing) == 0x000001, "Wrong size on ManaPlayer_IsPreparing");
-static_assert(offsetof(ManaPlayer_IsPreparing, ReturnValue) == 0x000000, "Member 'ManaPlayer_IsPreparing::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlayer_IsPreparing;
 
 // Function CriWareRuntime.ManaPlayer.IsReady
 // 0x0001 (0x0001 - 0x0000)
@@ -3772,9 +2948,7 @@ struct ManaPlayer_IsReady final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaPlayer_IsReady) == 0x000001, "Wrong alignment on ManaPlayer_IsReady");
-static_assert(sizeof(ManaPlayer_IsReady) == 0x000001, "Wrong size on ManaPlayer_IsReady");
-static_assert(offsetof(ManaPlayer_IsReady, ReturnValue) == 0x000000, "Member 'ManaPlayer_IsReady::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlayer_IsReady;
 
 // Function CriWareRuntime.ManaPlayer.IsSeeking
 // 0x0001 (0x0001 - 0x0000)
@@ -3783,9 +2957,7 @@ struct ManaPlayer_IsSeeking final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaPlayer_IsSeeking) == 0x000001, "Wrong alignment on ManaPlayer_IsSeeking");
-static_assert(sizeof(ManaPlayer_IsSeeking) == 0x000001, "Wrong size on ManaPlayer_IsSeeking");
-static_assert(offsetof(ManaPlayer_IsSeeking, ReturnValue) == 0x000000, "Member 'ManaPlayer_IsSeeking::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlayer_IsSeeking;
 
 // Function CriWareRuntime.ManaPlaylist.Add
 // 0x0008 (0x0008 - 0x0000)
@@ -3794,9 +2966,7 @@ struct ManaPlaylist_Add final
 public:
 	class UManaMovie*                             ManaMovie;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaPlaylist_Add) == 0x000008, "Wrong alignment on ManaPlaylist_Add");
-static_assert(sizeof(ManaPlaylist_Add) == 0x000008, "Wrong size on ManaPlaylist_Add");
-static_assert(offsetof(ManaPlaylist_Add, ManaMovie) == 0x000000, "Member 'ManaPlaylist_Add::ManaMovie' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlaylist_Add;
 
 // Function CriWareRuntime.ManaPlaylist.Get
 // 0x0010 (0x0010 - 0x0000)
@@ -3807,10 +2977,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UManaMovie*                             ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaPlaylist_Get) == 0x000008, "Wrong alignment on ManaPlaylist_Get");
-static_assert(sizeof(ManaPlaylist_Get) == 0x000010, "Wrong size on ManaPlaylist_Get");
-static_assert(offsetof(ManaPlaylist_Get, Index_0) == 0x000000, "Member 'ManaPlaylist_Get::Index_0' has a wrong offset!");
-static_assert(offsetof(ManaPlaylist_Get, ReturnValue) == 0x000008, "Member 'ManaPlaylist_Get::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlaylist_Get;
 
 // Function CriWareRuntime.ManaPlaylist.GetNext
 // 0x0010 (0x0010 - 0x0000)
@@ -3821,10 +2988,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UManaMovie*                             ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaPlaylist_GetNext) == 0x000008, "Wrong alignment on ManaPlaylist_GetNext");
-static_assert(sizeof(ManaPlaylist_GetNext) == 0x000010, "Wrong size on ManaPlaylist_GetNext");
-static_assert(offsetof(ManaPlaylist_GetNext, InOutIndex) == 0x000000, "Member 'ManaPlaylist_GetNext::InOutIndex' has a wrong offset!");
-static_assert(offsetof(ManaPlaylist_GetNext, ReturnValue) == 0x000008, "Member 'ManaPlaylist_GetNext::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlaylist_GetNext;
 
 // Function CriWareRuntime.ManaPlaylist.GetPrevious
 // 0x0010 (0x0010 - 0x0000)
@@ -3835,10 +2999,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UManaMovie*                             ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaPlaylist_GetPrevious) == 0x000008, "Wrong alignment on ManaPlaylist_GetPrevious");
-static_assert(sizeof(ManaPlaylist_GetPrevious) == 0x000010, "Wrong size on ManaPlaylist_GetPrevious");
-static_assert(offsetof(ManaPlaylist_GetPrevious, InOutIndex) == 0x000000, "Member 'ManaPlaylist_GetPrevious::InOutIndex' has a wrong offset!");
-static_assert(offsetof(ManaPlaylist_GetPrevious, ReturnValue) == 0x000008, "Member 'ManaPlaylist_GetPrevious::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlaylist_GetPrevious;
 
 // Function CriWareRuntime.ManaPlaylist.GetRandom
 // 0x0010 (0x0010 - 0x0000)
@@ -3849,10 +3010,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UManaMovie*                             ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaPlaylist_GetRandom) == 0x000008, "Wrong alignment on ManaPlaylist_GetRandom");
-static_assert(sizeof(ManaPlaylist_GetRandom) == 0x000010, "Wrong size on ManaPlaylist_GetRandom");
-static_assert(offsetof(ManaPlaylist_GetRandom, InOutIndex) == 0x000000, "Member 'ManaPlaylist_GetRandom::InOutIndex' has a wrong offset!");
-static_assert(offsetof(ManaPlaylist_GetRandom, ReturnValue) == 0x000008, "Member 'ManaPlaylist_GetRandom::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlaylist_GetRandom;
 
 // Function CriWareRuntime.ManaPlaylist.Insert
 // 0x0010 (0x0010 - 0x0000)
@@ -3863,10 +3021,7 @@ public:
 	int32                                         Index_0;                                           // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(ManaPlaylist_Insert) == 0x000008, "Wrong alignment on ManaPlaylist_Insert");
-static_assert(sizeof(ManaPlaylist_Insert) == 0x000010, "Wrong size on ManaPlaylist_Insert");
-static_assert(offsetof(ManaPlaylist_Insert, ManaMovie) == 0x000000, "Member 'ManaPlaylist_Insert::ManaMovie' has a wrong offset!");
-static_assert(offsetof(ManaPlaylist_Insert, Index_0) == 0x000008, "Member 'ManaPlaylist_Insert::Index_0' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlaylist_Insert;
 
 // Function CriWareRuntime.ManaPlaylist.IsAlpha
 // 0x0001 (0x0001 - 0x0000)
@@ -3875,9 +3030,7 @@ struct ManaPlaylist_IsAlpha final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaPlaylist_IsAlpha) == 0x000001, "Wrong alignment on ManaPlaylist_IsAlpha");
-static_assert(sizeof(ManaPlaylist_IsAlpha) == 0x000001, "Wrong size on ManaPlaylist_IsAlpha");
-static_assert(offsetof(ManaPlaylist_IsAlpha, ReturnValue) == 0x000000, "Member 'ManaPlaylist_IsAlpha::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlaylist_IsAlpha;
 
 // Function CriWareRuntime.ManaPlaylist.IsMixedTypes
 // 0x0001 (0x0001 - 0x0000)
@@ -3886,9 +3039,7 @@ struct ManaPlaylist_IsMixedTypes final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaPlaylist_IsMixedTypes) == 0x000001, "Wrong alignment on ManaPlaylist_IsMixedTypes");
-static_assert(sizeof(ManaPlaylist_IsMixedTypes) == 0x000001, "Wrong size on ManaPlaylist_IsMixedTypes");
-static_assert(offsetof(ManaPlaylist_IsMixedTypes, ReturnValue) == 0x000000, "Member 'ManaPlaylist_IsMixedTypes::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlaylist_IsMixedTypes;
 
 // Function CriWareRuntime.ManaPlaylist.IsSeamless
 // 0x0001 (0x0001 - 0x0000)
@@ -3897,9 +3048,7 @@ struct ManaPlaylist_IsSeamless final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaPlaylist_IsSeamless) == 0x000001, "Wrong alignment on ManaPlaylist_IsSeamless");
-static_assert(sizeof(ManaPlaylist_IsSeamless) == 0x000001, "Wrong size on ManaPlaylist_IsSeamless");
-static_assert(offsetof(ManaPlaylist_IsSeamless, ReturnValue) == 0x000000, "Member 'ManaPlaylist_IsSeamless::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlaylist_IsSeamless;
 
 // Function CriWareRuntime.ManaPlaylist.Num
 // 0x0004 (0x0004 - 0x0000)
@@ -3908,9 +3057,7 @@ struct ManaPlaylist_Num final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaPlaylist_Num) == 0x000004, "Wrong alignment on ManaPlaylist_Num");
-static_assert(sizeof(ManaPlaylist_Num) == 0x000004, "Wrong size on ManaPlaylist_Num");
-static_assert(offsetof(ManaPlaylist_Num, ReturnValue) == 0x000000, "Member 'ManaPlaylist_Num::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlaylist_Num;
 
 // Function CriWareRuntime.ManaPlaylist.Remove
 // 0x0008 (0x0008 - 0x0000)
@@ -3919,9 +3066,7 @@ struct ManaPlaylist_Remove final
 public:
 	class UManaMovie*                             ManaMovie;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaPlaylist_Remove) == 0x000008, "Wrong alignment on ManaPlaylist_Remove");
-static_assert(sizeof(ManaPlaylist_Remove) == 0x000008, "Wrong size on ManaPlaylist_Remove");
-static_assert(offsetof(ManaPlaylist_Remove, ManaMovie) == 0x000000, "Member 'ManaPlaylist_Remove::ManaMovie' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlaylist_Remove;
 
 // Function CriWareRuntime.ManaPlaylist.RemoveAt
 // 0x0004 (0x0004 - 0x0000)
@@ -3930,9 +3075,7 @@ struct ManaPlaylist_RemoveAt final
 public:
 	int32                                         Index_0;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaPlaylist_RemoveAt) == 0x000004, "Wrong alignment on ManaPlaylist_RemoveAt");
-static_assert(sizeof(ManaPlaylist_RemoveAt) == 0x000004, "Wrong size on ManaPlaylist_RemoveAt");
-static_assert(offsetof(ManaPlaylist_RemoveAt, Index_0) == 0x000000, "Member 'ManaPlaylist_RemoveAt::Index_0' has a wrong offset!");
+DUMPER7_ASSERTS_ManaPlaylist_RemoveAt;
 
 // Function CriWareRuntime.ManaSoundComponent.RemoveAudioTrackCategory
 // 0x0001 (0x0001 - 0x0000)
@@ -3941,9 +3084,7 @@ struct ManaSoundComponent_RemoveAudioTrackCategory final
 public:
 	EManaPlayerTrack                              Track;                                             // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaSoundComponent_RemoveAudioTrackCategory) == 0x000001, "Wrong alignment on ManaSoundComponent_RemoveAudioTrackCategory");
-static_assert(sizeof(ManaSoundComponent_RemoveAudioTrackCategory) == 0x000001, "Wrong size on ManaSoundComponent_RemoveAudioTrackCategory");
-static_assert(offsetof(ManaSoundComponent_RemoveAudioTrackCategory, Track) == 0x000000, "Member 'ManaSoundComponent_RemoveAudioTrackCategory::Track' has a wrong offset!");
+DUMPER7_ASSERTS_ManaSoundComponent_RemoveAudioTrackCategory;
 
 // Function CriWareRuntime.ManaSoundComponent.SetAudioTrackCategory
 // 0x0018 (0x0018 - 0x0000)
@@ -3954,10 +3095,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CategoryName;                                      // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaSoundComponent_SetAudioTrackCategory) == 0x000008, "Wrong alignment on ManaSoundComponent_SetAudioTrackCategory");
-static_assert(sizeof(ManaSoundComponent_SetAudioTrackCategory) == 0x000018, "Wrong size on ManaSoundComponent_SetAudioTrackCategory");
-static_assert(offsetof(ManaSoundComponent_SetAudioTrackCategory, Track) == 0x000000, "Member 'ManaSoundComponent_SetAudioTrackCategory::Track' has a wrong offset!");
-static_assert(offsetof(ManaSoundComponent_SetAudioTrackCategory, CategoryName) == 0x000008, "Member 'ManaSoundComponent_SetAudioTrackCategory::CategoryName' has a wrong offset!");
+DUMPER7_ASSERTS_ManaSoundComponent_SetAudioTrackCategory;
 
 // Function CriWareRuntime.ManaSoundComponent.SetManaPlayer
 // 0x0008 (0x0008 - 0x0000)
@@ -3966,9 +3104,7 @@ struct ManaSoundComponent_SetManaPlayer final
 public:
 	class UManaPlayer*                            NewManaPlayer;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaSoundComponent_SetManaPlayer) == 0x000008, "Wrong alignment on ManaSoundComponent_SetManaPlayer");
-static_assert(sizeof(ManaSoundComponent_SetManaPlayer) == 0x000008, "Wrong size on ManaSoundComponent_SetManaPlayer");
-static_assert(offsetof(ManaSoundComponent_SetManaPlayer, NewManaPlayer) == 0x000000, "Member 'ManaSoundComponent_SetManaPlayer::NewManaPlayer' has a wrong offset!");
+DUMPER7_ASSERTS_ManaSoundComponent_SetManaPlayer;
 
 // Function CriWareRuntime.ManaSoundComponent.GetManaPlayer
 // 0x0008 (0x0008 - 0x0000)
@@ -3977,9 +3113,7 @@ struct ManaSoundComponent_GetManaPlayer final
 public:
 	class UManaPlayer*                            ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaSoundComponent_GetManaPlayer) == 0x000008, "Wrong alignment on ManaSoundComponent_GetManaPlayer");
-static_assert(sizeof(ManaSoundComponent_GetManaPlayer) == 0x000008, "Wrong size on ManaSoundComponent_GetManaPlayer");
-static_assert(offsetof(ManaSoundComponent_GetManaPlayer, ReturnValue) == 0x000000, "Member 'ManaSoundComponent_GetManaPlayer::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ManaSoundComponent_GetManaPlayer;
 
 // Function CriWareRuntime.ManaTexture.SetMovieSource
 // 0x0008 (0x0008 - 0x0000)
@@ -3988,9 +3122,7 @@ struct ManaTexture_SetMovieSource final
 public:
 	class UManaSource*                            InSource;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ManaTexture_SetMovieSource) == 0x000008, "Wrong alignment on ManaTexture_SetMovieSource");
-static_assert(sizeof(ManaTexture_SetMovieSource) == 0x000008, "Wrong size on ManaTexture_SetMovieSource");
-static_assert(offsetof(ManaTexture_SetMovieSource, InSource) == 0x000000, "Member 'ManaTexture_SetMovieSource::InSource' has a wrong offset!");
+DUMPER7_ASSERTS_ManaTexture_SetMovieSource;
 
 // Function CriWareRuntime.SoundAtomConfig.GetCategoryInfoArray
 // 0x0010 (0x0010 - 0x0000)
@@ -3999,9 +3131,7 @@ struct SoundAtomConfig_GetCategoryInfoArray final
 public:
 	TArray<struct FAtomCategoryInfoParam>         ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SoundAtomConfig_GetCategoryInfoArray) == 0x000008, "Wrong alignment on SoundAtomConfig_GetCategoryInfoArray");
-static_assert(sizeof(SoundAtomConfig_GetCategoryInfoArray) == 0x000010, "Wrong size on SoundAtomConfig_GetCategoryInfoArray");
-static_assert(offsetof(SoundAtomConfig_GetCategoryInfoArray, ReturnValue) == 0x000000, "Member 'SoundAtomConfig_GetCategoryInfoArray::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SoundAtomConfig_GetCategoryInfoArray;
 
 // Function CriWareRuntime.SoundAtomCue.BP_GetCueInfo
 // 0x0068 (0x0068 - 0x0000)
@@ -4012,10 +3142,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0060(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(SoundAtomCue_BP_GetCueInfo) == 0x000008, "Wrong alignment on SoundAtomCue_BP_GetCueInfo");
-static_assert(sizeof(SoundAtomCue_BP_GetCueInfo) == 0x000068, "Wrong size on SoundAtomCue_BP_GetCueInfo");
-static_assert(offsetof(SoundAtomCue_BP_GetCueInfo, CueInfo) == 0x000000, "Member 'SoundAtomCue_BP_GetCueInfo::CueInfo' has a wrong offset!");
-static_assert(offsetof(SoundAtomCue_BP_GetCueInfo, ReturnValue) == 0x000060, "Member 'SoundAtomCue_BP_GetCueInfo::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SoundAtomCue_BP_GetCueInfo;
 
 // Function CriWareRuntime.SoundAtomCue.GetCullDistance
 // 0x0004 (0x0004 - 0x0000)
@@ -4024,9 +3151,7 @@ struct SoundAtomCue_GetCullDistance final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SoundAtomCue_GetCullDistance) == 0x000004, "Wrong alignment on SoundAtomCue_GetCullDistance");
-static_assert(sizeof(SoundAtomCue_GetCullDistance) == 0x000004, "Wrong size on SoundAtomCue_GetCullDistance");
-static_assert(offsetof(SoundAtomCue_GetCullDistance, ReturnValue) == 0x000000, "Member 'SoundAtomCue_GetCullDistance::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SoundAtomCue_GetCullDistance;
 
 // Function CriWareRuntime.SoundAtomCue.GetCullDistanceMarginToApply
 // 0x0004 (0x0004 - 0x0000)
@@ -4035,9 +3160,7 @@ struct SoundAtomCue_GetCullDistanceMarginToApply final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SoundAtomCue_GetCullDistanceMarginToApply) == 0x000004, "Wrong alignment on SoundAtomCue_GetCullDistanceMarginToApply");
-static_assert(sizeof(SoundAtomCue_GetCullDistanceMarginToApply) == 0x000004, "Wrong size on SoundAtomCue_GetCullDistanceMarginToApply");
-static_assert(offsetof(SoundAtomCue_GetCullDistanceMarginToApply, ReturnValue) == 0x000000, "Member 'SoundAtomCue_GetCullDistanceMarginToApply::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SoundAtomCue_GetCullDistanceMarginToApply;
 
 // Function CriWareRuntime.SoundAtomCue.GetCullingBoundaryDistanceToUse
 // 0x0004 (0x0004 - 0x0000)
@@ -4046,9 +3169,7 @@ struct SoundAtomCue_GetCullingBoundaryDistanceToUse final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SoundAtomCue_GetCullingBoundaryDistanceToUse) == 0x000004, "Wrong alignment on SoundAtomCue_GetCullingBoundaryDistanceToUse");
-static_assert(sizeof(SoundAtomCue_GetCullingBoundaryDistanceToUse) == 0x000004, "Wrong size on SoundAtomCue_GetCullingBoundaryDistanceToUse");
-static_assert(offsetof(SoundAtomCue_GetCullingBoundaryDistanceToUse, ReturnValue) == 0x000000, "Member 'SoundAtomCue_GetCullingBoundaryDistanceToUse::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SoundAtomCue_GetCullingBoundaryDistanceToUse;
 
 // Function CriWareRuntime.SoundAtomCue.GetCullingMarginDistanceToUse
 // 0x0004 (0x0004 - 0x0000)
@@ -4057,9 +3178,7 @@ struct SoundAtomCue_GetCullingMarginDistanceToUse final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SoundAtomCue_GetCullingMarginDistanceToUse) == 0x000004, "Wrong alignment on SoundAtomCue_GetCullingMarginDistanceToUse");
-static_assert(sizeof(SoundAtomCue_GetCullingMarginDistanceToUse) == 0x000004, "Wrong size on SoundAtomCue_GetCullingMarginDistanceToUse");
-static_assert(offsetof(SoundAtomCue_GetCullingMarginDistanceToUse, ReturnValue) == 0x000000, "Member 'SoundAtomCue_GetCullingMarginDistanceToUse::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SoundAtomCue_GetCullingMarginDistanceToUse;
 
 // Function CriWareRuntime.SoundAtomCue.GetEconomicTickBoundaryDistanceToUse
 // 0x0004 (0x0004 - 0x0000)
@@ -4068,9 +3187,7 @@ struct SoundAtomCue_GetEconomicTickBoundaryDistanceToUse final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SoundAtomCue_GetEconomicTickBoundaryDistanceToUse) == 0x000004, "Wrong alignment on SoundAtomCue_GetEconomicTickBoundaryDistanceToUse");
-static_assert(sizeof(SoundAtomCue_GetEconomicTickBoundaryDistanceToUse) == 0x000004, "Wrong size on SoundAtomCue_GetEconomicTickBoundaryDistanceToUse");
-static_assert(offsetof(SoundAtomCue_GetEconomicTickBoundaryDistanceToUse, ReturnValue) == 0x000000, "Member 'SoundAtomCue_GetEconomicTickBoundaryDistanceToUse::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SoundAtomCue_GetEconomicTickBoundaryDistanceToUse;
 
 // Function CriWareRuntime.SoundAtomCue.GetEconomicTickDistance
 // 0x0004 (0x0004 - 0x0000)
@@ -4079,9 +3196,7 @@ struct SoundAtomCue_GetEconomicTickDistance final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SoundAtomCue_GetEconomicTickDistance) == 0x000004, "Wrong alignment on SoundAtomCue_GetEconomicTickDistance");
-static_assert(sizeof(SoundAtomCue_GetEconomicTickDistance) == 0x000004, "Wrong size on SoundAtomCue_GetEconomicTickDistance");
-static_assert(offsetof(SoundAtomCue_GetEconomicTickDistance, ReturnValue) == 0x000000, "Member 'SoundAtomCue_GetEconomicTickDistance::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SoundAtomCue_GetEconomicTickDistance;
 
 // Function CriWareRuntime.SoundAtomCue.GetEconomicTickDistanceMarginToApply
 // 0x0004 (0x0004 - 0x0000)
@@ -4090,9 +3205,7 @@ struct SoundAtomCue_GetEconomicTickDistanceMarginToApply final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SoundAtomCue_GetEconomicTickDistanceMarginToApply) == 0x000004, "Wrong alignment on SoundAtomCue_GetEconomicTickDistanceMarginToApply");
-static_assert(sizeof(SoundAtomCue_GetEconomicTickDistanceMarginToApply) == 0x000004, "Wrong size on SoundAtomCue_GetEconomicTickDistanceMarginToApply");
-static_assert(offsetof(SoundAtomCue_GetEconomicTickDistanceMarginToApply, ReturnValue) == 0x000000, "Member 'SoundAtomCue_GetEconomicTickDistanceMarginToApply::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SoundAtomCue_GetEconomicTickDistanceMarginToApply;
 
 // Function CriWareRuntime.SoundAtomCue.GetEconomicTickFrequencyToApply
 // 0x0004 (0x0004 - 0x0000)
@@ -4101,9 +3214,7 @@ struct SoundAtomCue_GetEconomicTickFrequencyToApply final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SoundAtomCue_GetEconomicTickFrequencyToApply) == 0x000004, "Wrong alignment on SoundAtomCue_GetEconomicTickFrequencyToApply");
-static_assert(sizeof(SoundAtomCue_GetEconomicTickFrequencyToApply) == 0x000004, "Wrong size on SoundAtomCue_GetEconomicTickFrequencyToApply");
-static_assert(offsetof(SoundAtomCue_GetEconomicTickFrequencyToApply, ReturnValue) == 0x000000, "Member 'SoundAtomCue_GetEconomicTickFrequencyToApply::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SoundAtomCue_GetEconomicTickFrequencyToApply;
 
 // Function CriWareRuntime.SoundAtomCue.GetEconomicTickFrequencyToUse
 // 0x0004 (0x0004 - 0x0000)
@@ -4112,9 +3223,7 @@ struct SoundAtomCue_GetEconomicTickFrequencyToUse final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SoundAtomCue_GetEconomicTickFrequencyToUse) == 0x000004, "Wrong alignment on SoundAtomCue_GetEconomicTickFrequencyToUse");
-static_assert(sizeof(SoundAtomCue_GetEconomicTickFrequencyToUse) == 0x000004, "Wrong size on SoundAtomCue_GetEconomicTickFrequencyToUse");
-static_assert(offsetof(SoundAtomCue_GetEconomicTickFrequencyToUse, ReturnValue) == 0x000000, "Member 'SoundAtomCue_GetEconomicTickFrequencyToUse::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SoundAtomCue_GetEconomicTickFrequencyToUse;
 
 // Function CriWareRuntime.SoundAtomCue.GetEconomicTickMarginDistanceToUse
 // 0x0004 (0x0004 - 0x0000)
@@ -4123,9 +3232,7 @@ struct SoundAtomCue_GetEconomicTickMarginDistanceToUse final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SoundAtomCue_GetEconomicTickMarginDistanceToUse) == 0x000004, "Wrong alignment on SoundAtomCue_GetEconomicTickMarginDistanceToUse");
-static_assert(sizeof(SoundAtomCue_GetEconomicTickMarginDistanceToUse) == 0x000004, "Wrong size on SoundAtomCue_GetEconomicTickMarginDistanceToUse");
-static_assert(offsetof(SoundAtomCue_GetEconomicTickMarginDistanceToUse, ReturnValue) == 0x000000, "Member 'SoundAtomCue_GetEconomicTickMarginDistanceToUse::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SoundAtomCue_GetEconomicTickMarginDistanceToUse;
 
 // Function CriWareRuntime.SoundAtomCue.GetMaxAttenuationDistanceToApply
 // 0x0004 (0x0004 - 0x0000)
@@ -4134,9 +3241,7 @@ struct SoundAtomCue_GetMaxAttenuationDistanceToApply final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SoundAtomCue_GetMaxAttenuationDistanceToApply) == 0x000004, "Wrong alignment on SoundAtomCue_GetMaxAttenuationDistanceToApply");
-static_assert(sizeof(SoundAtomCue_GetMaxAttenuationDistanceToApply) == 0x000004, "Wrong size on SoundAtomCue_GetMaxAttenuationDistanceToApply");
-static_assert(offsetof(SoundAtomCue_GetMaxAttenuationDistanceToApply, ReturnValue) == 0x000000, "Member 'SoundAtomCue_GetMaxAttenuationDistanceToApply::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SoundAtomCue_GetMaxAttenuationDistanceToApply;
 
 // Function CriWareRuntime.SoundAtomCue.GetMaxAttenuationDistanceToUse
 // 0x0004 (0x0004 - 0x0000)
@@ -4145,9 +3250,7 @@ struct SoundAtomCue_GetMaxAttenuationDistanceToUse final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SoundAtomCue_GetMaxAttenuationDistanceToUse) == 0x000004, "Wrong alignment on SoundAtomCue_GetMaxAttenuationDistanceToUse");
-static_assert(sizeof(SoundAtomCue_GetMaxAttenuationDistanceToUse) == 0x000004, "Wrong size on SoundAtomCue_GetMaxAttenuationDistanceToUse");
-static_assert(offsetof(SoundAtomCue_GetMaxAttenuationDistanceToUse, ReturnValue) == 0x000000, "Member 'SoundAtomCue_GetMaxAttenuationDistanceToUse::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SoundAtomCue_GetMaxAttenuationDistanceToUse;
 
 // Function CriWareRuntime.SoundAtomCue.IsEconomicTickEnabled
 // 0x0001 (0x0001 - 0x0000)
@@ -4156,9 +3259,7 @@ struct SoundAtomCue_IsEconomicTickEnabled final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SoundAtomCue_IsEconomicTickEnabled) == 0x000001, "Wrong alignment on SoundAtomCue_IsEconomicTickEnabled");
-static_assert(sizeof(SoundAtomCue_IsEconomicTickEnabled) == 0x000001, "Wrong size on SoundAtomCue_IsEconomicTickEnabled");
-static_assert(offsetof(SoundAtomCue_IsEconomicTickEnabled, ReturnValue) == 0x000000, "Member 'SoundAtomCue_IsEconomicTickEnabled::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SoundAtomCue_IsEconomicTickEnabled;
 
 // Function CriWareRuntime.SoundAtomCue.IsLooping
 // 0x0001 (0x0001 - 0x0000)
@@ -4167,9 +3268,7 @@ struct SoundAtomCue_IsLooping final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SoundAtomCue_IsLooping) == 0x000001, "Wrong alignment on SoundAtomCue_IsLooping");
-static_assert(sizeof(SoundAtomCue_IsLooping) == 0x000001, "Wrong size on SoundAtomCue_IsLooping");
-static_assert(offsetof(SoundAtomCue_IsLooping, ReturnValue) == 0x000000, "Member 'SoundAtomCue_IsLooping::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SoundAtomCue_IsLooping;
 
 // Function CriWareRuntime.SoundAtomCue.Validate
 // 0x0001 (0x0001 - 0x0000)
@@ -4178,9 +3277,7 @@ struct SoundAtomCue_Validate final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SoundAtomCue_Validate) == 0x000001, "Wrong alignment on SoundAtomCue_Validate");
-static_assert(sizeof(SoundAtomCue_Validate) == 0x000001, "Wrong size on SoundAtomCue_Validate");
-static_assert(offsetof(SoundAtomCue_Validate, ReturnValue) == 0x000000, "Member 'SoundAtomCue_Validate::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SoundAtomCue_Validate;
 
 // Function CriWareRuntime.SoundAtomCueSheet.ApplyDspBusSnapshot
 // 0x0018 (0x0018 - 0x0000)
@@ -4191,10 +3288,7 @@ public:
 	int32                                         Milliseconds;                                      // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(SoundAtomCueSheet_ApplyDspBusSnapshot) == 0x000008, "Wrong alignment on SoundAtomCueSheet_ApplyDspBusSnapshot");
-static_assert(sizeof(SoundAtomCueSheet_ApplyDspBusSnapshot) == 0x000018, "Wrong size on SoundAtomCueSheet_ApplyDspBusSnapshot");
-static_assert(offsetof(SoundAtomCueSheet_ApplyDspBusSnapshot, SnapshotName) == 0x000000, "Member 'SoundAtomCueSheet_ApplyDspBusSnapshot::SnapshotName' has a wrong offset!");
-static_assert(offsetof(SoundAtomCueSheet_ApplyDspBusSnapshot, Milliseconds) == 0x000010, "Member 'SoundAtomCueSheet_ApplyDspBusSnapshot::Milliseconds' has a wrong offset!");
+DUMPER7_ASSERTS_SoundAtomCueSheet_ApplyDspBusSnapshot;
 
 // Function CriWareRuntime.SoundAtomCueSheet.AttachDspBusSetting
 // 0x0010 (0x0010 - 0x0000)
@@ -4203,9 +3297,7 @@ struct SoundAtomCueSheet_AttachDspBusSetting final
 public:
 	class FString                                 SettingName;                                       // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SoundAtomCueSheet_AttachDspBusSetting) == 0x000008, "Wrong alignment on SoundAtomCueSheet_AttachDspBusSetting");
-static_assert(sizeof(SoundAtomCueSheet_AttachDspBusSetting) == 0x000010, "Wrong size on SoundAtomCueSheet_AttachDspBusSetting");
-static_assert(offsetof(SoundAtomCueSheet_AttachDspBusSetting, SettingName) == 0x000000, "Member 'SoundAtomCueSheet_AttachDspBusSetting::SettingName' has a wrong offset!");
+DUMPER7_ASSERTS_SoundAtomCueSheet_AttachDspBusSetting;
 
 // Function CriWareRuntime.SoundAtomCueSheet.LoadAcb
 // 0x0018 (0x0018 - 0x0000)
@@ -4217,11 +3309,7 @@ public:
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class USoundAtomCueSheet*                     ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SoundAtomCueSheet_LoadAcb) == 0x000008, "Wrong alignment on SoundAtomCueSheet_LoadAcb");
-static_assert(sizeof(SoundAtomCueSheet_LoadAcb) == 0x000018, "Wrong size on SoundAtomCueSheet_LoadAcb");
-static_assert(offsetof(SoundAtomCueSheet_LoadAcb, AcbName) == 0x000000, "Member 'SoundAtomCueSheet_LoadAcb::AcbName' has a wrong offset!");
-static_assert(offsetof(SoundAtomCueSheet_LoadAcb, bAddToLevel) == 0x000008, "Member 'SoundAtomCueSheet_LoadAcb::bAddToLevel' has a wrong offset!");
-static_assert(offsetof(SoundAtomCueSheet_LoadAcb, ReturnValue) == 0x000010, "Member 'SoundAtomCueSheet_LoadAcb::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SoundAtomCueSheet_LoadAcb;
 
 // Function CriWareRuntime.SoundAtomCueSheet.LoadAtomCueSheet
 // 0x0018 (0x0018 - 0x0000)
@@ -4233,11 +3321,7 @@ public:
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class USoundAtomCueSheet*                     ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SoundAtomCueSheet_LoadAtomCueSheet) == 0x000008, "Wrong alignment on SoundAtomCueSheet_LoadAtomCueSheet");
-static_assert(sizeof(SoundAtomCueSheet_LoadAtomCueSheet) == 0x000018, "Wrong size on SoundAtomCueSheet_LoadAtomCueSheet");
-static_assert(offsetof(SoundAtomCueSheet_LoadAtomCueSheet, CueSheet) == 0x000000, "Member 'SoundAtomCueSheet_LoadAtomCueSheet::CueSheet' has a wrong offset!");
-static_assert(offsetof(SoundAtomCueSheet_LoadAtomCueSheet, bAddToLevel) == 0x000008, "Member 'SoundAtomCueSheet_LoadAtomCueSheet::bAddToLevel' has a wrong offset!");
-static_assert(offsetof(SoundAtomCueSheet_LoadAtomCueSheet, ReturnValue) == 0x000010, "Member 'SoundAtomCueSheet_LoadAtomCueSheet::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SoundAtomCueSheet_LoadAtomCueSheet;
 
 // Function CriWareRuntime.SoundAtomCueSheet.ReleaseAcb
 // 0x0008 (0x0008 - 0x0000)
@@ -4246,9 +3330,7 @@ struct SoundAtomCueSheet_ReleaseAcb final
 public:
 	class FName                                   AcbName;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SoundAtomCueSheet_ReleaseAcb) == 0x000004, "Wrong alignment on SoundAtomCueSheet_ReleaseAcb");
-static_assert(sizeof(SoundAtomCueSheet_ReleaseAcb) == 0x000008, "Wrong size on SoundAtomCueSheet_ReleaseAcb");
-static_assert(offsetof(SoundAtomCueSheet_ReleaseAcb, AcbName) == 0x000000, "Member 'SoundAtomCueSheet_ReleaseAcb::AcbName' has a wrong offset!");
+DUMPER7_ASSERTS_SoundAtomCueSheet_ReleaseAcb;
 
 // Function CriWareRuntime.SoundAtomCueSheet.GetAtomCueById
 // 0x0010 (0x0010 - 0x0000)
@@ -4259,10 +3341,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USoundAtomCue*                          ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SoundAtomCueSheet_GetAtomCueById) == 0x000008, "Wrong alignment on SoundAtomCueSheet_GetAtomCueById");
-static_assert(sizeof(SoundAtomCueSheet_GetAtomCueById) == 0x000010, "Wrong size on SoundAtomCueSheet_GetAtomCueById");
-static_assert(offsetof(SoundAtomCueSheet_GetAtomCueById, CueId) == 0x000000, "Member 'SoundAtomCueSheet_GetAtomCueById::CueId' has a wrong offset!");
-static_assert(offsetof(SoundAtomCueSheet_GetAtomCueById, ReturnValue) == 0x000008, "Member 'SoundAtomCueSheet_GetAtomCueById::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SoundAtomCueSheet_GetAtomCueById;
 
 // Function CriWareRuntime.SoundAtomCueSheet.GetAtomCueByIndex
 // 0x0010 (0x0010 - 0x0000)
@@ -4273,10 +3352,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USoundAtomCue*                          ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SoundAtomCueSheet_GetAtomCueByIndex) == 0x000008, "Wrong alignment on SoundAtomCueSheet_GetAtomCueByIndex");
-static_assert(sizeof(SoundAtomCueSheet_GetAtomCueByIndex) == 0x000010, "Wrong size on SoundAtomCueSheet_GetAtomCueByIndex");
-static_assert(offsetof(SoundAtomCueSheet_GetAtomCueByIndex, CueIndex) == 0x000000, "Member 'SoundAtomCueSheet_GetAtomCueByIndex::CueIndex' has a wrong offset!");
-static_assert(offsetof(SoundAtomCueSheet_GetAtomCueByIndex, ReturnValue) == 0x000008, "Member 'SoundAtomCueSheet_GetAtomCueByIndex::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SoundAtomCueSheet_GetAtomCueByIndex;
 
 // Function CriWareRuntime.SoundAtomCueSheet.GetAtomCueByName
 // 0x0018 (0x0018 - 0x0000)
@@ -4286,10 +3362,7 @@ public:
 	class FString                                 CueName;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class USoundAtomCue*                          ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SoundAtomCueSheet_GetAtomCueByName) == 0x000008, "Wrong alignment on SoundAtomCueSheet_GetAtomCueByName");
-static_assert(sizeof(SoundAtomCueSheet_GetAtomCueByName) == 0x000018, "Wrong size on SoundAtomCueSheet_GetAtomCueByName");
-static_assert(offsetof(SoundAtomCueSheet_GetAtomCueByName, CueName) == 0x000000, "Member 'SoundAtomCueSheet_GetAtomCueByName::CueName' has a wrong offset!");
-static_assert(offsetof(SoundAtomCueSheet_GetAtomCueByName, ReturnValue) == 0x000010, "Member 'SoundAtomCueSheet_GetAtomCueByName::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SoundAtomCueSheet_GetAtomCueByName;
 
 // Function CriWareRuntime.SoundAtomCueSheet.IsLoaded
 // 0x0001 (0x0001 - 0x0000)
@@ -4298,9 +3371,7 @@ struct SoundAtomCueSheet_IsLoaded final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SoundAtomCueSheet_IsLoaded) == 0x000001, "Wrong alignment on SoundAtomCueSheet_IsLoaded");
-static_assert(sizeof(SoundAtomCueSheet_IsLoaded) == 0x000001, "Wrong size on SoundAtomCueSheet_IsLoaded");
-static_assert(offsetof(SoundAtomCueSheet_IsLoaded, ReturnValue) == 0x000000, "Member 'SoundAtomCueSheet_IsLoaded::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SoundAtomCueSheet_IsLoaded;
 
 // Function CriWareRuntime.SoundAtomCueSheet.BP_GetCueInfoFromId
 // 0x0070 (0x0070 - 0x0000)
@@ -4313,11 +3384,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0068(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(SoundAtomCueSheet_BP_GetCueInfoFromId) == 0x000008, "Wrong alignment on SoundAtomCueSheet_BP_GetCueInfoFromId");
-static_assert(sizeof(SoundAtomCueSheet_BP_GetCueInfoFromId) == 0x000070, "Wrong size on SoundAtomCueSheet_BP_GetCueInfoFromId");
-static_assert(offsetof(SoundAtomCueSheet_BP_GetCueInfoFromId, ID) == 0x000000, "Member 'SoundAtomCueSheet_BP_GetCueInfoFromId::ID' has a wrong offset!");
-static_assert(offsetof(SoundAtomCueSheet_BP_GetCueInfoFromId, CueInfo) == 0x000008, "Member 'SoundAtomCueSheet_BP_GetCueInfoFromId::CueInfo' has a wrong offset!");
-static_assert(offsetof(SoundAtomCueSheet_BP_GetCueInfoFromId, ReturnValue) == 0x000068, "Member 'SoundAtomCueSheet_BP_GetCueInfoFromId::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SoundAtomCueSheet_BP_GetCueInfoFromId;
 
 // Function CriWareRuntime.SoundAtomCueSheet.BP_GetCueInfoFromIndex
 // 0x0070 (0x0070 - 0x0000)
@@ -4330,11 +3397,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0068(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(SoundAtomCueSheet_BP_GetCueInfoFromIndex) == 0x000008, "Wrong alignment on SoundAtomCueSheet_BP_GetCueInfoFromIndex");
-static_assert(sizeof(SoundAtomCueSheet_BP_GetCueInfoFromIndex) == 0x000070, "Wrong size on SoundAtomCueSheet_BP_GetCueInfoFromIndex");
-static_assert(offsetof(SoundAtomCueSheet_BP_GetCueInfoFromIndex, Index_0) == 0x000000, "Member 'SoundAtomCueSheet_BP_GetCueInfoFromIndex::Index_0' has a wrong offset!");
-static_assert(offsetof(SoundAtomCueSheet_BP_GetCueInfoFromIndex, CueInfo) == 0x000008, "Member 'SoundAtomCueSheet_BP_GetCueInfoFromIndex::CueInfo' has a wrong offset!");
-static_assert(offsetof(SoundAtomCueSheet_BP_GetCueInfoFromIndex, ReturnValue) == 0x000068, "Member 'SoundAtomCueSheet_BP_GetCueInfoFromIndex::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SoundAtomCueSheet_BP_GetCueInfoFromIndex;
 
 // Function CriWareRuntime.SoundAtomCueSheet.BP_GetCueInfoFromName
 // 0x0078 (0x0078 - 0x0000)
@@ -4346,11 +3409,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0070(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_71[0x7];                                       // 0x0071(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(SoundAtomCueSheet_BP_GetCueInfoFromName) == 0x000008, "Wrong alignment on SoundAtomCueSheet_BP_GetCueInfoFromName");
-static_assert(sizeof(SoundAtomCueSheet_BP_GetCueInfoFromName) == 0x000078, "Wrong size on SoundAtomCueSheet_BP_GetCueInfoFromName");
-static_assert(offsetof(SoundAtomCueSheet_BP_GetCueInfoFromName, Name_0) == 0x000000, "Member 'SoundAtomCueSheet_BP_GetCueInfoFromName::Name_0' has a wrong offset!");
-static_assert(offsetof(SoundAtomCueSheet_BP_GetCueInfoFromName, CueInfo) == 0x000010, "Member 'SoundAtomCueSheet_BP_GetCueInfoFromName::CueInfo' has a wrong offset!");
-static_assert(offsetof(SoundAtomCueSheet_BP_GetCueInfoFromName, ReturnValue) == 0x000070, "Member 'SoundAtomCueSheet_BP_GetCueInfoFromName::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SoundAtomCueSheet_BP_GetCueInfoFromName;
 
 // Function CriWareRuntime.SoundAtomCueSheet.GetAutoLifetimeManagement
 // 0x0001 (0x0001 - 0x0000)
@@ -4359,9 +3418,7 @@ struct SoundAtomCueSheet_GetAutoLifetimeManagement final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SoundAtomCueSheet_GetAutoLifetimeManagement) == 0x000001, "Wrong alignment on SoundAtomCueSheet_GetAutoLifetimeManagement");
-static_assert(sizeof(SoundAtomCueSheet_GetAutoLifetimeManagement) == 0x000001, "Wrong size on SoundAtomCueSheet_GetAutoLifetimeManagement");
-static_assert(offsetof(SoundAtomCueSheet_GetAutoLifetimeManagement, ReturnValue) == 0x000000, "Member 'SoundAtomCueSheet_GetAutoLifetimeManagement::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SoundAtomCueSheet_GetAutoLifetimeManagement;
 
 // Function CriWareRuntime.SoundAtomCueSheet.GetNumCues
 // 0x0004 (0x0004 - 0x0000)
@@ -4370,9 +3427,7 @@ struct SoundAtomCueSheet_GetNumCues final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SoundAtomCueSheet_GetNumCues) == 0x000004, "Wrong alignment on SoundAtomCueSheet_GetNumCues");
-static_assert(sizeof(SoundAtomCueSheet_GetNumCues) == 0x000004, "Wrong size on SoundAtomCueSheet_GetNumCues");
-static_assert(offsetof(SoundAtomCueSheet_GetNumCues, ReturnValue) == 0x000000, "Member 'SoundAtomCueSheet_GetNumCues::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SoundAtomCueSheet_GetNumCues;
 
 // Function CriWareRuntime.SoundAtomCueSheet.IsAcbDataContained
 // 0x0001 (0x0001 - 0x0000)
@@ -4381,9 +3436,7 @@ struct SoundAtomCueSheet_IsAcbDataContained final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SoundAtomCueSheet_IsAcbDataContained) == 0x000001, "Wrong alignment on SoundAtomCueSheet_IsAcbDataContained");
-static_assert(sizeof(SoundAtomCueSheet_IsAcbDataContained) == 0x000001, "Wrong size on SoundAtomCueSheet_IsAcbDataContained");
-static_assert(offsetof(SoundAtomCueSheet_IsAcbDataContained, ReturnValue) == 0x000000, "Member 'SoundAtomCueSheet_IsAcbDataContained::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SoundAtomCueSheet_IsAcbDataContained;
 
 // Function CriWareRuntime.SoundAtomCueSheet.IsRawAcbDataAvailable
 // 0x0001 (0x0001 - 0x0000)
@@ -4392,9 +3445,7 @@ struct SoundAtomCueSheet_IsRawAcbDataAvailable final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SoundAtomCueSheet_IsRawAcbDataAvailable) == 0x000001, "Wrong alignment on SoundAtomCueSheet_IsRawAcbDataAvailable");
-static_assert(sizeof(SoundAtomCueSheet_IsRawAcbDataAvailable) == 0x000001, "Wrong size on SoundAtomCueSheet_IsRawAcbDataAvailable");
-static_assert(offsetof(SoundAtomCueSheet_IsRawAcbDataAvailable, ReturnValue) == 0x000000, "Member 'SoundAtomCueSheet_IsRawAcbDataAvailable::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SoundAtomCueSheet_IsRawAcbDataAvailable;
 
 }
 

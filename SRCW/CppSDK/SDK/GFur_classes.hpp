@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "Engine_classes.hpp"
 #include "GFur_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "CoreUObject_classes.hpp"
-#include "Engine_classes.hpp"
 
 
 namespace SDK
@@ -61,41 +61,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GFurComponent">();
+		STATIC_CLASS_IMPL("GFurComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GFurComponent")
 	}
 	static class UGFurComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGFurComponent>();
 	}
 };
-static_assert(alignof(UGFurComponent) == 0x000010, "Wrong alignment on UGFurComponent");
-static_assert(sizeof(UGFurComponent) == 0x000790, "Wrong size on UGFurComponent");
-static_assert(offsetof(UGFurComponent, SkeletalGrowMesh) == 0x000550, "Member 'UGFurComponent::SkeletalGrowMesh' has a wrong offset!");
-static_assert(offsetof(UGFurComponent, StaticGrowMesh) == 0x000558, "Member 'UGFurComponent::StaticGrowMesh' has a wrong offset!");
-static_assert(offsetof(UGFurComponent, FurSplines) == 0x000560, "Member 'UGFurComponent::FurSplines' has a wrong offset!");
-static_assert(offsetof(UGFurComponent, SkeletalGuideMeshes) == 0x000568, "Member 'UGFurComponent::SkeletalGuideMeshes' has a wrong offset!");
-static_assert(offsetof(UGFurComponent, StaticGuideMeshes) == 0x000578, "Member 'UGFurComponent::StaticGuideMeshes' has a wrong offset!");
-static_assert(offsetof(UGFurComponent, LayerCount) == 0x000588, "Member 'UGFurComponent::LayerCount' has a wrong offset!");
-static_assert(offsetof(UGFurComponent, MinScreenSize) == 0x00058C, "Member 'UGFurComponent::MinScreenSize' has a wrong offset!");
-static_assert(offsetof(UGFurComponent, LODs) == 0x000590, "Member 'UGFurComponent::LODs' has a wrong offset!");
-static_assert(offsetof(UGFurComponent, LODFromParent) == 0x0005A0, "Member 'UGFurComponent::LODFromParent' has a wrong offset!");
-static_assert(offsetof(UGFurComponent, ShellBias) == 0x0005A4, "Member 'UGFurComponent::ShellBias' has a wrong offset!");
-static_assert(offsetof(UGFurComponent, FurLength) == 0x0005A8, "Member 'UGFurComponent::FurLength' has a wrong offset!");
-static_assert(offsetof(UGFurComponent, MinFurLength) == 0x0005AC, "Member 'UGFurComponent::MinFurLength' has a wrong offset!");
-static_assert(offsetof(UGFurComponent, RemoveFacesWithoutSplines) == 0x0005B0, "Member 'UGFurComponent::RemoveFacesWithoutSplines' has a wrong offset!");
-static_assert(offsetof(UGFurComponent, PhysicsEnabled) == 0x0005B1, "Member 'UGFurComponent::PhysicsEnabled' has a wrong offset!");
-static_assert(offsetof(UGFurComponent, ForceDistribution) == 0x0005B4, "Member 'UGFurComponent::ForceDistribution' has a wrong offset!");
-static_assert(offsetof(UGFurComponent, Stiffness) == 0x0005B8, "Member 'UGFurComponent::Stiffness' has a wrong offset!");
-static_assert(offsetof(UGFurComponent, Damping) == 0x0005BC, "Member 'UGFurComponent::Damping' has a wrong offset!");
-static_assert(offsetof(UGFurComponent, ConstantForce) == 0x0005C0, "Member 'UGFurComponent::ConstantForce' has a wrong offset!");
-static_assert(offsetof(UGFurComponent, MaxForce) == 0x0005D8, "Member 'UGFurComponent::MaxForce' has a wrong offset!");
-static_assert(offsetof(UGFurComponent, MaxForceTorqueFactor) == 0x0005DC, "Member 'UGFurComponent::MaxForceTorqueFactor' has a wrong offset!");
-static_assert(offsetof(UGFurComponent, ReferenceHairBias) == 0x0005E0, "Member 'UGFurComponent::ReferenceHairBias' has a wrong offset!");
-static_assert(offsetof(UGFurComponent, HairLengthForceUniformity) == 0x0005E4, "Member 'UGFurComponent::HairLengthForceUniformity' has a wrong offset!");
-static_assert(offsetof(UGFurComponent, MaxPhysicsOffsetLength) == 0x0005E8, "Member 'UGFurComponent::MaxPhysicsOffsetLength' has a wrong offset!");
-static_assert(offsetof(UGFurComponent, NoiseStrength) == 0x0005EC, "Member 'UGFurComponent::NoiseStrength' has a wrong offset!");
-static_assert(offsetof(UGFurComponent, DisableMorphTargets) == 0x0005F0, "Member 'UGFurComponent::DisableMorphTargets' has a wrong offset!");
-static_assert(offsetof(UGFurComponent, StreamingDistanceMultiplier) == 0x0005F4, "Member 'UGFurComponent::StreamingDistanceMultiplier' has a wrong offset!");
+DUMPER7_ASSERTS_UGFurComponent;
 
 // Class GFur.FurSplines
 // 0x0058 (0x0080 - 0x0028)
@@ -116,23 +93,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FurSplines">();
+		STATIC_CLASS_IMPL("FurSplines")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FurSplines")
 	}
 	static class UFurSplines* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFurSplines>();
 	}
 };
-static_assert(alignof(UFurSplines) == 0x000008, "Wrong alignment on UFurSplines");
-static_assert(sizeof(UFurSplines) == 0x000080, "Wrong size on UFurSplines");
-static_assert(offsetof(UFurSplines, Vertices) == 0x000028, "Member 'UFurSplines::Vertices' has a wrong offset!");
-static_assert(offsetof(UFurSplines, Index_0) == 0x000038, "Member 'UFurSplines::Index_0' has a wrong offset!");
-static_assert(offsetof(UFurSplines, Count) == 0x000048, "Member 'UFurSplines::Count' has a wrong offset!");
-static_assert(offsetof(UFurSplines, ControlPointCount) == 0x000058, "Member 'UFurSplines::ControlPointCount' has a wrong offset!");
-static_assert(offsetof(UFurSplines, ImportFilename) == 0x000060, "Member 'UFurSplines::ImportFilename' has a wrong offset!");
-static_assert(offsetof(UFurSplines, Version) == 0x000070, "Member 'UFurSplines::Version' has a wrong offset!");
-static_assert(offsetof(UFurSplines, ImportTransformation) == 0x000074, "Member 'UFurSplines::ImportTransformation' has a wrong offset!");
-static_assert(offsetof(UFurSplines, Threshold) == 0x000078, "Member 'UFurSplines::Threshold' has a wrong offset!");
+DUMPER7_ASSERTS_UFurSplines;
 
 }
 

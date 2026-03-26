@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "MovieRenderPipelineCore_classes.hpp"
 #include "UMG_classes.hpp"
 #include "CoreUObject_structs.hpp"
-#include "MovieRenderPipelineCore_classes.hpp"
 #include "MovieRenderPipelineSettings_structs.hpp"
 
 
@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MoviePipelineBurnInWidget">();
+		STATIC_CLASS_IMPL("MoviePipelineBurnInWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MoviePipelineBurnInWidget")
 	}
 	static class UMoviePipelineBurnInWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMoviePipelineBurnInWidget>();
 	}
 };
-static_assert(alignof(UMoviePipelineBurnInWidget) == 0x000008, "Wrong alignment on UMoviePipelineBurnInWidget");
-static_assert(sizeof(UMoviePipelineBurnInWidget) == 0x0002E0, "Wrong size on UMoviePipelineBurnInWidget");
+DUMPER7_ASSERTS_UMoviePipelineBurnInWidget;
 
 // Class MovieRenderPipelineSettings.MoviePipelineBurnInSetting
 // 0x0068 (0x00B0 - 0x0048)
@@ -47,25 +50,24 @@ public:
 	struct FSoftClassPath                         BurnInClass;                                       // 0x0048(0x0020)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bCompositeOntoFinalImage;                          // 0x0068(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_69[0x2F];                                      // 0x0069(0x002F)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTextureRenderTarget2D*                 RenderTarget;                                      // 0x0098(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	TArray<class UMoviePipelineBurnInWidget*>     BurnInWidgetInstances;                             // 0x00A0(0x0010)(ExportObject, ZeroConstructor, Transient, ContainsInstancedReference, UObjectWrapper, NativeAccessSpecifierPrivate)
+	class UTextureRenderTarget2D*                 RenderTarget;                                      // 0x0098(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
+	TArray<class UMoviePipelineBurnInWidget*>     BurnInWidgetInstances;                             // 0x00A0(0x0010)(ExportObject, ZeroConstructor, Transient, ContainsInstancedReference, UObjectWrapper, NativeAccessSpecifierPrivate, TObjectPtr)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MoviePipelineBurnInSetting">();
+		STATIC_CLASS_IMPL("MoviePipelineBurnInSetting")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MoviePipelineBurnInSetting")
 	}
 	static class UMoviePipelineBurnInSetting* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMoviePipelineBurnInSetting>();
 	}
 };
-static_assert(alignof(UMoviePipelineBurnInSetting) == 0x000008, "Wrong alignment on UMoviePipelineBurnInSetting");
-static_assert(sizeof(UMoviePipelineBurnInSetting) == 0x0000B0, "Wrong size on UMoviePipelineBurnInSetting");
-static_assert(offsetof(UMoviePipelineBurnInSetting, BurnInClass) == 0x000048, "Member 'UMoviePipelineBurnInSetting::BurnInClass' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineBurnInSetting, bCompositeOntoFinalImage) == 0x000068, "Member 'UMoviePipelineBurnInSetting::bCompositeOntoFinalImage' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineBurnInSetting, RenderTarget) == 0x000098, "Member 'UMoviePipelineBurnInSetting::RenderTarget' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineBurnInSetting, BurnInWidgetInstances) == 0x0000A0, "Member 'UMoviePipelineBurnInSetting::BurnInWidgetInstances' has a wrong offset!");
+DUMPER7_ASSERTS_UMoviePipelineBurnInSetting;
 
 // Class MovieRenderPipelineSettings.MoviePipelineConsoleVariableSetting
 // 0x00B0 (0x00F8 - 0x0048)
@@ -90,20 +92,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MoviePipelineConsoleVariableSetting">();
+		STATIC_CLASS_IMPL("MoviePipelineConsoleVariableSetting")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MoviePipelineConsoleVariableSetting")
 	}
 	static class UMoviePipelineConsoleVariableSetting* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMoviePipelineConsoleVariableSetting>();
 	}
 };
-static_assert(alignof(UMoviePipelineConsoleVariableSetting) == 0x000008, "Wrong alignment on UMoviePipelineConsoleVariableSetting");
-static_assert(sizeof(UMoviePipelineConsoleVariableSetting) == 0x0000F8, "Wrong size on UMoviePipelineConsoleVariableSetting");
-static_assert(offsetof(UMoviePipelineConsoleVariableSetting, ConsoleVariablePresets) == 0x000048, "Member 'UMoviePipelineConsoleVariableSetting::ConsoleVariablePresets' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineConsoleVariableSetting, ConsoleVariables) == 0x000058, "Member 'UMoviePipelineConsoleVariableSetting::ConsoleVariables' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineConsoleVariableSetting, StartConsoleCommands) == 0x0000A8, "Member 'UMoviePipelineConsoleVariableSetting::StartConsoleCommands' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineConsoleVariableSetting, EndConsoleCommands) == 0x0000B8, "Member 'UMoviePipelineConsoleVariableSetting::EndConsoleCommands' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineConsoleVariableSetting, CVars) == 0x0000C8, "Member 'UMoviePipelineConsoleVariableSetting::CVars' has a wrong offset!");
+DUMPER7_ASSERTS_UMoviePipelineConsoleVariableSetting;
 
 // Class MovieRenderPipelineSettings.MoviePipelineWidgetRenderer
 // 0x0020 (0x0068 - 0x0048)
@@ -112,22 +112,23 @@ class UMoviePipelineWidgetRenderer final : public UMoviePipelineRenderPass
 public:
 	bool                                          bCompositeOntoFinalImage;                          // 0x0048(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_49[0x17];                                      // 0x0049(0x0017)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTextureRenderTarget2D*                 RenderTarget;                                      // 0x0060(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UTextureRenderTarget2D*                 RenderTarget;                                      // 0x0060(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MoviePipelineWidgetRenderer">();
+		STATIC_CLASS_IMPL("MoviePipelineWidgetRenderer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MoviePipelineWidgetRenderer")
 	}
 	static class UMoviePipelineWidgetRenderer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMoviePipelineWidgetRenderer>();
 	}
 };
-static_assert(alignof(UMoviePipelineWidgetRenderer) == 0x000008, "Wrong alignment on UMoviePipelineWidgetRenderer");
-static_assert(sizeof(UMoviePipelineWidgetRenderer) == 0x000068, "Wrong size on UMoviePipelineWidgetRenderer");
-static_assert(offsetof(UMoviePipelineWidgetRenderer, bCompositeOntoFinalImage) == 0x000048, "Member 'UMoviePipelineWidgetRenderer::bCompositeOntoFinalImage' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineWidgetRenderer, RenderTarget) == 0x000060, "Member 'UMoviePipelineWidgetRenderer::RenderTarget' has a wrong offset!");
+DUMPER7_ASSERTS_UMoviePipelineWidgetRenderer;
 
 }
 

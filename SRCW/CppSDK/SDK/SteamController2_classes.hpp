@@ -28,17 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteamController2Settings">();
+		STATIC_CLASS_IMPL("SteamController2Settings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteamController2Settings")
 	}
 	static class USteamController2Settings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteamController2Settings>();
 	}
 };
-static_assert(alignof(USteamController2Settings) == 0x000008, "Wrong alignment on USteamController2Settings");
-static_assert(sizeof(USteamController2Settings) == 0x000058, "Wrong size on USteamController2Settings");
-static_assert(offsetof(USteamController2Settings, DigitalMappings) == 0x000038, "Member 'USteamController2Settings::DigitalMappings' has a wrong offset!");
-static_assert(offsetof(USteamController2Settings, AnalogMappings) == 0x000048, "Member 'USteamController2Settings::AnalogMappings' has a wrong offset!");
+DUMPER7_ASSERTS_USteamController2Settings;
 
 }
 

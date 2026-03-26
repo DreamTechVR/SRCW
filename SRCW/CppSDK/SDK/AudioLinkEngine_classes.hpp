@@ -30,7 +30,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AudioLinkBlueprintInterface">();
+		STATIC_CLASS_IMPL("AudioLinkBlueprintInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AudioLinkBlueprintInterface")
 	}
 	static class IAudioLinkBlueprintInterface* GetDefaultObj()
 	{
@@ -46,8 +50,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IAudioLinkBlueprintInterface) == 0x000001, "Wrong alignment on IAudioLinkBlueprintInterface");
-static_assert(sizeof(IAudioLinkBlueprintInterface) == 0x000001, "Wrong size on IAudioLinkBlueprintInterface");
+DUMPER7_ASSERTS_IAudioLinkBlueprintInterface;
 
 }
 

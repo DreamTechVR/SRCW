@@ -21,16 +21,14 @@ namespace SDK
 struct FBoneID final : public FElementID
 {
 };
-static_assert(alignof(FBoneID) == 0x000004, "Wrong alignment on FBoneID");
-static_assert(sizeof(FBoneID) == 0x000004, "Wrong size on FBoneID");
+DUMPER7_ASSERTS_FBoneID;
 
 // ScriptStruct SkeletalMeshDescription.SourceGeometryPartID
 // 0x0000 (0x0004 - 0x0004)
 struct FSourceGeometryPartID final : public FElementID
 {
 };
-static_assert(alignof(FSourceGeometryPartID) == 0x000004, "Wrong alignment on FSourceGeometryPartID");
-static_assert(sizeof(FSourceGeometryPartID) == 0x000004, "Wrong size on FSourceGeometryPartID");
+DUMPER7_ASSERTS_FSourceGeometryPartID;
 
 }
 

@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AnimationBudgetBlueprintLibrary">();
+		STATIC_CLASS_IMPL("AnimationBudgetBlueprintLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AnimationBudgetBlueprintLibrary")
 	}
 	static class UAnimationBudgetBlueprintLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAnimationBudgetBlueprintLibrary>();
 	}
 };
-static_assert(alignof(UAnimationBudgetBlueprintLibrary) == 0x000008, "Wrong alignment on UAnimationBudgetBlueprintLibrary");
-static_assert(sizeof(UAnimationBudgetBlueprintLibrary) == 0x000028, "Wrong size on UAnimationBudgetBlueprintLibrary");
+DUMPER7_ASSERTS_UAnimationBudgetBlueprintLibrary;
 
 // Class AnimationBudgetAllocator.SkeletalMeshComponentBudgeted
 // 0x0020 (0x0F90 - 0x0F70)
@@ -54,15 +57,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SkeletalMeshComponentBudgeted">();
+		STATIC_CLASS_IMPL("SkeletalMeshComponentBudgeted")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SkeletalMeshComponentBudgeted")
 	}
 	static class USkeletalMeshComponentBudgeted* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USkeletalMeshComponentBudgeted>();
 	}
 };
-static_assert(alignof(USkeletalMeshComponentBudgeted) == 0x000010, "Wrong alignment on USkeletalMeshComponentBudgeted");
-static_assert(sizeof(USkeletalMeshComponentBudgeted) == 0x000F90, "Wrong size on USkeletalMeshComponentBudgeted");
+DUMPER7_ASSERTS_USkeletalMeshComponentBudgeted;
 
 }
 

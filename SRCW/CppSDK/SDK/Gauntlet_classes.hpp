@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GauntletTestController">();
+		STATIC_CLASS_IMPL("GauntletTestController")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GauntletTestController")
 	}
 	static class UGauntletTestController* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGauntletTestController>();
 	}
 };
-static_assert(alignof(UGauntletTestController) == 0x000008, "Wrong alignment on UGauntletTestController");
-static_assert(sizeof(UGauntletTestController) == 0x000030, "Wrong size on UGauntletTestController");
+DUMPER7_ASSERTS_UGauntletTestController;
 
 // Class Gauntlet.GauntletTestControllerBootTest
 // 0x0000 (0x0030 - 0x0030)
@@ -43,15 +46,18 @@ class UGauntletTestControllerBootTest final : public UGauntletTestController
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GauntletTestControllerBootTest">();
+		STATIC_CLASS_IMPL("GauntletTestControllerBootTest")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GauntletTestControllerBootTest")
 	}
 	static class UGauntletTestControllerBootTest* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGauntletTestControllerBootTest>();
 	}
 };
-static_assert(alignof(UGauntletTestControllerBootTest) == 0x000008, "Wrong alignment on UGauntletTestControllerBootTest");
-static_assert(sizeof(UGauntletTestControllerBootTest) == 0x000030, "Wrong size on UGauntletTestControllerBootTest");
+DUMPER7_ASSERTS_UGauntletTestControllerBootTest;
 
 // Class Gauntlet.GauntletTestControllerErrorTest
 // 0x0020 (0x0050 - 0x0030)
@@ -63,15 +69,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GauntletTestControllerErrorTest">();
+		STATIC_CLASS_IMPL("GauntletTestControllerErrorTest")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GauntletTestControllerErrorTest")
 	}
 	static class UGauntletTestControllerErrorTest* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGauntletTestControllerErrorTest>();
 	}
 };
-static_assert(alignof(UGauntletTestControllerErrorTest) == 0x000008, "Wrong alignment on UGauntletTestControllerErrorTest");
-static_assert(sizeof(UGauntletTestControllerErrorTest) == 0x000050, "Wrong size on UGauntletTestControllerErrorTest");
+DUMPER7_ASSERTS_UGauntletTestControllerErrorTest;
 
 }
 

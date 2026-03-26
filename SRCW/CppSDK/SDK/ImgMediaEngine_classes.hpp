@@ -27,16 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ImgMediaPlaybackComponent">();
+		STATIC_CLASS_IMPL("ImgMediaPlaybackComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ImgMediaPlaybackComponent")
 	}
 	static class UImgMediaPlaybackComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UImgMediaPlaybackComponent>();
 	}
 };
-static_assert(alignof(UImgMediaPlaybackComponent) == 0x000008, "Wrong alignment on UImgMediaPlaybackComponent");
-static_assert(sizeof(UImgMediaPlaybackComponent) == 0x0000C8, "Wrong size on UImgMediaPlaybackComponent");
-static_assert(offsetof(UImgMediaPlaybackComponent, LODBias) == 0x0000A0, "Member 'UImgMediaPlaybackComponent::LODBias' has a wrong offset!");
+DUMPER7_ASSERTS_UImgMediaPlaybackComponent;
 
 }
 

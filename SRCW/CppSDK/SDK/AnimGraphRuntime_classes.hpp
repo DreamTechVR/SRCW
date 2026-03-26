@@ -29,16 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AnimNotify_PlayMontageNotifyWindow">();
+		STATIC_CLASS_IMPL("AnimNotify_PlayMontageNotifyWindow")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AnimNotify_PlayMontageNotifyWindow")
 	}
 	static class UAnimNotify_PlayMontageNotifyWindow* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAnimNotify_PlayMontageNotifyWindow>();
 	}
 };
-static_assert(alignof(UAnimNotify_PlayMontageNotifyWindow) == 0x000008, "Wrong alignment on UAnimNotify_PlayMontageNotifyWindow");
-static_assert(sizeof(UAnimNotify_PlayMontageNotifyWindow) == 0x000038, "Wrong size on UAnimNotify_PlayMontageNotifyWindow");
-static_assert(offsetof(UAnimNotify_PlayMontageNotifyWindow, NotifyName) == 0x000030, "Member 'UAnimNotify_PlayMontageNotifyWindow::NotifyName' has a wrong offset!");
+DUMPER7_ASSERTS_UAnimNotify_PlayMontageNotifyWindow;
 
 // Class AnimGraphRuntime.AnimNodeRigidBodyLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -52,15 +54,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AnimNodeRigidBodyLibrary">();
+		STATIC_CLASS_IMPL("AnimNodeRigidBodyLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AnimNodeRigidBodyLibrary")
 	}
 	static class UAnimNodeRigidBodyLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAnimNodeRigidBodyLibrary>();
 	}
 };
-static_assert(alignof(UAnimNodeRigidBodyLibrary) == 0x000008, "Wrong alignment on UAnimNodeRigidBodyLibrary");
-static_assert(sizeof(UAnimNodeRigidBodyLibrary) == 0x000028, "Wrong size on UAnimNodeRigidBodyLibrary");
+DUMPER7_ASSERTS_UAnimNodeRigidBodyLibrary;
 
 // Class AnimGraphRuntime.BlendSpaceLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -76,15 +81,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BlendSpaceLibrary">();
+		STATIC_CLASS_IMPL("BlendSpaceLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BlendSpaceLibrary")
 	}
 	static class UBlendSpaceLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBlendSpaceLibrary>();
 	}
 };
-static_assert(alignof(UBlendSpaceLibrary) == 0x000008, "Wrong alignment on UBlendSpaceLibrary");
-static_assert(sizeof(UBlendSpaceLibrary) == 0x000028, "Wrong size on UBlendSpaceLibrary");
+DUMPER7_ASSERTS_UBlendSpaceLibrary;
 
 // Class AnimGraphRuntime.SequencerAnimationOverride
 // 0x0000 (0x0000 - 0x0000)
@@ -97,7 +105,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SequencerAnimationOverride">();
+		STATIC_CLASS_IMPL("SequencerAnimationOverride")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SequencerAnimationOverride")
 	}
 	static class ISequencerAnimationOverride* GetDefaultObj()
 	{
@@ -113,8 +125,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(ISequencerAnimationOverride) == 0x000001, "Wrong alignment on ISequencerAnimationOverride");
-static_assert(sizeof(ISequencerAnimationOverride) == 0x000001, "Wrong size on ISequencerAnimationOverride");
+DUMPER7_ASSERTS_ISequencerAnimationOverride;
 
 // Class AnimGraphRuntime.AnimationStateMachineLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -135,15 +146,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AnimationStateMachineLibrary">();
+		STATIC_CLASS_IMPL("AnimationStateMachineLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AnimationStateMachineLibrary")
 	}
 	static class UAnimationStateMachineLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAnimationStateMachineLibrary>();
 	}
 };
-static_assert(alignof(UAnimationStateMachineLibrary) == 0x000008, "Wrong alignment on UAnimationStateMachineLibrary");
-static_assert(sizeof(UAnimationStateMachineLibrary) == 0x000028, "Wrong size on UAnimationStateMachineLibrary");
+DUMPER7_ASSERTS_UAnimationStateMachineLibrary;
 
 // Class AnimGraphRuntime.AnimSequencerInstance
 // 0x0000 (0x0370 - 0x0370)
@@ -152,15 +166,18 @@ class UAnimSequencerInstance final : public UAnimInstance
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AnimSequencerInstance">();
+		STATIC_CLASS_IMPL("AnimSequencerInstance")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AnimSequencerInstance")
 	}
 	static class UAnimSequencerInstance* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAnimSequencerInstance>();
 	}
 };
-static_assert(alignof(UAnimSequencerInstance) == 0x000010, "Wrong alignment on UAnimSequencerInstance");
-static_assert(sizeof(UAnimSequencerInstance) == 0x000370, "Wrong size on UAnimSequencerInstance");
+DUMPER7_ASSERTS_UAnimSequencerInstance;
 
 // Class AnimGraphRuntime.AnimExecutionContextLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -180,15 +197,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AnimExecutionContextLibrary">();
+		STATIC_CLASS_IMPL("AnimExecutionContextLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AnimExecutionContextLibrary")
 	}
 	static class UAnimExecutionContextLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAnimExecutionContextLibrary>();
 	}
 };
-static_assert(alignof(UAnimExecutionContextLibrary) == 0x000008, "Wrong alignment on UAnimExecutionContextLibrary");
-static_assert(sizeof(UAnimExecutionContextLibrary) == 0x000028, "Wrong size on UAnimExecutionContextLibrary");
+DUMPER7_ASSERTS_UAnimExecutionContextLibrary;
 
 // Class AnimGraphRuntime.AnimNotify_PlayMontageNotify
 // 0x0008 (0x0040 - 0x0038)
@@ -200,16 +220,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AnimNotify_PlayMontageNotify">();
+		STATIC_CLASS_IMPL("AnimNotify_PlayMontageNotify")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AnimNotify_PlayMontageNotify")
 	}
 	static class UAnimNotify_PlayMontageNotify* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAnimNotify_PlayMontageNotify>();
 	}
 };
-static_assert(alignof(UAnimNotify_PlayMontageNotify) == 0x000008, "Wrong alignment on UAnimNotify_PlayMontageNotify");
-static_assert(sizeof(UAnimNotify_PlayMontageNotify) == 0x000040, "Wrong size on UAnimNotify_PlayMontageNotify");
-static_assert(offsetof(UAnimNotify_PlayMontageNotify, NotifyName) == 0x000038, "Member 'UAnimNotify_PlayMontageNotify::NotifyName' has a wrong offset!");
+DUMPER7_ASSERTS_UAnimNotify_PlayMontageNotify;
 
 // Class AnimGraphRuntime.BlendListBaseLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -222,15 +244,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BlendListBaseLibrary">();
+		STATIC_CLASS_IMPL("BlendListBaseLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BlendListBaseLibrary")
 	}
 	static class UBlendListBaseLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBlendListBaseLibrary>();
 	}
 };
-static_assert(alignof(UBlendListBaseLibrary) == 0x000008, "Wrong alignment on UBlendListBaseLibrary");
-static_assert(sizeof(UBlendListBaseLibrary) == 0x000028, "Wrong size on UBlendListBaseLibrary");
+DUMPER7_ASSERTS_UBlendListBaseLibrary;
 
 // Class AnimGraphRuntime.BlendSpacePlayerLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -255,15 +280,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BlendSpacePlayerLibrary">();
+		STATIC_CLASS_IMPL("BlendSpacePlayerLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BlendSpacePlayerLibrary")
 	}
 	static class UBlendSpacePlayerLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBlendSpacePlayerLibrary>();
 	}
 };
-static_assert(alignof(UBlendSpacePlayerLibrary) == 0x000008, "Wrong alignment on UBlendSpacePlayerLibrary");
-static_assert(sizeof(UBlendSpacePlayerLibrary) == 0x000028, "Wrong size on UBlendSpacePlayerLibrary");
+DUMPER7_ASSERTS_UBlendSpacePlayerLibrary;
 
 // Class AnimGraphRuntime.KismetAnimationLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -285,15 +313,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"KismetAnimationLibrary">();
+		STATIC_CLASS_IMPL("KismetAnimationLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"KismetAnimationLibrary")
 	}
 	static class UKismetAnimationLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UKismetAnimationLibrary>();
 	}
 };
-static_assert(alignof(UKismetAnimationLibrary) == 0x000008, "Wrong alignment on UKismetAnimationLibrary");
-static_assert(sizeof(UKismetAnimationLibrary) == 0x000028, "Wrong size on UKismetAnimationLibrary");
+DUMPER7_ASSERTS_UKismetAnimationLibrary;
 
 // Class AnimGraphRuntime.LayeredBoneBlendLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -308,15 +339,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LayeredBoneBlendLibrary">();
+		STATIC_CLASS_IMPL("LayeredBoneBlendLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LayeredBoneBlendLibrary")
 	}
 	static class ULayeredBoneBlendLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULayeredBoneBlendLibrary>();
 	}
 };
-static_assert(alignof(ULayeredBoneBlendLibrary) == 0x000008, "Wrong alignment on ULayeredBoneBlendLibrary");
-static_assert(sizeof(ULayeredBoneBlendLibrary) == 0x000028, "Wrong size on ULayeredBoneBlendLibrary");
+DUMPER7_ASSERTS_ULayeredBoneBlendLibrary;
 
 // Class AnimGraphRuntime.LinkedAnimGraphLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -331,15 +365,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LinkedAnimGraphLibrary">();
+		STATIC_CLASS_IMPL("LinkedAnimGraphLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LinkedAnimGraphLibrary")
 	}
 	static class ULinkedAnimGraphLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULinkedAnimGraphLibrary>();
 	}
 };
-static_assert(alignof(ULinkedAnimGraphLibrary) == 0x000008, "Wrong alignment on ULinkedAnimGraphLibrary");
-static_assert(sizeof(ULinkedAnimGraphLibrary) == 0x000028, "Wrong size on ULinkedAnimGraphLibrary");
+DUMPER7_ASSERTS_ULinkedAnimGraphLibrary;
 
 // Class AnimGraphRuntime.MirrorAnimLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -357,15 +394,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MirrorAnimLibrary">();
+		STATIC_CLASS_IMPL("MirrorAnimLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MirrorAnimLibrary")
 	}
 	static class UMirrorAnimLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMirrorAnimLibrary>();
 	}
 };
-static_assert(alignof(UMirrorAnimLibrary) == 0x000008, "Wrong alignment on UMirrorAnimLibrary");
-static_assert(sizeof(UMirrorAnimLibrary) == 0x000028, "Wrong size on UMirrorAnimLibrary");
+DUMPER7_ASSERTS_UMirrorAnimLibrary;
 
 // Class AnimGraphRuntime.ModifyCurveAnimLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -383,15 +423,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ModifyCurveAnimLibrary">();
+		STATIC_CLASS_IMPL("ModifyCurveAnimLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ModifyCurveAnimLibrary")
 	}
 	static class UModifyCurveAnimLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UModifyCurveAnimLibrary>();
 	}
 };
-static_assert(alignof(UModifyCurveAnimLibrary) == 0x000008, "Wrong alignment on UModifyCurveAnimLibrary");
-static_assert(sizeof(UModifyCurveAnimLibrary) == 0x000028, "Wrong size on UModifyCurveAnimLibrary");
+DUMPER7_ASSERTS_UModifyCurveAnimLibrary;
 
 // Class AnimGraphRuntime.PlayMontageCallbackProxy
 // 0x0080 (0x00A8 - 0x0028)
@@ -416,20 +459,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PlayMontageCallbackProxy">();
+		STATIC_CLASS_IMPL("PlayMontageCallbackProxy")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlayMontageCallbackProxy")
 	}
 	static class UPlayMontageCallbackProxy* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPlayMontageCallbackProxy>();
 	}
 };
-static_assert(alignof(UPlayMontageCallbackProxy) == 0x000008, "Wrong alignment on UPlayMontageCallbackProxy");
-static_assert(sizeof(UPlayMontageCallbackProxy) == 0x0000A8, "Wrong size on UPlayMontageCallbackProxy");
-static_assert(offsetof(UPlayMontageCallbackProxy, OnCompleted) == 0x000028, "Member 'UPlayMontageCallbackProxy::OnCompleted' has a wrong offset!");
-static_assert(offsetof(UPlayMontageCallbackProxy, OnBlendOut) == 0x000038, "Member 'UPlayMontageCallbackProxy::OnBlendOut' has a wrong offset!");
-static_assert(offsetof(UPlayMontageCallbackProxy, OnInterrupted) == 0x000048, "Member 'UPlayMontageCallbackProxy::OnInterrupted' has a wrong offset!");
-static_assert(offsetof(UPlayMontageCallbackProxy, OnNotifyBegin) == 0x000058, "Member 'UPlayMontageCallbackProxy::OnNotifyBegin' has a wrong offset!");
-static_assert(offsetof(UPlayMontageCallbackProxy, OnNotifyEnd) == 0x000068, "Member 'UPlayMontageCallbackProxy::OnNotifyEnd' has a wrong offset!");
+DUMPER7_ASSERTS_UPlayMontageCallbackProxy;
 
 // Class AnimGraphRuntime.SequenceEvaluatorLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -449,15 +490,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SequenceEvaluatorLibrary">();
+		STATIC_CLASS_IMPL("SequenceEvaluatorLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SequenceEvaluatorLibrary")
 	}
 	static class USequenceEvaluatorLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USequenceEvaluatorLibrary>();
 	}
 };
-static_assert(alignof(USequenceEvaluatorLibrary) == 0x000008, "Wrong alignment on USequenceEvaluatorLibrary");
-static_assert(sizeof(USequenceEvaluatorLibrary) == 0x000028, "Wrong size on USequenceEvaluatorLibrary");
+DUMPER7_ASSERTS_USequenceEvaluatorLibrary;
 
 // Class AnimGraphRuntime.SequencePlayerLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -482,15 +526,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SequencePlayerLibrary">();
+		STATIC_CLASS_IMPL("SequencePlayerLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SequencePlayerLibrary")
 	}
 	static class USequencePlayerLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USequencePlayerLibrary>();
 	}
 };
-static_assert(alignof(USequencePlayerLibrary) == 0x000008, "Wrong alignment on USequencePlayerLibrary");
-static_assert(sizeof(USequencePlayerLibrary) == 0x000028, "Wrong size on USequencePlayerLibrary");
+DUMPER7_ASSERTS_USequencePlayerLibrary;
 
 // Class AnimGraphRuntime.SequencerAnimationSupport
 // 0x0000 (0x0000 - 0x0000)
@@ -499,7 +546,11 @@ class ISequencerAnimationSupport final
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SequencerAnimationSupport">();
+		STATIC_CLASS_IMPL("SequencerAnimationSupport")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SequencerAnimationSupport")
 	}
 	static class ISequencerAnimationSupport* GetDefaultObj()
 	{
@@ -515,8 +566,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(ISequencerAnimationSupport) == 0x000001, "Wrong alignment on ISequencerAnimationSupport");
-static_assert(sizeof(ISequencerAnimationSupport) == 0x000001, "Wrong size on ISequencerAnimationSupport");
+DUMPER7_ASSERTS_ISequencerAnimationSupport;
 
 // Class AnimGraphRuntime.SkeletalControlLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -531,15 +581,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SkeletalControlLibrary">();
+		STATIC_CLASS_IMPL("SkeletalControlLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SkeletalControlLibrary")
 	}
 	static class USkeletalControlLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USkeletalControlLibrary>();
 	}
 };
-static_assert(alignof(USkeletalControlLibrary) == 0x000008, "Wrong alignment on USkeletalControlLibrary");
-static_assert(sizeof(USkeletalControlLibrary) == 0x000028, "Wrong size on USkeletalControlLibrary");
+DUMPER7_ASSERTS_USkeletalControlLibrary;
 
 }
 

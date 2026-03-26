@@ -27,16 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NetAnalyticsAggregatorConfig">();
+		STATIC_CLASS_IMPL("NetAnalyticsAggregatorConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NetAnalyticsAggregatorConfig")
 	}
 	static class UNetAnalyticsAggregatorConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNetAnalyticsAggregatorConfig>();
 	}
 };
-static_assert(alignof(UNetAnalyticsAggregatorConfig) == 0x000008, "Wrong alignment on UNetAnalyticsAggregatorConfig");
-static_assert(sizeof(UNetAnalyticsAggregatorConfig) == 0x000038, "Wrong size on UNetAnalyticsAggregatorConfig");
-static_assert(offsetof(UNetAnalyticsAggregatorConfig, NetAnalyticsData) == 0x000028, "Member 'UNetAnalyticsAggregatorConfig::NetAnalyticsData' has a wrong offset!");
+DUMPER7_ASSERTS_UNetAnalyticsAggregatorConfig;
 
 // Class NetCore.StatePerObjectConfig
 // 0x0040 (0x0068 - 0x0028)
@@ -51,17 +53,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"StatePerObjectConfig">();
+		STATIC_CLASS_IMPL("StatePerObjectConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"StatePerObjectConfig")
 	}
 	static class UStatePerObjectConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UStatePerObjectConfig>();
 	}
 };
-static_assert(alignof(UStatePerObjectConfig) == 0x000008, "Wrong alignment on UStatePerObjectConfig");
-static_assert(sizeof(UStatePerObjectConfig) == 0x000068, "Wrong size on UStatePerObjectConfig");
-static_assert(offsetof(UStatePerObjectConfig, PerObjectConfigSection) == 0x000050, "Member 'UStatePerObjectConfig::PerObjectConfigSection' has a wrong offset!");
-static_assert(offsetof(UStatePerObjectConfig, bEnabled) == 0x000060, "Member 'UStatePerObjectConfig::bEnabled' has a wrong offset!");
+DUMPER7_ASSERTS_UStatePerObjectConfig;
 
 // Class NetCore.EscalationManagerConfig
 // 0x0020 (0x0088 - 0x0068)
@@ -74,16 +77,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EscalationManagerConfig">();
+		STATIC_CLASS_IMPL("EscalationManagerConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EscalationManagerConfig")
 	}
 	static class UEscalationManagerConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEscalationManagerConfig>();
 	}
 };
-static_assert(alignof(UEscalationManagerConfig) == 0x000008, "Wrong alignment on UEscalationManagerConfig");
-static_assert(sizeof(UEscalationManagerConfig) == 0x000088, "Wrong size on UEscalationManagerConfig");
-static_assert(offsetof(UEscalationManagerConfig, EscalationSeverity) == 0x000068, "Member 'UEscalationManagerConfig::EscalationSeverity' has a wrong offset!");
+DUMPER7_ASSERTS_UEscalationManagerConfig;
 
 }
 

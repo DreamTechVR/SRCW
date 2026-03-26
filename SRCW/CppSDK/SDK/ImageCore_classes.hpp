@@ -31,15 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SharedImageConstRefBlueprintFns">();
+		STATIC_CLASS_IMPL("SharedImageConstRefBlueprintFns")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SharedImageConstRefBlueprintFns")
 	}
 	static class USharedImageConstRefBlueprintFns* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USharedImageConstRefBlueprintFns>();
 	}
 };
-static_assert(alignof(USharedImageConstRefBlueprintFns) == 0x000008, "Wrong alignment on USharedImageConstRefBlueprintFns");
-static_assert(sizeof(USharedImageConstRefBlueprintFns) == 0x000028, "Wrong size on USharedImageConstRefBlueprintFns");
+DUMPER7_ASSERTS_USharedImageConstRefBlueprintFns;
 
 }
 
