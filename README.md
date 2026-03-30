@@ -49,10 +49,6 @@ The unlocker runs automatically or on hot key when the game loads and:
 
 git clone https://github.com/HAWGT/SRCW.git
 
-or
-
-git clone https://github.com/Glitxhhh/SonicUnlocker.git
-
 3. Open the solution in Visual Studio  
 4. Build in **Release x64**  
 5. Output DLL will be located in:
